@@ -1,0 +1,214 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.725
+Coming up, we're going to program our first supply chain using solidity.
+
+00:00:04.725 --> 00:00:07.290
+Before starting to build our smart contract,
+
+00:00:07.290 --> 00:00:10.890
+it's important to understand exactly what it is we're trying to build.
+
+00:00:10.890 --> 00:00:13.965
+In this video, we're going to do exactly that.
+
+00:00:13.965 --> 00:00:17.040
+First, a layout the scenario we'll be working on.
+
+00:00:17.040 --> 00:00:20.445
+Then, we'll define the goals of our smart contract.
+
+00:00:20.445 --> 00:00:24.780
+From there, we lay out the major components needed to make this all work.
+
+00:00:24.780 --> 00:00:28.740
+To get started, I decided it would be helpful to build a supply chain from
+
+00:00:28.740 --> 00:00:32.760
+the ground up using the simplest of all companies, a Lemonade Stand.
+
+00:00:32.760 --> 00:00:36.420
+The idea is that by using something simple like a Lemonade Stand
+
+00:00:36.420 --> 00:00:40.290
+we'll have an easier time focusing on the details of what we're trying to code,
+
+00:00:40.290 --> 00:00:44.795
+rather than also trying to wrestle with the difficulties of a more complicated example.
+
+00:00:44.795 --> 00:00:47.150
+Once you've been through the process one time,
+
+00:00:47.150 --> 00:00:51.605
+it'll be easier to create effective solutions to new challenges in creative ways.
+
+00:00:51.605 --> 00:00:54.680
+From there, you'll work to program larger supply chains
+
+00:00:54.680 --> 00:00:57.845
+that add real value across companies and industries.
+
+00:00:57.845 --> 00:01:00.035
+But for now, we'll start small.
+
+00:01:00.035 --> 00:01:01.460
+So, here's the goal.
+
+00:01:01.460 --> 00:01:03.725
+You're selling lemonade in your local neighborhood
+
+00:01:03.725 --> 00:01:06.170
+and you're ready to take everything to the next level.
+
+00:01:06.170 --> 00:01:08.690
+You want to be able to track the sales of lemonade to
+
+00:01:08.690 --> 00:01:12.700
+your customers so that you can be confident in the transparency of your company.
+
+00:01:12.700 --> 00:01:17.680
+At a quick glance, here's an overview of the layout of the goals for the smart contract.
+
+00:01:17.680 --> 00:01:19.105
+To make some sense of this,
+
+00:01:19.105 --> 00:01:21.800
+let's walk through each of the pieces in more detail.
+
+00:01:21.800 --> 00:01:25.340
+At this point, it's up to us to choose what we want to track.
+
+00:01:25.340 --> 00:01:27.650
+Using the blockchain, you can choose to track
+
+00:01:27.650 --> 00:01:29.930
+as many details as you'd like through the process,
+
+00:01:29.930 --> 00:01:31.580
+but here's a few examples.
+
+00:01:31.580 --> 00:01:34.100
+You can track whether or not an item is for sale,
+
+00:01:34.100 --> 00:01:38.470
+if it's been sold or if it's been shipped or if it's been received.
+
+00:01:38.470 --> 00:01:41.680
+You can also track specific details of the lemonade.
+
+00:01:41.680 --> 00:01:43.295
+Like it's price, who bought,
+
+00:01:43.295 --> 00:01:45.680
+who sold it, and it sku code.
+
+00:01:45.680 --> 00:01:48.245
+The sku is short for stock keeping unit,
+
+00:01:48.245 --> 00:01:50.725
+which is the way stores track the items they sell.
+
+00:01:50.725 --> 00:01:53.390
+So, our example, I've chosen to track just a few of
+
+00:01:53.390 --> 00:01:56.540
+these options and add some helpful functionality to our depth.
+
+00:01:56.540 --> 00:01:59.900
+I want to be able to add items to the list of available items,
+
+00:01:59.900 --> 00:02:01.220
+put them up for sell,
+
+00:02:01.220 --> 00:02:03.500
+and allow users to buy these items.
+
+00:02:03.500 --> 00:02:05.930
+I'd also like to be able to get the details of
+
+00:02:05.930 --> 00:02:08.480
+any item that's being tracked on the blockchain.
+
+00:02:08.480 --> 00:02:12.230
+Knowing this, we can use these as functions for our smart contract;
+
+00:02:12.230 --> 00:02:15.145
+add item, buy item, and fetch item.
+
+00:02:15.145 --> 00:02:17.175
+On top of the actual functions,
+
+00:02:17.175 --> 00:02:20.900
+we'll also need to maintain the state of the object within the block chain.
+
+00:02:20.900 --> 00:02:26.065
+For this contract, will just need to know when the item is up for sale and when it sold.
+
+00:02:26.065 --> 00:02:29.000
+Other things you might want to track or if it's been shipped,
+
+00:02:29.000 --> 00:02:30.890
+received or any other state,
+
+00:02:30.890 --> 00:02:32.435
+but this is enough for now.
+
+00:02:32.435 --> 00:02:36.740
+You can also decide what information we'll need to track for the items we sell.
+
+00:02:36.740 --> 00:02:39.940
+To start, it's helpful to track the name, sku,
+
+00:02:39.940 --> 00:02:43.575
+price, state, seller, and buyer of these items.
+
+00:02:43.575 --> 00:02:46.415
+Finally, there's just one more detail to consider.
+
+00:02:46.415 --> 00:02:48.545
+This is pretty small in terms of code,
+
+00:02:48.545 --> 00:02:50.345
+but important to understand.
+
+00:02:50.345 --> 00:02:52.204
+When using smart contracts,
+
+00:02:52.204 --> 00:02:54.710
+every item needs to be assigned a sku that
+
+00:02:54.710 --> 00:02:57.980
+helps track the item as it progresses through the supply chain.
+
+00:02:57.980 --> 00:03:01.310
+In many cases, creating the sku will be handled using
+
+00:03:01.310 --> 00:03:05.045
+a completely different system that generates this unique ID for you.
+
+00:03:05.045 --> 00:03:08.810
+In our case, we'll have the smart contract generate a simple version of
+
+00:03:08.810 --> 00:03:12.710
+this sku and will need to map each item to the sku.
+
+00:03:12.710 --> 00:03:17.035
+Finally, we need to make sure we assign contract donors and customers,
+
+00:03:17.035 --> 00:03:20.570
+and determine which functions can be accessed through each of them.
+
+00:03:20.570 --> 00:03:23.015
+Alright, so we didn't get to coding it yet,
+
+00:03:23.015 --> 00:03:25.025
+we'll be doing that in the next section.
+
+00:03:25.025 --> 00:03:27.470
+Hopefully this helped lay out the goals so that you're more
+
+00:03:27.470 --> 00:03:31.030
+familiar with the direction we're heading throughout the project.
+

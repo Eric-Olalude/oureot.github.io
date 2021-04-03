@@ -1,0 +1,202 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.609
+We are making great progress on our contract.
+
+00:00:02.609 --> 00:00:04.379
+We've got two more functions left.
+
+00:00:04.379 --> 00:00:07.049
+So, the next step function is the buyItem function.
+
+00:00:07.049 --> 00:00:09.779
+To start, let's make a function called buyItem.
+
+00:00:09.779 --> 00:00:13.304
+This accepts the sku of the item that the buyer wants to buy.
+
+00:00:13.304 --> 00:00:15.719
+First, we will need to make sure that we use
+
+00:00:15.720 --> 00:00:18.585
+the modifier to see if the item is even up for sale.
+
+00:00:18.585 --> 00:00:21.195
+So, we will apply the modifier forSale.
+
+00:00:21.195 --> 00:00:23.789
+We will pass the sku to this modifier.
+
+00:00:23.789 --> 00:00:28.169
+Remember this modifier is accepting an argument which is the sku number.
+
+00:00:28.170 --> 00:00:29.880
+So, we're going to pass it right there.
+
+00:00:29.879 --> 00:00:33.585
+Next, we'll also need to check that the buyer has paid enough amount.
+
+00:00:33.585 --> 00:00:37.575
+This is done by applying the modified paidEnough.
+
+00:00:37.575 --> 00:00:42.780
+Again, we're pacing the price of the item to the paidEnough modifier.
+
+00:00:42.780 --> 00:00:46.850
+What it checks the msg.value is actually greater than this value.
+
+00:00:46.850 --> 00:00:51.245
+We're also making this function public so that anyone can call this function.
+
+00:00:51.244 --> 00:00:55.039
+We're also making this function payable because we are accepting money.
+
+00:00:55.039 --> 00:00:57.829
+In fact, we are accepting and requesting money to
+
+00:00:57.829 --> 00:01:00.914
+becoming through whoever is trying to buy this item.
+
+00:01:00.914 --> 00:01:03.109
+Moving on, inside the function,
+
+00:01:03.109 --> 00:01:04.280
+what is going on? Let's see.
+
+00:01:04.280 --> 00:01:05.840
+So, we get the buyer's address.
+
+00:01:05.840 --> 00:01:08.165
+This will be the msg.sender.
+
+00:01:08.165 --> 00:01:12.400
+We will update the mapping for this sku with the buyer's address.
+
+00:01:12.400 --> 00:01:14.390
+So, the first thing that we do is, first of all,
+
+00:01:14.390 --> 00:01:18.829
+we get the address to make sure whoever is sending this request is the buyer.
+
+00:01:18.829 --> 00:01:23.015
+Then the price, we get the price by accessing the mapping,
+
+00:01:23.015 --> 00:01:25.114
+the items with this sku mapping,
+
+00:01:25.114 --> 00:01:29.189
+and then.price, and then we're storing it in a variable called price.
+
+00:01:29.189 --> 00:01:32.250
+Then what we do is we update the buyer.
+
+00:01:32.250 --> 00:01:33.974
+Remember, our struct.
+
+00:01:33.974 --> 00:01:36.269
+When we created a new item in the addItem,
+
+00:01:36.269 --> 00:01:39.104
+remember we left this buyer zero.
+
+00:01:39.105 --> 00:01:44.159
+So, now what we're doing is that we're actually updating it with this buyer's address.
+
+00:01:44.159 --> 00:01:47.090
+So, now this struct or the item that
+
+00:01:47.090 --> 00:01:50.585
+is created will actually have the buyer that we actually bought this item.
+
+00:01:50.584 --> 00:01:53.584
+Then we also update the state to sold.
+
+00:01:53.584 --> 00:01:57.304
+Remember this was set to forSale initially when we added the item.
+
+00:01:57.305 --> 00:01:59.165
+Now we're changing the state to sold.
+
+00:01:59.165 --> 00:02:01.850
+So, again, we're updating two things in our mapping.
+
+00:02:01.849 --> 00:02:03.289
+We're updating the buyer.
+
+00:02:03.290 --> 00:02:04.955
+We're updating the state.
+
+00:02:04.954 --> 00:02:07.899
+Then what we do is we transfer the money.
+
+00:02:07.900 --> 00:02:15.435
+So, we call the mapping "items[sku].seller.transfer" and then we transfer this price,
+
+00:02:15.435 --> 00:02:17.280
+whatever price that's coming in,
+
+00:02:17.280 --> 00:02:20.229
+and then of course we emit the forSale event.
+
+00:02:20.229 --> 00:02:24.634
+So, again, I wanted to give you a little bit information on this statement right there.
+
+00:02:24.634 --> 00:02:27.704
+We need to transfer the price paid by the buyer to the seller.
+
+00:02:27.705 --> 00:02:29.780
+So, we'll look at the seller's address,
+
+00:02:29.780 --> 00:02:33.469
+which actually is the same as owner of the lemonade stand or the contract owner.
+
+00:02:33.469 --> 00:02:37.490
+Now, one thing I wanted to mention is that I have purposely written this contract this
+
+00:02:37.490 --> 00:02:41.990
+way so that later you can extend the supply chain contract to make more sellers.
+
+00:02:41.990 --> 00:02:45.455
+In this case, we're just making sure that the seller is just the owner.
+
+00:02:45.455 --> 00:02:47.670
+Because remember in the addItem,
+
+00:02:47.669 --> 00:02:49.504
+we're just adding this modifier so that
+
+00:02:49.504 --> 00:02:52.969
+only the owner can actually add items to this supply chain.
+
+00:02:52.969 --> 00:02:56.879
+But you can always take this off if you want anyone else to be able to add items.
+
+00:02:56.879 --> 00:02:59.949
+But in our case, seller is the same as owner.
+
+00:02:59.949 --> 00:03:02.060
+So, we're accessing that.
+
+00:03:02.060 --> 00:03:07.849
+We're accessing the address of the seller and then we're transferring the price.
+
+00:03:07.849 --> 00:03:10.525
+This is how you transfer Ether
+
+00:03:10.525 --> 00:03:14.180
+on Ethereum and then whatever the price is coming in, I'm [inaudible] it.
+
+00:03:14.180 --> 00:03:16.040
+Next, we're doing is that we're emitting
+
+00:03:16.039 --> 00:03:20.090
+the sold event in case anyone is watching for this emit.
+
+00:03:20.090 --> 00:03:22.819
+Fantastic. Now we've written out the buyItem function,
+
+00:03:22.819 --> 00:03:26.139
+let's write the fetch item function in our next video.
+

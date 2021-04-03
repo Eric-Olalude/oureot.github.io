@@ -1,0 +1,241 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.430
+Now that we have all the comments laid out,
+
+00:00:02.430 --> 00:00:06.134
+we are ready to start putting the code together for a supply chains not contract.
+
+00:00:06.134 --> 00:00:08.129
+In this video, we will focus on some of
+
+00:00:08.130 --> 00:00:10.845
+the more basic features of a contract to get started.
+
+00:00:10.845 --> 00:00:14.460
+Specifically, we will create our contract, declare, the variables,
+
+00:00:14.460 --> 00:00:18.315
+set on mapping, and create a struct to store the item details.
+
+00:00:18.315 --> 00:00:20.625
+So, in the top, we have the pragma line,
+
+00:00:20.625 --> 00:00:22.679
+and then we have the keyword contract,
+
+00:00:22.679 --> 00:00:26.265
+followed by name of the contract Lemonade Stand and then curly braces.
+
+00:00:26.265 --> 00:00:29.850
+Anything that goes within the curly braces is all the information,
+
+00:00:29.850 --> 00:00:32.234
+which means your variables, your function declarations,
+
+00:00:32.234 --> 00:00:35.960
+events in mapping, and all the details go inside the two curly braces.
+
+00:00:35.960 --> 00:00:38.840
+So, on the top, we start by declaring two variables.
+
+00:00:38.840 --> 00:00:41.465
+So, we have the variable owner and skuCount.
+
+00:00:41.465 --> 00:00:43.325
+Owner is going to be of type address,
+
+00:00:43.325 --> 00:00:44.840
+so we're going to have address owner,
+
+00:00:44.840 --> 00:00:47.300
+and then skuCount is an unsigned integers.
+
+00:00:47.299 --> 00:00:49.744
+So, that's the reason we use uint for skuCount.
+
+00:00:49.744 --> 00:00:51.634
+Then we have enum.
+
+00:00:51.634 --> 00:00:53.269
+Enum like I said again,
+
+00:00:53.270 --> 00:00:56.150
+a type that you are declaring and then within the curly braces,
+
+00:00:56.149 --> 00:00:57.619
+you are giving it two values.
+
+00:00:57.619 --> 00:01:00.739
+Either it can store ForSale or Sold.
+
+00:01:00.740 --> 00:01:03.289
+So, two different values and this is how you declare enums,
+
+00:01:03.289 --> 00:01:04.709
+and recalling this enum state.
+
+00:01:04.709 --> 00:01:06.394
+Again, you can give it any name,
+
+00:01:06.394 --> 00:01:09.584
+just because it's describes the state an item is in.
+
+00:01:09.584 --> 00:01:10.904
+So, I'm going to just call it state,
+
+00:01:10.905 --> 00:01:12.564
+but this could be any single,
+
+00:01:12.564 --> 00:01:17.179
+any information or any name that you want to give it to. Then we have the struct.
+
+00:01:17.180 --> 00:01:19.310
+Now, we're calling the struct item,
+
+00:01:19.310 --> 00:01:22.234
+like I said, again structs are user-defined types.
+
+00:01:22.234 --> 00:01:24.125
+We're going to call this struct item.
+
+00:01:24.125 --> 00:01:28.810
+Within the struct, we will define the fields that we want to track with the contract,
+
+00:01:28.810 --> 00:01:31.685
+or for each of the item that we want to drop in this contract.
+
+00:01:31.685 --> 00:01:35.840
+So, our item will be structured into two few different variables including name,
+
+00:01:35.840 --> 00:01:39.155
+sku, price, state, buyer, and seller.
+
+00:01:39.155 --> 00:01:42.234
+The first thing that we will do is set the name to be a string.
+
+00:01:42.234 --> 00:01:44.894
+Then we will set this sku to be a uint.
+
+00:01:44.894 --> 00:01:46.799
+The price can also be uint,
+
+00:01:46.799 --> 00:01:49.769
+since because it is not going to be negative money.
+
+00:01:49.769 --> 00:01:51.109
+So, that's a uint again.
+
+00:01:51.109 --> 00:01:53.394
+The state can be set to the state,
+
+00:01:53.394 --> 00:01:57.799
+this is an enum type that can hold values either ForSale or Sold.
+
+00:01:57.799 --> 00:02:01.129
+The seller is going to be identified by wallet address,
+
+00:02:01.129 --> 00:02:03.634
+so we can set the seller to be of type address.
+
+00:02:03.635 --> 00:02:05.870
+Finally, the same thing also applies to the buyer,
+
+00:02:05.870 --> 00:02:07.795
+which is again of type address.
+
+00:02:07.795 --> 00:02:10.289
+Next, we will have our mapping.
+
+00:02:10.289 --> 00:02:14.569
+So, this is again to map the sku number to this specific item.
+
+00:02:14.569 --> 00:02:17.000
+The syntax of the mapping looks just like this,
+
+00:02:17.000 --> 00:02:19.055
+you start with the keyword mapping.
+
+00:02:19.055 --> 00:02:22.284
+Then in brackets, you telling what do what.
+
+00:02:22.284 --> 00:02:25.520
+So, in this type, it's the type to item.
+
+00:02:25.520 --> 00:02:27.650
+So, like before, it's an sku,
+
+00:02:27.650 --> 00:02:29.210
+so we can just give it new int value.
+
+00:02:29.210 --> 00:02:31.020
+So, in mapping this sku,
+
+00:02:31.020 --> 00:02:34.110
+which is of type uint to that specific item,
+
+00:02:34.110 --> 00:02:36.290
+and then we're calling this mapping items.
+
+00:02:36.289 --> 00:02:39.590
+Then of course we will see later on how to access mappings.
+
+00:02:39.590 --> 00:02:44.150
+So, again mapping really makes it easy for us to look up an item using the sku number.
+
+00:02:44.150 --> 00:02:45.500
+So, if we give this sku number,
+
+00:02:45.500 --> 00:02:47.794
+we can get all the details of that specific item,
+
+00:02:47.794 --> 00:02:49.534
+not a member item is a struct.
+
+00:02:49.534 --> 00:02:52.055
+So, it's going to once you give a sku number,
+
+00:02:52.055 --> 00:02:55.129
+you can get all this information back for that specific item.
+
+00:02:55.129 --> 00:02:59.030
+So, this is what we will use in our fetch items function later on that we see.
+
+00:02:59.030 --> 00:03:03.694
+All right, great. So, we have made some good progress on a contract in this video,
+
+00:03:03.694 --> 00:03:05.419
+we wrote the contract,
+
+00:03:05.419 --> 00:03:06.964
+the variables, the mapping,
+
+00:03:06.965 --> 00:03:08.224
+the state, and the struct.
+
+00:03:08.224 --> 00:03:10.250
+Now, that's a good start, but of course we will
+
+00:03:10.250 --> 00:03:12.425
+need to create the modifiers and functions.
+
+00:03:12.425 --> 00:03:13.820
+We will take a break for now.
+
+00:03:13.819 --> 00:03:16.084
+If you're feeling a little shaky on the details,
+
+00:03:16.085 --> 00:03:18.260
+you can use a solidarity documentation to
+
+00:03:18.259 --> 00:03:21.034
+help clarify any of the major topics we just covered here.
+
+00:03:21.034 --> 00:03:23.430
+When you're ready, I will see in the next section.
+
+00:03:23.430 --> 00:03:26.170
+We will start by declaring the events.
+

@@ -1,0 +1,238 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.189
+Now that we have our modifiers written,
+
+00:00:02.189 --> 00:00:04.665
+we can use them in a function definitions.
+
+00:00:04.665 --> 00:00:07.049
+Let's write the constructor function now to
+
+00:00:07.049 --> 00:00:09.675
+initialize the original values of the two variables,
+
+00:00:09.675 --> 00:00:11.355
+the owner and the skuCount.
+
+00:00:11.355 --> 00:00:14.115
+So, let's look at the constructor function right there.
+
+00:00:14.115 --> 00:00:15.855
+We're making it public.
+
+00:00:15.855 --> 00:00:18.705
+So, this is a function that is going to be called
+
+00:00:18.704 --> 00:00:21.344
+automatically whenever the contract is initiated.
+
+00:00:21.344 --> 00:00:23.250
+That is how constructor functions work.
+
+00:00:23.250 --> 00:00:25.710
+Now, this will be useful to, of course,
+
+00:00:25.710 --> 00:00:27.750
+initialize any variables that we wanted to
+
+00:00:27.750 --> 00:00:30.839
+initialize before any of the other functions are run.
+
+00:00:30.839 --> 00:00:32.685
+So, what we're doing in that,
+
+00:00:32.685 --> 00:00:33.920
+is that we're roughly having
+
+00:00:33.920 --> 00:00:37.359
+the constructor function and we're setting a few properties for this function.
+
+00:00:37.359 --> 00:00:39.519
+We're of course, making it public.
+
+00:00:39.520 --> 00:00:43.400
+We want to make sure that it can be accessed by whoever initiates the contract.
+
+00:00:43.399 --> 00:00:44.824
+Now, within this function,
+
+00:00:44.825 --> 00:00:47.030
+we will set the variables owner to the
+
+00:00:47.030 --> 00:00:51.429
+msg.sender and the skuCount to zero as a starting point. That's it.
+
+00:00:51.429 --> 00:00:53.715
+So, when this contract is initiated,
+
+00:00:53.715 --> 00:00:58.490
+the constructor will run and send the owner to the address of the contract initiator,
+
+00:00:58.490 --> 00:01:01.820
+and it will also send the skuCount to zero.
+
+00:01:01.820 --> 00:01:03.799
+In terms of a supply chain,
+
+00:01:03.799 --> 00:01:07.144
+the seller or the owner of this lemonade supply chain,
+
+00:01:07.144 --> 00:01:10.564
+gets initialized to the address of the contract initiator.
+
+00:01:10.564 --> 00:01:13.439
+Now, let's look at the addItem function.
+
+00:01:13.489 --> 00:01:16.144
+So, we've done the constructor function.
+
+00:01:16.144 --> 00:01:19.039
+Let's look at the addItem function right there.
+
+00:01:19.040 --> 00:01:22.280
+Fantastic. Now, we're going to make it public.
+
+00:01:22.280 --> 00:01:24.859
+It will also accept two arguments;
+
+00:01:24.859 --> 00:01:27.825
+the name of the lemonade item and the price of the item.
+
+00:01:27.825 --> 00:01:29.549
+So, when we're adding an item,
+
+00:01:29.549 --> 00:01:33.019
+we're of course giving the name of the item and the price of the item.
+
+00:01:33.019 --> 00:01:35.959
+We're also applying the modifier onlyOwner,
+
+00:01:35.959 --> 00:01:40.189
+so that only the owner of the lemonade stand can add items to the supply chain.
+
+00:01:40.189 --> 00:01:44.045
+The overall goal of this function is to add items to the inventory.
+
+00:01:44.045 --> 00:01:46.954
+We start by incrementing the skuCount by one.
+
+00:01:46.954 --> 00:01:50.939
+Remember, we set it to zero initially in the constructor function.
+
+00:01:50.939 --> 00:01:52.489
+So, what we're doing is that we're actually
+
+00:01:52.489 --> 00:01:54.484
+incrementing it because we're not adding an item.
+
+00:01:54.484 --> 00:01:57.459
+So, you want to give it a sku of one to start with.
+
+00:01:57.459 --> 00:01:59.969
+So, every time we add a new item,
+
+00:01:59.969 --> 00:02:02.939
+this function is called and the skuCount is incremented.
+
+00:02:02.939 --> 00:02:06.064
+So, every new item has a unique skuCount.
+
+00:02:06.064 --> 00:02:08.645
+Then, we will create a new item.
+
+00:02:08.645 --> 00:02:10.625
+So, in this line if you see over here,
+
+00:02:10.625 --> 00:02:13.639
+we're actually creating, we're also emitting an event over here.
+
+00:02:13.639 --> 00:02:15.019
+We'll look at it in just a second.
+
+00:02:15.020 --> 00:02:17.855
+But we're also creating a new item over here.
+
+00:02:17.854 --> 00:02:22.060
+If you look in this line, we will use the name and the price arguments passed in.
+
+00:02:22.060 --> 00:02:26.705
+The skuCount is of course maintained within a contract and the state is set to sale.
+
+00:02:26.705 --> 00:02:28.655
+So, adding a new item to our mapping,
+
+00:02:28.655 --> 00:02:30.370
+items is the mapping remember,
+
+00:02:30.370 --> 00:02:32.330
+skuCount is the skuCount.
+
+00:02:32.330 --> 00:02:33.650
+Then, this is the struct.
+
+00:02:33.650 --> 00:02:34.939
+We're creating a new struct.
+
+00:02:34.939 --> 00:02:37.534
+We're giving the name to whatever name is passed in.
+
+00:02:37.534 --> 00:02:39.754
+So, we're just creating a new item. That's it.
+
+00:02:39.754 --> 00:02:43.884
+We're adding it to the mapping and restoring it in using the skuCount.
+
+00:02:43.884 --> 00:02:46.364
+We are also emitting an event over here.
+
+00:02:46.365 --> 00:02:49.610
+This event, just in case if anyone is watching ForSale event,
+
+00:02:49.610 --> 00:02:52.235
+that we have a new item that's being added for sale.
+
+00:02:52.235 --> 00:02:57.985
+Also wanted to show you here,we're also setting the state to sale.
+
+00:02:57.985 --> 00:03:02.265
+We're setting the seller to msg.sender.
+
+00:03:02.264 --> 00:03:04.154
+Again in our case, it's just the owner.
+
+00:03:04.155 --> 00:03:06.780
+We're also setting the buyer to zero right now,
+
+00:03:06.780 --> 00:03:08.939
+just because we don't have a buyer yet.
+
+00:03:08.939 --> 00:03:11.340
+Later on, when we write the buyItem function,
+
+00:03:11.340 --> 00:03:12.870
+whoever is buying the item,
+
+00:03:12.870 --> 00:03:16.530
+they will change this value to the buyers address. All right.
+
+00:03:16.530 --> 00:03:18.509
+So, now we've written out two of our functions,
+
+00:03:18.509 --> 00:03:20.629
+we have the constructor function which sets
+
+00:03:20.629 --> 00:03:23.568
+the initial values of the lemonade owner skuCount,
+
+00:03:23.568 --> 00:03:28.159
+and the addItem function which allows new items to be put up for sale.
+
+00:03:28.159 --> 00:03:32.764
+At this point, we have just two functions left to write; buyItem and fetchItem.
+
+00:03:32.764 --> 00:03:34.419
+Let's do that next.
+
