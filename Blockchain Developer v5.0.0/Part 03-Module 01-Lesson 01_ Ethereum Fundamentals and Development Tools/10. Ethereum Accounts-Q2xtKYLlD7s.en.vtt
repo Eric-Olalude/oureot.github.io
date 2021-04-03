@@ -1,0 +1,211 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.214
+Accounts are a fundamental component of the Ethereum platform.
+
+00:00:04.214 --> 00:00:06.660
+These accounts represent an identity,
+
+00:00:06.660 --> 00:00:08.750
+used to make transactions by people,
+
+00:00:08.750 --> 00:00:10.910
+mining nodes or contracts.
+
+00:00:10.910 --> 00:00:14.789
+In this video, we'll look at the basics of these different account types.
+
+00:00:14.789 --> 00:00:17.099
+We'll also define each of the variables,
+
+00:00:17.099 --> 00:00:19.690
+that are used to determine the account state.
+
+00:00:19.690 --> 00:00:22.755
+In Ethereum, there are two types of accounts.
+
+00:00:22.754 --> 00:00:25.779
+Externally owned accounts, known as EOA's,
+
+00:00:25.780 --> 00:00:28.885
+and contract accounts known as CA's.
+
+00:00:28.885 --> 00:00:33.445
+Individuals holding a private key manage externally owned accounts.
+
+00:00:33.445 --> 00:00:35.759
+As a user on the Ethereum network,
+
+00:00:35.759 --> 00:00:38.170
+this is the type of account you would earn.
+
+00:00:38.170 --> 00:00:41.640
+There are few important fields associated with it.
+
+00:00:41.640 --> 00:00:46.200
+First, an EOA holds the account balance shown in Ether.
+
+00:00:46.200 --> 00:00:48.910
+It also includes a transaction count.
+
+00:00:48.909 --> 00:00:53.509
+This count is the number of transactions that originated from the account.
+
+00:00:53.509 --> 00:00:56.210
+An EOA, can do a few things.
+
+00:00:56.210 --> 00:00:59.009
+It can send transactions on the Ethereum network,
+
+00:00:59.009 --> 00:01:00.589
+call a smart contract,
+
+00:01:00.590 --> 00:01:04.120
+and transfer value from its wallet to another account.
+
+00:01:04.120 --> 00:01:07.960
+EOA's are slightly different than contract accounts.
+
+00:01:07.959 --> 00:01:10.509
+Contract accounts, or CA's,
+
+00:01:10.510 --> 00:01:14.290
+are accounts controlled by the code within a smart contract.
+
+00:01:14.290 --> 00:01:17.560
+On top of the account balance and transaction count,
+
+00:01:17.560 --> 00:01:20.305
+it also holds the smart contract code.
+
+00:01:20.305 --> 00:01:24.890
+In this case, the transaction count means something different than with EOA's.
+
+00:01:24.890 --> 00:01:27.799
+In CA's it refers to the number of times
+
+00:01:27.799 --> 00:01:30.894
+this contract has deployed other smart contracts.
+
+00:01:30.894 --> 00:01:37.045
+Like an EOA, a CA can also transfer value and initiate another smart contract.
+
+00:01:37.045 --> 00:01:42.275
+When receiving transactions, a CA can execute associated smart contracts,
+
+00:01:42.275 --> 00:01:45.000
+and in some cases, manipulate storage.
+
+00:01:45.000 --> 00:01:49.780
+These accounts can be created by another CA or an EOA.
+
+00:01:49.780 --> 00:01:51.545
+As we mentioned earlier,
+
+00:01:51.545 --> 00:01:54.894
+there are a few fields that determine the state of these accounts.
+
+00:01:54.894 --> 00:01:57.854
+These fields include the nonce, balance,
+
+00:01:57.855 --> 00:02:00.150
+storage hash, code hash,
+
+00:02:00.150 --> 00:02:02.705
+account storage and EVM code.
+
+00:02:02.704 --> 00:02:06.245
+Let's look at each of these fields in a little more detail.
+
+00:02:06.245 --> 00:02:08.319
+First the nonce.
+
+00:02:08.319 --> 00:02:11.959
+The nonce refers to the number of transactions on the account.
+
+00:02:11.960 --> 00:02:17.099
+As we saw, this is slightly different depending on if it's an EOA or a CA.
+
+00:02:17.099 --> 00:02:21.799
+In an EOA, this is the number of transactions sent from the accounts address.
+
+00:02:21.800 --> 00:02:25.880
+In a CA, it's the number of contracts created by the account.
+
+00:02:25.879 --> 00:02:30.764
+The account balance is the total value of Ether available on the account.
+
+00:02:30.764 --> 00:02:33.059
+The balance is shown in Wei.
+
+00:02:33.060 --> 00:02:35.675
+A Wei is a smaller denomination of Ether.
+
+00:02:35.675 --> 00:02:38.715
+Like how penny is a smaller denomination of a dollar.
+
+00:02:38.715 --> 00:02:42.289
+One Ether, is equal to 10 to the 18th Wei.
+
+00:02:42.289 --> 00:02:46.025
+The storage hash, is the root node of the Patricia tree.
+
+00:02:46.025 --> 00:02:49.905
+The Patricia tree is the data structure that Ethereum uses.
+
+00:02:49.905 --> 00:02:54.044
+This tree stores the hash containing the contents of the account.
+
+00:02:54.044 --> 00:02:55.884
+Next, the code hash.
+
+00:02:55.884 --> 00:02:58.919
+Is the hash of the code within the smart contract.
+
+00:02:58.919 --> 00:03:03.019
+This code executes every time a call is made to the contract.
+
+00:03:03.020 --> 00:03:05.105
+While other fields can be changed,
+
+00:03:05.104 --> 00:03:06.969
+this hash cannot change.
+
+00:03:06.969 --> 00:03:11.444
+This is the reason that smart contract code cannot change after it's deployed.
+
+00:03:11.444 --> 00:03:13.614
+In E0A's, there's no code.
+
+00:03:13.615 --> 00:03:16.545
+So, the code hash field is an empty string.
+
+00:03:16.544 --> 00:03:20.074
+That wraps up this overview of externally owned accounts,
+
+00:03:20.074 --> 00:03:23.250
+contract accounts, and each of their state variables.
+
+00:03:23.250 --> 00:03:26.740
+To summarize, EOA's are tied to private keys,
+
+00:03:26.740 --> 00:03:31.435
+don't hold code, maintain a balance of Ether, and consent transactions.
+
+00:03:31.435 --> 00:03:34.550
+CA's, have code, a balance of Ether and can
+
+00:03:34.550 --> 00:03:38.430
+execute this code when triggered by transactions or messages.
+
+00:03:38.430 --> 00:03:43.540
+Coming up, we'll look at the types of transactions and messages that exist.
+
+00:03:43.539 --> 00:03:45.560
+This will help us better understand,
+
+00:03:45.560 --> 00:03:49.920
+how transactions take place between EOA's and CA's.
+

@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.174
+Hi, and welcome to the lesson.
+
+00:00:02.174 --> 00:00:05.109
+In this lesson, we'll go over the basics of Ethereum.
+
+00:00:05.110 --> 00:00:09.050
+I'm PK, and I'll be your instructor for this and the next few lessons.
+
+00:00:09.050 --> 00:00:12.035
+You haven't seen much of me yet, but Brandy, Elena,
+
+00:00:12.035 --> 00:00:14.160
+and I had been behind the scenes building
+
+00:00:14.160 --> 00:00:17.030
+the projects you have been completing throughout the program.
+
+00:00:17.030 --> 00:00:19.230
+As well as working with Udacity,
+
+00:00:19.230 --> 00:00:21.285
+I've funded to blockchain startups.
+
+00:00:21.285 --> 00:00:23.219
+At my most recent startup, LINCD,
+
+00:00:23.219 --> 00:00:27.379
+we specialize in blockchain strategy and distributed ledger infrastructure.
+
+00:00:27.379 --> 00:00:32.195
+Our focus is helping companies understand how do blockchain enable their business.
+
+00:00:32.195 --> 00:00:33.570
+On a daily basis,
+
+00:00:33.570 --> 00:00:35.868
+I work on a variety of blockchain technologies,
+
+00:00:35.868 --> 00:00:38.240
+including Ethereum and I will bring
+
+00:00:38.240 --> 00:00:41.719
+that hands-on knowledge to teach you how to get started for yourself.
+
+00:00:41.719 --> 00:00:43.914
+Throughout the lesson, you'll hear from me,
+
+00:00:43.914 --> 00:00:46.350
+and also learn some new concepts from Joe.
+
+00:00:46.350 --> 00:00:50.385
+An instructor you're probably familiar with from earlier in the program.
+
+00:00:50.384 --> 00:00:53.445
+Earlier, you learned how the Bitcoin blockchain works.
+
+00:00:53.445 --> 00:00:57.810
+Throughout this course, we'll use these ideas to introduce the Ethereum blockchain.
+
+00:00:57.810 --> 00:01:00.234
+You get up and running with Ethereum's tools,
+
+00:01:00.234 --> 00:01:02.755
+developer ecosystem, and protocol.
+
+00:01:02.755 --> 00:01:07.579
+Ethereum is a completely separate blockchain platform from what we've gone over so far.
+
+00:01:07.579 --> 00:01:09.719
+We'll start off by introducing its purpose,
+
+00:01:09.719 --> 00:01:11.780
+along with some basic terminology.
+
+00:01:11.780 --> 00:01:15.504
+By the end of this lesson, you'll start using some of these tools for yourself.
+
+00:01:15.504 --> 00:01:17.929
+The goal is to make sure you're prepared to develop
+
+00:01:17.930 --> 00:01:20.775
+more complex applications using Ethereum.
+
+00:01:20.775 --> 00:01:23.660
+You'll also get to know the supply side of Eata,
+
+00:01:23.659 --> 00:01:26.524
+the various consensus algorithms available to us,
+
+00:01:26.525 --> 00:01:29.445
+current performance of the Ethereum network, scaling plans,
+
+00:01:29.444 --> 00:01:33.289
+and also understand topics such as accounts, transactions,
+
+00:01:33.290 --> 00:01:35.635
+gas, fees, network types,
+
+00:01:35.635 --> 00:01:38.130
+and the Ethereum, which we'll mention itself.
+
+00:01:38.129 --> 00:01:40.909
+I am really excited to teach you these topics,
+
+00:01:40.909 --> 00:01:44.599
+and can't wait to show you a Ethereum through a dev lens.
+

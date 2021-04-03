@@ -1,0 +1,250 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.250
+In this lesson, we'll go over the various Ethereum network types,
+
+00:00:03.250 --> 00:00:07.684
+and how to connect to them using the MetaMask browser wallet.
+
+00:00:07.684 --> 00:00:11.414
+We'll introduce you to some of the faucets where you can
+
+00:00:11.414 --> 00:00:14.769
+request for some play Ether for your wallet counts.
+
+00:00:14.769 --> 00:00:16.879
+Now, let's install MetaMask.
+
+00:00:16.879 --> 00:00:19.564
+So, I'm at metamask.io,
+
+00:00:19.565 --> 00:00:22.700
+and I've attached this link in the resources section.
+
+00:00:22.699 --> 00:00:24.679
+So, you have two options;
+
+00:00:24.679 --> 00:00:27.230
+you can download this as a Chrome plugin,
+
+00:00:27.230 --> 00:00:29.094
+or a Brave browser plugin.
+
+00:00:29.094 --> 00:00:31.019
+So, I use Chrome and I use Brave as well.
+
+00:00:31.019 --> 00:00:33.524
+So, for this demo, we'll just use Chrome.
+
+00:00:33.524 --> 00:00:35.119
+Yes. So, just click on this,
+
+00:00:35.119 --> 00:00:37.504
+go through the installation process,
+
+00:00:37.505 --> 00:00:41.700
+and you'll have the MetaMask installed as a Chrome plugin.
+
+00:00:41.700 --> 00:00:44.020
+Now, once you have it installed,
+
+00:00:44.020 --> 00:00:46.845
+you can login into MetaMask.
+
+00:00:46.844 --> 00:00:51.524
+And this is one of the ways you can login.
+
+00:00:51.524 --> 00:00:56.989
+In here, if you click on the different networks that are available,
+
+00:00:56.990 --> 00:00:59.210
+you have the main network,
+
+00:00:59.210 --> 00:01:03.689
+and you have the various tests networks as well.
+
+00:01:08.469 --> 00:01:10.739
+Let's go back. Main Ethereum,
+
+00:01:10.739 --> 00:01:12.909
+it uses Proof of Work,
+
+00:01:12.909 --> 00:01:15.594
+Ropsten uses Proof of Work as well,
+
+00:01:15.594 --> 00:01:18.935
+Kovan uses Proof of Authority,
+
+00:01:18.935 --> 00:01:21.439
+and Rinkeby uses Proof of Authority as well.
+
+00:01:21.439 --> 00:01:24.530
+So, for this illustration, we'll use Rinkeby,
+
+00:01:24.530 --> 00:01:30.969
+and then I'll just quickly show you how to request for some play money.
+
+00:01:30.969 --> 00:01:32.289
+So, if you're using MetaMask,
+
+00:01:32.290 --> 00:01:35.234
+you can go to faucet.metamask.io,
+
+00:01:35.234 --> 00:01:38.375
+and you can request for 'play ether' here.
+
+00:01:38.375 --> 00:01:41.290
+So, once you've connected to one of the addresses,
+
+00:01:41.290 --> 00:01:44.695
+let's say Rinkeby, you can just request here,
+
+00:01:44.694 --> 00:01:46.669
+and then it'll show up in your MetaMask.
+
+00:01:46.670 --> 00:01:49.359
+So, you'll have a transaction.
+
+00:01:49.359 --> 00:01:51.069
+So, I've requested before,
+
+00:01:51.069 --> 00:01:53.759
+so when you click on that link,
+
+00:01:53.760 --> 00:01:59.465
+it will show you in ropsten.etherscan when the transaction is successful.
+
+00:01:59.465 --> 00:02:02.549
+There's other ways to request as well.
+
+00:02:02.549 --> 00:02:04.594
+So, if you went to,
+
+00:02:04.594 --> 00:02:11.849
+let's say faucet.rinkeby.io, you can also request,
+
+00:02:11.849 --> 00:02:15.574
+it has three ways, you can essentially follow these instructions;
+
+00:02:15.574 --> 00:02:19.379
+Post a tweet or a Google plus or Facebook,
+
+00:02:19.379 --> 00:02:21.814
+and get the link and post it here,
+
+00:02:21.814 --> 00:02:27.159
+and you can get the play money given to you through the faucet.
+
+00:02:27.159 --> 00:02:30.354
+So, I've actually posted on Google Plus.
+
+00:02:30.354 --> 00:02:33.074
+So, this is basically my Ethereum address,
+
+00:02:33.074 --> 00:02:35.569
+I copy that link and I put it here,
+
+00:02:35.569 --> 00:02:37.245
+and then you can say, 'give me Ether'.
+
+00:02:37.245 --> 00:02:38.759
+So, depending on what you want,
+
+00:02:38.759 --> 00:02:41.120
+you can get three Ethers every eight hours,
+
+00:02:41.120 --> 00:02:46.025
+7.5 every day and then 18.75 every three days.
+
+00:02:46.025 --> 00:02:48.530
+So, I'm just going to go with this one,
+
+00:02:48.530 --> 00:02:52.199
+and it says, 'Click on all those store fronts'.
+
+00:02:52.199 --> 00:02:54.604
+So, I think that looks like a store front,
+
+00:02:54.604 --> 00:02:57.099
+that one also looks like a storefront.
+
+00:02:57.099 --> 00:02:59.579
+Let's see if it's going to work.
+
+00:03:01.590 --> 00:03:05.629
+It's thinking thinking thinking.
+
+00:03:09.830 --> 00:03:12.600
+So, while that's going through,
+
+00:03:12.599 --> 00:03:18.329
+let's just go through a quick transaction.
+
+00:03:18.330 --> 00:03:20.750
+So, I've got some play, Ether here.
+
+00:03:21.330 --> 00:03:26.259
+So, in the previous class, we went through the graphical user interface.
+
+00:03:26.258 --> 00:03:28.064
+Remember, we have four accounts, so,
+
+00:03:28.064 --> 00:03:32.310
+let's say we want to send some play Ether from a MetaMask account
+
+00:03:32.310 --> 00:03:37.074
+to my graphical user interface.
+
+00:03:37.074 --> 00:03:39.609
+So, I'll go here. Let me just get the address first.
+
+00:03:39.610 --> 00:03:41.970
+So, go to the first one,
+
+00:03:41.969 --> 00:03:44.145
+I'll copy my address,
+
+00:03:44.145 --> 00:03:47.745
+then I'll go to MetaMask and I'll say, 'send',
+
+00:03:47.745 --> 00:03:56.485
+and over here, so let's say I'm sending one Ether, and say 'confirm'.
+
+00:03:56.485 --> 00:03:58.450
+You're signing your transaction,
+
+00:03:58.449 --> 00:04:01.479
+and then within a few seconds,
+
+00:04:01.479 --> 00:04:04.619
+you should get, there you go.
+
+00:04:04.620 --> 00:04:06.594
+So, it went up to 6.5,
+
+00:04:06.594 --> 00:04:09.185
+it was 5.5 before we started the transaction.
+
+00:04:09.185 --> 00:04:12.009
+Yes. So, in conclusion,
+
+00:04:12.009 --> 00:04:14.849
+we went over the various Ethereum network types,
+
+00:04:14.849 --> 00:04:17.469
+and how to connect them using MetaMask,
+
+00:04:17.470 --> 00:04:19.380
+you browse a wallet plug-in.
+
+00:04:19.379 --> 00:04:24.129
+Now you know how to request for some play Ether for your faucets.
+
+00:04:24.129 --> 00:04:26.155
+This wraps up this section,
+
+00:04:26.154 --> 00:04:28.079
+we'll see you in the next video.
+

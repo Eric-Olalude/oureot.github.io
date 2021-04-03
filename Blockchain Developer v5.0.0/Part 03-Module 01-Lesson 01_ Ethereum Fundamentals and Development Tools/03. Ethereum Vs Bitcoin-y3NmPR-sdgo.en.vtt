@@ -1,0 +1,202 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.205
+As you've seen, there are many similarities and differences between Bitcoin and Ethereum.
+
+00:00:05.205 --> 00:00:07.890
+At this point, it's helpful to compare them to get
+
+00:00:07.889 --> 00:00:10.855
+a better idea of how each of these platforms operate.
+
+00:00:10.855 --> 00:00:13.075
+In this video, we'll walk through a table,
+
+00:00:13.074 --> 00:00:15.769
+comparing and contrasting Bitcoin with Ethereum,
+
+00:00:15.769 --> 00:00:18.120
+across a few of their core attributes.
+
+00:00:18.120 --> 00:00:20.009
+We'll look at things like, permissions,
+
+00:00:20.009 --> 00:00:22.530
+scalability, currencies, and more.
+
+00:00:22.530 --> 00:00:28.425
+Let's get started. First, both Bitcoin and Ethereum have permissionless restrictions.
+
+00:00:28.425 --> 00:00:32.454
+That means that anyone who wants to validate transactions and create blocks,
+
+00:00:32.454 --> 00:00:37.655
+can do this, there's no restrictions on becoming a part of either of these networks.
+
+00:00:37.655 --> 00:00:40.454
+This is different from a permission system.
+
+00:00:40.454 --> 00:00:42.079
+In a permission system,
+
+00:00:42.079 --> 00:00:46.179
+notes would need permission from a central authority to join the network.
+
+00:00:46.179 --> 00:00:49.429
+Networks achieve consensus in each of these platforms,
+
+00:00:49.429 --> 00:00:51.835
+using the Proof of Work algorithm.
+
+00:00:51.835 --> 00:00:55.310
+Ethereum is currently working on migrating to Proof of Stake,
+
+00:00:55.310 --> 00:00:57.344
+with a project known as Casper.
+
+00:00:57.344 --> 00:00:59.149
+We'll highlight this more later,
+
+00:00:59.149 --> 00:01:01.869
+but for now, they're both using Proof of Work.
+
+00:01:01.869 --> 00:01:05.599
+Next, the scalability of these platforms are similar.
+
+00:01:05.599 --> 00:01:09.629
+Because of this, they share both upsides and downsides with each other.
+
+00:01:09.629 --> 00:01:12.019
+Allowing anyone to join the network is great
+
+00:01:12.019 --> 00:01:14.739
+for scaling the user base and expanding quickly.
+
+00:01:14.739 --> 00:01:18.649
+That said, both platforms struggle to scale performance.
+
+00:01:18.650 --> 00:01:23.320
+Figuring out how to do this is a huge discussion taking place in both communities.
+
+00:01:23.319 --> 00:01:27.604
+For comparison, Bitcoin takes about 10 minutes to settle a transaction,
+
+00:01:27.605 --> 00:01:30.260
+and Ethereum takes about 15 seconds.
+
+00:01:30.260 --> 00:01:32.370
+That might seem like a huge improvement,
+
+00:01:32.370 --> 00:01:35.025
+but let's compare that to Visa and MasterCard.
+
+00:01:35.025 --> 00:01:38.540
+These process about 5,000 transactions per second.
+
+00:01:38.540 --> 00:01:42.555
+With that in mind, you can see there's still a lot of room for improvement.
+
+00:01:42.555 --> 00:01:45.830
+Next, let's look at the regulation of the protocol.
+
+00:01:45.829 --> 00:01:49.579
+By this, we mean the way decisions get made within the community.
+
+00:01:49.579 --> 00:01:54.000
+Bitcoin and Ethereum both have improvement proposal systems in place.
+
+00:01:54.000 --> 00:01:57.890
+Because of this, they're able to work with both an open source community,
+
+00:01:57.890 --> 00:01:59.650
+as well as a core set of developers,
+
+00:01:59.650 --> 00:02:02.285
+to contribute to its developing ecosystem.
+
+00:02:02.284 --> 00:02:04.909
+This means, there's a huge opportunity for you to
+
+00:02:04.909 --> 00:02:07.920
+get involved in these platforms to help them improve.
+
+00:02:07.920 --> 00:02:11.015
+Both of these platforms are pseudoanonymous,
+
+00:02:11.014 --> 00:02:14.619
+this means that their identities are tied to their public keys.
+
+00:02:14.620 --> 00:02:17.270
+So, while transactions are still anonymous,
+
+00:02:17.270 --> 00:02:19.370
+they're not completely anonymous.
+
+00:02:19.370 --> 00:02:21.710
+It's possible to see who made a transaction,
+
+00:02:21.710 --> 00:02:24.515
+if you can trace the user to their public key.
+
+00:02:24.514 --> 00:02:29.229
+Each of these platforms also have a native currency, Bitcoin and Ether.
+
+00:02:29.229 --> 00:02:32.139
+This isn't always the case with other platforms.
+
+00:02:32.139 --> 00:02:35.319
+In some cases, a platform won't have any currency,
+
+00:02:35.319 --> 00:02:36.519
+or they could have a token,
+
+00:02:36.520 --> 00:02:39.500
+that's dependent on a platform like Ethereum, to operate.
+
+00:02:39.500 --> 00:02:44.274
+Finally, the potential for scripting is different between each of these platforms.
+
+00:02:44.274 --> 00:02:46.419
+This is the main focus of these lessons,
+
+00:02:46.419 --> 00:02:48.719
+so we won't go into too much detail here.
+
+00:02:48.719 --> 00:02:51.025
+The languages provided by Ethereum,
+
+00:02:51.025 --> 00:02:55.075
+like Solidity, are the basis for smart contracts that we'll be developing.
+
+00:02:55.074 --> 00:02:58.119
+While Bitcoin does have some scripting functionality,
+
+00:02:58.120 --> 00:03:01.085
+it's not as capable as Ethereum in the sense.
+
+00:03:01.085 --> 00:03:05.745
+All right. So that finishes up this side-by-side comparison of these platforms.
+
+00:03:05.745 --> 00:03:09.025
+As you can see, they're actually more similar than they are different.
+
+00:03:09.025 --> 00:03:11.580
+Some of the main differences are their scripting,
+
+00:03:11.580 --> 00:03:14.743
+currencies, and in the future of their consensus algorithms.
+
+00:03:14.743 --> 00:03:17.909
+Keep this in mind as you continue to learn more about Ethereum.
+
+00:03:17.909 --> 00:03:21.740
+Working through these new tools and ecosystems can get pretty complicated.
+
+00:03:21.740 --> 00:03:25.219
+Being able to relate this new information to ideas you already know,
+
+00:03:25.219 --> 00:03:28.319
+will give you a great start as you continue learning.
+

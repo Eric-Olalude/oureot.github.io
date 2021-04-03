@@ -1,0 +1,193 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.460 --> 00:00:05.705
+By now, you must be eager to get some hands-on experience with the Ethereum tooling,
+
+00:00:05.705 --> 00:00:08.890
+various client types, different networks, wallet,
+
+00:00:08.890 --> 00:00:12.409
+and how to set up a death sandbox for your projects.
+
+00:00:12.409 --> 00:00:14.025
+So, in this section,
+
+00:00:14.025 --> 00:00:17.500
+we'll learn how to download and setup in Ethereum Command Line Interface.
+
+00:00:17.500 --> 00:00:19.140
+The specific client app,
+
+00:00:19.140 --> 00:00:22.420
+we shall focus on is called go-ethereum.
+
+00:00:22.420 --> 00:00:24.160
+So, but before we do that,
+
+00:00:24.160 --> 00:00:27.350
+it's important to know what other client types available,
+
+00:00:27.350 --> 00:00:30.335
+but just in case you need it for future reference.
+
+00:00:30.335 --> 00:00:31.560
+So, as you can see,
+
+00:00:31.559 --> 00:00:36.710
+multiple client implementations across different operating systems exist.
+
+00:00:36.710 --> 00:00:40.189
+The list of languages is Go, Rust,
+
+00:00:40.189 --> 00:00:45.045
+C++, Python, JavaScript, Java, Ruby, and Haskell.
+
+00:00:45.045 --> 00:00:49.770
+So, shortly we'll work through the Go Implementation.
+
+00:00:49.770 --> 00:00:53.984
+The go-ethereum client is also referred as Geth.
+
+00:00:53.984 --> 00:00:59.159
+This is go-implementation to run a command line interface often ethereum node.
+
+00:00:59.159 --> 00:01:00.464
+By running this node,
+
+00:01:00.465 --> 00:01:02.885
+you have the option to participate in
+
+00:01:02.884 --> 00:01:06.194
+any of the live networks including the main and the test.
+
+00:01:06.194 --> 00:01:08.899
+Some of the functions are you can create accounts,
+
+00:01:08.900 --> 00:01:11.149
+transfer funds between ethereum addresses,
+
+00:01:11.149 --> 00:01:12.534
+you can create contracts,
+
+00:01:12.534 --> 00:01:15.640
+send transactions, explore blockchain history.
+
+00:01:15.640 --> 00:01:20.180
+Now, you can follow the instructions on this page and install
+
+00:01:20.180 --> 00:01:24.670
+the latest version of Geth on your respective machines and operating systems of a dash,
+
+00:01:24.670 --> 00:01:28.799
+the link to this page in the resources section for you.
+
+00:01:28.969 --> 00:01:36.329
+For example here, we will be installing Geth using Homebrew on a Mac.
+
+00:01:36.329 --> 00:01:40.170
+The command you want to run, it's right there.
+
+00:01:40.170 --> 00:01:43.454
+So, you can say, brew tap ethereum/ethereum,
+
+00:01:43.454 --> 00:01:46.640
+brew install ethereum, or if you've already installed it,
+
+00:01:46.640 --> 00:01:49.390
+you can use brew upgrade ethereum.
+
+00:01:49.879 --> 00:01:55.104
+So, just go to the installation steps, it'll say,
+
+00:01:55.105 --> 00:01:57.555
+so now the installation is done,
+
+00:01:57.555 --> 00:02:03.914
+let's run the Geth Client and sync up to one of the tests networks.
+
+00:02:03.914 --> 00:02:08.455
+Later on, we'll cover the various ethereum networks and sync modes.
+
+00:02:08.455 --> 00:02:11.975
+So, we'll be syncing to the Rinkeby test network.
+
+00:02:11.974 --> 00:02:14.819
+The command you want to run is Geth.
+
+00:02:14.819 --> 00:02:17.019
+I'll give you the command lines in a minute.
+
+00:02:17.020 --> 00:02:21.750
+So, it's geth --rinkeby -syncmode
+
+00:02:21.750 --> 00:02:26.139
+"fast" and I've attached the link to this page in the bottom.
+
+00:02:26.139 --> 00:02:28.029
+So, the command like I said,
+
+00:02:28.030 --> 00:02:30.650
+it's brew install ethereum or brew upgrade.
+
+00:02:30.650 --> 00:02:34.305
+I've already got ethereum installed, so I won't do that.
+
+00:02:34.305 --> 00:02:44.335
+So, the command you would run as geth --rinkeby --syncmode so within double-quotes fast.
+
+00:02:44.335 --> 00:02:46.080
+So, when you run that,
+
+00:02:46.080 --> 00:02:48.719
+you will have something like this running.
+
+00:02:48.719 --> 00:02:52.194
+So, this is basically what they'll run a process.
+
+00:02:52.194 --> 00:02:55.120
+So, once get this running on your machine or it's
+
+00:02:55.120 --> 00:02:58.855
+syncing with the rest of the Ethereum network,
+
+00:02:58.854 --> 00:03:03.699
+every 15 seconds or so you will see a new block being imported.
+
+00:03:03.699 --> 00:03:05.299
+So, for every row,
+
+00:03:05.300 --> 00:03:08.180
+you'll notice that the following fields are shown like you'll
+
+00:03:08.180 --> 00:03:13.084
+have something call the blocks, the info,
+
+00:03:13.084 --> 00:03:17.655
+the blocks that transactions message gas,
+
+00:03:17.655 --> 00:03:21.520
+elapsed time, message gas,
+
+00:03:21.520 --> 00:03:23.939
+number hash and cash.
+
+00:03:23.939 --> 00:03:28.280
+So that's typically what I wanted to cover in this lesson.
+
+00:03:28.280 --> 00:03:34.960
+So, having gone over some berries Client Types and witnessing how to download, install,
+
+00:03:34.960 --> 00:03:39.360
+and run Geth on Ethereum as a command line interface,
+
+00:03:39.360 --> 00:03:44.299
+it's your turn to just give it a go and let us know if you run into any problems,
+
+00:03:44.299 --> 00:03:47.284
+just reach out to us in the community channel.
+
+00:03:47.284 --> 00:03:52.799
+In the next section, I'll cover ethereum graphical user interface.
+

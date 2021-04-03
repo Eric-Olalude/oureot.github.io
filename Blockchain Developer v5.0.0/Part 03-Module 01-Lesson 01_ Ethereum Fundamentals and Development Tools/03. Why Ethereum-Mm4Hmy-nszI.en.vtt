@@ -1,0 +1,187 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.339
+Throughout this lesson, we'll work through
+
+00:00:02.339 --> 00:00:05.424
+many new ideas related to the Ethereum protocol.
+
+00:00:05.424 --> 00:00:07.564
+Before jumping into these ideas,
+
+00:00:07.565 --> 00:00:10.850
+it's helpful to understand why Ethereum exists at all.
+
+00:00:10.849 --> 00:00:15.019
+In this section, we'll answer a few important questions about Ethereum.
+
+00:00:15.019 --> 00:00:18.884
+What are its goals? Why was it even created in the first place?
+
+00:00:18.885 --> 00:00:21.315
+We'll compare Ethereum to earlier protocols,
+
+00:00:21.315 --> 00:00:23.615
+and discuss how it tries to improve on them.
+
+00:00:23.614 --> 00:00:28.179
+To start, here's how Ethereum defines themselves on Ethereumm.org.
+
+00:00:28.179 --> 00:00:31.859
+They're ''A decentralized platform that runs smart contracts:
+
+00:00:31.859 --> 00:00:36.344
+applications that run exactly as programmed without any possibility of downtime,
+
+00:00:36.344 --> 00:00:39.719
+censorship, fraud, or third-party interference.''
+
+00:00:39.719 --> 00:00:44.489
+With that in mind, let's look at why they chose to become this type of platform.
+
+00:00:44.490 --> 00:00:48.385
+Earlier blockchain protocols functions similar to a machine.
+
+00:00:48.384 --> 00:00:51.045
+Like bikes, toasters, and cars.
+
+00:00:51.045 --> 00:00:53.760
+They're created to serve one single purpose.
+
+00:00:53.759 --> 00:00:56.989
+In Bitcoin, we saw that they solved for currency.
+
+00:00:56.990 --> 00:01:01.630
+Other early blockchain protocols serve for single issues in a similar way.
+
+00:01:01.630 --> 00:01:05.870
+The next set of blockchain protocols decided to become more flexible.
+
+00:01:05.870 --> 00:01:11.075
+This allows them to adapt to a few possible applications instead of focusing on one.
+
+00:01:11.075 --> 00:01:13.745
+These protocols were more like a Swiss army knife.
+
+00:01:13.745 --> 00:01:15.500
+If you need a new functionality,
+
+00:01:15.500 --> 00:01:17.659
+these protocols could adapt to allow it.
+
+00:01:17.659 --> 00:01:21.884
+This allowed the protocol to change based on the needs of their users.
+
+00:01:21.885 --> 00:01:27.320
+The problem with these protocols is that the upgrades take a lot of work from developers.
+
+00:01:27.319 --> 00:01:31.819
+I like to think of this type of protocol as functioning like Legos.
+
+00:01:31.819 --> 00:01:34.099
+Every time someone wants a new feature,
+
+00:01:34.099 --> 00:01:36.664
+you need to go and add in a new piece.
+
+00:01:36.665 --> 00:01:42.020
+Over time, this can add up and you end up with a huge tower that's difficult to manage.
+
+00:01:42.019 --> 00:01:44.164
+More specific to blockchains,
+
+00:01:44.165 --> 00:01:48.710
+these protocols often have a variety of transaction types. This is great.
+
+00:01:48.709 --> 00:01:50.444
+But if you want new functionality,
+
+00:01:50.444 --> 00:01:53.309
+engineers need to add new transaction types.
+
+00:01:53.310 --> 00:01:56.450
+In this case, the protocol keeps growing to fit the needs of
+
+00:01:56.450 --> 00:01:59.870
+users at the expense of becoming very complex.
+
+00:01:59.870 --> 00:02:02.150
+This is where Ethereum comes in.
+
+00:02:02.150 --> 00:02:06.530
+Ethereum set out to solve problems it solve with these earlier protocols.
+
+00:02:06.530 --> 00:02:07.939
+The goal it had in mind,
+
+00:02:07.939 --> 00:02:12.669
+was to create a generalized platform that allowed others to develop on top of it.
+
+00:02:12.669 --> 00:02:15.289
+This lets users define their own needs and
+
+00:02:15.289 --> 00:02:18.560
+develop apps that solve for their unique problems.
+
+00:02:18.560 --> 00:02:20.314
+By using this approach,
+
+00:02:20.314 --> 00:02:24.155
+Ethereum allows us to use the same ideas you already know about blockchains,
+
+00:02:24.155 --> 00:02:25.939
+and extend them even further.
+
+00:02:25.939 --> 00:02:30.780
+You can go beyond basic functions without Ethereum needing to update its protocol.
+
+00:02:30.780 --> 00:02:34.699
+This solution is more like an operating system than a Swiss army knife.
+
+00:02:34.699 --> 00:02:38.994
+Operating systems give you the tools to build many applications on top of it,
+
+00:02:38.995 --> 00:02:41.560
+and that's what Ethereum is set out to do.
+
+00:02:41.560 --> 00:02:45.379
+To do this, Ethereum has a programming language named solidity.
+
+00:02:45.379 --> 00:02:50.069
+We'll be working with solidity later to build applications on the Ethereum platform.
+
+00:02:50.069 --> 00:02:55.129
+In our case, we'll be making an app that allows you to register stars on the block chain.
+
+00:02:55.129 --> 00:02:59.419
+In other cases, you might want to create a supply chain management system,
+
+00:02:59.419 --> 00:03:02.519
+or even a game for collectible kittens like you'll see later.
+
+00:03:02.520 --> 00:03:04.064
+In each of these cases,
+
+00:03:04.064 --> 00:03:07.829
+the Ethereum protocol is what allows us to build on top of this platform.
+
+00:03:07.830 --> 00:03:10.230
+For that reason, we'll continue to explore
+
+00:03:10.229 --> 00:03:12.049
+this protocol and the tools you can use
+
+00:03:12.050 --> 00:03:14.390
+to work with it throughout the rest of this lesson.
+
+00:03:14.389 --> 00:03:17.779
+That wraps up the bit of the history that led to Ethereum.
+
+00:03:17.780 --> 00:03:20.719
+Hopefully, this helps you better understand where it came from,
+
+00:03:20.719 --> 00:03:23.919
+and the unique solution it provides to developers.
+

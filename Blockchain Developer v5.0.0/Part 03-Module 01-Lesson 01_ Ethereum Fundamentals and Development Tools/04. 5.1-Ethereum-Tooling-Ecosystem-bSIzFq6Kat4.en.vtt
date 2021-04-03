@@ -1,0 +1,238 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.210
+In this section, I'll go over some basic tools you'll
+
+00:00:03.210 --> 00:00:06.120
+start working with as you learn more about the Ethereum network.
+
+00:00:06.120 --> 00:00:10.185
+The goal of this video, is to give you a basic introduction to each of these tools.
+
+00:00:10.185 --> 00:00:13.350
+Throughout the lesson, we'll go further into the process of downloading,
+
+00:00:13.350 --> 00:00:15.300
+installing, and working with them.
+
+00:00:15.300 --> 00:00:19.245
+The first tool I'd like to introduce and show you, is called Etherscan.
+
+00:00:19.245 --> 00:00:22.215
+Etherscan is the Ethereum blockchain explorer.
+
+00:00:22.215 --> 00:00:26.235
+It gives you access to search the Ethereum network directly from a website.
+
+00:00:26.235 --> 00:00:29.415
+Anytime you're trying to search for details on smart contracts,
+
+00:00:29.415 --> 00:00:31.275
+accounts, or general ideas,
+
+00:00:31.275 --> 00:00:33.300
+this is a great place to start.
+
+00:00:33.300 --> 00:00:36.375
+Another important tool is called MetaMask.
+
+00:00:36.375 --> 00:00:39.930
+This browser extension brings Ethereum into your browser.
+
+00:00:39.930 --> 00:00:42.300
+Anytime you want to interact with a Dap,
+
+00:00:42.300 --> 00:00:45.375
+you'll need to get access to the Ethereum blockchain to do that.
+
+00:00:45.375 --> 00:00:47.650
+MetaMask provides this functionality,
+
+00:00:47.650 --> 00:00:49.310
+and helps you set up the accounts that can
+
+00:00:49.310 --> 00:00:51.530
+interact directly with the Ethereum blockchain.
+
+00:00:51.530 --> 00:00:53.255
+Next step, is Remix.
+
+00:00:53.255 --> 00:00:57.965
+Remix is an online integrated development environment for creating smart contracts.
+
+00:00:57.965 --> 00:00:59.570
+It's really easy to get started with,
+
+00:00:59.570 --> 00:01:02.870
+and you'll be building your first application using this tool shortly.
+
+00:01:02.870 --> 00:01:05.885
+It has a ton of great features that allow you to build, compile,
+
+00:01:05.885 --> 00:01:09.500
+deploy, and test applications from completely within the browser.
+
+00:01:09.500 --> 00:01:13.000
+While writing smart contracts is the way to write information to the blockchain,
+
+00:01:13.000 --> 00:01:15.140
+a huge part of creating applications is
+
+00:01:15.140 --> 00:01:17.950
+being able to read information from the blockchain as well.
+
+00:01:17.950 --> 00:01:22.310
+That's done using the Ethereum JavaScript API, known as Web3.
+
+00:01:22.310 --> 00:01:24.890
+Almost anything you can find on Etherscan,
+
+00:01:24.890 --> 00:01:26.710
+anything you see while using MetaMask,
+
+00:01:26.710 --> 00:01:29.900
+and much more can all be done using the Web3 libraries.
+
+00:01:29.900 --> 00:01:33.340
+We'll be using this a lot to read and interact with the blockchain.
+
+00:01:33.340 --> 00:01:36.840
+Well, Web3 can give you access to the Ethereum blockchain,
+
+00:01:36.840 --> 00:01:40.790
+it doesn't actually give you the initial connection you'll need to send and receive data.
+
+00:01:40.790 --> 00:01:43.700
+To make the actual connection, you'll need a different tool.
+
+00:01:43.700 --> 00:01:47.560
+In these lessons, will be doing that using a tool named Infura.
+
+00:01:47.560 --> 00:01:50.120
+Once in Infura, you'll be able to access
+
+00:01:50.120 --> 00:01:51.860
+the endpoint URLs that help you make
+
+00:01:51.860 --> 00:01:54.515
+connections and start working with the Ethereum blockchain.
+
+00:01:54.515 --> 00:01:57.290
+Infura can give you access to the live networks,
+
+00:01:57.290 --> 00:02:00.800
+but you won't always need to connect to that network to develop applications.
+
+00:02:00.800 --> 00:02:05.310
+In some cases, it's best to use a local blockchain that you can build for yourself,
+
+00:02:05.310 --> 00:02:08.085
+that's done using a tool known as Ganache.
+
+00:02:08.085 --> 00:02:11.000
+Ganache gives you tons of functionality that helps you build
+
+00:02:11.000 --> 00:02:13.895
+and test applications using your own local blockchain.
+
+00:02:13.895 --> 00:02:15.980
+It's so simple to get up and running with this,
+
+00:02:15.980 --> 00:02:17.480
+and we'll do that later in the lesson.
+
+00:02:17.480 --> 00:02:21.290
+Ganache is part of a larger suite of tools known as Truffle.
+
+00:02:21.290 --> 00:02:23.875
+Truffle gives you a lot of functionality that makes creating,
+
+00:02:23.875 --> 00:02:26.715
+deploying, and testing applications much simpler.
+
+00:02:26.715 --> 00:02:30.260
+You'll start by building smart contracts and Remix like I mentioned,
+
+00:02:30.260 --> 00:02:32.240
+but you'll eventually be bringing these tools into
+
+00:02:32.240 --> 00:02:34.955
+Truffle because of all the added features it gives you.
+
+00:02:34.955 --> 00:02:38.615
+The final tool I wanted to introduce to you, is known as Geth.
+
+00:02:38.615 --> 00:02:41.480
+You'll hear this come up a lot when talking about Ethereum,
+
+00:02:41.480 --> 00:02:43.970
+but I actually won't be getting to it until a little bit later.
+
+00:02:43.970 --> 00:02:47.855
+Geth allows you to set up a local Ethereum node on your own computer.
+
+00:02:47.855 --> 00:02:49.550
+While this can be really helpful,
+
+00:02:49.550 --> 00:02:51.860
+it works similar to a Bitcoin node and that you need to
+
+00:02:51.860 --> 00:02:55.355
+download the entire blockchain to your own computer to get set up.
+
+00:02:55.355 --> 00:02:57.605
+While it does provide great functionality
+
+00:02:57.605 --> 00:02:59.660
+and I would say you should get setup eventually,
+
+00:02:59.660 --> 00:03:02.090
+I'll be leaning on using a tool like Infura to connect
+
+00:03:02.090 --> 00:03:04.640
+you to the blockchain without needing to download it for yourself.
+
+00:03:04.640 --> 00:03:06.320
+So, there's a quick overview of
+
+00:03:06.320 --> 00:03:08.860
+the tools we'll be working with throughout the upcoming lessons.
+
+00:03:08.860 --> 00:03:11.795
+Don't worry if you're not completely sure how this all fits together.
+
+00:03:11.795 --> 00:03:14.150
+I'll be going into a lot more detail about each of
+
+00:03:14.150 --> 00:03:16.940
+them as they become important for your development environment.
+
+00:03:16.940 --> 00:03:20.360
+I'll start with the tools that are quickest and easiest to get started with,
+
+00:03:20.360 --> 00:03:23.450
+and work towards those that take a little more effort to get up and running.
+
+00:03:23.450 --> 00:03:26.250
+Each of these tools can integrate with others in different ways,
+
+00:03:26.250 --> 00:03:29.075
+and I'll try to highlight as many useful features as I can.
+
+00:03:29.075 --> 00:03:31.290
+It's a lot of tools but they're so helpful,
+
+00:03:31.290 --> 00:03:32.810
+and I think that you'll be happy that you get
+
+00:03:32.810 --> 00:03:34.760
+the opportunity to work with them so quickly.
+
+00:03:34.760 --> 00:03:36.995
+So, coming up, we'll dive into some of these tools
+
+00:03:36.995 --> 00:03:39.730
+and start exploring the Ethereum blockchain for ourselves.
+

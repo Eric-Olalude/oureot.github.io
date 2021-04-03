@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.120
+If you prefer a graphical user interface over command-line interface,
+
+00:00:05.120 --> 00:00:07.665
+this lesson will introduce you to that.
+
+00:00:07.665 --> 00:00:13.914
+So, let's head over to ethereum.org and got this up and running here,
+
+00:00:13.914 --> 00:00:18.059
+and download the Ethereum graphical user interface.
+
+00:00:18.059 --> 00:00:21.599
+I use a Mac so I'm going to go download that particular version.
+
+00:00:21.600 --> 00:00:23.915
+So you click on this button called download.
+
+00:00:23.914 --> 00:00:28.070
+So, the installation page would look something like this.
+
+00:00:28.339 --> 00:00:32.270
+If you use a different computer or an operating system,
+
+00:00:32.270 --> 00:00:37.635
+you click on all versions and you can bring the appropriate version.
+
+00:00:37.634 --> 00:00:39.388
+So, if you use a Linux,
+
+00:00:39.389 --> 00:00:41.915
+download the Linux 32 or 64,
+
+00:00:41.914 --> 00:00:43.854
+if you got a Mac,
+
+00:00:43.854 --> 00:00:44.909
+so I'm using Mac so,
+
+00:00:44.909 --> 00:00:47.264
+I'll download this particular version here.
+
+00:00:47.265 --> 00:00:50.924
+After you download and you go to the installations,
+
+00:00:50.924 --> 00:00:55.184
+it'll install the applications folder,
+
+00:00:55.185 --> 00:00:57.755
+and then when you bring it up,
+
+00:00:57.755 --> 00:00:59.975
+when you launch the application,
+
+00:00:59.975 --> 00:01:05.320
+the Ethereum graphical user interface would look something like this.
+
+00:01:05.319 --> 00:01:08.954
+So, what it contains basically,
+
+00:01:08.954 --> 00:01:12.594
+right now I'm connected to the test network,
+
+00:01:12.594 --> 00:01:15.539
+so you got the main Ropsten and Rinkeby,
+
+00:01:15.540 --> 00:01:17.800
+some connect to Rinkeby.
+
+00:01:18.829 --> 00:01:24.185
+In this illustration, you got four accounts Mist account 1, 2, 3, 4.
+
+00:01:24.185 --> 00:01:26.460
+I'm on accounts overview.
+
+00:01:28.659 --> 00:01:33.384
+One thing to note is the ether that I have over here,
+
+00:01:33.385 --> 00:01:34.520
+it's play ether, so,
+
+00:01:34.519 --> 00:01:37.759
+you can use this ether in the main net,
+
+00:01:37.760 --> 00:01:40.185
+so, this only work under incubator network.
+
+00:01:40.185 --> 00:01:41.680
+So, give this a crack,
+
+00:01:41.680 --> 00:01:48.155
+see you're able to installed the graphical UI with the Ethereum wallet in the Mist,
+
+00:01:48.155 --> 00:01:50.510
+and if you don't have any accounts,
+
+00:01:50.510 --> 00:01:52.329
+I think it's usually have one account to begin with,
+
+00:01:52.329 --> 00:01:55.039
+and you can try adding new accounts as well.
+
+00:01:55.040 --> 00:01:56.805
+In the next lesson, what I'll do,
+
+00:01:56.805 --> 00:02:02.000
+I'll show you the different network types and how you can connect through that.
+

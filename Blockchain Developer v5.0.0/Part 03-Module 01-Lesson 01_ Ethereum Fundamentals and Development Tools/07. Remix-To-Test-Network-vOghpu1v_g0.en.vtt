@@ -1,0 +1,244 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.285
+Using the Test Ether, you just got for the Rinkeby Test Net,
+
+00:00:03.285 --> 00:00:05.715
+you can now deploy your DAPp to the test net.
+
+00:00:05.715 --> 00:00:07.890
+In this video, I'll show you how to do that.
+
+00:00:07.890 --> 00:00:09.720
+It's actually pretty simple.
+
+00:00:09.720 --> 00:00:11.190
+By the end of this video,
+
+00:00:11.190 --> 00:00:14.160
+my goal is to have you deploy contract to the test network,
+
+00:00:14.160 --> 00:00:17.220
+make some transactions, and view them on Etherscan.
+
+00:00:17.220 --> 00:00:19.470
+To start, go back to Remix.
+
+00:00:19.470 --> 00:00:21.930
+This should still have the smart contract from earlier.
+
+00:00:21.930 --> 00:00:24.030
+If not, go back and grab the code again,
+
+00:00:24.030 --> 00:00:26.085
+or type what you see here.
+
+00:00:26.085 --> 00:00:30.600
+From there, switch to MetaMask and make sure you're on the Rinkeby Test Net,
+
+00:00:30.600 --> 00:00:33.075
+and that there are some ether in your account.
+
+00:00:33.075 --> 00:00:35.685
+Great, looks like I'm all set up.
+
+00:00:35.685 --> 00:00:38.985
+Now, switch back to Remix and deploy your contract.
+
+00:00:38.985 --> 00:00:43.010
+You should see creation of message pending show up in your Remix terminal.
+
+00:00:43.010 --> 00:00:45.170
+What's happening here is that it's waiting for you
+
+00:00:45.170 --> 00:00:47.365
+to confirm the transaction for MetaMask.
+
+00:00:47.365 --> 00:00:50.450
+Open MetaMask backup and you'll see a transaction labeled,
+
+00:00:50.450 --> 00:00:54.215
+Contract Deployment with a specific gas fee associated with it.
+
+00:00:54.215 --> 00:00:56.975
+The gas fee is the cost of making a transaction
+
+00:00:56.975 --> 00:00:59.855
+and deploying contract is considered a transaction.
+
+00:00:59.855 --> 00:01:01.445
+We'll cover more on this later.
+
+00:01:01.445 --> 00:01:04.215
+You can hit Confirm to accept the transaction.
+
+00:01:04.215 --> 00:01:06.890
+Now, look back to the Remix terminal again.
+
+00:01:06.890 --> 00:01:10.370
+At first, there'll be a link to this transaction on Etherscan,
+
+00:01:10.370 --> 00:01:13.625
+and shortly after, you'll see that this message has been confirmed.
+
+00:01:13.625 --> 00:01:16.640
+The reason for this delay is that the transaction is waiting for
+
+00:01:16.640 --> 00:01:20.210
+confirmation from the network of nodes that are supporting the test network.
+
+00:01:20.210 --> 00:01:22.790
+Once completed, this confirmation status will
+
+00:01:22.790 --> 00:01:25.550
+show up in both the terminal and in MetaMask.
+
+00:01:25.550 --> 00:01:29.960
+Click on the link to view this transaction on the test network using Etherscan.
+
+00:01:29.960 --> 00:01:34.295
+What you'll see here is that the transaction you made is live on the test network.
+
+00:01:34.295 --> 00:01:36.470
+You can view all the details from Etherscan
+
+00:01:36.470 --> 00:01:39.245
+just like any other transaction you looked up before.
+
+00:01:39.245 --> 00:01:43.370
+You can also use the contract link to view the details of your contract.
+
+00:01:43.370 --> 00:01:44.735
+It shows the balance,
+
+00:01:44.735 --> 00:01:47.795
+the transactions, the contract creator, and more.
+
+00:01:47.795 --> 00:01:50.570
+Down here is the details of all the transactions,
+
+00:01:50.570 --> 00:01:52.145
+which right now is just one.
+
+00:01:52.145 --> 00:01:54.935
+There's also the block that your transaction is on and
+
+00:01:54.935 --> 00:01:58.430
+other information like how long ago the transaction was made.
+
+00:01:58.430 --> 00:02:00.890
+In the Code tab, you won't see much yet
+
+00:02:00.890 --> 00:02:03.385
+because this isn't considered a verified contract.
+
+00:02:03.385 --> 00:02:06.590
+You can click the link to see the steps needed to verify the contract,
+
+00:02:06.590 --> 00:02:08.435
+but we won't be doing that here.
+
+00:02:08.435 --> 00:02:10.750
+If you do get the contract verified,
+
+00:02:10.750 --> 00:02:14.855
+you'll see it show up under the Blockchain tab by clicking Verified Contracts.
+
+00:02:14.855 --> 00:02:18.905
+So, hopefully now, you have a contract published to the Ethereum test network.
+
+00:02:18.905 --> 00:02:22.030
+You can make a few transactions by setting messages if you'd like,
+
+00:02:22.030 --> 00:02:25.075
+and you'll see each of those appeared on the test network too.
+
+00:02:25.075 --> 00:02:29.000
+Remember, each time, you'll need to confirm the transaction using MetaMask,
+
+00:02:29.000 --> 00:02:30.815
+wait a little for it to get confirmed,
+
+00:02:30.815 --> 00:02:32.885
+and then be able to view it on Etherscan.
+
+00:02:32.885 --> 00:02:34.790
+This can be a slow process,
+
+00:02:34.790 --> 00:02:37.645
+and that's something we'll talk a little more about soon.
+
+00:02:37.645 --> 00:02:41.990
+Either way, it's cool to see your transactions going live so easily.
+
+00:02:41.990 --> 00:02:44.990
+The last thing I'll point out is that under input data,
+
+00:02:44.990 --> 00:02:47.225
+it doesn't actually show the message that you typed,
+
+00:02:47.225 --> 00:02:49.210
+it shows it in a different format.
+
+00:02:49.210 --> 00:02:51.365
+To view it how you originally typed it,
+
+00:02:51.365 --> 00:02:53.885
+click on the drop-down and select UTF-8.
+
+00:02:53.885 --> 00:02:57.830
+Once you do that, you'll see the original message you sent with the transaction.
+
+00:02:57.830 --> 00:02:59.420
+Using the same pattern,
+
+00:02:59.420 --> 00:03:01.925
+you could also deploy contracts to the main network.
+
+00:03:01.925 --> 00:03:05.880
+In this case, all you need to do is switch your MetaMask account to the main network,
+
+00:03:05.880 --> 00:03:09.725
+deploy another contract, and go through this exact same process again.
+
+00:03:09.725 --> 00:03:12.200
+One reason we won't be deploying to the main network
+
+00:03:12.200 --> 00:03:14.450
+much is that it costs you ether to do this,
+
+00:03:14.450 --> 00:03:17.510
+and to get ether on the main network costs real money.
+
+00:03:17.510 --> 00:03:20.930
+The process is almost completely the same as deploying to the test network,
+
+00:03:20.930 --> 00:03:23.450
+so you'll still know pretty much how to do it for yourself.
+
+00:03:23.450 --> 00:03:25.580
+But having to pay for every deployment,
+
+00:03:25.580 --> 00:03:28.640
+especially early on without knowing some of the security risks,
+
+00:03:28.640 --> 00:03:30.965
+can be limiting to your experience as a developer.
+
+00:03:30.965 --> 00:03:34.580
+For that reason, I'll point out ways that you could deploy to the main network,
+
+00:03:34.580 --> 00:03:37.445
+but we'll generally avoid that process while we're learning.
+
+00:03:37.445 --> 00:03:39.440
+That wraps up this video for now.
+
+00:03:39.440 --> 00:03:43.605
+Hopefully at this point, you can now deploy a contract from Remix to the test network,
+
+00:03:43.605 --> 00:03:47.130
+and can investigate the transactions you make for yourself.
+

@@ -1,0 +1,196 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.615
+Now that you are refreshed on the blockchain framework,
+
+00:00:02.615 --> 00:00:04.365
+let's enter the Ethereum world.
+
+00:00:04.365 --> 00:00:08.144
+We'll use this section to cover some basic Ethereum terminology.
+
+00:00:08.144 --> 00:00:10.549
+First, Ethereum is an open source,
+
+00:00:10.550 --> 00:00:12.925
+programmable public blockchain platform.
+
+00:00:12.925 --> 00:00:16.310
+It includes its own scripting language known as Solidity,
+
+00:00:16.309 --> 00:00:20.994
+and has an entirely separate ecosystem of tools from what we've learned before.
+
+00:00:20.995 --> 00:00:26.065
+These next terms I will go over are a huge part of what makes up this ecosystem.
+
+00:00:26.065 --> 00:00:30.980
+It's important to understand the Etheruem Virtual Machine also known as EVM.
+
+00:00:30.980 --> 00:00:33.840
+The EVM is capable of executing logic,
+
+00:00:33.840 --> 00:00:36.590
+algorithm, and process data inputs.
+
+00:00:36.590 --> 00:00:38.610
+Unlike its predecessors, Bitcoin,
+
+00:00:38.609 --> 00:00:41.835
+where a user is given a set of predefined operations.
+
+00:00:41.835 --> 00:00:45.499
+In a Ethereum world, a user is able to create their own operations.
+
+00:00:45.499 --> 00:00:47.925
+These operations can vary in complexity,
+
+00:00:47.924 --> 00:00:51.924
+which by design gives room for creating several decentralized applications,
+
+00:00:51.924 --> 00:00:56.844
+including cryptocurrencies and tokens which we'll cover later in this course.
+
+00:00:56.844 --> 00:01:02.394
+Next, one thing that really separates Ethereum from Bitcoin is that it's Turing Complete.
+
+00:01:02.395 --> 00:01:06.530
+Turing Complete is a term given to any software that is able to
+
+00:01:06.530 --> 00:01:10.825
+run code written by a dev or executed by an end user.
+
+00:01:10.825 --> 00:01:14.150
+In a Ethereum, a developer can write an application using
+
+00:01:14.150 --> 00:01:18.960
+a programming language call Solidity that is modeled after languages such as Python,
+
+00:01:18.959 --> 00:01:23.039
+JavaScript, and submited to an EVM for execution.
+
+00:01:23.040 --> 00:01:26.025
+In Bitcoin, there are limited ways to write applications,
+
+00:01:26.025 --> 00:01:27.890
+only to store information.
+
+00:01:27.890 --> 00:01:32.614
+As a developer, you'll use this to write what is known as a smart contract.
+
+00:01:32.614 --> 00:01:35.000
+In fact, you'll be using this language very
+
+00:01:35.000 --> 00:01:38.224
+soon in this course and for the upcoming project.
+
+00:01:38.224 --> 00:01:42.114
+A smart contract is basically a contract written in code.
+
+00:01:42.114 --> 00:01:45.409
+In a Ethereum, these are written to programmatically
+
+00:01:45.409 --> 00:01:49.700
+enforce rules set up in a negotiation between two parties.
+
+00:01:49.700 --> 00:01:53.329
+More specifically, a smart contract is also known as
+
+00:01:53.329 --> 00:01:57.265
+an object on the Ethereum blockchain that contains EVM code functions.
+
+00:01:57.265 --> 00:01:58.864
+Amongst many other things,
+
+00:01:58.864 --> 00:02:00.829
+a smart contract can store data,
+
+00:02:00.829 --> 00:02:03.804
+make decisions, interact with other contracts,
+
+00:02:03.805 --> 00:02:06.870
+and send data, the currency of Ethereum.
+
+00:02:06.870 --> 00:02:11.860
+These smart contracts will exist and be executable so long as the network exists.
+
+00:02:11.860 --> 00:02:13.915
+Just like other blockchain technologies,
+
+00:02:13.914 --> 00:02:18.689
+there is no one that owns this contract and no one can take it down, not even you.
+
+00:02:18.689 --> 00:02:20.960
+A smart contract will only disappear if
+
+00:02:20.960 --> 00:02:23.495
+it's programmed to self-destruct with a kill switch.
+
+00:02:23.495 --> 00:02:25.879
+For this reason, having a kill switch is
+
+00:02:25.879 --> 00:02:28.780
+a good practice when working with smart contracts.
+
+00:02:28.780 --> 00:02:31.610
+As we mentioned, smart contracts are written in
+
+00:02:31.610 --> 00:02:34.990
+adherence programming language which is known as Solidity.
+
+00:02:34.990 --> 00:02:39.545
+This is a high level language for coding and deploying smart contracts.
+
+00:02:39.544 --> 00:02:41.839
+It is not exactly like any other language,
+
+00:02:41.840 --> 00:02:47.525
+but its creation was heavily influenced by C++, Python, and JavaScript.
+
+00:02:47.525 --> 00:02:51.284
+Solidity has a few features similar to these other languages.
+
+00:02:51.284 --> 00:02:52.680
+It is statically typed,
+
+00:02:52.680 --> 00:02:55.155
+it supports inheritance and libraries,
+
+00:02:55.155 --> 00:02:57.689
+and has complex user defined types.
+
+00:02:57.689 --> 00:03:01.305
+Finally, all this leads towards one major goal of Ethereum,
+
+00:03:01.305 --> 00:03:04.465
+which is for Ethereum to become a world computer.
+
+00:03:04.465 --> 00:03:08.974
+Ethereum aims to implement a digital computer that is decentralized globally,
+
+00:03:08.974 --> 00:03:12.680
+and executes peer-to-peer transactions and contracts.
+
+00:03:12.680 --> 00:03:15.260
+The blockchain platform and public network
+
+00:03:15.259 --> 00:03:19.250
+together is termed as the general-purpose world computer.
+
+00:03:19.250 --> 00:03:22.159
+Ethereum isn't the only blocking attempting to do
+
+00:03:22.159 --> 00:03:25.504
+this but it was the first and it's still leading the way.
+
+00:03:25.504 --> 00:03:29.030
+For that reason, we'll be focusing on Ethereum as a platform.
+
+00:03:29.030 --> 00:03:33.205
+We'll use this to write our own smart contracts using Solidity,
+
+00:03:33.205 --> 00:03:37.400
+and we'll create applications that become part of this world computer.
+
