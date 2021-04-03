@@ -1,0 +1,226 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.410
+We just took an in-depth look at the difference between the Mainnet and the Testnet.
+
+00:00:05.410 --> 00:00:10.150
+Throughout this program, we'll be using the Testnet to build our application.
+
+00:00:10.150 --> 00:00:12.570
+Before fully committing to this network,
+
+00:00:12.570 --> 00:00:15.745
+it's important to also understand what the Regnet is.
+
+00:00:15.744 --> 00:00:20.199
+We thought it might be helpful to lay out a comparison between these two networks,
+
+00:00:20.199 --> 00:00:25.134
+then justify why we've chosen to use the Testnet for application.
+
+00:00:25.135 --> 00:00:29.460
+In this video, we'll compare the Testnet and the Regnet to get
+
+00:00:29.460 --> 00:00:31.530
+a better understanding of what the differences
+
+00:00:31.530 --> 00:00:34.450
+are that exists between these two networks.
+
+00:00:34.450 --> 00:00:37.040
+As we know, the Testnet is
+
+00:00:37.039 --> 00:00:41.909
+a development environment meant to allow developers to test their application.
+
+00:00:41.909 --> 00:00:47.879
+An alternative network known as the Regnet is also a local testing environment.
+
+00:00:47.880 --> 00:00:50.205
+The difference is that on the Regnet,
+
+00:00:50.204 --> 00:00:55.060
+developers can almost instantaneously generate blocks on demand for testing.
+
+00:00:55.060 --> 00:00:59.570
+They can create private coins with no real-world value.
+
+00:00:59.570 --> 00:01:04.754
+For our comparison, we'll run down the list of these eight characteristics.
+
+00:01:04.754 --> 00:01:07.339
+First, for each of these networks,
+
+00:01:07.340 --> 00:01:09.829
+the purpose is for testing applications.
+
+00:01:09.829 --> 00:01:13.310
+Nothing here is connected to the main live network,
+
+00:01:13.310 --> 00:01:15.984
+they're just tools for development.
+
+00:01:15.984 --> 00:01:18.578
+Even though they're both retesting,
+
+00:01:18.578 --> 00:01:21.799
+there is a major distinction between these two networks.
+
+00:01:21.799 --> 00:01:23.329
+While the Testnet is
+
+00:01:23.329 --> 00:01:27.900
+a public test environment with transactions that are broadcasted throughout the network,
+
+00:01:27.900 --> 00:01:34.250
+the Regnet is completely private and transactions are only seen on your local computer.
+
+00:01:34.250 --> 00:01:38.284
+This is possible because there are no peers on the Regnet.
+
+00:01:38.284 --> 00:01:41.239
+Transactions do not go through validation and
+
+00:01:41.239 --> 00:01:44.319
+there are no peers whose transactions you'll interact with.
+
+00:01:44.319 --> 00:01:50.334
+This lack of transactions means that the size is very small in comparison to the Testnet.
+
+00:01:50.334 --> 00:01:53.309
+On the Regnet, you can only download
+
+00:01:53.310 --> 00:01:56.368
+the core components necessary to run the application,
+
+00:01:56.368 --> 00:02:01.040
+and it only grows in size as you create more blocks and transactions yourself.
+
+00:02:01.040 --> 00:02:03.900
+That's much different than the Testnet where you
+
+00:02:03.900 --> 00:02:07.050
+have to sync to the network and download the blocks.
+
+00:02:07.049 --> 00:02:11.034
+Since there are no peers and there's no validation,
+
+00:02:11.034 --> 00:02:12.479
+blocks aren't going through
+
+00:02:12.479 --> 00:02:16.744
+the same transaction lifecycle on the Regnet as they do in other networks.
+
+00:02:16.745 --> 00:02:18.930
+Instead, on the Regnet,
+
+00:02:18.930 --> 00:02:22.135
+you can generate any number of blocks instantaneously,
+
+00:02:22.134 --> 00:02:24.814
+reducing the block time to zero.
+
+00:02:24.814 --> 00:02:27.509
+In both the Testnet and the Regnet,
+
+00:02:27.509 --> 00:02:29.514
+their coins have no value.
+
+00:02:29.514 --> 00:02:31.250
+However on the Regnet,
+
+00:02:31.250 --> 00:02:34.900
+it hasn't had the same problem with people trying to sell their coins as the Tester
+
+00:02:34.900 --> 00:02:38.789
+has and that's because even though both are worthless coins,
+
+00:02:38.789 --> 00:02:40.859
+the Regnet coins aren't even connected to
+
+00:02:40.860 --> 00:02:44.095
+a network that you could try to sell them even if you wanted to.
+
+00:02:44.094 --> 00:02:48.250
+Either way, don't try to sell either of these coins, they're just for testing.
+
+00:02:48.250 --> 00:02:52.409
+Another similarity between these networks is that the public keys are
+
+00:02:52.409 --> 00:02:57.194
+preceded with an m or n to differentiate them from the Mainnet.
+
+00:02:57.194 --> 00:02:59.259
+Finally as we mentioned,
+
+00:02:59.259 --> 00:03:02.424
+blocks on the Regnet are created instantaneously.
+
+00:03:02.425 --> 00:03:05.070
+Since there are no nodes and no hashing,
+
+00:03:05.069 --> 00:03:07.659
+there's also no block difficulty.
+
+00:03:07.659 --> 00:03:10.270
+That wraps it up for some of the differences between
+
+00:03:10.270 --> 00:03:13.250
+these two networks across these characteristics.
+
+00:03:13.250 --> 00:03:15.219
+There are times that you'll want to use
+
+00:03:15.219 --> 00:03:19.074
+the Testnet and other times where the Regnet is better suited.
+
+00:03:19.074 --> 00:03:21.609
+It's actually common to hear that the Regnet is
+
+00:03:21.610 --> 00:03:23.905
+a better environment for testing applications.
+
+00:03:23.905 --> 00:03:26.140
+It's true that it does allow you to do
+
+00:03:26.139 --> 00:03:29.344
+some things much faster than when using the Testnet.
+
+00:03:29.344 --> 00:03:33.990
+But we've chosen to move forward with the Testnet for a very specific reason.
+
+00:03:33.990 --> 00:03:38.820
+We've chosen the Testnet because we're doing more than developing on the blockchain.
+
+00:03:38.819 --> 00:03:41.444
+We're developing a Web service that takes
+
+00:03:41.444 --> 00:03:45.794
+user input to test and verify transactions from users.
+
+00:03:45.794 --> 00:03:48.599
+Since we'll be testing these applications with
+
+00:03:48.599 --> 00:03:51.424
+the Web service and collecting user information,
+
+00:03:51.425 --> 00:03:54.635
+we'll need to be able to interact with these users.
+
+00:03:54.634 --> 00:03:57.219
+For that reason, we're choosing to stick with
+
+00:03:57.219 --> 00:04:00.449
+the Testnet even though it's a little slower in some cases.
+
+00:04:00.449 --> 00:04:03.060
+Hopefully now you have a better idea of what
+
+00:04:03.060 --> 00:04:05.925
+the Testnet is used for and what the Regnet is used for,
+
+00:04:05.925 --> 00:04:10.050
+and why we are using the Testnet as our testing environment.
+

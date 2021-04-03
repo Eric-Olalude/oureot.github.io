@@ -1,0 +1,217 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.730
+Now that we're making transactions for ourselves,
+
+00:00:02.730 --> 00:00:06.470
+we can check out the details of them using an online block explorer.
+
+00:00:06.469 --> 00:00:10.230
+In this video, we'll find the transaction we just made
+
+00:00:10.230 --> 00:00:14.734
+and go over some important details of a Bitcoin TestNet Block Explorer.
+
+00:00:14.734 --> 00:00:18.119
+There are few options that you can use to explore block chains,
+
+00:00:18.120 --> 00:00:19.815
+and there are reasons that you may end up with
+
+00:00:19.815 --> 00:00:22.570
+a specific preference of one over another in the future.
+
+00:00:22.570 --> 00:00:25.260
+But for now, we'll be using this one for
+
+00:00:25.260 --> 00:00:29.315
+the website blockcypher.com because it has everything that we need.
+
+00:00:29.315 --> 00:00:32.810
+You can get there using the link that we've put down below this video.
+
+00:00:32.810 --> 00:00:34.484
+Before looking at your transaction,
+
+00:00:34.484 --> 00:00:36.445
+it helps to know what's going on here.
+
+00:00:36.445 --> 00:00:40.549
+First, check to make sure that you're on the Bitcoin TestNet.
+
+00:00:40.549 --> 00:00:46.649
+To do so, click on the drop-down and select Bitcoin TestNet from the list of options.
+
+00:00:46.649 --> 00:00:48.420
+Once you're on the TestNet,
+
+00:00:48.420 --> 00:00:51.585
+you will see that the page is broken into three main sections;
+
+00:00:51.585 --> 00:00:55.509
+Recent Blocks, current Fee Estimates,
+
+00:00:55.509 --> 00:00:57.434
+and the Latest Transactions.
+
+00:00:57.435 --> 00:01:01.725
+For the Recent Blocks, you'll see things like the height, the age,
+
+00:01:01.725 --> 00:01:05.090
+number of transactions, total Bitcoins sent,
+
+00:01:05.090 --> 00:01:08.105
+total fees, and the block size.
+
+00:01:08.105 --> 00:01:11.040
+These are hopefully pretty familiar attributes by now.
+
+00:01:11.040 --> 00:01:14.355
+Notice that the height is always increasing by one,
+
+00:01:14.355 --> 00:01:17.390
+and the age of each is more recent than the
+
+00:01:17.390 --> 00:01:23.079
+last and that's because it's listing each block in the order that they're being created.
+
+00:01:23.079 --> 00:01:26.359
+The total amount sent and the fees are
+
+00:01:26.359 --> 00:01:29.814
+dependent on what was specified by the user making the transaction.
+
+00:01:29.814 --> 00:01:34.390
+The transactions and the size are related to one another.
+
+00:01:34.390 --> 00:01:38.454
+More transactions in the block means more data is stored on the block,
+
+00:01:38.454 --> 00:01:40.474
+which results in a larger block.
+
+00:01:40.474 --> 00:01:44.669
+Scrolling down, you'll see the current fee estimates.
+
+00:01:44.730 --> 00:01:49.905
+This is a way to see the proximate cause of making transactions on the network.
+
+00:01:49.905 --> 00:01:51.695
+This isn't too important right now,
+
+00:01:51.694 --> 00:01:53.844
+since these are all just TestNet coins,
+
+00:01:53.844 --> 00:01:55.885
+but as you start making applications,
+
+00:01:55.885 --> 00:01:58.329
+the transaction fee can definitely impact the way
+
+00:01:58.329 --> 00:02:01.390
+users might send and receive Bitcoins with your app.
+
+00:02:01.390 --> 00:02:03.420
+Finally, down at the bottom here,
+
+00:02:03.420 --> 00:02:07.710
+you'll see the latest transactions that have been made on the Test Network.
+
+00:02:07.709 --> 00:02:11.609
+Now, if you were to go to this site quick enough right off you send your transaction,
+
+00:02:11.610 --> 00:02:14.115
+you might be able to see your transactions on the list.
+
+00:02:14.115 --> 00:02:16.590
+But if it's not there that's totally fine,
+
+00:02:16.590 --> 00:02:20.015
+you can always look at your transaction using the search bar here.
+
+00:02:20.014 --> 00:02:21.729
+Let's go ahead and do that now.
+
+00:02:21.729 --> 00:02:23.259
+To search for your transaction,
+
+00:02:23.259 --> 00:02:25.504
+you need the transaction ID.
+
+00:02:25.504 --> 00:02:27.384
+So, back in the wallet here,
+
+00:02:27.384 --> 00:02:29.655
+go to the Transactions tab,
+
+00:02:29.655 --> 00:02:32.159
+and then right-click on the transaction that
+
+00:02:32.159 --> 00:02:34.275
+you'd like to search for on the Block Explorer.
+
+00:02:34.275 --> 00:02:38.569
+Select the option Copy Transaction ID,
+
+00:02:38.569 --> 00:02:41.280
+and then navigate back to the Block Explorer,
+
+00:02:41.280 --> 00:02:47.189
+and then paste this ID into the search bar, and then click Search.
+
+00:02:47.189 --> 00:02:50.134
+Here, you'll see all the details of your transaction,
+
+00:02:50.134 --> 00:02:52.959
+with things like the amount, the fees,
+
+00:02:52.960 --> 00:02:56.469
+the time, and the number of confirmations it has received.
+
+00:02:56.469 --> 00:03:00.155
+The advanced details shows you things like the block hash,
+
+00:03:00.155 --> 00:03:03.365
+height, the index, and a number of other details.
+
+00:03:03.365 --> 00:03:06.195
+Scrolling further down, you'll see the detail section.
+
+00:03:06.194 --> 00:03:10.709
+This gives a breakdown of the transactions inputs and outputs.
+
+00:03:10.710 --> 00:03:15.400
+You can see that the original transaction was initiated by sending this much,
+
+00:03:15.400 --> 00:03:18.385
+but then only the amount requested was sent,
+
+00:03:18.384 --> 00:03:22.424
+and the remaining amount was given back to the sender as change.
+
+00:03:22.425 --> 00:03:24.980
+So, that's most everything that you need to know about
+
+00:03:24.979 --> 00:03:27.574
+finding your transaction on the Block Explorer.
+
+00:03:27.574 --> 00:03:30.739
+This is a good tool for navigating the network and getting
+
+00:03:30.740 --> 00:03:34.040
+a good idea of the structure of data available on the block chain.
+
+00:03:34.039 --> 00:03:38.009
+Keep in mind that all of this data can be access programmatically as well.
+
+00:03:38.009 --> 00:03:39.409
+Now, as you look around,
+
+00:03:39.409 --> 00:03:41.569
+think about how you might want to use some of
+
+00:03:41.569 --> 00:03:45.280
+this information in upcoming applications as you build.
+

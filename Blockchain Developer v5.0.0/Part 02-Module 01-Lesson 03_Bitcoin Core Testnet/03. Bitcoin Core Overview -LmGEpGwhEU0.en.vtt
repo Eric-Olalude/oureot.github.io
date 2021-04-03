@@ -1,0 +1,181 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.715
+The term bitcoin is used a lot.
+
+00:00:02.715 --> 00:00:05.220
+But it's a little unclear sometimes what it means.
+
+00:00:05.220 --> 00:00:07.665
+It's mostly known as a cryptocurrency,
+
+00:00:07.665 --> 00:00:09.460
+but there's a lot more to it than that.
+
+00:00:09.460 --> 00:00:14.000
+It is generally an umbrella term used to describe everything about bitcoin.
+
+00:00:14.000 --> 00:00:15.525
+But aside from the currency,
+
+00:00:15.525 --> 00:00:18.855
+there are actually two very distinct functions of bitcoin to understand,
+
+00:00:18.855 --> 00:00:21.695
+and in this video, we'll explore these two functions.
+
+00:00:21.695 --> 00:00:23.170
+Bitcoin as a network,
+
+00:00:23.170 --> 00:00:25.390
+and bitcoin as a software.
+
+00:00:25.390 --> 00:00:27.545
+We'll help clear up some of the confusion,
+
+00:00:27.545 --> 00:00:30.805
+and discuss how each of these two, work together.
+
+00:00:30.805 --> 00:00:34.180
+So, the term bitcoin specifically refers to
+
+00:00:34.180 --> 00:00:38.470
+the network of bitcoin users creating and validating transactions.
+
+00:00:38.470 --> 00:00:40.190
+Aside from this network,
+
+00:00:40.190 --> 00:00:43.470
+there's a software behind the bitcoin that makes it all work,
+
+00:00:43.470 --> 00:00:46.330
+and this, is known as Bitcoin Core.
+
+00:00:46.330 --> 00:00:49.660
+Bitcoin Core, is an implementation of bitcoin that
+
+00:00:49.660 --> 00:00:52.345
+encompasses all the software behind bitcoin,
+
+00:00:52.345 --> 00:00:54.270
+that allows the network to function.
+
+00:00:54.270 --> 00:00:58.820
+This is where all the developer tools environments exist.
+
+00:00:58.820 --> 00:01:03.075
+Initially, this software was published under the name bitcoin.
+
+00:01:03.075 --> 00:01:04.615
+But as the network grew,
+
+00:01:04.615 --> 00:01:08.665
+it became more important to make a distinction between the network, and the software.
+
+00:01:08.665 --> 00:01:11.680
+So, the software was renamed to Bitcoin Core,
+
+00:01:11.680 --> 00:01:13.295
+to clear this confusion.
+
+00:01:13.295 --> 00:01:15.470
+Through its history, it's been called
+
+00:01:15.470 --> 00:01:19.170
+Bitcoin-QT and it's sometimes referred to as the Satoshi client.
+
+00:01:19.170 --> 00:01:21.000
+So if you see these names anywhere,
+
+00:01:21.000 --> 00:01:23.255
+Keep in mind that these refer to same thing.
+
+00:01:23.255 --> 00:01:25.070
+Previously in this program,
+
+00:01:25.070 --> 00:01:27.290
+we focused on Bitcoin as a network.
+
+00:01:27.290 --> 00:01:28.660
+But throughout this lesson,
+
+00:01:28.660 --> 00:01:30.500
+we'll transition to Bitcoin Core,
+
+00:01:30.500 --> 00:01:34.190
+and start to explore the tools available to you as a Bitcoin developer.
+
+00:01:34.190 --> 00:01:38.210
+There are a few essential features of Bitcoin Core, that we'll discuss.
+
+00:01:38.210 --> 00:01:42.360
+First, the Bitcoin Core transaction verification engine.
+
+00:01:42.360 --> 00:01:45.370
+This connects the Bitcoin network as a full node
+
+00:01:45.370 --> 00:01:48.925
+allowing you to verify transactions happening in the Bitcoin network.
+
+00:01:48.925 --> 00:01:51.070
+Another feature of Bitcoin Core,
+
+00:01:51.070 --> 00:01:55.240
+is the ability to explore and validate the entire Bitcoin blockchain,
+
+00:01:55.240 --> 00:01:59.130
+which is a history of all those Bitcoin transactions that have taken place.
+
+00:01:59.130 --> 00:02:02.250
+Finally, it provides a cryptocurrency wallet,
+
+00:02:02.250 --> 00:02:04.535
+that allows you to transfer Bitcoins.
+
+00:02:04.535 --> 00:02:07.510
+As a developer, you'll interact with these features using
+
+00:02:07.510 --> 00:02:11.010
+the command line interface in the Bitcoin Core debug console.
+
+00:02:11.010 --> 00:02:13.840
+The debug console, is a powerful tool that
+
+00:02:13.840 --> 00:02:16.560
+allows you to interact with data on the bitcoin blockchain.
+
+00:02:16.560 --> 00:02:19.450
+And after getting up to speed with your own environments,
+
+00:02:19.450 --> 00:02:22.570
+you'll spend a lot of time exploring data in this tool.
+
+00:02:22.570 --> 00:02:26.500
+As a developer, you also get access to other networks,
+
+00:02:26.500 --> 00:02:28.540
+where you can test bitcoin applications in
+
+00:02:28.540 --> 00:02:31.440
+an environment that mimics the features of a live network.
+
+00:02:31.440 --> 00:02:32.995
+And understanding these features,
+
+00:02:32.995 --> 00:02:34.265
+will allow you to get set up,
+
+00:02:34.265 --> 00:02:36.650
+and start running as a Bitcoin Core developer.
+
+00:02:36.650 --> 00:02:38.530
+We'll learn all about these features,
+
+00:02:38.530 --> 00:02:39.580
+and how to implement them,
+
+00:02:39.580 --> 00:02:41.660
+throughout the rest of this lesson.
+

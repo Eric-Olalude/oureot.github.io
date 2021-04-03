@@ -1,0 +1,262 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.825
+Each of the Bitcoin Core networks, so the mainnet,
+
+00:00:03.825 --> 00:00:08.400
+the testnet, and the regnet can be accessed using the Bitcoin Core client.
+
+00:00:08.400 --> 00:00:12.269
+Switching between each of these environments will allow you to access the features of
+
+00:00:12.269 --> 00:00:17.050
+each network and more easily setup development environments for your Bitcoin application.
+
+00:00:17.050 --> 00:00:20.050
+Even if you don't plan on switching back and forth between networks,
+
+00:00:20.050 --> 00:00:22.449
+you can use this method I'm going to show you to
+
+00:00:22.449 --> 00:00:25.804
+change the default network of the Bitcoin application.
+
+00:00:25.804 --> 00:00:29.620
+This may be helpful in the case that you don't want to stick to the mainnet
+
+00:00:29.620 --> 00:00:33.789
+and would prefer to only ever use the testnet or the regnet.
+
+00:00:33.789 --> 00:00:37.179
+Now, in this video, we'll quickly overview how to
+
+00:00:37.179 --> 00:00:41.030
+switch between each of these networks using the Bitcoin Core client.
+
+00:00:41.030 --> 00:00:43.920
+To start, let's go into the main network.
+
+00:00:43.920 --> 00:00:46.670
+So, if you actually don't want to go into the main network,
+
+00:00:46.670 --> 00:00:51.035
+wait for a moment until I start talking about the testnet and then follow along.
+
+00:00:51.034 --> 00:00:52.689
+Now to go to the main network,
+
+00:00:52.689 --> 00:00:56.539
+navigate to your Bitcoin core application and open it up.
+
+00:00:58.700 --> 00:01:01.840
+If you're opening this application for the first time,
+
+00:01:01.840 --> 00:01:03.720
+or haven't opened it in a while,
+
+00:01:03.719 --> 00:01:07.709
+you'll notice the client might take some time to sink to the blockchain.
+
+00:01:07.709 --> 00:01:10.564
+The default network is the mainnet.
+
+00:01:10.564 --> 00:01:12.439
+So, once this application opens,
+
+00:01:12.439 --> 00:01:14.424
+you'll be on the main network.
+
+00:01:14.424 --> 00:01:16.875
+Next, we'll switch to the test network.
+
+00:01:16.875 --> 00:01:20.810
+Now there are two ways to kick off the testnet with the Bitcoin Core client.
+
+00:01:20.810 --> 00:01:25.465
+The first option is to run the client with a flag used to set the testnet.
+
+00:01:25.465 --> 00:01:28.055
+The second option, which is preferred,
+
+00:01:28.055 --> 00:01:31.680
+is to use a Bitcoin configuration file.
+
+00:01:31.680 --> 00:01:34.675
+To use the Bitcoin configuration file,
+
+00:01:34.674 --> 00:01:38.840
+you need to create this file inside your Bitcoin core directory.
+
+00:01:38.840 --> 00:01:41.730
+Once created, you can use this file to
+
+00:01:41.730 --> 00:01:44.520
+help provide directions to the Bitcoin Core application.
+
+00:01:44.519 --> 00:01:47.924
+This file will have a few purposes as we move forward.
+
+00:01:47.924 --> 00:01:52.534
+But for now, it helps us get set up specifically to help change networks.
+
+00:01:52.534 --> 00:01:58.649
+To make this file, open up a text editor such as Visual Studio or Sublime,
+
+00:01:58.650 --> 00:02:01.725
+but any simple text editor will do.
+
+00:02:01.724 --> 00:02:05.809
+In this file, type testnet=1.
+
+00:02:05.810 --> 00:02:08.979
+This tells the Bitcoin Core client to load
+
+00:02:08.979 --> 00:02:12.905
+the application into the test network rather than into the main network.
+
+00:02:12.905 --> 00:02:16.379
+Name this file Bitcoin core.conf so
+
+00:02:16.379 --> 00:02:21.139
+C-O-N-F and save this file inside your Bitcoin core directory.
+
+00:02:21.139 --> 00:02:22.859
+All right. That's all we have to do.
+
+00:02:22.860 --> 00:02:27.340
+So this file is read automatically when you start up Bitcoin core.
+
+00:02:27.340 --> 00:02:30.055
+Since it's read while starting the program,
+
+00:02:30.055 --> 00:02:32.590
+we'll need to quit our application and restart it.
+
+00:02:32.590 --> 00:02:35.229
+So, go ahead and restart your application,
+
+00:02:35.229 --> 00:02:38.189
+or if you haven't opened it just yet you can do that now.
+
+00:02:38.189 --> 00:02:40.719
+What you'll notice is that while starting up,
+
+00:02:40.719 --> 00:02:43.884
+the logo changes to green and then in top right,
+
+00:02:43.884 --> 00:02:46.189
+you'll see that it's marked as testnet.
+
+00:02:46.189 --> 00:02:48.609
+So, these are indicators that you can use to
+
+00:02:48.610 --> 00:02:51.310
+see that you've correctly accessed the testnet.
+
+00:02:51.310 --> 00:02:55.580
+Once logged in, you should see that everything looks pretty much the same as before.
+
+00:02:55.580 --> 00:03:00.460
+You have access to a wallet overview and can send and receive transactions.
+
+00:03:00.460 --> 00:03:03.070
+The difference now is that these coins have
+
+00:03:03.069 --> 00:03:06.810
+no value and you can play around in it as a test environment.
+
+00:03:06.810 --> 00:03:10.314
+We'll spend a lot of time in this network as we continue development.
+
+00:03:10.314 --> 00:03:12.289
+But before getting into details,
+
+00:03:12.289 --> 00:03:15.409
+I'd like to show you how to access the Regnet.
+
+00:03:15.810 --> 00:03:20.995
+To do this, it's really similar to what we just did before and rather quick.
+
+00:03:20.995 --> 00:03:25.390
+So, go back to your Bitcoin core.conf file and
+
+00:03:25.389 --> 00:03:30.034
+remove or comment out with a hashtag where you wrote testnet equals one.
+
+00:03:30.034 --> 00:03:33.014
+Instead of this, right regnet=1.
+
+00:03:33.014 --> 00:03:39.169
+Now, save that off and restart the application again and it will load into the regnet.
+
+00:03:39.169 --> 00:03:44.284
+Again, it's pretty simple but definitely not intuitive if you haven't seen it before.
+
+00:03:44.284 --> 00:03:46.560
+Finally, to get back to the main net,
+
+00:03:46.560 --> 00:03:51.685
+you just remove all this information from the Bitcoin Core.conf file.
+
+00:03:51.685 --> 00:03:54.555
+You can do this by deleting the texts,
+
+00:03:54.555 --> 00:03:57.870
+commenting it out, or deleting the file completely.
+
+00:03:57.870 --> 00:04:00.490
+For now, I recommend commenting it out.
+
+00:04:00.490 --> 00:04:03.525
+It makes it quicker to jump between these networks in the future.
+
+00:04:03.525 --> 00:04:05.955
+This configuration file will continue to
+
+00:04:05.955 --> 00:04:08.585
+grow over time as we learn more about its functionality.
+
+00:04:08.585 --> 00:04:13.050
+Finally, you don't need to actually create this Bitcoin.conf file yourself,
+
+00:04:13.050 --> 00:04:15.650
+you can do it directly from the wallet interface.
+
+00:04:15.650 --> 00:04:17.730
+To do this, from the wallet,
+
+00:04:17.730 --> 00:04:20.085
+navigate to Bitcoin core.
+
+00:04:20.084 --> 00:04:24.029
+Select "Preferences" and then
+
+00:04:24.029 --> 00:04:28.934
+choose "Open configuration file" from the bottom left of the pop-up window.
+
+00:04:28.935 --> 00:04:32.235
+We avoided doing this at first because you will need to first
+
+00:04:32.235 --> 00:04:35.335
+log into the main net wallet to get access to this feature.
+
+00:04:35.334 --> 00:04:39.134
+This will start sinking the main net blockchain and take up a lot of space
+
+00:04:39.134 --> 00:04:43.305
+you may have been trying to avoid by creating this file. All right. So that's a wrap.
+
+00:04:43.305 --> 00:04:47.340
+That's how you access each of the networks available for the Bitcoin Core client.
+
+00:04:47.339 --> 00:04:52.464
+When you're done, you can close out the console or stay on and experiment.
+
+00:04:52.464 --> 00:04:54.929
+We'll continue to learn more about each of
+
+00:04:54.930 --> 00:04:57.329
+these networks as we use them throughout the program.
+

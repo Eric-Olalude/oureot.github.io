@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.835
+Alright. You made it to the end of the lesson.
+
+00:00:03.835 --> 00:00:09.419
+In this lesson, we discussed an overview of the Bitcoin Core Networks then,
+
+00:00:09.419 --> 00:00:12.554
+compared Mainnet, Testsnet, and Regnet.
+
+00:00:12.554 --> 00:00:15.804
+We set up a Bitcoin Core Full Node Wallet,
+
+00:00:15.804 --> 00:00:18.800
+obtained Testnet Coins and lastly,
+
+00:00:18.800 --> 00:00:21.570
+completed and explored a transaction.
+
+00:00:21.570 --> 00:00:25.605
+Getting comfortable with these tools will help you complete your next project,
+
+00:00:25.605 --> 00:00:28.304
+where you'll build your own private block chain.
+
+00:00:28.304 --> 00:00:29.839
+And in the next lesson,
+
+00:00:29.839 --> 00:00:32.380
+you'll build on these skills and use commands in
+
+00:00:32.380 --> 00:00:35.429
+the debug console to explore components of the block chain.
+
+00:00:35.429 --> 00:00:38.539
+When you're ready we'll see you there.
+
