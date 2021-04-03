@@ -1,0 +1,271 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.264
+In this concept, I will give you a walkthrough of Remix, the online editor.
+
+00:00:05.264 --> 00:00:09.285
+Remix is an online tool that can be used for writing,
+
+00:00:09.285 --> 00:00:13.980
+compiling, debugging, deploying, and also invoking smart contracts.
+
+00:00:13.980 --> 00:00:17.295
+It also creates a simulated Ethereum network
+
+00:00:17.295 --> 00:00:20.190
+inside your browser called the JavaScript VM.
+
+00:00:20.190 --> 00:00:22.395
+VM stands for virtual machine.
+
+00:00:22.394 --> 00:00:27.405
+It gives you various environment options to connect it to the world of Ethereum.
+
+00:00:27.405 --> 00:00:31.125
+I will explain you this more in detail soon.
+
+00:00:31.125 --> 00:00:34.365
+This is what Remix looks like when you open it up.
+
+00:00:34.365 --> 00:00:36.525
+You will see compile, run,
+
+00:00:36.524 --> 00:00:40.079
+debug, analysis, and testing tabs on the top.
+
+00:00:40.079 --> 00:00:45.754
+You can create new files by clicking on the very small plus button on the very corner.
+
+00:00:45.755 --> 00:00:50.165
+Remember, solidity files have.sol extension.
+
+00:00:50.164 --> 00:00:53.929
+In the central area is where you write your code.
+
+00:00:53.929 --> 00:00:58.549
+One thing I totally love about Remix is that it is a syntax checker.
+
+00:00:58.549 --> 00:01:00.809
+It has a fantastic syntax checker,
+
+00:01:00.810 --> 00:01:03.350
+which means that the moment you write something wrong,
+
+00:01:03.350 --> 00:01:05.510
+it gives you red arrow right there and
+
+00:01:05.510 --> 00:01:09.225
+detailed description about the error. Amazing feature.
+
+00:01:09.224 --> 00:01:12.039
+From the compile tab on the top,
+
+00:01:12.040 --> 00:01:15.620
+you can select the compiler version that you would like to use.
+
+00:01:15.620 --> 00:01:18.545
+You can also set it for auto compile.
+
+00:01:18.545 --> 00:01:21.665
+From the run tab and the environments,
+
+00:01:21.665 --> 00:01:24.950
+you can choose JavaScript virtual machine,
+
+00:01:24.950 --> 00:01:29.870
+injected the three option or the third one is the Web3 Provider option.
+
+00:01:29.870 --> 00:01:32.000
+You can deploy your contract to
+
+00:01:32.000 --> 00:01:36.295
+the in-browser simulator by using the JavaScript VM option.
+
+00:01:36.295 --> 00:01:40.460
+You can use injected Web3 option to deploy your contract
+
+00:01:40.459 --> 00:01:45.019
+to any of the public desk networks or even the main network.
+
+00:01:45.019 --> 00:01:48.939
+This option works in conjunction with MetaMask.
+
+00:01:48.939 --> 00:01:52.545
+You need to have MetaMask installed for this to work.
+
+00:01:52.545 --> 00:01:56.230
+The reason this is called injected Web3 because
+
+00:01:56.230 --> 00:02:01.555
+MetaMask injects Web3 into your browser and also hosts a node.
+
+00:02:01.555 --> 00:02:04.380
+So, injected Web3 option lets you
+
+00:02:04.379 --> 00:02:08.430
+connect to the Ethereum network through MetaMask's node.
+
+00:02:08.430 --> 00:02:11.355
+Let's have a quick recap again.
+
+00:02:11.354 --> 00:02:15.099
+You can use JavaScript VM for testing contracts.
+
+00:02:15.099 --> 00:02:18.245
+It is very fast since there is no mining.
+
+00:02:18.245 --> 00:02:21.789
+Injected Web3 option is used in conjunction with
+
+00:02:21.789 --> 00:02:26.139
+MetaMask and can be used to connect to any public network.
+
+00:02:26.139 --> 00:02:29.614
+Whichever network your MetaMask is connected to,
+
+00:02:29.615 --> 00:02:31.719
+the injected Web3 will connect to the
+
+00:02:31.719 --> 00:02:35.425
+same since that is being injected into your browser.
+
+00:02:35.425 --> 00:02:38.719
+Remix also gives an option to deploy
+
+00:02:38.719 --> 00:02:42.219
+your contract to locally running node on your computer.
+
+00:02:42.219 --> 00:02:46.520
+You will choose the Web3 Provider option for this and we
+
+00:02:46.520 --> 00:02:51.409
+will provide the URL or the port number for your locally running node.
+
+00:02:51.409 --> 00:02:55.000
+In the transaction origin or the account field,
+
+00:02:55.000 --> 00:02:59.884
+you can choose the account you want to use to deploy your contract with.
+
+00:02:59.884 --> 00:03:05.314
+This list of accounts will change based upon the environment you are connecting to.
+
+00:03:05.314 --> 00:03:07.479
+For the in-browser network,
+
+00:03:07.479 --> 00:03:10.634
+you are given 10 preloaded test accounts,
+
+00:03:10.634 --> 00:03:13.469
+and this account list will be those accounts.
+
+00:03:13.469 --> 00:03:15.974
+If you're using injected Web3,
+
+00:03:15.974 --> 00:03:19.875
+then this will be a list of MetaMask's account addresses.
+
+00:03:19.875 --> 00:03:22.514
+For the Web3 Provider option,
+
+00:03:22.514 --> 00:03:27.154
+this account list will be your locally running nodes accounts that you have.
+
+00:03:27.155 --> 00:03:32.930
+Gas fields let you specify the amount of gas that you want to use for this transaction.
+
+00:03:32.930 --> 00:03:34.490
+In the value field,
+
+00:03:34.490 --> 00:03:39.560
+you will provide the amount of ether you wanted to send along with the transaction.
+
+00:03:39.560 --> 00:03:42.965
+Moving on, you can deploy a contract
+
+00:03:42.965 --> 00:03:46.409
+by using any of these environments using the deploy tab.
+
+00:03:46.409 --> 00:03:51.895
+You can also pass constructor arguments right here when you initiate a contract.
+
+00:03:51.895 --> 00:03:55.255
+If you are connecting using the injected Web3 option,
+
+00:03:55.254 --> 00:04:00.965
+you will get a confirmation screen from MetaMask to accept the usage of gas charges.
+
+00:04:00.965 --> 00:04:05.379
+Once deployed, you will see a list of functions on the side.
+
+00:04:05.379 --> 00:04:07.000
+Right? If you look on the right side,
+
+00:04:07.000 --> 00:04:10.599
+you will see a list of functions that are all available on the contract.
+
+00:04:10.599 --> 00:04:14.734
+Now, you can interact with all these functions and pass arguments.
+
+00:04:14.735 --> 00:04:17.680
+If the argument that you are passing is a string,
+
+00:04:17.680 --> 00:04:22.375
+make sure to use double-quotes since it is expecting a JSON format.
+
+00:04:22.375 --> 00:04:25.689
+The bottom gray-colored console shows you
+
+00:04:25.689 --> 00:04:29.459
+the status of every function call and a transaction hash.
+
+00:04:29.459 --> 00:04:34.024
+This window will also give you the deployed contracts address.
+
+00:04:34.024 --> 00:04:39.245
+You can also see the transaction hash for every transaction in this window.
+
+00:04:39.245 --> 00:04:43.350
+You can also look at ABI and the bytecode of
+
+00:04:43.350 --> 00:04:48.370
+your deployed contract by clicking on compile and details tab.
+
+00:04:48.500 --> 00:04:53.915
+You can also load an already deployed contract and interact with it.
+
+00:04:53.915 --> 00:04:59.185
+Just paste the contract address in at the at address text box.
+
+00:04:59.185 --> 00:05:03.274
+This will pull up the contract and give you all the functions that you can call.
+
+00:05:03.274 --> 00:05:07.819
+To summarize, Remix is an online tool to create,
+
+00:05:07.819 --> 00:05:11.300
+write, debug, deploy, and interact with smart contracts.
+
+00:05:11.300 --> 00:05:15.199
+You can use an in-browser network for testing your contracts.
+
+00:05:15.199 --> 00:05:16.969
+You can also use or connect to
+
+00:05:16.970 --> 00:05:19.910
+a locally running Ethereum node or you can also
+
+00:05:19.910 --> 00:05:23.240
+connect to any of your public networks using MetaMask.
+
+00:05:23.240 --> 00:05:26.990
+Now that we have a clear understanding of how Remix works,
+
+00:05:26.990 --> 00:05:29.165
+let's learn solidity language.
+
+00:05:29.165 --> 00:05:34.890
+I will be using Remix as our tool to learn and write code from now on.
+

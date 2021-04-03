@@ -1,0 +1,487 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.139
+In this concept, we will talk and learn about special arrays,
+
+00:00:04.139 --> 00:00:07.304
+bytes, and string type.
+
+00:00:07.304 --> 00:00:13.589
+Now, bytes type and string type are both special arrays of type byte data.
+
+00:00:13.589 --> 00:00:18.254
+There are many similarities between the two and also many differences.
+
+00:00:18.254 --> 00:00:21.695
+Since they are special arrays which means they can
+
+00:00:21.695 --> 00:00:25.565
+also be static or dynamic just like regular arrays.
+
+00:00:25.565 --> 00:00:31.170
+They can also be created in memory or in storage just like normal arrays.
+
+00:00:31.170 --> 00:00:34.640
+Now, how do we initialize and create bytes type?
+
+00:00:34.640 --> 00:00:38.119
+Bytes type array can be created in two ways;
+
+00:00:38.119 --> 00:00:44.809
+either with the keyword byte and the square bracket notation or with the keyword bytes.
+
+00:00:44.810 --> 00:00:47.945
+If we look in the static section on the screen,
+
+00:00:47.945 --> 00:00:52.475
+we are creating the data bytes array using two notations,
+
+00:00:52.475 --> 00:00:57.710
+either with a byte word and then the square brackets notation with the number inside
+
+00:00:57.710 --> 00:01:03.500
+the bracket or with the bytes would followed by a number between one to 32.
+
+00:01:03.500 --> 00:01:06.909
+Now, let's look at the dynamic bytes section array, So,
+
+00:01:06.909 --> 00:01:11.170
+dynamic bytes array can be created with the word byte,
+
+00:01:11.170 --> 00:01:14.055
+empty square brackets or bytes notation.
+
+00:01:14.055 --> 00:01:15.840
+Of course since they're dynamic,
+
+00:01:15.840 --> 00:01:17.924
+we won't need to give a size.
+
+00:01:17.924 --> 00:01:20.859
+Now, there are some restrictions on static,
+
+00:01:20.859 --> 00:01:23.420
+which means fixed byte arrays.
+
+00:01:23.420 --> 00:01:26.575
+Fixed-size byte arrays are read-only,
+
+00:01:26.575 --> 00:01:32.770
+so you cannot access them using index or store a value since they are read only.
+
+00:01:32.769 --> 00:01:40.289
+You cannot modify the length property EPC in the example data is a 24 bytes array,
+
+00:01:40.290 --> 00:01:43.125
+bigger is a 32 bytes array.
+
+00:01:43.125 --> 00:01:46.000
+So, we cannot store bigger into data.
+
+00:01:46.000 --> 00:01:48.590
+But smaller is a 16 bytes array,
+
+00:01:48.590 --> 00:01:50.418
+so we can store smaller,
+
+00:01:50.418 --> 00:01:54.590
+that is a 16 bytes into data that is 24 bytes array.
+
+00:01:54.590 --> 00:01:57.890
+A smaller size byte array can be assigned to
+
+00:01:57.890 --> 00:02:03.460
+a bigger size byte array but the other way around is not allowed. Moving on.
+
+00:02:03.459 --> 00:02:06.134
+Let's talk about string type now.
+
+00:02:06.135 --> 00:02:09.284
+String first of all is not a basic type,
+
+00:02:09.284 --> 00:02:11.729
+it is not a value type either,
+
+00:02:11.729 --> 00:02:14.369
+it is an array of bytes,
+
+00:02:14.370 --> 00:02:16.875
+it is dynamically sized.
+
+00:02:16.875 --> 00:02:19.340
+Now, there are many similarities and
+
+00:02:19.340 --> 00:02:23.865
+also many differences between bytes type and string type.
+
+00:02:23.865 --> 00:02:29.064
+Let's first of all talk about conversion between string type and bytes type.
+
+00:02:29.064 --> 00:02:32.300
+In the function convert that you see on the screen,
+
+00:02:32.300 --> 00:02:34.910
+we are converting a dynamic bytes array to
+
+00:02:34.909 --> 00:02:38.629
+a string just by enclosing it with the word string,
+
+00:02:38.629 --> 00:02:41.814
+this is how you convert between one to the other.
+
+00:02:41.814 --> 00:02:43.495
+Inside the function again,
+
+00:02:43.495 --> 00:02:46.550
+the next conversion is from a string type to
+
+00:02:46.550 --> 00:02:49.775
+a bytes type just by enclosing it with the bytes keyword,
+
+00:02:49.775 --> 00:02:52.039
+just the way we did for strings.
+
+00:02:52.039 --> 00:02:57.219
+Now, let's look at some differences between string and bytes type.
+
+00:02:57.219 --> 00:03:03.319
+In string type fixed length is not supported but it is supported in bytes type,
+
+00:03:03.319 --> 00:03:08.239
+just like we saw before by using one to 32 number after the bytes keyword.
+
+00:03:08.240 --> 00:03:13.950
+Index access is not allowed in string but it is okay for bytes type.
+
+00:03:13.949 --> 00:03:17.000
+In fact, this is a very important point since we
+
+00:03:17.000 --> 00:03:20.210
+cannot access strings using their index you will see in
+
+00:03:20.210 --> 00:03:26.240
+many codes where we tried to convert a string to byte and then access it using an index,
+
+00:03:26.240 --> 00:03:28.504
+we will see an example of this soon.
+
+00:03:28.504 --> 00:03:33.305
+We cannot push on strings but on storage bytes type, we can push.
+
+00:03:33.305 --> 00:03:36.319
+But remember, we cannot push on memory bytes type,
+
+00:03:36.319 --> 00:03:38.799
+we'll also see an example of this soon.
+
+00:03:38.800 --> 00:03:42.425
+Now, let's look at some examples on the screen in front of you.
+
+00:03:42.425 --> 00:03:47.840
+We have a variable string storage that is an initial value of Udacity.
+
+00:03:47.840 --> 00:03:51.009
+Then we have a function called convert that takes
+
+00:03:51.009 --> 00:03:54.234
+in a string argument and returns the length of the string.
+
+00:03:54.235 --> 00:03:57.340
+We will look at functions more in latter concepts.
+
+00:03:57.340 --> 00:04:02.379
+Since we cannot find the length of the strings or strings especially in this case,
+
+00:04:02.379 --> 00:04:05.439
+we will convert it into bytes variable temp and then
+
+00:04:05.439 --> 00:04:09.085
+find the length of the variable temp and return this value.
+
+00:04:09.085 --> 00:04:12.340
+The next function called get element at,
+
+00:04:12.340 --> 00:04:17.840
+we are getting an argument index and then we're returning a byte value at this index.
+
+00:04:17.839 --> 00:04:21.339
+Since we cannot access strings using an index,
+
+00:04:21.339 --> 00:04:24.239
+we are converting the variable string storage
+
+00:04:24.240 --> 00:04:28.360
+into bytes first and then we're accessing the index.
+
+00:04:28.360 --> 00:04:30.250
+Since this is just a byte,
+
+00:04:30.250 --> 00:04:33.584
+we're storing it in a byte and then returning it.
+
+00:04:33.584 --> 00:04:37.159
+Now, these are all very usable benefits of being able
+
+00:04:37.160 --> 00:04:40.985
+to compare and convert between strings and bytes.
+
+00:04:40.985 --> 00:04:44.405
+Let me give you some more details on strings.
+
+00:04:44.404 --> 00:04:49.069
+First of all, there's not much out-of-the-box support for strings in solidity.
+
+00:04:49.069 --> 00:04:52.129
+There is an external library called StringUtil,
+
+00:04:52.129 --> 00:04:54.740
+that I would really encourage you to look at that can be
+
+00:04:54.740 --> 00:04:58.735
+imported that provides some functions that we can use on strings.
+
+00:04:58.735 --> 00:05:02.360
+Also, complex string operations should
+
+00:05:02.360 --> 00:05:06.245
+definitely be avoided because they are very costly on the EVM.
+
+00:05:06.245 --> 00:05:12.250
+Many similar operations can be carried out using bytes type.
+
+00:05:12.250 --> 00:05:14.480
+Another better option would be to carry
+
+00:05:14.480 --> 00:05:19.115
+these operations in a front-end application rather than on the EVM.
+
+00:05:19.115 --> 00:05:22.490
+Let us summarize string and bytes.
+
+00:05:22.490 --> 00:05:25.810
+Bytes are in an array of bytes type.
+
+00:05:25.810 --> 00:05:29.714
+Fixed bytes type can be created by saying bytes one,
+
+00:05:29.714 --> 00:05:31.289
+byte two and so on.
+
+00:05:31.290 --> 00:05:35.405
+Dynamic bytes can just be created by using the word bytes.
+
+00:05:35.404 --> 00:05:38.509
+String type is similar to bytes type.
+
+00:05:38.509 --> 00:05:40.959
+Fixed length strings are not supported.
+
+00:05:40.959 --> 00:05:43.680
+We cannot push on strings very important,
+
+00:05:43.680 --> 00:05:45.405
+we cannot push on strings.
+
+00:05:45.404 --> 00:05:48.369
+Indexed access on strings is not supported,
+
+00:05:48.370 --> 00:05:53.139
+a common practice is to convert it into bytes type and to have index access.
+
+00:05:53.139 --> 00:05:59.120
+Now, let's look at some sample contracts so that we can understand this concept further.
+
+00:05:59.120 --> 00:06:01.295
+So now on our screen,
+
+00:06:01.295 --> 00:06:05.520
+we have a sample contract called Stringbytes, contract Stringbytes.
+
+00:06:05.519 --> 00:06:09.319
+Now, we're declaring two ways I'm going to show you like I just mentioned,
+
+00:06:09.319 --> 00:06:12.649
+we can have restarted declare initialize two ways,
+
+00:06:12.649 --> 00:06:14.899
+so the first one is a static byte array,
+
+00:06:14.899 --> 00:06:17.599
+both declarations will create an array with three byte elements,
+
+00:06:17.600 --> 00:06:19.060
+one with the keyword bite,
+
+00:06:19.060 --> 00:06:22.560
+square bracket notation, and the other with a keyword bytes3.
+
+00:06:22.560 --> 00:06:25.834
+In the second one, we have dynamic bytes array,
+
+00:06:25.834 --> 00:06:30.954
+byte followed by this and then bytes and then bytes array.
+
+00:06:30.954 --> 00:06:35.750
+Then we have a string variable that restoring and storage just using this.
+
+00:06:35.750 --> 00:06:39.980
+Now, inside the function conversion test, we're returning a string.
+
+00:06:39.980 --> 00:06:43.905
+So, what we're doing we're creating a string two in memory,
+
+00:06:43.904 --> 00:06:47.239
+storing value Udacity, and now
+
+00:06:47.240 --> 00:06:50.420
+we're converting it into string and then returning the string.
+
+00:06:50.420 --> 00:06:54.995
+So, I'm showing exactly what I showed in one of my slides you can convert a bytes type
+
+00:06:54.995 --> 00:06:56.855
+into a string type by converting it
+
+00:06:56.855 --> 00:07:00.835
+or this way and then I'm returning the converted value.
+
+00:07:00.834 --> 00:07:04.639
+Now, this is a very important function I definitely want you to focus at.
+
+00:07:04.639 --> 00:07:07.759
+Now, this is a way that you definitely would need
+
+00:07:07.759 --> 00:07:11.014
+in many pieces of code where you're trying to access an index,
+
+00:07:11.014 --> 00:07:12.904
+which we cannot do in strings.
+
+00:07:12.904 --> 00:07:16.589
+So, what I'm doing is I'm converting my string to
+
+00:07:16.589 --> 00:07:20.209
+bytes and then I'm accessing it using the index.
+
+00:07:20.209 --> 00:07:23.149
+So, in this function I'm actually getting a request
+
+00:07:23.149 --> 00:07:26.435
+saying someone wants to look at the index at this specific value.
+
+00:07:26.435 --> 00:07:31.214
+So, I'm using that index and I'm retrieving it and I'm returning that element.
+
+00:07:31.214 --> 00:07:33.019
+Now, since it's just a byte information,
+
+00:07:33.019 --> 00:07:35.004
+so I'm turning a byte right there.
+
+00:07:35.004 --> 00:07:37.375
+The next function called testing,
+
+00:07:37.375 --> 00:07:41.060
+we have a fixed byte array that we're declaring this way.
+
+00:07:41.060 --> 00:07:44.238
+Now, it is, first of all remember this is a uint8,
+
+00:07:44.238 --> 00:07:47.544
+so it needs to be explicitly converted to byte type.
+
+00:07:47.545 --> 00:07:52.650
+Assignment is also not allowed as bytes3array is a static array.
+
+00:07:52.649 --> 00:07:56.810
+So, bytes3array that we declared here was a static array,
+
+00:07:56.810 --> 00:07:59.134
+so that means if I uncomment this,
+
+00:07:59.134 --> 00:08:02.634
+this kind of assignment is not allowed in solidity,
+
+00:08:02.634 --> 00:08:05.024
+that we just talked about in this lecture.
+
+00:08:05.024 --> 00:08:07.889
+Now, we are declaring a bytes memory array,
+
+00:08:07.889 --> 00:08:09.680
+dynamic memory array, So,
+
+00:08:09.680 --> 00:08:12.650
+dynamic just because there is no word here,
+
+00:08:12.649 --> 00:08:16.579
+no number here, so that's a dynamic array in memory called memory bytes.
+
+00:08:16.579 --> 00:08:20.839
+We're allocating space for 20 different locations for this,
+
+00:08:20.839 --> 00:08:23.049
+now we're accessing it and storing this value.
+
+00:08:23.050 --> 00:08:26.259
+So, this works fine but this did not work fine.
+
+00:08:26.259 --> 00:08:28.939
+So, this you can do that from memory arrays
+
+00:08:28.939 --> 00:08:32.879
+but you cannot do that for dynamic arrays like this.
+
+00:08:33.049 --> 00:08:37.309
+Push is definitely not allowed that's in for a very important piece of information.
+
+00:08:37.309 --> 00:08:40.924
+Push is going to give a compiler error as Push is allowed for storage only.
+
+00:08:40.924 --> 00:08:43.759
+You cannot push on memory bytes arrays like this,
+
+00:08:43.759 --> 00:08:46.240
+I'm going to uncomment this and it gives me an error,
+
+00:08:46.240 --> 00:08:47.764
+so I cannot push.
+
+00:08:47.764 --> 00:08:50.254
+The next example, a very simple example,
+
+00:08:50.254 --> 00:08:53.090
+I'm just having a String memory
+
+00:08:53.090 --> 00:08:55.850
+and I'm storing a value in it and all I'm doing is returning,
+
+00:08:55.850 --> 00:08:58.220
+so you can return strings from functions this way.
+
+00:08:58.220 --> 00:08:59.845
+Again, like just like arrays,
+
+00:08:59.845 --> 00:09:03.375
+I would definitely encourage you to read this, learn these concepts,
+
+00:09:03.375 --> 00:09:05.355
+watch the video maybe one more time,
+
+00:09:05.355 --> 00:09:06.899
+and use this code,
+
+00:09:06.899 --> 00:09:09.679
+we're going to give you all these code in your GitHub pages.
+
+00:09:09.679 --> 00:09:13.339
+So, copy this code, bring it to remix editor, change values,
+
+00:09:13.340 --> 00:09:16.370
+play around and I guess that's the only way that you're going to
+
+00:09:16.370 --> 00:09:20.529
+definitely get comfortable with arrays and bytes and strings in solidity.
+

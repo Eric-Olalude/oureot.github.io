@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.770
+In this concept, we will learn about the basics of a Smart Contract.
+
+00:00:04.770 --> 00:00:07.005
+What is a Smart Contract?
+
+00:00:07.005 --> 00:00:11.010
+It is a piece of code that lives on the blockchain network.
+
+00:00:11.010 --> 00:00:14.790
+It can be instructed to do many things like send money,
+
+00:00:14.790 --> 00:00:17.055
+receive money and other assets.
+
+00:00:17.055 --> 00:00:23.385
+Ethereum gives us the option to run code or programs out of the participating nodes.
+
+00:00:23.385 --> 00:00:26.355
+This code is called the Smart Contract.
+
+00:00:26.355 --> 00:00:28.420
+It lives on the network.
+
+00:00:28.420 --> 00:00:31.085
+The most common language that is currently being
+
+00:00:31.085 --> 00:00:34.100
+used to write Smart Contracts is solidity.
+
+00:00:34.100 --> 00:00:36.365
+There are few other languages too,
+
+00:00:36.365 --> 00:00:38.045
+but this is the main one.
+
+00:00:38.045 --> 00:00:42.905
+Smart contracts have an account address just like a wallet address.
+
+00:00:42.905 --> 00:00:46.440
+They can also hold Ether just like wallets can.
+
+00:00:46.440 --> 00:00:51.915
+They also have their own storage where variables and other data is stored.
+
+00:00:51.915 --> 00:00:56.995
+Let me explain a sample Smart Contract by a simple use case.
+
+00:00:56.995 --> 00:01:01.205
+Let's say a buyer wants to buy some budget from a seller.
+
+00:01:01.205 --> 00:01:05.720
+Since there is no centralized authority involved in blockchain,
+
+00:01:05.720 --> 00:01:10.505
+the buyer will first send the required amount of Ethers to a Smart Contract.
+
+00:01:10.505 --> 00:01:14.325
+The contract will hold these funds like an escrow.
+
+00:01:14.325 --> 00:01:17.855
+Now, the seller will ship the item to the buyer.
+
+00:01:17.855 --> 00:01:21.440
+As soon as the buyer receives the item,
+
+00:01:21.440 --> 00:01:25.855
+the buyer will instruct the contract that the item has been received.
+
+00:01:25.855 --> 00:01:29.760
+This is when the contract would release the funds to the seller.
+
+00:01:29.760 --> 00:01:32.630
+Now, you see how the need of a third party is
+
+00:01:32.630 --> 00:01:36.790
+eliminated by using a contract to perform the same actions.
+
+00:01:36.790 --> 00:01:39.740
+The most common language that is used like I
+
+00:01:39.740 --> 00:01:42.215
+mentioned to write the contracts is solidity.
+
+00:01:42.215 --> 00:01:44.105
+Serpent is another one.
+
+00:01:44.105 --> 00:01:47.580
+You can also use some other lisp-like languages.
+

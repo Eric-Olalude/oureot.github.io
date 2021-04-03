@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.725
+Congratulations!
+
+00:00:01.725 --> 00:00:03.810
+You have now learned Solidity,
+
+00:00:03.810 --> 00:00:07.515
+the most popular language for writing smart contracts.
+
+00:00:07.514 --> 00:00:12.149
+You now have the tools and the knowledge to write your own contracts,
+
+00:00:12.150 --> 00:00:14.850
+deploy them on any of the public networks,
+
+00:00:14.849 --> 00:00:17.445
+or even on a local test network.
+
+00:00:17.445 --> 00:00:20.460
+We learned how to use Remix to interact with
+
+00:00:20.460 --> 00:00:23.789
+your contracts and to call various functions on them.
+
+00:00:23.789 --> 00:00:26.324
+You also learned what tokens are,
+
+00:00:26.324 --> 00:00:29.640
+and how to create your own ERC-20 tokens,
+
+00:00:29.640 --> 00:00:31.560
+and then view them on either scan.
+
+00:00:31.559 --> 00:00:35.449
+You also learned how you could send your own tokens to your friends.
+
+00:00:35.450 --> 00:00:39.240
+You are truly getting closer to being a blockchain expert.
+

@@ -1,0 +1,589 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:06.315
+In this concept, we will learn about the most commonly used global variables in Solidity.
+
+00:00:06.315 --> 00:00:08.115
+We will learn about Block,
+
+00:00:08.115 --> 00:00:10.859
+Message, and tx global variables.
+
+00:00:10.859 --> 00:00:13.289
+We will also show you how to carry out
+
+00:00:13.289 --> 00:00:17.280
+the Ether Unit conversions and Time Unit conversions using suffixes,
+
+00:00:17.280 --> 00:00:20.145
+Ether, and time. Let's get started.
+
+00:00:20.144 --> 00:00:23.714
+So, we will start with the very first global variable called block.
+
+00:00:23.714 --> 00:00:28.934
+You can get information about a specific block using the block global variable.
+
+00:00:28.934 --> 00:00:31.859
+This has a bunch of methods that you can call.
+
+00:00:31.859 --> 00:00:35.820
+Like number, returns the current blocks number,
+
+00:00:35.820 --> 00:00:41.125
+Coinbase to get the address of the current blocks minor, difficulty,
+
+00:00:41.125 --> 00:00:44.640
+to get the current blocks difficulty, gas limit,
+
+00:00:44.640 --> 00:00:47.929
+just as the name says the gas limit for the current block,
+
+00:00:47.929 --> 00:00:50.859
+timestamp is the same as a block time,
+
+00:00:50.859 --> 00:00:54.259
+Block Hash, the hash of the block number that you provide.
+
+00:00:54.259 --> 00:00:56.225
+If you use it for the current block,
+
+00:00:56.225 --> 00:00:57.545
+you will get all zeros,
+
+00:00:57.545 --> 00:01:01.804
+because there is no hash for the current block because it is not mind yet.
+
+00:01:01.804 --> 00:01:07.109
+Let's move on to the next global variable called Msg, a very important one.
+
+00:01:07.109 --> 00:01:11.073
+In fact, you would end up using it many times in your contracts.
+
+00:01:11.073 --> 00:01:15.304
+This gives information on the current transaction that is being executed.
+
+00:01:15.305 --> 00:01:19.315
+Msg.data, gives us the call data in bytes.
+
+00:01:19.314 --> 00:01:22.539
+Msg.sender is the external link on
+
+00:01:22.540 --> 00:01:25.930
+account or another account that sends this transaction.
+
+00:01:25.930 --> 00:01:31.180
+Msg.sig is used to get the signature which is the four bytes of the call data,
+
+00:01:31.180 --> 00:01:34.100
+the first four bytes of the call data, the signature.
+
+00:01:34.099 --> 00:01:38.049
+Msg.value is a very important one that is used to
+
+00:01:38.049 --> 00:01:42.219
+check amount of wei sent along with this transaction.
+
+00:01:42.219 --> 00:01:47.510
+Now, this is of course only going to be available in functions that are marked payable.
+
+00:01:47.989 --> 00:01:52.419
+Let's talk about the next global variable called tx.
+
+00:01:52.420 --> 00:01:57.700
+tx.gasprice is a price paid for gas for this transaction.
+
+00:01:57.700 --> 00:02:02.965
+tx.origin is the address that originated this transaction.
+
+00:02:02.965 --> 00:02:07.965
+tx.origin is different than msg.sender that we just learned in the last line.
+
+00:02:07.965 --> 00:02:10.349
+In case you have two contracts,
+
+00:02:10.349 --> 00:02:12.829
+A and B, for contract A,
+
+00:02:12.830 --> 00:02:16.260
+the msg.sender is the external accounts address,
+
+00:02:16.259 --> 00:02:18.599
+and so is the tx.origin.
+
+00:02:18.599 --> 00:02:23.474
+But for contract B, the msg.sender is contract A's address,
+
+00:02:23.474 --> 00:02:28.894
+but tx.origin is externally accounts address like you see in the diagram on your screen.
+
+00:02:28.895 --> 00:02:33.950
+Let's now talk about the next global variable, Ether.
+
+00:02:33.949 --> 00:02:39.369
+Ether, the main unit for Ethereum has multiple denominations like wei,
+
+00:02:39.370 --> 00:02:41.335
+finney, and many more.
+
+00:02:41.335 --> 00:02:46.330
+You can use suffixes in Solidity to convert from one denomination to another.
+
+00:02:46.330 --> 00:02:48.800
+There are many online websites that you can
+
+00:02:48.800 --> 00:02:51.530
+visit to convert from one denomination to another,
+
+00:02:51.530 --> 00:02:56.155
+and you see a screenshot on the screen right now of one of the websites.
+
+00:02:56.155 --> 00:02:59.055
+Now, let's look on the screen that you have.
+
+00:02:59.055 --> 00:03:00.825
+In the very first line of code,
+
+00:03:00.824 --> 00:03:04.829
+you are evaluating wei to a specific denomination of ether,
+
+00:03:04.830 --> 00:03:07.360
+and then setting the flag accordingly.
+
+00:03:07.360 --> 00:03:12.815
+Now, this is easily possible since you can convert from one denomination to another.
+
+00:03:12.814 --> 00:03:16.699
+All you have to do is use the word wei or ether.
+
+00:03:16.699 --> 00:03:19.818
+Finney is another denomination of ether,
+
+00:03:19.818 --> 00:03:22.314
+and there are many other denominations too.
+
+00:03:22.314 --> 00:03:28.284
+Also wanted to mention that wei is the smallest denomination of Ether.
+
+00:03:28.284 --> 00:03:33.504
+Now, let's look at another global variable in Solidity called now.
+
+00:03:33.504 --> 00:03:38.754
+Now returns block time in seconds since 1970.
+
+00:03:38.754 --> 00:03:42.968
+Just like ether, you can convert time using suffixes.
+
+00:03:42.968 --> 00:03:46.715
+Let us see all this now using an example code.
+
+00:03:46.715 --> 00:03:49.150
+Let's look some sample contract for
+
+00:03:49.150 --> 00:03:53.659
+this global variables so you have a better understanding and how all these work.
+
+00:03:53.969 --> 00:03:59.629
+So, now we see a contract on your screen called contract GlobalsContract.
+
+00:03:59.629 --> 00:04:01.439
+Again, I'm going to keep reminding every time,
+
+00:04:01.439 --> 00:04:02.805
+start with pragma line,
+
+00:04:02.805 --> 00:04:04.830
+Solidity, version of Solidity,
+
+00:04:04.830 --> 00:04:09.265
+and contract word c. Normally, by convention,
+
+00:04:09.264 --> 00:04:11.559
+the name of the contract starts with a capital,
+
+00:04:11.560 --> 00:04:13.004
+and that's just a convention,
+
+00:04:13.004 --> 00:04:15.604
+and then within this we have the whole contract.
+
+00:04:15.604 --> 00:04:18.019
+Now, what I'm doing, I'm actually having
+
+00:04:18.019 --> 00:04:21.004
+a variable or a storage variable if you see string type,
+
+00:04:21.004 --> 00:04:23.463
+public visibility called lastCaller,
+
+00:04:23.463 --> 00:04:24.949
+and I'm just storing a value saying,
+
+00:04:24.949 --> 00:04:26.334
+not setting it yet.
+
+00:04:26.334 --> 00:04:29.000
+So, that's the value originating it with.
+
+00:04:29.000 --> 00:04:30.319
+Now, we have a couple of functions.
+
+00:04:30.319 --> 00:04:31.974
+Let's walk through the first function here.
+
+00:04:31.975 --> 00:04:34.210
+Now, the first function is going to show
+
+00:04:34.209 --> 00:04:37.569
+you how ether sub-denominations work in Solidity.
+
+00:04:37.569 --> 00:04:42.045
+So, the function is called etherUnitsTest() public pure.
+
+00:04:42.045 --> 00:04:43.470
+We will talk about visibilities.
+
+00:04:43.470 --> 00:04:44.835
+For now just go with the flow,
+
+00:04:44.834 --> 00:04:47.989
+but we are going to talk about all these different things that you see on the screen,
+
+00:04:47.990 --> 00:04:50.735
+public pure in our functions concept.
+
+00:04:50.735 --> 00:04:53.080
+This is returning a bool value.
+
+00:04:53.079 --> 00:04:58.625
+Now, what I am doing is that I'm actually comparing if one ether equal 2,000 finney.
+
+00:04:58.625 --> 00:05:01.894
+If that is the case, I'm going to return value,
+
+00:05:01.894 --> 00:05:04.329
+which is value is being set to true in this case.
+
+00:05:04.329 --> 00:05:06.269
+So, we're returning a true,
+
+00:05:06.269 --> 00:05:07.709
+if this is equal to this.
+
+00:05:07.709 --> 00:05:11.439
+If you see, that's how we can work from one denomination do another denomination,
+
+00:05:11.439 --> 00:05:15.605
+just write the word after the numeric number and it's going to convert it for you.
+
+00:05:15.605 --> 00:05:20.509
+Now, let's look at another function that demonstrates the use of Time Units,
+
+00:05:20.509 --> 00:05:22.264
+function called Time Unit.
+
+00:05:22.264 --> 00:05:26.610
+Again, public view, we will talk about all these in our functions concept.
+
+00:05:26.610 --> 00:05:28.540
+So, what I'm doing here in this function,
+
+00:05:28.540 --> 00:05:30.780
+I'm actually setting a variable,
+
+00:05:30.779 --> 00:05:33.404
+you would time, called time now to now.
+
+00:05:33.404 --> 00:05:36.964
+Remember, this is storing the time that has passed,
+
+00:05:36.964 --> 00:05:39.810
+the block time in seconds since 1970.
+
+00:05:40.149 --> 00:05:43.444
+In fact, this is 1970. Let's change that.
+
+00:05:43.444 --> 00:05:45.219
+Not 1960.
+
+00:05:45.220 --> 00:05:46.960
+Now, time now,
+
+00:05:46.959 --> 00:05:51.109
+so what it's doing it's comparing time now equal to 1,000 days.
+
+00:05:51.110 --> 00:05:53.000
+So, again that is how you again convert it.
+
+00:05:53.000 --> 00:05:54.634
+Remember this time is in seconds,
+
+00:05:54.634 --> 00:05:56.074
+because it returns in seconds.
+
+00:05:56.074 --> 00:05:58.844
+So, we can compare from seconds, convert this days,
+
+00:05:58.845 --> 00:06:00.850
+so we can easily compare from one denomination to
+
+00:06:00.850 --> 00:06:04.820
+another denomination using that suffix space and then it's returning.
+
+00:06:04.819 --> 00:06:08.814
+So, what it's doing, it's comparing if time now equal to 1,000 days,
+
+00:06:08.814 --> 00:06:10.170
+which not the case,
+
+00:06:10.170 --> 00:06:11.610
+so I am going to show you so.
+
+00:06:11.610 --> 00:06:13.625
+This function is going to return false for you.
+
+00:06:13.625 --> 00:06:18.595
+Now, moving on, let's talk about the next global variable we talked about called block.
+
+00:06:18.595 --> 00:06:21.860
+So, this function demonstrates the use of block object.
+
+00:06:21.860 --> 00:06:23.240
+So, if you have a function called get
+
+00:06:23.240 --> 00:06:26.030
+block information and now it's returning all these numbers.
+
+00:06:26.029 --> 00:06:27.379
+It's returning the number of the block,
+
+00:06:27.379 --> 00:06:30.235
+the hash of the block, the Coinbase, and the difficulty.
+
+00:06:30.235 --> 00:06:32.879
+So, the way we access it, all we do is block.
+
+00:06:32.879 --> 00:06:35.129
+Now, these are global variables, you don't have to import them.
+
+00:06:35.129 --> 00:06:37.310
+They're just available in the contract for you to use.
+
+00:06:37.310 --> 00:06:40.504
+So, we're storing this block net number in number,
+
+00:06:40.504 --> 00:06:41.795
+we're storing into hash,
+
+00:06:41.795 --> 00:06:44.890
+we're storing into coin, difficulty, and then returning them.
+
+00:06:44.889 --> 00:06:48.129
+The last function over here shows how Msg works,
+
+00:06:48.129 --> 00:06:50.879
+the fourth global variable that we just talked about in our slides.
+
+00:06:50.879 --> 00:06:55.045
+So, this function is called getMsgInformation is returning data,
+
+00:06:55.045 --> 00:06:56.939
+signature, and the sender.
+
+00:06:56.939 --> 00:06:58.694
+So, it's returning msg.data.
+
+00:06:58.694 --> 00:07:01.365
+Remember that it returns the data of the current block,
+
+00:07:01.365 --> 00:07:03.329
+signature, and the sender.
+
+00:07:03.329 --> 00:07:04.859
+So, now let's go and deploy.
+
+00:07:04.860 --> 00:07:07.280
+I'm going to show you a couple of interesting things here,
+
+00:07:07.279 --> 00:07:10.819
+just so that, I think the more you play with remix and all these contracts,
+
+00:07:10.819 --> 00:07:12.214
+the better understanding you will get,
+
+00:07:12.214 --> 00:07:14.399
+so let's go to Run tab,
+
+00:07:14.800 --> 00:07:17.405
+Compile tab has already compiled.
+
+00:07:17.404 --> 00:07:24.149
+So, let's go Run tab and I'm going to delete this instance and now let's deploy it.
+
+00:07:24.149 --> 00:07:27.209
+So, once you deploy the contract, you can click on this.
+
+00:07:27.209 --> 00:07:30.754
+Now again, I wanted to show, you can anytime you create instances of the contract,
+
+00:07:30.754 --> 00:07:32.110
+you can always delete them,
+
+00:07:32.110 --> 00:07:33.509
+so you can start with a brand new one.
+
+00:07:33.509 --> 00:07:35.509
+I'm going to do that again just so that I can show you that.
+
+00:07:35.509 --> 00:07:36.605
+So, let's deploy it again.
+
+00:07:36.605 --> 00:07:39.605
+So again, if you see I'm using my JavaScript VM,
+
+00:07:39.605 --> 00:07:42.620
+which is my in-browser Ethereum network running right now,
+
+00:07:42.620 --> 00:07:44.045
+and the address is this,
+
+00:07:44.045 --> 00:07:47.595
+which means what is my msg.sender going to be?
+
+00:07:47.595 --> 00:07:51.360
+This address. So, we'll confirm that using the function calls that we have.
+
+00:07:51.360 --> 00:07:53.384
+So, let's go deploy it.
+
+00:07:53.384 --> 00:07:57.995
+Let's look at the functions so if you see we have all these functions described here.
+
+00:07:57.995 --> 00:08:00.840
+So, let's look at the first function.
+
+00:08:00.839 --> 00:08:02.294
+So, the first function is,
+
+00:08:02.295 --> 00:08:05.265
+it's comparing if one ether is equal to this much finney,
+
+00:08:05.264 --> 00:08:06.930
+and if that's true is going to return a true.
+
+00:08:06.930 --> 00:08:10.334
+All right. So, let's run that function, see it returns true.
+
+00:08:10.334 --> 00:08:12.404
+Good. So, that's working.
+
+00:08:12.404 --> 00:08:14.219
+Now, let's move on to the next function.
+
+00:08:14.220 --> 00:08:17.630
+It's going to compare that if it's time now equal to 1,000 days,
+
+00:08:17.629 --> 00:08:19.954
+which I'm suspecting it should see false.
+
+00:08:19.954 --> 00:08:23.589
+So, let's go look at the time now function, Time Units.
+
+00:08:23.589 --> 00:08:25.009
+So, it's returning a zero,
+
+00:08:25.009 --> 00:08:26.599
+because we never said the value of U,
+
+00:08:26.600 --> 00:08:28.370
+and so that means of course it's going to be zero,
+
+00:08:28.370 --> 00:08:31.079
+and return time now that's going to happen.
+
+00:08:31.420 --> 00:08:37.779
+Then, getBlockInformation is, let's go and click getBlockInformation,
+
+00:08:37.779 --> 00:08:39.139
+but if you see it's going to turn the number of
+
+00:08:39.139 --> 00:08:41.710
+the block, hash of the block, coinbase, and difficulty.
+
+00:08:41.710 --> 00:08:44.264
+So, let's get the block information,
+
+00:08:44.264 --> 00:08:46.710
+see if you see all this information, block number.
+
+00:08:46.710 --> 00:08:50.210
+This and this all this information is sending being sent out to you.
+
+00:08:50.210 --> 00:08:51.530
+If you also see remember,
+
+00:08:51.529 --> 00:08:53.149
+I showed if you look at the block hash of
+
+00:08:53.149 --> 00:08:55.459
+the current block is going to be giving me a zero,
+
+00:08:55.460 --> 00:08:58.129
+and that's the reason I'm using block hash of number minus one,
+
+00:08:58.129 --> 00:08:59.554
+so I get my block number,
+
+00:08:59.554 --> 00:09:03.299
+store it in the variable number, and the number of return I get from minus one,
+
+00:09:03.299 --> 00:09:04.529
+so it didn't get a zero.
+
+00:09:04.529 --> 00:09:07.759
+So, that's the hash of the previous block that was just minding.
+
+00:09:07.759 --> 00:09:10.460
+The last function here at getMsgInformation.
+
+00:09:10.460 --> 00:09:12.019
+That's the interesting one, I wanted to show you that.
+
+00:09:12.019 --> 00:09:16.419
+Let's go and look at our getMsg function, let's called that.
+
+00:09:16.419 --> 00:09:19.694
+So, that's the data, of course I didn't send any data along with you,
+
+00:09:19.695 --> 00:09:21.300
+this function call right now.
+
+00:09:21.299 --> 00:09:23.214
+So, it's going to pick up information from there,
+
+00:09:23.215 --> 00:09:26.975
+and sender, that's the important one I definitely wanted to show you.
+
+00:09:26.975 --> 00:09:32.445
+If you look at this address msg.sender 0147 on your screen,
+
+00:09:32.445 --> 00:09:36.120
+and this is the address on my screen right now.
+
+00:09:36.120 --> 00:09:38.419
+So, that means I'm the one that's originating
+
+00:09:38.419 --> 00:09:41.824
+the contract or initiating the contract right now, so it matches.
+
+00:09:41.825 --> 00:09:44.500
+So, a couple of things, interesting information again,
+
+00:09:44.500 --> 00:09:47.360
+copy this code from our GitHub page, play around with it,
+
+00:09:47.360 --> 00:09:51.629
+so you get really comfortable with the way global variables work in Solidity.
+

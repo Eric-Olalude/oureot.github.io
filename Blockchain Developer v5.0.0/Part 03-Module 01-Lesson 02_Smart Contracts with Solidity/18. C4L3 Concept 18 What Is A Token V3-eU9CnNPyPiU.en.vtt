@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.240
+In this concept, we will learn about what are
+
+00:00:03.240 --> 00:00:07.290
+tokens and how to create tokens on a blockchain network.
+
+00:00:07.290 --> 00:00:09.179
+Now, to understand tokens,
+
+00:00:09.179 --> 00:00:12.089
+we need to understand what are token contracts.
+
+00:00:12.089 --> 00:00:15.990
+Essentially, a token contract is a smart contract that
+
+00:00:15.990 --> 00:00:20.144
+contains a mapping of account addresses and their balances.
+
+00:00:20.144 --> 00:00:25.439
+The balance can represent anything of value not just necessarily Ether.
+
+00:00:25.440 --> 00:00:30.270
+It will represent a value that is defined by the contract creator.
+
+00:00:30.269 --> 00:00:34.875
+So, balances can be used to represent physical objects
+
+00:00:34.875 --> 00:00:41.034
+or monetary value or some kind of license or any other asset.
+
+00:00:41.034 --> 00:00:44.959
+The unit of this balance is commonly called a token.
+
+00:00:44.960 --> 00:00:47.359
+Once you write a token contract,
+
+00:00:47.359 --> 00:00:50.015
+then it gets deployed on the network.
+
+00:00:50.015 --> 00:00:53.119
+These token contracts have some standards that
+
+00:00:53.119 --> 00:00:56.659
+need to be followed to be a standardized token.
+
+00:00:56.659 --> 00:01:00.934
+ERC stands for Ethereum Request for Comments.
+
+00:01:00.935 --> 00:01:03.530
+Now, these are technical documents that are used
+
+00:01:03.530 --> 00:01:06.469
+by smart contract developers at Ethereum.
+
+00:01:06.469 --> 00:01:12.379
+They define a set of rules required to implement the tokens for the theorem ecosystem.
+
+00:01:12.379 --> 00:01:15.155
+It makes standardization easy since
+
+00:01:15.155 --> 00:01:19.320
+everyone knows what functions the token contract will have.
+

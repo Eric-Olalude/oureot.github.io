@@ -1,0 +1,295 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.009
+So, in our last video,
+
+00:00:02.009 --> 00:00:04.889
+we actually took it off the inferior parts.
+
+00:00:04.889 --> 00:00:09.390
+You got an inferior key. You also make sure that you have human mask seed in everything.
+
+00:00:09.390 --> 00:00:10.769
+So, this is what the file would look like.
+
+00:00:10.769 --> 00:00:12.059
+So, you're giving it to environments,
+
+00:00:12.060 --> 00:00:14.519
+because we're going to deploy it to our local network,
+
+00:00:14.519 --> 00:00:16.679
+and then we're also going to deploy to the rinkeby network.
+
+00:00:16.679 --> 00:00:17.879
+So, once you have setup,
+
+00:00:17.879 --> 00:00:20.219
+there's another thing that you would like to take care of
+
+00:00:20.219 --> 00:00:24.524
+is you have to create inside the migrations folder.
+
+00:00:24.524 --> 00:00:25.979
+I've already done that. You're going to create.
+
+00:00:25.980 --> 00:00:31.785
+So, by default, this is only further it comes with, the 1_initial_migrations.js.
+
+00:00:31.785 --> 00:00:34.109
+What I normally like to do, I just copy this code,
+
+00:00:34.109 --> 00:00:35.460
+and I create a file,
+
+00:00:35.460 --> 00:00:41.049
+and this is the name of the file that specifically need to have, 2_deploy_contracts.js.
+
+00:00:41.210 --> 00:00:43.250
+I would just paste it,
+
+00:00:43.250 --> 00:00:44.604
+then I'm going to change it to my name.
+
+00:00:44.604 --> 00:00:47.719
+So, in my case, the name of my token is sampleToken.
+
+00:00:47.719 --> 00:00:51.435
+It's coming from the sampleToken.SOL that we just created,
+
+00:00:51.435 --> 00:00:53.280
+and then you're exporting it.
+
+00:00:53.280 --> 00:00:55.399
+So, what is happening in this file is that,
+
+00:00:55.399 --> 00:00:59.214
+inside this file, we first get an instance of the contract that we need to deploy.
+
+00:00:59.215 --> 00:01:02.075
+We're getting an instance using var sample token,
+
+00:01:02.075 --> 00:01:06.409
+and then we write a function that will be called when we call truffle migrate.
+
+00:01:06.409 --> 00:01:07.700
+Now, inside this function,
+
+00:01:07.700 --> 00:01:11.885
+the bytecode for this smart contract is deployed to the Ethereum network.
+
+00:01:11.885 --> 00:01:16.950
+All contracts that need to be deployed need to be added to this file.
+
+00:01:17.290 --> 00:01:19.775
+They only have one contract for now,
+
+00:01:19.775 --> 00:01:21.250
+but if you add more contracts,
+
+00:01:21.250 --> 00:01:22.500
+make sure you add them here.
+
+00:01:22.500 --> 00:01:27.420
+Also wanted to add, you can always ask constructor in initial values.
+
+00:01:27.420 --> 00:01:28.530
+If there's a constructor,
+
+00:01:28.530 --> 00:01:29.730
+in our case, we didn't have that,
+
+00:01:29.730 --> 00:01:33.260
+but we're already setting our initial value to be fixed in this case.
+
+00:01:33.260 --> 00:01:35.690
+But if your constructor had an input argument,
+
+00:01:35.689 --> 00:01:38.484
+it received, we can write it right after the comma right there.
+
+00:01:38.484 --> 00:01:41.329
+We don't need it, so I just wanted to give you that information.
+
+00:01:41.329 --> 00:01:43.340
+Now, once this is all set up,
+
+00:01:43.340 --> 00:01:44.930
+we're all setup with the coding part.
+
+00:01:44.930 --> 00:01:47.660
+So, again, to recap, inside the Migrations folder,
+
+00:01:47.659 --> 00:01:50.599
+we created this file, and then we
+
+00:01:50.599 --> 00:01:54.409
+also edited a truffle.js file to add all this information.
+
+00:01:54.409 --> 00:01:55.920
+So, we have two networks available.
+
+00:01:55.920 --> 00:01:59.390
+We can deploy to a local network using truffle develop,
+
+00:01:59.390 --> 00:02:01.724
+and then we're also going to deploy it to rinkeby.
+
+00:02:01.724 --> 00:02:03.959
+So, we are all setting with the core, set up with the coding part.
+
+00:02:03.959 --> 00:02:06.239
+So, now lets go deploy, the fun part.
+
+00:02:06.239 --> 00:02:09.974
+So, I'm going to do the first, deploy the locally running network.
+
+00:02:09.974 --> 00:02:11.939
+For the locally running network,
+
+00:02:11.939 --> 00:02:15.439
+let's go open up our terminal back again.
+
+00:02:15.439 --> 00:02:18.085
+Now, we're all set with the coding part of it,
+
+00:02:18.085 --> 00:02:19.450
+now we're going to go deploy it.
+
+00:02:19.449 --> 00:02:20.560
+I'm going to show you two ways.
+
+00:02:20.560 --> 00:02:23.539
+In this video, we will deploy it to a locally running network,
+
+00:02:23.539 --> 00:02:26.689
+and we're going to run it using a truffle develop command.
+
+00:02:26.689 --> 00:02:29.120
+In the next video, we will actually deploy it to
+
+00:02:29.120 --> 00:02:31.430
+the main rinkeby network using
+
+00:02:31.430 --> 00:02:34.430
+an inferior key that we just created in one of our previous videos.
+
+00:02:34.430 --> 00:02:37.550
+So, now get started to deploy it.
+
+00:02:37.550 --> 00:02:40.625
+We're going to first of all run our local network with the UDL.
+
+00:02:40.625 --> 00:02:43.330
+You do that is using truffle develop.
+
+00:02:43.330 --> 00:02:48.625
+Now, you will see it starts to run in just about maybe another five or ten seconds,
+
+00:02:48.625 --> 00:02:51.925
+and if you see it gave you bunch of accounts.
+
+00:02:51.925 --> 00:02:53.920
+If you see, this is the port number,
+
+00:02:53.919 --> 00:02:57.369
+the port 9545, if you remember the truffle,
+
+00:02:57.370 --> 00:03:00.460
+our config file, the config.js file,
+
+00:03:00.460 --> 00:03:04.090
+we had a port number for a locally running network to be 9545.
+
+00:03:04.090 --> 00:03:06.069
+This is where the port number is coming from,
+
+00:03:06.069 --> 00:03:10.495
+because by default, the truffle runs a local network on this port.
+
+00:03:10.495 --> 00:03:15.645
+It gives you all these ten accounts with the ten private keys and a mnemonic.
+
+00:03:15.645 --> 00:03:16.840
+Now, once we've done that,
+
+00:03:16.840 --> 00:03:18.890
+the next thing you want to do is compile your contract.
+
+00:03:18.889 --> 00:03:21.009
+For that, all you would say is compiled.
+
+00:03:21.009 --> 00:03:24.099
+Since we're inside console,
+
+00:03:24.099 --> 00:03:25.840
+we don't need to say truffle compile,
+
+00:03:25.840 --> 00:03:27.310
+just compile. That's it.
+
+00:03:27.310 --> 00:03:30.530
+It's going to compile a contract for us.
+
+00:03:31.219 --> 00:03:34.319
+Fantastic. So, you've compiled it.
+
+00:03:34.319 --> 00:03:37.715
+The next thing you want to do is migrate it to the local network.
+
+00:03:37.715 --> 00:03:40.219
+For that, the command is just simple, migrate.
+
+00:03:40.219 --> 00:03:42.995
+Now, if you've already migrated at once,
+
+00:03:42.995 --> 00:03:45.664
+you might want to do reset flag.
+
+00:03:45.664 --> 00:03:49.264
+Since I've done that, I'm just going to say hyphen hyphen reset.
+
+00:03:49.264 --> 00:03:52.834
+You don't have to do that if that's the first time you're doing a migrate.
+
+00:03:52.835 --> 00:03:54.395
+Now, what typically migrant does,
+
+00:03:54.395 --> 00:03:58.090
+it just deploys the contract on the locally running network.
+
+00:03:58.090 --> 00:04:01.395
+So, pretty fast. It's already done it.
+
+00:04:01.395 --> 00:04:03.165
+It also gave us an address back.
+
+00:04:03.164 --> 00:04:05.129
+This is the address of the sample token.
+
+00:04:05.129 --> 00:04:08.294
+It's one that we just deployed. This is the address.
+
+00:04:08.294 --> 00:04:12.199
+Now, since we are running on just a local network right now,
+
+00:04:12.199 --> 00:04:14.869
+you really can't do anything or going ether crown to check it,
+
+00:04:14.870 --> 00:04:18.845
+which we will do in the next video when we deploy it to a public network.
+
+00:04:18.845 --> 00:04:20.900
+But in this case, it's just a local network,
+
+00:04:20.899 --> 00:04:23.989
+it deployed it, and that's the contract address back.
+
+00:04:23.990 --> 00:04:26.134
+Fantastic. So, in the next video,
+
+00:04:26.134 --> 00:04:33.509
+we are going to deploy our token to a public rinkeby network using inferior key.
+

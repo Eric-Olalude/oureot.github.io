@@ -1,0 +1,241 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.910
+In this concept, we will talk and learn about
+
+00:00:02.910 --> 00:00:06.689
+enums in solidity which are another complex types.
+
+00:00:06.690 --> 00:00:12.720
+You can create your own custom types with a finite set of values using the word enum.
+
+00:00:12.720 --> 00:00:14.490
+After the word enum,
+
+00:00:14.490 --> 00:00:16.559
+like you see on the screen on the example,
+
+00:00:16.559 --> 00:00:18.899
+then we have the name of the enumeration,
+
+00:00:18.899 --> 00:00:20.609
+and then in curly brackets,
+
+00:00:20.609 --> 00:00:21.899
+we will give the values.
+
+00:00:21.899 --> 00:00:24.824
+Note, there is no semicolon in the end.
+
+00:00:24.824 --> 00:00:28.515
+Now, enums are not a part of the ABI definition.
+
+00:00:28.515 --> 00:00:32.789
+What that means is that the color of the contract when looking at
+
+00:00:32.789 --> 00:00:37.079
+the ABI will not know if enums are defined in the contract.
+
+00:00:37.079 --> 00:00:38.835
+So, now, the question is,
+
+00:00:38.835 --> 00:00:44.439
+then how will we do or receive our path enumeration values in contract invocations?
+
+00:00:44.439 --> 00:00:48.664
+For that, you will use the index assigned to the enum values.
+
+00:00:48.664 --> 00:00:50.600
+In the example on the screen,
+
+00:00:50.600 --> 00:00:53.195
+we are creating a transfer type enum.
+
+00:00:53.195 --> 00:00:55.359
+It has two values inside it.
+
+00:00:55.359 --> 00:00:58.314
+Domestic has an index of value zero,
+
+00:00:58.314 --> 00:01:01.234
+and foreign has an index value of one.
+
+00:01:01.234 --> 00:01:04.549
+So, now, if you wanted to access the first value,
+
+00:01:04.549 --> 00:01:07.000
+then you can access it using index zero.
+
+00:01:07.000 --> 00:01:09.959
+Now, in the line of code that stores the value of
+
+00:01:09.959 --> 00:01:15.405
+TransferType.Domestic into the variable X, we will get an error.
+
+00:01:15.405 --> 00:01:20.974
+We have to explicitly convert this to uint8 and then store in the variable X.
+
+00:01:20.974 --> 00:01:25.309
+For invoking functions that require enumeration as argument,
+
+00:01:25.310 --> 00:01:28.670
+we will need to provide an integer index value.
+
+00:01:28.670 --> 00:01:33.189
+Now, let's look at a sample contract to understand enums better.
+
+00:01:33.189 --> 00:01:38.480
+Now, the sample contract that we have on the screen is called contract EnumContract.
+
+00:01:38.480 --> 00:01:40.880
+Again, remember, contract see lower,
+
+00:01:40.879 --> 00:01:42.799
+and then we have the name of the contract,
+
+00:01:42.799 --> 00:01:48.810
+you always try to use the capital letter for the first letter of the contract name.
+
+00:01:48.810 --> 00:01:52.620
+In this contract, what we are doing in the global space,
+
+00:01:52.620 --> 00:01:53.984
+we are creating enum,
+
+00:01:53.984 --> 00:01:56.359
+and the name of the enum is names,
+
+00:01:56.359 --> 00:01:58.504
+and then within curly brackets,
+
+00:01:58.504 --> 00:02:00.619
+we are having four values, Joe,
+
+00:02:00.620 --> 00:02:03.090
+Brandy, Rachna, and Jessica.
+
+00:02:03.090 --> 00:02:04.710
+So, there are four values inside.
+
+00:02:04.709 --> 00:02:07.069
+So, that means this is going to have index zero,
+
+00:02:07.069 --> 00:02:09.280
+one, two, and three.
+
+00:02:09.280 --> 00:02:12.919
+Now, like I mentioned and showed that to you in the last slide,
+
+00:02:12.919 --> 00:02:15.429
+we just cannot get the values of zero,
+
+00:02:15.430 --> 00:02:17.969
+one, and two, we have to convert it explicitly.
+
+00:02:17.969 --> 00:02:20.139
+So, if you see in this function,
+
+00:02:20.139 --> 00:02:21.784
+we are getting an argument,
+
+00:02:21.784 --> 00:02:24.935
+and so what we're doing is that we are getting an argument
+
+00:02:24.935 --> 00:02:28.280
+saying that we want to see what the value is at that specific index.
+
+00:02:28.280 --> 00:02:31.990
+So, we're getting an argument that's probably going to be anywhere between zero to three,
+
+00:02:31.990 --> 00:02:33.890
+and now it returns a string.
+
+00:02:33.889 --> 00:02:37.639
+We're going to look up this enum based upon the argument that return the value.
+
+00:02:37.639 --> 00:02:40.804
+So, what we're doing is that we're comparing the argument,
+
+00:02:40.805 --> 00:02:42.530
+we're converting it explicitly.
+
+00:02:42.530 --> 00:02:44.849
+So, for example, names.Joe.
+
+00:02:44.919 --> 00:02:50.864
+That converge to zero and then so the argument is zero, then the returning Joe.
+
+00:02:50.865 --> 00:02:53.310
+Now, if the argument is one, in that case,
+
+00:02:53.310 --> 00:02:56.280
+we're getting names.Brandy, and then we're returning Brandy,
+
+00:02:56.280 --> 00:02:57.435
+and then that's how it goes.
+
+00:02:57.435 --> 00:03:01.045
+So, in fact, I'm going to show you in the side of my screen and see how this works.
+
+00:03:01.044 --> 00:03:03.389
+So, let's go deploy this contract.
+
+00:03:03.389 --> 00:03:05.419
+So, again, I'm using mainly remix editor,
+
+00:03:05.419 --> 00:03:07.129
+we're going to go deploy this contract,
+
+00:03:07.129 --> 00:03:09.710
+and I'm in the JavaScript virtual machine that is in
+
+00:03:09.710 --> 00:03:13.189
+browser network that is running in my browser right now.
+
+00:03:13.189 --> 00:03:14.840
+So, I'm going to deploy this contract.
+
+00:03:14.840 --> 00:03:16.370
+Once you deploy this contract,
+
+00:03:16.370 --> 00:03:18.275
+you can click on this lower part.
+
+00:03:18.275 --> 00:03:20.825
+Okay. So, if you see, these are the specific values.
+
+00:03:20.824 --> 00:03:22.879
+So, now, we have this function getNames.
+
+00:03:22.879 --> 00:03:26.245
+Let me zoom in just a little bit so you can see a little bit better.
+
+00:03:26.245 --> 00:03:28.710
+Okay. So, I'm going to pass in.
+
+00:03:28.710 --> 00:03:32.445
+Let's try passing an argument zero and then click on the function name.
+
+00:03:32.444 --> 00:03:33.599
+So, it gives me Joe back.
+
+00:03:33.599 --> 00:03:36.419
+So, if we see, the first element was zero,
+
+00:03:36.419 --> 00:03:37.769
+the first value is zero.
+
+00:03:37.770 --> 00:03:40.620
+So, now, let's try passing three,
+
+00:03:40.620 --> 00:03:43.474
+and we get a value of Jessica.
+
+00:03:43.474 --> 00:03:46.639
+So, that is how enums work in solidity. Pretty simple.
+
+00:03:46.639 --> 00:03:51.839
+All they are is custom type that you're creating with values inside it.
+

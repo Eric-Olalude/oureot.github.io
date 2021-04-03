@@ -1,0 +1,52 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.924
+Welcome to our lesson on solidity.
+
+00:00:02.924 --> 00:00:05.955
+I'm going to be your instructor for this lesson.
+
+00:00:05.955 --> 00:00:10.640
+Have you always wanted to be able to write your own smart contracts?
+
+00:00:10.640 --> 00:00:13.700
+Have you wondered what token contracts are?
+
+00:00:13.699 --> 00:00:19.379
+How about creating your own tokens and then being able to view them on EtherScan?
+
+00:00:19.379 --> 00:00:23.864
+Or, how about being able to send your own tokens to your friends?
+
+00:00:23.864 --> 00:00:27.029
+We will cover all these topics in this lesson.
+
+00:00:27.030 --> 00:00:29.515
+We will start with learning solidity,
+
+00:00:29.515 --> 00:00:33.005
+the main language used to write contracts on Ethereum.
+
+00:00:33.005 --> 00:00:36.085
+We will then learn the syntax of this language,
+
+00:00:36.085 --> 00:00:39.243
+and then look at many samples, smart contracts.
+
+00:00:39.243 --> 00:00:41.659
+Once we get comfortable with this language,
+
+00:00:41.659 --> 00:00:45.774
+we will then talk about token contracts and token standards.
+
+00:00:45.774 --> 00:00:51.274
+Next, we will show you how to create your own tokens and then send them to your friends.
+
+00:00:51.274 --> 00:00:53.629
+Lots of exciting stuff to learn in this lesson,
+
+00:00:53.630 --> 00:00:55.280
+so let's get started
+

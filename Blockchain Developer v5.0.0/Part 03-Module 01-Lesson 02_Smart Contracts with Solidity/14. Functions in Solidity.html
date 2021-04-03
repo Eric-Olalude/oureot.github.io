@@ -1,0 +1,637 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Functions in Solidity</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Smart Contracts with Solidity</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Let&#x27;s Write Smart Contracts.html">01. Let&#x27;s Write Smart Contracts</a>
+    </li>
+    <li class="">
+      <a href="02. Smart Contracts and Solidity Introduction.html">02. Smart Contracts and Solidity Introduction</a>
+    </li>
+    <li class="">
+      <a href="03. Remix Online Tool.html">03. Remix Online Tool</a>
+    </li>
+    <li class="">
+      <a href="04. Memory Management in Solidity.html">04. Memory Management in Solidity</a>
+    </li>
+    <li class="">
+      <a href="05. Elementary Data Types in Solidity.html">05. Elementary Data Types in Solidity</a>
+    </li>
+    <li class="">
+      <a href="06. Type Conversion in Solidity.html">06. Type Conversion in Solidity</a>
+    </li>
+    <li class="">
+      <a href="07. Complex Data Types.html">07. Complex Data Types</a>
+    </li>
+    <li class="">
+      <a href="08. Arrays.html">08. Arrays</a>
+    </li>
+    <li class="">
+      <a href="09. String and Bytes Types.html">09. String and Bytes Types</a>
+    </li>
+    <li class="">
+      <a href="10. Mappings.html">10. Mappings</a>
+    </li>
+    <li class="">
+      <a href="11. Enums.html">11. Enums</a>
+    </li>
+    <li class="">
+      <a href="12. Structs.html">12. Structs</a>
+    </li>
+    <li class="">
+      <a href="13. Solidity Global Variables and Ether Units.html">13. Solidity Global Variables and Ether Units</a>
+    </li>
+    <li class="">
+      <a href="14. Functions in Solidity.html">14. Functions in Solidity</a>
+    </li>
+    <li class="">
+      <a href="15. Error Handling in Solidity.html">15. Error Handling in Solidity</a>
+    </li>
+    <li class="">
+      <a href="16. Inheritance in Solidity.html">16. Inheritance in Solidity</a>
+    </li>
+    <li class="">
+      <a href="17. Events in Solidity.html">17. Events in Solidity</a>
+    </li>
+    <li class="">
+      <a href="18. What are Tokens.html">18. What are Tokens?</a>
+    </li>
+    <li class="">
+      <a href="19. ERC Token Standards.html">19. ERC Token Standards</a>
+    </li>
+    <li class="">
+      <a href="20. ERC-20 Walk-through.html">20. ERC-20 Walk-through</a>
+    </li>
+    <li class="">
+      <a href="21. Creating ERC-20 using Remix.html">21. Creating ERC-20 using Remix</a>
+    </li>
+    <li class="">
+      <a href="22. Creating ERC-20 using OpenZeppelin.html">22. Creating ERC-20 using OpenZeppelin</a>
+    </li>
+    <li class="">
+      <a href="23. Mini Project Send your ERC-20 Tokens to Udacity.html">23. Mini Project: Send your ERC-20 Tokens to Udacity</a>
+    </li>
+    <li class="">
+      <a href="24. Congratulations on Learning Solidity.html">24. Congratulations on Learning Solidity</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">14. Functions in Solidity</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="-functions-in-solidity"># Functions in Solidity</h2>
+<p>Let's add some utility to our contracts with functions! Functions are the executable units of code within a contract. In this section, we will explore the different <em>function types</em>, <em>fallback functions</em>, <em>constructor functions</em>, and <em>function modifiers</em>.  </p>
+<h2 id="-function-syntax">#### Function Syntax</h2>
+<p>First, let's see the syntax for a function in Solidity - <em>function name</em>, <em>function type</em>, and <em>return type</em>. </p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/functions.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="-function-types">## Function Types</h2>
+<p>Here are the different function types available in Solidity: </p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/functiontypes.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="-functions">#### Functions</h2>
+<p>In this video, we will elaborate on function syntax, function types, as well as focus on differences between public and private functions. </p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>C4L3 Concept 14 Functions Part1 V2</p></h3>
+  <video controls>
+  <source src="14. C4L3 Concept 14 Functions Part1 V2-hZVHqJ5oiEM.mp4" type="video/mp4">
+
+  <track default="true" kind="subtitles" srclang="en" src="14. C4L3 Concept 14 Functions Part1 V2-hZVHqJ5oiEM.en.vtt" label="en">
+</video>
+
+
+  <div class="jumbotron" style="margin-top: 50px; margin-bottom: 50px;">
+    <h3>INSTRUCTOR NOTE:</h3>
+    <p><strong>Note</strong>: This video was recorded using a version that it is outdated, the code below in the Instructor Code section has an updated version of the code.</p>
+  </div>
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="-fallback-functions-and-function-modifiers">## Fallback Functions and Function Modifiers</h2>
+<p>In the next video, we will explore fallback functions and function modifiers.</p>
+<h5 id="fallback-functions">Fallback Functions</h5>
+<p>Fallback functions provide a safeguard. They are automatically triggered if the function signature does not match any of the function signatures in the smart contract. A contract can have exactly one fallback function. These fallback functions are unnamed. </p>
+<h5 id="function-modifiers">Function Modifiers</h5>
+<p>"Modifiers can be used to easily change the behavior of functions. For example, they can automatically check a condition prior to executing the function. Modifiers are inheritable properties of contracts and may be overridden by derived contracts." (<a href="https://solidity.readthedocs.io/en/v0.5.3/contracts.html#function-modifiers" rel="noopener noreferrer" target="_blank">Source - Solidity documentation v.0.5.3</a>)</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>C4L3 Concept 14 Functions Part2 V2</p></h3>
+  <video controls>
+  <source src="14. C4L3 Concept 14 Functions Part2 V2-UFYi6SWqk0M.mp4" type="video/mp4">
+
+  <track default="true" kind="subtitles" srclang="en" src="14. C4L3 Concept 14 Functions Part2 V2-UFYi6SWqk0M.en.vtt" label="en">
+</video>
+
+
+  <div class="jumbotron" style="margin-top: 50px; margin-bottom: 50px;">
+    <h3>INSTRUCTOR NOTE:</h3>
+    <p><strong>Note</strong>: This video was recorded using a version that it is outdated, the code below in the Instructor Code section has an updated version of the code.</p>
+  </div>
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="-resources">## Resources</h2>
+<h4 id="solidity-documentation">Solidity Documentation</h4>
+<ul>
+<li><a href="https://solidity.readthedocs.io/en/v0.5.3/structure-of-a-contract.html?highlight=function#functions" rel="noopener noreferrer" target="_blank">Solidity documentation - Function</a></li>
+<li><a href="https://solidity.readthedocs.io/en/v0.5.3/contracts.html?highlight=fallback#fallback-function" rel="noopener noreferrer" target="_blank">Solidity documentation - Fallback Function</a></li>
+<li><a href="https://solidity.readthedocs.io/en/v0.5.3/contracts.html#function-modifiers" rel="noopener noreferrer" target="_blank">Solidity documentation - Function Modifiers</a></li>
+</ul>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/blockchain-line.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="instructor-code">Instructor Code</h2>
+<p>In this link you can find the contract example code updated:</p>
+<blockquote>
+  <p><a href="https://github.com/udacity/nd1309-work-code/blob/master/Course_Identity_And_Smart_Contracts/Smart_Contracts_With_Solidity/functionsContract.sol" rel="noopener noreferrer" target="_blank"> Function Contract Example </a></p>
+</blockquote>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/blockchain-line.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>1</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>Solidity functions can return multiple values:</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1541229888448" name="778579" id="a1541229888448">
+        <label for="a1541229888448"><p>True</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1541229896079" name="778579" id="a1541229896079">
+        <label for="a1541229896079"><p>False</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    True
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>2</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>When a function returns multiple values to an outside web3 application, the values are returned as a:</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1541229983001" name="778580" id="a1541229983001">
+        <label for="a1541229983001"><p>struct</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1541229992921" name="778580" id="a1541229992921">
+        <label for="a1541229992921"><p>array</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1541230008069" name="778580" id="a1541230008069">
+        <label for="a1541230008069"><p>mapping</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    array
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>3</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>Is there anything wrong with this code below?</p>
+<pre><code>    function test(uint8 amount, string ) returns ( uint16 value) {
+
+    uint8  temp;
+
+    temp = amount*100;
+
+    for(uint8 temp = 0; temp &gt; 4; temp++){
+
+    if(temp == 0) {
+     uint16 calculated=0;
+              }
+     value = calculated;
+
+    }</code></pre></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1541230036443" name="778581" id="a1541230036443">
+        <label for="a1541230036443"><p>Compilation error as the name of the 2nd argument is missing in the function declaration</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1541230078355" name="778581" id="a1541230078355">
+        <label for="a1541230078355"><p>Compilation error, as there is no return statement in the end</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1541230086752" name="778581" id="a1541230086752">
+        <label for="a1541230086752"><p>Compilation error, as temp is declared twice</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1541230098853" name="778581" id="a1541230098853">
+        <label for="a1541230098853"><p>Code works fine</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    Compilation error, as temp is declared twice
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>4</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>Variables declared as external cannot be accessed by another contract.</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1541230162652" name="778582" id="a1541230162652">
+        <label for="a1541230162652"><p>True</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1541230173193" name="778582" id="a1541230173193">
+        <label for="a1541230173193"><p>False</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    False
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>5</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>Storage variables declared as internal can be accessed from the derived/child contracts, BUT variables declared as private cannot be accessed from derived/child contracts.</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1541230237145" name="778583" id="a1541230237145">
+        <label for="a1541230237145"><p>True</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1541230256862" name="778583" id="a1541230256862">
+        <label for="a1541230256862"><p>False</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    True
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>6</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>When a storage variable is declared public , the compiler automatically creates a getter function with the name of the variable. The setter function is not created.</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1541230292602" name="778584" id="a1541230292602">
+        <label for="a1541230292602"><p>True</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1541230305147" name="778584" id="a1541230305147">
+        <label for="a1541230305147"><p>False</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    True
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>7</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>By default , functions are public.</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1541230353878" name="778585" id="a1541230353878">
+        <label for="a1541230353878"><p>True</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1541230366390" name="778585" id="a1541230366390">
+        <label for="a1541230366390"><p>False</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    True
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>8</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>You would like a function to be unavailable for invocation from outside the contract, but you would like that function to be available to the derived contracts. </p>
+<p>The function should be declared as:</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1541230427853" name="778586" id="a1541230427853">
+        <label for="a1541230427853"><p>Internal</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1541230449893" name="778586" id="a1541230449893">
+        <label for="a1541230449893"><p>External</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1541230454982" name="778586" id="a1541230454982">
+        <label for="a1541230454982"><p>Public</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1541230459365" name="778586" id="a1541230459365">
+        <label for="a1541230459365"><p>Private</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    Internal
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>9</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>A function A is declared external . In function B you may:</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1541230522745" name="778587" id="a1541230522745">
+        <label for="a1541230522745"><p>Invoke function A , using this keyword</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1541230534281" name="778587" id="a1541230534281">
+        <label for="a1541230534281"><p>Regularly invoke function A</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1541230544819" name="778587" id="a1541230544819">
+        <label for="a1541230544819"><p>Cannot invoke the function</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1541230555229" name="778587" id="a1541230555229">
+        <label for="a1541230555229"><p>Can invoke it either way</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    Invoke function A , using this keyword
+  </details>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="15. Error Handling in Solidity.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('14. Functions in Solidity')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

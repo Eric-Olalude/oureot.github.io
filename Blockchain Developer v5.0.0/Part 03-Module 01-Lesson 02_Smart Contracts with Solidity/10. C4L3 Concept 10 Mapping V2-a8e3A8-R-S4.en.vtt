@@ -1,0 +1,283 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.934
+In this concept, we will talk and learn about another complex type called mapping.
+
+00:00:05.934 --> 00:00:10.945
+The simplest way to describe mapping in solidity would be to say that it
+
+00:00:10.945 --> 00:00:16.234
+is similar to a Java hash table or a JavaScript associative array.
+
+00:00:16.234 --> 00:00:20.844
+Now, mappings are stored on the EVM as part of the contract.
+
+00:00:20.844 --> 00:00:24.879
+Mappings can only be created as a storage variable.
+
+00:00:24.879 --> 00:00:29.669
+Mappings can not be created as a local variable inside a function.
+
+00:00:29.670 --> 00:00:33.164
+In this example, a mapping named balances,
+
+00:00:33.164 --> 00:00:34.439
+like you see on the screen,
+
+00:00:34.439 --> 00:00:36.269
+will be created in storage,
+
+00:00:36.270 --> 00:00:40.540
+where key is of type address and value is of type unit.
+
+00:00:40.539 --> 00:00:44.244
+Now, keys can be of any type except mapping type,
+
+00:00:44.244 --> 00:00:48.034
+but values can be of any type including mapping types.
+
+00:00:48.034 --> 00:00:53.734
+So again, remember, your keys in a mapping can be of any type except the mapping type,
+
+00:00:53.734 --> 00:00:58.015
+but the values can be of any type including mapping types.
+
+00:00:58.015 --> 00:01:01.829
+Now, let's compare mapping with hash tables.
+
+00:01:01.829 --> 00:01:08.465
+In mapping, values exist for all possible keys initialized to zero or empty strings.
+
+00:01:08.465 --> 00:01:13.100
+In other words, if you try to get a value for the key that was not set,
+
+00:01:13.099 --> 00:01:18.459
+then you will receive all zeros or empty string depending on the type of the value.
+
+00:01:18.459 --> 00:01:22.250
+When you add a new key value pair in mapping,
+
+00:01:22.250 --> 00:01:24.760
+the key is not stored as is.
+
+00:01:24.760 --> 00:01:30.515
+Instead, a keccak256-bit hash is created and stored as a key.
+
+00:01:30.515 --> 00:01:35.469
+In other words, the actual key data is not stored in the mapping.
+
+00:01:35.469 --> 00:01:38.054
+Now, mappings are not iterable,
+
+00:01:38.055 --> 00:01:40.525
+that means you cannot loop through mapping.
+
+00:01:40.525 --> 00:01:46.130
+There is absolutely no out-of-the-box way for looping through all the keys in a mapping.
+
+00:01:46.129 --> 00:01:48.729
+You cannot find the length of mapping.
+
+00:01:48.730 --> 00:01:50.810
+So, there is absolutely no way,
+
+00:01:50.810 --> 00:01:55.984
+no attribute or member function to find the number of key value pairs in a mapping.
+
+00:01:55.984 --> 00:01:59.689
+You can do this by maybe maintaining a separate counter for a mapping,
+
+00:01:59.689 --> 00:02:01.489
+but you just cannot look through the mapping,
+
+00:02:01.489 --> 00:02:04.149
+you cannot find the length of mapping.
+
+00:02:04.150 --> 00:02:08.240
+Now, let us look at an example code on your screen here.
+
+00:02:08.240 --> 00:02:11.719
+In this example, we're creating a mapping called capitals.
+
+00:02:11.719 --> 00:02:16.659
+The syntax is to write a mapping is with the keyword mapping,
+
+00:02:16.659 --> 00:02:18.169
+then brackets, and
+
+00:02:18.169 --> 00:02:20.839
+then the key and the value types separated
+
+00:02:20.840 --> 00:02:23.960
+by a fat arrow and then the name of the mapping.
+
+00:02:23.960 --> 00:02:28.250
+Then, we have a function called addCapital,
+
+00:02:28.250 --> 00:02:32.615
+that is taking in two inputs: country and capital names.
+
+00:02:32.615 --> 00:02:34.969
+Then, we store this in the mapping.
+
+00:02:34.969 --> 00:02:38.629
+The various store keys is again using the square bracket notation.
+
+00:02:38.629 --> 00:02:40.894
+So, you give the name of the mapping,
+
+00:02:40.895 --> 00:02:42.215
+then a square bracket,
+
+00:02:42.215 --> 00:02:43.775
+and the key inside it.
+
+00:02:43.775 --> 00:02:49.219
+Then, 'equal to' sign and then you give the value you want to store along that key.
+
+00:02:49.219 --> 00:02:51.664
+The next function, getCapital.
+
+00:02:51.664 --> 00:02:56.044
+We are accessing the mapping using again the square bracket notation.
+
+00:02:56.044 --> 00:03:01.189
+To remove a key value pair or to initialize the value to an empty string,
+
+00:03:01.189 --> 00:03:03.740
+you can use the delete operator.
+
+00:03:03.740 --> 00:03:07.730
+This is what we're doing in the function removeCapital.
+
+00:03:07.729 --> 00:03:10.324
+Let's look at some more mapping examples
+
+00:03:10.324 --> 00:03:13.359
+and sample contract to understand mappings better.
+
+00:03:13.360 --> 00:03:15.055
+So, on our screen here,
+
+00:03:15.055 --> 00:03:16.760
+we are having a sample contract,
+
+00:03:16.759 --> 00:03:19.294
+and the name of the contract is mapping contract.
+
+00:03:19.294 --> 00:03:22.009
+It's creating a mapping in storage, like I mentioned,
+
+00:03:22.009 --> 00:03:24.919
+mapping can only be created outside functions in storage.
+
+00:03:24.919 --> 00:03:26.419
+So we're creating a mapping.
+
+00:03:26.419 --> 00:03:27.929
+The key is a string type,
+
+00:03:27.930 --> 00:03:29.370
+the values also string type,
+
+00:03:29.370 --> 00:03:31.319
+and the name of the mapping is relations.
+
+00:03:31.319 --> 00:03:34.599
+Now, what we're doing is we're having a function to add relation.
+
+00:03:34.599 --> 00:03:36.859
+So again, this is a mapping that just stores the relations
+
+00:03:36.860 --> 00:03:39.870
+between people and the relation to them.
+
+00:03:39.870 --> 00:03:41.210
+So, we're having a function.
+
+00:03:41.210 --> 00:03:45.170
+Into this function, you can pass the name of a person and the relation to that person,
+
+00:03:45.169 --> 00:03:47.819
+and it's going to access the mapping, store it.
+
+00:03:47.819 --> 00:03:49.204
+Again, name of the mapping,
+
+00:03:49.205 --> 00:03:52.365
+square bracket, key, value, okay?
+
+00:03:52.365 --> 00:03:54.870
+So again, name of the mapping, square bracket,
+
+00:03:54.870 --> 00:03:59.625
+you put the key, whatever your key gotten in the function followed by the value.
+
+00:03:59.625 --> 00:04:01.620
+This is same thing,
+
+00:04:01.620 --> 00:04:03.900
+is actually, accessing the mapping and returning.
+
+00:04:03.900 --> 00:04:05.140
+So, it's giving you,
+
+00:04:05.139 --> 00:04:07.069
+the function is getting a name of the person,
+
+00:04:07.069 --> 00:04:09.169
+and you want to see what the relation is,
+
+00:04:09.169 --> 00:04:10.579
+so it's returning a string.
+
+00:04:10.580 --> 00:04:13.370
+So, you again accessing it with the relations name and
+
+00:04:13.370 --> 00:04:17.170
+this whatever the value is going to be sent back.
+
+00:04:17.170 --> 00:04:20.129
+The way you delete it, if you've seen the next function,
+
+00:04:20.129 --> 00:04:21.855
+we have a removeRelation function.
+
+00:04:21.855 --> 00:04:23.189
+You have a string name,
+
+00:04:23.189 --> 00:04:26.579
+so it's going to tell you the function is actually asking for an argument,
+
+00:04:26.579 --> 00:04:28.384
+who do you want to delete from my relations,
+
+00:04:28.384 --> 00:04:29.740
+and do you have the delete?
+
+00:04:29.740 --> 00:04:31.170
+Then, within delete, of course,
+
+00:04:31.170 --> 00:04:32.965
+you're going to have brackets, and within delete,
+
+00:04:32.964 --> 00:04:36.269
+you have relations, you're accessing the key value.
+
+00:04:36.269 --> 00:04:38.599
+This is a value that you're getting and then you delete it.
+
+00:04:38.600 --> 00:04:43.010
+So, this is a sample contract that kind of explains to you mapping.
+
+00:04:43.009 --> 00:04:44.300
+A very simple contract,
+
+00:04:44.300 --> 00:04:46.655
+but mappings are definitely very important,
+
+00:04:46.654 --> 00:04:50.529
+that we'll definitely be dealing with mappings quite a bit more.
+

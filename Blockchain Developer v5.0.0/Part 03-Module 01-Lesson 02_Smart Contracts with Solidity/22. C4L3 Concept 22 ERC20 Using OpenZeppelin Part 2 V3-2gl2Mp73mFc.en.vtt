@@ -1,0 +1,367 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.930
+So, in our previous video, we wrote our sample contract,
+
+00:00:03.930 --> 00:00:09.089
+and we're importing this file or this already OpenZeppelin contract,
+
+00:00:09.089 --> 00:00:11.310
+and then we're just giving it the basic names, symbol,
+
+00:00:11.310 --> 00:00:13.875
+decimals, initial supply in which deeply deployed.
+
+00:00:13.875 --> 00:00:18.870
+Now, you will see that if you compile it just the way it is we've done it so far,
+
+00:00:18.870 --> 00:00:20.039
+it is going to give you an error,
+
+00:00:20.039 --> 00:00:25.379
+since these two functions in the underscore totalSupply,
+
+00:00:25.379 --> 00:00:28.934
+and the underscored balances mapping are declared to be private in
+
+00:00:28.934 --> 00:00:33.449
+ERC20 dot sol file which I'll show in just a second, by default.
+
+00:00:33.450 --> 00:00:36.120
+So, we're going to go to this file and make them internal,
+
+00:00:36.119 --> 00:00:39.449
+that means they are accessible from these derived contracts
+
+00:00:39.450 --> 00:00:42.885
+because they've just made it private for now.
+
+00:00:42.884 --> 00:00:43.949
+So, I'm going to show you,
+
+00:00:43.950 --> 00:00:46.140
+so you're going to go to node_modules folder.
+
+00:00:46.140 --> 00:00:48.554
+Once you go to node_modules folder,
+
+00:00:48.554 --> 00:00:50.339
+you're going to go to your OpenZeppelin,
+
+00:00:50.340 --> 00:00:51.630
+and there're a lot of the list here.
+
+00:00:51.630 --> 00:00:54.045
+So let's move on to OpenZeppelin.
+
+00:00:54.045 --> 00:00:56.420
+Then, we're in OpenZeppelin we're into
+
+00:00:56.420 --> 00:01:01.400
+a token folder just the way I've walked you through the GitHub page exact same base,
+
+00:01:01.399 --> 00:01:02.704
+you're go into node_modules,
+
+00:01:02.704 --> 00:01:07.239
+OpenZeppelin, token ERC20 in ERC20.
+
+00:01:07.819 --> 00:01:10.389
+But if you didn't have it,
+
+00:01:10.390 --> 00:01:11.980
+so I've already made internal in my case,
+
+00:01:11.980 --> 00:01:15.155
+but these by default are private.
+
+00:01:15.155 --> 00:01:18.829
+So, if you would have just downloaded without,
+
+00:01:18.829 --> 00:01:21.549
+then the npm and without changing it is going to be private.
+
+00:01:21.549 --> 00:01:23.679
+So, this file is not going to be able to access it.
+
+00:01:23.680 --> 00:01:26.470
+So, I'm going to make it internal back.
+
+00:01:26.469 --> 00:01:29.144
+So these two variables here,
+
+00:01:29.144 --> 00:01:31.890
+so the mapping one and the totalSupply one.
+
+00:01:31.890 --> 00:01:33.959
+Make sure they're internal, not private.
+
+00:01:33.959 --> 00:01:37.774
+Because if it's private, it's not going to be able to access this from that function.
+
+00:01:37.775 --> 00:01:39.760
+So, make sure you take care of that,
+
+00:01:39.760 --> 00:01:42.620
+the very first thing that you're going to have to do.
+
+00:01:42.620 --> 00:01:45.780
+Now, you've done with us.
+
+00:01:45.780 --> 00:01:48.284
+Now you're going to change this two variables to internal.
+
+00:01:48.284 --> 00:01:51.244
+Make sure to save this file for sure, you have to do that.
+
+00:01:51.245 --> 00:01:53.840
+Now I'm also going to show you to deploy this contract with
+
+00:01:53.840 --> 00:01:57.900
+local test network and also then to rinkeby with the public test and file.
+
+00:01:57.900 --> 00:01:59.475
+Because once we create our token,
+
+00:01:59.474 --> 00:02:01.879
+of course, we need to be able to send it to our friend's.
+
+00:02:01.879 --> 00:02:04.174
+So, we need to be in some public network.
+
+00:02:04.174 --> 00:02:07.489
+Let's first of all just deployed locally just to show you the process.
+
+00:02:07.489 --> 00:02:08.750
+I'm going to close this file,
+
+00:02:08.750 --> 00:02:12.520
+since we're done with this file that's all we needed to change in this file.
+
+00:02:12.520 --> 00:02:15.290
+Also wanted to show you before we got deployed,
+
+00:02:15.289 --> 00:02:17.884
+there's a couple of things that you wanted to make sure that you take it of it.
+
+00:02:17.884 --> 00:02:20.094
+First is a truffle.js file.
+
+00:02:20.094 --> 00:02:22.180
+We're going to go to our truffle.js file,
+
+00:02:22.180 --> 00:02:24.740
+and you're going to type this code in your truffle, again,
+
+00:02:24.740 --> 00:02:27.560
+the code is mentioned in the bottom of the screen.
+
+00:02:27.560 --> 00:02:29.330
+I'll walk you to the code also,
+
+00:02:29.330 --> 00:02:31.670
+so let's go to a truffle JS file which is this one.
+
+00:02:31.669 --> 00:02:34.444
+For Windows, you're going to go to truffle-config.js,
+
+00:02:34.444 --> 00:02:36.965
+I'm on Mac, so I'm going to truffle.js.
+
+00:02:36.965 --> 00:02:41.509
+Now, what I'm doing here is that I'm actually giving it two different environments.
+
+00:02:41.509 --> 00:02:44.989
+So, either you can deployed on
+
+00:02:44.990 --> 00:02:48.770
+migrated to a local network or you can also deploy to a rinkeby network,
+
+00:02:48.770 --> 00:02:50.300
+so we need to give this two options.
+
+00:02:50.300 --> 00:02:54.170
+So, this is my when I run my truffled wallet it runs on nine,
+
+00:02:54.169 --> 00:02:56.359
+five, four, five, and I'll show in just a second.
+
+00:02:56.360 --> 00:02:57.815
+Then this is for rinkeby.
+
+00:02:57.814 --> 00:02:59.750
+Now, if you see it just comes in fact when you
+
+00:02:59.750 --> 00:03:04.645
+downloaded the truffle and you start open it you will see that this is given to you.
+
+00:03:04.645 --> 00:03:07.260
+So, what is this here? This is the rinkeby.
+
+00:03:07.259 --> 00:03:09.054
+So if you want to deploy to rinkeby,
+
+00:03:09.055 --> 00:03:11.150
+you have to create your own provider,
+
+00:03:11.150 --> 00:03:12.430
+and this is what it is doing.
+
+00:03:12.430 --> 00:03:15.275
+So, creating a provider the very first link
+
+00:03:15.275 --> 00:03:21.960
+here that we have is a link that is coming from MetaMask.
+
+00:03:21.960 --> 00:03:24.314
+So, this is the link for MetaMask.
+
+00:03:24.314 --> 00:03:28.134
+If you have MetaMask installed which you should by now,
+
+00:03:28.134 --> 00:03:30.439
+then you're going to get this is the initial seed that
+
+00:03:30.439 --> 00:03:33.495
+MetaMask gave you when you downloaded MetaMask.
+
+00:03:33.495 --> 00:03:36.495
+The second is Infura link.
+
+00:03:36.495 --> 00:03:41.509
+Infura again, I think we worked on that video just about a couple videos back,
+
+00:03:41.509 --> 00:03:43.699
+but again if you don't have Infura I'll walk you.
+
+00:03:43.699 --> 00:03:46.560
+But just a second this is the link that's coming from Infura that gives you,
+
+00:03:46.560 --> 00:03:48.289
+or that you're hosting a node,
+
+00:03:48.289 --> 00:03:51.000
+or using one of their nodes to deploy in the rinkeby network.
+
+00:03:51.000 --> 00:03:54.599
+So, let me show you how you would do that.
+
+00:03:54.599 --> 00:03:55.969
+So, you're going to go to Infura.
+
+00:03:55.969 --> 00:03:57.680
+I have everything already set up here.
+
+00:03:57.680 --> 00:04:00.620
+But if you don't, you just going to go to infura.io,
+
+00:04:00.620 --> 00:04:03.560
+and I will have the links for that in the bottom of the screen,
+
+00:04:03.560 --> 00:04:04.670
+and then you're going to say,
+
+00:04:04.669 --> 00:04:07.369
+click on get started for free I'm already signed in for now,
+
+00:04:07.370 --> 00:04:09.245
+but you're going to click on get started for free.
+
+00:04:09.245 --> 00:04:11.270
+It's shows something right here.
+
+00:04:11.270 --> 00:04:13.880
+Then what it does is that once you sign up,
+
+00:04:13.879 --> 00:04:15.394
+it's going to send you an email,
+
+00:04:15.395 --> 00:04:19.610
+you have to confirm that email address and just then go back on the website, that's it.
+
+00:04:19.610 --> 00:04:22.420
+Now, what we need to do is get your API key.
+
+00:04:22.420 --> 00:04:23.710
+This is a key that we note.
+
+00:04:23.709 --> 00:04:28.789
+The easiest way to do that is you'll see a link here that says learn how Infura works,
+
+00:04:28.790 --> 00:04:30.439
+and just skip on it,
+
+00:04:30.439 --> 00:04:32.615
+and then you're going to see the screen, that's it.
+
+00:04:32.615 --> 00:04:34.009
+Pretty simple, create an account,
+
+00:04:34.009 --> 00:04:35.420
+confirm your email address,
+
+00:04:35.420 --> 00:04:38.480
+and then get started.
+
+00:04:38.480 --> 00:04:40.910
+There's a skip button on the side, and that's it,
+
+00:04:40.910 --> 00:04:43.280
+and then you're going to see a screen like this that says Create New Project.
+
+00:04:43.279 --> 00:04:46.969
+I've already created that and then you're going to give a name to your project.
+
+00:04:46.970 --> 00:04:49.010
+So, creating a project is going to give an empty project.
+
+00:04:49.009 --> 00:04:51.199
+I already have done that, so I don't have to do it.
+
+00:04:51.199 --> 00:04:53.240
+Now, from the end point,
+
+00:04:53.240 --> 00:04:56.660
+you are going to copy whatever node that you want to deploy it to,
+
+00:04:56.660 --> 00:04:58.310
+or whatever network you're want to deploy to.
+
+00:04:58.310 --> 00:04:59.540
+So, I'm going to do rinkeby,
+
+00:04:59.540 --> 00:05:01.035
+and I'm going to copy this.
+
+00:05:01.035 --> 00:05:05.060
+Now, this is what you need that you're going to connect to.
+
+00:05:05.060 --> 00:05:06.980
+So, I'm going to take this code,
+
+00:05:06.980 --> 00:05:09.475
+and I'm going to paste it back in my,
+
+00:05:09.475 --> 00:05:10.840
+which I already have,
+
+00:05:10.839 --> 00:05:13.639
+in my right there.
+
+00:05:13.639 --> 00:05:16.504
+So, this is my node that I'm using the rinkeby node.
+
+00:05:16.504 --> 00:05:18.560
+So, that's all. This is the truffle.js file.
+
+00:05:18.560 --> 00:05:22.160
+Make sure you save this file because once we all set with this,
+
+00:05:22.160 --> 00:05:23.870
+this is the whole part that you have do,
+
+00:05:23.870 --> 00:05:28.000
+and then in the next video we're going to start deploying it.
+

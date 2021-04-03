@@ -1,0 +1,265 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.844
+In this concept, we will talk about type conversion in solidity.
+
+00:00:04.844 --> 00:00:08.759
+All programming languages support some kind of type conversion,
+
+00:00:08.759 --> 00:00:10.320
+and so does solidity.
+
+00:00:10.320 --> 00:00:13.589
+There are two types of type conversions available to us,
+
+00:00:13.589 --> 00:00:17.550
+implicit conversion and explicit conversion.
+
+00:00:17.550 --> 00:00:19.545
+Implicit conversion.
+
+00:00:19.545 --> 00:00:23.075
+Let's talk about that. The compiler will attempt to convert
+
+00:00:23.074 --> 00:00:27.035
+from one type to another type if there is no loss of data.
+
+00:00:27.035 --> 00:00:30.408
+If there is potential loss of data that means,
+
+00:00:30.408 --> 00:00:35.134
+if we are trying to convert a variable from uint32 to uint8,
+
+00:00:35.134 --> 00:00:37.489
+there will be loss of data, right?
+
+00:00:37.490 --> 00:00:40.750
+This is when the compiler will give you an error.
+
+00:00:40.750 --> 00:00:45.414
+But if we're trying to convert uint8 to uint32,
+
+00:00:45.414 --> 00:00:49.655
+the compiler will not complain since there will be no loss of data.
+
+00:00:49.655 --> 00:00:52.625
+Let's look at some examples in front of you.
+
+00:00:52.625 --> 00:00:54.679
+In the first example,
+
+00:00:54.679 --> 00:00:59.340
+uint8 a is equal to 255 is going to work
+
+00:00:59.340 --> 00:01:04.020
+fine since uint8 can hold one byte of information,
+
+00:01:04.019 --> 00:01:07.064
+hence it can hold numbers up to 255.
+
+00:01:07.064 --> 00:01:11.739
+In the second example uint8 is equal to 256,
+
+00:01:11.739 --> 00:01:18.439
+the compiler will give an error since one byte cannot hold a number greater than 255.
+
+00:01:18.439 --> 00:01:20.224
+In the third example,
+
+00:01:20.224 --> 00:01:27.199
+we have int8 a is equal to 255 then we have int c. Now remember,
+
+00:01:27.200 --> 00:01:29.105
+whenever you do not mention a number,
+
+00:01:29.105 --> 00:01:35.515
+int c means int 256 c. Then we are doing c is equal to a.
+
+00:01:35.515 --> 00:01:40.174
+This is going to compile perfectly fine without any errors since int c
+
+00:01:40.174 --> 00:01:44.795
+means int 256 that means it can easily hold a byte of information.
+
+00:01:44.795 --> 00:01:47.960
+Let's look at some more examples on your screen.
+
+00:01:47.959 --> 00:01:49.824
+In the first example here,
+
+00:01:49.825 --> 00:01:53.594
+we are declaring a as uint 256,
+
+00:01:53.594 --> 00:01:56.715
+then we are declaring b as uint8.
+
+00:01:56.715 --> 00:02:00.439
+Then we're trying to do b is equal to a.
+
+00:02:00.439 --> 00:02:03.530
+We are trying to put the value of a in b.
+
+00:02:03.530 --> 00:02:07.670
+This will give us a compile error since b cannot hold or
+
+00:02:07.670 --> 00:02:11.735
+b can actually hold only eight bits and it cannot accommodate larger numbers.
+
+00:02:11.735 --> 00:02:13.610
+In the next example,
+
+00:02:13.610 --> 00:02:15.980
+we're trying to have a Boolean expression in
+
+00:02:15.979 --> 00:02:19.109
+the brackets and they're doing if brackets one.
+
+00:02:19.110 --> 00:02:22.610
+So, we're evaluating an expression with the if statement.
+
+00:02:22.610 --> 00:02:23.989
+Now, in some languages,
+
+00:02:23.989 --> 00:02:27.349
+one will evaluate to true but not in solidity.
+
+00:02:27.349 --> 00:02:30.185
+You need to explicitly give an expression.
+
+00:02:30.185 --> 00:02:34.640
+So, this is going to feel since one cannot implicitly convert to true.
+
+00:02:34.639 --> 00:02:36.259
+In the next example,
+
+00:02:36.259 --> 00:02:38.120
+if one greater than zero,
+
+00:02:38.120 --> 00:02:42.655
+now this is going to pass since the condition is now evaluated to true.
+
+00:02:42.655 --> 00:02:46.340
+Now, let's talk about explicit conversion.
+
+00:02:46.340 --> 00:02:51.784
+You can explicitly tell the compiler to convert from one type to another type.
+
+00:02:51.784 --> 00:02:56.659
+There could be potential loss of information and you are aware of that.
+
+00:02:56.659 --> 00:02:59.525
+In the next example that you see on the screen,
+
+00:02:59.525 --> 00:03:03.620
+we have a 32-bit number then we have a 24-bit number.
+
+00:03:03.620 --> 00:03:09.110
+Implicitly, if you try to store the 32-bit number in the 24-bit number,
+
+00:03:09.110 --> 00:03:11.650
+we are trying as we're trying to do in the second line,
+
+00:03:11.650 --> 00:03:13.620
+the compiler will give an error.
+
+00:03:13.620 --> 00:03:18.830
+But you can explicitly convert the 32-bit number to a 24-bit number by
+
+00:03:18.830 --> 00:03:20.960
+enclosing it in a bracket like on
+
+00:03:20.960 --> 00:03:24.365
+the third line and this is going to work perfectly fine.
+
+00:03:24.365 --> 00:03:28.295
+Let's look at some more examples for type conversion now.
+
+00:03:28.294 --> 00:03:32.449
+So, let's look at this simple example for type conversion.
+
+00:03:32.449 --> 00:03:36.019
+So, a very simple contract not really supposed to do anything
+
+00:03:36.020 --> 00:03:39.770
+just show you and explain you some type conversions in our language.
+
+00:03:39.770 --> 00:03:41.975
+CPC, it starts with a pragma line,
+
+00:03:41.974 --> 00:03:45.319
+solidity version that we're using right here and then
+
+00:03:45.319 --> 00:03:49.099
+word contract declares that this is a contract and then the name of the contract.
+
+00:03:49.099 --> 00:03:51.859
+Now, within that, all these variables that are outside
+
+00:03:51.860 --> 00:03:55.370
+any function automatically they become storage variables.
+
+00:03:55.370 --> 00:03:57.485
+So, we have the first variable which is
+
+00:03:57.485 --> 00:04:01.380
+a one byte unsigned integer because it says uint8,
+
+00:04:01.379 --> 00:04:06.199
+and then we have a uint 256 because it doesn't see anything and other variable.
+
+00:04:06.199 --> 00:04:07.924
+Now, inside the function,
+
+00:04:07.925 --> 00:04:12.685
+which is the name of the function is conversion and we have int b
+
+00:04:12.685 --> 00:04:17.939
+which means it is a 256 bits or a 32 byte signed integer.
+
+00:04:17.939 --> 00:04:21.029
+Then we're trying to do b is equal to a.
+
+00:04:21.029 --> 00:04:23.389
+Now, this is going to compile successfully because
+
+00:04:23.389 --> 00:04:27.185
+a 8bytes type can easily fit into 32byte information, right?
+
+00:04:27.185 --> 00:04:29.180
+But the next statement is going to give you
+
+00:04:29.180 --> 00:04:31.660
+an error and I'm going to show you by uncommenting this.
+
+00:04:31.660 --> 00:04:34.939
+So, if you see the compiler throws a red arrow right there,
+
+00:04:34.939 --> 00:04:36.800
+that shows that this is not going to work,
+
+00:04:36.800 --> 00:04:38.495
+so I'm going to comment it back.
+
+00:04:38.495 --> 00:04:42.139
+In the next line, if you see I'm actually explicitly converting
+
+00:04:42.139 --> 00:04:45.685
+b to uint8 and then storing it to a.
+
+00:04:45.685 --> 00:04:47.990
+Now, this is going to work perfectly fine because we
+
+00:04:47.990 --> 00:04:50.509
+are doing an explicit conversion in this example.
+
+00:04:50.509 --> 00:04:52.969
+All of these sample contracts are
+
+00:04:52.970 --> 00:04:55.420
+going to be available on our GitHub page so you can download them,
+
+00:04:55.420 --> 00:05:00.120
+play with them, and really get comfortable with all of these different concepts.
+

@@ -1,0 +1,292 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.355
+In this concept, I will explain you another complex data type called struct.
+
+00:00:05.355 --> 00:00:10.304
+Struct is a user-defined type declared by using the keyword struct.
+
+00:00:10.304 --> 00:00:12.839
+In this code example that you see on your screen,
+
+00:00:12.839 --> 00:00:15.884
+we are creating a struct called CarType.
+
+00:00:15.884 --> 00:00:19.304
+This struct CarType has four members: name,
+
+00:00:19.304 --> 00:00:21.824
+model, owner, and price.
+
+00:00:21.824 --> 00:00:24.989
+Like I mentioned, structs are just user-defined types.
+
+00:00:24.989 --> 00:00:28.695
+Now, we can create variables of type CarType.
+
+00:00:28.695 --> 00:00:32.414
+Also, structs cannot have members of its own type.
+
+00:00:32.414 --> 00:00:35.850
+Structs can be contained in arrays and mapping.
+
+00:00:35.850 --> 00:00:40.895
+So, that means you can definitely create an array that can hold struct types,
+
+00:00:40.895 --> 00:00:46.055
+or you can also create a mapping that can hold struct values.
+
+00:00:46.054 --> 00:00:49.549
+Now, structs are not a part of the ABI definition.
+
+00:00:49.549 --> 00:00:53.269
+What that means is that the color of the contract when looking
+
+00:00:53.270 --> 00:00:57.305
+at the ABI will not know if structs are defined in the contract.
+
+00:00:57.304 --> 00:01:01.969
+External function calls, that means calls made from outside the EVM,
+
+00:01:01.969 --> 00:01:04.765
+cannot send or receive struct types,
+
+00:01:04.765 --> 00:01:07.290
+but calls made from within the EVM,
+
+00:01:07.290 --> 00:01:11.690
+from one contract to another contract can send and receive struct types.
+
+00:01:11.689 --> 00:01:14.539
+Now, let's look at sample contract that uses
+
+00:01:14.540 --> 00:01:18.185
+struct so we can understand the concept of struct a little better.
+
+00:01:18.185 --> 00:01:21.269
+So, now this code example that we see on the screen,
+
+00:01:21.269 --> 00:01:23.444
+again, starts with the pragma line.
+
+00:01:23.444 --> 00:01:25.034
+Then, we have contract.
+
+00:01:25.034 --> 00:01:27.200
+The name of the contract is called strokes contract.
+
+00:01:27.200 --> 00:01:28.710
+Now, in the very beginning,
+
+00:01:28.709 --> 00:01:30.559
+I'm creating a struct called family.
+
+00:01:30.560 --> 00:01:36.225
+Now, this has three members: lastName, houseNumber, and age.
+
+00:01:36.224 --> 00:01:38.274
+So, bytes32 lastName.
+
+00:01:38.275 --> 00:01:40.055
+I'll explain to you why I wanted to use
+
+00:01:40.055 --> 00:01:43.400
+bytes32 because we're going to search on the struct
+
+00:01:43.400 --> 00:01:48.530
+and we cannot search or work with strings, or compare strings.
+
+00:01:48.530 --> 00:01:50.450
+So, that's the reason we're going to use bytes32.
+
+00:01:50.450 --> 00:01:53.094
+Now, that's a very normal thing that you'll see
+
+00:01:53.094 --> 00:01:57.750
+in contracts is using bytes32 when you're looking to compare strings.
+
+00:01:57.750 --> 00:01:59.944
+We'll get to that in just a second.
+
+00:01:59.944 --> 00:02:02.944
+So, we have three struct members here.
+
+00:02:02.944 --> 00:02:04.519
+Then, we're creating an array.
+
+00:02:04.519 --> 00:02:06.424
+So, we're creating an array of type family.
+
+00:02:06.424 --> 00:02:08.379
+So, like I said, this is just a type.
+
+00:02:08.379 --> 00:02:11.870
+Now, we have to create either a data type or of course,
+
+00:02:11.870 --> 00:02:14.300
+in this case, we're creating an array.
+
+00:02:14.300 --> 00:02:18.395
+Now, this array is going to store these structs.
+
+00:02:18.395 --> 00:02:20.765
+The name of the array is called myFamily.
+
+00:02:20.764 --> 00:02:25.089
+Now, what we're trying to do is we're trying to get names.
+
+00:02:25.090 --> 00:02:28.879
+So, what we're trying to do is someone is going to pass this saying they want to look up
+
+00:02:28.879 --> 00:02:33.530
+the struct or this array and see if this name exists in it.
+
+00:02:33.530 --> 00:02:38.175
+The way we do that is we're going to get the name in bytes32.
+
+00:02:38.175 --> 00:02:40.080
+Then, we're returning the complete value,
+
+00:02:40.080 --> 00:02:42.210
+that is, as a part of the struct, so three members.
+
+00:02:42.210 --> 00:02:44.945
+We're returning the lastName, houseNo, and age.
+
+00:02:44.944 --> 00:02:49.034
+So, we're going to loop over this array that we just created, myFamily.
+
+00:02:49.034 --> 00:02:52.840
+Now, if you receive a looping over the array myFamily.length,
+
+00:02:52.840 --> 00:02:55.854
+whatever the number of people that we have in this array,
+
+00:02:55.854 --> 00:02:57.614
+it's going to loop over that.
+
+00:02:57.615 --> 00:03:03.820
+Then, we're comparing our input argument to the last name and seeing if it matches.
+
+00:03:03.819 --> 00:03:05.719
+So, now, since I mentioned,
+
+00:03:05.719 --> 00:03:07.289
+we cannot compare strings like this.
+
+00:03:07.289 --> 00:03:11.120
+So, Solidity just does not support comparing strings in this way,
+
+00:03:11.120 --> 00:03:15.814
+and that's the reason we are using bytes32 because we can definitely compare bytes32.
+
+00:03:15.814 --> 00:03:18.710
+We're comparing our input argument to
+
+00:03:18.710 --> 00:03:22.895
+the last name and looping all throughout the array, whenever that matches.
+
+00:03:22.895 --> 00:03:28.640
+Now, returning the struct information or the array-specific index.
+
+00:03:28.639 --> 00:03:32.669
+We're doing myFamily index i returning the lastName,
+
+00:03:32.669 --> 00:03:35.459
+myFamily again, index i returning the houseNo,
+
+00:03:35.460 --> 00:03:37.560
+myFamily index i returning the age.
+
+00:03:37.560 --> 00:03:39.615
+So returning the information.
+
+00:03:39.615 --> 00:03:41.850
+The second function that we have,
+
+00:03:41.849 --> 00:03:44.129
+addName function, I wanted to show you.
+
+00:03:44.129 --> 00:03:46.259
+Now, structs cannot be passed as arguments,
+
+00:03:46.259 --> 00:03:49.699
+so we are passing all elements and attributes of struct as arguments.
+
+00:03:49.699 --> 00:03:52.429
+So, you cannot just pass a complete struct as an argument.
+
+00:03:52.430 --> 00:03:54.995
+That's the reason we add- if we need to add
+
+00:03:54.995 --> 00:03:58.069
+a different name to our struct array that we just created,
+
+00:03:58.069 --> 00:04:00.530
+we're going to have to pass it as separate argument.
+
+00:04:00.530 --> 00:04:03.830
+So, we're getting again, bytes32 lastName, value, and age.
+
+00:04:03.830 --> 00:04:07.645
+Then, we are creating a struct in memory inside.
+
+00:04:07.645 --> 00:04:09.770
+We are storing, and the way you store using
+
+00:04:09.770 --> 00:04:12.620
+only access struct members is using the.notation.
+
+00:04:12.620 --> 00:04:15.950
+So, we just created an empty struct here in memory,
+
+00:04:15.949 --> 00:04:18.979
+and now we're going to add all these different input parameters
+
+00:04:18.980 --> 00:04:20.420
+to end the arguments that we received.
+
+00:04:20.420 --> 00:04:25.615
+So, we're going to say newFamily.lastName is equal to our input or argument, lastName,
+
+00:04:25.615 --> 00:04:31.720
+newFamily.houseNo and equal to value that we just received,
+
+00:04:31.720 --> 00:04:35.240
+and newFamily.age equal to the value that we just received.
+
+00:04:35.240 --> 00:04:37.060
+Now, we're going to push it.
+
+00:04:37.060 --> 00:04:39.860
+So remember, we have an array here of this type.
+
+00:04:39.860 --> 00:04:41.780
+Once we've created our struct here,
+
+00:04:41.779 --> 00:04:43.533
+we're going to push this new information,
+
+00:04:43.533 --> 00:04:45.334
+this new type into array.
+
+00:04:45.334 --> 00:04:46.625
+The newFamily is array.
+
+00:04:46.625 --> 00:04:49.894
+So, we're going to say myFamily.push(newFamily), and then that's it.
+
+00:04:49.894 --> 00:04:51.305
+So, this is how structs work.
+
+00:04:51.305 --> 00:04:53.629
+Again, I would definitely encourage you didn't copy this piece of
+
+00:04:53.629 --> 00:04:58.759
+code from our GitHub page and play around with it,
+
+00:04:58.759 --> 00:05:02.670
+so that you really get comfortable with how structs work in Solidity.
+

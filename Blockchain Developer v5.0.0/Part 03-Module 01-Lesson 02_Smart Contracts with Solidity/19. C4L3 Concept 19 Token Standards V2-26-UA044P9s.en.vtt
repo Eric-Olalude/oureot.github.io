@@ -1,0 +1,250 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:05.490
+In this concept, let's talk about some of the famous ERC standards.
+
+00:00:05.490 --> 00:00:09.419
+We have ERC-20, ERC-223,
+
+00:00:09.419 --> 00:00:17.115
+ERC-721, and then ERC-621, and also ERC-827.
+
+00:00:17.114 --> 00:00:24.088
+ERC-20, this is the most common and well-known standard with an all crypto community,
+
+00:00:24.088 --> 00:00:30.829
+more than 90 percent if not all issued ICO tokens on deuterium implement the standard.
+
+00:00:30.829 --> 00:00:33.725
+The key benefit is standardization,
+
+00:00:33.725 --> 00:00:38.359
+any application or other smart contract can interact with the token
+
+00:00:38.359 --> 00:00:43.240
+in a standard manner without a need of knowing other details about the token.
+
+00:00:43.240 --> 00:00:48.109
+Therefore, we have a very pleasant way to create any ICO token,
+
+00:00:48.109 --> 00:00:51.155
+and have a standard way to interact with all of them,
+
+00:00:51.155 --> 00:00:53.615
+like they are all the same.
+
+00:00:53.615 --> 00:00:56.719
+All the application will need to know
+
+00:00:56.719 --> 00:00:58.579
+the deuterium token address that
+
+00:00:58.579 --> 00:01:01.969
+implements the standard because the functions are predefined.
+
+00:01:01.969 --> 00:01:06.950
+ERC-20 has many benefits including allowing wallets to
+
+00:01:06.950 --> 00:01:12.475
+provide token balances for a 100 of different tokens in a very standardized way,
+
+00:01:12.474 --> 00:01:18.484
+and also to be able to transfer tokens from one address to another address.
+
+00:01:18.484 --> 00:01:23.194
+I also wanted to mention that it is used to create fungible tokens,
+
+00:01:23.194 --> 00:01:26.689
+what that means is that all tokens are same.
+
+00:01:26.689 --> 00:01:33.140
+So, every token created by this contract could be exchangeable with another token.
+
+00:01:33.140 --> 00:01:37.314
+Next, let's talk about ERC-223.
+
+00:01:37.314 --> 00:01:41.390
+Now, this is a proposal that was introduced by a developer who
+
+00:01:41.390 --> 00:01:46.265
+decided to solve issues with the current ERC-20 standard for tokens.
+
+00:01:46.265 --> 00:01:50.659
+Advantages, it provides the possibility of avoiding accidentally
+
+00:01:50.659 --> 00:01:56.015
+last tokens inside contracts that are not designed to work with sent tokens.
+
+00:01:56.015 --> 00:01:59.090
+However, these accidental transfers,
+
+00:01:59.090 --> 00:02:00.829
+which are uncommon already,
+
+00:02:00.829 --> 00:02:03.909
+will probably become even more uncommon with
+
+00:02:03.909 --> 00:02:07.619
+ENS that stands for Ethereum Name Service in future.
+
+00:02:07.620 --> 00:02:11.188
+Now, ERC-223 transferred to contracts,
+
+00:02:11.188 --> 00:02:14.099
+consumes less gas than ERC-20,
+
+00:02:14.099 --> 00:02:16.079
+so that's an advantage.
+
+00:02:16.080 --> 00:02:20.730
+Disadvantages, ERC-223 is a proposal right now,
+
+00:02:20.729 --> 00:02:22.939
+not a standard, therefore,
+
+00:02:22.939 --> 00:02:27.490
+there are none of the high-profile ICO tokens that use the standard.
+
+00:02:27.490 --> 00:02:30.710
+Also, it is not yet implemented in any of
+
+00:02:30.710 --> 00:02:34.205
+the production tokens that I found from my research.
+
+00:02:34.205 --> 00:02:40.495
+Exchanges might need to do some special modifications in order to support such tokens.
+
+00:02:40.495 --> 00:02:45.740
+There are options that some of the exchanges might not be prepared for this yet.
+
+00:02:45.740 --> 00:02:49.129
+Now, this standard also creates fungible tokens,
+
+00:02:49.129 --> 00:02:52.469
+so all tokens have the same value.
+
+00:02:52.550 --> 00:02:57.015
+Moving on, let's talk about ERC-621.
+
+00:02:57.014 --> 00:03:03.284
+ERC-621 is just an extension of ERC-20 token standard.
+
+00:03:03.284 --> 00:03:08.280
+It adds two additional functions: increase supply and decrease supply.
+
+00:03:08.280 --> 00:03:12.243
+Now, we will talk about all the functions when we get to ERC-20,
+
+00:03:12.243 --> 00:03:14.389
+so you will understand a little bit better,
+
+00:03:14.389 --> 00:03:19.129
+but again just to recap ERC-621 adds two additional functions,
+
+00:03:19.129 --> 00:03:21.444
+increase supply and decrease supply.
+
+00:03:21.444 --> 00:03:25.489
+This increase and decrease the token supply in circulation.
+
+00:03:25.490 --> 00:03:29.480
+We will talk about token supply more in detail very soon.
+
+00:03:29.479 --> 00:03:33.924
+ERC-20 only allows a single token issuance event,
+
+00:03:33.925 --> 00:03:38.180
+this restrict the supply to certain amount which can't be changed.
+
+00:03:38.180 --> 00:03:43.740
+ERC-621 proposes that total supply can be modified.
+
+00:03:43.780 --> 00:03:47.659
+Let's talk about ERC-827.
+
+00:03:47.659 --> 00:03:50.835
+This is one of the latest token standards.
+
+00:03:50.835 --> 00:03:55.265
+It is an improvement to the standard interface ERC-20,
+
+00:03:55.264 --> 00:04:01.104
+with method that allow the execution of calls inside transfer and approvals.
+
+00:04:01.104 --> 00:04:04.639
+This standard provides basic functionality to transfer
+
+00:04:04.639 --> 00:04:08.239
+tokens as well as allow tokens to be approved,
+
+00:04:08.240 --> 00:04:12.844
+so they can be spent by another on-chain third party.
+
+00:04:12.844 --> 00:04:18.764
+It also allows to execute calls on transfers and approvals.
+
+00:04:18.764 --> 00:04:24.569
+This extension of the ERC-20 interface allows any tokens on
+
+00:04:24.569 --> 00:04:31.694
+deuterium to be reused by other applications from wallet to even decentralized exchanges.
+
+00:04:31.694 --> 00:04:35.444
+The ERC-20 tokens standard is widely accepted,
+
+00:04:35.444 --> 00:04:40.099
+but it only allows the transfer of value with ERC-827,
+
+00:04:40.100 --> 00:04:46.860
+deuterium users are available to transfer value and data, both on transactions.
+
+00:04:47.199 --> 00:04:50.959
+Let's talk about ERC-721,
+
+00:04:50.959 --> 00:04:55.444
+the goal of this proposal is to create a non-fungible token.
+
+00:04:55.444 --> 00:04:59.459
+In ERC-20 and ERC-223 standards,
+
+00:04:59.459 --> 00:05:01.245
+they have a supply of tokens,
+
+00:05:01.245 --> 00:05:02.850
+the tokens are fungible,
+
+00:05:02.850 --> 00:05:08.875
+what that means is that single unit of that token is equal to any other unit.
+
+00:05:08.875 --> 00:05:12.394
+This makes it easy to treat those tokens as
+
+00:05:12.394 --> 00:05:15.974
+all of the tokens supply can be treated in the same manner.
+
+00:05:15.975 --> 00:05:22.075
+However, there are various cases where you need to have an identical tokens,
+
+00:05:22.074 --> 00:05:24.295
+which are used within the platform,
+
+00:05:24.295 --> 00:05:28.295
+and add some extra parameters and price them differently.
+
+00:05:28.295 --> 00:05:34.055
+For instance, we could have a token which represents some part of the real estate object,
+
+00:05:34.055 --> 00:05:37.990
+and each token might have some different parameters added to it.
+
+00:05:37.990 --> 00:05:43.125
+The famous CryptoKitties is an ERC-721 token.
+
+00:05:43.125 --> 00:05:45.875
+Now such a standard makes it easy to create
+
+00:05:45.875 --> 00:05:50.399
+marketplaces for multiple non-fungible tokens.
+
