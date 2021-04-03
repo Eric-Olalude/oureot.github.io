@@ -1,0 +1,145 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.210
+In this section, we'll discuss the architecture and benefits of Web 3.0.
+
+00:00:05.210 --> 00:00:07.130
+So, to understand Web 3.0,
+
+00:00:07.130 --> 00:00:10.500
+we need to first understand the current Web 2.0 framework.
+
+00:00:10.500 --> 00:00:13.740
+So, this is a simplified diagram which includes the client,
+
+00:00:13.740 --> 00:00:16.230
+servers and protocols used to communicate.
+
+00:00:16.230 --> 00:00:18.345
+So, protocols such as HTTP.
+
+00:00:18.345 --> 00:00:21.870
+In order to provide the Internet away to hold and transfer state,
+
+00:00:21.870 --> 00:00:24.510
+Web 3.0 add some key components.
+
+00:00:24.510 --> 00:00:26.460
+These include; the wallet.
+
+00:00:26.460 --> 00:00:30.900
+So, wallets are the core of how users interact with the web three applications.
+
+00:00:30.900 --> 00:00:36.090
+Wallet's allowed users to manage a user's private keys and be able to sign transactions.
+
+00:00:36.090 --> 00:00:41.245
+Wallet also interact with the main client [inaudible] and to allow a seamless user experience.
+
+00:00:41.245 --> 00:00:44.850
+An example of a Web3.js call can be a payment request.
+
+00:00:44.850 --> 00:00:47.990
+So here, a user is asked to confirm that their wallet
+
+00:00:47.990 --> 00:00:51.575
+can send a specified amount of funds to the application's address.
+
+00:00:51.575 --> 00:00:53.295
+Once the user confirms,
+
+00:00:53.295 --> 00:00:55.700
+the front-end will present a proper message to
+
+00:00:55.700 --> 00:00:58.010
+the user letting them know that the payment was submitted.
+
+00:00:58.010 --> 00:01:00.965
+Then, the wallet will make an RPC call.
+
+00:01:00.965 --> 00:01:03.680
+Remember that stands for remote procedure call to
+
+00:01:03.680 --> 00:01:07.710
+the blockchain server to post the approved transaction onto the blockchain.
+
+00:01:07.710 --> 00:01:10.475
+Another component is our blockchain server.
+
+00:01:10.475 --> 00:01:13.730
+When a Wallet wants to submit a transaction to the blockchain,
+
+00:01:13.730 --> 00:01:16.160
+or be able to query change information from the blockchain,
+
+00:01:16.160 --> 00:01:18.830
+it makes a cause and blockchain node provider.
+
+00:01:18.830 --> 00:01:21.890
+These blockchain node providers function similarly to
+
+00:01:21.890 --> 00:01:25.340
+how AWS services run today for our back-end services.
+
+00:01:25.340 --> 00:01:28.255
+Lastly, we have our IPFS nodes.
+
+00:01:28.255 --> 00:01:32.395
+So, IPFS stands for Interplanetary File System.
+
+00:01:32.395 --> 00:01:35.210
+This is a peer-to-peer file sharing system that
+
+00:01:35.210 --> 00:01:38.195
+changes the way that data is stored and distributed.
+
+00:01:38.195 --> 00:01:40.700
+You'll learn a lot more about this later in the course.
+
+00:01:40.700 --> 00:01:44.270
+For now, just be aware that it truly enables data to be
+
+00:01:44.270 --> 00:01:48.935
+distributed and scale at a capacity for both clients and servers.
+
+00:01:48.935 --> 00:01:53.755
+For example, the depth that you made so far still sit on a centralized server.
+
+00:01:53.755 --> 00:01:58.925
+But you can make them truly decentralized by putting them on the IPFS server.
+
+00:01:58.925 --> 00:02:02.315
+So, while this is the current envisioning of Web 3.0,
+
+00:02:02.315 --> 00:02:05.119
+remember that we're still in the very early stages,
+
+00:02:05.119 --> 00:02:07.880
+which makes it an exciting time to be a part of the space.
+
+00:02:07.880 --> 00:02:11.045
+You have the opportunity to help shape this new internet.
+
+00:02:11.045 --> 00:02:13.445
+So, here some questions up for discussion.
+
+00:02:13.445 --> 00:02:16.955
+Will Web 3.0 completely take over Web 2.0.
+
+00:02:16.955 --> 00:02:19.310
+Or will the two be able to coexist in some way?
+
+00:02:19.310 --> 00:02:24.040
+If so how? Will there be DAPS that cannot be decentralized?
+
+00:02:24.040 --> 00:02:28.865
+What about the security and privacy concerns of these newly added components?
+
+00:02:28.865 --> 00:02:31.880
+Now, hopefully these new concepts and questions have stirred up
+
+00:02:31.880 --> 00:02:35.030
+your appetite to learn more and help build out this crazy new world.
+

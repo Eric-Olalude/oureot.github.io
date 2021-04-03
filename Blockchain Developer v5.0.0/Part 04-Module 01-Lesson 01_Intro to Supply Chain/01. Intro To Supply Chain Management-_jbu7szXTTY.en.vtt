@@ -1,0 +1,190 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.229
+Before starting to program supply chains using smart contracts,
+
+00:00:04.229 --> 00:00:06.629
+it's important to understand a little bit about what
+
+00:00:06.629 --> 00:00:09.644
+supply chains and supply chain management even are.
+
+00:00:09.644 --> 00:00:14.399
+What's their purpose? How does improving a supply chain help improve a business?
+
+00:00:14.400 --> 00:00:17.955
+Knowing this will help you understand the solutions you'll be building.
+
+00:00:17.954 --> 00:00:20.789
+In this video, we'll go over some of the basics behind
+
+00:00:20.789 --> 00:00:25.844
+supply chain management and discuss some simple examples of how supply chain operates.
+
+00:00:25.844 --> 00:00:28.559
+Supply chain management is a broad topic
+
+00:00:28.559 --> 00:00:31.664
+ranging across many aspects of almost all businesses.
+
+00:00:31.664 --> 00:00:34.534
+It includes everything needed to plan, build,
+
+00:00:34.534 --> 00:00:37.714
+create, manufacture, and deliver a product.
+
+00:00:37.715 --> 00:00:42.120
+The supply chain includes everything it takes to get the product a company creates,
+
+00:00:42.119 --> 00:00:44.000
+from its original materials to
+
+00:00:44.000 --> 00:00:47.600
+its final product and all the way through the sales process.
+
+00:00:47.600 --> 00:00:50.630
+The goal of supply chain management is to take all of
+
+00:00:50.630 --> 00:00:53.630
+this and make it as streamlined and efficient as possible.
+
+00:00:53.630 --> 00:00:56.090
+By effectively managing the supply chain,
+
+00:00:56.090 --> 00:00:59.510
+companies are able to create more efficient solutions for their customers,
+
+00:00:59.509 --> 00:01:02.254
+raise their profits, and lower their costs.
+
+00:01:02.255 --> 00:01:06.019
+Establishing an effective supply chain takes strong leadership.
+
+00:01:06.019 --> 00:01:08.375
+On top of that, it takes a ton of tools,
+
+00:01:08.375 --> 00:01:12.444
+methods and innovations to help companies stay ahead of their competition.
+
+00:01:12.444 --> 00:01:15.329
+Simple supply chains will include a company,
+
+00:01:15.329 --> 00:01:17.510
+the suppliers that it gets its material from,
+
+00:01:17.510 --> 00:01:20.555
+and all of the customers they sell their product to.
+
+00:01:20.555 --> 00:01:23.240
+While these fundamental stay about the same,
+
+00:01:23.239 --> 00:01:26.254
+the supply chain can easily get much more complicated.
+
+00:01:26.254 --> 00:01:28.530
+It can include many more suppliers,
+
+00:01:28.530 --> 00:01:29.924
+different types of customers,
+
+00:01:29.924 --> 00:01:31.905
+and entirely new products.
+
+00:01:31.905 --> 00:01:35.450
+As an example, let's follow the path of a coffee bean as it
+
+00:01:35.450 --> 00:01:39.250
+makes its way from the farmer all the way to your morning cup of coffee.
+
+00:01:39.250 --> 00:01:42.620
+Your average coffee bean will go through a few stages.
+
+00:01:42.620 --> 00:01:44.870
+To name just a few of them, there's growing,
+
+00:01:44.870 --> 00:01:48.215
+harvesting, packing, shipping, and roasting.
+
+00:01:48.215 --> 00:01:50.900
+Almost every step along the way involves
+
+00:01:50.900 --> 00:01:54.080
+a different supplier to help push it to the next stage of its journey.
+
+00:01:54.079 --> 00:01:55.789
+In this simple example,
+
+00:01:55.790 --> 00:01:58.520
+even if there were just a single supplier for each stage,
+
+00:01:58.519 --> 00:02:00.920
+we'd have five companies involved each making
+
+00:02:00.920 --> 00:02:04.930
+transactions as they distribute this coffee to retailers around the world.
+
+00:02:04.930 --> 00:02:07.370
+Each new retailer adds a whole new level of
+
+00:02:07.370 --> 00:02:10.835
+negotiations and interactions that need to be handled effectively.
+
+00:02:10.835 --> 00:02:12.439
+As you can see already,
+
+00:02:12.439 --> 00:02:16.159
+this can be an enormous complicated mess that can be difficult to deal with.
+
+00:02:16.159 --> 00:02:18.784
+As blockchain developers, we care about this
+
+00:02:18.784 --> 00:02:21.349
+because at the core of every one of these transactions,
+
+00:02:21.349 --> 00:02:22.819
+there are two main things.
+
+00:02:22.819 --> 00:02:26.509
+There's either need to establish trust between the companies involved
+
+00:02:26.509 --> 00:02:30.774
+or there's a need to automate some type of negotiation between these companies.
+
+00:02:30.775 --> 00:02:34.295
+Both of these things can be done by creating an open and shared ledger
+
+00:02:34.294 --> 00:02:37.939
+that allows these companies to collaborate and interact more effectively.
+
+00:02:37.939 --> 00:02:41.375
+Lucky for us, that's exactly what the blockchain provides.
+
+00:02:41.375 --> 00:02:43.969
+This extends well beyond coffee beans to
+
+00:02:43.969 --> 00:02:46.594
+anything you can think of from music distribution,
+
+00:02:46.594 --> 00:02:49.069
+to insurance claims, to car manufacturing.
+
+00:02:49.069 --> 00:02:51.169
+The list is almost endless.
+
+00:02:51.169 --> 00:02:54.649
+As you can see, the blockchain can make a huge impact if we
+
+00:02:54.650 --> 00:02:58.219
+can figure out ways to use smart contracts to improve supply chains.
+
+00:02:58.219 --> 00:03:02.840
+Coming up, we'll look a little closer at how smart contracts fit into this process.
+
+00:03:02.840 --> 00:03:05.030
+From there, you'll be in a good position to
+
+00:03:05.030 --> 00:03:08.310
+start programming some of these solutions for yourself.
+
