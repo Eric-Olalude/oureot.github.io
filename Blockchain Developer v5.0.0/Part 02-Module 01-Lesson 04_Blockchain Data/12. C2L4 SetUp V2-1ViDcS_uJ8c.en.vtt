@@ -1,0 +1,130 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.110
+Before we create a transaction and send it to the network,
+
+00:00:04.110 --> 00:00:08.294
+let me walk you through some basic setup instructions to set up your environment.
+
+00:00:08.294 --> 00:00:10.740
+The first thing that you will do is to start
+
+00:00:10.740 --> 00:00:13.259
+your Bitcoin Core software in the test net mode.
+
+00:00:13.259 --> 00:00:16.695
+So if you see CPC my Bitcoin core is running in the test net mode.
+
+00:00:16.695 --> 00:00:18.449
+In one of the previous lessons,
+
+00:00:18.449 --> 00:00:22.799
+we used our wallet to create a transaction from the graphical user interface.
+
+00:00:22.800 --> 00:00:23.940
+CPC on my screen,
+
+00:00:23.940 --> 00:00:25.589
+I have six transactions right now.
+
+00:00:25.589 --> 00:00:28.320
+So that means I have UTXOs that I can work with.
+
+00:00:28.320 --> 00:00:33.079
+If your wallet does not already have available transactions without puts to spend,
+
+00:00:33.079 --> 00:00:36.589
+check out the link below in the instructions to create a transaction.
+
+00:00:36.590 --> 00:00:39.035
+So you have UTXOs to work with.
+
+00:00:39.034 --> 00:00:42.649
+Now since you are creating and sending a transaction,
+
+00:00:42.649 --> 00:00:47.405
+that means we will also need a receiving address that we can send the Bitcoins to.
+
+00:00:47.405 --> 00:00:50.765
+Now this can be an external address or you can also have
+
+00:00:50.765 --> 00:00:54.829
+more than one addresses in your wallet so you can just transfer between addresses.
+
+00:00:54.829 --> 00:00:57.739
+If you don't have more than one address or an external address,
+
+00:00:57.740 --> 00:00:59.495
+let me quickly show you how to do that.
+
+00:00:59.494 --> 00:01:02.544
+All you will go to is your debug window.
+
+00:01:02.545 --> 00:01:04.515
+Then you're going to go to your console.
+
+00:01:04.515 --> 00:01:07.084
+CPC have a command here that says get new address.
+
+00:01:07.084 --> 00:01:09.034
+All you have to do is type the command,
+
+00:01:09.034 --> 00:01:11.840
+get new address and hit enter.
+
+00:01:11.840 --> 00:01:15.034
+Once you do that it's going to just create a new address for you.
+
+00:01:15.034 --> 00:01:17.974
+You can always give it a label if you wanted to give it a label.
+
+00:01:17.974 --> 00:01:19.969
+All you will say is get new address in
+
+00:01:19.969 --> 00:01:22.355
+the name of the label that you want to give it the label.
+
+00:01:22.355 --> 00:01:25.400
+I did not use a label so it just having you address right there.
+
+00:01:25.400 --> 00:01:31.350
+So I can use this address to create my transactions and send some Bitcoins to.
+
+00:01:31.349 --> 00:01:33.875
+Awesome. So now that we have a receiving address setup
+
+00:01:33.875 --> 00:01:37.129
+and we also have some UTXOs available in our account,
+
+00:01:37.129 --> 00:01:40.849
+we are ready to create a rod transaction and send it to the network.
+
+00:01:40.849 --> 00:01:42.949
+Just a quick overview, wanted to mention that
+
+00:01:42.950 --> 00:01:44.810
+Bitcoin transaction inputs come from
+
+00:01:44.810 --> 00:01:47.495
+the outputs of a previous transaction like we talked about.
+
+00:01:47.495 --> 00:01:52.055
+During a transaction, these funds are transferred from one address to another address.
+
+00:01:52.055 --> 00:01:55.130
+So when it comes time to spend a transaction,
+
+00:01:55.129 --> 00:01:57.289
+our wallets scans for all the block chain for
+
+00:01:57.290 --> 00:02:00.710
+all the spendable UTXOs that we have that are tied to a body.
+
+00:02:00.709 --> 00:02:03.919
+So now for this exercise to create a rod transaction,
+
+00:02:03.920 --> 00:02:09.430
+we will use the output from that transaction as a starting point for the inputs.
+

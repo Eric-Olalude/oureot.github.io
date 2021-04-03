@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.780
+Bitcoin Script is a simple stack-based language that offers a number of operations.
+
+00:00:05.780 --> 00:00:08.310
+It even has conditional flow control.
+
+00:00:08.310 --> 00:00:11.234
+However, there are intentional limitations
+
+00:00:11.234 --> 00:00:14.259
+built into it which we'll be covering in this section.
+
+00:00:14.259 --> 00:00:19.484
+The goal of this concept is to familiarize you with the prominent attributes of Script.
+
+00:00:19.484 --> 00:00:24.379
+We'll be covering Turing Completeness and Stateless Verification.
+
+00:00:24.379 --> 00:00:29.070
+Now, one major attribute of Script is that it is not Turing Complete.
+
+00:00:29.070 --> 00:00:32.710
+This means there are no loops or complex flow controls,
+
+00:00:32.710 --> 00:00:34.910
+other than conditional flow control.
+
+00:00:34.909 --> 00:00:37.689
+This makes the language completely deterministic
+
+00:00:37.689 --> 00:00:40.604
+so that we know when and how the program will end.
+
+00:00:40.604 --> 00:00:44.199
+Turing and Completeness removes the fear of being stuck in
+
+00:00:44.200 --> 00:00:47.695
+an infinite loop which could block or crash the network.
+
+00:00:47.695 --> 00:00:49.600
+A limited language prevents
+
+00:00:49.600 --> 00:00:54.435
+the transaction validation mechanism from being targeted and attacked as a vulnerability.
+
+00:00:54.435 --> 00:00:59.045
+Turing and completeness simplifies and secures the system.
+
+00:00:59.045 --> 00:01:02.425
+A second attribute of Script is that it is stateless.
+
+00:01:02.424 --> 00:01:06.405
+This means that all information needed to execute the Script is contained
+
+00:01:06.405 --> 00:01:10.310
+within the Script and no state is saved prior to running the Script,
+
+00:01:10.310 --> 00:01:12.495
+or after the Script has ran.
+
+00:01:12.495 --> 00:01:16.410
+The benefit of a Stateless Verification is that the same
+
+00:01:16.409 --> 00:01:20.494
+Script run anywhere in the system will execute the same way.
+
+00:01:20.495 --> 00:01:23.734
+So we can rest assured that a Script verified on our node,
+
+00:01:23.734 --> 00:01:26.885
+we verified the same way on another node.
+
+00:01:26.885 --> 00:01:32.960
+To recap, Bitcoin Script is not Turing complete and is stateless.
+
+00:01:32.959 --> 00:01:38.054
+These two properties allow the network to better scale and build insecurity.
+
+00:01:38.055 --> 00:01:40.425
+As you learn more about other bloc chains,
+
+00:01:40.424 --> 00:01:42.724
+you'll encounter they've chosen to use languages
+
+00:01:42.724 --> 00:01:45.604
+with similar or vastly different properties.
+
+00:01:45.605 --> 00:01:48.400
+For example, instead of being stateless,
+
+00:01:48.400 --> 00:01:50.005
+they may be stateful,
+
+00:01:50.004 --> 00:01:54.734
+meaning they do have an internal state that allows for loops and recursion.
+
+00:01:54.734 --> 00:02:00.685
+This allows for more flexibility but limits Scale for trustworthy verification.
+
+00:02:00.685 --> 00:02:03.674
+As you approach new blockchain platforms.
+
+00:02:03.674 --> 00:02:09.009
+be vigilant to understand the strengths and weaknesses of each implementation.
+

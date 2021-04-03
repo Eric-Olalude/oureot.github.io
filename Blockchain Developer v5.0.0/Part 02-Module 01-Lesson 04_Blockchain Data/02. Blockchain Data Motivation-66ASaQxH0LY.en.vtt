@@ -1,0 +1,211 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.919
+So I'm excited to start off our lesson about block data.
+
+00:00:02.919 --> 00:00:07.674
+So, previously we were talking a lot about Bitcoin Core and how to use it as a tool.
+
+00:00:07.674 --> 00:00:10.199
+In this lesson, we'll shift gears a bit and
+
+00:00:10.199 --> 00:00:13.169
+learn about data as it relates to blocks in transactions.
+
+00:00:13.169 --> 00:00:15.480
+So with that in mind, why is important to understand
+
+00:00:15.480 --> 00:00:17.760
+blocks and transactions as data models?
+
+00:00:17.760 --> 00:00:19.440
+Yes, the data models are extremely
+
+00:00:19.440 --> 00:00:21.600
+important to understand because we're going to be paying
+
+00:00:21.600 --> 00:00:25.650
+attention more and more to the protocol and every time that we look at the protocol,
+
+00:00:25.649 --> 00:00:29.519
+we have rules with a way to interact with blockchain platform.
+
+00:00:29.519 --> 00:00:33.450
+We need to understand the data model so that way we know when to relate
+
+00:00:33.450 --> 00:00:37.575
+the data that we need with our application development efforts.
+
+00:00:37.575 --> 00:00:39.080
+So it's really important to understand
+
+00:00:39.079 --> 00:00:41.820
+a data model so that way we can work with that data model.
+
+00:00:41.820 --> 00:00:43.520
+Interesting. So speaking of data,
+
+00:00:43.520 --> 00:00:46.325
+I know there's ways to embed data
+
+00:00:46.325 --> 00:00:49.445
+into the Blockchain and that's actually sort of some controversy.
+
+00:00:49.445 --> 00:00:51.570
+So for example in the bitcoin platform,
+
+00:00:51.570 --> 00:00:54.439
+some developers developed a way to embed data
+
+00:00:54.439 --> 00:00:57.744
+using operation codes are what's called Op-codes into blocks.
+
+00:00:57.744 --> 00:01:01.429
+There has been a divide in the community where on one side people
+
+00:01:01.429 --> 00:01:06.790
+say the Bitcoin Blockchain wasn't meant to stave off non-financial data.
+
+00:01:06.790 --> 00:01:09.050
+So, we're inflating the blockchain and
+
+00:01:09.049 --> 00:01:12.134
+putting a heavy load on on folks who weren't intending to do it.
+
+00:01:12.135 --> 00:01:14.500
+On the other side, the community saying,
+
+00:01:14.500 --> 00:01:19.489
+this is a way for the Blockchain to grow into spaces beyond financial sector.
+
+00:01:19.489 --> 00:01:20.824
+So, do you have thoughts on that?
+
+00:01:20.825 --> 00:01:24.295
+I do. You know it's really interesting the controversy that goes on in community.
+
+00:01:24.295 --> 00:01:28.620
+Early on, folks would actually have to burn their Bitcoin to embed data,
+
+00:01:28.620 --> 00:01:32.200
+and this would inflate what we know as a UTXO database.
+
+00:01:32.200 --> 00:01:38.534
+So the sides would grow the ledger would be more expensive to maintain across the nodes.
+
+00:01:38.534 --> 00:01:42.709
+So, now we have a maturity existing within the protocol as
+
+00:01:42.709 --> 00:01:44.899
+new improvement proposals get embedded into
+
+00:01:44.900 --> 00:01:49.125
+the Blockchain and Op-code right like Op-return.
+
+00:01:49.125 --> 00:01:51.319
+You still can embed data but now they're
+
+00:01:51.319 --> 00:01:54.484
+safeguards to help make sure that the UTXO database
+
+00:01:54.484 --> 00:01:57.109
+doesn't inflate so much that it's nearly
+
+00:01:57.109 --> 00:02:00.040
+impossible for a full node to download the ledger.
+
+00:02:00.040 --> 00:02:04.730
+It's really still important to understand that the non-financial data is
+
+00:02:04.730 --> 00:02:07.445
+really best to be separate off
+
+00:02:07.444 --> 00:02:10.650
+in regards to the ethics of the way that we're maintaining that dataset.
+
+00:02:10.650 --> 00:02:14.300
+Right. So, if we're going to create a transaction and we want to store data because we
+
+00:02:14.300 --> 00:02:18.620
+love the immutability nature of a blockchain ledger.
+
+00:02:18.620 --> 00:02:21.080
+There's some creative ways that we still can
+
+00:02:21.080 --> 00:02:24.755
+utilize a public Blockchain like even with Bitcoin.
+
+00:02:24.754 --> 00:02:26.900
+Well, we can take advantage that Op-return
+
+00:02:26.900 --> 00:02:30.430
+and embed a hash to prove that transaction exists.
+
+00:02:30.430 --> 00:02:33.650
+We don't need to store a ton of data on a public ledger.
+
+00:02:33.650 --> 00:02:37.490
+You make a good point. I'm only talking about ethics, the idea of ethics.
+
+00:02:37.490 --> 00:02:39.670
+It's not commonly a topic of
+
+00:02:39.669 --> 00:02:43.030
+discussion as a developer is actually a really important concepts
+
+00:02:43.030 --> 00:02:45.534
+especially as we're developing across industries
+
+00:02:45.534 --> 00:02:49.270
+and the implications of that into those industries.
+
+00:02:49.270 --> 00:02:52.705
+So with that do you have any advice for students before they start the lesson.
+
+00:02:52.705 --> 00:02:55.390
+What you meant at a good point about like ethics,
+
+00:02:55.389 --> 00:02:56.919
+just being cautious about it.
+
+00:02:56.919 --> 00:02:59.089
+Anytime that we work with data,
+
+00:02:59.090 --> 00:03:00.430
+we do want to think about
+
+00:03:00.430 --> 00:03:04.235
+our ethical responsibility for the way that we're handling data.
+
+00:03:04.235 --> 00:03:07.210
+Something that I think a lot of people don't
+
+00:03:07.210 --> 00:03:11.219
+recognize is the value of understanding that privacy.
+
+00:03:11.219 --> 00:03:13.625
+Like we talked about before on unblocked and identity.
+
+00:03:13.625 --> 00:03:17.479
+Maintaining your identities it's extremely important,
+
+00:03:17.479 --> 00:03:20.679
+and that should carry forward to the way that you do a transaction
+
+00:03:20.680 --> 00:03:24.750
+especially when you start embedding data utilizing Blockchain services.
+
+00:03:24.750 --> 00:03:27.969
+Will be ethically responsible and maintain that dataset
+
+00:03:27.969 --> 00:03:31.199
+that's going to be mutually beneficial for everybody's going to use your application.
+
+00:03:31.199 --> 00:03:33.459
+Yeah. So I'm really excited to
+
+00:03:33.460 --> 00:03:37.240
+talk more with you guys about this as the lesson continues.
+

@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.910
+In this lesson, we explored the limitations and
+
+00:00:02.910 --> 00:00:06.714
+best practices when embedding data in blockchain transactions.
+
+00:00:06.714 --> 00:00:10.905
+To recap, you learned the data structure of blocks and transactions.
+
+00:00:10.904 --> 00:00:14.579
+You became familiar with the purpose of Bitcoin scripts and OP codes,
+
+00:00:14.580 --> 00:00:17.765
+which are commonly used in the inputs and outputs of a transaction.
+
+00:00:17.765 --> 00:00:22.033
+Then, you got the chance to dive into a real life raw transaction.
+
+00:00:22.033 --> 00:00:24.869
+Lastly, we discussed the limitations and
+
+00:00:24.870 --> 00:00:29.054
+best practices of embedding data in blockchain transactions.
+
+00:00:29.054 --> 00:00:32.380
+Now, that wraps it up for the new topics in this lesson.
+
+00:00:32.380 --> 00:00:36.390
+In the next lesson, you'll bring together all that you've learned about
+
+00:00:36.390 --> 00:00:37.905
+blockchain data models to create
+
+00:00:37.905 --> 00:00:40.990
+a simple block chain all from scratch with your instructor.
+
+00:00:40.990 --> 00:00:44.270
+This hands-on practice will help you with the project that's associated with
+
+00:00:44.270 --> 00:00:48.530
+this course where you'll create your very own private blockchain.
+
+00:00:48.530 --> 00:00:51.380
+You'll build a blockchain focusing on the collection of
+
+00:00:51.380 --> 00:00:54.740
+data and stringing together blocks via their hashes.
+
+00:00:54.740 --> 00:00:56.990
+This will be a low-complexity blockchain
+
+00:00:56.990 --> 00:01:00.030
+that doesn't implement any formal consensus just yet.
+
+00:01:00.030 --> 00:01:03.774
+However, your blockchain will be able to create new blocks,
+
+00:01:03.774 --> 00:01:05.640
+store data within the blocks,
+
+00:01:05.640 --> 00:01:10.140
+and perform transactions, and secure the blocks with a digital signature.
+
+00:01:10.140 --> 00:01:13.540
+Now, with so much to do let's get started.
+

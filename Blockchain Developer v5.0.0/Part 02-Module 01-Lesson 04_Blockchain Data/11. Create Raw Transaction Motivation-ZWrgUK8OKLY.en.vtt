@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.870
+Hi, everyone and we're back for Block Talk.
+
+00:00:02.870 --> 00:00:05.655
+We're actually we are talking about raw transactions.
+
+00:00:05.655 --> 00:00:09.750
+So, as a reminder, raw transactions are how machines store off the transaction data.
+
+00:00:09.750 --> 00:00:11.455
+So, the lesson so far,
+
+00:00:11.455 --> 00:00:14.949
+we've taken a raw transaction and dissect it into its different parts,
+
+00:00:14.949 --> 00:00:17.890
+and now you understand the components of a raw transaction.
+
+00:00:17.890 --> 00:00:20.699
+I want to ask you why is it important as
+
+00:00:20.699 --> 00:00:24.780
+a Blockchain developer to know how raw transaction works?
+
+00:00:24.780 --> 00:00:26.815
+Isn't a raw transaction meant for the computer?
+
+00:00:26.815 --> 00:00:28.589
+Yeah. It's absolutely meant for the computer.
+
+00:00:28.589 --> 00:00:31.129
+I know we talked about before,
+
+00:00:31.129 --> 00:00:33.424
+we're trying to hit home on the protocol,
+
+00:00:33.424 --> 00:00:35.769
+and that's exactly what we're doing with the raw transaction.
+
+00:00:35.770 --> 00:00:37.410
+We're looking at the protocol,
+
+00:00:37.409 --> 00:00:39.389
+understand their roles on how to construct
+
+00:00:39.390 --> 00:00:42.399
+a transaction that gets embedded into the Blockchain.
+
+00:00:42.399 --> 00:00:47.504
+So, that life cycle of taking a transaction that's human readable,
+
+00:00:47.505 --> 00:00:52.000
+breaking it down to be consumable by like
+
+00:00:52.000 --> 00:00:57.079
+the Bitcoin platform is extremely important in regards to the rules of the platform.
+
+00:00:57.079 --> 00:01:00.640
+That's why we constantly are advocating about the protocol because those rules allow
+
+00:01:00.640 --> 00:01:04.715
+us to have guidelines for the way that we're going to work with transactional data.
+
+00:01:04.715 --> 00:01:07.650
+We also understand the nuts and bolts will really help us down the line.
+
+00:01:07.650 --> 00:01:08.910
+Oh, absolutely.
+
+00:01:08.909 --> 00:01:11.019
+Especially when it comes down to the way that we can
+
+00:01:11.019 --> 00:01:14.045
+work with transactional components of a Blockchain.
+
+00:01:14.045 --> 00:01:17.170
+It's even better to understand that the same principles
+
+00:01:17.170 --> 00:01:20.314
+with a raw transaction also works on other platforms.
+
+00:01:20.314 --> 00:01:23.709
+So, the way that you broke down the transaction as
+
+00:01:23.709 --> 00:01:28.299
+a raw transaction is literally the same way that you would use it on another platform.
+
+00:01:28.299 --> 00:01:30.899
+You still need to go ahead and transact,
+
+00:01:30.900 --> 00:01:33.594
+especially when we migrate to back-end services.
+
+00:01:33.594 --> 00:01:37.700
+How does the network communicate with transactional data?
+
+00:01:37.700 --> 00:01:39.745
+It's all about raw transactions.
+
+00:01:39.745 --> 00:01:41.785
+Yeah. It's a really powerful way to think about it.
+
+00:01:41.784 --> 00:01:45.799
+So, with that, let's start creating our own raw transaction.
+

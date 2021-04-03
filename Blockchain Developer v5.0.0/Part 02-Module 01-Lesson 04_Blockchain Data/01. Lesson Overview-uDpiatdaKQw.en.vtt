@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.365
+Welcome back to class. So, far in the course,
+
+00:00:03.365 --> 00:00:05.595
+you've learned a lot about Bitcoin core,
+
+00:00:05.594 --> 00:00:07.714
+creating transactions in the wallet gooey,
+
+00:00:07.714 --> 00:00:10.744
+and cover a number of debug console commands.
+
+00:00:10.744 --> 00:00:13.649
+In this lesson, our two big takeaways will
+
+00:00:13.650 --> 00:00:16.920
+be understanding transactions and blocks as data models,
+
+00:00:16.920 --> 00:00:19.845
+and understanding how to use the information that's stored inside of them.
+
+00:00:19.844 --> 00:00:24.154
+Any blockchain platform you end up working with will be transaction-based.
+
+00:00:24.155 --> 00:00:29.714
+Whether you plan on building your own blockchain or leveraging an existing blockchain,
+
+00:00:29.714 --> 00:00:33.865
+understanding how the data is structured will help you use it more efficiently.
+
+00:00:33.865 --> 00:00:37.050
+We'll run up the lesson on a more philosophical note,
+
+00:00:37.049 --> 00:00:42.129
+discussing the ethics and best practices when embedding data in blockchain transactions.
+
+00:00:42.130 --> 00:00:45.620
+To summarize, by the end of this lesson you'll be able
+
+00:00:45.619 --> 00:00:49.348
+to recognize the Data Structure of Blocks and Transactions,
+
+00:00:49.348 --> 00:00:52.909
+recognize the purpose of Bitcoin Script Opcodes and these
+
+00:00:52.909 --> 00:00:56.544
+are commonly used in the inputs and outputs of the transaction process,
+
+00:00:56.545 --> 00:00:59.359
+and lastly explore the limitations and
+
+00:00:59.359 --> 00:01:02.869
+best practices of Embedding Data in Blockchain Transactions.
+
+00:01:02.869 --> 00:01:06.359
+Using these skills will help you with the next lesson where you'll build
+
+00:01:06.359 --> 00:01:11.019
+all components of your own private simple blockchain off from scratch.
+

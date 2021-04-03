@@ -1,0 +1,330 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Create a Transaction: Step 7</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Blockchain Data</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Lesson Overview.html">01. Lesson Overview</a>
+    </li>
+    <li class="">
+      <a href="02. Blockchain Data Motivation.html">02. Blockchain Data Motivation</a>
+    </li>
+    <li class="">
+      <a href="03. Blockchain Data Models Overview.html">03. Blockchain Data Models Overview</a>
+    </li>
+    <li class="">
+      <a href="04. Transactions  - Inputs and Outputs.html">04. Transactions  - Inputs and Outputs</a>
+    </li>
+    <li class="">
+      <a href="05. Transaction Data Models.html">05. Transaction Data Models</a>
+    </li>
+    <li class="">
+      <a href="06. Bitcoin Scripts.html">06. Bitcoin Scripts</a>
+    </li>
+    <li class="">
+      <a href="07. Script Opcodes.html">07. Script Opcodes</a>
+    </li>
+    <li class="">
+      <a href="08. Opcodes.html">08. Opcodes</a>
+    </li>
+    <li class="">
+      <a href="09. Attributes of Script.html">09. Attributes of Script</a>
+    </li>
+    <li class="">
+      <a href="10. Raw Transaction Review.html">10. Raw Transaction Review</a>
+    </li>
+    <li class="">
+      <a href="11. Create Raw Transaction Motivation.html">11. Create Raw Transaction Motivation</a>
+    </li>
+    <li class="">
+      <a href="12. Setup for Creating a Transaction.html">12. Setup for Creating a Transaction</a>
+    </li>
+    <li class="">
+      <a href="13. Create a Transaction Step 1.html">13. Create a Transaction: Step 1</a>
+    </li>
+    <li class="">
+      <a href="14. Create a Transaction Step 2.html">14. Create a Transaction: Step 2</a>
+    </li>
+    <li class="">
+      <a href="15. Create a Transaction Step 3.html">15. Create a Transaction: Step 3</a>
+    </li>
+    <li class="">
+      <a href="16. Create a Transaction Step 4.html">16. Create a Transaction: Step 4</a>
+    </li>
+    <li class="">
+      <a href="17. Create a Transaction Step 5.html">17. Create a Transaction: Step 5</a>
+    </li>
+    <li class="">
+      <a href="18. Create a Transaction Step 6.html">18. Create a Transaction: Step 6</a>
+    </li>
+    <li class="">
+      <a href="19. Create a Transaction Step 7.html">19. Create a Transaction: Step 7</a>
+    </li>
+    <li class="">
+      <a href="20. Embedding Data in Transactions.html">20. Embedding Data in Transactions</a>
+    </li>
+    <li class="">
+      <a href="21. Embedding Data in Bitcoin Core.html">21. Embedding Data in Bitcoin Core</a>
+    </li>
+    <li class="">
+      <a href="22. Ethics of Embedding Data.html">22. Ethics of Embedding Data</a>
+    </li>
+    <li class="">
+      <a href="23. Lesson Summary and Project Prep Overview.html">23. Lesson Summary and Project Prep Overview</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">19. Create a Transaction: Step 7</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="step-7-query-the-txid">Step 7. Query the TxID</h2>
+<h3 id="explanation">Explanation</h3>
+<p>Now our transaction has been sent out to be added to the blockchain.</p>
+<p>We can now look up the transaction that we just sent out.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>C2L4 Step 7 V2</p></h3>
+  <video controls>
+  <source src="19. C2L4 Step 7 V2-j-EGsMCzzBE.mp4" type="video/mp4">
+
+  <track default="true" kind="subtitles" srclang="en" src="19. C2L4 Step 7 V2-j-EGsMCzzBE.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h3 id="command">Command</h3>
+<p>We will use the <a href="http://chainquery.com/bitcoin-api/gettransaction" rel="noopener noreferrer" target="_blank">gettransaction</a> command.</p>
+<p><strong>Command Parameters:</strong></p>
+<pre><code>gettransaction "txid"</code></pre>
+<p><strong>Arguments:</strong></p>
+<pre><code>1. "txid"                  (string, required) The transaction id</code></pre>
+<h3 id="execute-command">Execute Command</h3>
+<pre><code>gettransaction ae74538baa914f3799081ba78429d5d84f36a0127438e9f721dff584ac17b346</code></pre>
+<p>We can see that our transaction went through. </p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h3 id="result">Result</h3>
+<pre><code>{
+ "amount" : 0.00000000,
+ "fee" : -0.00050000,
+ "confirmations" : 0,
+ "txid" : "ae74538baa914f3799081ba78429d5d84f36a0127438e9f721dff584ac17b346",
+ "time" : 1392666702,
+ "timereceived" : 1392666702,
+ "details" : [
+ {
+ "account" : "",
+ "address" : "2NFK8YHKT6hPPTDKTPP3c5bx7oPGrYhzj2y",
+ "category" : "send",
+ "amount" : -0.03000000,
+ "fee" : -0.00050000
+ },
+ {
+ "account" : "",
+ "address" : "2Mzxx8wGAmQQyCCrb2vXP4yxaYY9s9nepfy",
+ "category" : "send",
+ "amount" : -0.01950000,
+ "fee" : -0.00050000
+ },
+ {
+ "account" : "",
+ "address" : "2NFK8YHKT6hPPTDKTPP3c5bx7oPGrYhzj2y",
+ "category" : "receive",
+ "amount" : 0.03000000
+ },
+ {
+ "account" : "",
+ "address" : "2Mzxx8wGAmQQyCCrb2vXP4yxaYY9s9nepfy",
+ "category" : "receive",
+"amount" : 0.01950000
+ }
+ ]
+}</code></pre>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="wrap-up">Wrap Up</h2>
+<p>That wraps it up for the steps to create a Raw Transaction by leveraging commands from the Bitcoin Protocol.</p>
+<p>We used UTXO from an existing transaction as the inputs, signed our transaction, and then sent it to the network.</p>
+<p>Now that you have hands-on experience making a transaction, In the remainder of the course, we will understand the idea of embedding data into a transaction beyond transactional data and whether or not this is an ethical practice. </p>
+<h3 id="steps-and-commands-used-in-this-exercise">Steps and Commands Used In This Exercise</h3>
+<ul>
+<li>Step 1 - View all unspent confirmed UTXO in the wallet<ul>
+<li><a href="http://chainquery.com/bitcoin-api/listunspent" rel="noopener noreferrer" target="_blank">listunspent</a> - Show all the unspent confirmed outputs in our wallet)</li></ul></li>
+<li>Step 2 - View Details about a Specific UTXO<ul>
+<li><a href="http://chainquery.com/bitcoin-api/gettxout" rel="noopener noreferrer" target="_blank">gettxout</a> - Get the details of this unspent output above</li></ul></li>
+<li>Step 3 - Create a Raw Transaction<ul>
+<li><a href="http://chainquery.com/bitcoin-api/createrawtransaction" rel="noopener noreferrer" target="_blank">createrawtransaction</a> - Create a transaction</li></ul></li>
+<li>Step 4 - Decode the Raw Transaction (to double-check it went through correctly)<ul>
+<li><a href="http://chainquery.com/bitcoin-api/decoderawtransaction" rel="noopener noreferrer" target="_blank">decoderawtransaction</a> - View raw hex string that encodes the transaction details we supplied</li></ul></li>
+<li>Step 5 - Sign the Raw Transaction <ul>
+<li><a href="http://chainquery.com/bitcoin-api/signrawtransactionwithwallet" rel="noopener noreferrer" target="_blank">signrawtransactionwithwallet</a><ul>
+<li>signrawtransaction - older versions than 0.17</li></ul></li></ul></li>
+<li>Step 6 - Submit the Raw Transaction to the Network<ul>
+<li><a href="http://chainquery.com/bitcoin-api/sendrawtransaction" rel="noopener noreferrer" target="_blank">sendrawtransction</a> - Takes the raw hex string produced by signrawtransaction and  returns a transaction hash (txid) as it submits the transaction on the network. </li></ul></li>
+<li>Step 7 - Query the TxID of the Transaction we sent<ul>
+<li><a href="http://chainquery.com/bitcoin-api/gettransaction" rel="noopener noreferrer" target="_blank">gettransaction</a> - Query the TxID and view details. Similar to online block explorer </li></ul></li>
+</ul>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="20. Embedding Data in Transactions.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('19. Create a Transaction: Step 7')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

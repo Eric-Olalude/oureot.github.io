@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.280
+In order to understand how information is stored on any blockchain,
+
+00:00:04.280 --> 00:00:07.835
+we need to understand block and transaction data models.
+
+00:00:07.835 --> 00:00:09.810
+This will help you build up and structure
+
+00:00:09.810 --> 00:00:12.425
+your own private blockchain in the following project,
+
+00:00:12.425 --> 00:00:16.850
+as well as understand how to interact with existing information on blockchains.
+
+00:00:16.850 --> 00:00:19.425
+Earlier, we saw that blocks contain
+
+00:00:19.425 --> 00:00:22.745
+a block header with these important pieces of information,
+
+00:00:22.745 --> 00:00:24.550
+the Previous Block's Hash,
+
+00:00:24.550 --> 00:00:26.175
+the Time the block was created,
+
+00:00:26.175 --> 00:00:28.664
+the Merkle Root and the Nonce.
+
+00:00:28.664 --> 00:00:30.250
+As we've explored before,
+
+00:00:30.250 --> 00:00:33.274
+the body of the block contains transactions.
+
+00:00:33.274 --> 00:00:35.199
+In the next several sections,
+
+00:00:35.200 --> 00:00:41.215
+we'll expand on transaction data models focusing on transaction inputs and outputs,
+
+00:00:41.215 --> 00:00:45.290
+which will help us understand how to create our own raw transactions.
+
+00:00:45.289 --> 00:00:47.689
+No matter which blockchain you end up working with,
+
+00:00:47.689 --> 00:00:51.949
+it's important to remember that blockchains are a transactional system.
+
+00:00:51.950 --> 00:00:56.030
+Having a good grasp of this information is vital to understanding what's
+
+00:00:56.030 --> 00:01:00.960
+going on under the hood with any blockchain service you end up working with.
+

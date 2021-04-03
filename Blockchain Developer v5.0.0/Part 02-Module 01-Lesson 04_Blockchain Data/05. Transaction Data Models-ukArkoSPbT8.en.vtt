@@ -1,0 +1,229 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.370
+We saw that a transaction consists of inputs and outputs.
+
+00:00:04.370 --> 00:00:06.254
+Now, in the world of bits and bytes,
+
+00:00:06.254 --> 00:00:10.224
+how is this information stored in the transaction data model?
+
+00:00:10.224 --> 00:00:14.059
+Let's explore the pieces of data that make up a transaction.
+
+00:00:14.060 --> 00:00:18.144
+On a blockchain, transactions are stored in a double hashed form.
+
+00:00:18.144 --> 00:00:23.594
+This means, the initial raw information is put through SHA-256 twice.
+
+00:00:23.594 --> 00:00:27.375
+If you were to ask the network to return back to us a raw transaction,
+
+00:00:27.375 --> 00:00:29.114
+we likely get this.
+
+00:00:29.114 --> 00:00:32.609
+This is called a raw transaction because it's still in
+
+00:00:32.609 --> 00:00:37.210
+hexadecimal format and hasn't been decoded into a JSON object yet.
+
+00:00:37.210 --> 00:00:41.344
+It might seem a bit hard to decipher but it's actually quite organized.
+
+00:00:41.344 --> 00:00:43.295
+We can break it apart to understand
+
+00:00:43.295 --> 00:00:46.130
+how the protocol layer stores our transaction information,
+
+00:00:46.130 --> 00:00:49.670
+so that we can efficiently leverage it when building our own botching.
+
+00:00:49.670 --> 00:00:53.475
+All transactions contain these pieces of information.
+
+00:00:53.475 --> 00:00:55.579
+There's the version.
+
+00:00:55.579 --> 00:00:57.769
+All transactions include information about
+
+00:00:57.770 --> 00:01:02.370
+the Bitcoin version number so we know which rules this transaction follows.
+
+00:01:02.369 --> 00:01:07.439
+An input count, which is how many inputs were used for this transaction.
+
+00:01:07.439 --> 00:01:09.640
+Next is input information.
+
+00:01:09.640 --> 00:01:14.060
+We'll go into more detail about everything that's contained here but at a high level,
+
+00:01:14.060 --> 00:01:17.055
+there is information about where the input is coming from,
+
+00:01:17.055 --> 00:01:19.740
+and checks that the input can be used.
+
+00:01:19.739 --> 00:01:25.554
+In output count, which tells us how many outputs were produced from this transaction.
+
+00:01:25.555 --> 00:01:27.375
+Next is output information.
+
+00:01:27.375 --> 00:01:31.370
+So, similar to input information which will be discussed in greater detail later,
+
+00:01:31.370 --> 00:01:35.090
+it tells us how much Bitcoin was outputted from this transaction,
+
+00:01:35.090 --> 00:01:39.365
+and has conditions that allows them to be spent in future transactions.
+
+00:01:39.364 --> 00:01:41.944
+Lastly, we get locktime.
+
+00:01:41.944 --> 00:01:45.619
+The locktime field indicates the earliest time or
+
+00:01:45.620 --> 00:01:49.370
+the earliest block a transaction can be added onto the blockchain.
+
+00:01:49.370 --> 00:01:53.469
+If the locktime is non-zero in less than 500 million,
+
+00:01:53.469 --> 00:01:55.849
+it is interpreted as a block height.
+
+00:01:55.849 --> 00:01:59.000
+Remember, a block's height is the number of
+
+00:01:59.000 --> 00:02:02.769
+blocks in the chain between it and the genesis block.
+
+00:02:02.769 --> 00:02:05.589
+So, the genesis block has a height of zero.
+
+00:02:05.590 --> 00:02:08.575
+If a transaction locktime is a block height,
+
+00:02:08.574 --> 00:02:11.269
+miners have to wait until the licit block height is
+
+00:02:11.270 --> 00:02:14.820
+reached before attempting to add the transaction onto the block.
+
+00:02:14.819 --> 00:02:17.959
+If the locktime is above 500 million,
+
+00:02:17.960 --> 00:02:20.915
+it is read as a Unix Timestamp which means,
+
+00:02:20.914 --> 00:02:25.435
+the number of seconds since the date January 1st, 1970.
+
+00:02:25.435 --> 00:02:30.240
+So our time is usually zero which means confirm as soon as possible.
+
+00:02:30.240 --> 00:02:34.020
+Let's go back to the input and output information sections.
+
+00:02:34.020 --> 00:02:36.510
+Part of what's contained in the input, and output,
+
+00:02:36.509 --> 00:02:41.544
+and froze are scripts that are instrumental to how a transaction gets signed.
+
+00:02:41.544 --> 00:02:45.639
+A script is just a computer program or a set of instructions
+
+00:02:45.639 --> 00:02:50.594
+inside each transaction that is executed to decide the transaction is valid.
+
+00:02:50.594 --> 00:02:54.550
+The transaction input contains an unlocking script,
+
+00:02:54.550 --> 00:02:57.525
+and the transaction output contains a locking script.
+
+00:02:57.525 --> 00:02:59.435
+If the transaction is valid,
+
+00:02:59.435 --> 00:03:01.810
+this means that the unlocking script has
+
+00:03:01.810 --> 00:03:05.469
+the requirements that unlock the conditions of the locking script.
+
+00:03:05.469 --> 00:03:09.805
+Now, scripts are a fascinating way to express complex conditions.
+
+00:03:09.805 --> 00:03:12.465
+You may have heard of smart contracts before.
+
+00:03:12.465 --> 00:03:15.710
+Smart contracts are nothing more than a series
+
+00:03:15.710 --> 00:03:18.969
+of conditions that must be met for an action to occur,
+
+00:03:18.969 --> 00:03:21.789
+and the parameters that meet those conditions.
+
+00:03:21.789 --> 00:03:24.269
+Now, scripts allows to do just that.
+
+00:03:24.270 --> 00:03:26.189
+As we continue this lesson,
+
+00:03:26.189 --> 00:03:29.379
+you'll learn more about the power of scripts that allows us to fine
+
+00:03:29.379 --> 00:03:33.254
+tune and control how transactions are executed onto the blockchain.
+
+00:03:33.254 --> 00:03:39.169
+Let's do a quick recap. We reviewed that the block header contains these parts.
+
+00:03:39.169 --> 00:03:41.739
+It has the Previous Block's Hash,
+
+00:03:41.740 --> 00:03:43.665
+the time of creation,
+
+00:03:43.664 --> 00:03:46.810
+the Merkle Root, and the Nonce.
+
+00:03:46.810 --> 00:03:50.194
+Afterwards, we looked at the transaction data models
+
+00:03:50.194 --> 00:03:53.909
+inside the block which contained the version,
+
+00:03:53.909 --> 00:03:56.849
+the input count, input information,
+
+00:03:56.849 --> 00:04:00.875
+the output count, output information, and the locktime.
+
+00:04:00.875 --> 00:04:03.250
+We also mentioned that the input information
+
+00:04:03.250 --> 00:04:06.159
+contains something that's called an unlocking script,
+
+00:04:06.159 --> 00:04:07.944
+and the output information contains
+
+00:04:07.944 --> 00:04:11.969
+the locking script which are used to validate a transaction.
+
+00:04:11.969 --> 00:04:16.329
+Next up, we'll see exactly how this is done.
+

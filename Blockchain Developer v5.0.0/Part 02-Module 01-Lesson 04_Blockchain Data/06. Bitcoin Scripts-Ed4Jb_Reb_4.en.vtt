@@ -1,0 +1,367 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.140
+In any blockchain platform,
+
+00:00:02.140 --> 00:00:03.895
+from Bitcoin to Ethereum,
+
+00:00:03.895 --> 00:00:08.105
+transactions hold a lot of vital information for the network to run.
+
+00:00:08.105 --> 00:00:12.679
+We use block explorers to view the inputs and outputs in a Bitcoin transaction.
+
+00:00:12.679 --> 00:00:14.695
+In addition to this information,
+
+00:00:14.695 --> 00:00:18.855
+we also learn that transactions include small bits of instructions called scripts,
+
+00:00:18.855 --> 00:00:21.225
+that allow the transaction to process.
+
+00:00:21.225 --> 00:00:24.825
+In this section, we'll understand the purpose of scripts,
+
+00:00:24.824 --> 00:00:27.160
+using Bitcoin scripts as an example.
+
+00:00:27.160 --> 00:00:31.179
+Then, we'll discuss specifically unlocking and locking scripts,
+
+00:00:31.179 --> 00:00:32.994
+checking out what's their purpose,
+
+00:00:32.994 --> 00:00:36.744
+how do they work, and working to find them in raw transactions.
+
+00:00:36.744 --> 00:00:38.784
+Now, let's start with scripts.
+
+00:00:38.784 --> 00:00:43.459
+A script is just a list of instructions recorded in each transaction
+
+00:00:43.460 --> 00:00:45.859
+that when executed will determine if the transaction
+
+00:00:45.859 --> 00:00:48.905
+is valid and the Bitcoins can be spent.
+
+00:00:48.905 --> 00:00:53.335
+Bitcoin scripts are written in a scripting language called Script,
+
+00:00:53.335 --> 00:00:55.799
+and that's with a capital S. Quite a tongue twister,
+
+00:00:55.799 --> 00:00:57.500
+so say that three times fast.
+
+00:00:57.500 --> 00:01:02.359
+A scripting language is a simple lightweight language designed to be limited in scope,
+
+00:01:02.359 --> 00:01:05.079
+and executable on a range of hardware.
+
+00:01:05.079 --> 00:01:08.625
+Bitcoin script is a stack-based language,
+
+00:01:08.625 --> 00:01:13.385
+this means that the data is stored in a simple data structure called a stack.
+
+00:01:13.385 --> 00:01:17.040
+You can imagine it similar to a stack of playing cards.
+
+00:01:17.040 --> 00:01:21.750
+The stack commonly stores numbers or data constants.
+
+00:01:21.750 --> 00:01:27.900
+We interact with information in the stack using operators which shorthanded to opcodes.
+
+00:01:27.900 --> 00:01:31.890
+Operators can push or add information onto the stack,
+
+00:01:31.890 --> 00:01:35.120
+they can pop or remove information from it,
+
+00:01:35.120 --> 00:01:37.550
+they can also act on information in the stack,
+
+00:01:37.549 --> 00:01:40.609
+as well as push results back onto the stack.
+
+00:01:40.609 --> 00:01:45.010
+When you see a script it will execute from left to right.
+
+00:01:45.010 --> 00:01:48.109
+Now, that sums it up for Bitcoin script basics.
+
+00:01:48.109 --> 00:01:52.094
+Now let's discuss the unlocking script and the locking script.
+
+00:01:52.094 --> 00:01:53.760
+What are their purposes?
+
+00:01:53.760 --> 00:01:57.775
+How do they work? Where can we find them in raw transactions?
+
+00:01:57.775 --> 00:01:59.675
+As we've mentioned before,
+
+00:01:59.674 --> 00:02:02.659
+inside a raw transaction we can find
+
+00:02:02.659 --> 00:02:04.914
+the unlocking script and the locking script
+
+00:02:04.915 --> 00:02:08.189
+inside the input and output information sections.
+
+00:02:08.189 --> 00:02:11.870
+At a high level, the scripts are small programs
+
+00:02:11.870 --> 00:02:16.680
+inside each transaction that are executed to decide which transaction is valid.
+
+00:02:16.680 --> 00:02:18.915
+If the transaction is valid,
+
+00:02:18.914 --> 00:02:22.144
+it can be signed, and a transaction can go through.
+
+00:02:22.145 --> 00:02:24.755
+These two scripts work together,
+
+00:02:24.754 --> 00:02:27.384
+similar to a puzzle edits solution.
+
+00:02:27.384 --> 00:02:29.274
+For a transaction to be valid,
+
+00:02:29.275 --> 00:02:32.800
+the unlocking script will solve the locking script.
+
+00:02:32.800 --> 00:02:35.810
+Locking script is like a puzzle that specifies
+
+00:02:35.810 --> 00:02:39.645
+the conditions that must be met before the Bitcoins can be spent.
+
+00:02:39.645 --> 00:02:43.180
+The unlocking script contains the correct solution that
+
+00:02:43.180 --> 00:02:46.840
+solves the puzzle and evaluates the locking script to ''true''.
+
+00:02:46.840 --> 00:02:49.580
+Here's an example of Bitcoin script.
+
+00:02:49.580 --> 00:02:52.630
+It's okay if these items don't make sense just yet,
+
+00:02:52.629 --> 00:02:54.585
+we'll cover them later in more detail.
+
+00:02:54.585 --> 00:02:58.010
+This is just for your reference for what scripts could look like.
+
+00:02:58.009 --> 00:03:01.299
+Bitcoin clients validate transactions by checking that
+
+00:03:01.300 --> 00:03:06.445
+the unlocking script solve the locking script. Here's how that works.
+
+00:03:06.444 --> 00:03:09.099
+Remember that inputs from one transaction
+
+00:03:09.099 --> 00:03:12.530
+refer back to the unspent outputs from another transaction.
+
+00:03:12.530 --> 00:03:16.030
+For each transaction, the validation software
+
+00:03:16.030 --> 00:03:20.219
+retrieves the UTXO referenced by each input.
+
+00:03:20.219 --> 00:03:25.509
+Each UTXO has a locking script that contains conditions required to spend it.
+
+00:03:25.509 --> 00:03:28.310
+In other words, each UTXO contains
+
+00:03:28.310 --> 00:03:32.259
+a puzzle that needs to be solved in order for the input to be spent.
+
+00:03:32.259 --> 00:03:34.924
+To check that the transaction is valid,
+
+00:03:34.925 --> 00:03:38.990
+the validation software grabs the unlocking script contained in the input,
+
+00:03:38.990 --> 00:03:41.905
+and checks if it solves the puzzle of the locking script.
+
+00:03:41.905 --> 00:03:45.245
+Now, let me stop and call a common point of confusion.
+
+00:03:45.245 --> 00:03:49.145
+Note that the unlocking script in a transaction does not unlock
+
+00:03:49.145 --> 00:03:53.874
+or interact in any way with the locking scripts in that same transaction.
+
+00:03:53.873 --> 00:03:57.949
+Instead, the unlocking script of an input interacts with
+
+00:03:57.949 --> 00:04:02.239
+the locking script of an output from a previous transaction.
+
+00:04:02.240 --> 00:04:05.290
+The locking script in the same transaction interacts
+
+00:04:05.289 --> 00:04:07.870
+with the unlocking script of a future transaction.
+
+00:04:07.870 --> 00:04:12.120
+Now, let's take a look at how the locking script itself works.
+
+00:04:12.120 --> 00:04:16.300
+A locking script places a lock on an output by
+
+00:04:16.300 --> 00:04:20.944
+specifying the conditions that must be met in order to spend the outputs in the future.
+
+00:04:20.944 --> 00:04:26.245
+In a simple example, let's say my transaction output contains a script that says,
+
+00:04:26.245 --> 00:04:29.274
+''This output is payable to whomever can present
+
+00:04:29.274 --> 00:04:33.019
+a signature from the key corresponding to Brandy's public address.''
+
+00:04:33.019 --> 00:04:37.539
+Since only Brandy has the wallet with the keys corresponding to that address,
+
+00:04:37.540 --> 00:04:42.285
+only Brandy's wallet can present the signature in order to redeem this output.
+
+00:04:42.285 --> 00:04:46.280
+In Bitcoin, historically the hash locking script
+
+00:04:46.279 --> 00:04:49.804
+was saved in a variable called scriptPubKey,
+
+00:04:49.805 --> 00:04:53.254
+because they contain a public key or a Bitcoin address.
+
+00:04:53.254 --> 00:04:56.870
+So you might still see this phrase used in most Bitcoin app source code.
+
+00:04:56.870 --> 00:04:59.870
+However, the phrase locking script is more
+
+00:04:59.870 --> 00:05:04.415
+encompassing of the broader possibilities allowed in the scripting technology.
+
+00:05:04.415 --> 00:05:11.254
+So, here's an example of scriptPubKey used in Bitcoin source codes, wallet.cpp file.
+
+00:05:11.254 --> 00:05:17.389
+The unlocking script in our puzzle analogy is the solution that will solve the puzzle.
+
+00:05:17.389 --> 00:05:23.254
+It satisfies the conditions of the locking script and allows the output to be spent.
+
+00:05:23.254 --> 00:05:28.279
+A common way it is implemented is that the unlocking script contains
+
+00:05:28.279 --> 00:05:31.000
+a digital signature produced by the users
+
+00:05:31.000 --> 00:05:35.709
+wallet from their private key that will unlock the locking script.
+
+00:05:35.709 --> 00:05:40.099
+Historically, the hash unlocking script is stored in
+
+00:05:40.100 --> 00:05:44.600
+a variable called scriptSig because it usually contains a digital signature.
+
+00:05:44.600 --> 00:05:49.025
+So you might see this phrase still used in most Bitcoin app source code.
+
+00:05:49.024 --> 00:05:52.294
+However, the phrase unlocking script is used
+
+00:05:52.295 --> 00:05:56.670
+because not all unlocking scripts must contain a signature.
+
+00:05:56.670 --> 00:06:02.345
+Here's an example of it used in Bitcoin source codes wallet.cpp file.
+
+00:06:02.345 --> 00:06:04.830
+Now that we know more about scripts,
+
+00:06:04.829 --> 00:06:08.159
+where can we find this information in the transaction?
+
+00:06:08.160 --> 00:06:11.920
+Let's go back to when we broke down the parts of a raw transaction,
+
+00:06:11.920 --> 00:06:14.290
+and said that the scripts are found inside
+
+00:06:14.290 --> 00:06:17.735
+the input information and output information sections.
+
+00:06:17.735 --> 00:06:21.449
+If we rear organize those values into this table,
+
+00:06:21.449 --> 00:06:25.045
+it's easier to see which parts are the script values.
+
+00:06:25.045 --> 00:06:29.090
+You'll notice a lot of fields that we've discussed before like version,
+
+00:06:29.089 --> 00:06:32.084
+input count, output count, and lock time.
+
+00:06:32.084 --> 00:06:36.159
+Inside the input information we can see the field
+
+00:06:36.160 --> 00:06:41.470
+scriptSig which we mentioned before is synonymous for unlocking script.
+
+00:06:41.470 --> 00:06:44.830
+Inside the output information we see
+
+00:06:44.829 --> 00:06:50.154
+the field scriptPubKey which is synonymous for the locking script.
+
+00:06:50.154 --> 00:06:52.719
+You'll see these terms used when we look at
+
+00:06:52.720 --> 00:06:55.070
+raw transactions from the debug console later.
+
+00:06:55.069 --> 00:06:57.339
+So keep this in mind. I've added
+
+00:06:57.339 --> 00:07:00.189
+this breakdown of the raw transaction down below this video.
+
+00:07:00.189 --> 00:07:03.920
+Take some time to familiarize yourself with what sections they are.
+
+00:07:03.920 --> 00:07:07.750
+This will help you when it comes to creating your own raw transaction.
+
+00:07:07.750 --> 00:07:09.490
+In the next concept,
+
+00:07:09.490 --> 00:07:12.829
+we'll be covering scripts in more technical detail.
+

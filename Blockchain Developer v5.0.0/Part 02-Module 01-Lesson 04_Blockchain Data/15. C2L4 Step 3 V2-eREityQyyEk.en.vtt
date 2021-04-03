@@ -1,0 +1,271 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.110 --> 00:00:03.359
+Now that we know all the UTXOs that are available,
+
+00:00:03.359 --> 00:00:05.580
+let's actually go and create a raw transaction.
+
+00:00:05.580 --> 00:00:08.519
+Again, I just wanted to make clear in this step is that,
+
+00:00:08.519 --> 00:00:10.549
+we are just creating a transaction in this step.
+
+00:00:10.550 --> 00:00:12.720
+We are not sending it to any network yet,
+
+00:00:12.720 --> 00:00:14.429
+we will do that in a later step.
+
+00:00:14.429 --> 00:00:16.169
+The command that you will use to create
+
+00:00:16.170 --> 00:00:18.810
+a raw transaction is called 'Create raw transaction'.
+
+00:00:18.809 --> 00:00:22.469
+Now, of course you can go to your debug console and type it directly,
+
+00:00:22.469 --> 00:00:25.695
+but it is a pretty long command because bunch of parameters go in it.
+
+00:00:25.695 --> 00:00:29.820
+The best way to do it is open up an editor to create a command since it is a long one,
+
+00:00:29.820 --> 00:00:32.460
+and I'm going to show what the syntax looks like.
+
+00:00:32.460 --> 00:00:37.625
+Let's go to R in editor that we have open here and have some information.
+
+00:00:37.625 --> 00:00:39.515
+This is how it looks like.
+
+00:00:39.515 --> 00:00:41.480
+It says create raw transaction,
+
+00:00:41.479 --> 00:00:43.489
+and then we have the transaction ID.
+
+00:00:43.490 --> 00:00:46.550
+This is the TxOut that you're trying to use.
+
+00:00:46.549 --> 00:00:48.614
+This is the input and the vout number.
+
+00:00:48.615 --> 00:00:52.500
+Remember, we saw an array of all the unspent transactions,
+
+00:00:52.500 --> 00:00:55.460
+so we're picking a transaction that has some balance in it.
+
+00:00:55.460 --> 00:00:57.829
+Again, just wanted to make sure that you do have
+
+00:00:57.829 --> 00:01:00.799
+some balance available in whatever the address that you're using.
+
+00:01:00.799 --> 00:01:03.549
+If you don't, you're going to get an error in the later step.
+
+00:01:03.549 --> 00:01:07.334
+Again, this followed by the TxOut.
+
+00:01:07.334 --> 00:01:09.609
+In this case, just wanted to walk you through,
+
+00:01:09.609 --> 00:01:13.040
+we are actually going to have two different transactions happening here.
+
+00:01:13.040 --> 00:01:18.305
+One transaction is the number of bitcoins that you're transferring one receiving address,
+
+00:01:18.305 --> 00:01:21.110
+and then the second transaction is the number of bitcoins that
+
+00:01:21.109 --> 00:01:24.870
+are changed coming back to the originating address.
+
+00:01:24.870 --> 00:01:28.050
+Again, the weight goes, I picked one of my addresses.
+
+00:01:28.049 --> 00:01:29.439
+Again, if you don't have addresses,
+
+00:01:29.439 --> 00:01:31.459
+I showed you in one of the steps prior,
+
+00:01:31.459 --> 00:01:35.674
+how to create new addresses in account or you can use an external account address.
+
+00:01:35.674 --> 00:01:38.685
+In my case, I'm picking one of these.
+
+00:01:38.685 --> 00:01:41.090
+Again, just to show you where this is coming from,
+
+00:01:41.090 --> 00:01:43.040
+this is my transaction ID and the vout,
+
+00:01:43.040 --> 00:01:46.580
+so if I wanted to show you where all this information is coming from,
+
+00:01:46.579 --> 00:01:49.819
+so let's go to a debug console again.
+
+00:01:49.819 --> 00:01:56.274
+Let's just go and pick up our unspent again so you can see it on a bigger screen.
+
+00:01:56.275 --> 00:01:58.299
+We have all our transactions,
+
+00:01:58.299 --> 00:02:00.170
+let's make it a little bit bigger here.
+
+00:02:00.170 --> 00:02:03.560
+What I'm doing is that I'm actually just picking this transaction.
+
+00:02:03.560 --> 00:02:07.040
+I'm picking this because I do see there's enough balance that it can transfer.
+
+00:02:07.040 --> 00:02:09.905
+This is the transaction ID vout,
+
+00:02:09.905 --> 00:02:11.509
+and I'm transferring it to one of
+
+00:02:11.509 --> 00:02:14.459
+my other addresses and I do have bunch of addresses and my account,
+
+00:02:14.460 --> 00:02:18.080
+and I think I'm picking one of my addresses that's posted on the top.
+
+00:02:18.080 --> 00:02:20.480
+Again, you can always find what addresses you have,
+
+00:02:20.479 --> 00:02:22.014
+I'll show that to you in just a second.
+
+00:02:22.014 --> 00:02:24.619
+I'm picking one of my other addresses in my account and
+
+00:02:24.620 --> 00:02:27.305
+I'm transferring back again to this address.
+
+00:02:27.305 --> 00:02:29.210
+This is the vout that I'm picking,
+
+00:02:29.210 --> 00:02:33.030
+in fact this one, because this has enough balance in it.
+
+00:02:39.500 --> 00:02:42.669
+To show you back again, this is what we're building here.
+
+00:02:42.669 --> 00:02:44.514
+We have a 'create raw transaction',
+
+00:02:44.514 --> 00:02:48.729
+and then that's the transaction ID that we got from the screen that I just showed to you,
+
+00:02:48.729 --> 00:02:51.174
+v-out was one but transferring,
+
+00:02:51.175 --> 00:02:55.300
+flippy side had a balance of 0.0495 I guess.
+
+00:02:55.300 --> 00:03:00.600
+What we're doing is a that we're transferring these much bitcoins to this address,
+
+00:03:00.599 --> 00:03:02.609
+and then whatever the balance is,
+
+00:03:02.610 --> 00:03:04.675
+of course, we're going to pay a little bit in back in gas.
+
+00:03:04.675 --> 00:03:08.635
+So we're transferring these much back again to this wallet.
+
+00:03:08.634 --> 00:03:12.283
+If you see, that's how you create the command 'create raw transaction',
+
+00:03:12.283 --> 00:03:15.959
+transaction ID comes here, vout comes here.
+
+00:03:15.960 --> 00:03:19.840
+Again, the syntax is also in the bottom of the screen,
+
+00:03:19.840 --> 00:03:22.099
+and then we have the transaction out.
+
+00:03:22.099 --> 00:03:23.739
+In our case we have two transactions,
+
+00:03:23.740 --> 00:03:27.469
+this is the receiving address I'm transferring these many bitcoins,
+
+00:03:27.469 --> 00:03:31.025
+and this is the address that we're getting it back, these many bitcoins.
+
+00:03:31.025 --> 00:03:33.365
+Fantastic, so this is our command.
+
+00:03:33.365 --> 00:03:35.120
+Now let's go copy this.
+
+00:03:35.120 --> 00:03:37.555
+I'm going to go copy this complete thing.
+
+00:03:37.555 --> 00:03:41.520
+Once we have that, I'm going to paste my command right here.
+
+00:03:41.520 --> 00:03:43.700
+This is a long command and that's the reason it was
+
+00:03:43.699 --> 00:03:46.554
+the best thing to use an editor for this.
+
+00:03:46.555 --> 00:03:49.930
+Again, wanted to make sure that you have enough balance in the from address,
+
+00:03:49.930 --> 00:03:53.270
+otherwise, when you send a transaction in later steps you will get an error.
+
+00:03:53.270 --> 00:03:59.195
+Again like I said, I'm using one of my UTXOs that has a balance of 0.0495 BTU,
+
+00:03:59.194 --> 00:04:01.969
+and all the information I showed that to you on your screen.
+
+00:04:01.969 --> 00:04:05.889
+Now, once we do that let's go hit "Enter" here.
+
+00:04:05.889 --> 00:04:07.784
+Once you do that,
+
+00:04:07.784 --> 00:04:09.719
+if you see you get a hex string back.
+
+00:04:09.719 --> 00:04:11.705
+This is the hex string that you are getting back.
+
+00:04:11.705 --> 00:04:14.390
+Now, we will need this hex string in our later steps
+
+00:04:14.389 --> 00:04:17.014
+to sign this transaction and further send it to the network.
+
+00:04:17.014 --> 00:04:18.289
+Make sure you copy this thing.
+
+00:04:18.290 --> 00:04:20.180
+Of course, it's available on the screen right now.
+
+00:04:20.180 --> 00:04:22.430
+But this is the hex string that we'll need to sign
+
+00:04:22.430 --> 00:04:26.250
+a transaction and further send it out to the network.
+

@@ -1,0 +1,169 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.930
+In our overview about Bitcoin scripting language script,
+
+00:00:03.930 --> 00:00:07.875
+we learned that it utilizes operation codes or opcodes for short.
+
+00:00:07.875 --> 00:00:10.679
+Now there are actually 80 something different opcodes
+
+00:00:10.679 --> 00:00:12.250
+available to us when we're writing scripts.
+
+00:00:12.250 --> 00:00:17.059
+In this section, we'll learn more about how to use opcodes.
+
+00:00:17.059 --> 00:00:19.349
+Remember that script is
+
+00:00:19.350 --> 00:00:24.734
+a stack-based language and opcodes allow us to interact with data on that stack.
+
+00:00:24.734 --> 00:00:30.589
+Some opcodes exists that either push or pop one or more parameters from that stack,
+
+00:00:30.589 --> 00:00:34.674
+then act on them and then may push the result back onto the stack.
+
+00:00:34.674 --> 00:00:39.799
+For example, there's OP_ADD and this is an ad opcodes.
+
+00:00:39.799 --> 00:00:43.294
+Notice the opcodes are prefixed with OP.
+
+00:00:43.295 --> 00:00:46.640
+So, OP_ADD will pop two items from the top of stack,
+
+00:00:46.640 --> 00:00:50.814
+add them and then push the sum back onto the stack.
+
+00:00:50.814 --> 00:00:54.710
+There are other opcodes that are conditional operators that evaluate
+
+00:00:54.710 --> 00:00:59.539
+a condition and then produce a boolean result of either true or false.
+
+00:00:59.539 --> 00:01:05.689
+For example, OP_EQUAL checks at the top two stack items are equal to each other.
+
+00:01:05.689 --> 00:01:10.489
+Let's see an example script that uses these opcodes together.
+
+00:01:10.489 --> 00:01:17.174
+Here, we have 2,6 OP_ADD eight and OP-EQUAL.
+
+00:01:17.174 --> 00:01:21.024
+Remember, scripts execute from left to right.
+
+00:01:21.025 --> 00:01:22.859
+Starting from the left,
+
+00:01:22.859 --> 00:01:26.254
+the constant value two is pushed onto the top of the stack.
+
+00:01:26.254 --> 00:01:28.905
+The script continues moving to the right.
+
+00:01:28.905 --> 00:01:35.219
+The next constant value six is added on top of the stack on top of the value two.
+
+00:01:35.219 --> 00:01:38.700
+Next is the opcode OP_ADD.
+
+00:01:38.700 --> 00:01:43.049
+The operator ADD pops the top two items from the top of the stack.
+
+00:01:43.049 --> 00:01:45.689
+Here, which are two and six,
+
+00:01:45.689 --> 00:01:49.274
+adds them and then push the sum back onto the stack.
+
+00:01:49.275 --> 00:01:53.094
+In this case, eight is returned back onto the stack.
+
+00:01:53.094 --> 00:01:58.045
+Moving right, another constant value eight is push onto the stack.
+
+00:01:58.045 --> 00:02:00.844
+The last step is OP_EQUAL,
+
+00:02:00.844 --> 00:02:04.670
+which pops the top two items off the top of the stack.
+
+00:02:04.670 --> 00:02:09.300
+In this case, eight and eight and then checks that they are equal and then
+
+00:02:09.300 --> 00:02:14.385
+returns a boolean value of either true or false back onto the top of the stack.
+
+00:02:14.384 --> 00:02:16.909
+In this case, it's going to be true.
+
+00:02:16.909 --> 00:02:19.889
+This simple arithmetic example can actually be
+
+00:02:19.889 --> 00:02:23.854
+a valid locking strip that can be used to lock a transaction output.
+
+00:02:23.854 --> 00:02:26.804
+This portion of the scripts could be the locking script.
+
+00:02:26.805 --> 00:02:31.469
+Six OP_ADD eight and OP_EQUAL and it could be
+
+00:02:31.469 --> 00:02:36.844
+satisfied by transaction containing an input with the unlocking script two.
+
+00:02:36.844 --> 00:02:41.164
+As we saw in the step-by-step example above when this script is
+
+00:02:41.164 --> 00:02:45.319
+executed the result is true making the transaction valid.
+
+00:02:45.319 --> 00:02:49.174
+This means the resulting UTX0 can be spent by
+
+00:02:49.175 --> 00:02:53.320
+anyone with the skills to know that the number two satisfies the script.
+
+00:02:53.319 --> 00:02:59.030
+This is a simplified case which will help familiarize you with script and opcodes.
+
+00:02:59.030 --> 00:03:02.780
+Later on, we'll see scripts that make use of signatures and
+
+00:03:02.780 --> 00:03:07.460
+public keys and these constants can be used in the unlocking script.
+
+00:03:07.460 --> 00:03:11.659
+You'll also see new opcodes used in the locking script.
+
+00:03:11.659 --> 00:03:16.069
+For example, there's OP_DUP which duplicates the top stack items and
+
+00:03:16.069 --> 00:03:20.334
+this is a commonly used operation code and there's also OP_CHECKSIG,
+
+00:03:20.335 --> 00:03:23.620
+which checks the signature for the top two stack items.
+
+00:03:23.620 --> 00:03:26.170
+You can find a complete list of opcodes and
+
+00:03:26.169 --> 00:03:29.434
+their descriptions in the Bitcoin Wiki which I've linked below.
+
+00:03:29.435 --> 00:03:32.050
+Try out the following quiz and solve for
+
+00:03:32.050 --> 00:03:34.870
+the unlocking script for the given locking script.
+
+00:03:34.870 --> 00:03:39.960
+This will help you practice working with the execution flow and logic in scripts.
+

@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.770 --> 00:00:04.290
+So now that we have created a raw transaction,
+
+00:00:04.290 --> 00:00:05.745
+we have a hex string back,
+
+00:00:05.745 --> 00:00:07.710
+we need to sign it using a valid.
+
+00:00:07.710 --> 00:00:12.315
+For this, of course we'll use the command which is called signrawtransactionwithwallet,
+
+00:00:12.314 --> 00:00:14.459
+followed by the hex string that we just got back.
+
+00:00:14.460 --> 00:00:16.785
+So we need to sign it because we haven't signed it yet.
+
+00:00:16.785 --> 00:00:19.890
+So we got this string back.
+
+00:00:19.890 --> 00:00:22.935
+So let's copy this string back again.
+
+00:00:22.934 --> 00:00:25.099
+Then you're going to type in a command.
+
+00:00:25.100 --> 00:00:26.390
+I know the screen is a little small.
+
+00:00:26.390 --> 00:00:28.429
+There's no way to zoom in in this pod right here,
+
+00:00:28.429 --> 00:00:31.579
+but I'm going to have all the commands listed for you in the bottom of the screen,
+
+00:00:31.579 --> 00:00:34.339
+and the commander to use is called
+
+00:00:34.340 --> 00:00:40.465
+signrawtransactionwithwallet followed by the hex string.
+
+00:00:40.465 --> 00:00:43.860
+Okay. Hit Enter. Once you do that,
+
+00:00:43.859 --> 00:00:48.515
+what you do is you again get this whole string back and other hex string.
+
+00:00:48.515 --> 00:00:51.049
+So again like I said, once you've signed the transaction,
+
+00:00:51.049 --> 00:00:54.259
+we can again make sure now with the signature part if you decode it,
+
+00:00:54.259 --> 00:00:55.789
+should not be empty anymore.
+
+00:00:55.789 --> 00:00:59.659
+So the way I'm going to make sure that this happens is you're
+
+00:00:59.659 --> 00:01:03.944
+actually going to go and copy this hex string.
+
+00:01:03.945 --> 00:01:06.030
+Once you go copythishex string,
+
+00:01:06.030 --> 00:01:07.890
+now let's go decode again.
+
+00:01:07.890 --> 00:01:12.685
+Once you decode again, I'll show you that that signature part is not empty anymore.
+
+00:01:12.685 --> 00:01:14.924
+So let's go back in our Vin.
+
+00:01:14.924 --> 00:01:18.030
+If you see, we got a script to the signed now fantastic.
+
+00:01:18.030 --> 00:01:19.109
+If you see scriptSig part,
+
+00:01:19.109 --> 00:01:20.299
+has the signature right here.
+
+00:01:20.299 --> 00:01:21.859
+So this means we are all set.
+
+00:01:21.859 --> 00:01:25.355
+We've created raw transaction, we've signed it,
+
+00:01:25.355 --> 00:01:27.560
+now we're all ready to send this raw transaction
+
+00:01:27.560 --> 00:01:30.810
+to the network which I will show you in the next step.
+

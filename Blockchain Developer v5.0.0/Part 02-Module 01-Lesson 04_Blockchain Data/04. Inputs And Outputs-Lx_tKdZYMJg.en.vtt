@@ -1,0 +1,277 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.975
+No matter which blockchain you end up working with,
+
+00:00:02.975 --> 00:00:06.980
+transactions are the most important part of any blockchain system.
+
+00:00:06.980 --> 00:00:10.054
+You can think of them as the atoms of the blockchain space.
+
+00:00:10.054 --> 00:00:15.239
+So, just as atoms are the fundamental building blocks from which all life is built upon,
+
+00:00:15.240 --> 00:00:19.179
+transactions are the units on which blocks of data are built upon.
+
+00:00:19.179 --> 00:00:22.769
+As you may have noticed, everything in the Bitcoin blockchain as we've
+
+00:00:22.769 --> 00:00:26.429
+seen is designed to ensure a transaction can be created,
+
+00:00:26.429 --> 00:00:28.065
+propagated as the network,
+
+00:00:28.065 --> 00:00:31.714
+validated and then eventually added onto the blockchain.
+
+00:00:31.714 --> 00:00:34.439
+To understand how to build our own blockchain,
+
+00:00:34.439 --> 00:00:38.099
+we need to understand the nuts and bolts of a transaction.
+
+00:00:38.100 --> 00:00:41.814
+In this video, we'll review how transactions work,
+
+00:00:41.814 --> 00:00:44.539
+focusing on their inputs and outputs.
+
+00:00:44.539 --> 00:00:47.210
+Having a good grasp of these concepts will be very
+
+00:00:47.210 --> 00:00:50.390
+important later when we discuss transaction data models.
+
+00:00:50.390 --> 00:00:55.100
+Transactions encode the transfer of value between participants and a system.
+
+00:00:55.100 --> 00:00:59.870
+In more detail, a transaction is a data structure that encodes a transfer of value
+
+00:00:59.869 --> 00:01:05.045
+from a source of funds called an "input" to a destination of funds called an "output".
+
+00:01:05.045 --> 00:01:09.290
+Let's take a look at a real life transaction we've explored before.
+
+00:01:09.290 --> 00:01:14.840
+This transaction consumed or used one input and created two outputs.
+
+00:01:14.840 --> 00:01:18.439
+Think of a transaction as a simple payment from one person to another,
+
+00:01:18.439 --> 00:01:22.114
+which often includes change that's returned to the original owner.
+
+00:01:22.114 --> 00:01:28.494
+In this example, one user had about 0.0257 Bitcoins in their wallet,
+
+00:01:28.495 --> 00:01:33.329
+they then paid another user 0.015 Bitcoins and the
+
+00:01:33.329 --> 00:01:39.394
+rest point 0.0106 Bitcoins was returned back to the original owner as change.
+
+00:01:39.394 --> 00:01:45.054
+Now the question is, where do these inputs come from and where do these outputs go?
+
+00:01:45.055 --> 00:01:48.615
+So, here's a simplified diagram of a single transaction.
+
+00:01:48.614 --> 00:01:54.804
+Let's call it Transaction A. Bitcoin transactions are composed of inputs and outputs.
+
+00:01:54.805 --> 00:02:00.595
+In a transaction, the inputs are just the unspent outputs from another transaction.
+
+00:02:00.594 --> 00:02:03.359
+For example, if there's a Transaction B,
+
+00:02:03.359 --> 00:02:07.799
+it's inputs maybe one of the outputs from Transaction A.
+
+00:02:07.799 --> 00:02:11.944
+Let me repeat that last concept again because it's really important.
+
+00:02:11.944 --> 00:02:17.900
+Inputs in one transaction are just the unspent outputs from another transaction.
+
+00:02:17.900 --> 00:02:21.900
+All inputs reference back to an output.
+
+00:02:21.900 --> 00:02:24.620
+Conceptualize the arrow as a pointer from
+
+00:02:24.620 --> 00:02:28.069
+the inputs referencing back to the outputs from which they came.
+
+00:02:28.069 --> 00:02:31.099
+This is similar to pointers in a linked list,
+
+00:02:31.099 --> 00:02:33.710
+and you'll find that this is a standard arrow notation
+
+00:02:33.710 --> 00:02:36.415
+of inputs pointing back to their outputs.
+
+00:02:36.414 --> 00:02:39.769
+When a user receives Bitcoins that amount is
+
+00:02:39.770 --> 00:02:43.580
+recorded on the blockchain as unspent outputs.
+
+00:02:43.580 --> 00:02:48.895
+Unspent outputs is often shorthanded to UTXO.
+
+00:02:48.895 --> 00:02:52.985
+UTXO is short for unspent transaction outputs.
+
+00:02:52.985 --> 00:02:56.340
+You may see both of these terms used interchangeably.
+
+00:02:56.340 --> 00:03:00.175
+Like we were saying, when a user receives Bitcoins,
+
+00:03:00.175 --> 00:03:04.650
+that amount is recorded onto the blockchain as unspent outputs.
+
+00:03:04.650 --> 00:03:07.969
+This means if the user has received lots of Bitcoins from
+
+00:03:07.969 --> 00:03:09.949
+several different transactions there is
+
+00:03:09.949 --> 00:03:13.134
+a huge UTXO recorded for each of these transactions.
+
+00:03:13.134 --> 00:03:17.359
+So, the user's Bitcoins maybe scattered across the Blockchain.
+
+00:03:17.360 --> 00:03:20.665
+When it comes time for the user to spend their Bitcoins,
+
+00:03:20.664 --> 00:03:23.655
+their wallet scans the blockchain and aggregates
+
+00:03:23.655 --> 00:03:27.729
+all the UTXO belonging to that user and then calculates the balance.
+
+00:03:27.729 --> 00:03:29.829
+Said another way, there is
+
+00:03:29.830 --> 00:03:34.120
+no such thing as a stored balance for an account or a Bitcoin address.
+
+00:03:34.120 --> 00:03:36.580
+There's just records of UTXO tied to
+
+00:03:36.580 --> 00:03:40.110
+a specific owner that are sprinkled throughout the blockchain.
+
+00:03:40.110 --> 00:03:45.150
+Another important thing is while UTXO can be any arbitrary value,
+
+00:03:45.150 --> 00:03:47.950
+once it's created it is indivisible,
+
+00:03:47.949 --> 00:03:50.659
+just like a coin. It can't be cut in half.
+
+00:03:50.659 --> 00:03:54.844
+If a UTXO is larger than the desired value of a transaction,
+
+00:03:54.844 --> 00:03:56.500
+it must still be consumed in
+
+00:03:56.500 --> 00:04:00.844
+its entirety and change must be generated in the transaction.
+
+00:04:00.844 --> 00:04:03.145
+Let's take a look at an example.
+
+00:04:03.145 --> 00:04:06.895
+It's Brandy's lucky day and I'm going to send her two Bitcoins.
+
+00:04:06.895 --> 00:04:09.409
+My wallet scans the blockchain and sees that there are
+
+00:04:09.409 --> 00:04:13.960
+two UTXO associated with me that can be summed up and used for this transaction.
+
+00:04:13.960 --> 00:04:20.335
+The first UTXO has 1.25 Bitcoins and the second has one 1.75 Bitcoins.
+
+00:04:20.334 --> 00:04:23.629
+The wallet aggregates these to UTXOs to total
+
+00:04:23.629 --> 00:04:27.909
+three Bitcoins that we use as the input of my transaction with Brandy.
+
+00:04:27.910 --> 00:04:32.100
+Here's what that looks like as a transaction input-output diagram.
+
+00:04:32.100 --> 00:04:37.465
+My wallet found UTXO tied to my address that can be used as inputs for this transaction.
+
+00:04:37.464 --> 00:04:43.164
+So, one UTXO that has 1.25 Bitcoins and a second that has 1.75 Bitcoins.
+
+00:04:43.165 --> 00:04:46.310
+The transaction processes and spits out two outputs.
+
+00:04:46.310 --> 00:04:50.019
+One output that is two Bitcoins sent over to Brandy,
+
+00:04:50.019 --> 00:04:54.009
+and another that sends one Bitcoin of change back into my wallet.
+
+00:04:54.009 --> 00:04:57.060
+If there is a minors or transaction fee,
+
+00:04:57.060 --> 00:05:00.970
+this is the difference between the inputs minus the outputs.
+
+00:05:00.970 --> 00:05:03.445
+This can be summed up all in this equation.
+
+00:05:03.444 --> 00:05:08.939
+Sum of the inputs minus sum of the outputs equals the transaction fee.
+
+00:05:08.939 --> 00:05:13.694
+That wraps it up for a quick recap of transaction inputs and outputs.
+
+00:05:13.694 --> 00:05:16.659
+We covered that transactions are a data structure that
+
+00:05:16.660 --> 00:05:19.475
+encodes a transfer of value from a source of funds,
+
+00:05:19.475 --> 00:05:22.745
+what's hot an "input" to a destination called an "output".
+
+00:05:22.745 --> 00:05:25.120
+We saw that inputs in one transaction or
+
+00:05:25.120 --> 00:05:27.750
+just the unspent outputs from another transaction,
+
+00:05:27.750 --> 00:05:32.074
+and outputs are the amount received or transferred in a transaction.
+
+00:05:32.074 --> 00:05:35.529
+This amount is recorded in the blockchain as UTXO,
+
+00:05:35.529 --> 00:05:38.709
+which is short for unspent transaction output.
+
+00:05:38.709 --> 00:05:41.680
+These concepts will help us in the next section as
+
+00:05:41.680 --> 00:05:45.530
+we deconstruct an actual transaction data model.
+
