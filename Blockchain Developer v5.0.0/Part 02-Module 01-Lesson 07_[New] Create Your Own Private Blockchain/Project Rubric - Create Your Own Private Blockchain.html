@@ -1,0 +1,355 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Create Your Own Private Blockchain</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>[New] Create Your Own Private Blockchain</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Project Introduction.html">01. Project Introduction</a>
+    </li>
+    <li class="">
+      <a href="02. Project Details.html">02. Project Details</a>
+    </li>
+    <li class="">
+      <a href="03. Step 1 Review Boilerplate Code.html">03. Step 1: Review Boilerplate Code</a>
+    </li>
+    <li class="">
+      <a href="04. Step 2 Constructing a Block.html">04. Step 2: Constructing a Block</a>
+    </li>
+    <li class="">
+      <a href="05. Step 3 Constructing your Chain.html">05. Step 3: Constructing your Chain</a>
+    </li>
+    <li class="">
+      <a href="06. Step 4 Testing Your Applications Functionality.html">06. Step 4: Testing Your Applications Functionality</a>
+    </li>
+    <li class="">
+      <a href="07. Project Cheat Sheet.html">07. Project Cheat Sheet</a>
+    </li>
+    <li class="">
+      <a href="Project Description - Create Your Own Private Blockchain.html">Project Description - Create Your Own Private Blockchain</a>
+    </li>
+    <li class="">
+      <a href="Project Rubric - Create Your Own Private Blockchain.html">Project Rubric - Create Your Own Private Blockchain</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">Create Your Own Private Blockchain</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            
+      <div>
+        <h2><p>Complete unfinished block.js implementation</p></h2>
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr class="thead-dark">
+              <th>Criteria</th>
+              <th>Meet Specification</th>
+            </tr>
+          </thead>
+          
+    <tbody>
+      
+      <tr scope="row">
+        <td>
+          <p>Modify the <code>validate()</code> function to validate if the block has been tampered or not.</p>
+        </td>
+        <td>
+          <p>-Return a new promise to allow the method be called asynchronous.<br />
+-Create an auxiliary variable and store the current hash of the block in it (this represent the block object)<br />
+-Recalculate the hash of the entire block (Use SHA256 from crypto-js library)<br />
+-Compare if the auxiliary hash value is different from the calculated one.<br />
+-Resolve true or false depending if it is valid or not.</p>
+        </td>
+      </tr>
+    
+      <tr scope="row">
+        <td>
+          <p>Modify the 'getBData()' function to return the block body (decoding the data)</p>
+        </td>
+        <td>
+          <p>-Use hex2ascii module to decode the data<br />
+-Because data is a javascript object use JSON.parse(string) to get the Javascript Object</p>
+<ul>
+<li>Resolve with the data and make sure that you don't need to return the data for the genesis block OR reject with an error.</li>
+</ul>
+        </td>
+      </tr>
+    
+    </tbody>
+  
+        </table>
+
+      </div>
+    
+      <div>
+        <h2><p>Complete unfinished blockchain.js implementation</p></h2>
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr class="thead-dark">
+              <th>Criteria</th>
+              <th>Meet Specification</th>
+            </tr>
+          </thead>
+          
+    <tbody>
+      
+      <tr scope="row">
+        <td>
+          <p>Modify the '_addBlock(block)' function to store a block in the chain</p>
+        </td>
+        <td>
+          <ul>
+<li>Must return a Promise that will resolve with the block added OR reject if an error happen during the execution.</li>
+<li>height must be checked to assign the previousBlockHash<br />
+-Assign the timestamp &amp; the correct height<br />
+-Create the block hash and push the block into the chain array. <br />
+Don't for get to update the <code>this.height</code></li>
+</ul>
+        </td>
+      </tr>
+    
+      <tr scope="row">
+        <td>
+          <p>Modify 'requestMessageOwnershipVerification(address)' to allow you to request a message that you will use to sign it with your Bitcoin Wallet (Electrum or Bitcoin Core)</p>
+        </td>
+        <td>
+          <ul>
+<li>must return a Promise that will resolve with the message to be signed</li>
+</ul>
+        </td>
+      </tr>
+    
+      <tr scope="row">
+        <td>
+          <p>Modify 'submitStar(address, message, signature, star)' function to register a new Block with the star object<br />
+into the chain</p>
+        </td>
+        <td>
+          <ul>
+<li>must resolve with the Block added or<br />
+reject with an error.</li>
+<li>time elapsed between when the message was sent and the current time must be less that 5 minutes</li>
+<li>must verify the message with wallet address and signature: bitcoinMessage.verify(message, address, signature)</li>
+<li>must create the block and add it to the chain if verification is valid</li>
+</ul>
+        </td>
+      </tr>
+    
+      <tr scope="row">
+        <td>
+          <p>Modify the 'getBlockHeight(hash)' function to retrieve a Block based on the hash parameter</p>
+        </td>
+        <td>
+          <ul>
+<li>must return a Promise that will resolve with the Block</li>
+</ul>
+        </td>
+      </tr>
+    
+      <tr scope="row">
+        <td>
+          <p>Modify the 'getStarsByWalletAddress (address)' function to return an array of Stars from an owners collection</p>
+        </td>
+        <td>
+          <ul>
+<li>must return a Promise that will resolve with an array of the owner address' Stars from the chain</li>
+</ul>
+        </td>
+      </tr>
+    
+      <tr scope="row">
+        <td>
+          <p>Modify the 'validateChain()' function </p>
+        </td>
+        <td>
+          <ul>
+<li>must return a Promise that will resolve with the list of errors when validating the chain</li>
+<li>must validate each block using validateBlock()</li>
+<li>Each Block should check with the previousBlockHash </li>
+<li>execute the <code>validateChain()</code> function every time a block is added</li>
+<li>create an endpoint that will trigger the execution of <code>validateChain()</code></li>
+</ul>
+        </td>
+      </tr>
+    
+    </tbody>
+  
+        </table>
+
+      </div>
+    
+      <div>
+        <h2><p>Test your App functionality</p></h2>
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr class="thead-dark">
+              <th>Criteria</th>
+              <th>Meet Specification</th>
+            </tr>
+          </thead>
+          
+    <tbody>
+      
+      <tr scope="row">
+        <td>
+          <p>Use 'POSTMAN' or similar service to test your blockchains endpoints and send screenshots of each call</p>
+        </td>
+        <td>
+          <ul>
+<li>must use a GET call to request the Genesis block</li>
+<li>must use a POST call to requestValidation</li>
+<li>must sign message with your wallet</li>
+<li>must submit your Star</li>
+<li>must use GET call to retrieve starts owned by a particular address</li>
+</ul>
+        </td>
+      </tr>
+    
+    </tbody>
+  
+        </table>
+
+      </div>
+    
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('Create Your Own Private Blockchain')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>
