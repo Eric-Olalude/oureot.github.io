@@ -1,0 +1,154 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.480
+At first glance it almost seems impossible to
+
+00:00:03.480 --> 00:00:06.540
+communicate between private and public blockchains,
+
+00:00:06.540 --> 00:00:12.080
+due to the vast difference with permission and permissionless blockchain protocols.
+
+00:00:12.080 --> 00:00:15.769
+To help understand how this communication works,
+
+00:00:15.769 --> 00:00:18.454
+we'll look at an example where we need to store
+
+00:00:18.454 --> 00:00:22.070
+public blockchain data into our private blockchain.
+
+00:00:22.070 --> 00:00:28.164
+Let's imagine that our private blockchain needs to log Bitcoin transaction activities.
+
+00:00:28.164 --> 00:00:32.799
+Our logger service would monitor new blocks added to the public blockchain.
+
+00:00:32.799 --> 00:00:37.280
+The transactions within the box would be logged into our private chain
+
+00:00:37.280 --> 00:00:43.185
+utilizing transaction hash as a link between public and private blockchains.
+
+00:00:43.185 --> 00:00:47.065
+To store private blockchain data into our public blockchain,
+
+00:00:47.064 --> 00:00:49.759
+we would need to reference the options available to us
+
+00:00:49.759 --> 00:00:52.729
+by referring to the platform documentation.
+
+00:00:52.729 --> 00:00:55.959
+In this case we will use Bitcoin core.
+
+00:00:55.960 --> 00:01:00.085
+Previously we discussed the usage of operation codes.
+
+00:01:00.085 --> 00:01:06.109
+One operation code that allows us enough storage to store a hash value is OP return.
+
+00:01:06.109 --> 00:01:11.879
+Typical hashing algorithms generate hash values less than 40 bytes.
+
+00:01:11.879 --> 00:01:17.560
+For example, SHA256 Hash is 256 bits long.
+
+00:01:17.560 --> 00:01:20.310
+To reduce its size under 40 bytes,
+
+00:01:20.310 --> 00:01:24.575
+we can encode the data to binary with eight bits per byte.
+
+00:01:24.575 --> 00:01:29.280
+Using binary we would achieve 32 bytes for storage of the hash.
+
+00:01:29.280 --> 00:01:31.939
+OP return allows us the option to store
+
+00:01:31.939 --> 00:01:36.239
+a hash value that references our private blockchain dataset.
+
+00:01:36.239 --> 00:01:38.104
+As you might have noticed,
+
+00:01:38.105 --> 00:01:41.540
+the hash allows us to utilize its uniqueness as
+
+00:01:41.540 --> 00:01:45.975
+a unique ID to reference and connect our data between blockchains.
+
+00:01:45.974 --> 00:01:51.875
+There's two quick examples of methods to link public blockchain to private blockchains,
+
+00:01:51.875 --> 00:01:53.915
+and ways you might consider doing it.
+
+00:01:53.915 --> 00:01:58.405
+In the end both examples depend on a transaction to occur.
+
+00:01:58.405 --> 00:02:03.734
+Connecting data between blockchains is also known as cross chain functionality.
+
+00:02:03.734 --> 00:02:07.310
+Cross chain functionality allows a series of protocols to
+
+00:02:07.310 --> 00:02:11.115
+work in harmony to deliver decentralized applications.
+
+00:02:11.115 --> 00:02:15.650
+We are entering an age where new projects are focusing on ways to develop
+
+00:02:15.650 --> 00:02:21.094
+cross-chain protocols that tackle the task of interacting between chains.
+
+00:02:21.094 --> 00:02:23.944
+A project example is Polkadot.
+
+00:02:23.944 --> 00:02:29.375
+Polkadot is configuring itself as a intermediary between blockchains.
+
+00:02:29.375 --> 00:02:33.995
+Polkadot uses a multi-chain approach with a blockchain called Relay
+
+00:02:33.995 --> 00:02:39.064
+which coordinates consensus and transaction delivery between blockchains.
+
+00:02:39.064 --> 00:02:42.550
+Next Polkadot utilizes a second blockchain called
+
+00:02:42.550 --> 00:02:46.370
+Parachain which gathers and processes transactions.
+
+00:02:46.370 --> 00:02:50.650
+Finally, both solutions together create a bridge that links to
+
+00:02:50.650 --> 00:02:55.305
+blockchains with their own consensus such as Bitcoin and Ethereum.
+
+00:02:55.305 --> 00:03:01.575
+So, that wraps up this discussion on public and private blockchain interactions.
+
+00:03:01.574 --> 00:03:04.274
+In this video, we discussed private,
+
+00:03:04.275 --> 00:03:09.965
+public blockchains and ways to communicate between blockchains utilizing hashes.
+
+00:03:09.965 --> 00:03:14.469
+We also provided a project example to allow intermediating between
+
+00:03:14.469 --> 00:03:19.300
+blockchains as a dedicated service to promote cross-chain functionality.
+
+00:03:19.300 --> 00:03:24.590
+Cross-chain functionality is an important concept to understand and very similar
+
+00:03:24.590 --> 00:03:30.140
+to the way that we relate data with traditional databases which require a unique ID.
+
+00:03:30.139 --> 00:03:36.299
+After all, a transaction has is also a means to establish a unique ID.
+

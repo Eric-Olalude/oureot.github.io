@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.909
+Hi, I'm Brandy.
+
+00:00:01.909 --> 00:00:04.500
+You're doing a wonderful job in the program.
+
+00:00:04.500 --> 00:00:08.669
+I would like to welcome you to the next lesson regarding private blockchain.
+
+00:00:08.669 --> 00:00:11.400
+In this lesson, we will discuss usage of
+
+00:00:11.400 --> 00:00:16.320
+a private and public blockchain and how to interact between the two chains.
+
+00:00:16.320 --> 00:00:18.109
+By the end of this lesson,
+
+00:00:18.109 --> 00:00:21.369
+we will demonstrate building our own private blockchain ledger.
+
+00:00:21.370 --> 00:00:23.550
+We will utilize JavaScript and make use of
+
+00:00:23.550 --> 00:00:27.894
+third-party libraries with proven methods to support cryptographic functions.
+
+00:00:27.894 --> 00:00:29.519
+To help you get started, would put
+
+00:00:29.519 --> 00:00:33.085
+a few more details about this lesson down below the video.
+
+00:00:33.085 --> 00:00:36.530
+If you like, take some time to read through and when you're ready,
+
+00:00:36.530 --> 00:00:40.259
+we'll see you in the next lesson on private blockchains.
+

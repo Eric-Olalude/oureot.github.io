@@ -1,0 +1,37 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.690
+Congratulations!
+
+00:00:01.690 --> 00:00:04.290
+You created your own private blockchain.
+
+00:00:04.290 --> 00:00:06.794
+As you notice, it's pretty simple.
+
+00:00:06.794 --> 00:00:12.405
+We have a blockchain that stores blocks linked together in a chain as a dataset.
+
+00:00:12.404 --> 00:00:16.004
+Some additional options you might want to consider to improve
+
+00:00:16.004 --> 00:00:21.704
+your private blockchain would be the addition of a peer-to-peer consensus algorithm.
+
+00:00:21.704 --> 00:00:24.964
+To recap, we just compared the difference between
+
+00:00:24.964 --> 00:00:27.960
+private and public blockchains and ways to
+
+00:00:27.960 --> 00:00:31.603
+communicate between blockchains utilizing hashes.
+
+00:00:31.603 --> 00:00:34.079
+We continue the journey with the creation of
+
+00:00:34.079 --> 00:00:39.939
+our own simple private blockchain without the difficulties of consensus.
+
