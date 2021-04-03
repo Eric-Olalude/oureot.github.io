@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.349
+Hey, and welcome to this lesson on decentralized file storage.
+
+00:00:04.349 --> 00:00:08.669
+Throughout this lesson, we'll go over the fundamentals of decentralized file storage,
+
+00:00:08.669 --> 00:00:10.650
+also known as DFS.
+
+00:00:10.650 --> 00:00:13.470
+We'll cover many new concepts to help get you up and
+
+00:00:13.470 --> 00:00:16.350
+running with decentralized file storage for yourself.
+
+00:00:16.350 --> 00:00:21.300
+To start, you'll get a broad overview of what DFS is and how it's being used to
+
+00:00:21.300 --> 00:00:26.399
+try and replace some extremely important internet protocols, specifically HTTP.
+
+00:00:26.399 --> 00:00:29.729
+You'll learn how it compliments decentralized apps created in
+
+00:00:29.730 --> 00:00:34.564
+Ethereum to create fully decentralized unstoppable applications.
+
+00:00:34.564 --> 00:00:40.724
+From there, we'll focus specifically on one implementation of DFS known as IPFS,
+
+00:00:40.725 --> 00:00:43.079
+the Interplanetary File System.
+
+00:00:43.079 --> 00:00:46.324
+That's a big name, and their goals are even bigger.
+
+00:00:46.325 --> 00:00:52.105
+Their goal is to replace HTTP as the protocol we use to share information online.
+
+00:00:52.104 --> 00:00:56.964
+Using IPFS, you'll learn to share files like text, images,
+
+00:00:56.965 --> 00:01:01.130
+videos and more onto a shared network that just like a blockchain,
+
+00:01:01.130 --> 00:01:05.570
+cannot be censored or changed and is not owned by any centralized source.
+
+00:01:05.569 --> 00:01:07.750
+By the end of this lesson,
+
+00:01:07.750 --> 00:01:09.950
+you'll have published your own personal website on
+
+00:01:09.950 --> 00:01:12.920
+IPFS you can use to showcase your new projects,
+
+00:01:12.920 --> 00:01:15.260
+skills or anything else you'd like.
+
+00:01:15.260 --> 00:01:19.340
+You'll also be challenged to publish your own decentralized application onto
+
+00:01:19.340 --> 00:01:23.450
+IPFS to create your first fully decentralized application.
+
+00:01:23.450 --> 00:01:24.829
+We've got a lot to cover,
+
+00:01:24.829 --> 00:01:26.120
+and I'm excited to get started.
+
+00:01:26.120 --> 00:01:27.350
+So, when you're ready,
+
+00:01:27.349 --> 00:01:29.549
+I'll see you in the first section.
+

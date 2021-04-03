@@ -1,0 +1,199 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.040
+Now, that we've gone over the DAO attack,
+
+00:00:02.040 --> 00:00:05.129
+I wanted to go over the details of one of the other largest hacks to
+
+00:00:05.129 --> 00:00:08.685
+ever happen using solidity contracts, the Parity hack.
+
+00:00:08.685 --> 00:00:11.820
+Like the DAO, it was a small amount of code that exploited
+
+00:00:11.820 --> 00:00:15.660
+a simple idea that just isn't normal to see in other types of programming.
+
+00:00:15.660 --> 00:00:18.539
+To understand, it you'll have to learn a few new concepts,
+
+00:00:18.539 --> 00:00:20.410
+and then see how decisions that normally make
+
+00:00:20.410 --> 00:00:23.594
+sense can be completely flipped to cost a lot of money.
+
+00:00:23.594 --> 00:00:26.759
+So, first we'll need to go over two new ideas,
+
+00:00:26.760 --> 00:00:29.054
+fallback functions and delegate calls.
+
+00:00:29.054 --> 00:00:32.549
+From there, we'll look at a simplified version of the code that was hacked,
+
+00:00:32.549 --> 00:00:35.159
+how it was hacked, and how it could have been prevented.
+
+00:00:35.159 --> 00:00:38.154
+To start, let's look at the idea of a delegate call.
+
+00:00:38.155 --> 00:00:41.450
+I put a link down below the video to the solidity documentation,
+
+00:00:41.450 --> 00:00:43.940
+where they introduced this. It's a simple idea.
+
+00:00:43.939 --> 00:00:46.489
+Basically, delegate calls allow you to call
+
+00:00:46.490 --> 00:00:49.940
+a function from your contract that exists inside a different contract.
+
+00:00:49.939 --> 00:00:52.354
+This is similar to how libraries work.
+
+00:00:52.354 --> 00:00:54.349
+I'll show you what this looks like shortly,
+
+00:00:54.350 --> 00:00:55.880
+in the Parity code example.
+
+00:00:55.880 --> 00:00:58.190
+The other thing you'll need to know about to understand
+
+00:00:58.189 --> 00:01:00.634
+the Parity hack is what a fallback function is.
+
+00:01:00.634 --> 00:01:04.700
+Again, I link to the documentation for fallback functions down below the video.
+
+00:01:04.700 --> 00:01:08.570
+A fallback function is an unnamed function that you put in your contract.
+
+00:01:08.569 --> 00:01:11.824
+You can have exactly one of these in any contract you create.
+
+00:01:11.825 --> 00:01:15.710
+The purpose of the function is to be the catchall or fall back in
+
+00:01:15.709 --> 00:01:20.089
+any case where a function is called in that contract that doesn't actually exist.
+
+00:01:20.090 --> 00:01:22.385
+This would happen in the case that maybe there was
+
+00:01:22.385 --> 00:01:25.300
+a spelling error in the function that's called in your contract.
+
+00:01:25.299 --> 00:01:27.619
+Otherwise, someone could be calling a function
+
+00:01:27.620 --> 00:01:29.780
+that they think is in your contract that just isn't.
+
+00:01:29.780 --> 00:01:32.359
+In either case, the fallback function would catch this.
+
+00:01:32.359 --> 00:01:35.780
+So, for example, you could use this to alert someone and say,
+
+00:01:35.780 --> 00:01:39.170
+hey you call a function that doesn't actually exist in my contract.
+
+00:01:39.170 --> 00:01:42.200
+This would alert someone that they've probably made an error.
+
+00:01:42.200 --> 00:01:44.180
+There are other use cases than this,
+
+00:01:44.180 --> 00:01:47.195
+and you'll start seeing this more as you work through other contracts.
+
+00:01:47.194 --> 00:01:49.924
+This includes the Parity wallet, which we'll go over now.
+
+00:01:49.924 --> 00:01:54.384
+Here's a simplified example of the Parity code that existed at the time it was hacked.
+
+00:01:54.385 --> 00:01:58.310
+What Parity did was provide a contract that helps users create wallets.
+
+00:01:58.310 --> 00:02:00.590
+The goal was to avoid the need for users to
+
+00:02:00.590 --> 00:02:03.079
+rewrite this functionality into each of their wallets,
+
+00:02:03.079 --> 00:02:04.924
+just like what any library would do.
+
+00:02:04.924 --> 00:02:07.609
+You can see here that it does things like initialize
+
+00:02:07.609 --> 00:02:10.759
+a wallet and add a wallet owner, all useful stuff.
+
+00:02:10.759 --> 00:02:13.219
+The problem is there's a way to hack this using
+
+00:02:13.219 --> 00:02:16.085
+the ideas of delegate calls and fall back functions.
+
+00:02:16.085 --> 00:02:19.099
+There are more details to both delegate calls and fall back
+
+00:02:19.099 --> 00:02:22.114
+functions that I didn't describe if you're reading the documentation,
+
+00:02:22.115 --> 00:02:25.250
+but I did mentioned everything that you'll need to know to solve this problem.
+
+00:02:25.250 --> 00:02:27.379
+So, I'll take a break here and give you
+
+00:02:27.379 --> 00:02:30.004
+some time to think about how this could possibly have been hacked.
+
+00:02:30.004 --> 00:02:32.120
+You don't need to write any code yet just work
+
+00:02:32.120 --> 00:02:34.444
+through how this code could possibly be exploited.
+
+00:02:34.444 --> 00:02:35.759
+This is pretty open-ended,
+
+00:02:35.759 --> 00:02:37.729
+so I do have one clue I'd like to give you.
+
+00:02:37.729 --> 00:02:40.494
+If you don't want to clue, just stop the video now.
+
+00:02:40.495 --> 00:02:43.460
+Okay, so the clue is there's a way to call
+
+00:02:43.460 --> 00:02:46.865
+the wallet in a way that allows you to take ownership of that wallet.
+
+00:02:46.865 --> 00:02:48.500
+Once you have ownership of the wallet,
+
+00:02:48.500 --> 00:02:51.895
+you'll be able to drain all the funds that were included in that wallet.
+
+00:02:51.895 --> 00:02:53.405
+So, there's your clue.
+
+00:02:53.405 --> 00:02:55.550
+The last piece is up to you to try and solve,
+
+00:02:55.550 --> 00:02:58.205
+take a shot at it, and when you're ready I'll see you in the next video,
+
+00:02:58.205 --> 00:03:00.270
+where we go over the answer.
+

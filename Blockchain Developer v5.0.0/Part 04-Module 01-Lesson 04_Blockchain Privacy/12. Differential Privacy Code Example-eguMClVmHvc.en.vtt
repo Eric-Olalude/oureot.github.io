@@ -1,0 +1,412 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.339
+Like you learned in the last video that differential privacy is a technique that allows
+
+00:00:05.339 --> 00:00:08.445
+data analysts to gain insights from information
+
+00:00:08.445 --> 00:00:11.820
+by allowing the information of an individual to stay private.
+
+00:00:11.820 --> 00:00:13.679
+Now, this is done by injecting
+
+00:00:13.679 --> 00:00:17.234
+random noise into the data set so it cannot be traced back.
+
+00:00:17.234 --> 00:00:20.669
+Let us now look at how this is done using a good sample.
+
+00:00:20.670 --> 00:00:23.580
+So, in this experiment what we're doing is that we are trying to
+
+00:00:23.579 --> 00:00:27.000
+measure the percentage of users on the Internet who what actually dogs,
+
+00:00:27.000 --> 00:00:29.625
+funny experiment but yeah.
+
+00:00:29.625 --> 00:00:32.145
+So, real dogs would like to remain anonymous.
+
+00:00:32.145 --> 00:00:34.650
+So, we do have real information available on
+
+00:00:34.649 --> 00:00:37.274
+the real number of people and also the real number of dogs.
+
+00:00:37.274 --> 00:00:39.074
+So, this is real information, we know that.
+
+00:00:39.075 --> 00:00:41.390
+So, what we're trying to do is we have real information.
+
+00:00:41.390 --> 00:00:43.219
+We're also going to calculate the information using
+
+00:00:43.219 --> 00:00:45.320
+differential privacy and then we're
+
+00:00:45.320 --> 00:00:47.895
+going to see how close these numbers are to each other.
+
+00:00:47.895 --> 00:00:49.470
+So, these are the real numbers.
+
+00:00:49.469 --> 00:00:51.979
+So, we know that the real number of people online
+
+00:00:51.979 --> 00:00:55.219
+are 90 and the real number of dogs online,
+
+00:00:55.219 --> 00:00:56.479
+who are going to be entering a survey,
+
+00:00:56.479 --> 00:00:57.784
+are 10. So good.
+
+00:00:57.784 --> 00:01:00.019
+I'm going to talk about this in just a second but again
+
+00:01:00.020 --> 00:01:02.405
+what we're doing is that I wanted to show you.
+
+00:01:02.405 --> 00:01:04.760
+I'm going to run this code this way but I'm also going to
+
+00:01:04.760 --> 00:01:07.050
+show you that once you increase the population size.
+
+00:01:07.049 --> 00:01:09.349
+So, if you see all this is doing is that for now
+
+00:01:09.349 --> 00:01:12.109
+the flag is set to false but when I increase
+
+00:01:12.109 --> 00:01:14.750
+the population size and make this to true that means
+
+00:01:14.750 --> 00:01:17.840
+the number of people is quite a bit more number of dogs is quite a bit more.
+
+00:01:17.840 --> 00:01:20.405
+You'll see that how the size of the data set,
+
+00:01:20.405 --> 00:01:22.820
+the accuracy increases and the randomness decreases.
+
+00:01:22.819 --> 00:01:26.359
+We'll do that in just a second but let's walk through what's going on here.
+
+00:01:26.359 --> 00:01:29.609
+So, this is a function called answer and what this function is
+
+00:01:29.609 --> 00:01:33.290
+doing is just like a random number generator between zero and one.
+
+00:01:33.290 --> 00:01:37.655
+There is a 50 percent chance it is less than 0.5 and so,
+
+00:01:37.655 --> 00:01:41.974
+what's happening here is that you're actually looping through all the dogs.
+
+00:01:41.974 --> 00:01:44.689
+So, you're going to go from zero to number of
+
+00:01:44.689 --> 00:01:47.109
+dogs and you're going to pass and answer true,
+
+00:01:47.109 --> 00:01:50.224
+okay and then we're also going to look for all the number of people
+
+00:01:50.224 --> 00:01:54.109
+and pass for whoever says that they're wrong information,
+
+00:01:54.109 --> 00:01:57.120
+you're going to pass false because they're not dogs.
+
+00:01:57.120 --> 00:01:59.900
+So, we're passing, all we're doing is that we are calling this function.
+
+00:01:59.900 --> 00:02:02.330
+So, remember we talked about flipping a coin,
+
+00:02:02.329 --> 00:02:07.819
+50 percent chance and then you flip it further that further reduces to another 25, 25.
+
+00:02:07.819 --> 00:02:09.079
+So, it pretty much starts going on,
+
+00:02:09.080 --> 00:02:11.855
+again the code isn't that important over here.
+
+00:02:11.854 --> 00:02:16.819
+This is just a sample code comes from a lot of statistical calculations but again,
+
+00:02:16.819 --> 00:02:20.659
+the main thing I wanted to show you is that you can actually calculate this way keep
+
+00:02:20.659 --> 00:02:25.435
+information private and as the data set size increases, the randomness decreases.
+
+00:02:25.435 --> 00:02:27.280
+So, that's important. If you really don't understand
+
+00:02:27.280 --> 00:02:29.810
+this code too much in detail, that's perfectly fine.
+
+00:02:29.810 --> 00:02:33.030
+That's not the focus is right now.
+
+00:02:33.030 --> 00:02:35.310
+So, we're calling this function, just to reiterate,
+
+00:02:35.310 --> 00:02:37.319
+we're calling this function for the number of dogs.
+
+00:02:37.319 --> 00:02:40.769
+We're also calling for the number of people and then we're increasing it.
+
+00:02:40.770 --> 00:02:42.980
+So, what we're doing is that we are putting some noise through
+
+00:02:42.979 --> 00:02:45.409
+this function and then we are increasing the total.
+
+00:02:45.409 --> 00:02:48.055
+So, the total is just calculating the number of dogs.
+
+00:02:48.055 --> 00:02:49.530
+We are starting with zeros,
+
+00:02:49.530 --> 00:02:51.240
+every time it outputs.
+
+00:02:51.240 --> 00:02:53.895
+So, again we're calling this function with either true or
+
+00:02:53.895 --> 00:02:57.435
+false and then we call the random function, remember.
+
+00:02:57.435 --> 00:02:59.729
+This is just like flipping a coin.
+
+00:02:59.729 --> 00:03:03.284
+So, it's 0.5 that means 50 percent chance it's going to come here,
+
+00:03:03.284 --> 00:03:05.609
+50 percent chance it's going to move in this function.
+
+00:03:05.610 --> 00:03:07.950
+Okay, got it, 50 percent chance.
+
+00:03:07.949 --> 00:03:10.519
+Again, remember same thing flip a coin and then
+
+00:03:10.520 --> 00:03:12.500
+you further flip a coin. So, that's what's happening.
+
+00:03:12.500 --> 00:03:14.689
+You call this function 50 percent chance and then you
+
+00:03:14.689 --> 00:03:17.405
+further call this function again decreases the chance.
+
+00:03:17.405 --> 00:03:19.939
+So, that's what we're doing. Then this is the final,
+
+00:03:19.939 --> 00:03:21.909
+so we keep adding total.
+
+00:03:21.909 --> 00:03:23.879
+Again that's the estimate,
+
+00:03:23.879 --> 00:03:27.169
+so 50 percent of the answers are going to be true and the other 50 percent
+
+00:03:27.169 --> 00:03:30.814
+have a probability of being true and a 50 percent probability of being false.
+
+00:03:30.814 --> 00:03:32.930
+So, that's where the 0.25 comes from.
+
+00:03:32.930 --> 00:03:35.284
+So, it's you're further dividing it down and then,
+
+00:03:35.284 --> 00:03:36.349
+since it's two times,
+
+00:03:36.349 --> 00:03:37.759
+so you're going to have to multiply by two.
+
+00:03:37.759 --> 00:03:39.859
+Again, like I said, if you don't understand this equation,
+
+00:03:39.860 --> 00:03:42.890
+this is coming from a lot of statistical calculations but this
+
+00:03:42.889 --> 00:03:46.594
+is a simple formula that's used to calculate differential privacy.
+
+00:03:46.594 --> 00:03:49.099
+So, you can use this and then in this function,
+
+00:03:49.099 --> 00:03:51.560
+we're just converting into percentage.
+
+00:03:51.560 --> 00:03:54.020
+I'm trying to do console.log,
+
+00:03:54.020 --> 00:03:55.460
+seeing what is the actual percentage.
+
+00:03:55.460 --> 00:03:57.170
+We know the actual percentage is 10 percent.
+
+00:03:57.169 --> 00:03:58.969
+Yeah and we're also going to see what
+
+00:03:58.969 --> 00:04:01.145
+the differential private estimate of dogs in the internet is.
+
+00:04:01.145 --> 00:04:05.370
+So, now lets save our file and run our code and see what we get.
+
+00:04:06.349 --> 00:04:09.269
+So, if you see it says the actual percent of dogs on
+
+00:04:09.270 --> 00:04:11.520
+the Internet is ten percent, which is true.
+
+00:04:11.520 --> 00:04:14.030
+The differentially private estimate of dogs on
+
+00:04:14.030 --> 00:04:16.850
+the internet is 14 percent. Let me show you.
+
+00:04:16.850 --> 00:04:18.425
+So, since it's random noise,
+
+00:04:18.425 --> 00:04:19.925
+you will see that this changes.
+
+00:04:19.925 --> 00:04:21.710
+So, if I run this function again,
+
+00:04:21.709 --> 00:04:24.394
+you're going to get 10 percent. It gets very close.
+
+00:04:24.394 --> 00:04:27.389
+Ten percent, 20 percent.
+
+00:04:27.389 --> 00:04:29.414
+Just because the data set is small,
+
+00:04:29.415 --> 00:04:31.615
+the noise is, of course,
+
+00:04:31.615 --> 00:04:33.134
+it's going to be a little bit too much.
+
+00:04:33.134 --> 00:04:35.995
+That is wanting to show, so that your answer does change,
+
+00:04:35.995 --> 00:04:38.689
+fluctuate quite a bit based upon your data's insights.
+
+00:04:38.689 --> 00:04:42.279
+So now, let's make that flag true and see what changes.
+
+00:04:42.279 --> 00:04:45.179
+So, we're going to go back to our code, here.
+
+00:04:45.180 --> 00:04:47.930
+So again, all this function is doing is just adding
+
+00:04:47.930 --> 00:04:50.870
+noise in the information so that you cannot trace it back.
+
+00:04:50.870 --> 00:04:54.230
+So now, let's increase our population size and I'm
+
+00:04:54.230 --> 00:04:57.680
+just going to make this flag true and once I make this flag true.
+
+00:04:57.680 --> 00:05:00.639
+So, if you see the number of people now gets multiplied by 10,000,
+
+00:05:00.639 --> 00:05:01.884
+so did the number of dogs.
+
+00:05:01.884 --> 00:05:04.250
+So, save this file and you'll see how
+
+00:05:04.250 --> 00:05:07.899
+the randomness decreases because the size of the data set increases.
+
+00:05:07.899 --> 00:05:09.579
+So, let's go run it.
+
+00:05:09.579 --> 00:05:12.169
+Let me clear this.
+
+00:05:12.769 --> 00:05:17.120
+So, now you see how close it is and if I run this function multiple times,
+
+00:05:17.120 --> 00:05:19.610
+you will see that how close this information stays every time.
+
+00:05:19.610 --> 00:05:21.710
+So, the actual percentage is 10 percent,
+
+00:05:21.709 --> 00:05:24.229
+differentially private estimate is 10.12 percent.
+
+00:05:24.230 --> 00:05:26.780
+Let's run it again, 9.87 percent.
+
+00:05:26.779 --> 00:05:28.834
+If you saw the last time,
+
+00:05:28.834 --> 00:05:30.639
+there was quite a bit of discrepancy.
+
+00:05:30.639 --> 00:05:33.199
+Every time we were running just because the data set increases
+
+00:05:33.199 --> 00:05:34.550
+the noise is going to decrease.
+
+00:05:34.550 --> 00:05:36.290
+So, if you see every time I run it,
+
+00:05:36.290 --> 00:05:39.140
+it's very close to the real value of 10 percent.
+
+00:05:39.139 --> 00:05:41.814
+So, that is how you do differential privacy, again like I said,
+
+00:05:41.814 --> 00:05:45.600
+it's a lot of functions, especially, in cryptography.
+
+00:05:45.600 --> 00:05:49.370
+A lot of helpful benefits you can have for that and again,
+
+00:05:49.370 --> 00:05:52.399
+it's just a technique that allows data analysts to gain insight from
+
+00:05:52.399 --> 00:05:56.404
+information while allowing the information of an individual to stay private.
+
+00:05:56.404 --> 00:05:59.539
+So, in this case, you cannot really trace back who answered what,
+
+00:05:59.540 --> 00:06:02.600
+just because you're generating or adding some noise in there.
+
+00:06:02.600 --> 00:06:06.570
+So, just by injecting some random noise into the data set.
+

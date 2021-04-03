@@ -1,0 +1,154 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.390
+Throughout the lesson, you've been introduced to a huge range of
+
+00:00:03.390 --> 00:00:06.540
+topics related to the security of Smart Contracts.
+
+00:00:06.540 --> 00:00:10.019
+It can be exciting to jump in and try some of this for yourself.
+
+00:00:10.019 --> 00:00:11.549
+But before you do,
+
+00:00:11.550 --> 00:00:13.695
+there's one more story I'd like to share.
+
+00:00:13.695 --> 00:00:18.224
+In this story, someone trying to help secure a smart contract accidentally
+
+00:00:18.224 --> 00:00:22.964
+deleted $300 million worth of a theorem. Here's what happened.
+
+00:00:22.964 --> 00:00:25.859
+As we've seen, the Tao and parody hex we're
+
+00:00:25.859 --> 00:00:28.980
+coordinated attempts to steal money from other users.
+
+00:00:28.980 --> 00:00:30.780
+While this is a huge issue,
+
+00:00:30.780 --> 00:00:32.820
+sometimes people with good intentions can
+
+00:00:32.820 --> 00:00:35.640
+still cause trouble if they're not sure what they're doing.
+
+00:00:35.640 --> 00:00:38.520
+Like before, this happened on a parody wallet,
+
+00:00:38.520 --> 00:00:40.260
+but this time was different.
+
+00:00:40.259 --> 00:00:44.554
+It started with a report from a user named DevOps 199 that said,
+
+00:00:44.554 --> 00:00:46.354
+"Anyone can kill your contract."
+
+00:00:46.354 --> 00:00:49.309
+This was meant to expose a security vulnerability and
+
+00:00:49.310 --> 00:00:52.445
+let the team know that they should address this as soon as possible.
+
+00:00:52.445 --> 00:00:55.159
+The vulnerability allowed anyone to go in,
+
+00:00:55.159 --> 00:00:58.129
+make themselves the owner of the contract, and from there,
+
+00:00:58.130 --> 00:00:59.390
+do whatever they like,
+
+00:00:59.390 --> 00:01:01.704
+including killing the contract itself.
+
+00:01:01.704 --> 00:01:03.850
+Soon after this first message,
+
+00:01:03.850 --> 00:01:06.769
+another message appeared from DevOps 199 saying,
+
+00:01:06.769 --> 00:01:08.409
+"I accidentally killed it."
+
+00:01:08.409 --> 00:01:12.560
+At this point, the user may not have understood what they did but they just
+
+00:01:12.560 --> 00:01:16.865
+deleted the function that allowed users to transfer either out of their wallets.
+
+00:01:16.864 --> 00:01:20.074
+The result was that about $300 million worth of
+
+00:01:20.075 --> 00:01:23.689
+Ether was locked up in the contracts with no way to transfer it,
+
+00:01:23.689 --> 00:01:25.730
+making them completely useless.
+
+00:01:25.730 --> 00:01:30.204
+This resulted in one of the largest losses of a theorem ever seen on the network,
+
+00:01:30.204 --> 00:01:32.974
+and it wasn't caused by a coordinated attack.
+
+00:01:32.974 --> 00:01:35.614
+That said, after reading more about this,
+
+00:01:35.614 --> 00:01:37.879
+it seems there is some speculation on whether or
+
+00:01:37.879 --> 00:01:40.759
+not DevOps 109 knew what they were doing.
+
+00:01:40.760 --> 00:01:44.185
+Some say this was intentional, and that they have proof.
+
+00:01:44.185 --> 00:01:45.900
+Whether or not it's true,
+
+00:01:45.900 --> 00:01:48.755
+the point that I'm trying to make is that you should be careful.
+
+00:01:48.754 --> 00:01:50.674
+Especially when first getting started,
+
+00:01:50.674 --> 00:01:52.519
+make sure you've taken the time to carefully
+
+00:01:52.519 --> 00:01:55.399
+consider the changes you're making the smart contracts.
+
+00:01:55.400 --> 00:01:58.130
+I don't mean to scare you from trying and updates
+
+00:01:58.129 --> 00:02:00.875
+the code would barely result in something that's drastic.
+
+00:02:00.875 --> 00:02:04.670
+Instead, you should make sure you've read the resources available to you,
+
+00:02:04.670 --> 00:02:07.100
+reached out to the community and slowly work
+
+00:02:07.099 --> 00:02:10.204
+UAN by joining the community of security experts.
+
+00:02:10.205 --> 00:02:12.290
+This will help you grow as a developer,
+
+00:02:12.289 --> 00:02:14.629
+allow you to make some more competent decisions,
+
+00:02:14.629 --> 00:02:17.585
+and will allow others to trust your expertise as you become
+
+00:02:17.585 --> 00:02:21.460
+a valued member of the Smart Contract Security Community.
+

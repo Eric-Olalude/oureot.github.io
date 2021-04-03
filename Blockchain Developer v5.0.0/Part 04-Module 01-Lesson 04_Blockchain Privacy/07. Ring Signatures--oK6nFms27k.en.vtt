@@ -1,0 +1,157 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.370
+Earlier in the program, you learned about message signing.
+
+00:00:03.370 --> 00:00:06.550
+Message signing is a powerful tool because it allows
+
+00:00:06.549 --> 00:00:09.594
+us to prove not only the data has not been changed,
+
+00:00:09.595 --> 00:00:12.685
+but it also allows us to prove who signed that data.
+
+00:00:12.685 --> 00:00:15.419
+That's great for transparency and fidelity,
+
+00:00:15.419 --> 00:00:17.934
+but it's a big problem for privacy.
+
+00:00:17.934 --> 00:00:21.250
+The cartography literally proves your identity.
+
+00:00:21.250 --> 00:00:24.250
+Ring signatures provide answers to this problem.
+
+00:00:24.250 --> 00:00:26.140
+Ring signatures are a lot like
+
+00:00:26.140 --> 00:00:30.940
+traditional message signatures except we aren't validating an individual signer.
+
+00:00:30.940 --> 00:00:34.780
+Instead, we provide a list of potential signers and
+
+00:00:34.780 --> 00:00:38.755
+we check that a message has been signed by at least one person on that list.
+
+00:00:38.755 --> 00:00:40.835
+Let's look at an example.
+
+00:00:40.835 --> 00:00:45.620
+In this example, Alice wants to sign a message and deliver it to Bob.
+
+00:00:45.619 --> 00:00:48.589
+Alice begins by generating a private key.
+
+00:00:48.590 --> 00:00:52.040
+Just like when we talked about private keys elsewhere in this course,
+
+00:00:52.039 --> 00:00:54.320
+it's extremely important to remember that
+
+00:00:54.320 --> 00:00:57.920
+private keys must remain absolutely secret at all times.
+
+00:00:57.920 --> 00:01:00.635
+Alice takes her private key and from that,
+
+00:01:00.634 --> 00:01:02.164
+she generates a public key.
+
+00:01:02.164 --> 00:01:04.489
+The public key is safe to share.
+
+00:01:04.489 --> 00:01:06.834
+In this example, say,
+
+00:01:06.834 --> 00:01:11.104
+Alice goes to meet Bob face to face and she gives him her public key.
+
+00:01:11.105 --> 00:01:13.460
+The public keys are all important to Bob.
+
+00:01:13.459 --> 00:01:18.155
+He doesn't know for sure that as long as Alice has kept her private key secret,
+
+00:01:18.155 --> 00:01:22.219
+anything he receives that he can unlock with that public key,
+
+00:01:22.219 --> 00:01:24.515
+has definitely been signed by Alice.
+
+00:01:24.515 --> 00:01:26.435
+So, Alice can go back now,
+
+00:01:26.435 --> 00:01:28.204
+and make any message she wants,
+
+00:01:28.204 --> 00:01:31.549
+pass it through that signing algorithm along with her private key,
+
+00:01:31.549 --> 00:01:33.549
+and produce a new signed message.
+
+00:01:33.549 --> 00:01:37.909
+Now, let's look at how to do this with a ring signature algorithm instead.
+
+00:01:37.909 --> 00:01:43.129
+In this example, Alice goes to meet with Bob and their friends, Charlie and Diane.
+
+00:01:43.129 --> 00:01:46.099
+Each of them has generated a unique private key for
+
+00:01:46.099 --> 00:01:49.804
+themselves and each has a corresponding public key.
+
+00:01:49.805 --> 00:01:52.910
+They put their keys together to make a list or
+
+00:01:52.909 --> 00:01:56.030
+a ring as it's referred to in this class of algorithm.
+
+00:01:56.030 --> 00:01:59.674
+We'll call this list, The fabulous four.
+
+00:01:59.674 --> 00:02:05.509
+Alice, Bob, Charlie, and Diane take their copy of the list and return home.
+
+00:02:05.510 --> 00:02:07.579
+Since each of them has a private key which
+
+00:02:07.579 --> 00:02:10.310
+correspond to one of the public keys on the list,
+
+00:02:10.310 --> 00:02:14.300
+each can sign a message to the group using a ring signature.
+
+00:02:14.300 --> 00:02:17.719
+A ring signature is a lot like a regular signed message,
+
+00:02:17.719 --> 00:02:21.740
+except we include a list of the public keys who are eligible signers.
+
+00:02:21.740 --> 00:02:26.210
+When somebody receives the public key list and the sign message,
+
+00:02:26.210 --> 00:02:27.860
+they can validate the message to know for
+
+00:02:27.860 --> 00:02:30.160
+sure that it was signed by somebody on the list,
+
+00:02:30.159 --> 00:02:32.884
+but there's no way to know exactly who it was.
+
+00:02:32.884 --> 00:02:38.060
+So now we can create messages to prove with absolute cryptographic certainty that
+
+00:02:38.060 --> 00:02:40.560
+a member of the group signed the list but
+
+00:02:40.560 --> 00:02:44.590
+without revealing exactly who they were. That's pretty cool.
+

@@ -1,0 +1,184 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.805
+Hi, my name is Aaron Brown.
+
+00:00:02.805 --> 00:00:05.714
+I'll be your instructor for the lesson on blockchain privacy.
+
+00:00:05.714 --> 00:00:07.139
+Before we get started,
+
+00:00:07.139 --> 00:00:08.789
+I'd like to quickly introduce myself.
+
+00:00:08.789 --> 00:00:11.014
+I'm the chief scientist at Madhive.
+
+00:00:11.015 --> 00:00:14.025
+Madhive is an ad tech company based in New York City.
+
+00:00:14.025 --> 00:00:16.230
+Ad tech for those who are not familiar
+
+00:00:16.230 --> 00:00:19.185
+is the science and infrastructural side of advertising.
+
+00:00:19.184 --> 00:00:22.320
+So, we work with things like really large datasets,
+
+00:00:22.320 --> 00:00:24.810
+machine-learning and high performance computing.
+
+00:00:24.809 --> 00:00:29.070
+All this to make sure that billions of advertisements gets shown to the right people,
+
+00:00:29.070 --> 00:00:32.100
+on the right device, at the right time every day.
+
+00:00:32.100 --> 00:00:34.995
+Ad tech has some pretty difficult problems to be solved.
+
+00:00:34.994 --> 00:00:37.769
+The first of which is a real lack of standards.
+
+00:00:37.770 --> 00:00:42.135
+It takes a surprisingly large number of companies to get one ad onto your screen.
+
+00:00:42.134 --> 00:00:46.549
+Without standards it's really difficult to get consensus about what happened to an ad.
+
+00:00:46.549 --> 00:00:50.404
+With so many companies involved that leads to a lot of confusion about data
+
+00:00:50.405 --> 00:00:52.579
+and businesses suffer because of all that time they
+
+00:00:52.579 --> 00:00:55.354
+spend reconciling data that costs money.
+
+00:00:55.354 --> 00:00:58.414
+We the consumer suffer because when the data is not right,
+
+00:00:58.414 --> 00:01:00.500
+you're probably getting shown a lot of ads that aren't
+
+00:01:00.500 --> 00:01:02.869
+interesting to you, and that's annoying.
+
+00:01:02.869 --> 00:01:05.929
+At the other end of the spectrum are companies that do a really,
+
+00:01:05.930 --> 00:01:09.080
+really good job of organizing all the data about you.
+
+00:01:09.079 --> 00:01:12.484
+They literally track your every move and know everything about you.
+
+00:01:12.484 --> 00:01:15.079
+That's dangerous because most consumers
+
+00:01:15.079 --> 00:01:17.334
+don't realize the degree to which they're being tracked,
+
+00:01:17.334 --> 00:01:22.039
+and this data set is vulnerable to hacking and other kinds of exploitation.
+
+00:01:22.040 --> 00:01:25.310
+What ad tech needs is just basic accounting standards.
+
+00:01:25.310 --> 00:01:28.730
+Proving that data hasn't been changed and it's still valid.
+
+00:01:28.730 --> 00:01:30.880
+Cryptography is perfect for that,
+
+00:01:30.879 --> 00:01:34.354
+and privacy plays a huge role in making this possible.
+
+00:01:34.355 --> 00:01:37.310
+True privacy while maintaining certainty
+
+00:01:37.310 --> 00:01:40.189
+and data wouldn't have been possible for blockchain.
+
+00:01:40.189 --> 00:01:42.379
+So, that makes privacy the killer app for
+
+00:01:42.379 --> 00:01:46.084
+blockchain and at Madhive we're super excited to be a big part of that.
+
+00:01:46.084 --> 00:01:49.219
+Not only does this allow companies to collaborate together with
+
+00:01:49.219 --> 00:01:53.844
+their data without anyone losing control and without anyone diluting its value,
+
+00:01:53.844 --> 00:01:56.750
+privacy allows them to advertise effectively while
+
+00:01:56.750 --> 00:02:00.109
+keeping consumers information 100 percent secure.
+
+00:02:00.109 --> 00:02:03.230
+I'll teach you some of the techniques we use here at Madhive.
+
+00:02:03.230 --> 00:02:05.990
+One of the things that's really exciting about working at
+
+00:02:05.989 --> 00:02:10.729
+Madhive is how much we've been able to contribute back to the development of blockchains.
+
+00:02:10.729 --> 00:02:13.729
+We were the first big company in ad tech to get involved
+
+00:02:13.729 --> 00:02:17.854
+seriously by building cool stuff and solving problems for everyone's benefit.
+
+00:02:17.854 --> 00:02:20.989
+These same ideas extend way beyond ad tech and
+
+00:02:20.990 --> 00:02:24.365
+really help everybody working on the blockchain no matter what industry.
+
+00:02:24.365 --> 00:02:27.260
+Privacy is one of those big problems that needed
+
+00:02:27.259 --> 00:02:30.243
+a solution before companies could do real advertising
+
+00:02:30.243 --> 00:02:32.060
+or really any kind of
+
+00:02:32.060 --> 00:02:36.935
+large-scale collaborative work on a decentralized blockchain network.
+
+00:02:36.935 --> 00:02:39.724
+We're proud to be a privacy first company
+
+00:02:39.724 --> 00:02:42.680
+and leaders in defending data privacy for everyone.
+
+00:02:42.680 --> 00:02:45.230
+It's been really exciting to watch this technology grow
+
+00:02:45.229 --> 00:02:47.869
+up and working with Udacity we hope to
+
+00:02:47.870 --> 00:02:53.355
+help train and bring more talented engineers to this space and we're still discovering.
+
+00:02:53.354 --> 00:02:56.299
+Blockchain and privacy are definitely areas where
+
+00:02:56.300 --> 00:02:59.314
+there are so many exciting and difficult problems to solve.
+
+00:02:59.314 --> 00:03:03.669
+Coming up, I'll introduce the core concepts we'll go over in this lesson.
+
+00:03:03.669 --> 00:03:08.379
+Then we'll jump in, get started with this lesson on blockchain and privacy.
+

@@ -1,0 +1,148 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.049
+Hey, and welcome to this lesson on smart contract security.
+
+00:00:04.049 --> 00:00:08.445
+Smart contract security is a huge and extremely important topic.
+
+00:00:08.445 --> 00:00:11.640
+With smart contracts, large amounts of money are being
+
+00:00:11.640 --> 00:00:15.075
+handled constantly using programs that anyone can access.
+
+00:00:15.074 --> 00:00:18.509
+These smart contracts can't be updated once they're launched,
+
+00:00:18.510 --> 00:00:22.950
+and errors in the code can result in hackers getting away with huge amounts of money.
+
+00:00:22.949 --> 00:00:25.559
+Now, this isn't meant to scare you away.
+
+00:00:25.559 --> 00:00:30.854
+The idea is to understand how crucial this is to your career as a blockchain developer.
+
+00:00:30.855 --> 00:00:34.890
+Luckily, there is a rapidly developing ecosystem of tools and
+
+00:00:34.890 --> 00:00:37.049
+communities that are coming together to help
+
+00:00:37.049 --> 00:00:39.989
+ensure the security of smart contracts we develop.
+
+00:00:39.990 --> 00:00:42.150
+Because of the importance of this subject,
+
+00:00:42.149 --> 00:00:45.409
+I'll be approaching this lesson a little differently than others.
+
+00:00:45.409 --> 00:00:48.229
+For one, it's impossible for this lesson to be
+
+00:00:48.229 --> 00:00:52.339
+the one-stop shop for all things related to smart contract security.
+
+00:00:52.340 --> 00:00:56.020
+For that reason, I'll focus on pointing you in the right direction,
+
+00:00:56.020 --> 00:00:58.910
+and you'll need to continue researching and developing in this field,
+
+00:00:58.909 --> 00:01:00.889
+so you can always stay up to date.
+
+00:01:00.890 --> 00:01:04.280
+That said, there is a ton we can go over here.
+
+00:01:04.280 --> 00:01:05.810
+To start the lesson,
+
+00:01:05.810 --> 00:01:09.445
+we'll go over a few well-known attacks that have happened on smart contracts,
+
+00:01:09.444 --> 00:01:12.509
+the Parity wallet hack and the DAO attack.
+
+00:01:12.510 --> 00:01:15.560
+We'll code up versions of the original contracts,
+
+00:01:15.560 --> 00:01:17.960
+identify the weaknesses that were exploited,
+
+00:01:17.959 --> 00:01:20.404
+then hack these systems for ourselves.
+
+00:01:20.405 --> 00:01:24.888
+The goal isn't to blame anyone in particular that may have overlooked these errors,
+
+00:01:24.888 --> 00:01:28.655
+but to learn from them and ensure that we don't make the same mistakes.
+
+00:01:28.655 --> 00:01:31.280
+After this, we'll walk through some resources,
+
+00:01:31.280 --> 00:01:33.575
+like the solidity security considerations,
+
+00:01:33.575 --> 00:01:35.390
+some coding best practices,
+
+00:01:35.390 --> 00:01:39.575
+then take a look at the research and development that has happened in this space.
+
+00:01:39.575 --> 00:01:43.070
+Next, we'll look at the tooling ecosystem that is taking
+
+00:01:43.069 --> 00:01:46.984
+shape to help you make sure contracts you create are safe and secure.
+
+00:01:46.984 --> 00:01:51.019
+These tools include things like security audits and bug bounties,
+
+00:01:51.019 --> 00:01:54.035
+where companies and other developers take time to try and exploit
+
+00:01:54.034 --> 00:01:57.634
+any potential weaknesses in your contract before they are deployed.
+
+00:01:57.635 --> 00:02:01.100
+Throughout the lesson, there'll be a series of contract examples,
+
+00:02:01.099 --> 00:02:04.669
+where you'll be asked to identify the type of vulnerabilities that exist.
+
+00:02:04.670 --> 00:02:07.730
+This will help you get a good eye for catching these errors and
+
+00:02:07.730 --> 00:02:11.200
+hopefully help you not make similar mistakes in your code in the future.
+
+00:02:11.199 --> 00:02:12.859
+So, with that said,
+
+00:02:12.860 --> 00:02:15.260
+I hope you understand the value of the extra reading
+
+00:02:15.259 --> 00:02:18.094
+and outside resources that come along with this lesson.
+
+00:02:18.094 --> 00:02:21.560
+I'll give as much guidance as I can to point you in the right direction,
+
+00:02:21.560 --> 00:02:25.745
+and by the end you should be able to stay on top of the latest research in this field.
+
+00:02:25.745 --> 00:02:29.120
+This is an extremely valuable skill to have as a developer,
+
+00:02:29.120 --> 00:02:31.474
+and you'll continue utilizing all these skills
+
+00:02:31.474 --> 00:02:34.919
+for as long as you continue developing smart contracts.
+

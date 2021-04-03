@@ -1,0 +1,226 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.865
+Throughout this lesson, we'll mostly be covering
+
+00:00:02.865 --> 00:00:05.625
+new concepts through coding and exercises.
+
+00:00:05.625 --> 00:00:07.139
+But before we dive in,
+
+00:00:07.139 --> 00:00:09.750
+there's a few important concepts to understand without
+
+00:00:09.750 --> 00:00:12.794
+code that will go over in this and the next section.
+
+00:00:12.794 --> 00:00:14.564
+To start in this video,
+
+00:00:14.564 --> 00:00:16.679
+I'll answer some of the bigger questions surrounding
+
+00:00:16.679 --> 00:00:21.210
+decentralized storage including how it compares to existing solutions.
+
+00:00:21.210 --> 00:00:22.980
+To answer this question,
+
+00:00:22.980 --> 00:00:26.670
+we have to zoom way out and think about what the internet even is.
+
+00:00:26.670 --> 00:00:30.270
+In short, it's a collection of protocols or rules meant
+
+00:00:30.269 --> 00:00:33.899
+to decide the best way to move and share information across a network.
+
+00:00:33.899 --> 00:00:36.890
+Many of these protocols were originally suggestions by
+
+00:00:36.890 --> 00:00:40.564
+developers that were adopted as best practices over time.
+
+00:00:40.564 --> 00:00:43.429
+This is similar to how the block chain space is now,
+
+00:00:43.429 --> 00:00:46.700
+with everyone contributing towards creating a better future.
+
+00:00:46.700 --> 00:00:51.200
+One of the protocols that has come to dominate the web is HTTP.
+
+00:00:51.200 --> 00:00:55.109
+We all use HTTP everyday but to be precise,
+
+00:00:55.109 --> 00:01:00.649
+HTTP is a protocol that defines how messages are formatted and transmitted by the web.
+
+00:01:00.649 --> 00:01:03.049
+It also helps determine the actions that
+
+00:01:03.049 --> 00:01:06.170
+web servers and browsers take when given certain commands.
+
+00:01:06.170 --> 00:01:11.254
+This has worked extremely well in the past but like many things in the blockchain space,
+
+00:01:11.254 --> 00:01:13.354
+we think it can be improved.
+
+00:01:13.355 --> 00:01:16.145
+This is where distributed storage comes in.
+
+00:01:16.144 --> 00:01:19.795
+It's goal is to be a replacement for the HTTP protocol.
+
+00:01:19.795 --> 00:01:24.439
+It's trying to reimagine how we format and transmit information over the web.
+
+00:01:24.439 --> 00:01:27.079
+It's embracing all the same blockchain principles
+
+00:01:27.079 --> 00:01:29.718
+like decentralization and peer-to-peer networks,
+
+00:01:29.718 --> 00:01:31.894
+and applying them to file storage.
+
+00:01:31.894 --> 00:01:34.069
+Similar to how Bitcoin didn't want
+
+00:01:34.069 --> 00:01:37.474
+financial transactions to be controlled by centralized banks,
+
+00:01:37.474 --> 00:01:42.019
+IPFS doesn't want our data to be controlled by centralized tech companies.
+
+00:01:42.019 --> 00:01:46.074
+For example, Facebook, Amazon, Netflix, Google,
+
+00:01:46.075 --> 00:01:50.615
+and others are amazing companies that provide us with a ton of unique services.
+
+00:01:50.614 --> 00:01:55.824
+The problem is, everything we do on their platforms generates data that they own.
+
+00:01:55.825 --> 00:02:00.004
+It's up to them to manage how this information is stored and distributed,
+
+00:02:00.004 --> 00:02:03.259
+and they can control what we see and what we don't see.
+
+00:02:03.260 --> 00:02:05.190
+Even if these companies get it right,
+
+00:02:05.189 --> 00:02:07.819
+there's still the chance that governments will decide what
+
+00:02:07.819 --> 00:02:11.509
+information is and isn't allowed to be seen by their citizens.
+
+00:02:11.509 --> 00:02:14.959
+As an example, citizens from the country of Turkey woke up
+
+00:02:14.960 --> 00:02:18.814
+one day to find that their access to the internet had been taken away from them.
+
+00:02:18.814 --> 00:02:23.109
+What are you supposed to do when the government blocks your access to information?
+
+00:02:23.110 --> 00:02:28.685
+Similarly, many of us use Google every day but it's been blocked by countries like China,
+
+00:02:28.685 --> 00:02:30.259
+several Middle Eastern countries,
+
+00:02:30.259 --> 00:02:32.599
+and a few other places around the world.
+
+00:02:32.599 --> 00:02:38.139
+This inability to share information keeps us from making progress as a global community.
+
+00:02:38.139 --> 00:02:42.064
+Currently, there are a few technologies trying to tackle this problem.
+
+00:02:42.064 --> 00:02:44.240
+Most notable are IPFS,
+
+00:02:44.240 --> 00:02:46.760
+the InterPlanetary File System and Swarm,
+
+00:02:46.759 --> 00:02:48.439
+a project built by Ethereum,
+
+00:02:48.439 --> 00:02:51.379
+as well as others like Storage, and SIA.
+
+00:02:51.379 --> 00:02:54.590
+All these protocols are attempting to solve the problems of
+
+00:02:54.590 --> 00:02:56.840
+decentralized file storage to help redefine
+
+00:02:56.840 --> 00:02:59.719
+the way we manage and distribute files online.
+
+00:02:59.719 --> 00:03:02.449
+These ideas work as a perfect complement
+
+00:03:02.449 --> 00:03:05.244
+to the decentralized applications we've been creating.
+
+00:03:05.245 --> 00:03:08.784
+Ethereum, while helping us build these decentralized applications,
+
+00:03:08.784 --> 00:03:13.805
+only really decentralizes the computation by using the Ethereum Virtual Machine.
+
+00:03:13.805 --> 00:03:15.724
+One problem with Ethereum,
+
+00:03:15.724 --> 00:03:18.625
+is that it's an extremely expensive way to store files.
+
+00:03:18.625 --> 00:03:22.294
+So, to deal with this, we still have to use things like cloud storage providers,
+
+00:03:22.294 --> 00:03:25.084
+including Google Cloud, Amazon Web Services,
+
+00:03:25.085 --> 00:03:27.409
+and others to host our applications.
+
+00:03:27.409 --> 00:03:32.030
+But if you take decentralized computation and centralize the storage,
+
+00:03:32.030 --> 00:03:34.985
+is that really a decentralized application at all?
+
+00:03:34.985 --> 00:03:37.430
+The answer is up for debate by the community,
+
+00:03:37.430 --> 00:03:40.474
+but that's exactly where decentralized storage comes in.
+
+00:03:40.474 --> 00:03:42.530
+They work as the storage providers,
+
+00:03:42.530 --> 00:03:46.280
+and allow you to decentralize an entirely new layer of your application.
+
+00:03:46.280 --> 00:03:49.819
+Hopefully now, you understand the goals of decentralized storage,
+
+00:03:49.819 --> 00:03:52.759
+how it aims to compete with the HTTP protocol,
+
+00:03:52.759 --> 00:03:54.590
+and the benefits of choosing this over
+
+00:03:54.590 --> 00:03:58.490
+traditional centralized technologies for hosting your application.
+
