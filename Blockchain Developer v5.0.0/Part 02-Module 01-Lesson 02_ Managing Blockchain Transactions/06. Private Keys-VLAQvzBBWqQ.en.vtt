@@ -1,0 +1,190 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.279
+We've seen that there are different types of
+
+00:00:02.279 --> 00:00:05.564
+wallets and that wallet addresses depend on private keys.
+
+00:00:05.565 --> 00:00:08.250
+Private keys generate the public keys and
+
+00:00:08.250 --> 00:00:11.745
+wallet addresses that allow us to interact with the blockchain.
+
+00:00:11.744 --> 00:00:15.274
+In this section, we'll explore the purpose of a private key,
+
+00:00:15.275 --> 00:00:18.210
+what makes them secure, and then explore different ways to
+
+00:00:18.210 --> 00:00:21.575
+generate private keys for your wallet. So let's get started.
+
+00:00:21.574 --> 00:00:23.574
+A private key is just a number,
+
+00:00:23.574 --> 00:00:29.015
+a 256 bit random number between one and two to the 256.
+
+00:00:29.015 --> 00:00:32.200
+It can be represented in a number of different formats,
+
+00:00:32.200 --> 00:00:36.510
+all of which correspond to that same 256 bit number.
+
+00:00:36.509 --> 00:00:38.890
+You may see this number presented in a number of
+
+00:00:38.890 --> 00:00:42.420
+different formats and don't be confused, it still that same number.
+
+00:00:42.420 --> 00:00:48.000
+Now, a common way to represent a 256 bit private key is in hexadecimal format,
+
+00:00:48.000 --> 00:00:51.859
+256 bits in hexadecimal is 32 bytes,
+
+00:00:51.859 --> 00:00:54.214
+using 64 characters from the range is
+
+00:00:54.215 --> 00:00:58.330
+zero to nine and A through F. Other common formats you
+
+00:00:58.329 --> 00:01:01.460
+may come across are the wallet import format or
+
+00:01:01.460 --> 00:01:05.170
+WIF for short or the WIF-Compressed format.
+
+00:01:05.170 --> 00:01:08.409
+Both of these are ways of encoding a private key so
+
+00:01:08.409 --> 00:01:11.629
+as to make it easier to make different copies for different use cases.
+
+00:01:11.629 --> 00:01:15.079
+But remember, these all represent the same number.
+
+00:01:15.079 --> 00:01:18.010
+At this point, you might be wondering how is it
+
+00:01:18.010 --> 00:01:21.385
+possible that every private key is completely unique?
+
+00:01:21.385 --> 00:01:26.430
+Remember, a private key can be any number between one and two to the 256,
+
+00:01:26.430 --> 00:01:30.460
+so the number is huge and it gives us an incredible amount of possibilities.
+
+00:01:30.459 --> 00:01:32.974
+Let's take a minute to put that into perspective.
+
+00:01:32.974 --> 00:01:38.989
+There are about two to the 63 or seven quintillion grains of sand on planet Earth.
+
+00:01:38.989 --> 00:01:44.890
+Not even close to the two to the 256 possible private keys.
+
+00:01:44.890 --> 00:01:48.605
+So, there seemingly infinite number of private keys available.
+
+00:01:48.605 --> 00:01:51.719
+How do we get one? Well, the exact method you
+
+00:01:51.719 --> 00:01:56.629
+choose doesn't matter as long as it's random and not repeatable.
+
+00:01:56.629 --> 00:01:59.119
+It's actually as simple as grabbing a coin,
+
+00:01:59.120 --> 00:02:00.770
+a pencil, and a piece of paper.
+
+00:02:00.769 --> 00:02:06.844
+If you flip the coin 256 times and write down one for heads and zero for tails,
+
+00:02:06.844 --> 00:02:09.379
+the resulting number is a binary form of
+
+00:02:09.379 --> 00:02:13.144
+a random private key and you can use it in your Bitcoin wallet.
+
+00:02:13.145 --> 00:02:15.375
+If you want to go about it programmatically,
+
+00:02:15.375 --> 00:02:17.639
+you'll need to find a source of entropy.
+
+00:02:17.639 --> 00:02:20.839
+The definition of entropy is a lack of order or
+
+00:02:20.840 --> 00:02:25.780
+predictability is the degree of disorder or randomness in a system.
+
+00:02:25.780 --> 00:02:29.914
+In other words, we'd like to find a random number generator.
+
+00:02:29.914 --> 00:02:33.150
+However, it can't just be any random number generator,
+
+00:02:33.150 --> 00:02:35.400
+it needs to be very, very secure.
+
+00:02:35.400 --> 00:02:38.629
+So, it is essentially impossible to trace how we generated
+
+00:02:38.629 --> 00:02:41.870
+the number because if we could trace how it's generated,
+
+00:02:41.870 --> 00:02:46.610
+a hacker could easily generate our number and gain access to our private keys.
+
+00:02:46.610 --> 00:02:51.170
+We'll need to create a cryptographically secure random number generator.
+
+00:02:51.169 --> 00:02:55.929
+If you're tempted to create a random number generator on your own, don't do it.
+
+00:02:55.930 --> 00:03:01.379
+Creating a cryptographically secure random number generator is by no means an easy task.
+
+00:03:01.379 --> 00:03:05.530
+Even cryptographic experts have a hard time creating ones that are unhackable.
+
+00:03:05.530 --> 00:03:08.134
+So, do not try this by yourself.
+
+00:03:08.134 --> 00:03:12.099
+Instead, use an industry establish properly peer
+
+00:03:12.099 --> 00:03:16.644
+reviewed and vetted cryptographically secure random number generator.
+
+00:03:16.645 --> 00:03:19.765
+Most operating systems have a source of entropy
+
+00:03:19.764 --> 00:03:23.679
+or a library with a cryptographically secure number generator.
+
+00:03:23.680 --> 00:03:30.060
+For example, Python has the random library and Java has the secure random class.
+
+00:03:30.060 --> 00:03:34.270
+Alternatively, there also a Bitcoin address generating websites.
+
+00:03:34.270 --> 00:03:36.770
+They use the underlying operating systems
+
+00:03:36.770 --> 00:03:41.189
+random number generators to produce a 256 bit random number.
+
+00:03:41.189 --> 00:03:43.789
+In the next video, I'll demo how to use
+
+00:03:43.789 --> 00:03:48.199
+such a website to help us generate private keys and wallet addresses.
+

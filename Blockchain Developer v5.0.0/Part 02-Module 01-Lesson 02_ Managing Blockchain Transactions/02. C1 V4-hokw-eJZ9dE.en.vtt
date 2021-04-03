@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.365
+Hi. My name is Balaji Srinivasan.
+
+00:00:02.365 --> 00:00:03.940
+I'm the CTO of Coinbase.
+
+00:00:03.940 --> 00:00:06.224
+Okay, so, why is identity important in blockchain?
+
+00:00:06.224 --> 00:00:07.830
+So, on the one hand,
+
+00:00:07.830 --> 00:00:10.879
+you think of cryptocurrencies being this pseudonymous or anonymous thing,
+
+00:00:10.880 --> 00:00:12.515
+so where does identity comes in?
+
+00:00:12.515 --> 00:00:14.900
+Well, when you use your credit card,
+
+00:00:14.900 --> 00:00:16.835
+the reason that your name is on the credit card is
+
+00:00:16.835 --> 00:00:20.210
+your debiting from your account rather than somebody else's when you swipe it.
+
+00:00:20.210 --> 00:00:22.880
+So, there has to be some kind of identity match in
+
+00:00:22.879 --> 00:00:26.434
+electronic database and there's a minus to your account and a plus to theirs.
+
+00:00:26.434 --> 00:00:31.034
+In the same way, when you move cryptocurrency from one address to another,
+
+00:00:31.035 --> 00:00:33.140
+you are effectively presenting
+
+00:00:33.140 --> 00:00:37.480
+a digital signature that shows that you control that address, right?
+
+00:00:37.479 --> 00:00:40.609
+You're signing a transaction and that shows you have control over
+
+00:00:40.609 --> 00:00:42.289
+the amount of cryptocurrency that's
+
+00:00:42.289 --> 00:00:44.179
+at this address that you can move it to somewhere else.
+
+00:00:44.179 --> 00:00:46.780
+That signature is itself fact of an identity mechanism.
+
+00:00:46.780 --> 00:00:49.240
+That's why identities [inaudible].
+

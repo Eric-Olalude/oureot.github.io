@@ -1,0 +1,205 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.359
+We just covered that private keys generate the public keys
+
+00:00:03.359 --> 00:00:07.035
+and wallet addresses that allow us to interact with the blockchain.
+
+00:00:07.035 --> 00:00:09.250
+For a private key to be secure,
+
+00:00:09.250 --> 00:00:13.469
+we need to use a cryptographically secure random number generator
+
+00:00:13.470 --> 00:00:17.344
+that ensures a private key we create cannot be easily traced.
+
+00:00:17.344 --> 00:00:22.109
+And in this section, I'll show you how to use a Bitcoin address generating website,
+
+00:00:22.109 --> 00:00:24.599
+that uses your operating systems underlying
+
+00:00:24.599 --> 00:00:29.714
+random number generator to produce a 256-bit Random Number.
+
+00:00:29.714 --> 00:00:33.804
+One popular website is bitaddress.org.
+
+00:00:33.804 --> 00:00:39.155
+This isn't open source JavaScript client-side Bitcoin wallet generator,
+
+00:00:39.155 --> 00:00:41.465
+it's an online service that helps you generate
+
+00:00:41.465 --> 00:00:45.035
+a random Bitcoin address and associated private key.
+
+00:00:45.034 --> 00:00:48.169
+To be secure when generating a private key,
+
+00:00:48.170 --> 00:00:50.135
+I suggest that you do this offline.
+
+00:00:50.134 --> 00:00:55.849
+This way, all the activity you do is local to your computer and cannot be traced online.
+
+00:00:55.850 --> 00:00:58.225
+So to do this, in the browser,
+
+00:00:58.225 --> 00:01:01.460
+first choose "Save page as",
+
+00:01:01.960 --> 00:01:05.430
+and save the file to your computer.
+
+00:01:07.640 --> 00:01:11.469
+Next, disconnect from the Internet.
+
+00:01:15.400 --> 00:01:21.990
+Now, open the bitaddress.org.html file that you saved.
+
+00:01:25.280 --> 00:01:29.935
+This is when bitaddress will generate a random set of keys.
+
+00:01:29.935 --> 00:01:34.004
+To do this, it all requests your help to really spice things up,
+
+00:01:34.004 --> 00:01:36.079
+and add a little entropy.
+
+00:01:36.079 --> 00:01:39.689
+You'll move your mouse around the screen and bitaddress will
+
+00:01:39.689 --> 00:01:43.189
+sample the mouse coordinates to contribute to the number generation.
+
+00:01:43.189 --> 00:01:48.109
+Alternatively, you could type some random characters into this textbox here,
+
+00:01:48.109 --> 00:01:51.099
+and we'll use those values instead.
+
+00:01:53.019 --> 00:01:56.239
+Once your wallet has achieved full randomness,
+
+00:01:56.239 --> 00:01:58.839
+it will spit out a Bitcoin address and
+
+00:01:58.840 --> 00:02:03.130
+a private key as well as their related QR codes that you can share with others.
+
+00:02:03.129 --> 00:02:06.144
+Now if none of the methods I've shown you strike your fancy,
+
+00:02:06.144 --> 00:02:11.150
+remember that software wallets such as electron will generate private keys for you.
+
+00:02:11.150 --> 00:02:12.860
+Let's jump back into electron,
+
+00:02:12.860 --> 00:02:16.750
+and see where we can find private keys that it generated for us.
+
+00:02:20.750 --> 00:02:23.199
+From the addresses tab,
+
+00:02:23.199 --> 00:02:26.204
+we can see a list of Wallet addresses.
+
+00:02:26.205 --> 00:02:28.625
+To see the associated private key,
+
+00:02:28.625 --> 00:02:32.870
+right-click on the address and navigate to reveal your private key.
+
+00:02:36.090 --> 00:02:41.504
+Now remember, be very careful and do not share this information.
+
+00:02:41.504 --> 00:02:45.669
+The wallet I created here is only for learning purposes.
+
+00:02:45.669 --> 00:02:49.724
+What if you'd like to view multiple private keys at the same time?
+
+00:02:49.724 --> 00:02:51.968
+Another method to view addresses,
+
+00:02:51.968 --> 00:02:53.250
+from the view here,
+
+00:02:53.250 --> 00:02:58.840
+is from wallet, navigate to private keys, and they go to export.
+
+00:03:00.590 --> 00:03:04.164
+Here, you have the option to export a list of
+
+00:03:04.164 --> 00:03:07.729
+all your wallet addresses and their associated private keys,
+
+00:03:07.729 --> 00:03:10.849
+in either CSV or JSON format.
+
+00:03:10.849 --> 00:03:12.789
+You may be wondering, well,
+
+00:03:12.789 --> 00:03:15.484
+if the private key is supposed to be so private,
+
+00:03:15.485 --> 00:03:17.785
+why are there options to reveal it?
+
+00:03:17.784 --> 00:03:22.109
+So it's possible that you may need to restore your wallet for a number of reasons.
+
+00:03:22.110 --> 00:03:25.750
+This is a time that you might need to access your private keys,
+
+00:03:25.750 --> 00:03:28.615
+but be very cautious when handling this information.
+
+00:03:28.615 --> 00:03:31.995
+Now that it wraps it up for the private key section.
+
+00:03:31.995 --> 00:03:36.224
+To recap, we learned that wallets store private keys.
+
+00:03:36.224 --> 00:03:39.579
+These private keys in turn generate public keys and
+
+00:03:39.580 --> 00:03:43.210
+wallet addresses that allow us to interact with the blockchain.
+
+00:03:43.210 --> 00:03:45.730
+Private keys are nothing more than
+
+00:03:45.729 --> 00:03:50.384
+a random number that's between one and two to the power of 256,
+
+00:03:50.384 --> 00:03:51.864
+a number that's so big,
+
+00:03:51.865 --> 00:03:55.725
+it's near impossible for the same two private keys to exist.
+
+00:03:55.724 --> 00:04:00.655
+Lastly, we saw three different ways to generate a private key.
+
+00:04:00.655 --> 00:04:03.735
+There's the old flipping of coin method,
+
+00:04:03.735 --> 00:04:06.370
+we could use a random number generator,
+
+00:04:06.370 --> 00:04:08.759
+that's provided by industry bedded library,
+
+00:04:08.759 --> 00:04:12.724
+or we could use a Bitcoin address generating website.
+
+00:04:12.724 --> 00:04:17.129
+Give the following quiz a try and generate a private key on your own.
+

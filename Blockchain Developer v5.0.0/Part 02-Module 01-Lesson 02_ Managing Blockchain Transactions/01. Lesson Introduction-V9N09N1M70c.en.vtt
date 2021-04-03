@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.480
+Welcome to the lesson, blockchain transactions.
+
+00:00:03.480 --> 00:00:04.799
+Previously, we went over
+
+00:00:04.799 --> 00:00:09.140
+some fundamental blockchain concepts and got an overview of some basic terminology.
+
+00:00:09.140 --> 00:00:10.560
+These are important skills for
+
+00:00:10.560 --> 00:00:13.960
+any blockchain developer to understand how to interact with the blockchain.
+
+00:00:13.960 --> 00:00:17.280
+In this lesson, we'll build upon the knowledge and
+
+00:00:17.280 --> 00:00:20.925
+learn what it takes to manage transactions on the blockchain.
+
+00:00:20.925 --> 00:00:23.010
+This is where the fun happens.
+
+00:00:23.010 --> 00:00:26.065
+We're going to introduce the blockchain transaction lifecycle,
+
+00:00:26.065 --> 00:00:29.710
+which builds on the blockchain overview from the last lesson.
+
+00:00:29.710 --> 00:00:33.289
+We'll continue to build on these core concepts to put these ideas into
+
+00:00:33.289 --> 00:00:37.274
+practice by establishing your own identity on the blockchain.
+
+00:00:37.274 --> 00:00:38.890
+By the end of this lesson,
+
+00:00:38.890 --> 00:00:41.009
+you'll be ready for the first project.
+
+00:00:41.009 --> 00:00:44.045
+You'll start to manage your own blockchain identity.
+
+00:00:44.045 --> 00:00:47.075
+We've put some more details about the lesson down below the video.
+
+00:00:47.075 --> 00:00:49.070
+Read through it if you'd like some more context about
+
+00:00:49.070 --> 00:00:52.250
+the lesson or dive right in and start the first concept.
+
+00:00:52.250 --> 00:00:56.719
+These are some of my favorite topics and I can't wait to get started. Let's get going.
+

@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.270
+All right. We've covered a tone of information and congratulations on getting this far.
+
+00:00:05.270 --> 00:00:09.930
+In this video, we'll walk through the blockchain transaction lifecycle.
+
+00:00:09.930 --> 00:00:13.950
+This lifecycle follows the journey of a single transaction as it
+
+00:00:13.950 --> 00:00:18.355
+works its way through each stage in the process towards joining the blockchain.
+
+00:00:18.355 --> 00:00:22.330
+This will bring everything together that we've learned so far and
+
+00:00:22.330 --> 00:00:27.040
+establish a framework that we can use to understand the entire process.
+
+00:00:27.040 --> 00:00:30.760
+Keep in mind everything that you've learned throughout the previous lessons,
+
+00:00:30.760 --> 00:00:33.240
+because this lifecycle spans all of it.
+
+00:00:33.240 --> 00:00:38.055
+This will hopefully provide some clarity on how all the pieces fit together.
+
+00:00:38.055 --> 00:00:43.380
+Here's what the lifecycle looks like between two BitCoin users, Joe and Brandy.
+
+00:00:43.380 --> 00:00:47.450
+In this example, Joe wants to send one Bitcoin to Brandy.
+
+00:00:47.450 --> 00:00:50.475
+First, Joe gets Brady's wallet address.
+
+00:00:50.475 --> 00:00:54.905
+Using this information, he creates a new transaction for one Bitcoin
+
+00:00:54.905 --> 00:00:59.920
+from his wallet and includes a transaction fee of 0.003 Bitcoins.
+
+00:00:59.920 --> 00:01:04.545
+Next, he verifies his information and sends the transaction.
+
+00:01:04.545 --> 00:01:08.040
+His wallet starts the transaction signing algorithm
+
+00:01:08.040 --> 00:01:10.995
+which signs his transaction using his private key.
+
+00:01:10.995 --> 00:01:15.810
+The transaction is now broadcasted to the memory pool within the network.
+
+00:01:15.810 --> 00:01:19.265
+This transaction is eventually accepted by the miners.
+
+00:01:19.265 --> 00:01:22.490
+These miners group this transaction into a block,
+
+00:01:22.490 --> 00:01:26.400
+find the proof of work and assign this block a hash value.
+
+00:01:26.400 --> 00:01:29.530
+This block is now placed onto the blockchain.
+
+00:01:29.530 --> 00:01:31.870
+As this block gains confirmations,
+
+00:01:31.870 --> 00:01:35.200
+it is accepted as a valid transaction in the network.
+
+00:01:35.200 --> 00:01:37.530
+Once the transaction is accepted,
+
+00:01:37.530 --> 00:01:39.730
+Brandy finally gets her Bitcoin.
+
+00:01:39.730 --> 00:01:42.340
+If you understood most of all of that,
+
+00:01:42.340 --> 00:01:45.370
+you've come in an enormous way towards understanding the blockchain.
+
+00:01:45.370 --> 00:01:48.850
+This concise summary obviously doesn't include all the details,
+
+00:01:48.850 --> 00:01:51.250
+but acts as a quick story that you can use to branch
+
+00:01:51.250 --> 00:01:54.625
+off into more of the details we discussed through the lesson.
+
+00:01:54.625 --> 00:01:57.240
+Congratulations again on getting this far.
+
+00:01:57.240 --> 00:01:59.785
+We'll definitely be using all of this as we dive
+
+00:01:59.785 --> 00:02:03.140
+deeper into each of these concepts later on.
+
