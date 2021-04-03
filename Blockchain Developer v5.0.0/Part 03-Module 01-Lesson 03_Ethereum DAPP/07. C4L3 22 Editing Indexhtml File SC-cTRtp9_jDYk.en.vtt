@@ -1,0 +1,157 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.879
+So now, that we've written our smart contract,
+
+00:00:02.879 --> 00:00:07.229
+we've also written some test cases to make sure that it's working fine using more [inaudible].
+
+00:00:07.230 --> 00:00:09.900
+Let's now write a simple front end for a DApp.
+
+00:00:09.900 --> 00:00:12.089
+Now, with the Truffle box that we installed,
+
+00:00:12.089 --> 00:00:14.820
+it already came with a bunch of HTML boilerplate code,
+
+00:00:14.820 --> 00:00:17.655
+like the HTML page and the corresponding JavaScript file.
+
+00:00:17.655 --> 00:00:20.970
+If you look over here, all these folders we looked at the contract's folder.
+
+00:00:20.969 --> 00:00:23.070
+We looked at the migrations for little test folder.
+
+00:00:23.070 --> 00:00:25.440
+There's another folder right here called app.
+
+00:00:25.440 --> 00:00:29.775
+Within app, you will see that there's a scripts folder.
+
+00:00:29.774 --> 00:00:32.460
+If you go into scripts, there's an index.js file,
+
+00:00:32.460 --> 00:00:36.480
+and then we also have an index.html file right there.
+
+00:00:36.479 --> 00:00:39.334
+So what we typically have to do is edit these two files.
+
+00:00:39.335 --> 00:00:41.655
+Let's go first to the index.html files.
+
+00:00:41.655 --> 00:00:43.325
+Everything is in the app folder.
+
+00:00:43.325 --> 00:00:45.800
+There is a scripts folder that has the index.js
+
+00:00:45.799 --> 00:00:48.574
+file that a script that's the index.html will require.
+
+00:00:48.575 --> 00:00:50.980
+So, we're looking at the index.html file.
+
+00:00:50.979 --> 00:00:54.569
+Now, of course, you can pretty much look at this one, what it's doing.
+
+00:00:54.570 --> 00:00:56.369
+It's pretty simple. It's having a table.
+
+00:00:56.369 --> 00:00:59.390
+Now, this is where the existing web pack module
+
+00:00:59.390 --> 00:01:02.630
+that we installed that came with some boilerplate code.
+
+00:01:02.630 --> 00:01:06.040
+I'm just going to delete this and just add my own.
+
+00:01:06.040 --> 00:01:08.840
+Then, I'm also going to give you this code below this video.
+
+00:01:08.840 --> 00:01:10.540
+I'm just going to use this.
+
+00:01:10.540 --> 00:01:12.950
+So, again, just exactly the way it was going
+
+00:01:12.950 --> 00:01:15.769
+a very simple HTML page over here and nothing fancy.
+
+00:01:15.769 --> 00:01:18.289
+We are getting a script file, the app.js.
+
+00:01:18.290 --> 00:01:20.420
+This comes from all the script files that are located in
+
+00:01:20.420 --> 00:01:23.704
+the scripts folder and we will look at that file shortly,
+
+00:01:23.704 --> 00:01:25.629
+and then we're giving it a title;
+
+00:01:25.629 --> 00:01:28.584
+the StarNotary DAPP Front End.
+
+00:01:28.584 --> 00:01:31.729
+Then, within that, we're also having some headings over here.
+
+00:01:31.730 --> 00:01:34.730
+Then, we're also having a CSS file, the style sheet.
+
+00:01:34.730 --> 00:01:37.760
+Again, this is all something that just came along and that makes
+
+00:01:37.760 --> 00:01:41.090
+the truffle boxes really easy to use because it kind of a lot of boilerplate codes.
+
+00:01:41.090 --> 00:01:43.510
+You can really focus on the coding part and the block,
+
+00:01:43.510 --> 00:01:47.890
+and in the theory and part than just putting too much time into CSS and that stuff.
+
+00:01:47.890 --> 00:01:50.385
+We're also creating a label for the starName,
+
+00:01:50.385 --> 00:01:53.920
+and then calling a function in a script file to get the starName.
+
+00:01:53.920 --> 00:01:56.225
+So, we're creating a label and then we're calling a function.
+
+00:01:56.224 --> 00:02:00.530
+When this button is clicks on click is just a function that when onClick happens,
+
+00:02:00.530 --> 00:02:02.885
+you're calling a function called starName,
+
+00:02:02.885 --> 00:02:05.335
+and this is coming from an index.js file.
+
+00:02:05.334 --> 00:02:08.555
+The same thing is happening with the starOwner over here too.
+
+00:02:08.555 --> 00:02:11.300
+We're having a starOwner, and then we're having another button to claim the star,
+
+00:02:11.300 --> 00:02:13.010
+so we just have three buttons on the page,
+
+00:02:13.009 --> 00:02:14.299
+and this is what will look like.
+
+00:02:14.300 --> 00:02:15.835
+So, that's the index.html.
+
+00:02:15.835 --> 00:02:18.290
+Let's look at the index.js in our next video and
+
+00:02:18.289 --> 00:02:21.929
+modify that and then we can start running a front end of the application.
+

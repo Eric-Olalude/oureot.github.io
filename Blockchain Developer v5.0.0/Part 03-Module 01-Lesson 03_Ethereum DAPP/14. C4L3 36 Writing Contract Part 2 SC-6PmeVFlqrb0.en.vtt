@@ -1,0 +1,163 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.620
+So, we've already looked at how we created one function which is to create Star.
+
+00:00:04.620 --> 00:00:09.015
+Let's look at two more functions that put up StarForSale and the buyStar function.
+
+00:00:09.015 --> 00:00:10.769
+In the put up StarForSale,
+
+00:00:10.769 --> 00:00:15.239
+we're passing the tokenId and the price of the star that you wanted to sell as arguments.
+
+00:00:15.240 --> 00:00:19.875
+We are first checking to make sure that the msg.center is the owner of the tokenId,
+
+00:00:19.875 --> 00:00:22.320
+and then the owner of function is implemented.
+
+00:00:22.320 --> 00:00:24.464
+Remember in the OpenZeppelins file, we saw that.
+
+00:00:24.464 --> 00:00:28.769
+It is just checking the mapping to make sure the owner matches the address of the sender,
+
+00:00:28.769 --> 00:00:31.484
+then it adds the star to the stars are mapping sale.
+
+00:00:31.484 --> 00:00:35.269
+So, it's making sure that this is a valid person who owns the token,
+
+00:00:35.270 --> 00:00:38.240
+and then we're adding each to our mapping that we just created right there,
+
+00:00:38.240 --> 00:00:40.690
+so that we know that the star is up for sale.
+
+00:00:40.689 --> 00:00:42.960
+So, this is a put up StarForSale function,
+
+00:00:42.960 --> 00:00:45.359
+and then we have the buyStar function right there,
+
+00:00:45.359 --> 00:00:46.909
+and what we're doing in that we're getting
+
+00:00:46.909 --> 00:00:49.209
+that tokenId of the star that we wanted to buy.
+
+00:00:49.210 --> 00:00:51.765
+Also, see that this function is marked payable,
+
+00:00:51.765 --> 00:00:53.950
+since we are expecting funds to come through,
+
+00:00:53.950 --> 00:00:57.380
+so that means we need to mark this function payable to buy the star,
+
+00:00:57.380 --> 00:01:00.469
+and then we're checking to make sure that this tokenId star is
+
+00:01:00.469 --> 00:01:03.619
+indeed up for sale because we definitely want to make sure that this is up for sale,
+
+00:01:03.619 --> 00:01:05.299
+so we're looking up the mapping stars for
+
+00:01:05.299 --> 00:01:07.250
+sale and making sure that it's greater than zero,
+
+00:01:07.250 --> 00:01:09.534
+that means there is a price in it,
+
+00:01:09.534 --> 00:01:11.229
+and that means it's up for sale,
+
+00:01:11.230 --> 00:01:14.674
+and then we're also getting the star cost from the star for sale mapping.
+
+00:01:14.674 --> 00:01:16.519
+We're also getting the star owners address.
+
+00:01:16.519 --> 00:01:19.679
+We will need this address so that we can send the funds to.
+
+00:01:19.680 --> 00:01:20.840
+We would also need to make sure that
+
+00:01:20.840 --> 00:01:23.120
+the incoming funds are greater than equal to the price.
+
+00:01:23.120 --> 00:01:27.520
+We're making sure that incoming funds are greater because you're buying this star,
+
+00:01:27.519 --> 00:01:28.969
+you want make sure that the whatever the
+
+00:01:28.969 --> 00:01:32.075
+msg.value is greater than the cost of the star, right?
+
+00:01:32.075 --> 00:01:33.894
+That's the only way you can sell the star,
+
+00:01:33.894 --> 00:01:37.129
+and once we do that and of course if it doesn't happen it's going to
+
+00:01:37.129 --> 00:01:40.459
+throw an error and then removing the token from the existing owner,
+
+00:01:40.459 --> 00:01:45.224
+and we saw how we implement the remove token function in our ESC 721 contract.
+
+00:01:45.224 --> 00:01:47.449
+So, we're removing the token from the existing owner,
+
+00:01:47.450 --> 00:01:50.755
+then we add this token to the msg.center.
+
+00:01:50.754 --> 00:01:53.899
+Whoever is calling this function because that's the person that's buying gifts.
+
+00:01:53.900 --> 00:01:57.215
+Now, we're sending or adding this token by doing the add token function,
+
+00:01:57.215 --> 00:02:00.275
+and also if you see we're using the Global Transfer Function,
+
+00:02:00.275 --> 00:02:04.285
+we learned that in the lesson on Solidity and to transfer this star cost.
+
+00:02:04.284 --> 00:02:05.670
+So, this is the cost of the star,
+
+00:02:05.670 --> 00:02:08.539
+we're transferring this much ether to the store owner.
+
+00:02:08.539 --> 00:02:12.004
+What is the address? That's the address of that who's receiving the funds.
+
+00:02:12.004 --> 00:02:15.090
+Also, there's an extra balance that came along that was sent.
+
+00:02:15.090 --> 00:02:19.110
+We're sending it back to the person whoever sent or who is buying the star,
+
+00:02:19.110 --> 00:02:20.960
+if there's an extra value that we sent that
+
+00:02:20.960 --> 00:02:23.205
+was more than the cost of the star we're sending it back.
+
+00:02:23.205 --> 00:02:26.240
+Lastly, we want to make sure that once you install this star,
+
+00:02:26.240 --> 00:02:28.640
+we need to take it off from the mapping, stars for sale mapping.
+
+00:02:28.639 --> 00:02:31.229
+So, we're setting it back do zero.
+

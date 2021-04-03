@@ -1,0 +1,367 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.470
+Now that we have a smart contract written,
+
+00:00:02.470 --> 00:00:04.355
+let's write some unit tests,
+
+00:00:04.355 --> 00:00:06.544
+just like we did in version one before,
+
+00:00:06.544 --> 00:00:08.144
+we're going to write some unit tests.
+
+00:00:08.144 --> 00:00:12.179
+We have not deployed it to any of the networks or even the local test network yet.
+
+00:00:12.179 --> 00:00:15.929
+We've only compiled it in the last video to make sure that everything works fine.
+
+00:00:15.929 --> 00:00:17.699
+But let's start writing some tests.
+
+00:00:17.699 --> 00:00:19.739
+So, if I'm in my test folder right now,
+
+00:00:19.739 --> 00:00:21.109
+so we've looked at the Contract's folder,
+
+00:00:21.109 --> 00:00:22.480
+we've looked at the Migrations folder.
+
+00:00:22.480 --> 00:00:23.500
+Now we're in the Test folder.
+
+00:00:23.500 --> 00:00:25.289
+Remember, we deleted the file that we did
+
+00:00:25.289 --> 00:00:27.660
+not need already that came with the boilerplate.
+
+00:00:27.660 --> 00:00:29.504
+I'm going to create my own file here,
+
+00:00:29.504 --> 00:00:31.904
+calling it starNotary dot js.
+
+00:00:31.905 --> 00:00:34.185
+That's the name of our test file.
+
+00:00:34.185 --> 00:00:37.250
+Remember, you're supposed to place all your test files in this folder,
+
+00:00:37.250 --> 00:00:38.594
+that is how truffle works.
+
+00:00:38.594 --> 00:00:40.379
+I'm going to paste some tests here then I'm
+
+00:00:40.380 --> 00:00:42.135
+going to walk you through how everything works.
+
+00:00:42.134 --> 00:00:45.379
+Now, of course, we have learned quite a bit about tests and how tests are written.
+
+00:00:45.380 --> 00:00:47.030
+First of all, I wanted to walk you through again
+
+00:00:47.030 --> 00:00:49.100
+the import babel-polyfill that we are using here.
+
+00:00:49.100 --> 00:00:52.460
+Sometimes truffle or the way the web pack module works,
+
+00:00:52.460 --> 00:00:53.689
+the truffle box works,
+
+00:00:53.689 --> 00:00:55.219
+it just sometimes gives you this error.
+
+00:00:55.219 --> 00:00:56.869
+So, try using this if it doesn't work for you,
+
+00:00:56.869 --> 00:00:58.085
+you can always comment it out.
+
+00:00:58.085 --> 00:00:59.300
+I've seen it both ways.
+
+00:00:59.299 --> 00:01:02.750
+Just the module does not get properly imported with the web pack modules.
+
+00:01:02.750 --> 00:01:03.979
+So, just try doing this.
+
+00:01:03.979 --> 00:01:05.179
+If it doesn't or does not work,
+
+00:01:05.180 --> 00:01:06.910
+you can try either way or comment it out.
+
+00:01:06.909 --> 00:01:09.739
+So, the next statement is we're getting the contract abstraction.
+
+00:01:09.739 --> 00:01:11.599
+We've seen this multiple times before.
+
+00:01:11.599 --> 00:01:15.109
+We do that, is you say artifacts dot require exactly.
+
+00:01:15.109 --> 00:01:17.088
+So, this is your JSON representation,
+
+00:01:17.088 --> 00:01:19.385
+and you're just getting it in a contract extraction.
+
+00:01:19.385 --> 00:01:20.855
+This is what is called starNotary.
+
+00:01:20.855 --> 00:01:23.880
+That's a very first statement we've seen this multiple times before.
+
+00:01:23.879 --> 00:01:27.045
+Once we have that, using artifacts dot require,
+
+00:01:27.045 --> 00:01:28.590
+we're calling the contract function.
+
+00:01:28.590 --> 00:01:30.480
+Remember, truffle gets a clean copy
+
+00:01:30.480 --> 00:01:32.579
+every time you deploy your tests or you'd run your test.
+
+00:01:32.579 --> 00:01:34.310
+So, getting a clean copy by calling
+
+00:01:34.310 --> 00:01:37.629
+contract function which accepts two arguments description,
+
+00:01:37.629 --> 00:01:41.554
+and then followed by a second function which automatically gets the accounts.
+
+00:01:41.555 --> 00:01:43.790
+That when you deploy, you get a list of accounts and I was
+
+00:01:43.790 --> 00:01:46.234
+doing the accounts for you but then I'm deploying it.
+
+00:01:46.234 --> 00:01:49.349
+Now, instance is my final version that I'm going to be
+
+00:01:49.349 --> 00:01:52.469
+using to call on my functions on them and we've seen this multiple times before.
+
+00:01:52.469 --> 00:01:54.000
+So, this is what is.
+
+00:01:54.000 --> 00:01:56.415
+Then, we start writing our tests.
+
+00:01:56.415 --> 00:02:00.310
+Now, the first step that we are looking here is to create a star test.
+
+00:02:00.310 --> 00:02:02.040
+A very simple test here.
+
+00:02:02.040 --> 00:02:05.234
+What we're doing is that in the sense it is again, transaction.
+
+00:02:05.234 --> 00:02:07.765
+So remember, create star is a transaction.
+
+00:02:07.765 --> 00:02:09.550
+I got to go back and show you.
+
+00:02:09.550 --> 00:02:13.280
+This creates, started accepting two arguments here. So, we're calling.
+
+00:02:13.280 --> 00:02:16.995
+So, we're saying instance dot createStar.
+
+00:02:16.995 --> 00:02:19.235
+Then we're looking at Awesome Star,
+
+00:02:19.235 --> 00:02:21.670
+and then making sure that the token ID is passed through,
+
+00:02:21.669 --> 00:02:22.929
+these two arguments are passed through.
+
+00:02:22.930 --> 00:02:26.485
+Remember the third argument is the object that you pass,
+
+00:02:26.485 --> 00:02:28.780
+and of course, they're going to accept a gas or a value.
+
+00:02:28.780 --> 00:02:30.590
+In our case, all we need to pass is the from.
+
+00:02:30.590 --> 00:02:33.009
+So I'm saying I want to create a star from this address.
+
+00:02:33.009 --> 00:02:37.769
+So, that means the tokenId one gets to from this address.
+
+00:02:37.770 --> 00:02:39.960
+So, this address now owns token ID one.
+
+00:02:39.960 --> 00:02:43.590
+Then, we're calling our mapping tokenIdToStarInfor call.
+
+00:02:43.590 --> 00:02:47.250
+We're checking if the tokenId is awesome stuff.
+
+00:02:47.250 --> 00:02:50.099
+So, let's go back to look at tokenId what it looks like.
+
+00:02:50.099 --> 00:02:54.009
+Remember, this mapping, it should give you this information back.
+
+00:02:54.009 --> 00:02:55.159
+So, this is a mapping.
+
+00:02:55.159 --> 00:02:57.349
+We had TokenIdToStarInfor mapping,
+
+00:02:57.349 --> 00:03:00.974
+and we're calling this right there,
+
+00:03:00.974 --> 00:03:02.609
+and we're making sure that this,
+
+00:03:02.610 --> 00:03:05.010
+the tokenId is now.
+
+00:03:05.009 --> 00:03:06.949
+Of course, we're passing the tokenId one and we're
+
+00:03:06.949 --> 00:03:09.229
+making sure that it comes out to awesome star.
+
+00:03:09.229 --> 00:03:10.924
+So, we're just asserting that equal.
+
+00:03:10.925 --> 00:03:13.040
+So, that's the first step to create a star.
+
+00:03:13.039 --> 00:03:16.479
+In the second test, we are trying to see if we can actually put it up for sale.
+
+00:03:16.479 --> 00:03:20.284
+The way we do that is of course the first thing that you have to go create a star.
+
+00:03:20.284 --> 00:03:21.664
+So, I'm going to go create a star.
+
+00:03:21.664 --> 00:03:23.419
+Once you create a star,
+
+00:03:23.419 --> 00:03:27.429
+the next thing you want to do is that is you want to put it up for sale.
+
+00:03:27.430 --> 00:03:30.455
+So, you want to make sure that we put it up for sale using the starPrice.
+
+00:03:30.455 --> 00:03:32.250
+I'm just using some price here.
+
+00:03:32.250 --> 00:03:33.550
+So, I'm creating a star.
+
+00:03:33.550 --> 00:03:35.439
+I'm giving it a tokenId of two now.
+
+00:03:35.439 --> 00:03:37.175
+I'm creating from user one.
+
+00:03:37.175 --> 00:03:39.025
+Then we're putting up for sale.
+
+00:03:39.025 --> 00:03:40.530
+Then once you put it up for sale,
+
+00:03:40.530 --> 00:03:42.379
+again remember these are all transactions.
+
+00:03:42.379 --> 00:03:44.090
+So, there is no dot call here.
+
+00:03:44.090 --> 00:03:46.599
+We're passing in the arguments followed by the object.
+
+00:03:46.599 --> 00:03:48.829
+So, we're putting up for sale from user one
+
+00:03:48.830 --> 00:03:51.425
+because this is the one that created the star.
+
+00:03:51.425 --> 00:03:57.530
+Then we're further making sure by calling our mapping to make sure that it matches.
+
+00:03:57.530 --> 00:03:59.069
+So, we're creating a star.
+
+00:03:59.069 --> 00:04:00.629
+We're put it up for sale.
+
+00:04:00.629 --> 00:04:04.710
+Very simple. What you do is you instance dot name of the function you called,
+
+00:04:04.710 --> 00:04:09.094
+followed by arguments, followed by the object that you want to give information for.
+
+00:04:09.094 --> 00:04:13.405
+Then lastly, we're doing an assert dot equal that it gets added to the mapping.
+
+00:04:13.405 --> 00:04:17.045
+Again, one thing I wanted to mention is if you look at this web3 object,
+
+00:04:17.045 --> 00:04:19.595
+web3 is an object that is available to us automatically.
+
+00:04:19.595 --> 00:04:24.710
+So, we can just call toWei methods to convert to any denomination.
+
+00:04:24.709 --> 00:04:26.599
+We're converting it to ether in this case.
+
+00:04:26.600 --> 00:04:27.840
+So, this is something if you saw,
+
+00:04:27.839 --> 00:04:30.769
+all we're doing is that it's easily available to us.
+
+00:04:30.769 --> 00:04:34.129
+We want to say that we want to convert this web3 dot towei.
+
+00:04:34.129 --> 00:04:36.659
+So, web3 automatically gets in truffle.
+
+00:04:36.660 --> 00:04:38.810
+We just get a copy of that automatically in a test file.
+
+00:04:38.810 --> 00:04:41.030
+We don't need to import it explicitly.
+
+00:04:41.029 --> 00:04:43.369
+That's it. So, let's look at some next test.
+
+00:04:43.370 --> 00:04:46.055
+We looked at two tests. One test is to create a star,
+
+00:04:46.055 --> 00:04:49.790
+and other test is that user one can actually put up a star.
+
+00:04:49.790 --> 00:04:53.180
+It creates a star. So, we want to make sure that user one once it has a star,
+
+00:04:53.180 --> 00:04:54.650
+can actually put it up for sale.
+
+00:04:54.649 --> 00:04:58.259
+So, let's look at some more tests in the next video.
+

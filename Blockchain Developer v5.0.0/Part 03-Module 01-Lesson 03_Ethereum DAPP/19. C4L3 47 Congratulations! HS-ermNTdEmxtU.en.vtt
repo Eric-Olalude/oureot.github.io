@@ -1,0 +1,49 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.700
+Congratulations, you have successfully finished
+
+00:00:02.700 --> 00:00:06.690
+the lesson on creating decentralized applications on Ethereum.
+
+00:00:06.690 --> 00:00:10.620
+We created two versions of the star notary contract.
+
+00:00:10.619 --> 00:00:12.394
+The first one was a simple one,
+
+00:00:12.394 --> 00:00:16.545
+but it still helped you practice and use all the tools learned so far.
+
+00:00:16.545 --> 00:00:18.795
+We us truffle, truffle boxes,
+
+00:00:18.795 --> 00:00:20.370
+to get the boilerplate code.
+
+00:00:20.370 --> 00:00:24.585
+We also learned how to write unit tests to test smart contracts.
+
+00:00:24.585 --> 00:00:28.214
+We created a simple front end to interact with the contract.
+
+00:00:28.214 --> 00:00:32.475
+We also then created a tokenized version of the star notary contract.
+
+00:00:32.475 --> 00:00:37.635
+We used open Zeppelin to import the ERC 7-21 interface.
+
+00:00:37.634 --> 00:00:41.839
+We learned why we are choosing the ERC 7-21 interface,
+
+00:00:41.840 --> 00:00:44.420
+which is used for non-fungible tokens.
+
+00:00:44.420 --> 00:00:48.950
+We wrote unit tests and created a simple front end for adapt.
+
+00:00:48.950 --> 00:00:51.880
+Congratulations again on coming so far.
+

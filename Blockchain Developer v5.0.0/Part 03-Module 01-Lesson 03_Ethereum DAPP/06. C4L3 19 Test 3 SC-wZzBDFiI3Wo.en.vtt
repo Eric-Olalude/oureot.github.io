@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.230
+Now, let's look at another test on the screen to see if we can change owners.
+
+00:00:04.230 --> 00:00:06.419
+If you see, we have the first test we already looked at.
+
+00:00:06.419 --> 00:00:08.339
+Then, we have the second test that we looked at.
+
+00:00:08.339 --> 00:00:11.070
+Now, we have a third test here again using an 'it' block,
+
+00:00:11.070 --> 00:00:13.065
+and what we're trying to do is run a test,
+
+00:00:13.064 --> 00:00:15.314
+you give a description of the test, you can change owners.
+
+00:00:15.314 --> 00:00:17.265
+Again, a function within the function.
+
+00:00:17.265 --> 00:00:18.960
+Of course, I'm using the async keyword,
+
+00:00:18.960 --> 00:00:23.339
+so I can use await syntax just because everything in blockchain is asynchronous.
+
+00:00:23.339 --> 00:00:25.500
+So, this is what we're doing right here.
+
+00:00:25.500 --> 00:00:28.394
+So what we're trying to do is we're trying to see if we can actually change owners.
+
+00:00:28.394 --> 00:00:29.969
+So, just like in the previous test,
+
+00:00:29.969 --> 00:00:34.320
+we will first claim a star with a star owner's address, and then,
+
+00:00:34.320 --> 00:00:38.250
+we will again claim the star with the second owner's address, and then,
+
+00:00:38.250 --> 00:00:43.429
+we will run a test to make sure that our new owner is now the second user's address.
+
+00:00:43.429 --> 00:00:45.905
+We're changing owners, we're claiming a star for one address.
+
+00:00:45.905 --> 00:00:48.590
+We, force assert it to make sure that gets changed,
+
+00:00:48.590 --> 00:00:51.290
+and then we're claiming a star with another owner's address,
+
+00:00:51.289 --> 00:00:54.115
+and then we're making sure that this can actually change owners.
+
+00:00:54.115 --> 00:00:55.670
+Fantastic. Now, let's go run
+
+00:00:55.670 --> 00:00:58.594
+these two tests that we just wrote down to make sure everything works fine.
+
+00:00:58.594 --> 00:01:00.664
+Let's go back to our terminal again.
+
+00:01:00.664 --> 00:01:03.759
+Again, in my development console,
+
+00:01:03.759 --> 00:01:06.060
+the rearmament console here.
+
+00:01:06.060 --> 00:01:07.620
+So, now, again, we're giving,
+
+00:01:07.620 --> 00:01:10.930
+in fact, let me make sure if I've saved the file.
+
+00:01:10.939 --> 00:01:15.655
+Fantastic. Let's go back to our terminal and let's run the tests.
+
+00:01:15.655 --> 00:01:18.109
+Great. So, we see now we have two tests,
+
+00:01:18.109 --> 00:01:19.234
+all three of them passing,
+
+00:01:19.234 --> 00:01:20.870
+even the two new ones are passing. So, great.
+
+00:01:20.870 --> 00:01:22.670
+Again, wanted to mention that it is very,
+
+00:01:22.670 --> 00:01:24.769
+very important to write as many test cases as
+
+00:01:24.769 --> 00:01:27.079
+possible to test your smart contracts to make
+
+00:01:27.079 --> 00:01:29.299
+sure that your contract behaves the way it is intended to
+
+00:01:29.299 --> 00:01:32.609
+do before we deploy it to any public network.
+

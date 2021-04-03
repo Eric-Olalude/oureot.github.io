@@ -1,0 +1,226 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.234
+Now, let's look at our script file.
+
+00:00:02.234 --> 00:00:04.439
+We will be editing this index.js file,
+
+00:00:04.440 --> 00:00:07.950
+so remember in my folder starNotaryv2 going my app folder.
+
+00:00:07.950 --> 00:00:10.410
+We already edited our index.html file.
+
+00:00:10.410 --> 00:00:12.990
+Now, let's go make sure that we're editing yet again.
+
+00:00:12.990 --> 00:00:15.690
+This is the boilerplate code that came along. Very simple.
+
+00:00:15.689 --> 00:00:18.945
+I'm just going to delete all this stuff and add my own right there.
+
+00:00:18.945 --> 00:00:21.329
+Very similar, just about the same,
+
+00:00:21.329 --> 00:00:23.445
+just like we did in version one.
+
+00:00:23.445 --> 00:00:25.829
+The first thing that we do is, of course,
+
+00:00:25.829 --> 00:00:30.149
+we get the web3 library in case web3 is not injected into the browser by MetaMask,
+
+00:00:30.149 --> 00:00:34.170
+then we're getting the contract module to initiate a new contract. This is what we need.
+
+00:00:34.170 --> 00:00:35.475
+We're importing to these things,
+
+00:00:35.475 --> 00:00:37.829
+and then we have an app object right there.
+
+00:00:37.829 --> 00:00:39.269
+In this app has, of course,
+
+00:00:39.270 --> 00:00:42.440
+methods like start that if you start initially when someone clicks
+
+00:00:42.439 --> 00:00:45.769
+on the window and then we have a create star in a set status method.
+
+00:00:45.770 --> 00:00:48.595
+Then, after all this, we're adding the object to the window object,
+
+00:00:48.594 --> 00:00:50.204
+so that's the app object.
+
+00:00:50.204 --> 00:00:53.600
+We attach this object to the window and then we add an event listener.
+
+00:00:53.600 --> 00:00:56.765
+This is all that just came along with the boilerplate code, nothing added.
+
+00:00:56.765 --> 00:00:58.579
+so, again, we're adding an event listener.
+
+00:00:58.579 --> 00:01:00.350
+We're making sure that we're getting a web3.
+
+00:01:00.350 --> 00:01:03.594
+If we're not getting a web3 injected via user on web3 version.
+
+00:01:03.594 --> 00:01:05.629
+Again, all comes with the boilerplate code.
+
+00:01:05.629 --> 00:01:08.734
+I did not touch this and recalling the app.start method.
+
+00:01:08.734 --> 00:01:11.629
+This is where we are setting the provider.
+
+00:01:11.629 --> 00:01:14.329
+Also, making sure that we have accounts available.
+
+00:01:14.329 --> 00:01:16.370
+Of course, if no web3 is detected,
+
+00:01:16.370 --> 00:01:18.695
+then we're using the web3 that comes along with truffle.
+
+00:01:18.694 --> 00:01:23.924
+Of course, 9545 is the port number that we're going to run a Truffle development console.
+
+00:01:23.924 --> 00:01:25.709
+Once we have web3 set up,
+
+00:01:25.709 --> 00:01:29.209
+we call the app.start method just to recap everything again.
+
+00:01:29.209 --> 00:01:34.354
+There's in the app.start method is where we are setting our provider.
+
+00:01:34.355 --> 00:01:37.939
+Remember, provider is how a web3 talks to the blockchain.
+
+00:01:37.939 --> 00:01:40.640
+Once you have the web3, we need to configure the provider,
+
+00:01:40.640 --> 00:01:44.340
+and then we fetch the accounts to make sure we have available accounts to work what.
+
+00:01:44.340 --> 00:01:46.520
+I'm going to give you this code under this video.
+
+00:01:46.519 --> 00:01:48.679
+Of course, I like to use a single read syntax.
+
+00:01:48.680 --> 00:01:50.150
+It makes the code very clean,
+
+00:01:50.150 --> 00:01:54.055
+and we cannot use a single bit syntax inside the app object,
+
+00:01:54.055 --> 00:01:57.150
+and that's the reason what I'm doing is that I'm just creating the methods here,
+
+00:01:57.150 --> 00:01:59.450
+but I'm actually calling the functions with just similar.
+
+00:01:59.450 --> 00:02:01.894
+You can use any names, but I'm just calling the functions.
+
+00:02:01.894 --> 00:02:03.619
+This is where now, for example,
+
+00:02:03.620 --> 00:02:05.405
+let's look at create star function.
+
+00:02:05.405 --> 00:02:07.715
+If you look there's a create star function right there.
+
+00:02:07.715 --> 00:02:10.539
+Now, I can use my async obeyed syntax in this tool.
+
+00:02:10.539 --> 00:02:13.819
+Very similar to what we've already done and very, very similar.
+
+00:02:13.819 --> 00:02:15.019
+The create star function, we're using
+
+00:02:15.020 --> 00:02:18.170
+the getElementByID to get the value entered by the user.
+
+00:02:18.169 --> 00:02:19.909
+User getElementByID to whatever.
+
+00:02:19.909 --> 00:02:23.780
+Remember, we created labels there for these two and then we're giving it an ID.
+
+00:02:23.780 --> 00:02:26.330
+In this case, we have an idea of star name and star ID.
+
+00:02:26.330 --> 00:02:30.020
+So, whatever the user enters or getting that information we get element ID,
+
+00:02:30.020 --> 00:02:31.085
+we're storing it in this,
+
+00:02:31.085 --> 00:02:34.909
+and doing recalling the create star function with those two values from a counter.
+
+00:02:34.909 --> 00:02:36.379
+Remember, the object that we passed,
+
+00:02:36.379 --> 00:02:40.430
+and then we're setting the status to with the status label that we created.
+
+00:02:40.430 --> 00:02:43.870
+Again, remember, we have a status label that we've created right there,
+
+00:02:43.870 --> 00:02:45.230
+so we can just enter information.
+
+00:02:45.229 --> 00:02:46.699
+So, once we create a star,
+
+00:02:46.699 --> 00:02:48.679
+once we create index.js CM.
+
+00:02:48.680 --> 00:02:51.965
+Once we create a star, we're just setting that value to that.
+
+00:02:51.965 --> 00:02:54.229
+Again, remember, since this is a transaction,
+
+00:02:54.229 --> 00:02:55.674
+so there is no.call.
+
+00:02:55.675 --> 00:02:59.265
+Just kind of doing a recap with the create a star transactions that do not call.
+
+00:02:59.264 --> 00:03:01.054
+Then, we just pass it from object
+
+00:03:01.055 --> 00:03:03.890
+and that's pretty much it what a index.js would look like.
+
+00:03:03.889 --> 00:03:05.419
+Now, everything though is set up.
+
+00:03:05.419 --> 00:03:09.229
+In our next video, let's go run a local development console in one video.
+
+00:03:09.229 --> 00:03:12.334
+Then, we're also going to run our front end and the other terminal window,
+
+00:03:12.335 --> 00:03:13.790
+and everything would be all set.
+
+00:03:13.789 --> 00:03:17.319
+Then, we will go look at our front page and see what adapt looks like.
+

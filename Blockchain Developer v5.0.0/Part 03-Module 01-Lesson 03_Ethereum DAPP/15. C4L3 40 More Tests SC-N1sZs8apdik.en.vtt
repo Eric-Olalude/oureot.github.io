@@ -1,0 +1,310 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.250
+Okay. So now, let's look at some more tests.
+
+00:00:02.250 --> 00:00:04.365
+We're going to look at a test to see if the initial owner,
+
+00:00:04.365 --> 00:00:06.330
+who put the star up for sale will
+
+00:00:06.330 --> 00:00:08.879
+actually get the funds when someone else buys the star, right?
+
+00:00:08.880 --> 00:00:10.170
+So, this is the test we're looking at,
+
+00:00:10.169 --> 00:00:12.500
+we're actually checking to see if user1,
+
+00:00:12.500 --> 00:00:15.109
+once it creates a star it puts it up or sale,
+
+00:00:15.109 --> 00:00:16.669
+does it actually get the funds or not?
+
+00:00:16.670 --> 00:00:18.660
+So, let's look at this test a little bit more in details.
+
+00:00:18.660 --> 00:00:21.495
+We start by creating a star right here using user1,
+
+00:00:21.495 --> 00:00:23.054
+and then we put it up for sale.
+
+00:00:23.054 --> 00:00:25.664
+Then, user2 buys the star.
+
+00:00:25.664 --> 00:00:27.480
+Then, if you've seen this transaction,
+
+00:00:27.480 --> 00:00:29.024
+we need to send along ether.
+
+00:00:29.024 --> 00:00:30.329
+So, remember in this object,
+
+00:00:30.329 --> 00:00:32.280
+we haven't seen anything except false so far.
+
+00:00:32.280 --> 00:00:35.234
+So now, remember you can send value at ether or gas.
+
+00:00:35.234 --> 00:00:36.740
+In this case, we're sending the value,
+
+00:00:36.740 --> 00:00:38.365
+we're sending the price of this.
+
+00:00:38.365 --> 00:00:40.400
+So, we're sending the price and then of course,
+
+00:00:40.399 --> 00:00:42.229
+this is the price that you initially paid.
+
+00:00:42.229 --> 00:00:43.939
+So, I'm using the same price because that is
+
+00:00:43.939 --> 00:00:45.964
+how the star was created with the star prize.
+
+00:00:45.965 --> 00:00:47.495
+I'll put it up for sale.
+
+00:00:47.494 --> 00:00:48.844
+So, we're buying the star,
+
+00:00:48.844 --> 00:00:51.109
+we're setting it a value in this object right
+
+00:00:51.109 --> 00:00:53.939
+there after the arguments. So, you buy a star.
+
+00:00:53.939 --> 00:00:55.949
+Remember, this was a payable function,
+
+00:00:55.950 --> 00:00:58.170
+so you're sending along ether and this is how you
+
+00:00:58.170 --> 00:01:00.890
+pass within the object using the value key.
+
+00:01:00.890 --> 00:01:03.200
+On a side note, you can always use the gas key here
+
+00:01:03.200 --> 00:01:05.810
+also to specify any gas that should be used.
+
+00:01:05.810 --> 00:01:08.480
+We're not using that here but I just wanted to mention that to you,
+
+00:01:08.480 --> 00:01:10.520
+in case if you see the gas key added here.
+
+00:01:10.519 --> 00:01:14.134
+Then, we're of course comparing to make sure that the balance one of user1
+
+00:01:14.135 --> 00:01:18.344
+decreased by the star price amount after the transaction, which it should, right?
+
+00:01:18.344 --> 00:01:22.739
+Also, note that since Ethereum network can handle very large numbers,
+
+00:01:22.739 --> 00:01:24.774
+be returned a big number object.
+
+00:01:24.775 --> 00:01:26.700
+So, we return a big number object.
+
+00:01:26.700 --> 00:01:28.829
+So, the way you do that you just convert it to a number,
+
+00:01:28.829 --> 00:01:30.375
+we're calling the dot number function.
+
+00:01:30.375 --> 00:01:32.840
+It just really makes it easy for you to compare.
+
+00:01:32.840 --> 00:01:34.010
+So, we're just comparing.
+
+00:01:34.010 --> 00:01:36.109
+So again, going back we're creating a star,
+
+00:01:36.109 --> 00:01:37.510
+we're putting up for sale,
+
+00:01:37.510 --> 00:01:41.145
+we're getting the balance of user1 who right to now before.
+
+00:01:41.144 --> 00:01:42.329
+If it makes a transaction,
+
+00:01:42.329 --> 00:01:44.219
+and then we're buying the person buys it.
+
+00:01:44.219 --> 00:01:46.125
+Of course, this transaction should change, right?
+
+00:01:46.125 --> 00:01:50.480
+We're making sure that now the balances after all the transaction are equaling this way.
+
+00:01:50.480 --> 00:01:53.090
+So, we're calling assert dot equal in this case.
+
+00:01:53.090 --> 00:01:56.000
+So, making sure that it gets the funds.
+
+00:01:56.000 --> 00:01:58.060
+Then, let's look at one more test,
+
+00:01:58.060 --> 00:01:59.810
+very similar to the other one.
+
+00:01:59.810 --> 00:02:01.609
+This is very similar to the other one,
+
+00:02:01.609 --> 00:02:05.269
+so we want to make sure that user2 can buy a star, if it's put up for sale.
+
+00:02:05.269 --> 00:02:06.890
+That's the next step that we're looking at.
+
+00:02:06.890 --> 00:02:08.810
+Same thing you're creating a star,
+
+00:02:08.810 --> 00:02:12.920
+user1 puts it up for sale and then user2 buys it.
+
+00:02:12.919 --> 00:02:16.019
+Then, we're making sure that you can actually buy.
+
+00:02:16.020 --> 00:02:19.805
+So, [inaudible] just making sure that the owner of the star is now star user2.
+
+00:02:19.805 --> 00:02:21.710
+Then, just one last test in fact,
+
+00:02:21.710 --> 00:02:23.879
+very similar to in fact, this test.
+
+00:02:23.879 --> 00:02:28.069
+In this case, we check if user2 wants balance increased and then in this case,
+
+00:02:28.069 --> 00:02:31.549
+we're making sure of user2 balance decreases after it buys the stars.
+
+00:02:31.550 --> 00:02:33.575
+We start by creating a star from user1,
+
+00:02:33.574 --> 00:02:37.699
+we put it up for sale and we check the balance before of user2.
+
+00:02:37.699 --> 00:02:40.579
+Of course, what we're doing, is that we're check buying the star.
+
+00:02:40.580 --> 00:02:44.550
+Then, we're also checking the balance of user2 after he bought the star,
+
+00:02:44.550 --> 00:02:46.230
+which means they should have decreased.
+
+00:02:46.229 --> 00:02:47.549
+We're using the dot sub function,
+
+00:02:47.550 --> 00:02:49.920
+so very simple to understand, and they doing equal.
+
+00:02:49.919 --> 00:02:53.500
+So, we're checking the balance before subtracting the balance,
+
+00:02:53.500 --> 00:02:56.175
+and making sure that it's equal to the start price that was set so.
+
+00:02:56.175 --> 00:02:57.455
+Look at this test again,
+
+00:02:57.455 --> 00:03:00.590
+all you do is you call the instance and the name of the function,
+
+00:03:00.590 --> 00:03:02.349
+parameters, and then the object.
+
+00:03:02.349 --> 00:03:04.169
+Okay? So, just kind of cosequentially.
+
+00:03:04.169 --> 00:03:06.289
+So, that means if we want to do a test like this,
+
+00:03:06.289 --> 00:03:08.000
+the first thing you want do is create a star,
+
+00:03:08.000 --> 00:03:09.544
+then you want to put it up for sale.
+
+00:03:09.544 --> 00:03:11.269
+Then of course, you want to buy a star.
+
+00:03:11.270 --> 00:03:12.500
+Then, you can of course compare
+
+00:03:12.500 --> 00:03:15.064
+any parameters that would have changed into a so dot equal.
+
+00:03:15.064 --> 00:03:16.264
+So, that's how you write the task.
+
+00:03:16.264 --> 00:03:18.379
+So now, let's go do a truffle console,
+
+00:03:18.379 --> 00:03:20.210
+and compile the contract and run it.
+
+00:03:20.210 --> 00:03:21.655
+So, I'm going to go to my terminal.
+
+00:03:21.655 --> 00:03:23.789
+In fact, we can just go run truffle tests.
+
+00:03:23.789 --> 00:03:25.650
+Make sure you've saved our file.
+
+00:03:25.650 --> 00:03:28.680
+Okay. So, going back truffle test.
+
+00:03:28.680 --> 00:03:30.659
+So, I'm inside my folder again,
+
+00:03:30.659 --> 00:03:32.500
+I'm not in my develop console yet.
+
+00:03:32.500 --> 00:03:34.370
+I'm just running everything out to the console.
+
+00:03:34.370 --> 00:03:36.844
+You can always go in the console by doing truffle develop,
+
+00:03:36.844 --> 00:03:38.659
+and then just do the keyword test.
+
+00:03:38.659 --> 00:03:41.240
+Fantastic. So, we have five tests, all of them are passing.
+
+00:03:41.240 --> 00:03:44.480
+So, you can create a star, user1 can put up the star for sale,
+
+00:03:44.479 --> 00:03:45.799
+user2 can get the funds,
+
+00:03:45.800 --> 00:03:47.525
+user2 can buy a star,
+
+00:03:47.525 --> 00:03:50.360
+and user2 buys a star and decrease its balance.
+
+00:03:50.360 --> 00:03:52.720
+So, all the tests are passing now.
+
