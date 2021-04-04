@@ -1,0 +1,169 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.480
+Our topic is payment protection patterns.
+
+00:00:03.480 --> 00:00:07.440
+We are going to look at three different patterns that you can
+
+00:00:07.440 --> 00:00:12.135
+employ in your code to protect financial transactions.
+
+00:00:12.135 --> 00:00:15.540
+The first one is called Checks-Effects-Interaction.
+
+00:00:15.540 --> 00:00:18.135
+The second one is called Rate Limiting,
+
+00:00:18.135 --> 00:00:21.105
+and the third one is called Re-entrancy Guard.
+
+00:00:21.105 --> 00:00:28.290
+In prior lessons, you've written code and seen where there are hack attempts etc.
+
+00:00:28.290 --> 00:00:33.090
+on Smart Contract Code that causes funds to be drained.
+
+00:00:33.090 --> 00:00:38.760
+These three patterns are important because they will help you create
+
+00:00:38.760 --> 00:00:44.975
+robust code that is impervious to attacks such as those that we've discussed before.
+
+00:00:44.975 --> 00:00:48.650
+Let's start with Checks-Effects and Interaction.
+
+00:00:48.650 --> 00:00:55.535
+So this is a standard approach to ensuring that when your function code executes,
+
+00:00:55.535 --> 00:00:59.045
+it does that in a safe manner which prevents
+
+00:00:59.045 --> 00:01:05.060
+malicious actors from launching re-entrancy and other attacks on your code.
+
+00:01:05.060 --> 00:01:07.940
+If you look at the code snippet on this slide here,
+
+00:01:07.940 --> 00:01:11.665
+you will see that it has the possible offer,
+
+00:01:11.665 --> 00:01:13.865
+possibility of a re-entrancy attack.
+
+00:01:13.865 --> 00:01:18.095
+In fact, this exact same code has appeared in a prior lesson.
+
+00:01:18.095 --> 00:01:20.840
+This is the canonical pattern that you will
+
+00:01:20.840 --> 00:01:23.810
+see in contracts that a subject to re-entrancy,
+
+00:01:23.810 --> 00:01:27.500
+and we want to make sure that we don't repeat this kind of code.
+
+00:01:27.500 --> 00:01:29.570
+So how do you protect against it?
+
+00:01:29.570 --> 00:01:35.070
+Well, the simple answer is to think of it in three parts.
+
+00:01:35.070 --> 00:01:38.540
+First, check that all the conditions
+
+00:01:38.540 --> 00:01:42.290
+that are required for your function to execute safely are met,
+
+00:01:42.290 --> 00:01:45.890
+and also ensure that any arguments that are passed
+
+00:01:45.890 --> 00:01:49.850
+into the function are within the valid range.
+
+00:01:49.850 --> 00:01:52.175
+Once you've done that,
+
+00:01:52.175 --> 00:01:57.650
+either your function proceeds or because of the require statements,
+
+00:01:57.650 --> 00:02:00.890
+it fails and the transaction is immediately terminated.
+
+00:02:00.890 --> 00:02:02.920
+If the function continues,
+
+00:02:02.920 --> 00:02:05.885
+it's now time to change the state variables.
+
+00:02:05.885 --> 00:02:11.240
+So any variable that whose value would be changed as part of this function,
+
+00:02:11.240 --> 00:02:13.745
+this is where you would make that change.
+
+00:02:13.745 --> 00:02:15.770
+That's the effect part.
+
+00:02:15.770 --> 00:02:20.150
+So after checking the arguments and the conditions,
+
+00:02:20.150 --> 00:02:23.735
+you change the state of the contract, cause and effect.
+
+00:02:23.735 --> 00:02:28.975
+Then finally, this is the point where you interact with any external contracts.
+
+00:02:28.975 --> 00:02:32.930
+The reason you want to do that last is because it ensures that if
+
+00:02:32.930 --> 00:02:37.430
+those contracts have any malicious code that calls back etc.,
+
+00:02:37.430 --> 00:02:42.680
+they will not be able to do it based on an unchanged state variable.
+
+00:02:42.680 --> 00:02:46.340
+For example, if you are supposed to send
+
+00:02:46.340 --> 00:02:50.240
+funds to an external contract or an external entity,
+
+00:02:50.240 --> 00:02:52.910
+the state will already have been
+
+00:02:52.910 --> 00:02:55.955
+changed in a manner to indicate that those funds are depleted.
+
+00:02:55.955 --> 00:02:58.325
+They've been debited from the account.
+
+00:02:58.325 --> 00:03:01.550
+Therefore, even if there is a re-entrancy attack,
+
+00:03:01.550 --> 00:03:05.000
+it will result in no funds being drained.
+
+00:03:05.000 --> 00:03:09.410
+So that's the checks-effects and interaction pattern.
+
+00:03:09.410 --> 00:03:11.740
+Let's take a quiz.
+
+00:03:12.650 --> 00:03:15.875
+What is the correct order of
+
+00:03:15.875 --> 00:03:21.035
+operations based on the checks-effects and interactions patterns?
+
+00:03:21.035 --> 00:03:23.365
+Our choices have code,
+
+00:03:23.365 --> 00:03:26.585
+you need to pick the code option that
+
+00:03:26.585 --> 00:03:31.360
+best matches the checks-effects and interactions pattern.
+

@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.600
+Now, before we go on to the next exercise,
+
+00:00:03.600 --> 00:00:07.349
+I want you to take a second look at the code that we just
+
+00:00:07.349 --> 00:00:12.054
+created and I want to point out one important aspect,
+
+00:00:12.054 --> 00:00:16.634
+which is something we covered earlier before getting into the exercises,
+
+00:00:16.635 --> 00:00:21.420
+which is about the fact that although we have a separation of concerns here,
+
+00:00:21.420 --> 00:00:25.230
+we have the data and the application separated.
+
+00:00:25.230 --> 00:00:30.405
+What do you should note is for example this data structure here profile.
+
+00:00:30.405 --> 00:00:35.700
+If at some point you decide that you would want to add an extra property here.
+
+00:00:35.700 --> 00:00:40.380
+Given this architecture the way it is setup that would be impossible to do,
+
+00:00:40.380 --> 00:00:42.335
+because it is in the data structure.
+
+00:00:42.335 --> 00:00:46.509
+This is something you'll have to think about carefully and perhaps
+
+00:00:46.509 --> 00:00:50.619
+consider an architecture where information that
+
+00:00:50.619 --> 00:00:54.849
+is perhaps transient that is not super important to
+
+00:00:54.850 --> 00:01:02.454
+the primary data contract might also live in your application contract.
+
+00:01:02.454 --> 00:01:06.819
+So what you then have is a split data store where
+
+00:01:06.819 --> 00:01:10.479
+the primary data contract contains that
+
+00:01:10.480 --> 00:01:14.454
+data and those structures that absolutely cannot be changed,
+
+00:01:14.454 --> 00:01:19.765
+that cannot move, they'll never have any modifications made to them,
+
+00:01:19.765 --> 00:01:25.819
+and you can have components of your data that could adapt based
+
+00:01:25.819 --> 00:01:31.849
+on the application logic changing in your app smart contracts.
+
+00:01:31.849 --> 00:01:35.044
+So that's just an observation, architectural observation.
+
+00:01:35.045 --> 00:01:38.480
+There are many different ways in which you can approach this and
+
+00:01:38.480 --> 00:01:41.390
+really the specific smart contracts,
+
+00:01:41.390 --> 00:01:46.810
+the specific application that you are designing will govern exactly what you make.
+
+00:01:46.810 --> 00:01:50.420
+The pattern that we have discussed here today of separating
+
+00:01:50.420 --> 00:01:53.989
+the data and the application works for many different scenarios.
+
+00:01:53.989 --> 00:01:58.259
+So it's a good general purpose scenario.
+

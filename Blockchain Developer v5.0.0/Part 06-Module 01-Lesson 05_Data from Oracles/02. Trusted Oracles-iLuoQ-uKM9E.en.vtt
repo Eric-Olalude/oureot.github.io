@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.390
+The next topic we have is trusted Oracles.
+
+00:00:03.390 --> 00:00:08.265
+Now, Oracles that are run in the enterprise,
+
+00:00:08.265 --> 00:00:14.280
+in a private scenario are typically controlled by the administrator and perhaps,
+
+00:00:14.280 --> 00:00:17.490
+the team that's working and supporting
+
+00:00:17.490 --> 00:00:20.970
+the Oracle might also be the team that's supporting the Smart Contract.
+
+00:00:20.970 --> 00:00:23.540
+So that's a very not decentralized,
+
+00:00:23.540 --> 00:00:25.650
+it's a very centralized approach to Oracles,
+
+00:00:25.650 --> 00:00:27.510
+and that's a trusted Oracle.
+
+00:00:27.510 --> 00:00:29.830
+Obviously, when you have a scenario like that,
+
+00:00:29.830 --> 00:00:31.440
+you have a central point of failure.
+
+00:00:31.440 --> 00:00:32.820
+You have your Smart Contract,
+
+00:00:32.820 --> 00:00:35.410
+it's obviously going to run on a blockchain,
+
+00:00:35.410 --> 00:00:37.010
+whether it's private or public.
+
+00:00:37.010 --> 00:00:40.630
+But if the Oracle is no longer responding or is down,
+
+00:00:40.630 --> 00:00:42.430
+it becomes a single point of failure,
+
+00:00:42.430 --> 00:00:47.435
+and then your Smart Contract application cannot function properly.
+
+00:00:47.435 --> 00:00:50.930
+In general, you can think of a trusted Oracle as
+
+00:00:50.930 --> 00:00:55.230
+a proxy for your Smart Contract to access data.
+
+00:00:55.230 --> 00:01:00.950
+But because it is it does not have the capabilities of trustless Oracles,
+
+00:01:00.950 --> 00:01:03.050
+which we'll talk about here shortly,
+
+00:01:03.050 --> 00:01:07.970
+it limits its scope to private business use.
+
+00:01:07.970 --> 00:01:10.415
+Let's take a quiz now.
+
+00:01:10.415 --> 00:01:14.510
+What is the primary purpose of Oracles?
+

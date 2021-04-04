@@ -1,0 +1,325 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Separate Data and Logic</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Smart Contract Upgradability</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Why Contracts Should Be Upgradable.html">01. Why Contracts Should Be Upgradable</a>
+    </li>
+    <li class="">
+      <a href="02. Separate Data and Logic.html">02. Separate Data and Logic</a>
+    </li>
+    <li class="">
+      <a href="03. Add Data Contract Reference.html">03. Add Data Contract Reference</a>
+    </li>
+    <li class="">
+      <a href="04. Set Data Contract Address.html">04. Set Data Contract Address</a>
+    </li>
+    <li class="">
+      <a href="05. Update Test Code.html">05. Update Test Code</a>
+    </li>
+    <li class="">
+      <a href="06. Restrict Data Contract Callers.html">06. Restrict Data Contract Callers</a>
+    </li>
+    <li class="">
+      <a href="07. Lesson Summary.html">07. Lesson Summary</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">02. Separate Data and Logic</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="separate-data-and-logic">Separate Data and Logic</h1>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Separate Data And Logic</p></h3>
+  <video controls>
+  <source src="02. Separate Data And Logic-j8CX7Vyw7Dw.mp4" type="video/mp4">
+
+  <track default="true" kind="subtitles" srclang="en" src="02. Separate Data And Logic-j8CX7Vyw7Dw.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Why Separate Data and Logic?</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>Why is it advantageous to separate data and application logic into separate contracts?</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="rbk1" name="813812" id="rbk1">
+        <label for="rbk1"><p>It makes the contracts easier to deploy</p></label>
+      </div>
+      <div>
+        <input type="radio" value="rbk2" name="813812" id="rbk2">
+        <label for="rbk2"><p>It lowers the gas cost of transactions</p></label>
+      </div>
+      <div>
+        <input type="radio" value="rbk3" name="813812" id="rbk3">
+        <label for="rbk3"><p>It makes it easier for the dev team to work with multiple source control repositories</p></label>
+      </div>
+      <div>
+        <input type="radio" value="rbk4" name="813812" id="rbk4">
+        <label for="rbk4"><p>If a bug is discovered in the application logic, a new contract can be deployed without losing data</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    If a bug is discovered in the application logic, a new contract can be deployed without losing data
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Exercise 1 - Creating Separate Contracts - Intro</p></h3>
+  <video controls>
+  <source src="02. Exercise 1 - Creating Separate Contracts - Intro-3MHlYS2Euy0.mp4" type="video/mp4">
+
+  <track default="true" kind="subtitles" srclang="en" src="02. Exercise 1 - Creating Separate Contracts - Intro-3MHlYS2Euy0.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <div>
+    <h4>Task Description:</h4>
+    <pre><code class="shell language-shell">git checkout ExerciseC6C &amp;&amp; npm install</code></pre>
+<p>Complete each of the following to create separate contracts.</p>
+  </div>
+
+  <form>
+    <fieldset>
+      <legend>Task List:</legend>
+
+      <div>
+        <input type="checkbox" id="d79c9893-b467-4518-8cd6-f8b966c1595b--0">
+        <label for="d79c9893-b467-4518-8cd6-f8b966c1595b--0"><p>Create application contract - Add file <code>contracts/ExerciseC6C/ExerciseC6CApp.sol</code> by copying the code from <code>snippets/C/ExerciseC6CApp.txt</code></p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="d79c9893-b467-4518-8cd6-f8b966c1595b--1">
+        <label for="d79c9893-b467-4518-8cd6-f8b966c1595b--1"><p>Move application logic from <code>ExerciseC6C</code> to <code>ExerciseC6CApp</code> - Move the <code>calculateBonus()</code> function</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="d79c9893-b467-4518-8cd6-f8b966c1595b--2">
+        <label for="d79c9893-b467-4518-8cd6-f8b966c1595b--2"><p>Move application logic from <code>ExerciseC6C</code> to <code>ExerciseC6CApp</code> - Move <code>addSale()</code> function</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="d79c9893-b467-4518-8cd6-f8b966c1595b--3">
+        <label for="d79c9893-b467-4518-8cd6-f8b966c1595b--3"><p>Create temporary stub for <code>updateEmployee()</code> in <code>ExerciseC6CApp</code></p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="d79c9893-b467-4518-8cd6-f8b966c1595b--4">
+        <label for="d79c9893-b467-4518-8cd6-f8b966c1595b--4"><p>Run <code>truffle compile</code> and ensure code compiles</p></label>
+      </div>
+    </fieldset>
+  </form>
+
+  <div>
+    <h4>Task Feedback:</h4>
+
+
+    <p>Nice work!</p>
+  </div>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Exercise 1 - Creating Separate Contracts - Solution</p></h3>
+  <video controls>
+  <source src="02. Exercise 1 - Creating Separate Contracts - Solution-joPZKkx04_Q.mp4" type="video/mp4">
+
+  <track default="true" kind="subtitles" srclang="en" src="02. Exercise 1 - Creating Separate Contracts - Solution-joPZKkx04_Q.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Compiling While Transitioning?</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>When separating a contract into separate Data and Application contracts, what development technique enables you to gradually perform the task while ensuring the code continues to compile?</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="rbk1" name="813817" id="rbk1">
+        <label for="rbk1"><p>Copy all Data contract functions into Application contract</p></label>
+      </div>
+      <div>
+        <input type="radio" value="rbk2" name="813817" id="rbk2">
+        <label for="rbk2"><p>Add and edit Application contract code to a temporary text file</p></label>
+      </div>
+      <div>
+        <input type="radio" value="rbk3" name="813817" id="rbk3">
+        <label for="rbk3"><p>Add Data contract function stubs to Application contract</p></label>
+      </div>
+      <div>
+        <input type="radio" value="rbk4" name="813817" id="rbk4">
+        <label for="rbk4"><p>Move all Data contract functions into a library and reference it from the Application contract</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    Add Data contract function stubs to Application contract
+  </details>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="03. Add Data Contract Reference.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('02. Separate Data and Logic')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

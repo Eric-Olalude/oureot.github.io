@@ -1,0 +1,283 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Oracle Callback</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Data from Oracles</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Introduction.html">01. Introduction</a>
+    </li>
+    <li class="">
+      <a href="02. Oracles.html">02. Oracles</a>
+    </li>
+    <li class="">
+      <a href="03. Trustless Oracles.html">03. Trustless Oracles</a>
+    </li>
+    <li class="">
+      <a href="04. Types Of Attacks.html">04. Types Of Attacks</a>
+    </li>
+    <li class="">
+      <a href="05. Exercise Architecture Walkthrough.html">05. Exercise Architecture Walkthrough</a>
+    </li>
+    <li class="">
+      <a href="06. Oracle Registration.html">06. Oracle Registration</a>
+    </li>
+    <li class="">
+      <a href="07. Oracle Data Request.html">07. Oracle Data Request</a>
+    </li>
+    <li class="">
+      <a href="08. Oracle Callback.html">08. Oracle Callback</a>
+    </li>
+    <li class="">
+      <a href="09. Lesson Summary.html">09. Lesson Summary</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">08. Oracle Callback</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="oracle-callback">Oracle Callback</h1>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Exercise 3 - Intro - Oracle Callback</p></h3>
+  <video controls>
+  <source src="08. Exercise 3 - Intro - Oracle Callback-HhLEV-7k35M.mp4" type="video/mp4">
+
+  <track default="true" kind="subtitles" srclang="en" src="08. Exercise 3 - Intro - Oracle Callback-HhLEV-7k35M.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <div>
+    <h4>Task Description:</h4>
+    <p>Add missing code in <code>contracts/ExerciseC6D/ExerciseC6D.sol</code> for the <code>submitOracleResponse()</code> function.</p>
+  </div>
+
+  <form>
+    <fieldset>
+      <legend>Task List:</legend>
+
+      <div>
+        <input type="checkbox" id="87910eeb-66b1-43ec-b4e4-dac91baa7492--0">
+        <label for="87910eeb-66b1-43ec-b4e4-dac91baa7492--0"><p>Add code to prevent further oracle responses from being recorded using the <code>isOpen</code> property.</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="87910eeb-66b1-43ec-b4e4-dac91baa7492--1">
+        <label for="87910eeb-66b1-43ec-b4e4-dac91baa7492--1"><p>Replace <code>key=0</code> with code to generate a key using <code>index</code>, <code>flight</code>, and <code>timestamp</code>.</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="87910eeb-66b1-43ec-b4e4-dac91baa7492--2">
+        <label for="87910eeb-66b1-43ec-b4e4-dac91baa7492--2"><p>Announce to listening applications that a response to a request for fetching flight status information is available and has been verified.</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="87910eeb-66b1-43ec-b4e4-dac91baa7492--3">
+        <label for="87910eeb-66b1-43ec-b4e4-dac91baa7492--3"><p>Announce to listening applications that a response to a request for fetching flight status information is available but has not been verified.</p></label>
+      </div>
+    </fieldset>
+  </form>
+
+  <div>
+    <h4>Task Feedback:</h4>
+
+
+    <p>Great work!</p>
+  </div>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Exercise 3 - Solution - Oracle Callback</p></h3>
+  <video controls>
+  <source src="08. Exercise 3 - Solution - Oracle Callback-JF4V4LZhJQ4.mp4" type="video/mp4">
+
+  <track default="true" kind="subtitles" srclang="en" src="08. Exercise 3 - Solution - Oracle Callback-JF4V4LZhJQ4.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Store Info In Contracts?</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>What is the cheapest way to store information in Ethereum Smart Contracts?</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="rbk1" name="813893" id="rbk1">
+        <label for="rbk1"><p>Organize variables so they can be packed using the smallest number of 32-byte slots possible</p></label>
+      </div>
+      <div>
+        <input type="radio" value="rbk2" name="813893" id="rbk2">
+        <label for="rbk2"><p>Emit events with the information. It will automatically use cheap log storage</p></label>
+      </div>
+      <div>
+        <input type="radio" value="rbk3" name="813893" id="rbk3">
+        <label for="rbk3"><p>Set gas available during the contract deployment to a low value</p></label>
+      </div>
+      <div>
+        <input type="radio" value="rbk4" name="813893" id="rbk4">
+        <label for="rbk4"><p>Separate your contract into data and application contracts</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    Emit events with the information. It will automatically use cheap log storage
+  </details>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="09. Lesson Summary.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('08. Oracle Callback')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

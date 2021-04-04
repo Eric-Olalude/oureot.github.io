@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.290
+Let's walk through the solution for the Rate Limiting exercise.
+
+00:00:04.290 --> 00:00:07.740
+So the exercise was to provide the code for
+
+00:00:07.740 --> 00:00:12.750
+the modifier that would rate limit any function that uses that modifier.
+
+00:00:12.750 --> 00:00:16.949
+The require line in this code indicates that
+
+00:00:16.949 --> 00:00:21.600
+the block timestamp should be greater than or equal to the value of enabled.
+
+00:00:21.600 --> 00:00:26.760
+So this is essentially the check that makes sure that the function cannot be called
+
+00:00:26.760 --> 00:00:32.160
+if the elapsed time does not match the delta that is required,
+
+00:00:32.159 --> 00:00:33.750
+in this case, 30 minutes.
+
+00:00:33.750 --> 00:00:35.880
+So it's very simple, call
+
+00:00:35.880 --> 00:00:40.835
+the required statement and immediately after calling it, increment the time.
+
+00:00:40.835 --> 00:00:44.285
+Note that when I increment the time enabled equals enabled,
+
+00:00:44.284 --> 00:00:46.759
+I use the add method,
+
+00:00:46.759 --> 00:00:49.504
+that is, from the SafeMath library to ensure
+
+00:00:49.505 --> 00:00:53.000
+that there are no problems with the time manipulation there.
+
+00:00:53.000 --> 00:00:55.615
+So the essence of the pattern is;
+
+00:00:55.615 --> 00:00:59.975
+check if the time has elapsed and next,
+
+00:00:59.975 --> 00:01:04.159
+increment the time, and this ensures that the function that is using
+
+00:01:04.159 --> 00:01:10.140
+the modifier cannot be called if the interval has not yet elapsed.
+

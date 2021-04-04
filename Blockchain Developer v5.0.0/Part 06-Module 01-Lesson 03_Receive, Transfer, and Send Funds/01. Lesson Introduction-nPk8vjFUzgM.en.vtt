@@ -1,0 +1,73 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.669
+Welcome to the blockchain nano degree course.
+
+00:00:02.669 --> 00:00:05.009
+Our lesson topic is receive,
+
+00:00:05.009 --> 00:00:07.365
+transfer, and send funds.
+
+00:00:07.365 --> 00:00:11.009
+We're going to divide this lesson up into four main sections.
+
+00:00:11.009 --> 00:00:13.859
+In the first, we are going to review some of the Ether and
+
+00:00:13.859 --> 00:00:17.625
+payment fundamentals that you've covered in previous courses.
+
+00:00:17.625 --> 00:00:22.100
+Next, we're going to take a look at the SafeMath library that ensures that
+
+00:00:22.100 --> 00:00:26.915
+your smart contract code does math in a secure way.
+
+00:00:26.914 --> 00:00:32.225
+We'll follow that by an exploration of payment protection patterns.
+
+00:00:32.225 --> 00:00:35.000
+When you're smart contracts have payments,
+
+00:00:35.000 --> 00:00:38.195
+there are some established design patterns that you can use to
+
+00:00:38.195 --> 00:00:42.335
+ensure that you handle transactions in a secure manner.
+
+00:00:42.335 --> 00:00:48.859
+Finally, we will review 10 best practices for securing smart contracts.
+
+00:00:48.859 --> 00:00:53.359
+The skills that we will cover in this lesson are,
+
+00:00:53.359 --> 00:00:56.795
+first, the knowledge of Ether and payment fundamentals.
+
+00:00:56.795 --> 00:01:00.140
+Now, you've written code for this before in prior lessons,
+
+00:01:00.140 --> 00:01:03.829
+but we're going to focus more on the security aspects of it.
+
+00:01:03.829 --> 00:01:08.390
+You will also learn when it's appropriate to use
+
+00:01:08.390 --> 00:01:14.719
+the SafeMath library for proper handling of math and prevent things like overflows.
+
+00:01:14.719 --> 00:01:18.260
+You will learn the skills necessary for
+
+00:01:18.260 --> 00:01:23.135
+protecting payments using three design patterns that we're going to cover.
+
+00:01:23.135 --> 00:01:27.840
+Finally, we are going to review a variety of attacks that are possible,
+
+00:01:27.840 --> 00:01:31.380
+and how you can protect your smart contracts.
+

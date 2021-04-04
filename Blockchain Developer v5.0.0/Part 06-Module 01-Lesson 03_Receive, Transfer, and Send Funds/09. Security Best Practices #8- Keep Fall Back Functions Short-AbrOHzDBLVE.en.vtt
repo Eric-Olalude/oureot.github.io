@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.639
+Fallback functions should be kept short and you should also
+
+00:00:05.639 --> 00:00:11.384
+check that the property message data length equals zero.
+
+00:00:11.384 --> 00:00:15.119
+Ordinarily, you would never check for this in a fallback function.
+
+00:00:15.119 --> 00:00:19.274
+But remember, fallback functions are the one place in your contract
+
+00:00:19.274 --> 00:00:22.649
+where any ether that is being
+
+00:00:22.649 --> 00:00:26.294
+sent to the contract that is not captured by a specific function,
+
+00:00:26.295 --> 00:00:29.630
+it's sent to the fallback function if it's payable.
+
+00:00:29.629 --> 00:00:34.250
+It's possible that a malicious user might try to manipulate
+
+00:00:34.250 --> 00:00:41.164
+your contract by changing the state of the contract using message data.
+
+00:00:41.164 --> 00:00:43.640
+It's always a good idea to make sure that
+
+00:00:43.640 --> 00:00:46.280
+the length is zero because there is never a circumstance
+
+00:00:46.280 --> 00:00:51.260
+where a payable fallback function requires message data.
+
+00:00:51.259 --> 00:00:54.500
+So in general, make sure you require that that's zero
+
+00:00:54.500 --> 00:00:58.570
+before you proceed with the transaction.
+

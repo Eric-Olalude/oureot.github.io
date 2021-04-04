@@ -1,0 +1,70 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.155
+Earlier we discussed how important it is to focus on the algorithm
+
+00:00:04.155 --> 00:00:08.640
+of these design patterns versus on code syntax, etc.
+
+00:00:08.640 --> 00:00:10.559
+So similar to the prior exercise,
+
+00:00:10.558 --> 00:00:13.139
+the rate-limiting exercise is going to call upon
+
+00:00:13.140 --> 00:00:18.300
+your skill to complete code without focusing too much on the syntax,
+
+00:00:18.300 --> 00:00:20.265
+but really the essence of the algorithm.
+
+00:00:20.265 --> 00:00:25.505
+On the slide here, you see that there is an outline for a function modifier.
+
+00:00:25.504 --> 00:00:29.349
+As always it starts off with using safe math in the contract,
+
+00:00:29.350 --> 00:00:32.579
+there is then a variable called "Enabled",
+
+00:00:32.579 --> 00:00:35.780
+and that is initialized with the block timestamp.
+
+00:00:35.780 --> 00:00:40.865
+Now, what you need to do is to provide the code for the modifier.
+
+00:00:40.865 --> 00:00:42.895
+The modifier is called rate limit,
+
+00:00:42.895 --> 00:00:45.545
+and it accepts one parameter, time.
+
+00:00:45.545 --> 00:00:47.795
+If you look lower down in the slide,
+
+00:00:47.795 --> 00:00:53.359
+there is a function called safeWithdraw which takes one parameter of an amount,
+
+00:00:53.359 --> 00:00:59.530
+and this uses the rate limit function modifier with a perimeter of 30 minutes.
+
+00:00:59.530 --> 00:01:03.109
+Now, the code that would be there in
+
+00:01:03.109 --> 00:01:07.114
+the safeWithdraw function is not germane to this exercise,
+
+00:01:07.114 --> 00:01:08.449
+and so we can ignore that.
+
+00:01:08.450 --> 00:01:12.310
+You need to focus solely on the code for the modifier,
+
+00:01:12.310 --> 00:01:18.305
+and ensure that it is not possible for safeWithdraw or any other function
+
+00:01:18.305 --> 00:01:25.160
+that uses this modifier to be called more frequently than in this case 30 minutes.
+

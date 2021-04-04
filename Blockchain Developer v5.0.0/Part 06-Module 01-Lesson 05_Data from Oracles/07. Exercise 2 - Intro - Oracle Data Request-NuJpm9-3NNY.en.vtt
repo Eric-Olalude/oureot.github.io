@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.110
+Now let's move on to the next exercise and what we're
+
+00:00:04.110 --> 00:00:08.235
+going to do here is now look at the data request capability,
+
+00:00:08.235 --> 00:00:12.015
+and we're going to change the fetch flight status function.
+
+00:00:12.015 --> 00:00:13.695
+Let's go look at the code first.
+
+00:00:13.695 --> 00:00:18.450
+So this is the function that actually does the work
+
+00:00:18.450 --> 00:00:24.615
+of informing the Oracle what they need to do.
+
+00:00:24.615 --> 00:00:30.510
+So the first thing that we need to do here is we want to replace
+
+00:00:30.510 --> 00:00:38.625
+the hard-coded index we have here with a random index based on the calling account.
+
+00:00:38.625 --> 00:00:40.515
+What is the purpose of this?
+
+00:00:40.515 --> 00:00:43.280
+If you recollect we said that every time
+
+00:00:43.280 --> 00:00:46.160
+there's a request made for fetching flight status,
+
+00:00:46.160 --> 00:00:53.825
+we would generate one independent index that determines which Oracles respond.
+
+00:00:53.825 --> 00:00:59.930
+So that's the purpose of generating that here and then what we want to do is we want to
+
+00:00:59.930 --> 00:01:08.520
+notify the Oracles that the job of fetching the fight status has been assigned.
+

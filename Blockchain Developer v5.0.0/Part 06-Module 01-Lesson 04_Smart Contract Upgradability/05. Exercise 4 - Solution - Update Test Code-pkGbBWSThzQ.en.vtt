@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.490
+All right, let's update our code for Exercise 4.
+
+00:00:05.490 --> 00:00:08.790
+So for that we need to go to test config.
+
+00:00:08.790 --> 00:00:14.460
+Want to reduce the size of this window to make it a little easier.
+
+00:00:14.460 --> 00:00:24.160
+So the first thing we want to do is we want to add a reference to the app smart contract.
+
+00:00:25.070 --> 00:00:33.490
+Next, we want to create a variable that references that.
+
+00:00:35.930 --> 00:00:46.230
+Finally we want to pass that along as part of our configuration variable properties.
+
+00:00:49.630 --> 00:00:56.970
+That done now we can focus our attention on the actual test script.
+
+00:00:57.380 --> 00:00:59.900
+Because of the way this is set up,
+
+00:00:59.900 --> 00:01:00.995
+it's very convenient now.
+
+00:01:00.995 --> 00:01:05.790
+All we have to do is change the reference for
+
+00:01:05.790 --> 00:01:12.970
+the contract that is referenced here for addSale to the app contract.
+
+00:01:13.090 --> 00:01:15.770
+You can run the test as I mentioned
+
+00:01:15.770 --> 00:01:19.340
+earlier that's possible at this point that you will get an error,
+
+00:01:19.340 --> 00:01:23.990
+and that's okay we have some troubleshooting tips for you to resolve that.
+
+00:01:29.390 --> 00:01:32.950
+So it's done the compilation.
+
+00:01:35.120 --> 00:01:39.610
+Now that we're doing to contracts it takes a little longer.
+
+00:01:39.610 --> 00:01:45.190
+But here it tells me that I overlooked one aspect,
+
+00:01:45.190 --> 00:01:48.010
+the constructor is expecting one argument.
+
+00:01:48.010 --> 00:01:57.130
+So specifically what I haven't done is provided my app contract with the address.
+
+00:01:57.130 --> 00:02:00.475
+So that should happen right here.
+
+00:02:00.475 --> 00:02:05.330
+So we fix that.
+
+00:02:07.880 --> 00:02:13.540
+That's something new that we added and the test config needs to be updated for that.
+
+00:02:13.540 --> 00:02:17.000
+All right, let's try it again.
+
+00:02:20.490 --> 00:02:24.595
+You'll want to write more tests to ensure
+
+00:02:24.595 --> 00:02:30.455
+that the cross contract calling is functioning correctly.
+
+00:02:30.455 --> 00:02:36.520
+It's a new paradigm that's been introduced and you may want to once you refactor
+
+00:02:36.520 --> 00:02:39.940
+your contracts look at what other tests you could write to
+
+00:02:39.940 --> 00:02:43.480
+ensure that the architecture is working correctly.
+
+00:02:43.480 --> 00:02:50.085
+So in this case we see that it worked perfectly and we've split up the contracts,
+
+00:02:50.085 --> 00:02:53.780
+we have the application contract calling into
+
+00:02:53.780 --> 00:03:00.330
+the data contract and our test is reporting that it worked correctly.
+
