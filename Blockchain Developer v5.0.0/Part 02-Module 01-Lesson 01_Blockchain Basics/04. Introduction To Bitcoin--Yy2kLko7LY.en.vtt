@@ -1,0 +1,205 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.004
+The blockchain got started with it's
+
+00:00:02.004 --> 00:00:06.365
+first implementation using a new type of currency known as Bitcoin.
+
+00:00:06.365 --> 00:00:09.960
+Bitcoin is a type of digital currency that utilizes
+
+00:00:09.960 --> 00:00:13.595
+the blockchain to help facilitate financial transactions.
+
+00:00:13.595 --> 00:00:18.155
+It laid the foundation for many other ideas underlying other blockchains.
+
+00:00:18.155 --> 00:00:21.300
+Understanding how Bitcoin works is enormous step
+
+00:00:21.300 --> 00:00:24.844
+towards understanding ideas that span across all industries.
+
+00:00:24.844 --> 00:00:27.890
+Because of that, we'll focus a lot on Bitcoin.
+
+00:00:27.890 --> 00:00:30.615
+In this section, we'll discuss the history,
+
+00:00:30.614 --> 00:00:32.039
+and development of Bitcoin,
+
+00:00:32.039 --> 00:00:35.049
+and how it helped develop these core ideas.
+
+00:00:35.049 --> 00:00:40.500
+To start, Bitcoin uses the idea of blocks to group and validate transactions.
+
+00:00:40.500 --> 00:00:44.189
+A block is a group of transactions bundled together.
+
+00:00:44.189 --> 00:00:46.409
+This idea is extremely important,
+
+00:00:46.409 --> 00:00:49.844
+but Bitcoin isn't actually the first time we've heard of it.
+
+00:00:49.844 --> 00:00:52.094
+The idea to group, validate,
+
+00:00:52.094 --> 00:00:55.655
+and linked documents actually dates back to around 1991.
+
+00:00:55.655 --> 00:01:00.094
+This was the year that Haber and Stornetta released their research paper titled,
+
+00:01:00.094 --> 00:01:02.324
+"How to Time-Stamp a Digital Document."
+
+00:01:02.325 --> 00:01:07.515
+In this paper, Haber and stornetta imagined a new way to verify documents.
+
+00:01:07.515 --> 00:01:12.094
+They proposed time-stamping of documents and linking them to the previous document.
+
+00:01:12.094 --> 00:01:17.094
+They explained how this could form a chain of validated up-to-date documents.
+
+00:01:17.094 --> 00:01:22.135
+What Haber and stornetta proposed then would become the precursor to the blockchain now.
+
+00:01:22.135 --> 00:01:23.969
+Fast forward to 2008,
+
+00:01:23.969 --> 00:01:28.655
+when an unidentified author by the name of Satoshi Nakamoto published a Whitepaper.
+
+00:01:28.655 --> 00:01:30.989
+This paper titled Bitcoin,
+
+00:01:30.989 --> 00:01:35.929
+a peer-to-peer electronic cash system laid the foundation for Bitcoin as we know it now.
+
+00:01:35.930 --> 00:01:38.960
+It completely changed how we view and understand currency.
+
+00:01:38.959 --> 00:01:41.875
+On January third 2009,
+
+00:01:41.875 --> 00:01:44.245
+Nakamoto released the Bitcoin software.
+
+00:01:44.245 --> 00:01:47.204
+Unleashing the first Bitcoins into the world.
+
+00:01:47.204 --> 00:01:51.468
+Reviewing this paper will give you a strong foundation in Bitcoin,
+
+00:01:51.468 --> 00:01:54.099
+blockchain, and other types of cryptocurrencies,
+
+00:01:54.099 --> 00:01:56.349
+that we'll be discussing throughout this program.
+
+00:01:56.349 --> 00:02:01.155
+After this video, we'd like for you to review Satoshi Nakamoto Whitepaper yourself.
+
+00:02:01.155 --> 00:02:03.879
+As you'll see, the first line already began
+
+00:02:03.879 --> 00:02:06.824
+describing how a peer-to-peer electronic cash system,
+
+00:02:06.825 --> 00:02:09.400
+can bypass the need for a centralized bank.
+
+00:02:09.400 --> 00:02:13.300
+From there, the paper discusses topics like transactions,
+
+00:02:13.300 --> 00:02:17.675
+time-stamps, proof-of-work, networks and many other topics.
+
+00:02:17.675 --> 00:02:21.570
+This paper covers many technical details about how Bitcoin operates,
+
+00:02:21.569 --> 00:02:25.239
+and uses terms and concepts you may not be familiar with just yet.
+
+00:02:25.240 --> 00:02:26.805
+But that's okay.
+
+00:02:26.805 --> 00:02:29.819
+Try to focus on just a few key questions.
+
+00:02:29.819 --> 00:02:32.590
+"What problem does the Bitcoin try to solve?
+
+00:02:32.590 --> 00:02:34.550
+What solutions has it provided?
+
+00:02:34.550 --> 00:02:37.969
+What components are used to develop this new system?"
+
+00:02:37.969 --> 00:02:40.215
+Since I started exploring the blockchain space,
+
+00:02:40.215 --> 00:02:43.015
+I've referred back to this Whitepaper several times.
+
+00:02:43.014 --> 00:02:45.479
+Many of the concepts that Nakamoto wrote about,
+
+00:02:45.479 --> 00:02:48.909
+extend beyond Bitcoin, and even beyond cryptocurrency.
+
+00:02:48.909 --> 00:02:51.710
+These are concepts that are fundamental to building
+
+00:02:51.710 --> 00:02:55.004
+a robust blockchain for any application.
+
+00:02:55.004 --> 00:02:57.819
+As the adoption for the blockchain continues to grow,
+
+00:02:57.819 --> 00:03:00.840
+debate and discussion will continue to run these topics.
+
+00:03:00.840 --> 00:03:03.400
+Throughout these discussions, it's nice to go
+
+00:03:03.400 --> 00:03:06.504
+back to the source of where it all started, in this Whitepaper.
+
+00:03:06.504 --> 00:03:10.689
+Surprisingly, it was only after Bitcoin was developed that we started to
+
+00:03:10.689 --> 00:03:15.400
+realize the potential of the technology underlying the system, the blockchain.
+
+00:03:15.400 --> 00:03:18.620
+Abstracting these same ideas to applications beyond
+
+00:03:18.620 --> 00:03:21.270
+just financial transactions is how the blockchain
+
+00:03:21.270 --> 00:03:24.260
+was able to begin transforming so many industries.
+
+00:03:24.259 --> 00:03:26.689
+So, take some time now to read through this paper.
+
+00:03:26.689 --> 00:03:31.280
+It will help you better understand the key points underlying Bitcoin and the blockchain.
+
+00:03:31.280 --> 00:03:33.629
+You can find the whitepaper@bitcoin.org/bitcoin.pdf.
+
+00:03:35.389 --> 00:03:38.864
+We've also linked down below in the instructor notes.
+
+00:03:38.865 --> 00:03:42.320
+After you've taken some time to read it through, let us know your thoughts.
+

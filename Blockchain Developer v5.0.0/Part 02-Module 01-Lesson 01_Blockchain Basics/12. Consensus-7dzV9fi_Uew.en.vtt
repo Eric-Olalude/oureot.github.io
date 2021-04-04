@@ -1,0 +1,166 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.399
+We've talked a lot about a block joining the blockchain.
+
+00:00:03.399 --> 00:00:05.904
+But, we haven't really mentioned how this happens.
+
+00:00:05.905 --> 00:00:09.570
+It starts by the network agreeing on which transactions are valid.
+
+00:00:09.570 --> 00:00:12.640
+This is done using something known as consensus.
+
+00:00:12.640 --> 00:00:15.690
+Consensus is the name for a group of algorithms
+
+00:00:15.689 --> 00:00:18.824
+we can use to create a voting process for the network.
+
+00:00:18.824 --> 00:00:23.549
+This voting process helps make decisions about information on the blockchain.
+
+00:00:23.550 --> 00:00:27.839
+In this video, we'll look further into consensus starting with the problem that
+
+00:00:27.839 --> 00:00:32.255
+lies at the core of consensus known as the Byzantine Generals Problem.
+
+00:00:32.255 --> 00:00:35.070
+Let's take a moment and go on a journey back to
+
+00:00:35.070 --> 00:00:39.884
+the early 100s during the rule of the Byzantine Empire in the middle of a war.
+
+00:00:39.884 --> 00:00:41.304
+Stay with me on this.
+
+00:00:41.304 --> 00:00:44.710
+In the end, the relation to the blockchain will be very clear.
+
+00:00:44.710 --> 00:00:47.490
+Nine generals, each commanding a portion of
+
+00:00:47.490 --> 00:00:52.315
+the Byzantine army encircle a city and they need to form a plan to attack it.
+
+00:00:52.314 --> 00:00:54.339
+The generals must only decide,
+
+00:00:54.340 --> 00:00:56.450
+whether to attack or retreat.
+
+00:00:56.450 --> 00:00:59.550
+The caveat is that either all nine must agree
+
+00:00:59.549 --> 00:01:02.729
+to attack or all nine must agree to retreat.
+
+00:01:02.729 --> 00:01:05.450
+If only a portion attack while the others hold back,
+
+00:01:05.450 --> 00:01:07.540
+then they'll be overwhelmed and lose.
+
+00:01:07.540 --> 00:01:10.385
+In addition, there are some other complications.
+
+00:01:10.385 --> 00:01:11.790
+Of the nine generals,
+
+00:01:11.790 --> 00:01:13.890
+there could be some who were traitors.
+
+00:01:13.890 --> 00:01:15.905
+They may try to disrupt the group vote.
+
+00:01:15.905 --> 00:01:19.295
+For example, if four of the nine support an attack,
+
+00:01:19.295 --> 00:01:21.489
+and another for support a retreat,
+
+00:01:21.489 --> 00:01:25.179
+the final general could have bad intent and mess the whole thing up.
+
+00:01:25.180 --> 00:01:29.130
+To do this, they could send a vote to retreat to those in favor
+
+00:01:29.129 --> 00:01:33.034
+of retreating and a vote to attack to the four who want to attack.
+
+00:01:33.034 --> 00:01:35.399
+The generals are physically separated,
+
+00:01:35.400 --> 00:01:37.963
+and need to send their votes using messengers.
+
+00:01:37.963 --> 00:01:41.030
+These messengers could potentially be captured along the way,
+
+00:01:41.030 --> 00:01:42.454
+fail to deliver votes,
+
+00:01:42.454 --> 00:01:44.539
+or could create false votes.
+
+00:01:44.540 --> 00:01:46.760
+What we just went over is referred to in
+
+00:01:46.760 --> 00:01:49.745
+computer science as the Byzantine Generals Problem.
+
+00:01:49.745 --> 00:01:53.055
+The problem is an analogy for the blockchain network.
+
+00:01:53.055 --> 00:01:55.230
+Replace generals with nodes,
+
+00:01:55.230 --> 00:01:56.454
+and instead of war,
+
+00:01:56.454 --> 00:01:58.319
+think about our blockchain network.
+
+00:01:58.319 --> 00:02:01.250
+The same ideas apply in both situations.
+
+00:02:01.250 --> 00:02:02.819
+In a distributed system,
+
+00:02:02.819 --> 00:02:05.000
+you need a way to ensure trust between
+
+00:02:05.000 --> 00:02:08.354
+users when they don't have any way to communicate effectively.
+
+00:02:08.354 --> 00:02:11.209
+The solution helps us understand a way to achieve
+
+00:02:11.210 --> 00:02:14.680
+consensus between users who cannot communicate effectively,
+
+00:02:14.680 --> 00:02:16.745
+and have no way to trust each other.
+
+00:02:16.745 --> 00:02:19.849
+It's pretty neat to realize this problem of establishing trust
+
+00:02:19.849 --> 00:02:22.909
+and a distributed network has gone on for ages.
+
+00:02:22.909 --> 00:02:27.895
+Bitcoin originally proposed a solution to this problem using a proof-of-work algorithm.
+
+00:02:27.895 --> 00:02:31.360
+It's a way to achieve consensus without a central authority,
+
+00:02:31.360 --> 00:02:34.485
+and is what allows Bitcoin to solve the double-spending problem.
+
+00:02:34.485 --> 00:02:38.960
+We'll go over the details of this proof-of-work algorithm next.
+

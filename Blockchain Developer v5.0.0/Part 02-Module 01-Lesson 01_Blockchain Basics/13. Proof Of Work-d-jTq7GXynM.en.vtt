@@ -1,0 +1,142 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.695
+Proof of work is a consensus algorithm originally proposed by Bitcoin.
+
+00:00:04.695 --> 00:00:08.690
+It's a solution to the Byzantine generals problem mentioned previously.
+
+00:00:08.690 --> 00:00:13.455
+It's one of many algorithms that can be used to help reach consensus on a blockchain.
+
+00:00:13.455 --> 00:00:16.165
+In this video, we'll define proof-of-work,
+
+00:00:16.165 --> 00:00:19.535
+then discuss the details of what makes it all work.
+
+00:00:19.535 --> 00:00:22.860
+The basic idea behind proof of work is that a piece of
+
+00:00:22.860 --> 00:00:25.985
+data can be costly or a time-consuming to produce,
+
+00:00:25.985 --> 00:00:29.130
+but simple for others to verify that work.
+
+00:00:29.130 --> 00:00:30.730
+In proof of work,
+
+00:00:30.730 --> 00:00:34.100
+there's an upfront cost of resources known as work,
+
+00:00:34.100 --> 00:00:36.585
+put into generating a block's hash value.
+
+00:00:36.585 --> 00:00:39.200
+This work can easily be validated by
+
+00:00:39.200 --> 00:00:42.290
+the rest of the network to check if it was done correctly.
+
+00:00:42.290 --> 00:00:45.290
+In proof of work, each node is involved in
+
+00:00:45.290 --> 00:00:48.995
+solving a problem meant to prove they've done some required work.
+
+00:00:48.995 --> 00:00:52.010
+Having put in the time to do this work is a signal to
+
+00:00:52.010 --> 00:00:56.435
+the system that it is likely able to trust the result of the work that was done.
+
+00:00:56.435 --> 00:00:59.620
+Nodes who attempt to solve the problem are known as miners.
+
+00:00:59.620 --> 00:01:04.010
+Mining to find the solution to these problems can take a lot of computer power.
+
+00:01:04.010 --> 00:01:06.920
+These miners are constantly in a race to solve
+
+00:01:06.920 --> 00:01:10.440
+each problem as quickly as they can to build the next block.
+
+00:01:10.440 --> 00:01:12.855
+In return for their time and resources,
+
+00:01:12.855 --> 00:01:17.390
+they are paid transaction fees that come directly from the users making the transactions.
+
+00:01:17.390 --> 00:01:20.430
+They're also awarded by the network with Bitcoins that are
+
+00:01:20.430 --> 00:01:24.130
+created specifically as a reward for mining the new block.
+
+00:01:24.130 --> 00:01:26.700
+These new coins that are created are
+
+00:01:26.700 --> 00:01:29.915
+the only way new coins are ever introduced to the system.
+
+00:01:29.915 --> 00:01:33.775
+Let's look further into the problem these miners are racing to solve.
+
+00:01:33.775 --> 00:01:37.675
+Miners are trying to find the nonce for every new block.
+
+00:01:37.675 --> 00:01:39.270
+We covered this earlier,
+
+00:01:39.270 --> 00:01:43.160
+but here's a recap now that you have some more context on what it's for.
+
+00:01:43.160 --> 00:01:45.190
+When creating a hash for a block,
+
+00:01:45.190 --> 00:01:47.155
+not just any value will work.
+
+00:01:47.155 --> 00:01:50.215
+The system requests the very specific hash value
+
+00:01:50.215 --> 00:01:52.855
+that starts with a certain number of zeros.
+
+00:01:52.855 --> 00:01:57.080
+These extra constraints make the hash much more difficult to find.
+
+00:01:57.080 --> 00:01:58.615
+To find that value,
+
+00:01:58.615 --> 00:02:00.840
+you combine all of the blocks data with
+
+00:02:00.840 --> 00:02:04.120
+these nodes to try and generate the correct hash value.
+
+00:02:04.120 --> 00:02:08.050
+Computers guess the nonce over and over until finally they
+
+00:02:08.050 --> 00:02:11.965
+come up with a value that gives us a hash that meets these constraints.
+
+00:02:11.965 --> 00:02:14.030
+Exactly why this is important,
+
+00:02:14.030 --> 00:02:15.520
+might not be so clear right now,
+
+00:02:15.520 --> 00:02:18.720
+but we'll cover this in more detail when we go over mining.
+
+00:02:18.720 --> 00:02:21.515
+To help you understand what's going on a little better,
+
+00:02:21.515 --> 00:02:23.840
+let's jump into a demonstration.
+

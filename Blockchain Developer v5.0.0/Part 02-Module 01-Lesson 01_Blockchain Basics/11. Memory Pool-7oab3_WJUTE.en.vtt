@@ -1,0 +1,238 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.645
+On any given network,
+
+00:00:01.645 --> 00:00:04.880
+transactions are happening as quickly as people decide to make them.
+
+00:00:04.880 --> 00:00:07.140
+But that doesn't mean that the network is able to
+
+00:00:07.140 --> 00:00:09.435
+keep up with processing all of them at once.
+
+00:00:09.435 --> 00:00:11.550
+As the number of transactions being made
+
+00:00:11.550 --> 00:00:14.520
+exceeds the number of transactions the network can process,
+
+00:00:14.520 --> 00:00:16.080
+a waiting line builds up.
+
+00:00:16.080 --> 00:00:18.650
+This waiting line is known as a memory pool.
+
+00:00:18.650 --> 00:00:22.625
+Now, in this video we'll take a look at the details of the memory pool.
+
+00:00:22.625 --> 00:00:26.280
+The memory pool also known as the mempool is the waiting place
+
+00:00:26.280 --> 00:00:30.015
+for all unconfirmed transactions before they are added to the blockchain.
+
+00:00:30.015 --> 00:00:32.520
+The name comes from the fact that transactions sit in
+
+00:00:32.520 --> 00:00:37.385
+RAM memory of all the nodes in the Bitcoin network. So, what does this mean?
+
+00:00:37.385 --> 00:00:39.300
+Well, when you start making transactions on
+
+00:00:39.300 --> 00:00:42.540
+the blockchain you'll notice that it doesn't happen instantly.
+
+00:00:42.540 --> 00:00:44.490
+This is because for a transaction to be
+
+00:00:44.490 --> 00:00:48.230
+complete it needs to be confirmed or verified by the network.
+
+00:00:48.230 --> 00:00:53.145
+Now, this confirmation is done by specialized nodes in the Bitcoin network called miners.
+
+00:00:53.145 --> 00:00:56.219
+By validating transactions before they are added to the blockchain,
+
+00:00:56.219 --> 00:00:58.750
+miners help ensure consensus on the blockchain.
+
+00:00:58.750 --> 00:01:02.925
+We'll focus on the details of mining and miners later in this lesson.
+
+00:01:02.925 --> 00:01:05.960
+Since there are so many transactions happening,
+
+00:01:05.960 --> 00:01:08.230
+not everything can get picked up immediately.
+
+00:01:08.230 --> 00:01:11.465
+Transactions need to wait in line before they get validated.
+
+00:01:11.465 --> 00:01:14.240
+This line or storage space where these transactions
+
+00:01:14.240 --> 00:01:17.905
+wait is what's known as the memory pool or mempool for short.
+
+00:01:17.905 --> 00:01:20.600
+Now to better help us visualize the memory pool,
+
+00:01:20.600 --> 00:01:23.735
+let's jump over to blockchain.info.
+
+00:01:23.735 --> 00:01:25.580
+So, this company offers
+
+00:01:25.580 --> 00:01:30.065
+an online Bitcoin block export service and cryptocurrency wallets.
+
+00:01:30.065 --> 00:01:33.410
+In addition, they offer amazing free online charts,
+
+00:01:33.410 --> 00:01:38.430
+they allow anyone to learn more about Bitcoin stats and market information.
+
+00:01:38.430 --> 00:01:43.050
+Let's take a look at their unconfirmed transactions view.
+
+00:01:44.850 --> 00:01:49.345
+Now, at the time of this recording there's about 7,900
+
+00:01:49.345 --> 00:01:53.845
+unconfirmed transactions all waiting patiently to be added to the blockchain.
+
+00:01:53.845 --> 00:01:56.000
+Can you guess where they're waiting?
+
+00:01:56.000 --> 00:01:59.855
+Well, if you answered in the memory pool, that's absolutely correct.
+
+00:01:59.855 --> 00:02:02.560
+So, let's roll down a little bit and we'll see
+
+00:02:02.560 --> 00:02:05.780
+a live feed of all the live transactions going on.
+
+00:02:08.300 --> 00:02:12.390
+Now, each transaction is uniquely identified by a hash.
+
+00:02:12.390 --> 00:02:15.695
+If you can catch one of these numbers before they file on biome,
+
+00:02:15.695 --> 00:02:18.385
+you'll see that this is a string of characters,
+
+00:02:18.385 --> 00:02:20.560
+this one here in the darker line,
+
+00:02:20.560 --> 00:02:22.665
+that's the transaction hash.
+
+00:02:22.665 --> 00:02:25.240
+The numbers down below it in the lines with
+
+00:02:25.240 --> 00:02:28.735
+the green arrow are the Bitcoin wallet addresses.
+
+00:02:28.735 --> 00:02:33.340
+So, a wallet address is like an email address for Bitcoin.
+
+00:02:33.340 --> 00:02:38.365
+It's a way for you to tell people where to send money when you're using a wallet.
+
+00:02:38.365 --> 00:02:42.160
+We'll go in more depth about wallets later on.
+
+00:02:42.330 --> 00:02:46.420
+In that same line, we can see information about the time,
+
+00:02:46.420 --> 00:02:48.340
+date, and the amount that was transacted.
+
+00:02:48.340 --> 00:02:51.070
+So, it's all pretty confirmation, right?
+
+00:02:51.070 --> 00:02:54.975
+Now, if you're interested in checking out more details about the memory pool,
+
+00:02:54.975 --> 00:02:57.155
+let's head over to the chart section.
+
+00:02:57.155 --> 00:03:02.095
+So to get there, let's scroll down and navigate to "Products",
+
+00:03:02.095 --> 00:03:05.715
+"Charts", and then in charts,
+
+00:03:05.715 --> 00:03:08.350
+let's head over to "Network activity."
+
+00:03:08.470 --> 00:03:12.095
+In this section there are a couple of useful charts.
+
+00:03:12.095 --> 00:03:14.215
+Here we see one about the data,
+
+00:03:14.215 --> 00:03:17.485
+about the number of transactions in the memory pool at different times,
+
+00:03:17.485 --> 00:03:20.070
+the rate at which the mempool is growing,
+
+00:03:20.070 --> 00:03:24.020
+and here one about the size of transactions waiting to be confirmed.
+
+00:03:24.020 --> 00:03:28.550
+So, I recommend you take some time to explore and look through some of these charts.
+
+00:03:28.550 --> 00:03:31.780
+So earlier, we discussed the transactions leave
+
+00:03:31.780 --> 00:03:35.050
+the memory pool when a miner has added them to a block.
+
+00:03:35.050 --> 00:03:38.140
+So, miners validate the transactions before they are
+
+00:03:38.140 --> 00:03:41.230
+added to the block and that block is added to the blockchain.
+
+00:03:41.230 --> 00:03:45.335
+This process ensures security and validation on the blockchain.
+
+00:03:45.335 --> 00:03:49.815
+So, now we know how a transaction can leave a memory pool to join the blockchain.
+
+00:03:49.815 --> 00:03:54.670
+However, this isn't the only reason a transaction might leave the memory pool.
+
+00:03:54.670 --> 00:03:57.085
+Let's actually take a quick pause to explore
+
+00:03:57.085 --> 00:03:59.580
+some other reasons a transaction could leave the memory pool.
+
+00:03:59.580 --> 00:04:02.680
+So, in the following quiz try to
+
+00:04:02.680 --> 00:04:06.980
+decide which are valid reasons a transaction would leave the memory pool?
+
+00:04:06.980 --> 00:04:10.285
+Don't worry if this question is a bit challenging, it's meant to be.
+
+00:04:10.285 --> 00:04:14.065
+Especially since we're asking you about a topic you haven't learned yet.
+
+00:04:14.065 --> 00:04:18.680
+So, this exercise is meant to get you thinking about how the memory pool works.
+
+00:04:18.680 --> 00:04:22.670
+So, give it your best shot and we'll discuss your thoughts afterwards.
+

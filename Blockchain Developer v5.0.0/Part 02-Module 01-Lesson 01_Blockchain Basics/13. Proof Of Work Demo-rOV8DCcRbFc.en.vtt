@@ -1,0 +1,190 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.700
+To help picture what's going on with proof-of-work,
+
+00:00:02.700 --> 00:00:04.960
+let's walk through a simple demonstration.
+
+00:00:04.960 --> 00:00:08.820
+For this, we'll head back over to the website anders.com.
+
+00:00:08.820 --> 00:00:11.984
+We provided a link to the site down below the video.
+
+00:00:11.984 --> 00:00:14.739
+Here we'll quickly go over what a nonce is,
+
+00:00:14.740 --> 00:00:16.649
+how it relates to block difficulty,
+
+00:00:16.649 --> 00:00:19.309
+and why block difficulty is even important.
+
+00:00:19.309 --> 00:00:22.379
+These are all related to helping understand proof of work,
+
+00:00:22.379 --> 00:00:25.814
+and how it relates to the speed and security of the network.
+
+00:00:25.815 --> 00:00:29.820
+To start we'll add in some transaction information ourselves.
+
+00:00:29.820 --> 00:00:31.074
+This could be anything,
+
+00:00:31.074 --> 00:00:33.350
+so feel free to add in your own if you'd like.
+
+00:00:33.350 --> 00:00:36.895
+For mine, I'll say I send Brandy three bitcoin,
+
+00:00:36.895 --> 00:00:39.825
+then Brandy sent two bitcoin to Jessica.
+
+00:00:39.825 --> 00:00:42.795
+These aren't real transactions, we just made them up.
+
+00:00:42.795 --> 00:00:46.954
+This gives us an invalidated block that we need to find a hash for,
+
+00:00:46.954 --> 00:00:50.549
+instead of clicking "Mine" focus on this number right here.
+
+00:00:50.549 --> 00:00:52.354
+This is the nonce.
+
+00:00:52.354 --> 00:00:55.319
+This is the number the computer is trying to figure out to
+
+00:00:55.320 --> 00:00:58.734
+solve the problem needed for the proof-of-work algorithm.
+
+00:00:58.734 --> 00:01:00.869
+But you don't need a computer for this,
+
+00:01:00.869 --> 00:01:02.890
+it's just a lot faster if you have one.
+
+00:01:02.890 --> 00:01:08.480
+Try it for yourself. Change the nonce until the output has one reading zero.
+
+00:01:08.819 --> 00:01:12.244
+Well. Cool, looks like I got pretty lucky there.
+
+00:01:12.245 --> 00:01:14.770
+The problem is I don't need one, zero,
+
+00:01:14.769 --> 00:01:17.844
+I need four, and that can take a lot longer.
+
+00:01:17.844 --> 00:01:21.849
+This guessing over and over can get extremely tedious,
+
+00:01:21.849 --> 00:01:24.219
+but it's the only way to solve this problem.
+
+00:01:24.219 --> 00:01:29.640
+This manual random guessing and checking is exactly what the mining computers are doing.
+
+00:01:29.640 --> 00:01:31.870
+The more leading zeros we need,
+
+00:01:31.870 --> 00:01:34.079
+the longer it will take to find the answer.
+
+00:01:34.079 --> 00:01:38.664
+That's because wanting a hash with more zeros is a more specific request.
+
+00:01:38.665 --> 00:01:41.590
+That makes it less likely that you'll find a solution,
+
+00:01:41.590 --> 00:01:43.680
+and results in way more guessing.
+
+00:01:43.680 --> 00:01:49.475
+This number of leading zeros requested is what we referred to as the block difficulty.
+
+00:01:49.474 --> 00:01:52.559
+This block difficulty can be changed by updating
+
+00:01:52.560 --> 00:01:55.769
+the algorithm to ask for more or less zeros.
+
+00:01:55.769 --> 00:01:58.379
+You might change the difficulty anytime you want
+
+00:01:58.379 --> 00:02:02.164
+the computers to be able to solve the algorithm slower or faster.
+
+00:02:02.165 --> 00:02:05.790
+In bitcoin, they adjust the difficulty automatically to
+
+00:02:05.790 --> 00:02:09.420
+help ensure a new block is created every 10 minutes.
+
+00:02:09.419 --> 00:02:14.619
+If blocks are created too fast they'll increase the difficulty to slow the process down.
+
+00:02:14.620 --> 00:02:16.640
+But if they're being made to slow,
+
+00:02:16.639 --> 00:02:20.144
+they'll decrease the difficulty to make the process faster.
+
+00:02:20.145 --> 00:02:23.525
+You might wonder, why is 10 minutes important?
+
+00:02:23.525 --> 00:02:27.705
+Having a block every 10 minutes was a decision made by the developers.
+
+00:02:27.705 --> 00:02:31.660
+This 10-minute time was considered a good balance between having
+
+00:02:31.659 --> 00:02:36.155
+a secure network and a network that can actually keep up with creating new blocks.
+
+00:02:36.155 --> 00:02:40.120
+For example, if a block was created once every hour,
+
+00:02:40.120 --> 00:02:43.960
+the amount of transactions waiting to be verified would increase drastically,
+
+00:02:43.960 --> 00:02:45.885
+and the network would be too slow.
+
+00:02:45.884 --> 00:02:47.704
+But on the other hand,
+
+00:02:47.705 --> 00:02:50.010
+if a block could be made every second,
+
+00:02:50.009 --> 00:02:53.769
+then it might allow a hacker the opportunity to change data
+
+00:02:53.770 --> 00:02:58.094
+and free mind the blocks before the network could catch the attack.
+
+00:02:58.094 --> 00:03:02.175
+That's just a quick summary of why 10 is considered important,
+
+00:03:02.175 --> 00:03:04.719
+this decision can change for different networks
+
+00:03:04.719 --> 00:03:07.759
+depending on what the developers happen to find important.
+
+00:03:07.759 --> 00:03:11.049
+So, that wraps up this quick demo on proof-of-work.
+
+00:03:11.050 --> 00:03:14.755
+Hopefully, now you have a better understanding of how it all works.
+
+00:03:14.754 --> 00:03:18.099
+Coming up we'll look at some of the issues with this system then look at
+
+00:03:18.099 --> 00:03:21.530
+a few other algorithms that could potentially provide a solution.
+

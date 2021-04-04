@@ -1,0 +1,217 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.825
+In this video, we'll cover another consensus algorithm,
+
+00:00:03.825 --> 00:00:07.085
+what's known as the Delegated Byzantine Fault Tolerance.
+
+00:00:07.085 --> 00:00:08.930
+We'll discuss how it works,
+
+00:00:08.930 --> 00:00:12.260
+potential challenges with it and who's using it.
+
+00:00:12.260 --> 00:00:16.320
+The Delegated Byzantine Fault Tolerance or DBFT is
+
+00:00:16.320 --> 00:00:18.660
+a consensus algorithm based on assigning
+
+00:00:18.660 --> 00:00:21.960
+roles to different nodes to coordinate consensus.
+
+00:00:21.960 --> 00:00:24.945
+Now, how does the Byzantine Fault Tolerance work?
+
+00:00:24.945 --> 00:00:27.595
+DBFT does not have miners.
+
+00:00:27.595 --> 00:00:32.860
+Instead, it has nodes that are split into ordinary nodes and consensus nodes.
+
+00:00:32.860 --> 00:00:34.800
+The majority of nodes in the network are
+
+00:00:34.800 --> 00:00:39.340
+just ordinary citizen nodes that can transfer or exchange assets but,
+
+00:00:39.340 --> 00:00:41.715
+they don't participate in validating blocks.
+
+00:00:41.715 --> 00:00:46.285
+Consensus nodes has the power to verify each block written to the blockchain.
+
+00:00:46.285 --> 00:00:50.310
+Consensus nodes act as a representative for the other nodes in the network,
+
+00:00:50.310 --> 00:00:52.590
+similar to how an elected government official
+
+00:00:52.590 --> 00:00:55.290
+would represent the majority of its constituents.
+
+00:00:55.290 --> 00:00:58.590
+For an ordinary node to become a consensus node,
+
+00:00:58.590 --> 00:01:03.000
+it usually needs to meet certain criteria which differ from platform to platform.
+
+00:01:03.000 --> 00:01:05.735
+So these may involve owning some special equipment,
+
+00:01:05.735 --> 00:01:10.275
+having dedicated internet connection or having certain stake in the network.
+
+00:01:10.275 --> 00:01:15.015
+Consensus nodes keep track of proposed blocks that could be added to the blockchain.
+
+00:01:15.015 --> 00:01:17.760
+When it's time to decide which block should be added next,
+
+00:01:17.760 --> 00:01:22.450
+a consensus node is randomly selected from the pool of all consensus nodes.
+
+00:01:22.450 --> 00:01:24.095
+In the neo blockchain,
+
+00:01:24.095 --> 00:01:26.210
+this chosen node is called a
+
+00:01:26.210 --> 00:01:29.930
+speaker and all the other consensus nodes are called delegates.
+
+00:01:29.930 --> 00:01:34.000
+The speaker creates a new block and proposes it to the delegates.
+
+00:01:34.000 --> 00:01:38.675
+Two-thirds of all the delegates need to prove this block before it's passed.
+
+00:01:38.675 --> 00:01:41.750
+If it doesn't pass, the chosen speaker returns to
+
+00:01:41.750 --> 00:01:44.925
+being a normal delegate and another speaker is chosen.
+
+00:01:44.925 --> 00:01:47.560
+This new speaker proposes their truth,
+
+00:01:47.560 --> 00:01:49.160
+which block should be added,
+
+00:01:49.160 --> 00:01:51.175
+and this block is put up to vote.
+
+00:01:51.175 --> 00:01:54.885
+If it passes, the new block is added to the blockchain.
+
+00:01:54.885 --> 00:01:59.540
+DBFT is said to be much faster than proof of work and it
+
+00:01:59.540 --> 00:02:04.675
+requires less resources because there are no complicated cryptographic puzzles to solve.
+
+00:02:04.675 --> 00:02:07.410
+Additionally, it's resistant to forking,
+
+00:02:07.410 --> 00:02:09.115
+because at any given moment,
+
+00:02:09.115 --> 00:02:11.300
+there's only one version of truth.
+
+00:02:11.300 --> 00:02:15.305
+With that said, DBFT is not immune to problems.
+
+00:02:15.305 --> 00:02:18.140
+Let's take a look at two potential scenarios.
+
+00:02:18.140 --> 00:02:22.355
+In the first, let's assume there's a dishonest speaker.
+
+00:02:22.355 --> 00:02:25.220
+There's always a chance that the speaker who is randomly
+
+00:02:25.220 --> 00:02:28.585
+selected from the delegates could be dishonest or malfunction,
+
+00:02:28.585 --> 00:02:32.320
+and if this occurs, the network needs to rely on honest delegates
+
+00:02:32.320 --> 00:02:36.470
+to vote the proposed block down so it doesn't reach the two-thirds approval rate.
+
+00:02:36.470 --> 00:02:38.760
+Since users of the protocol vote on
+
+00:02:38.760 --> 00:02:42.870
+delegates and the speaker is randomly selected from the group of delegates,
+
+00:02:42.870 --> 00:02:45.450
+it's up to the users to find out which delegates
+
+00:02:45.450 --> 00:02:48.445
+are trustworthy and vote them into power.
+
+00:02:48.445 --> 00:02:50.480
+Let's take a look at our second scenario.
+
+00:02:50.480 --> 00:02:54.750
+It is up to users who vote on delegates to do their due diligence to only
+
+00:02:54.750 --> 00:03:00.300
+vote honest delegates into power so that dishonest delegates are in the minority.
+
+00:03:00.300 --> 00:03:03.230
+If a minority of delegates are dishonest,
+
+00:03:03.230 --> 00:03:08.625
+the honest majority can vote the block down and the block will make into the blockchain.
+
+00:03:08.625 --> 00:03:12.290
+To help with this, some blockchain platforms release data about
+
+00:03:12.290 --> 00:03:16.375
+the honesty and functioning of each delegate for voters to review.
+
+00:03:16.375 --> 00:03:19.970
+So, who uses the Delegated Byzantine Fault Tolerance?
+
+00:03:19.970 --> 00:03:23.245
+Well, NEO has been one of the biggest advocates for this protocol.
+
+00:03:23.245 --> 00:03:26.390
+It is a blockchain platform in cryptocurrency designed
+
+00:03:26.390 --> 00:03:29.674
+to build a scalable network of decentralized applications.
+
+00:03:29.674 --> 00:03:34.005
+While proof of work and proof of stake are definitely the more popular choices,
+
+00:03:34.005 --> 00:03:37.450
+newer mechanisms continually pop up and prove themselves.
+
+00:03:37.450 --> 00:03:39.890
+Remember that a consensus algorithm gets
+
+00:03:39.890 --> 00:03:43.400
+its reputation from being safe for a long period of time.
+
+00:03:43.400 --> 00:03:49.210
+For example, Bitcoin has stayed a safe network since its inception in 2009.
+
+00:03:49.210 --> 00:03:50.730
+With that said, there is
+
+00:03:50.730 --> 00:03:54.910
+no perfect consensus mechanism and chances are there never will be,
+
+00:03:54.910 --> 00:03:59.640
+but it's interesting to see newer blockchains coming up with their own mechanisms,
+
+00:03:59.640 --> 00:04:03.640
+and it's equally interesting to understand their pros and cons.
+
