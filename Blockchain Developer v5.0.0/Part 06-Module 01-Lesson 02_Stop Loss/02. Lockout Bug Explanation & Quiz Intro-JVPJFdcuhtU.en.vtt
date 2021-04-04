@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.759
+I'm not sure how many of you got it,
+
+00:00:02.759 --> 00:00:07.334
+but it's right here in the setOperatingStatus.
+
+00:00:07.334 --> 00:00:10.769
+If you notice, on my line 132,
+
+00:00:10.769 --> 00:00:14.490
+I have requireIsOperational as
+
+00:00:14.490 --> 00:00:19.560
+a function modifier for the function that is going to change the operational mode.
+
+00:00:19.559 --> 00:00:26.864
+So what this does is create a critical crippling bug in the contract.
+
+00:00:26.864 --> 00:00:32.549
+Such bugs have actually made it out into the wild in smart contracts and have
+
+00:00:32.549 --> 00:00:35.789
+resulted in contracts where millions of dollars
+
+00:00:35.789 --> 00:00:38.894
+in funds are blocked because the contract becomes inactive.
+
+00:00:38.895 --> 00:00:40.935
+The bug specifically is that,
+
+00:00:40.935 --> 00:00:47.435
+once you set the contract operating flag variable to false,
+
+00:00:47.435 --> 00:00:54.515
+it is impossible for any further functions that rely on that to ever be called.
+
+00:00:54.515 --> 00:00:57.634
+That's because it will be impossible for you to
+
+00:00:57.634 --> 00:01:01.384
+change the operating status once it's set to false.
+
+00:01:01.384 --> 00:01:04.159
+So this is called a lockout bug,
+
+00:01:04.159 --> 00:01:06.920
+and it's something that you want to be very careful about and
+
+00:01:06.920 --> 00:01:10.299
+ensure that in all your contract code,
+
+00:01:10.299 --> 00:01:14.289
+as you develop best practices to protect yourself,
+
+00:01:14.290 --> 00:01:17.345
+you also make sure that you don't protect yourself too much
+
+00:01:17.344 --> 00:01:20.780
+to the point where you cannot get back into your code.
+
+00:01:20.780 --> 00:01:24.570
+So this we should remove,
+
+00:01:24.620 --> 00:01:27.890
+and it's no longer locked out.
+
+00:01:27.890 --> 00:01:30.814
+So this is a good time to take a quiz
+
+00:01:30.814 --> 00:01:36.689
+and tell us what the definition is of a lockout bug.
+

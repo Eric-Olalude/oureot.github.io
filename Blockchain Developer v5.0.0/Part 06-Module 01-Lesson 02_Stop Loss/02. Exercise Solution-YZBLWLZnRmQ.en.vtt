@@ -1,0 +1,136 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:06.540
+What I've done is put the solution into this little folder called snippets,
+
+00:00:06.540 --> 00:00:11.009
+and to save time, I'm going to cut and paste from there to make it easier.
+
+00:00:11.009 --> 00:00:16.949
+So the snippet, you want to look at for the solution for this exercise is exercise1.text.
+
+00:00:16.949 --> 00:00:19.964
+So let's go step by step.
+
+00:00:19.964 --> 00:00:23.730
+The first thing we want to do is we want to add a variable called operational,
+
+00:00:23.730 --> 00:00:29.714
+so we're going to get that and put it right there.
+
+00:00:29.714 --> 00:00:33.060
+So that's going to be our control flag variable.
+
+00:00:33.060 --> 00:00:39.045
+The next thing we want to do is give the ability
+
+00:00:39.045 --> 00:00:45.734
+for contract owner to change that,
+
+00:00:45.734 --> 00:00:47.859
+so I'll put that.
+
+00:00:48.759 --> 00:00:54.724
+Let me go ahead and put it into my utility functions section here.
+
+00:00:54.725 --> 00:00:58.050
+Actually that should go in the next one.
+
+00:00:58.630 --> 00:01:01.975
+I set operating status.
+
+00:01:01.975 --> 00:01:07.385
+Now, we want to create the modifier that uses that.
+
+00:01:07.385 --> 00:01:09.725
+So that's right here,
+
+00:01:09.724 --> 00:01:14.344
+copy and paste that in.
+
+00:01:14.344 --> 00:01:17.510
+Once we're done working with this,
+
+00:01:17.510 --> 00:01:20.060
+we'll walk through the individual code block so we
+
+00:01:20.060 --> 00:01:23.155
+can see what's happening in all of those.
+
+00:01:23.155 --> 00:01:25.784
+Then finally, a little helper
+
+00:01:25.784 --> 00:01:32.194
+that just checks if the state of the contract is operational or not.
+
+00:01:32.194 --> 00:01:34.039
+The exercise didn't require you to grade,
+
+00:01:34.040 --> 00:01:35.859
+but it's nice to have.
+
+00:01:35.859 --> 00:01:39.364
+So now that we've got all those in place, let's look at all of them.
+
+00:01:39.364 --> 00:01:41.494
+So we've got our control variable here,
+
+00:01:41.495 --> 00:01:44.640
+the initial state is true.
+
+00:01:45.019 --> 00:01:48.209
+We have our function modifier here,
+
+00:01:48.209 --> 00:01:50.984
+it simply checks if it's true,
+
+00:01:50.984 --> 00:01:56.159
+and if not, it reports the contract is currently not operational.
+
+00:01:56.439 --> 00:02:03.739
+The next thing we have is the ability to set operating status.
+
+00:02:03.739 --> 00:02:09.034
+So here, whatever Boolean variable is passed,
+
+00:02:09.034 --> 00:02:15.659
+it's saved to that particular state assuming it is the contract owner.
+
+00:02:16.009 --> 00:02:20.019
+So with that done,
+
+00:02:20.020 --> 00:02:27.719
+let's go ahead and see how the test might work on that.
+
+00:02:28.000 --> 00:02:34.969
+So currently, our test is looking to register the user,
+
+00:02:34.969 --> 00:02:41.569
+and what I haven't done yet is put the operational status code for registered users,
+
+00:02:41.569 --> 00:02:44.560
+so let me go back and do that.
+
+00:02:46.960 --> 00:02:54.420
+So we say require is operational.
+
+00:02:55.060 --> 00:03:01.509
+Now that's saved, we'll go ahead and run our test.
+
+00:03:01.759 --> 00:03:05.314
+Since the initial value of the Boolean variable is true,
+
+00:03:05.314 --> 00:03:09.794
+I expect that this test will pass,
+
+00:03:09.794 --> 00:03:12.000
+and it does indeed.
+
+00:03:12.000 --> 00:03:16.349
+So we've implemented the operational state control,
+
+00:03:16.349 --> 00:03:21.359
+but now let's talk about the serious bug that I was mentioning.
+

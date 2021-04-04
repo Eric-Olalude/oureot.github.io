@@ -1,0 +1,28 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.530
+Let's talk about how we can control smart contract operations.
+
+00:00:04.530 --> 00:00:08.699
+We'll start off with a simple warm-up lesson in code, momentarily.
+
+00:00:08.699 --> 00:00:11.189
+What that will help us do is ensure that
+
+00:00:11.189 --> 00:00:13.994
+your development environment is set up correctly.
+
+00:00:13.994 --> 00:00:15.929
+What we will cover in there,
+
+00:00:15.929 --> 00:00:20.309
+is the ability to pause your smart contract if it has a problem.
+
+00:00:20.309 --> 00:00:25.349
+This particular feature will be the building block for the next part of the lesson,
+
+00:00:25.350 --> 00:00:27.730
+which is multi-party consensus.
+

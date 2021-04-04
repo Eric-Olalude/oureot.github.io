@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.845
+So here's how we're going to do it.
+
+00:00:01.845 --> 00:00:07.200
+The first thing is, we're going to implement three of five or two of
+
+00:00:07.200 --> 00:00:13.185
+five depending on the requirement multi-party consensus.
+
+00:00:13.185 --> 00:00:15.359
+So in our scenario we're going to define
+
+00:00:15.359 --> 00:00:19.410
+a few contract administrators when the contract is deployed.
+
+00:00:19.410 --> 00:00:22.740
+Then we're going to add three of five control,
+
+00:00:22.739 --> 00:00:27.029
+and what we will do is ignore repeat function calls by the same administrator.
+
+00:00:27.030 --> 00:00:31.589
+We'll also add a test to validate that this particular code works.
+
+00:00:31.589 --> 00:00:34.649
+Now, this is one approach to the solution.
+
+00:00:34.649 --> 00:00:36.839
+I'll also talk about a second approach.
+
+00:00:36.840 --> 00:00:40.095
+If you'd like you can defer having
+
+00:00:40.094 --> 00:00:44.839
+the administrators defined at the point of the contract deployment.
+
+00:00:44.840 --> 00:00:49.670
+You can create a function that registers and un-registers users.
+
+00:00:49.670 --> 00:00:53.870
+In fact, we have just such a function already setup in the contract,
+
+00:00:53.869 --> 00:00:55.579
+so you may want to use that.
+
+00:00:55.579 --> 00:01:00.274
+So the goal of the exercise is to control
+
+00:01:00.274 --> 00:01:06.875
+the operating status variable with a three of five multi-party consensus.
+
+00:01:06.875 --> 00:01:08.719
+Now I say three or five here,
+
+00:01:08.719 --> 00:01:12.950
+but the moment you have it as any number greater than one the solution will work,
+
+00:01:12.950 --> 00:01:14.704
+so you could do two of three,
+
+00:01:14.704 --> 00:01:18.569
+you could also do three of four and so on and so forth.
+
