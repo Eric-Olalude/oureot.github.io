@@ -1,0 +1,241 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.865
+Until now, we've mostly focused on
+
+00:00:02.865 --> 00:00:06.320
+understanding the blockchain fundamentals using Bitcoin.
+
+00:00:06.320 --> 00:00:11.169
+You may have noticed the word Ethereum sneaking in more often throughout this lesson.
+
+00:00:11.169 --> 00:00:12.945
+That's because coming up,
+
+00:00:12.945 --> 00:00:15.740
+we'll start to apply a lot of what we know to Ethereum,
+
+00:00:15.740 --> 00:00:18.390
+an entirely new blockchain platform.
+
+00:00:18.390 --> 00:00:21.359
+Before getting started, we wanted to step back and
+
+00:00:21.359 --> 00:00:24.524
+mention why we even started learning on the Bitcoin blockchain.
+
+00:00:24.524 --> 00:00:29.714
+We did this because Bitcoin is often considered the first generation of blockchain.
+
+00:00:29.714 --> 00:00:33.060
+Things like transactions and many of the core concepts you
+
+00:00:33.060 --> 00:00:36.750
+learned were first developed and implemented on this platform.
+
+00:00:36.750 --> 00:00:39.359
+The great thing is that many of these ideas were
+
+00:00:39.359 --> 00:00:42.314
+adopted by future generations of blockchain.
+
+00:00:42.314 --> 00:00:45.229
+Soon, we'll move on to the second generation of
+
+00:00:45.229 --> 00:00:49.054
+blockchain which introduce something known as smart contracts.
+
+00:00:49.054 --> 00:00:53.119
+This idea of smart contracts led by Ethereum opened
+
+00:00:53.119 --> 00:00:57.059
+up many new opportunities to work with digital assets on the blockchain.
+
+00:00:57.060 --> 00:00:58.750
+But like we mentioned,
+
+00:00:58.750 --> 00:01:03.560
+there are a ton of similarities between a Bitcoin blockchain and the Ethereum blockchain.
+
+00:01:03.560 --> 00:01:06.710
+In this section, we'll give a high-level overview of how
+
+00:01:06.709 --> 00:01:08.539
+digital asset management fits into
+
+00:01:08.540 --> 00:01:12.075
+the overall scheme of these different blockchain generations.
+
+00:01:12.075 --> 00:01:16.504
+Bitcoin, and simple alternative coins like Litecoin and Monero,
+
+00:01:16.504 --> 00:01:21.679
+are part of the first generation of blockchain also known as blockchain 1.0.
+
+00:01:21.680 --> 00:01:24.620
+These blockchains focus on moving value,
+
+00:01:24.620 --> 00:01:28.125
+maintaining a ledger, and creating ideal payment systems.
+
+00:01:28.125 --> 00:01:33.424
+Blockchain 2.0 build on the concept of recording transactions on the blockchain.
+
+00:01:33.424 --> 00:01:38.825
+To do this, they added in the ability to program and use logic associated with this data.
+
+00:01:38.825 --> 00:01:43.100
+This code is used to create what we refer to as smart contracts.
+
+00:01:43.099 --> 00:01:46.625
+Ethereum led the way on this idea but they are quickly joined by
+
+00:01:46.625 --> 00:01:50.484
+others like Ethereum Classic, NEO and Quantum.
+
+00:01:50.484 --> 00:01:55.204
+Smart contracts on these platforms allow for customizable transactions.
+
+00:01:55.204 --> 00:01:57.739
+Engineers can use this functionality to fit
+
+00:01:57.739 --> 00:02:00.584
+the needs of whoever is dealing with these transactions.
+
+00:02:00.584 --> 00:02:02.334
+They can help exchange money,
+
+00:02:02.334 --> 00:02:05.494
+property, shares, or anything of value.
+
+00:02:05.495 --> 00:02:07.454
+Similar to other blockchains,
+
+00:02:07.454 --> 00:02:09.409
+they try to do this in a transparent,
+
+00:02:09.409 --> 00:02:13.120
+conflict-free way while avoiding the need for third parties.
+
+00:02:13.120 --> 00:02:17.705
+You can think of smart contracts as a legal contract that runs on code.
+
+00:02:17.705 --> 00:02:20.719
+An event like an expiration date triggers
+
+00:02:20.719 --> 00:02:24.389
+the contract to execute whatever code is held in it.
+
+00:02:24.389 --> 00:02:26.869
+The addition of smart contracts allow developers to
+
+00:02:26.870 --> 00:02:29.625
+create projects on top of the blockchain platforms,
+
+00:02:29.625 --> 00:02:34.729
+as well as launch blockchain-based businesses and organize decentralized governance.
+
+00:02:34.729 --> 00:02:38.509
+These contract-based applications also give businesses the
+
+00:02:38.509 --> 00:02:43.199
+potential to automate many tasks and processes that would otherwise be impossible.
+
+00:02:43.199 --> 00:02:46.189
+It's even allowing us to build entirely new types of
+
+00:02:46.189 --> 00:02:49.460
+applications known as decentralized apps.
+
+00:02:49.460 --> 00:02:52.915
+Even though they're considered different generations of blockchain,
+
+00:02:52.914 --> 00:02:55.579
+they share a few important similarities.
+
+00:02:55.580 --> 00:02:57.935
+This is where identity comes in.
+
+00:02:57.935 --> 00:03:01.129
+For one, both Bitcoin and Ethereum depend on
+
+00:03:01.129 --> 00:03:05.935
+wallet addresses to function as identification for transactions and services.
+
+00:03:05.935 --> 00:03:10.145
+They're also both a public record of transactions that have taken place.
+
+00:03:10.145 --> 00:03:13.130
+They both allow users to autonomously interact with
+
+00:03:13.129 --> 00:03:17.460
+information on the blockchain while allowing others to verify your data.
+
+00:03:17.460 --> 00:03:19.629
+Recall on the first project,
+
+00:03:19.629 --> 00:03:21.949
+you created your own blockchain identity.
+
+00:03:21.949 --> 00:03:23.894
+This identity was an encrypted,
+
+00:03:23.895 --> 00:03:26.540
+private-public key pair from a Bitcoin wallet,
+
+00:03:26.539 --> 00:03:28.459
+and was used to securely authenticate
+
+00:03:28.460 --> 00:03:32.310
+your identity for transactions you posted in the first project.
+
+00:03:32.310 --> 00:03:36.555
+Even this is extremely similar between Bitcoin and Ethereum.
+
+00:03:36.555 --> 00:03:38.650
+Moving forward, we'll segway into
+
+00:03:38.650 --> 00:03:41.905
+the Ethereum platform where these same principles apply.
+
+00:03:41.905 --> 00:03:45.375
+The main difference is instead of managing transactions,
+
+00:03:45.375 --> 00:03:47.375
+we're managing digital assets.
+
+00:03:47.375 --> 00:03:51.004
+For example, here's an image of an Ethereum wallet.
+
+00:03:51.004 --> 00:03:53.840
+You may have not seen this before but you might be already
+
+00:03:53.840 --> 00:03:57.465
+recognizing some similarities between this and your Bitcoin wallet.
+
+00:03:57.465 --> 00:04:02.330
+For example, you can see here that the user's account is tied to a key.
+
+00:04:02.330 --> 00:04:07.020
+So, that wraps up this overview of the different blockchain generations.
+
+00:04:07.020 --> 00:04:10.400
+It's important to notice the connection of what we're building now
+
+00:04:10.400 --> 00:04:14.115
+and how it connects to other platforms and projects you'll be working on.
+
+00:04:14.115 --> 00:04:16.375
+As the space continues to grow,
+
+00:04:16.375 --> 00:04:18.470
+these basic ideas will stay pretty similar.
+
+00:04:18.470 --> 00:04:22.830
+We'll always have amazing new tools as the blockchain continues to grow,
+
+00:04:22.829 --> 00:04:28.409
+but staying focused on these core ideas will help you learn these platforms more easily.
+

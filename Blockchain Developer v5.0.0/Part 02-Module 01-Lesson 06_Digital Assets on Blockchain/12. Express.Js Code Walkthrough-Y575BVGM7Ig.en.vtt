@@ -1,0 +1,157 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.009
+Welcome back. At this point,
+
+00:00:02.009 --> 00:00:04.994
+we have our first Express application up and running.
+
+00:00:04.995 --> 00:00:06.450
+Looking back at the code,
+
+00:00:06.450 --> 00:00:08.560
+we can try to understand what just happened here.
+
+00:00:08.560 --> 00:00:12.960
+To see the code, open up your project files in whichever editor you use.
+
+00:00:12.960 --> 00:00:17.730
+In this video, we'll walk through each line of code to explain how this app works.
+
+00:00:17.730 --> 00:00:20.929
+Start by going to your index.js file.
+
+00:00:20.929 --> 00:00:25.984
+This first line sets a constant name "Express" that requires the express package.
+
+00:00:25.984 --> 00:00:28.125
+To see what's going on in the next line,
+
+00:00:28.125 --> 00:00:30.539
+it helps to go back to the documentation.
+
+00:00:30.539 --> 00:00:32.835
+Under Guide, Writing middleware,
+
+00:00:32.835 --> 00:00:36.539
+you'll see that they broke this line down for you. Here's what it's doing.
+
+00:00:36.539 --> 00:00:38.289
+On the variable app,
+
+00:00:38.289 --> 00:00:39.905
+it's calling the Get method.
+
+00:00:39.905 --> 00:00:41.954
+It's looking down a certain path here,
+
+00:00:41.954 --> 00:00:44.434
+then passing in a request and a response.
+
+00:00:44.435 --> 00:00:46.880
+This request-response is similar to what you
+
+00:00:46.880 --> 00:00:49.850
+learned about the client-server relationship from earlier.
+
+00:00:49.850 --> 00:00:51.710
+The client makes a request,
+
+00:00:51.710 --> 00:00:54.770
+and the server sends a response. Same thing here.
+
+00:00:54.770 --> 00:00:58.040
+As you can see, that's exactly what we're doing in our code.
+
+00:00:58.039 --> 00:01:01.054
+Here's the path, the request, and the response.
+
+00:01:01.054 --> 00:01:03.140
+One thing you'll notice, is that our code
+
+00:01:03.140 --> 00:01:05.000
+look a little different than what's on the site.
+
+00:01:05.000 --> 00:01:07.620
+It uses something known as an arrow function.
+
+00:01:07.620 --> 00:01:11.810
+This is a newer syntax in JavaScript that's meant to replace the curly braces.
+
+00:01:11.810 --> 00:01:14.150
+This helps us put everything in one line,
+
+00:01:14.150 --> 00:01:16.520
+rather than spreading it across multiple lines.
+
+00:01:16.519 --> 00:01:18.799
+We could put them back in like on the website,
+
+00:01:18.799 --> 00:01:20.965
+and it would work exactly the same way.
+
+00:01:20.965 --> 00:01:23.579
+This last piece here is sending "Hello World!"
+
+00:01:23.579 --> 00:01:24.980
+to our application.
+
+00:01:24.980 --> 00:01:27.484
+Next, here's what the last line is doing.
+
+00:01:27.484 --> 00:01:29.959
+It's giving us a place to see the application,
+
+00:01:29.959 --> 00:01:32.284
+and telling us that it has done that successfully.
+
+00:01:32.284 --> 00:01:36.849
+This part here is what we read in the terminal when we first ran the application.
+
+00:01:36.849 --> 00:01:41.390
+This first part of the line opens up port 3,000 and lets us view it from there.
+
+00:01:41.390 --> 00:01:46.234
+This is why we can view the application on localhost 3,000 using our browser.
+
+00:01:46.234 --> 00:01:49.040
+So, that's basically everything that's going on here.
+
+00:01:49.040 --> 00:01:50.660
+It's a small amount of code,
+
+00:01:50.659 --> 00:01:52.104
+but grasping the concepts,
+
+00:01:52.105 --> 00:01:54.140
+connecting the pieces, and feeling comfortable
+
+00:01:54.140 --> 00:01:56.799
+with what's going on is important at this point.
+
+00:01:56.799 --> 00:01:58.530
+If anything feels unclear,
+
+00:01:58.530 --> 00:02:00.049
+you can always continue working through
+
+00:02:00.049 --> 00:02:04.185
+the documentation or playing around with the code to see how things changed.
+
+00:02:04.185 --> 00:02:07.105
+It could also help to experiment with more examples.
+
+00:02:07.105 --> 00:02:09.580
+So, feel free two continue through the Express.js
+
+00:02:09.580 --> 00:02:12.460
+Resources to work through the guides they've created.
+
+00:02:12.460 --> 00:02:16.545
+If you've followed along, then great job building your first Express application.
+
+00:02:16.544 --> 00:02:20.530
+If not, then hopefully you have some time to try and get this started for yourself.
+

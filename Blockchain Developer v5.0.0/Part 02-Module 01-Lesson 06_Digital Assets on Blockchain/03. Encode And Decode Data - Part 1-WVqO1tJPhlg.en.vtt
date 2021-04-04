@@ -1,0 +1,238 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.990
+Now that we know what a digital asset is and how it's related to the blockchain,
+
+00:00:04.990 --> 00:00:08.595
+it's important to step back and consider some important questions.
+
+00:00:08.595 --> 00:00:10.894
+How do digital assets work?
+
+00:00:10.894 --> 00:00:14.359
+To get the answer, we can look at a more specific question.
+
+00:00:14.359 --> 00:00:19.019
+That question is how do computers understand the contents of a file,
+
+00:00:19.019 --> 00:00:21.375
+and how do they present those files to people?
+
+00:00:21.375 --> 00:00:24.509
+Once we understand how this communication happens,
+
+00:00:24.510 --> 00:00:28.984
+we'll be ready to start incorporating these ideas into our blockchain applications.
+
+00:00:28.984 --> 00:00:31.980
+Here, we'll specifically focus on one answer to
+
+00:00:31.980 --> 00:00:36.115
+this question and it has to do with encoding and decoding.
+
+00:00:36.115 --> 00:00:40.920
+Encoding and decoding is the process of producing and interpreting information.
+
+00:00:40.920 --> 00:00:43.250
+It's used across many fields of study.
+
+00:00:43.250 --> 00:00:44.579
+But in computer science,
+
+00:00:44.579 --> 00:00:48.329
+its main focus is facilitating the sending and receiving of data.
+
+00:00:48.329 --> 00:00:53.429
+It's the process of translating a message between human-readable data and raw data.
+
+00:00:53.429 --> 00:00:56.570
+We encode information into raw data to allow
+
+00:00:56.570 --> 00:01:00.075
+computers to send information in a format they understand.
+
+00:01:00.075 --> 00:01:02.600
+Later, this information is decoded
+
+00:01:02.600 --> 00:01:05.420
+into a format that people can understand and work with.
+
+00:01:05.420 --> 00:01:09.405
+Next, let's look a little more specifically at encoding.
+
+00:01:09.405 --> 00:01:13.295
+Encoding is the process of putting a sequence of characters like
+
+00:01:13.295 --> 00:01:17.945
+text into a specialized format for efficient transmission or storage.
+
+00:01:17.944 --> 00:01:21.424
+What's special about this is what it allows you to do.
+
+00:01:21.424 --> 00:01:23.689
+Basically, the goal of encoding is to
+
+00:01:23.689 --> 00:01:26.534
+help us send and receive messages between each other.
+
+00:01:26.534 --> 00:01:29.575
+For example, when speaking to another person,
+
+00:01:29.575 --> 00:01:31.320
+if you both know the same language,
+
+00:01:31.319 --> 00:01:34.164
+you can just speak freely and understand each other.
+
+00:01:34.165 --> 00:01:36.960
+Now, if instead of talking in person,
+
+00:01:36.959 --> 00:01:38.890
+you put that message into a computer,
+
+00:01:38.890 --> 00:01:41.174
+you're not just talking to that person anymore.
+
+00:01:41.174 --> 00:01:43.875
+You're including computers in the conversation.
+
+00:01:43.875 --> 00:01:48.260
+For that reason, they need to understand what you're talking about to send messages.
+
+00:01:48.260 --> 00:01:50.704
+This is done using encoding.
+
+00:01:50.704 --> 00:01:52.989
+There's a couple ways to encode data,
+
+00:01:52.989 --> 00:01:55.284
+some of which you may have already heard before,
+
+00:01:55.284 --> 00:01:58.969
+things like hexadecimal, Base64 and ASCII.
+
+00:01:58.969 --> 00:02:01.704
+We'll cover each of these in more detail soon.
+
+00:02:01.704 --> 00:02:04.129
+The point to keep in mind for now is that each of
+
+00:02:04.129 --> 00:02:08.129
+these encoding schemes can take in information to encode it as raw data.
+
+00:02:08.129 --> 00:02:11.990
+This raw data is what is then transmitted between computers.
+
+00:02:11.990 --> 00:02:15.290
+One thing to note here is that you might remember the algorithms
+
+00:02:15.289 --> 00:02:18.495
+used to generate private keys like SHA-256.
+
+00:02:18.495 --> 00:02:20.835
+These algorithms are used for encryption,
+
+00:02:20.835 --> 00:02:22.655
+which is different than encoding.
+
+00:02:22.655 --> 00:02:25.810
+With encryption, you're trying to make a secret key in
+
+00:02:25.810 --> 00:02:29.569
+a way that can't be reversed and only you have access to.
+
+00:02:29.569 --> 00:02:34.834
+With encoding, you're simply trying to reformat something to make it easier to transmit.
+
+00:02:34.835 --> 00:02:39.645
+Another thing to note is that encoding isn't really the same as compression either.
+
+00:02:39.645 --> 00:02:42.965
+The goal of compression is to make file smaller.
+
+00:02:42.965 --> 00:02:46.300
+With encoding, you actually can end up with a larger file,
+
+00:02:46.300 --> 00:02:48.260
+but the important thing is that the speed at
+
+00:02:48.259 --> 00:02:50.924
+which it can be read and transmitted is improved.
+
+00:02:50.925 --> 00:02:53.495
+The steps on how to encode data are different
+
+00:02:53.495 --> 00:02:56.159
+depending on how you would like to encode it.
+
+00:02:56.159 --> 00:02:59.460
+We'll be encoding images using these ideas later in the lesson,
+
+00:02:59.460 --> 00:03:02.465
+but first, let's look a little closer at decoding.
+
+00:03:02.465 --> 00:03:06.629
+While encoding prepares files for efficient transmission or storage,
+
+00:03:06.629 --> 00:03:09.044
+decoding does the exact opposite.
+
+00:03:09.044 --> 00:03:12.149
+Decoding allows you to take encoded, raw,
+
+00:03:12.150 --> 00:03:16.425
+unreadable files, and convert them back into a human-readable format.
+
+00:03:16.425 --> 00:03:19.070
+You'll decode something anytime you want to present
+
+00:03:19.069 --> 00:03:22.814
+information to someone in a way that they can understand and work with.
+
+00:03:22.814 --> 00:03:26.544
+Using the same schemes like hexadecimal, Base64,
+
+00:03:26.544 --> 00:03:31.769
+and ASCII, you can convert the raw data files back into the file type they started as.
+
+00:03:31.770 --> 00:03:35.974
+The process of encoding and decoding is happening constantly.
+
+00:03:35.973 --> 00:03:38.299
+When you upload a file to a website,
+
+00:03:38.300 --> 00:03:42.265
+you've encoded data that will be decoded when someone needs to use it.
+
+00:03:42.264 --> 00:03:46.284
+If you've ever used a service like Skype or Google Hangouts,
+
+00:03:46.284 --> 00:03:49.299
+you're receiving a live stream of data that was encoded,
+
+00:03:49.300 --> 00:03:50.990
+transferred over the Internet,
+
+00:03:50.990 --> 00:03:53.265
+and decoded to present to you.
+
+00:03:53.264 --> 00:03:55.669
+The end result is that the computers and
+
+00:03:55.669 --> 00:03:58.609
+networks get to communicate in a format they use,
+
+00:03:58.610 --> 00:04:03.510
+and you get to communicate using live video or whatever media you happen to be using.
+
+00:04:03.509 --> 00:04:07.629
+So, that wraps up our basic overview of encoding versus decoding.
+
+00:04:07.629 --> 00:04:12.269
+The idea here was just to clarify what these terms mean and their purpose.
+
+00:04:12.270 --> 00:04:16.639
+Coming up, we'll look more specifically at certain types of encoding.
+

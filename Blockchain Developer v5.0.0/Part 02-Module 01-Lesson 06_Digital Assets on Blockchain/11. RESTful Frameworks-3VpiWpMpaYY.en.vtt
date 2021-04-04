@@ -1,0 +1,160 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.850
+Hey, and welcome to this section on RESTful frameworks.
+
+00:00:03.850 --> 00:00:06.304
+When starting to build web applications,
+
+00:00:06.304 --> 00:00:09.074
+you'll quickly notice there's a lot to learn.
+
+00:00:09.074 --> 00:00:12.429
+Creating everything from scratch can take a ton of time.
+
+00:00:12.429 --> 00:00:15.300
+Luckily, there's ways to avoid doing everything from
+
+00:00:15.300 --> 00:00:18.560
+scratch using what's known as a RESTful framework.
+
+00:00:18.559 --> 00:00:22.199
+RESTful frameworks help facilitate quick creation of
+
+00:00:22.199 --> 00:00:26.989
+robust applications by using things like code guidelines or libraries.
+
+00:00:26.989 --> 00:00:31.304
+In this section, we'll define what exactly a web framework is,
+
+00:00:31.304 --> 00:00:34.034
+when you would use one, and quickly introduce
+
+00:00:34.034 --> 00:00:37.304
+a few frameworks that are available for Node.js.
+
+00:00:37.304 --> 00:00:39.284
+So, let's get started.
+
+00:00:39.284 --> 00:00:42.079
+To understand what a RESTful framework is,
+
+00:00:42.079 --> 00:00:43.994
+let's breakdown the term a bit.
+
+00:00:43.994 --> 00:00:48.484
+First, REST stands for Representational State Transfer.
+
+00:00:48.484 --> 00:00:53.015
+It's a set of rules that defines guidelines based on the HTTP protocol.
+
+00:00:53.015 --> 00:00:54.384
+By following these rules,
+
+00:00:54.384 --> 00:00:56.894
+applications can know what to expect from each other,
+
+00:00:56.895 --> 00:01:00.285
+and it allows them to interact and integrate more easily.
+
+00:01:00.284 --> 00:01:04.215
+Frameworks that follow these rules are considered RESTful.
+
+00:01:04.215 --> 00:01:06.465
+So, we know what RESTful is,
+
+00:01:06.465 --> 00:01:08.155
+but what about frameworks?
+
+00:01:08.155 --> 00:01:10.700
+A framework is a set of tools and guidelines
+
+00:01:10.700 --> 00:01:13.870
+designed to support the development of web applications.
+
+00:01:13.870 --> 00:01:16.270
+Basically, with a RESTful framework,
+
+00:01:16.269 --> 00:01:18.244
+you're following guidelines made to create
+
+00:01:18.245 --> 00:01:21.484
+applications that are based on the rules of the web.
+
+00:01:21.484 --> 00:01:24.640
+These rules and guidelines are just meant to make it,
+
+00:01:24.640 --> 00:01:29.239
+so that in the end, we can quickly create applications that can be easily managed.
+
+00:01:29.239 --> 00:01:32.424
+There's a few reasons you might want to use a framework.
+
+00:01:32.424 --> 00:01:36.909
+First of all, there's nothing in a framework that you couldn't technically do yourself.
+
+00:01:36.909 --> 00:01:39.140
+It's just a knowledge base of code and
+
+00:01:39.140 --> 00:01:42.019
+information built to help you work more effectively.
+
+00:01:42.019 --> 00:01:46.349
+With that in mind, it's easy to understand why you might want to use one.
+
+00:01:46.349 --> 00:01:50.399
+Frameworks help you build rapidly using out-of-the-box functionality.
+
+00:01:50.400 --> 00:01:55.380
+They give you access to code that's been built and tested by a community of developers.
+
+00:01:55.379 --> 00:01:58.204
+They also help extend functionality of your code
+
+00:01:58.204 --> 00:02:01.414
+to integrate with even more tools and frameworks.
+
+00:02:01.415 --> 00:02:03.605
+Before getting started with frameworks,
+
+00:02:03.605 --> 00:02:05.585
+it helps to consider a few things.
+
+00:02:05.584 --> 00:02:07.729
+Different frameworks have been made to solve
+
+00:02:07.730 --> 00:02:10.670
+their own unique problems in their own unique ways.
+
+00:02:10.669 --> 00:02:14.389
+This makes it important to understand what you're trying to accomplish,
+
+00:02:14.389 --> 00:02:16.969
+as well as how framework might be able to help.
+
+00:02:16.969 --> 00:02:23.495
+Sails, Express, Hapi, and others are all frameworks that are available to you in Node.js.
+
+00:02:23.495 --> 00:02:28.205
+A lot of these are covered in a great blog post that I linked down below the video.
+
+00:02:28.205 --> 00:02:32.600
+Throughout the lesson, we'll focus specifically on these three frameworks.
+
+00:02:32.599 --> 00:02:35.879
+Coming up, we'll give a basic comparison between them,
+
+00:02:35.879 --> 00:02:40.299
+how to get started, and then you'll build a basic application with each of them.
+
+00:02:40.300 --> 00:02:43.160
+So, take some time to read the post.
+
+00:02:43.159 --> 00:02:45.419
+When you're ready, I'll see you in the next section,
+
+00:02:45.419 --> 00:02:48.780
+where we start to highlight the features of Express
+

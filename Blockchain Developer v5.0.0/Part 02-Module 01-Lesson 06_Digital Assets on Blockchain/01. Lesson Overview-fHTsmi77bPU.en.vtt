@@ -1,0 +1,76 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.555
+Hey, and welcome to the lesson.
+
+00:00:02.555 --> 00:00:05.070
+In this lesson, we'll extend beyond some of
+
+00:00:05.070 --> 00:00:08.634
+the basic ideas of web services we went over previously.
+
+00:00:08.634 --> 00:00:11.460
+We'll help you build some extra functionality into
+
+00:00:11.460 --> 00:00:15.195
+your private blockchain that helps you work with digital assets.
+
+00:00:15.195 --> 00:00:18.269
+You'll learn to encode and decode these assets,
+
+00:00:18.269 --> 00:00:22.429
+which will allow you to post them as data and a new block on the blockchain.
+
+00:00:22.429 --> 00:00:24.530
+But why would you want to do this?
+
+00:00:24.530 --> 00:00:27.645
+Well, first, our blockchain is currently limited
+
+00:00:27.644 --> 00:00:30.919
+to storing basic values to help validate transactions.
+
+00:00:30.920 --> 00:00:35.355
+But using these same core concepts with just some added functionality,
+
+00:00:35.354 --> 00:00:40.179
+we can extend this idea of validating ownership to digital assets like png,
+
+00:00:40.179 --> 00:00:42.945
+jpeg, mp3s, and more.
+
+00:00:42.945 --> 00:00:45.049
+To get there we'll start by learning
+
+00:00:45.049 --> 00:00:48.765
+a few new concepts like what exactly a digital asset is,
+
+00:00:48.765 --> 00:00:50.920
+what encoding and decoding are,
+
+00:00:50.920 --> 00:00:54.755
+and then you'll get some practice doing this for yourself in Node.js.
+
+00:00:54.755 --> 00:00:57.040
+On top of learning these new ideas,
+
+00:00:57.039 --> 00:01:00.539
+our goal is to help prepare you to complete the next project.
+
+00:01:00.539 --> 00:01:03.890
+There, you'll extend the functionality of your private blockchain to
+
+00:01:03.890 --> 00:01:07.234
+include the ability to notarize digital documents for yourself.
+
+00:01:07.234 --> 00:01:09.170
+For more details, you can read through some of
+
+00:01:09.170 --> 00:01:11.025
+the text we've placed down below the video,
+
+00:01:11.025 --> 00:01:14.120
+and when you're ready, we'll see you in the next section.
+

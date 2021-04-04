@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.270
+You've learned about digital assets and how to encode
+
+00:00:03.270 --> 00:00:06.349
+and decode that data to be stored on a blockchain.
+
+00:00:06.349 --> 00:00:09.134
+Now that you've seen how raw data is stored,
+
+00:00:09.134 --> 00:00:11.879
+how is it verified and why is that important?
+
+00:00:11.880 --> 00:00:14.970
+To verify the integrity of these digital assets,
+
+00:00:14.970 --> 00:00:17.130
+we'll need to check for ourselves.
+
+00:00:17.129 --> 00:00:20.820
+This means we want to confirm that it contains the correct sequence of
+
+00:00:20.820 --> 00:00:24.629
+bytes and that it has not been wrongfully accessed or altered.
+
+00:00:24.629 --> 00:00:28.109
+Keep in mind here that integrity is only about making sure
+
+00:00:28.109 --> 00:00:31.785
+that a given file is exactly the same as it was at its source.
+
+00:00:31.785 --> 00:00:35.049
+It doesn't refer to the trustworthiness of that source,
+
+00:00:35.049 --> 00:00:37.759
+only that the file was not changed.
+
+00:00:37.759 --> 00:00:40.549
+In order to verify digital assets,
+
+00:00:40.549 --> 00:00:43.789
+we'll need to understand the concept of proof of existence.
+
+00:00:43.789 --> 00:00:47.685
+There's a couple different ways we could prove a digital document exists.
+
+00:00:47.685 --> 00:00:52.890
+Two of them that we'll see in more detail are SHA256, and MD5.
+
+00:00:52.890 --> 00:00:55.670
+Proof of existence is used to publicly proof
+
+00:00:55.670 --> 00:00:58.490
+and authenticate any digital asset on the blockchain.
+
+00:00:58.490 --> 00:01:01.255
+It does this by verifying its hash.
+
+00:01:01.255 --> 00:01:04.310
+One thing that might be surprising is that it's not a form of
+
+00:01:04.310 --> 00:01:07.704
+consensus like proof of work that we talked about before.
+
+00:01:07.704 --> 00:01:11.079
+Think of it as a blockchain notary service.
+
+00:01:11.079 --> 00:01:12.760
+In a traditional notary,
+
+00:01:12.760 --> 00:01:18.219
+we need to take a document to an authorized person who notarizes or signs and stamps it.
+
+00:01:18.219 --> 00:01:21.560
+When they do this, they claim they verified the document.
+
+00:01:21.560 --> 00:01:27.545
+Similarly, proof of existence verifies the authenticity of documents on a blockchain.
+
+00:01:27.545 --> 00:01:30.254
+Here's how it works at a high level.
+
+00:01:30.254 --> 00:01:34.839
+Usually, when information about a digital asset is stored on the blockchain,
+
+00:01:34.840 --> 00:01:36.609
+only its hash is saved.
+
+00:01:36.609 --> 00:01:39.754
+The document itself is not stored on the blockchain.
+
+00:01:39.754 --> 00:01:45.174
+This way, the private contents of the digital asset did not need to be publicly revealed.
+
+00:01:45.174 --> 00:01:48.594
+The hash is linked to the time the document was submitted.
+
+00:01:48.594 --> 00:01:53.245
+This way, you can later confirm the data existed at this time and verify it.
+
+00:01:53.245 --> 00:01:55.969
+So, there's the basic ideas behind proof of
+
+00:01:55.969 --> 00:01:59.150
+existence and how it can help verify digital assets.
+
+00:01:59.150 --> 00:02:01.219
+Coming up, we'll look a little further into
+
+00:02:01.219 --> 00:02:04.769
+these ideas and explore how they work in practice.
+

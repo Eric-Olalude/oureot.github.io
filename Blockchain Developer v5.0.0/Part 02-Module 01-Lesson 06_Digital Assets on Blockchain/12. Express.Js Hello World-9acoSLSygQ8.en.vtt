@@ -1,0 +1,196 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.544
+Hey, and welcome back.
+
+00:00:01.544 --> 00:00:04.259
+Hopefully, you had a second to prepare for this video.
+
+00:00:04.259 --> 00:00:08.730
+Here, we'll get started creating your first Hello World Express application.
+
+00:00:08.730 --> 00:00:12.935
+Back on expressjs.com, go to Getting Started,
+
+00:00:12.935 --> 00:00:17.355
+Installing, and you'll see details about how to install this on your computer.
+
+00:00:17.355 --> 00:00:20.190
+To avoid just talking through all the documentation,
+
+00:00:20.190 --> 00:00:23.005
+I thought it might help to immediately put this to use.
+
+00:00:23.004 --> 00:00:27.119
+Let's do that now and install Express to create our first project.
+
+00:00:27.120 --> 00:00:31.200
+If you get lost, remember that I'm just following this documentation here.
+
+00:00:31.199 --> 00:00:32.539
+I didn't want to walk through it.
+
+00:00:32.539 --> 00:00:33.594
+In case you get stuck,
+
+00:00:33.594 --> 00:00:37.204
+this video might be able to help you get past a couple of the problems you have.
+
+00:00:37.204 --> 00:00:41.689
+To start, open your terminal and navigate to wherever you want your project to be.
+
+00:00:41.689 --> 00:00:43.625
+I'll put mine on my Desktop.
+
+00:00:43.625 --> 00:00:46.340
+Now, make a folder using mkdir.
+
+00:00:46.340 --> 00:00:47.975
+Call this folder whatever you like.
+
+00:00:47.975 --> 00:00:49.730
+I'll stick with myapp.
+
+00:00:49.729 --> 00:00:55.549
+There it is. Now, navigate into the folder from the terminal using cd My App.
+
+00:00:55.549 --> 00:00:57.184
+Once in the folder,
+
+00:00:57.185 --> 00:01:01.150
+use npm init to create a package.json file.
+
+00:01:01.149 --> 00:01:05.275
+What comes up here is a bunch of things you can assign in the file.
+
+00:01:05.275 --> 00:01:07.400
+You can always change this later if you want,
+
+00:01:07.400 --> 00:01:09.835
+and it's fine to accept the defaults for now.
+
+00:01:09.834 --> 00:01:11.299
+To accept the default,
+
+00:01:11.299 --> 00:01:14.984
+just keep hitting enter a bunch of times until you've gotten through all the prompts.
+
+00:01:14.984 --> 00:01:17.995
+The last thing it does is ask, "Is this okay?"
+
+00:01:17.995 --> 00:01:21.755
+Right above that, it shows you everything it's about to put in the file.
+
+00:01:21.754 --> 00:01:26.000
+Hit enter one more time and you just created your package.json file.
+
+00:01:26.000 --> 00:01:29.555
+Let's check it out. Great, just like I expected.
+
+00:01:29.555 --> 00:01:33.915
+Next, I'll create the JavaScript file that we'll use for our hello world example.
+
+00:01:33.915 --> 00:01:36.160
+Using touch, I can create this file.
+
+00:01:36.159 --> 00:01:38.894
+I'll call it index.js.
+
+00:01:38.894 --> 00:01:44.174
+Finally, I'll type npm install express --save.
+
+00:01:44.174 --> 00:01:46.849
+This installs Express and saves it as
+
+00:01:46.849 --> 00:01:50.849
+a dependency into the package.json file we just created.
+
+00:01:50.849 --> 00:01:52.309
+After a few seconds,
+
+00:01:52.310 --> 00:01:56.090
+the framework will install and we're ready to open up our project.
+
+00:01:56.090 --> 00:01:59.870
+To do that, I'll open up the folder in my code editor.
+
+00:01:59.870 --> 00:02:03.300
+Over on the left, you'll see all the files we just created.
+
+00:02:03.299 --> 00:02:09.935
+Index.js, package.json and a folder which contains all the modules that Express installed.
+
+00:02:09.935 --> 00:02:11.900
+There's a lot of functionality here.
+
+00:02:11.900 --> 00:02:13.530
+We won't go over all of them now,
+
+00:02:13.530 --> 00:02:15.169
+but if you're interested in learning more,
+
+00:02:15.169 --> 00:02:17.754
+you can do that back on the website resources.
+
+00:02:17.754 --> 00:02:20.240
+Under Resources Middleware, you'll see
+
+00:02:20.240 --> 00:02:23.760
+all these modules with links to more information to explore.
+
+00:02:23.759 --> 00:02:27.449
+For now, what we'll do instead is try the Hello World example.
+
+00:02:27.449 --> 00:02:31.704
+To get there, go back to getting started and click Hello World.
+
+00:02:31.705 --> 00:02:37.200
+Take this code and paste it directly into your index.js file.
+
+00:02:40.659 --> 00:02:43.174
+Now, save this file.
+
+00:02:43.175 --> 00:02:46.760
+We can run this now to get our application started and afterwards,
+
+00:02:46.759 --> 00:02:48.924
+I'll describe a little bit about what's going on.
+
+00:02:48.925 --> 00:02:52.590
+To run this file, go back to your terminal and type node
+
+00:02:52.590 --> 00:02:56.365
+index.js or whatever you named your JavaScript file.
+
+00:02:56.365 --> 00:03:01.210
+Now, it should say, "Example app listening on port 3000," which is great.
+
+00:03:01.210 --> 00:03:05.715
+That means we can check this out on the browser now to see our Hello World application.
+
+00:03:05.715 --> 00:03:09.525
+To do that, open your browser and type localhost:3000.
+
+00:03:09.525 --> 00:03:11.605
+If it says Hello World,
+
+00:03:11.604 --> 00:03:15.164
+then you're all set and you just created your first Express web application.
+
+00:03:15.164 --> 00:03:17.715
+If you got this far, congratulations!
+
+00:03:17.715 --> 00:03:19.460
+We'll take another quick break here.
+
+00:03:19.460 --> 00:03:22.925
+I put an overview of the steps we just went through down below the video.
+
+00:03:22.925 --> 00:03:25.070
+Once you're ready, come see the next video where I'll
+
+00:03:25.069 --> 00:03:27.729
+walk through a bit about what the code is actually doing.
+

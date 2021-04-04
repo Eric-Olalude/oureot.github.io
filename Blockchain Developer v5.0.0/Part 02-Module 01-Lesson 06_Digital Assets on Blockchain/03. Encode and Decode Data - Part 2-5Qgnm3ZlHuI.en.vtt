@@ -1,0 +1,232 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.509
+Now, that we have some idea of the purpose of encoding,
+
+00:00:03.509 --> 00:00:07.160
+it's helpful to review a few ways to encode that are commonly used.
+
+00:00:07.160 --> 00:00:10.530
+In this video, we'll look into the basics of three common ways to
+
+00:00:10.529 --> 00:00:14.734
+encode data: ASCII, hexadecimal, and Base64.
+
+00:00:14.734 --> 00:00:18.079
+Different types of encoding are used for different purposes,
+
+00:00:18.079 --> 00:00:22.219
+and there are a few important details to review about each type of encoding.
+
+00:00:22.219 --> 00:00:24.369
+We won't be going into a lot of depth here.
+
+00:00:24.370 --> 00:00:27.995
+All we need is the basic understanding of how these types of encoding work.
+
+00:00:27.995 --> 00:00:29.910
+If you're interested in learning more about these,
+
+00:00:29.910 --> 00:00:33.700
+we've put a lot of links to resources below that you can follow and learn more.
+
+00:00:33.700 --> 00:00:36.175
+First, let's look at ASCII.
+
+00:00:36.174 --> 00:00:40.750
+ASCII is short for the American Standard Code for Information Interchange.
+
+00:00:40.750 --> 00:00:44.475
+It's based on the idea that you can represent text as numbers.
+
+00:00:44.475 --> 00:00:46.285
+Here's an ASCII table.
+
+00:00:46.284 --> 00:00:47.904
+As you can see on the chart,
+
+00:00:47.905 --> 00:00:50.509
+by laying out a series of characters and letters,
+
+00:00:50.509 --> 00:00:54.509
+you can now reference the corresponding number associated with its character.
+
+00:00:54.509 --> 00:00:57.664
+For example, P is equal to 112,
+
+00:00:57.664 --> 00:01:00.479
+Q is 113, and so on.
+
+00:01:00.479 --> 00:01:03.619
+It maps the text we write into numbers that computers
+
+00:01:03.619 --> 00:01:06.834
+recognize using binary to transmit information.
+
+00:01:06.834 --> 00:01:08.774
+To check this out for yourself,
+
+00:01:08.775 --> 00:01:12.255
+you can head over to any basic online ASCII converter.
+
+00:01:12.254 --> 00:01:17.344
+This and other encoding schemes have tools available online that you can experiment with.
+
+00:01:17.344 --> 00:01:20.150
+Over on unit-conversion.info, we can do
+
+00:01:20.150 --> 00:01:23.815
+a quick demo showing an example of converting text to ASCII.
+
+00:01:23.814 --> 00:01:25.629
+Here if I type in P,
+
+00:01:25.629 --> 00:01:27.989
+we get 112 just like we mentioned.
+
+00:01:27.989 --> 00:01:34.894
+Q gives us 113 and you'll notice that even the space has its own number shown here as 32.
+
+00:01:34.894 --> 00:01:39.009
+This extends to anything we want to type like blockchain developer,
+
+00:01:39.009 --> 00:01:41.275
+your name, or an entire book.
+
+00:01:41.275 --> 00:01:44.030
+These same basic ideas are what's used for
+
+00:01:44.030 --> 00:01:47.534
+all encoding including Hexadecimal, which we'll look at next.
+
+00:01:47.534 --> 00:01:50.390
+Hexadecimal encoding is pretty common.
+
+00:01:50.390 --> 00:01:53.420
+It's a more concise and human-readable representation
+
+00:01:53.420 --> 00:01:55.954
+of binary often used by programmers.
+
+00:01:55.953 --> 00:01:58.189
+Something encoded in Hexadecimal will be
+
+00:01:58.189 --> 00:02:01.109
+represented using numbers from zero to nine or letters
+
+00:02:01.109 --> 00:02:06.439
+from A to F. Here's a chart showing the basic conversion between binary and Hexadecimal.
+
+00:02:06.439 --> 00:02:07.909
+When encoding a document,
+
+00:02:07.909 --> 00:02:11.389
+these values are translated into their Hexadecimal equivalent.
+
+00:02:11.389 --> 00:02:15.709
+It's more common to work directly with Hexadecimal when using assembly languages.
+
+00:02:15.710 --> 00:02:18.290
+It's a way for developers to allocate memory more
+
+00:02:18.289 --> 00:02:21.549
+quickly than specifying space using binary digits.
+
+00:02:21.550 --> 00:02:24.035
+If you're interested, you can head over to the website
+
+00:02:24.034 --> 00:02:28.454
+convertstring.com to try converting data to Hexadecimal for yourself.
+
+00:02:28.455 --> 00:02:30.195
+Type your text in the top,
+
+00:02:30.194 --> 00:02:33.905
+click Hex Encode and check out the encoding down here at the bottom.
+
+00:02:33.905 --> 00:02:37.770
+Over at blockchain developer again to see how this looks.
+
+00:02:37.770 --> 00:02:40.275
+If you take the time to break this down,
+
+00:02:40.275 --> 00:02:42.135
+you'll see that it follows the zero to nine,
+
+00:02:42.134 --> 00:02:45.189
+A to F format that was shown in the chart earlier.
+
+00:02:45.189 --> 00:02:48.814
+Finally, Base64 is another encoding scheme
+
+00:02:48.814 --> 00:02:51.990
+meant to represent data as numbers in a string format.
+
+00:02:51.990 --> 00:02:54.770
+It does this by converting information into any
+
+00:02:54.770 --> 00:02:57.905
+one of 64 different characters shown on this chart.
+
+00:02:57.905 --> 00:03:00.400
+So as you can see, A equals zero,
+
+00:03:00.400 --> 00:03:02.360
+B equals one and so on through
+
+00:03:02.360 --> 00:03:05.615
+both upper and lowercase letters along with a few characters.
+
+00:03:05.615 --> 00:03:10.385
+Using this chart, you can convert any text you'd like into its Base64 equivalent.
+
+00:03:10.384 --> 00:03:13.894
+Like before, we can check out a website to see this for ourselves.
+
+00:03:13.895 --> 00:03:19.925
+Over at base64encode.org, you can demo converting text into Base64.
+
+00:03:19.925 --> 00:03:23.375
+Similar to before, I'll type in blockchain developer,
+
+00:03:23.375 --> 00:03:29.025
+hit encode and then I can check out the Base64 encoded version of this text.
+
+00:03:29.025 --> 00:03:32.330
+So, there's a quick overview of a few different encoding schemes;
+
+00:03:32.330 --> 00:03:35.010
+ASCII, Hexadecimal, and Base64.
+
+00:03:35.009 --> 00:03:37.560
+There's a few other types of encoding out there.
+
+00:03:37.560 --> 00:03:39.650
+They all serve the main function of converting
+
+00:03:39.650 --> 00:03:41.360
+our human-readable media into
+
+00:03:41.360 --> 00:03:44.810
+computer-readable formats that can be more easily transmitted.
+
+00:03:44.810 --> 00:03:47.819
+For us, it's important that we recognize these different formats,
+
+00:03:47.819 --> 00:03:50.060
+so we can begin to work with them for ourselves.
+
+00:03:50.060 --> 00:03:52.640
+There's plenty of resources to understand each of these in
+
+00:03:52.639 --> 00:03:55.564
+more depth and I linked a few of my favorites down below the video.
+
+00:03:55.564 --> 00:03:58.099
+Feel free to check these out to better understand each of
+
+00:03:58.099 --> 00:04:01.500
+these encodings and play around with some of them for yourself.
+

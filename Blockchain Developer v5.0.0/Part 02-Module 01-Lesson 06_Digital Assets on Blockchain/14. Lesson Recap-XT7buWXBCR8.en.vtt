@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.419
+Congratulations, you've reached the end of this lesson.
+
+00:00:03.419 --> 00:00:08.004
+Throughout this lesson, we worked with encoding and decoding digital assets.
+
+00:00:08.005 --> 00:00:10.830
+After that, we moved on to a proof of existence
+
+00:00:10.830 --> 00:00:14.095
+and touched on the basics of different block chain generations.
+
+00:00:14.095 --> 00:00:18.855
+The goal is to help you implement this type of functionality on your private block chain.
+
+00:00:18.855 --> 00:00:23.780
+This allows you to start posting assets as data into a new block in the block chain.
+
+00:00:23.780 --> 00:00:27.855
+It also helps you manage assets like images, videos, audio files,
+
+00:00:27.855 --> 00:00:30.230
+and other digital assets in the same way you've
+
+00:00:30.230 --> 00:00:33.054
+been able to manage transactions with your web service.
+
+00:00:33.054 --> 00:00:36.670
+This lesson was also meant to help prepare you for the next project.
+
+00:00:36.670 --> 00:00:39.545
+We will be adding some functionality to your web service.
+
+00:00:39.545 --> 00:00:42.905
+We've put a quick review of what was covered down below the video.
+
+00:00:42.905 --> 00:00:45.829
+Take some time to review these ideas and when you're ready,
+
+00:00:45.829 --> 00:00:48.299
+move on to the project to get started.
+

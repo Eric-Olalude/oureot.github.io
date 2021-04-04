@@ -1,0 +1,193 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.250
+Welcome to this section on Digital Assets.
+
+00:00:03.250 --> 00:00:05.359
+To develop this in future lessons,
+
+00:00:05.360 --> 00:00:07.690
+we'll start to work a lot with digital assets.
+
+00:00:07.690 --> 00:00:11.685
+Before getting started, we wanted to help define what these actually are,
+
+00:00:11.685 --> 00:00:13.859
+and why they're important to the blockchain.
+
+00:00:13.859 --> 00:00:18.254
+Understanding how digital assets work on the blockchain will allow you to create
+
+00:00:18.254 --> 00:00:23.479
+an entirely new set of applications whose scope goes far beyond simple transactions.
+
+00:00:23.480 --> 00:00:25.205
+From movies and music,
+
+00:00:25.204 --> 00:00:27.369
+to business and legal documentation,
+
+00:00:27.370 --> 00:00:30.005
+there's a lot to get excited about in this space.
+
+00:00:30.004 --> 00:00:33.725
+With that in mind, let's look a bit more into Digital Asset.
+
+00:00:33.725 --> 00:00:36.840
+First, a digital asset can be a lot of things.
+
+00:00:36.840 --> 00:00:38.990
+But overall, we consider it to be
+
+00:00:38.990 --> 00:00:43.910
+both digitally stored content or an online account owned by an individual.
+
+00:00:43.909 --> 00:00:47.844
+These are valuable because it allows us to take things like books, songs,
+
+00:00:47.844 --> 00:00:49.939
+or videos and access them online,
+
+00:00:49.939 --> 00:00:52.324
+rather than needing to create them physically.
+
+00:00:52.325 --> 00:00:54.980
+This is something most of us deal with every day,
+
+00:00:54.979 --> 00:00:56.949
+so it's not too surprising.
+
+00:00:56.950 --> 00:00:59.060
+Something I was interested by,
+
+00:00:59.060 --> 00:01:02.135
+is that accounts are actually considered digital assets too.
+
+00:01:02.134 --> 00:01:04.560
+In this case, something like a bank account,
+
+00:01:04.560 --> 00:01:08.424
+a subscription, or a membership could be considered a digital asset.
+
+00:01:08.424 --> 00:01:10.739
+So, digital assets are common,
+
+00:01:10.739 --> 00:01:12.084
+but what's not is common,
+
+00:01:12.084 --> 00:01:14.390
+is understanding exactly what they are,
+
+00:01:14.390 --> 00:01:16.655
+and how we can work with them programmatically.
+
+00:01:16.655 --> 00:01:20.930
+You'll probably recognize files like GIF, JPEG, and MP3.
+
+00:01:20.930 --> 00:01:24.920
+There's many other types of digital assets ranging across topics shown here,
+
+00:01:24.920 --> 00:01:28.635
+like images, video, 3D files, and many more.
+
+00:01:28.635 --> 00:01:31.344
+To help us transmit these files online,
+
+00:01:31.344 --> 00:01:33.984
+they're usually compressed and optimized.
+
+00:01:33.984 --> 00:01:37.010
+A compression algorithm is any algorithm made
+
+00:01:37.010 --> 00:01:40.060
+specifically to achieve a very fast transmission rate,
+
+00:01:40.060 --> 00:01:42.655
+or a small amount of storage space.
+
+00:01:42.655 --> 00:01:46.530
+These algorithms are used on digital assets to help us store,
+
+00:01:46.530 --> 00:01:49.310
+send, and load assets as we work with them.
+
+00:01:49.310 --> 00:01:51.859
+But, even with these compression algorithms,
+
+00:01:51.859 --> 00:01:55.135
+the blockchain isn't really the best place to store these files.
+
+00:01:55.135 --> 00:01:59.564
+While it's possible, it can be pretty slow and expensive because as we've seen,
+
+00:01:59.564 --> 00:02:04.564
+the blockchain as a database suffers from issues with the cost and speed of storage.
+
+00:02:04.564 --> 00:02:06.924
+What the blockchain can do very well,
+
+00:02:06.924 --> 00:02:10.865
+is help improve the way we manage the ownership of these digital assets.
+
+00:02:10.865 --> 00:02:14.930
+This is something that has been a struggle in the past for many industries,
+
+00:02:14.930 --> 00:02:17.075
+and is where the blockchain really shines.
+
+00:02:17.074 --> 00:02:19.500
+Even with licensing and copyrights,
+
+00:02:19.500 --> 00:02:22.379
+Digital assets traditionally have issues with theft,
+
+00:02:22.379 --> 00:02:26.764
+payments, and royalties associated with the ownership of digital rights.
+
+00:02:26.764 --> 00:02:31.509
+The blockchain handles this issue in the same way it handles transactions.
+
+00:02:31.509 --> 00:02:33.745
+The difference is, instead of saying,
+
+00:02:33.745 --> 00:02:35.439
+"Who owns this transaction?"
+
+00:02:35.439 --> 00:02:38.039
+we're asking, "Who owns this asset?"
+
+00:02:38.039 --> 00:02:40.314
+It's a simple concept and theory,
+
+00:02:40.314 --> 00:02:42.694
+but extremely helpful in practice.
+
+00:02:42.694 --> 00:02:46.549
+Coming up, we'll add on a few new ideas to what you already know,
+
+00:02:46.550 --> 00:02:48.920
+to help get you set up to manage the ownership of
+
+00:02:48.919 --> 00:02:51.889
+digital assets using your own private blockchain.
+
+00:02:51.889 --> 00:02:55.154
+So, that's it. We looked at what a digital asset is,
+
+00:02:55.155 --> 00:02:56.604
+went over a few examples,
+
+00:02:56.604 --> 00:03:00.319
+and have a basic idea of how digital assets were on the blockchain.
+
+00:03:00.319 --> 00:03:02.479
+Coming up, we'll start our journey into
+
+00:03:02.479 --> 00:03:05.489
+digital assets by reviewing the basics of encoding,
+
+00:03:05.490 --> 00:03:09.080
+decoding, and starting to work with them for ourselves.
+
