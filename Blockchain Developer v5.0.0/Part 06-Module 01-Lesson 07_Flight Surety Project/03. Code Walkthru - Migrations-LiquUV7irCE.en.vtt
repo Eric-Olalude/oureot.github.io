@@ -1,0 +1,118 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:06.209
+One last thing regarding the Smart Contracts and truffle is deploy contracts.
+
+00:00:06.209 --> 00:00:07.679
+So at some point,
+
+00:00:07.679 --> 00:00:12.794
+you will not want to use the test and you will want to deploy the code,
+
+00:00:12.794 --> 00:00:16.964
+so that the addresses of the contracts don't keep changing on you.
+
+00:00:16.964 --> 00:00:19.559
+Every time you run the truffle test,
+
+00:00:19.559 --> 00:00:21.329
+all the addresses are going to change,
+
+00:00:21.329 --> 00:00:23.114
+and so it makes testing very hard.
+
+00:00:23.114 --> 00:00:25.469
+So the deployment script that's here,
+
+00:00:25.469 --> 00:00:29.144
+is doing a bit of work to make your life easier.
+
+00:00:29.144 --> 00:00:33.734
+First of all, it's going to deploy the contracts,
+
+00:00:33.734 --> 00:00:35.325
+but these two lines,
+
+00:00:35.325 --> 00:00:37.095
+there kind of helper lines,
+
+00:00:37.094 --> 00:00:43.140
+you may not necessarily need them because there's other ways to do it,
+
+00:00:43.140 --> 00:00:46.609
+but they're here because it ensures that
+
+00:00:46.609 --> 00:00:50.780
+every time you migrate your contracts to the blockchain,
+
+00:00:50.780 --> 00:00:58.100
+the client dapp and the server dapp have the current addresses of the contracts.
+
+00:00:58.100 --> 00:01:02.195
+So what this is doing is generating a config.json file which I'll go into now.
+
+00:01:02.195 --> 00:01:07.295
+You can see here, that it's giving you the URL,
+
+00:01:07.295 --> 00:01:09.320
+it's giving you the data address,
+
+00:01:09.319 --> 00:01:13.339
+and the app address for the two contracts as they are deployed.
+
+00:01:13.340 --> 00:01:18.560
+So you'll find this to be a useful addition once your post using truffle testing and
+
+00:01:18.560 --> 00:01:24.019
+need to get into the client and server development.
+
+00:01:24.019 --> 00:01:26.375
+So the way to trigger that,
+
+00:01:26.375 --> 00:01:33.150
+is to do truffle migrate.
+
+00:01:33.430 --> 00:01:36.080
+You may be already familiar with this,
+
+00:01:36.079 --> 00:01:40.340
+but it's helpful to see a truffle 5.0 if you haven't done it with 5.0,
+
+00:01:40.340 --> 00:01:42.770
+it gives a really good output here.
+
+00:01:42.769 --> 00:01:50.594
+So what it did is essentially tell us that our contracts are deployed,
+
+00:01:50.594 --> 00:01:53.329
+and in doing that,
+
+00:01:53.329 --> 00:01:54.679
+it created this file.
+
+00:01:54.680 --> 00:02:00.035
+In fact, let me just do that. I'll go ahead and delete this file and also delete
+
+00:02:00.034 --> 00:02:06.224
+the one in the server folder to make sure that that code is working as designed.
+
+00:02:06.224 --> 00:02:08.500
+So if I migrate again,
+
+00:02:08.500 --> 00:02:12.020
+we should see those files being generated with
+
+00:02:12.020 --> 00:02:19.590
+the correct addresses, and it worked.
+
+00:02:19.590 --> 00:02:21.710
+So we've got the latest,
+
+00:02:21.710 --> 00:02:23.599
+greatest address right in there.
+
+00:02:23.599 --> 00:02:27.479
+So that's a good segue way to our dapp.
+

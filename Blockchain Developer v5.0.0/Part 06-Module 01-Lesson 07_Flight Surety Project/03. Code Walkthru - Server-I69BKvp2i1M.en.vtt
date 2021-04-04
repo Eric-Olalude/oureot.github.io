@@ -1,0 +1,133 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.390
+The server code is fairly simplistic.
+
+00:00:03.390 --> 00:00:08.474
+It has an index file that loads up server.js,
+
+00:00:08.474 --> 00:00:11.759
+and then just waits on port 3000.
+
+00:00:11.759 --> 00:00:18.464
+Is possible that you may want to build in certain things into an API for the client.
+
+00:00:18.464 --> 00:00:26.085
+So the scaffolding allows for a simple express app that's waiting,
+
+00:00:26.085 --> 00:00:27.720
+but that is completely unnecessary.
+
+00:00:27.719 --> 00:00:30.869
+The primary purpose of the server is to
+
+00:00:30.870 --> 00:00:35.115
+simulate the Oracles and wait for events related to that,
+
+00:00:35.115 --> 00:00:37.789
+and that code is right here.
+
+00:00:37.789 --> 00:00:42.875
+So all this is doing is listing for a request.
+
+00:00:42.875 --> 00:00:48.274
+It does nothing with regard to the actual handling of that request.
+
+00:00:48.274 --> 00:00:53.945
+So that's where you are going to have to spin up initially the Oracles, register them,
+
+00:00:53.945 --> 00:00:58.070
+persist their state in memory or if you choose to write it to a file,
+
+00:00:58.070 --> 00:01:01.500
+you don't have to re-register them every time.
+
+00:01:01.509 --> 00:01:08.840
+Then, actually come up with the answer to whether the flight is late or not,
+
+00:01:08.840 --> 00:01:13.355
+and respond back by pushing a transaction to the Smart Contract.
+
+00:01:13.355 --> 00:01:16.685
+So all of that needs to be done here.
+
+00:01:16.685 --> 00:01:22.155
+But in the event you would like to add some functionality to the DAP,
+
+00:01:22.155 --> 00:01:28.144
+for example, we talked about having the flights and timestamps being hardcoded.
+
+00:01:28.144 --> 00:01:30.140
+So this would be a great place,
+
+00:01:30.140 --> 00:01:35.480
+where you could have an endpoint that returns those and hydrates a dropdown in the UI,
+
+00:01:35.480 --> 00:01:39.335
+which has the different flights that the passenger can select from.
+
+00:01:39.334 --> 00:01:41.584
+So that's a handy little thing there.
+
+00:01:41.584 --> 00:01:44.459
+So in order to get the server working,
+
+00:01:44.459 --> 00:01:46.875
+we'll go create another terminal,
+
+00:01:46.875 --> 00:01:53.739
+and we will say npm run server.
+
+00:01:55.519 --> 00:01:59.024
+This is ready and watching.
+
+00:01:59.025 --> 00:02:02.065
+So now that all of this is in place,
+
+00:02:02.064 --> 00:02:08.069
+what we can do is go back to our webpage and submit.
+
+00:02:08.139 --> 00:02:13.729
+I will just call our flight Hello World and submit.
+
+00:02:13.729 --> 00:02:20.854
+So the code has reflected that we've submitted that.
+
+00:02:20.854 --> 00:02:24.709
+Going back here, you can see that there was a contract call made.
+
+00:02:24.710 --> 00:02:27.909
+So that indeed happen.
+
+00:02:27.909 --> 00:02:31.669
+Right here, this tells us that our server code is working
+
+00:02:31.669 --> 00:02:37.024
+because web 3 has cut the event that happened.
+
+00:02:37.025 --> 00:02:41.164
+You can see that it's an Oracle request and it has Hello World.
+
+00:02:41.164 --> 00:02:44.294
+So this brings us full circle.
+
+00:02:44.294 --> 00:02:48.199
+Essentially, we covered the overall cycle of the App.
+
+00:02:48.199 --> 00:02:49.849
+You've got the Smart Contracts,
+
+00:02:49.849 --> 00:02:51.394
+we've got the client App,
+
+00:02:51.395 --> 00:02:52.909
+and we've got a server App.
+
+00:02:52.909 --> 00:02:56.000
+They are all ready for you to put in the code that
+
+00:02:56.000 --> 00:03:00.330
+will fulfill the requirements for the project.
+
