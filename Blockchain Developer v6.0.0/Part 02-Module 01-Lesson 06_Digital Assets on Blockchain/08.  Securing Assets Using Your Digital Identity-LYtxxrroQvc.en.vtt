@@ -1,0 +1,145 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.525
+So far, we learned how to encode and decode digital assets into raw data.
+
+00:00:05.525 --> 00:00:09.030
+We also discussed the importance of Proof of Existence to
+
+00:00:09.029 --> 00:00:12.859
+verify the ownership and existence of these digital documents.
+
+00:00:12.859 --> 00:00:16.350
+You saw how one online service conducts proof of existence,
+
+00:00:16.350 --> 00:00:18.480
+but that's not the only method.
+
+00:00:18.480 --> 00:00:20.385
+For the upcoming project,
+
+00:00:20.385 --> 00:00:22.340
+you'll build your own version of a Proof of
+
+00:00:22.339 --> 00:00:25.644
+Existence notary service using your private blockchain.
+
+00:00:25.644 --> 00:00:29.405
+This will allow you to secure an asset with your digital identity,
+
+00:00:29.405 --> 00:00:31.630
+a Bitcoin wallet address.
+
+00:00:31.629 --> 00:00:35.740
+To get started, we'll review a few important topics: securing
+
+00:00:35.740 --> 00:00:40.010
+assets with a digital identity and ownership of digital assets.
+
+00:00:40.009 --> 00:00:45.814
+To secure an asset means to protect these resources from wrongful access or alteration.
+
+00:00:45.814 --> 00:00:48.464
+So, why even secure an asset?
+
+00:00:48.465 --> 00:00:53.060
+Well, assets are useful to us whether directly or indirectly.
+
+00:00:53.060 --> 00:00:57.300
+For example, a banana is directly useful because we can eat it.
+
+00:00:57.299 --> 00:00:59.479
+A legal document is indirectly
+
+00:00:59.479 --> 00:01:03.064
+useful because we can use it to claim ownership over something.
+
+00:01:03.064 --> 00:01:07.634
+In this case, maybe your document claims you own the entire banana farm.
+
+00:01:07.635 --> 00:01:10.130
+Digital assets work similarly.
+
+00:01:10.129 --> 00:01:14.334
+As we've seen, we can use Proof of Existence to verify its ownership.
+
+00:01:14.334 --> 00:01:19.344
+The next big question is how do we prove who owns a digital document?
+
+00:01:19.344 --> 00:01:22.265
+For example, say I take a picture with my phone
+
+00:01:22.265 --> 00:01:25.680
+that I really like and save it to a blockchain application.
+
+00:01:25.680 --> 00:01:27.810
+To prove that I own the photo,
+
+00:01:27.810 --> 00:01:32.795
+it is encoded into a data object and that object can contain multiple properties.
+
+00:01:32.795 --> 00:01:37.000
+If we encoded that photo as a hash and submitted it on the blockchain,
+
+00:01:37.000 --> 00:01:40.829
+we could save the information as a data object with these properties.
+
+00:01:40.829 --> 00:01:44.530
+First, type equals jpeg; next,
+
+00:01:44.530 --> 00:01:49.010
+the Bitcoin wallet address of the user that secured this asset on the blockchain.
+
+00:01:49.010 --> 00:01:53.890
+Along with that, we'll store the time that digital asset was embedded on the blockchain,
+
+00:01:53.890 --> 00:01:58.769
+and finally, the hash of the previous block this current block is tied to.
+
+00:01:58.769 --> 00:02:02.509
+In this case, the user has used their digital identity to
+
+00:02:02.510 --> 00:02:06.955
+secure the digital asset by embedding their information in the same block.
+
+00:02:06.954 --> 00:02:11.819
+In the future, the existence of that information together in the blockchain proves
+
+00:02:11.819 --> 00:02:16.875
+that this document existed at the time the transaction got included into a block.
+
+00:02:16.875 --> 00:02:20.509
+This is the basic idea behind how Proof of Existence works at
+
+00:02:20.509 --> 00:02:25.549
+a lower level by allowing users to embed their identity along with the hash.
+
+00:02:25.550 --> 00:02:29.025
+The identity is used to secure the digital asset.
+
+00:02:29.025 --> 00:02:30.770
+This allows whoever owns
+
+00:02:30.770 --> 00:02:34.715
+the blockchain identity to claim ownership of the asset in the future.
+
+00:02:34.715 --> 00:02:38.960
+These ideas of securing assets with a digital identity provides
+
+00:02:38.960 --> 00:02:43.879
+the foundation of what will allow us to build a notary service using Proof of Existence.
+
+00:02:43.879 --> 00:02:46.430
+Hopefully, now you have a better idea of what it
+
+00:02:46.430 --> 00:02:49.365
+means to secure assets with a digital identity.
+
+00:02:49.365 --> 00:02:52.235
+Coming up, we'll zoom out a bit to look at how
+
+00:02:52.235 --> 00:02:57.710
+digital asset management fits into the evolution of blockchain from Bitcoin to ethereum.
+

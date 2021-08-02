@@ -1,0 +1,499 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.790 --> 00:00:06.360
+In this concept, we will learn about events in solidity.
+
+00:00:06.360 --> 00:00:10.080
+When a caller sends a transaction to a contract,
+
+00:00:10.080 --> 00:00:11.910
+the state of the contract changes.
+
+00:00:11.910 --> 00:00:13.784
+Now, as a developer,
+
+00:00:13.784 --> 00:00:18.750
+we can program our contract to emit events when its state changes.
+
+00:00:18.750 --> 00:00:20.984
+We can write a DApp which stands for
+
+00:00:20.984 --> 00:00:24.314
+a decentralized application to watch for these events.
+
+00:00:24.315 --> 00:00:27.645
+Events are written using the keyword event.
+
+00:00:27.644 --> 00:00:31.239
+Events do get stored on the network.
+
+00:00:31.280 --> 00:00:35.280
+Now, events are a part of the ABI definition.
+
+00:00:35.280 --> 00:00:39.859
+What that means is that anyone looking at the ABI of a contract can
+
+00:00:39.859 --> 00:00:45.299
+tell which events the contract is emitting so a DApp can be written accordingly.
+
+00:00:45.299 --> 00:00:49.459
+Events needs to be declared before they are emitted in a function.
+
+00:00:49.460 --> 00:00:53.005
+So we always declare events then we write functions.
+
+00:00:53.005 --> 00:00:59.210
+Event declaration looks like a function without a body and also ends in a semicolon.
+
+00:00:59.210 --> 00:01:03.395
+Events are invoked just like you would normal functions.
+
+00:01:03.395 --> 00:01:08.240
+Now, let's look at a smart contract example that implements events.
+
+00:01:25.099 --> 00:01:29.500
+So, this is a sample smart contract that is emitting events.
+
+00:01:29.500 --> 00:01:32.905
+In fact I've also included since you've learned quite a bit about solidity now.
+
+00:01:32.905 --> 00:01:34.765
+So I've included strokes in it,
+
+00:01:34.765 --> 00:01:36.989
+I've also included modifiers in it,
+
+00:01:36.989 --> 00:01:40.864
+constructors, msg.value or the global variables.
+
+00:01:40.864 --> 00:01:43.329
+I would definitely encourage you to get this file from
+
+00:01:43.329 --> 00:01:45.969
+our GitHub page and look at it and play
+
+00:01:45.969 --> 00:01:48.159
+around with it and then really get comfortable with how
+
+00:01:48.159 --> 00:01:51.069
+all these things work and kind of bring everything altogether.
+
+00:01:51.069 --> 00:01:53.209
+So, name of the contract.
+
+00:01:53.209 --> 00:01:56.814
+With the word contract, starts with events contract, name of the contract.
+
+00:01:56.814 --> 00:01:59.079
+Now we're creating if you remember,
+
+00:01:59.079 --> 00:02:03.509
+now is a global variable that gives us the time in seconds since 1970.
+
+00:02:03.510 --> 00:02:05.810
+Now we want this bidding to end in five days.
+
+00:02:05.810 --> 00:02:08.120
+So we're kind of declaring
+
+00:02:08.120 --> 00:02:12.560
+an argument here saying bidding ends and it says now in five days, okay?
+
+00:02:12.560 --> 00:02:15.265
+Then we're creating a struct which is high bidder.
+
+00:02:15.264 --> 00:02:17.429
+It has the address of the person who's bidding.
+
+00:02:17.430 --> 00:02:20.330
+Of course the address comes from this part and then we
+
+00:02:20.330 --> 00:02:23.810
+have the name of the bidder and then the bid that the person is placing on.
+
+00:02:23.810 --> 00:02:25.205
+So that's a struct.
+
+00:02:25.205 --> 00:02:28.960
+Now we are creating a variable of type high bidder.
+
+00:02:28.960 --> 00:02:31.830
+So high bidder public high bidder, okay?
+
+00:02:31.830 --> 00:02:35.780
+Now again, since this was a struct which is just a user-defined type,
+
+00:02:35.780 --> 00:02:38.800
+we're supposed to create variables of this if you want to do anything with this.
+
+00:02:38.800 --> 00:02:44.805
+We're creating a variable of type this and now this also is emitting two events,
+
+00:02:44.805 --> 00:02:48.060
+high bid and a low bid event or a bid failed event, okay?
+
+00:02:48.060 --> 00:02:50.300
+So if anyone bids higher and I'll show you in just a
+
+00:02:50.300 --> 00:02:53.330
+second what it is but typically it's an event with the word event,
+
+00:02:53.330 --> 00:02:56.250
+name of the event, arguments, and a semicolon.
+
+00:02:56.250 --> 00:03:01.219
+So, kind of like a function but nobody ends with a semicolon and we have another event,
+
+00:03:01.219 --> 00:03:03.185
+event keyword, bid failed,
+
+00:03:03.185 --> 00:03:05.000
+arguments, and a semicolon.
+
+00:03:05.000 --> 00:03:08.840
+Remember we have events always before a function so we have events initially
+
+00:03:08.840 --> 00:03:12.860
+that we are declaring here in the file and then we have a modifier.
+
+00:03:12.860 --> 00:03:16.140
+What this modifier is checking if it has not crossed the time.
+
+00:03:16.139 --> 00:03:20.059
+So remember we set our bidding ends in five days so we're
+
+00:03:20.060 --> 00:03:24.319
+checking if now is less than bidding ends, okay?
+
+00:03:24.319 --> 00:03:26.504
+Continue. Else throw an exception.
+
+00:03:26.504 --> 00:03:28.729
+So, if this time would be after five days,
+
+00:03:28.729 --> 00:03:30.319
+after I deploy the contract,
+
+00:03:30.319 --> 00:03:32.389
+then of course no one can bid on it and it's going to throw
+
+00:03:32.389 --> 00:03:35.509
+an exception so that's a modifier and if you look an up function,
+
+00:03:35.509 --> 00:03:37.099
+we're applying this modified time.
+
+00:03:37.099 --> 00:03:41.419
+So, this is the name of the modifier coming from there and there are initial constructor.
+
+00:03:41.419 --> 00:03:42.604
+When we start the bidding,
+
+00:03:42.604 --> 00:03:44.449
+I want to kind of set up an initial value.
+
+00:03:44.449 --> 00:03:46.299
+So we can start initial values here.
+
+00:03:46.300 --> 00:03:50.180
+So we're starting the bidding at one ether saying this is a high bid, okay?
+
+00:03:50.180 --> 00:03:52.025
+So, we're going to set our high bidder.
+
+00:03:52.025 --> 00:03:57.724
+Remember, that's a struct type variable and I'm setting the bid initially to one ether.
+
+00:03:57.724 --> 00:03:59.560
+Now in the function bid,
+
+00:03:59.560 --> 00:04:01.890
+first of all look at this word payable.
+
+00:04:01.889 --> 00:04:04.679
+Payable since ether should be coming along, okay?
+
+00:04:04.680 --> 00:04:05.835
+So if you don't send either,
+
+00:04:05.835 --> 00:04:07.740
+it's going to send you o or to give you o,
+
+00:04:07.740 --> 00:04:09.105
+exception gives you an exception.
+
+00:04:09.104 --> 00:04:12.759
+So, time, because we want it to end in five days from now.
+
+00:04:12.759 --> 00:04:15.530
+So and then we're also giving the name of the bidder.
+
+00:04:15.530 --> 00:04:17.720
+Whoever bids, wants to give their name initially who's
+
+00:04:17.720 --> 00:04:20.710
+bidding and the value of course comes from this value.
+
+00:04:20.709 --> 00:04:25.234
+So whatever comes along comes from this value and now we're checking for msg.value.
+
+00:04:25.235 --> 00:04:26.975
+Remember MSG is a global variable.
+
+00:04:26.975 --> 00:04:30.110
+You can get the value that's coming along using msg.value.
+
+00:04:30.110 --> 00:04:34.259
+We're checking if this is higher than the initial bid that was set, okay?
+
+00:04:34.259 --> 00:04:36.360
+So we're setting it to one ether initially.
+
+00:04:36.360 --> 00:04:41.055
+We're checking if this value comes higher than that value. If, proceed.
+
+00:04:41.055 --> 00:04:44.550
+If not, revert to an exception, okay?
+
+00:04:44.550 --> 00:04:45.949
+You can also emit an event right there.
+
+00:04:45.949 --> 00:04:48.099
+So if you have a front-end application watching for this,
+
+00:04:48.100 --> 00:04:50.710
+you can see bid failed event has been issued,
+
+00:04:50.709 --> 00:04:54.319
+or here high bid event has been given right there.
+
+00:04:54.319 --> 00:04:56.284
+So, you can emit events just this way.
+
+00:04:56.285 --> 00:04:59.185
+We have the events declared here but this is how you emit events,
+
+00:04:59.185 --> 00:05:02.439
+word event or you can emit events just this way, okay,
+
+00:05:02.439 --> 00:05:07.389
+with the word emit and then the name of the event that you're sending and then that one,
+
+00:05:07.389 --> 00:05:08.865
+argument values right there.
+
+00:05:08.865 --> 00:05:11.949
+So, in this function if you see we're checking the value and if
+
+00:05:11.949 --> 00:05:15.954
+the high bid that the receiving value is greater than the bit that we already have,
+
+00:05:15.954 --> 00:05:18.279
+then we're going to accept the bid and we
+
+00:05:18.279 --> 00:05:20.559
+emit an event and at the same time let's store it?
+
+00:05:20.560 --> 00:05:22.530
+How do we store it? Since it's a struct, right?
+
+00:05:22.529 --> 00:05:26.564
+So, highBidder.bidder using the dot notation, msg.sender.
+
+00:05:26.564 --> 00:05:27.600
+So message our sender,
+
+00:05:27.600 --> 00:05:29.070
+the person who is sending the value.
+
+00:05:29.069 --> 00:05:31.819
+So, his address is getting stored because we need to get
+
+00:05:31.819 --> 00:05:35.279
+the address type and then the name of the bidder and then the value.
+
+00:05:35.279 --> 00:05:38.029
+So, we're setting all these values bidder name and that.
+
+00:05:38.029 --> 00:05:41.209
+So let's try now deploying this contract and I'm going show you.
+
+00:05:41.209 --> 00:05:43.310
+In fact I'm also going show you how exception that thrown in.
+
+00:05:43.310 --> 00:05:44.660
+So let's deploy this contract,
+
+00:05:44.660 --> 00:05:47.695
+events contract and using this address,
+
+00:05:47.694 --> 00:05:52.810
+let's deploy this contract and let's go.
+
+00:05:52.810 --> 00:05:56.055
+So, if you see, we have the contract deployed.
+
+00:05:56.055 --> 00:05:58.579
+So, for now, high bidder is going to be,
+
+00:05:58.579 --> 00:06:00.539
+initially that was set, okay?
+
+00:06:00.540 --> 00:06:03.785
+That's it. So there's nothing set as of now.
+
+00:06:03.785 --> 00:06:05.270
+So now let's go bid on it.
+
+00:06:05.269 --> 00:06:09.919
+So I'm going to go bid on it saying something,
+
+00:06:09.920 --> 00:06:12.395
+I'll give Udacity, okay?
+
+00:06:12.394 --> 00:06:17.149
+So we're bidding on it. Now, I'm not going to give a value here, okay? So let's see.
+
+00:06:17.149 --> 00:06:19.099
+So remember if there is no value coming along,
+
+00:06:19.100 --> 00:06:21.680
+it's going to throw us an exception and I'll show you how exceptions are thrown.
+
+00:06:21.680 --> 00:06:24.185
+So let's look on this bottom screen.
+
+00:06:24.185 --> 00:06:28.660
+So, if I send in a bid but no value is given,
+
+00:06:28.660 --> 00:06:31.700
+no ether is being set along since remember this is a payable function.
+
+00:06:31.699 --> 00:06:35.050
+It is expecting ether. It's going to throw an exception. So let's bid on it.
+
+00:06:35.050 --> 00:06:36.509
+See, there's an exception.
+
+00:06:36.509 --> 00:06:37.560
+Since it's reverted exception,
+
+00:06:37.560 --> 00:06:39.839
+the transaction has been reverted to the initial states.
+
+00:06:39.839 --> 00:06:41.109
+If you look on the bottom of the screen,
+
+00:06:41.110 --> 00:06:44.330
+you'll see that the transaction has been reverted because it was wrong.
+
+00:06:44.329 --> 00:06:47.064
+Now let's set a value that's lesser than one ether.
+
+00:06:47.064 --> 00:06:48.949
+We're again going to get exception remember.
+
+00:06:48.949 --> 00:06:52.490
+So this gives an exception inside the function if the value is lesser.
+
+00:06:52.490 --> 00:06:55.579
+So let's send it a value of just one ether.
+
+00:06:55.579 --> 00:06:57.949
+Remember that its expecting greater values.
+
+00:06:57.949 --> 00:07:02.324
+Its expecting a value greater than one ether because it has to be greater, okay?
+
+00:07:02.324 --> 00:07:05.485
+So let's send again and look at our screen.
+
+00:07:05.485 --> 00:07:07.680
+So, let's go to the bottom of our screen.
+
+00:07:07.680 --> 00:07:09.620
+I'm going to clear the screen so you guys can see it better.
+
+00:07:09.620 --> 00:07:14.290
+So, I'm going to again send it a bid with that value and again it says reverted.
+
+00:07:14.290 --> 00:07:17.670
+It doesn't go through because my bid is not as expected.
+
+00:07:17.670 --> 00:07:19.140
+So now let's go again.
+
+00:07:19.139 --> 00:07:22.519
+Now this time I'm actually going to send a value more than one.
+
+00:07:22.519 --> 00:07:24.349
+So, if you see this is my denomination ether.
+
+00:07:24.350 --> 00:07:26.480
+I can choose different denominations from there.
+
+00:07:26.480 --> 00:07:28.085
+I'm going to choose 1.1 ether.
+
+00:07:28.084 --> 00:07:30.049
+Now, I'm expecting this will go fine, right?
+
+00:07:30.050 --> 00:07:33.310
+Because I'm higher than the initial bid that was one ether.
+
+00:07:33.310 --> 00:07:36.439
+So now let's clear the screen so you all can see it better.
+
+00:07:36.439 --> 00:07:38.463
+I'm going to send a value of 1.1,
+
+00:07:38.463 --> 00:07:39.875
+now it goes through.
+
+00:07:39.875 --> 00:07:44.095
+Perfect. So now if I get the high bidder information, it's changed.
+
+00:07:44.095 --> 00:07:45.350
+My name came through,
+
+00:07:45.350 --> 00:07:48.770
+my address came from this address that I'm sending the bid from
+
+00:07:48.769 --> 00:07:52.759
+and it also gives the way of course everything is way on the screen.
+
+00:07:52.759 --> 00:07:54.920
+It gives us a value of how much came along.
+
+00:07:54.920 --> 00:07:58.650
+So, this is how you have everything coming along.
+
+00:07:58.649 --> 00:08:01.549
+So this contract shows a bidding contract that's going
+
+00:08:01.550 --> 00:08:04.699
+on and it has implemented structs in it,
+
+00:08:04.699 --> 00:08:06.620
+events in it, modifiers in it,
+
+00:08:06.620 --> 00:08:09.620
+constructors in it and also events in it.
+
+00:08:09.620 --> 00:08:11.509
+So, definitely make sure that you look at this file.
+
+00:08:11.509 --> 00:08:13.664
+This is how it emit events and
+
+00:08:13.665 --> 00:08:17.210
+your front-end application can watch for this event and act accordingly.
+
+00:08:17.209 --> 00:08:20.659
+So, get this code from our GitHub page and play around
+
+00:08:20.660 --> 00:08:25.140
+with it and get comfortable with how all these things come together in solidity.
+

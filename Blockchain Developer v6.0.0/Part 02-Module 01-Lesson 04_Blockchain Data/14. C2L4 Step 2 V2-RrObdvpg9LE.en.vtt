@@ -1,0 +1,160 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.730
+Okay. So now before we actually use any of
+
+00:00:02.730 --> 00:00:06.599
+these UTXOs that we saw in the previous step to create a transaction,
+
+00:00:06.599 --> 00:00:09.150
+I would like to show you how to view details of
+
+00:00:09.150 --> 00:00:13.020
+any specific UTXO that stands for Unspent Transaction Output.
+
+00:00:13.020 --> 00:00:14.385
+So in a deeper console,
+
+00:00:14.385 --> 00:00:17.160
+you will type the command, "get TX out."
+
+00:00:17.160 --> 00:00:21.090
+So let's go to a debug console, okay.
+
+00:00:21.090 --> 00:00:24.120
+In fact, let's go pick one of the transaction ID.
+
+00:00:24.120 --> 00:00:25.920
+So if you saw this was array of
+
+00:00:25.920 --> 00:00:28.875
+all the transactions we got from the list unspent command,
+
+00:00:28.875 --> 00:00:30.510
+so I'm just going to pick one example.
+
+00:00:30.510 --> 00:00:33.210
+Let me just pick the last one for now, and this was an array.
+
+00:00:33.210 --> 00:00:35.325
+Okay. So we're going to pick this one.
+
+00:00:35.325 --> 00:00:36.930
+So that's a transaction ID.
+
+00:00:36.930 --> 00:00:39.165
+In a PC, the vout is one.
+
+00:00:39.165 --> 00:00:44.590
+Okay, so I'm going to get the command, "get TX."
+
+00:00:44.720 --> 00:00:49.740
+Okay. Then you're going to have your transaction ID followed by the vout.
+
+00:00:49.740 --> 00:00:51.890
+The vout was one in our case, okay?
+
+00:00:51.890 --> 00:00:55.685
+So again it goes as the command gets takes out,
+
+00:00:55.685 --> 00:00:57.275
+and then the transaction ID,
+
+00:00:57.275 --> 00:00:59.210
+and then an up, and then the vout number.
+
+00:00:59.210 --> 00:01:01.850
+So that's the command, and then you're going to hit "Enter."
+
+00:01:01.850 --> 00:01:03.980
+Once you hit "Enter," it actually gives you
+
+00:01:03.980 --> 00:01:06.420
+the complete information about the output, okay?
+
+00:01:06.420 --> 00:01:10.145
+Just to walk you through, let me make the screen a little bit bigger for you here.
+
+00:01:10.145 --> 00:01:13.100
+So this is what we got. So if you see,
+
+00:01:13.100 --> 00:01:15.320
+the first thing that comes up is the best block.
+
+00:01:15.320 --> 00:01:17.510
+Now this is a hash of the header of the block,
+
+00:01:17.510 --> 00:01:19.115
+which includes this transaction.
+
+00:01:19.115 --> 00:01:21.320
+If the transaction is not a part of any block,
+
+00:01:21.320 --> 00:01:23.510
+this spring is going to be empty right there.
+
+00:01:23.510 --> 00:01:25.085
+Then we have confirmations,
+
+00:01:25.085 --> 00:01:29.500
+this is the number of confirmations received for this transaction value,
+
+00:01:29.500 --> 00:01:32.625
+the amount of bitcoins sent to this output.
+
+00:01:32.625 --> 00:01:35.160
+This grip PubKey, again,
+
+00:01:35.160 --> 00:01:36.480
+is the public script.
+
+00:01:36.480 --> 00:01:37.695
+The PubKey script.
+
+00:01:37.695 --> 00:01:41.085
+The hex is the PubKey script encoded as hex, okay?
+
+00:01:41.085 --> 00:01:44.490
+Then the require Sigs which is R-E-Q Sig.
+
+00:01:44.490 --> 00:01:46.940
+That typically means the number of required signatures,
+
+00:01:46.940 --> 00:01:49.130
+mostly going to find it as one.
+
+00:01:49.130 --> 00:01:54.000
+Then we have type, the type this is is a type of the script that could be PubKey,
+
+00:01:54.000 --> 00:01:56.990
+multisigs, group harsh, and addresses,
+
+00:01:56.990 --> 00:02:00.255
+the addresses used in this transaction, okay?
+
+00:02:00.255 --> 00:02:01.905
+If you have Coinbase,
+
+00:02:01.905 --> 00:02:03.750
+it could be set to true or false,
+
+00:02:03.750 --> 00:02:05.460
+and again, it's set to true,
+
+00:02:05.460 --> 00:02:08.400
+the transaction output belonged to a Coinbase transaction.
+
+00:02:08.400 --> 00:02:12.950
+Fantastic. So now that we know what all the UTXOs are available in our wallet,
+
+00:02:12.950 --> 00:02:16.460
+and then we also know how to get information about any specific UTXO,
+
+00:02:16.460 --> 00:02:18.980
+we are all ready to create a raw transaction
+
+00:02:18.980 --> 00:02:22.850
+using one of these UTXOs which we will do on next step.
+

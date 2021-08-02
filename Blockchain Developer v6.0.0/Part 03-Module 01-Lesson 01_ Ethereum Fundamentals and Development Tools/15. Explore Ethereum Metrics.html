@@ -1,0 +1,675 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Explore Ethereum Metrics</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3> Ethereum Fundamentals and Development Tools</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Lesson Introduction.html">01. Lesson Introduction</a>
+    </li>
+    <li class="">
+      <a href="02. Ethereum Basics.html">02. Ethereum Basics</a>
+    </li>
+    <li class="">
+      <a href="03. What makes Ethereum Special.html">03. What makes Ethereum Special?</a>
+    </li>
+    <li class="">
+      <a href="04. Ethereum Tools and Community.html">04. Ethereum Tools and Community</a>
+    </li>
+    <li class="">
+      <a href="05. Introduction to DApps.html">05. Introduction to DApps</a>
+    </li>
+    <li class="">
+      <a href="06. Scan the Ethereum Network.html">06. Scan the Ethereum Network</a>
+    </li>
+    <li class="">
+      <a href="07. Deploy to the Test Network.html">07. Deploy to the Test Network</a>
+    </li>
+    <li class="">
+      <a href="08. Prepare to Connect to the Network.html">08. Prepare to Connect to the Network</a>
+    </li>
+    <li class="">
+      <a href="09. Connect to the Ethereum Network.html">09. Connect to the Ethereum Network</a>
+    </li>
+    <li class="">
+      <a href="10. Investigate Ethereum Accounts.html">10. Investigate Ethereum Accounts</a>
+    </li>
+    <li class="">
+      <a href="11. Create a Local Blockchain.html">11. Create a Local Blockchain</a>
+    </li>
+    <li class="">
+      <a href="12. Connect to Your Local Ethereum Blockchains.html">12. Connect to Your Local Ethereum Blockchains</a>
+    </li>
+    <li class="">
+      <a href="13. Create Ethereum Transactions .html">13. Create Ethereum Transactions </a>
+    </li>
+    <li class="">
+      <a href="14. Ethereum Gas and Fees.html">14. Ethereum Gas and Fees</a>
+    </li>
+    <li class="">
+      <a href="15. Explore Ethereum Metrics.html">15. Explore Ethereum Metrics</a>
+    </li>
+    <li class="">
+      <a href="16. First Dapp Revisited.html">16. First Dapp Revisited</a>
+    </li>
+    <li class="">
+      <a href="17. Ethereum Secret Messenger.html">17. Ethereum Secret Messenger</a>
+    </li>
+    <li class="">
+      <a href="18. Improved Deployment Process.html">18. Improved Deployment Process</a>
+    </li>
+    <li class="">
+      <a href="19. DApps Next Steps.html">19. DApps Next Steps</a>
+    </li>
+    <li class="">
+      <a href="20. Optional Full Ethereum Nodes.html">20. Optional: Full Ethereum Nodes</a>
+    </li>
+    <li class="">
+      <a href="21. Lesson Recap.html">21. Lesson Recap</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">15. Explore Ethereum Metrics</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="explore-ethereum-metrics">Explore Ethereum Metrics</h1>
+<p>Now that you have some background in Ethereum, we'll take a look at Ethereum blockchain metrics. </p>
+<p>This is a great way to monitor important metrics about the Ethereum blockchain as you developing applications. Using these metrics, you'll also gain a better understanding of metrics that you can read into your own applications.</p>
+<h2 id="objectives">Objectives</h2>
+<hr />
+<p><em>Our goal is to help you do the following things.</em></p>
+<ol>
+<li>Explain a variety of network statistics relating to it's performance. </li>
+<li>Utilize the web3 library documentation to search basic Ethereum statistics from your local environment.</li>
+</ol>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/block-line-fill-small.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="ethereum-network-statistics">Ethereum Network Statistics</h2>
+<hr />
+<p>In this video, PK walks through this important information using a website <a href="https://ethstats.net/" rel="noopener noreferrer" target="_blank">ethstats.net</a> to show you some of the most important stats available about the Ethereum network.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Ethereum Network Performance</p></h3>
+  <video controls>
+  <source src="15. Ethereum Network Performance-zx-kd-xgX3s.mp4" type="video/mp4">
+
+  <track default="true" kind="subtitles" srclang="en" src="15. Ethereum Network Performance-zx-kd-xgX3s.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="resources">Resources</h2>
+<hr />
+<p>If you haven't already, feel free to go to ethstats.net to check out some of the current data about the Ethereum network.</p>
+<blockquote>
+  <p><a href="https://ethstats.net/" rel="noopener noreferrer" target="_blank">Ethstats</a></p>
+</blockquote>
+<p>If you are unfamiliar with Ether denominations, you can check out the latest denominations using the Ethereum documentation. These don't tend to change but this is a helpful resource you can use to understand what the existing denominations are. Most often you will hear us speak in terms of either Ether or Wei.</p>
+<blockquote>
+  <p><a href="http://ethdocs.org/en/latest/ether.html" rel="noopener noreferrer" target="_blank">Ether denominations</a></p>
+</blockquote>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Block Related Network Statistics</p></h3>
+  <div>
+  <p><strong>QUIZ QUESTION:</strong>: <p>Connect the following block related statistics to their definitions.</p></p>
+  <p><strong>ANSWER CHOICES:</strong></p>
+  <button class="btn btn-primary"><p>AverageBlock</p></button>
+  <button class="btn btn-primary"><p>LastBlock</p></button>
+  <button class="btn btn-primary"><p>Uncles</p></button>
+  <button class="btn btn-primary"><p>Best Block</p></button>
+  <button class="btn btn-primary"><p>Difficulty</p></button>
+
+  <br><br>
+
+  <table class="table">
+    <tr class="thead-dark table-hover">
+      <th>
+        <p>Definition</p>
+      </th>
+      <th>
+        <p>Term</p>
+      </th>
+    </tr>
+
+    <tr>
+      <td><p>The highest block number of the longest valid chain, said differently it is heavy with cumulative difficulty.</p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><p>Orphaned blocks and unlike other blockchains, in Ethereum they are included and rewarded. The dashboard displays current block uncle count and that from last 50 blocks.</p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><p>The time since the last mined block in seconds.</p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><p>Average time between two block (excl. uncles) - should display 15 seconds unless the network is really slow.</p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><p>Also known as the mining difficulty to find a new block.</p></td>
+      <td></td>
+    </tr>
+  </table>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+
+    <table class="table">
+      <tr class="thead-dark table-hover">
+        <th>
+          <p>Definition</p>
+        </th>
+        <th>
+          <p>Term</p>
+        </th>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Average time between two block (excl. uncles) - should display 15 seconds unless the network is really slow.</p>
+        </td>
+        <td>
+            <button class="btn btn-primary"><p>AverageBlock</p></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>The time since the last mined block in seconds.</p>
+        </td>
+        <td>
+            <button class="btn btn-primary"><p>LastBlock</p></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Orphaned blocks and unlike other blockchains, in Ethereum they are included and rewarded. The dashboard displays current block uncle count and that from last 50 blocks.</p>
+        </td>
+        <td>
+            <button class="btn btn-primary"><p>Uncles</p></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>The highest block number of the longest valid chain, said differently it is heavy with cumulative difficulty.</p>
+        </td>
+        <td>
+            <button class="btn btn-primary"><p>Best Block</p></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Also known as the mining difficulty to find a new block.</p>
+        </td>
+        <td>
+            <button class="btn btn-primary"><p>Difficulty</p></button>
+        </td>
+      </tr>
+    </table>
+  </details>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Gas Related Network Statistics</p></h3>
+  <div>
+  <p><strong>QUIZ QUESTION:</strong>: <p>Connect the following gas related statistics to their definitions.</p></p>
+  <p><strong>ANSWER CHOICES:</strong></p>
+  <button class="btn btn-primary"><p>GasPrice</p></button>
+  <button class="btn btn-primary"><p>GasLimitChart</p></button>
+  <button class="btn btn-primary"><p>GasSpendingChart</p></button>
+
+  <br><br>
+
+  <table class="table">
+    <tr class="thead-dark table-hover">
+      <th>
+        <p>Definition</p>
+      </th>
+      <th>
+        <p>Term</p>
+      </th>
+    </tr>
+
+    <tr>
+      <td><p>The price miners are currently accepting. Currently it is ~40 gwei, which is 40 giga wei, which is 40 billion wei. The default is 20 gwei.</p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><p>Correlated to Transactions Chart and displays the amount of spent gas.</p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><p>Dynamic in nature and shows Gas Limit for the previous blocks.</p></td>
+      <td></td>
+    </tr>
+  </table>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+
+    <table class="table">
+      <tr class="thead-dark table-hover">
+        <th>
+          <p>Definition</p>
+        </th>
+        <th>
+          <p>Term</p>
+        </th>
+      </tr>
+
+      <tr>
+        <td>
+          <p>The price miners are currently accepting. Currently it is ~40 gwei, which is 40 giga wei, which is 40 billion wei. The default is 20 gwei.</p>
+        </td>
+        <td>
+            <button class="btn btn-primary"><p>GasPrice</p></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Dynamic in nature and shows Gas Limit for the previous blocks.</p>
+        </td>
+        <td>
+            <button class="btn btn-primary"><p>GasLimitChart</p></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Correlated to Transactions Chart and displays the amount of spent gas.</p>
+        </td>
+        <td>
+            <button class="btn btn-primary"><p>GasSpendingChart</p></button>
+        </td>
+      </tr>
+    </table>
+  </details>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>General Network Statistics</p></h3>
+  <div>
+  <p><strong>QUIZ QUESTION:</strong>: <p>Connect the following network related statistics to their definitions.</p></p>
+  <p><strong>ANSWER CHOICES:</strong></p>
+  <button class="btn btn-primary"><p>AverageNetworkHashRate</p></button>
+  <button class="btn btn-primary"><p>ActiveNodes</p></button>
+  <button class="btn btn-primary"><p>BlockPropogationChart</p></button>
+
+  <br><br>
+
+  <table class="table">
+    <tr class="thead-dark table-hover">
+      <th>
+        <p>Definition</p>
+      </th>
+      <th>
+        <p>Term</p>
+      </th>
+    </tr>
+
+    <tr>
+      <td><p>For the nodes connected to the dashboard, it is how fast blocks are shared/propagated between nodes.</p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><p>The number of nodes connected to the dashboard. The total number of active connected nodes powering the network is quite high.</p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><p>Number of hashes spent by miners to find a new block. 250 TH/s is 250 trillion network hash power per second.</p></td>
+      <td></td>
+    </tr>
+  </table>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+
+    <table class="table">
+      <tr class="thead-dark table-hover">
+        <th>
+          <p>Definition</p>
+        </th>
+        <th>
+          <p>Term</p>
+        </th>
+      </tr>
+
+      <tr>
+        <td>
+          <p>Number of hashes spent by miners to find a new block. 250 TH/s is 250 trillion network hash power per second.</p>
+        </td>
+        <td>
+            <button class="btn btn-primary"><p>AverageNetworkHashRate</p></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>The number of nodes connected to the dashboard. The total number of active connected nodes powering the network is quite high.</p>
+        </td>
+        <td>
+            <button class="btn btn-primary"><p>ActiveNodes</p></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>For the nodes connected to the dashboard, it is how fast blocks are shared/propagated between nodes.</p>
+        </td>
+        <td>
+            <button class="btn btn-primary"><p>BlockPropogationChart</p></button>
+        </td>
+      </tr>
+    </table>
+  </details>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/block-line-fill-small.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="3-use-network-statistics">3. Use Network Statistics</h2>
+<hr />
+<p>Knowing the range of network statistics, you can now start utilizing some of them for yourself using the web3 library. Try using the techniques described earlier to bring this data into your own environment. Most of this can be found through searching the documentation, but here are some examples to help get you started.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <div>
+    <h4>Task Description:</h4>
+    <p>Try running each of the commands below to get a variety of network statistics using web3.</p>
+  </div>
+
+  <form>
+    <fieldset>
+      <legend>Task List:</legend>
+
+      <div>
+        <input type="checkbox" id="4db905ba-7f54-4927-9baf-a60000ca0bd9--0">
+        <label for="4db905ba-7f54-4927-9baf-a60000ca0bd9--0"><p><strong>Example 1:</strong> getGasPrice</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="4db905ba-7f54-4927-9baf-a60000ca0bd9--1">
+        <label for="4db905ba-7f54-4927-9baf-a60000ca0bd9--1"><p><strong>Example 2:</strong> Get Uncle</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="4db905ba-7f54-4927-9baf-a60000ca0bd9--2">
+        <label for="4db905ba-7f54-4927-9baf-a60000ca0bd9--2"><p><strong>Example 3:</strong> Get Block Transaction Count</p></label>
+      </div>
+    </fieldset>
+  </form>
+
+  <div>
+    <h4>Task Feedback:</h4>
+
+
+    <p>Great work reading network statistics!</p>
+  </div>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h4 id="example-1-getgasprice-found-herehttpsweb3jsreadthedocsioen10web3-ethhtmlhighlightgetgaspricegetgasprice"><strong>Example 1:</strong> getGasPrice <a href="https://web3js.readthedocs.io/en/1.0/web3-eth.html?highlight=getgasprice#getgasprice" rel="noopener noreferrer" target="_blank">found here</a></h4>
+<hr />
+<pre><code>web3.eth.getGasPrice([callback])</code></pre>
+<h4 id="example-2-get-uncle-found-herehttpsweb3jsreadthedocsioen10web3-ethhtmlhighlightblocksgetuncle"><strong>Example 2:</strong> Get Uncle <a href="https://web3js.readthedocs.io/en/1.0/web3-eth.html?highlight=blocks#getuncle" rel="noopener noreferrer" target="_blank">found here</a></h4>
+<hr />
+<pre><code>eb3.eth.getUncle(blockHashOrBlockNumber, uncleIndex [, returnTransactionObjects] [, callback])</code></pre>
+<h4 id="example-3-get-block-transaction-count-found-herehttpsweb3jsreadthedocsioen10web3-ethhtmlhighlightblocksgetblocktransactioncount"><strong>Example 3:</strong> Get Block Transaction Count <a href="https://web3js.readthedocs.io/en/1.0/web3-eth.html?highlight=blocks#getblocktransactioncount" rel="noopener noreferrer" target="_blank">found here</a></h4>
+<hr />
+<pre><code>web3.eth.getBlockTransactionCount(blockHashOrBlockNumber [, callback])</code></pre>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/block-line-fill-small.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="review">Review</h1>
+<hr />
+<p>Here we took a broad look at some important Ethereum Network Statistics.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Skill Tracker</p></h3>
+  <div>
+  <div>
+    <h4>Task Description:</h4>
+    <p>Track the objectives you've feel you've gained the skills to complete.</p>
+  </div>
+
+  <form>
+    <fieldset>
+      <legend>Task List:</legend>
+
+      <div>
+        <input type="checkbox" id="fe1907a2-49a8-4d44-aa55-a0f74dcf3fdf--0">
+        <label for="fe1907a2-49a8-4d44-aa55-a0f74dcf3fdf--0"><ol>
+<li>Explain a variety of network statistics relating to it's performance.</li>
+</ol></label>
+      </div>
+      <div>
+        <input type="checkbox" id="fe1907a2-49a8-4d44-aa55-a0f74dcf3fdf--1">
+        <label for="fe1907a2-49a8-4d44-aa55-a0f74dcf3fdf--1"><ol start="2">
+<li>Utilize the web3 library documentation to search basic Ethereum statistics from your local environment.</li>
+</ol></label>
+      </div>
+    </fieldset>
+  </form>
+
+  <div>
+    <h4>Task Feedback:</h4>
+
+
+    <p>Congratulations on gaining new skills!</p>
+  </div>
+</div>
+
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="16. First Dapp Revisited.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('15. Explore Ethereum Metrics')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

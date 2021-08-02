@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.279
+In the early days of Bitcoin and the blockchain space,
+
+00:00:03.279 --> 00:00:06.599
+members of the community were testing out different ways to take
+
+00:00:06.599 --> 00:00:10.574
+advantage of the irreversibility of blockchain to store data.
+
+00:00:10.574 --> 00:00:13.349
+They figured out that it was possible to place information in
+
+00:00:13.349 --> 00:00:18.140
+a transaction scriptSig value that didn't alter the end result of the running script.
+
+00:00:18.140 --> 00:00:20.060
+Users could take some data,
+
+00:00:20.059 --> 00:00:23.539
+hash it, and then embed the hash into the output.
+
+00:00:23.539 --> 00:00:28.039
+Now, this led to all sorts of data from photos of Nelson Mandela to
+
+00:00:28.039 --> 00:00:33.140
+prayers offered for miners to love notes being stored permanently on the blockchain.
+
+00:00:33.140 --> 00:00:35.840
+Not only did this lead to objectors arguing
+
+00:00:35.840 --> 00:00:38.305
+that it led to blockchain bloat because it was forcing
+
+00:00:38.304 --> 00:00:40.189
+full Bitcoin nodes to carry the cost of
+
+00:00:40.189 --> 00:00:43.405
+the storage for data that was not intended to carry.
+
+00:00:43.405 --> 00:00:47.545
+But, this also led to transactions with unspendable UTXO.
+
+00:00:47.545 --> 00:00:52.100
+It's because UTXO had locking scripts that could not be unlocked.
+
+00:00:52.100 --> 00:00:55.969
+Because these UTXO could never be spent or removed,
+
+00:00:55.969 --> 00:01:00.134
+Bitcoin nodes will be forced to spend memory to carry them on forever.
+
+00:01:00.134 --> 00:01:03.839
+Bitcoin core developers introduced the Opcode,
+
+00:01:03.840 --> 00:01:08.935
+OP_RETURN which allowed 40 bytes to be used in an unspendable transaction,
+
+00:01:08.935 --> 00:01:12.730
+thus, bypassing the need to store them in the UTXO set.
+
+00:01:12.730 --> 00:01:17.250
+Even though OP_RETURN outputs are still recorded on the blockchain using memory,
+
+00:01:17.250 --> 00:01:19.519
+they aren't stored in the UTXO set,
+
+00:01:19.519 --> 00:01:22.774
+so they don't bloat the UTXO memory pool.
+
+00:01:22.775 --> 00:01:27.585
+Data using OP_RETURN is saved in the script in this format,
+
+00:01:27.584 --> 00:01:30.375
+OP_RETURN followed by the data.
+
+00:01:30.375 --> 00:01:35.305
+Often, the data is some hash the results from SHA256 hashing.
+
+00:01:35.305 --> 00:01:38.600
+If you want to take a look at OP_RETURN in action,
+
+00:01:38.599 --> 00:01:42.679
+checkout the first output in this transaction with the hash listed here.
+
+00:01:42.680 --> 00:01:46.095
+You can view this yourself by connecting to a full Bitcoin node,
+
+00:01:46.094 --> 00:01:49.349
+and then running the getRawTransaction command.
+
+00:01:49.349 --> 00:01:55.274
+The data after OP_RETURN is data that's been hashed into a hexadecimal format.
+
+00:01:55.275 --> 00:01:58.320
+If we convert this hexadecimal to a string,
+
+00:01:58.319 --> 00:02:02.179
+we'll see that converts to charley loves heidi.
+
+00:02:02.180 --> 00:02:05.430
+We've seen that it's possible to embed data on the blockchain,
+
+00:02:05.430 --> 00:02:07.355
+as well as seen how it's done.
+
+00:02:07.355 --> 00:02:11.300
+But, the question is, is it ethical and should it even be done?
+
+00:02:11.300 --> 00:02:16.320
+This is a controversial subject that we'll explore more of in the next section.
+

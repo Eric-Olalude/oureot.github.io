@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.044
+Welcome to the lesson on Bitcoin Core.
+
+00:00:03.044 --> 00:00:05.429
+Bitcoin Core is a powerful set of
+
+00:00:05.429 --> 00:00:09.214
+developer tools to help you create applications on the Bitcoin blockchain.
+
+00:00:09.214 --> 00:00:11.669
+The goal of this lesson is to get you up and running
+
+00:00:11.669 --> 00:00:14.265
+with your own Bitcoin Core development environment.
+
+00:00:14.265 --> 00:00:17.155
+Throughout this lesson, we'll introduce Bitcoin Core,
+
+00:00:17.155 --> 00:00:19.350
+its purpose, and the tools it makes available
+
+00:00:19.350 --> 00:00:21.875
+to you to help build and deploy applications.
+
+00:00:21.875 --> 00:00:24.870
+Once set up, you'll start to create transactions between
+
+00:00:24.870 --> 00:00:28.170
+wallets using a Bitcoin Core test environment.
+
+00:00:28.170 --> 00:00:30.330
+You will investigate the transactions made using
+
+00:00:30.329 --> 00:00:31.949
+the online Block Explorer to get
+
+00:00:31.949 --> 00:00:34.685
+better idea of how transactions flow through the network.
+
+00:00:34.685 --> 00:00:37.650
+All this, will prepare you to complete your next project,
+
+00:00:37.649 --> 00:00:41.204
+where you'll start to make transactions using your own private blockchain.
+
+00:00:41.204 --> 00:00:43.329
+For more details on the upcoming lesson,
+
+00:00:43.329 --> 00:00:45.589
+feel free to read through the text below the video,
+
+00:00:45.590 --> 00:00:48.360
+and when you're ready, we'll see you in the lesson.
+

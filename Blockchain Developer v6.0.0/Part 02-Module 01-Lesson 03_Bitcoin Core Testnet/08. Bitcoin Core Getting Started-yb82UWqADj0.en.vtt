@@ -1,0 +1,175 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.370
+A Bitcoin Core 4 Full Node Wallet is
+
+00:00:02.370 --> 00:00:06.294
+a Bitcoin wallet that fully validates transactions and blocks.
+
+00:00:06.294 --> 00:00:08.004
+By downloading a full node,
+
+00:00:08.005 --> 00:00:10.960
+you'll be acting as a node that accepts and validates
+
+00:00:10.960 --> 00:00:14.475
+both transactions and blocks from the Bitcoin blockchain.
+
+00:00:14.474 --> 00:00:17.640
+Now being a node is different than being a minor.
+
+00:00:17.640 --> 00:00:19.660
+By downloading this wallet,
+
+00:00:19.660 --> 00:00:21.765
+you're not participating in block mining,
+
+00:00:21.765 --> 00:00:24.824
+instead you're only acting as a client that is continuously
+
+00:00:24.824 --> 00:00:28.905
+downloading and validating the blockchain using your local computer.
+
+00:00:28.905 --> 00:00:31.470
+So to download a full node wallet,
+
+00:00:31.469 --> 00:00:35.560
+go to Bitcoin.org, which I've linked down below this video.
+
+00:00:35.649 --> 00:00:41.429
+From there, scroll down to the section called "Get Started with Bitcoin."
+
+00:00:46.850 --> 00:00:49.810
+This takes you to a page where you can select
+
+00:00:49.810 --> 00:00:52.344
+a variety of ways to get started with Bitcoin.
+
+00:00:52.344 --> 00:00:55.369
+Right now, let's click on "Choose Your Wallet."
+
+00:00:56.630 --> 00:01:00.040
+From here, you can see a selection of wallets that you can
+
+00:01:00.039 --> 00:01:03.429
+download and we'll be using Bitcoin Core.
+
+00:01:03.429 --> 00:01:06.340
+From this menu, select the device and
+
+00:01:06.340 --> 00:01:09.350
+operating system that you'll be using to install the software.
+
+00:01:09.349 --> 00:01:12.609
+For me, I'll be downloading onto my Mac.
+
+00:01:15.109 --> 00:01:19.079
+Here we have the option to install or to see the source code.
+
+00:01:19.079 --> 00:01:21.495
+In this case, I'd like to install software.
+
+00:01:21.495 --> 00:01:25.545
+Now before downloading, decide the location you'd like to store your wallet.
+
+00:01:25.545 --> 00:01:27.840
+You can store this any where you like,
+
+00:01:27.840 --> 00:01:30.915
+just make sure that you have the space available on your device.
+
+00:01:30.915 --> 00:01:33.390
+Now Bitcoin Core can be quite a large file,
+
+00:01:33.390 --> 00:01:35.579
+over 100 gigabytes, which can
+
+00:01:35.579 --> 00:01:39.000
+easily overwhelm the space that you might have on your computer.
+
+00:01:39.000 --> 00:01:42.870
+Now it is possible to reduce the space taken up either using
+
+00:01:42.870 --> 00:01:47.210
+a technique known as pruning or by syncing to the test net or the reg net.
+
+00:01:47.209 --> 00:01:51.559
+Alternatively, some people would download the wallet to an external hard drive.
+
+00:01:51.560 --> 00:01:54.299
+This allows them to access the data without needing to worry that
+
+00:01:54.299 --> 00:01:57.959
+the space on the computer will fill up as the blockchain continues to grow.
+
+00:01:57.959 --> 00:01:59.714
+Once you've installed the wallet,
+
+00:01:59.715 --> 00:02:02.760
+you'll see that your computer begins syncing to the network.
+
+00:02:02.760 --> 00:02:07.005
+This is your computer taking the time to download the Bitcoin blockchain.
+
+00:02:07.004 --> 00:02:10.754
+So as progress is made, you can see the number of blocks left,
+
+00:02:10.754 --> 00:02:12.764
+when the last block was created,
+
+00:02:12.764 --> 00:02:16.229
+the progress made toward downloading the entire network,
+
+00:02:16.229 --> 00:02:21.549
+and finally how much time is left until you fully sync to the entire version of watching.
+
+00:02:21.550 --> 00:02:24.270
+As I mentioned before, if you just don't
+
+00:02:24.270 --> 00:02:26.775
+have the space available to download the entire network,
+
+00:02:26.775 --> 00:02:31.594
+you also have the option to either sync to the test network or to the regression network.
+
+00:02:31.594 --> 00:02:36.830
+We cover how to access these networks in a concept titled "Bitcoin Core Networks."
+
+00:02:36.830 --> 00:02:39.460
+If you'd like, jump to that next for
+
+00:02:39.460 --> 00:02:42.800
+an overview of how to get access to one of these networks.
+
+00:02:42.800 --> 00:02:45.925
+These do come with certain limitations but
+
+00:02:45.925 --> 00:02:48.570
+they're extremely useful depending on what your goals are.
+
+00:02:48.569 --> 00:02:52.254
+So both of these options are better than having no access to the network.
+
+00:02:52.254 --> 00:02:56.799
+So see if these could be a better fit in a case where you don't have available space.
+
+00:02:56.800 --> 00:03:00.780
+Finally, while syncing to the network can take some time,
+
+00:03:00.780 --> 00:03:03.175
+the good news is that you don't need to have
+
+00:03:03.175 --> 00:03:06.105
+all of the data in sync before you start using the wallet.
+
+00:03:06.104 --> 00:03:08.719
+Once you have any information to sync to your computer,
+
+00:03:08.719 --> 00:03:10.719
+you can start exploring it for yourself.
+
+00:03:10.719 --> 00:03:15.169
+Coming up, we'll explore our new wallet it just a little further.
+

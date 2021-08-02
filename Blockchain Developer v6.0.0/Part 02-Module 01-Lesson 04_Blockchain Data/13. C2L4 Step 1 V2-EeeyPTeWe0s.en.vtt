@@ -1,0 +1,163 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.580
+Okay. So the first thing that we want to do is to find out what UTXOs do we have in
+
+00:00:05.580 --> 00:00:11.219
+our wallet so we can use an available UTXO as an input to create an output transaction.
+
+00:00:11.220 --> 00:00:16.109
+Remember, Bitcoin transaction inputs come from the output of a previous transaction.
+
+00:00:16.109 --> 00:00:20.750
+During the transaction, these funds are transferred from one address to another address.
+
+00:00:20.750 --> 00:00:22.730
+Now let's go to a deeper console.
+
+00:00:22.730 --> 00:00:24.545
+For that you're going to go to Help,
+
+00:00:24.545 --> 00:00:27.685
+Debug window and Debug console.
+
+00:00:27.684 --> 00:00:29.199
+So I'm going to show you,
+
+00:00:29.199 --> 00:00:31.655
+let me make the screen a little bit bigger here.
+
+00:00:31.655 --> 00:00:37.355
+So I'll do this command again and the way you check what all UTXOs was irreadable,
+
+00:00:37.354 --> 00:00:39.859
+you will type the command 'listunspent'.
+
+00:00:39.859 --> 00:00:41.329
+When you type a command,
+
+00:00:41.329 --> 00:00:44.784
+listunspent, you will see an array.
+
+00:00:44.784 --> 00:00:47.929
+Now, these can be used as inputs in other transactions.
+
+00:00:47.929 --> 00:00:50.710
+As you see the result is a list of unspent outputs.
+
+00:00:50.710 --> 00:00:54.634
+It is an array of objects each describing an unspent output.
+
+00:00:54.634 --> 00:00:58.265
+It can be empty if you don't have any unspent outputs in your wallet.
+
+00:00:58.265 --> 00:01:00.710
+Let me quickly walk you through all these fields.
+
+00:01:00.710 --> 00:01:03.079
+So we'll start with this one here the txid.
+
+00:01:03.079 --> 00:01:04.459
+Let's just pick one example here.
+
+00:01:04.459 --> 00:01:06.864
+So it's an array of all UTXOs available.
+
+00:01:06.864 --> 00:01:09.159
+So if you see the txid,
+
+00:01:09.159 --> 00:01:11.734
+which is a transaction ID for this transaction.
+
+00:01:11.734 --> 00:01:16.364
+The vout is the output index of the output within this transaction.
+
+00:01:16.364 --> 00:01:18.879
+So it could be zero or one in some cases,
+
+00:01:18.879 --> 00:01:23.089
+depends upon how many outputs or UTXOs were created in this transaction.
+
+00:01:23.090 --> 00:01:25.865
+So if a transaction created two outputs,
+
+00:01:25.864 --> 00:01:28.644
+then we're going to have an array with zero and one.
+
+00:01:28.644 --> 00:01:32.390
+Address, this is the address to which the output is paid.
+
+00:01:32.390 --> 00:01:36.875
+Label; in case you gave a label to the transaction, it's going to show up here.
+
+00:01:36.875 --> 00:01:41.180
+Redeemscript, a script that is similar in function like the PubKey script.
+
+00:01:41.180 --> 00:01:43.430
+One copy if it is hashed to create
+
+00:01:43.430 --> 00:01:47.090
+the PubKey script and the other copies placed on the signature script.
+
+00:01:47.090 --> 00:01:50.990
+Of course it's a little bit complicated but you really do not need this for now.
+
+00:01:50.989 --> 00:01:52.414
+It's not that information important.
+
+00:01:52.415 --> 00:01:55.415
+But again if you want to, you can always look it up for more information.
+
+00:01:55.415 --> 00:01:57.365
+Then we have the scriptPubKey.
+
+00:01:57.364 --> 00:02:00.199
+This is the hash of the locking script that we talked about in
+
+00:02:00.200 --> 00:02:03.890
+the previous lessons and it's also called the PubKey script.
+
+00:02:03.890 --> 00:02:05.540
+Then we have the amount.
+
+00:02:05.540 --> 00:02:09.210
+This is the amount that is paid to the address in Bitcoins.
+
+00:02:09.210 --> 00:02:11.070
+Conformations, the number of
+
+00:02:11.069 --> 00:02:15.014
+confirmations that have been received for this transaction so far.
+
+00:02:15.014 --> 00:02:18.019
+Spendable, now this is set to true if
+
+00:02:18.020 --> 00:02:22.064
+the private key or the keys needed to spend this output are part of the wallet.
+
+00:02:22.064 --> 00:02:24.275
+So in my case it's true.
+
+00:02:24.275 --> 00:02:28.250
+Then we have another flag that says solvable.
+
+00:02:28.250 --> 00:02:31.465
+This is set to true if the wallet knows how to spend this output.
+
+00:02:31.465 --> 00:02:35.210
+It is set to false if the wallet does not know how to spend the output.
+
+00:02:35.210 --> 00:02:37.775
+It is ignored if the private keys are available.
+
+00:02:37.775 --> 00:02:41.590
+So now we know what UTXOs are available.
+
+00:02:41.590 --> 00:02:44.240
+In the next step I'm going to show you how we can actually
+
+00:02:44.240 --> 00:02:48.740
+use one of these UTXOs and create a rod transaction
+

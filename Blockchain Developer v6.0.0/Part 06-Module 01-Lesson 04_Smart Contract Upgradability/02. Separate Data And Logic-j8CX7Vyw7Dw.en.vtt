@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.440
+Let's look now at separating data and logic.
+
+00:00:04.440 --> 00:00:11.780
+As I mentioned, that's going to be the focus we have in this lesson.
+
+00:00:11.779 --> 00:00:16.769
+On the left here you see the data contract and on the right you see the app contract.
+
+00:00:16.769 --> 00:00:22.394
+The arrow that connects the two is unidirectional and that's important.
+
+00:00:22.394 --> 00:00:26.414
+What we are saying is that the data contract will never
+
+00:00:26.414 --> 00:00:30.419
+call out into an untrusted external contract,
+
+00:00:30.420 --> 00:00:34.650
+whereas the app contract will call in into the data contract.
+
+00:00:34.649 --> 00:00:38.759
+Now looking at this picture you should intuitively feel that well,
+
+00:00:38.759 --> 00:00:41.519
+doesn't that make it possible for anyone to have
+
+00:00:41.520 --> 00:00:44.490
+an app contract that would call into my data contract?
+
+00:00:44.490 --> 00:00:50.770
+The answer is yes. The moment you split data and app logic in this manner,
+
+00:00:50.770 --> 00:00:54.740
+you introduce the real risk of arbitrary contracts that
+
+00:00:54.740 --> 00:00:59.750
+are made to look and feel and be compatible with your data contract to call into them.
+
+00:00:59.750 --> 00:01:03.950
+The only way you can be sure that that's not going to happen is if you mitigate
+
+00:01:03.950 --> 00:01:07.915
+that in code and that's exactly what we're going to do later on.
+
+00:01:07.915 --> 00:01:10.500
+So with this setup,
+
+00:01:10.500 --> 00:01:14.495
+I would like to have you answer another quiz question.
+
+00:01:14.495 --> 00:01:20.370
+Why is it advantageous to separate data and application logic into separate contracts?
+

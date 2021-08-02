@@ -1,0 +1,151 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.540
+At Audacity, we believe in learning by doing.
+
+00:00:03.540 --> 00:00:07.049
+Our goal is to help you develop a portfolio of projects you
+
+00:00:07.049 --> 00:00:10.794
+can use to show future employers and even friends and family.
+
+00:00:10.794 --> 00:00:14.009
+In this video, we'll give a brief introduction to the projects
+
+00:00:14.009 --> 00:00:17.324
+you'll complete over the next few months as you progress through the program.
+
+00:00:17.324 --> 00:00:20.189
+This program helps you build the skills you need to create
+
+00:00:20.190 --> 00:00:23.890
+your own unique web application that uses the blockchain.
+
+00:00:23.890 --> 00:00:26.929
+This is a chance to solve a real world problem and create
+
+00:00:26.929 --> 00:00:30.425
+an application that you can build to impact the world around you.
+
+00:00:30.425 --> 00:00:32.630
+Along the way, you'll complete a series of
+
+00:00:32.630 --> 00:00:35.615
+projects that build towards completing this application.
+
+00:00:35.615 --> 00:00:39.215
+Here's a quick overview of these eight projects.
+
+00:00:39.215 --> 00:00:40.910
+In the first project,
+
+00:00:40.909 --> 00:00:43.914
+you'll create and manage your own Blockchain Identity.
+
+00:00:43.914 --> 00:00:49.109
+You'll create a profile on the blockchain and start making transactions for yourself.
+
+00:00:49.109 --> 00:00:54.274
+In Project 2, you'll build your own blockchain to store and manage data.
+
+00:00:54.274 --> 00:00:56.619
+Project 3 is all about connecting
+
+00:00:56.619 --> 00:01:00.140
+this blockchain to a web service that users can interact with.
+
+00:01:00.140 --> 00:01:02.744
+You'll build a service using NodeJS
+
+00:01:02.744 --> 00:01:05.560
+that allows you to work with blocks on your blockchain.
+
+00:01:05.560 --> 00:01:09.525
+In Project 4, you'll create an Identity and Notary Service.
+
+00:01:09.525 --> 00:01:11.995
+Here you'll learn to manage user profiles,
+
+00:01:11.995 --> 00:01:14.250
+service and store digital documents,
+
+00:01:14.250 --> 00:01:17.465
+and we'll begin exploring different blockchain service layers.
+
+00:01:17.465 --> 00:01:19.710
+In Project 5, you'll start building
+
+00:01:19.709 --> 00:01:23.439
+a decentralized application using the Ethereum platform.
+
+00:01:23.439 --> 00:01:26.370
+Ethereum is currently the world's largest platform
+
+00:01:26.370 --> 00:01:28.850
+for building decentralized applications.
+
+00:01:28.849 --> 00:01:33.714
+Here you'll jump right in and learn Solidity, Ethereum's programming language.
+
+00:01:33.715 --> 00:01:36.480
+In Projects 6, you'll dive deeper into
+
+00:01:36.480 --> 00:01:39.430
+the lower level components of your notarization web service.
+
+00:01:39.430 --> 00:01:42.600
+You will explore some of the lower level components of
+
+00:01:42.599 --> 00:01:47.019
+the blockchain and implement more advanced features in your application.
+
+00:01:47.019 --> 00:01:50.159
+In Project 7, you'll add more functionality to
+
+00:01:50.159 --> 00:01:54.369
+your notarization service to solve the issue of supply chain management.
+
+00:01:54.370 --> 00:01:58.380
+This will allow your app's users to track product owners from the time of
+
+00:01:58.379 --> 00:02:03.079
+product is originally made until it reaches the shelves for potential customers.
+
+00:02:03.079 --> 00:02:05.510
+Finally, at the end of this program,
+
+00:02:05.510 --> 00:02:07.704
+you'll complete the Capstone project.
+
+00:02:07.704 --> 00:02:11.740
+The Capstone project is the culmination of this nanodegree program.
+
+00:02:11.740 --> 00:02:14.620
+It gives you an opportunity to demonstrate everything
+
+00:02:14.620 --> 00:02:17.605
+you've learned and apply it to a real-world problem.
+
+00:02:17.604 --> 00:02:20.959
+That wraps up the projects you'll be completing for this program.
+
+00:02:20.960 --> 00:02:23.319
+After completing each of these projects,
+
+00:02:23.318 --> 00:02:26.935
+you'll have built an in-depth understanding of blockchain technologies.
+
+00:02:26.935 --> 00:02:29.500
+You'll also have a portfolio of projects to show
+
+00:02:29.500 --> 00:02:32.995
+employers as you continue your journey as a blockchain developer.
+
+00:02:32.995 --> 00:02:36.855
+So, welcome again to the blockchain developer nanodegree program.
+
+00:02:36.854 --> 00:02:41.239
+We're extremely excited to have you here and can't wait to see what you build.
+

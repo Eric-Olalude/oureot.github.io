@@ -1,0 +1,307 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.100
+Thanks to Visual Studio Code,
+
+00:00:02.100 --> 00:00:04.814
+it becomes really easy to work with
+
+00:00:04.815 --> 00:00:10.260
+the various console terminal prompts you're going to need here because for each of this,
+
+00:00:10.259 --> 00:00:13.094
+for Truffle, for the client app and the server,
+
+00:00:13.095 --> 00:00:16.260
+you're going to want to have a terminal access.
+
+00:00:16.260 --> 00:00:22.185
+So we're going to start up a new terminal here and close this out.
+
+00:00:22.184 --> 00:00:24.509
+So we can now focus on the dapp.
+
+00:00:24.510 --> 00:00:30.855
+So the dapp consists of very basic HTML code.
+
+00:00:30.855 --> 00:00:33.929
+We'll see what it looks like in the browser and just a moment,
+
+00:00:33.929 --> 00:00:41.524
+but it's a blank canvas and it has a couple of things to help get you started.
+
+00:00:41.524 --> 00:00:47.929
+I wanted to make sure that there was one read and one writer transaction
+
+00:00:47.929 --> 00:00:51.439
+scaffolded here which you can then use as boilerplate
+
+00:00:51.439 --> 00:00:55.634
+to craft all the other code that you will lead.
+
+00:00:55.634 --> 00:01:01.619
+So that starts off in index and earlier,
+
+00:01:01.619 --> 00:01:06.679
+I alluded to the fact that we are trying to use modern development techniques.
+
+00:01:06.680 --> 00:01:10.625
+So one of the things that we've built into the dapp here is
+
+00:01:10.625 --> 00:01:16.668
+webpack so that at the end of it when you are ready and even during development,
+
+00:01:16.668 --> 00:01:21.829
+webpack will hot load the page in your browser.
+
+00:01:21.829 --> 00:01:26.825
+So you don't have to go through the code save reload cycle.
+
+00:01:26.825 --> 00:01:30.534
+That's a typical thing you do in web development these days to use
+
+00:01:30.534 --> 00:01:35.959
+webpack to make your development much more seamless.
+
+00:01:35.959 --> 00:01:38.884
+So that is fully supported here and we'll do that in just a moment.
+
+00:01:38.885 --> 00:01:42.755
+So in the next file here, we have essentially,
+
+00:01:42.754 --> 00:01:46.489
+it's a proxy into the actual contract.
+
+00:01:46.489 --> 00:01:48.454
+So these are just wrapper functions.
+
+00:01:48.454 --> 00:01:51.649
+This particular one is calling in to
+
+00:01:51.650 --> 00:01:56.990
+this operational function of the smart contract to see if it's operational.
+
+00:01:56.989 --> 00:02:01.949
+This one here is a mini form where you can submit
+
+00:02:01.950 --> 00:02:08.300
+a flight and trigger the oracles in the server app.
+
+00:02:08.300 --> 00:02:10.640
+So that's a bit complicated.
+
+00:02:10.639 --> 00:02:12.989
+We'll come back to that one,
+
+00:02:12.990 --> 00:02:14.610
+once we've looked at the server.
+
+00:02:14.610 --> 00:02:18.065
+But let's first look at this contract.js file here.
+
+00:02:18.064 --> 00:02:22.625
+So this is the actual Web3 boilerplate code
+
+00:02:22.625 --> 00:02:25.264
+to get started with interacting with the contract.
+
+00:02:25.264 --> 00:02:27.829
+There is no code here for the actual
+
+00:02:27.830 --> 00:02:30.575
+calls you're going to make beyond the two that I just described.
+
+00:02:30.574 --> 00:02:37.174
+So here's the isOperational code where it is using Web3 code to call it.
+
+00:02:37.175 --> 00:02:43.175
+Now, for some of you who may have a significant experience with Web3 perhaps,
+
+00:02:43.175 --> 00:02:51.450
+keep in mind that there are major differences between version 0.20 and 1.0.
+
+00:02:51.449 --> 00:02:53.394
+So this is using 1.0,
+
+00:02:53.395 --> 00:02:57.555
+which has a lot of promise-based kind of calling approach.
+
+00:02:57.555 --> 00:03:03.290
+So when you are searching on Stack Exchange and other places when you're stuck,
+
+00:03:03.289 --> 00:03:07.144
+keep that in mind be very careful about what code you refer to.
+
+00:03:07.145 --> 00:03:10.745
+If it's 0.2, Web3 0.2 code,
+
+00:03:10.745 --> 00:03:15.289
+then it is generally only partially applicable.
+
+00:03:15.289 --> 00:03:17.060
+It may not always work.
+
+00:03:17.060 --> 00:03:22.685
+So be attentive to that little detail to avoid some frustration.
+
+00:03:22.685 --> 00:03:26.615
+Here the fetchFlightStatus as I mentioned,
+
+00:03:26.615 --> 00:03:30.395
+is calling into the app and
+
+00:03:30.395 --> 00:03:35.010
+calling the function that we have set up to trigger the oracles.
+
+00:03:35.009 --> 00:03:37.694
+So let's see how this works.
+
+00:03:37.694 --> 00:03:39.269
+In order to see that, let's go into
+
+00:03:39.270 --> 00:03:44.330
+our package json and look at the various scripts that are available.
+
+00:03:44.330 --> 00:03:50.765
+So our default npm test will test out the flight surety but we have three other options.
+
+00:03:50.764 --> 00:03:56.359
+We can run the dapp script which is going to be used for
+
+00:03:56.360 --> 00:04:00.845
+webpack hot loading and development server for
+
+00:04:00.844 --> 00:04:07.064
+the data and then we can use dapp prod in order to deploy.
+
+00:04:07.064 --> 00:04:10.340
+You probably are not going to make use of this one but part of
+
+00:04:10.340 --> 00:04:13.430
+what I wanted to make sure with this particular scaffolding,
+
+00:04:13.430 --> 00:04:19.894
+is that you have a basis for your future blockchain dapps and so build that in.
+
+00:04:19.894 --> 00:04:24.139
+So it'll essentially package everything up and make it ready for deployment.
+
+00:04:24.139 --> 00:04:31.464
+Finally, the server script is for developing the oracle component which is the servers,
+
+00:04:31.464 --> 00:04:33.979
+and that too has hot loading capability.
+
+00:04:33.980 --> 00:04:39.360
+So you don't have to do a lot of stop-start, etc.
+
+00:04:39.360 --> 00:04:40.605
+So with that done,
+
+00:04:40.605 --> 00:04:45.870
+let's go ahead and do npm run dapp,
+
+00:04:45.870 --> 00:04:55.704
+and that kicks off our webpack and starts dapp running on local-host at port 8000.
+
+00:04:55.704 --> 00:05:02.240
+So let's go over to to that which is right here all queued up and ready to go.
+
+00:05:02.240 --> 00:05:07.324
+You'll hit enter and there's the UI for our app.
+
+00:05:07.324 --> 00:05:13.685
+I'd like to keep the console open when I develop because we'll be doing a lot of that.
+
+00:05:13.685 --> 00:05:19.975
+So you can see the results of the call that's already been made to the contract.
+
+00:05:19.975 --> 00:05:23.735
+It called the operational status and return true.
+
+00:05:23.735 --> 00:05:28.245
+So that means our code that is right here
+
+00:05:28.245 --> 00:05:34.819
+is correctly working and working in concert with Ganache.
+
+00:05:34.819 --> 00:05:36.949
+In fact, let's do this one more time.
+
+00:05:36.949 --> 00:05:42.349
+Let's go ahead here and restart Ganache so we can
+
+00:05:42.350 --> 00:05:48.850
+see the the transaction come in, and go back.
+
+00:05:49.310 --> 00:05:55.459
+Actually, I'll need to do a migrate because the contracts will have gone away.
+
+00:05:55.459 --> 00:05:57.274
+So let's do that.
+
+00:05:57.274 --> 00:05:59.539
+That's actually something that is
+
+00:05:59.540 --> 00:06:01.985
+going to be an important part of your development cycle.
+
+00:06:01.985 --> 00:06:07.310
+Be hyper-aware of what version of your contract is currently
+
+00:06:07.310 --> 00:06:13.220
+deployed to Ganache and when hitting that restart might have caused it to be wiped out.
+
+00:06:13.220 --> 00:06:20.480
+And so you might spend some time scratching your head about why your dapp code is not
+
+00:06:20.480 --> 00:06:23.420
+working when you made no change to the smart contract and it's
+
+00:06:23.420 --> 00:06:29.319
+because of the fact that Ganache is mutable.
+
+00:06:31.939 --> 00:06:38.040
+So we got that deployed again and because it's hot loading everything,
+
+00:06:38.040 --> 00:06:43.100
+you can see here that this status is true.
+
+00:06:43.100 --> 00:06:50.370
+We'll just go ahead and go into this code here,
+
+00:06:50.370 --> 00:06:53.340
+and make a tiny little change.
+
+00:06:53.339 --> 00:06:57.649
+Before I do that, I'll bring up this here.
+
+00:06:57.649 --> 00:07:00.019
+So we'll make a tiny change and and save,
+
+00:07:00.019 --> 00:07:03.639
+that compiled and now,
+
+00:07:03.639 --> 00:07:07.115
+since it was a read, there's no transaction there.
+
+00:07:07.115 --> 00:07:08.329
+In a few minutes,
+
+00:07:08.329 --> 00:07:14.404
+we'll go ahead and call the fetchFlightStatus and we'll see this code being exercised.
+
+00:07:14.404 --> 00:07:19.519
+So what I have here is of an input field for typing in
+
+00:07:19.519 --> 00:07:28.250
+a flight number and then a button that triggers the journey to the oracles.
+
+00:07:28.250 --> 00:07:31.949
+So that's the lay of the land for the client dapp,
+
+00:07:31.949 --> 00:07:34.709
+now let's go and take a look at the server
+

@@ -1,0 +1,142 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.129
+As you can probably tell,
+
+00:00:02.129 --> 00:00:06.774
+there's a lot more behind what makes a Blockchain work besides the Blockchain.
+
+00:00:06.775 --> 00:00:11.405
+Getting accurate information onto the Blockchain is the goal of the entire system,
+
+00:00:11.404 --> 00:00:15.774
+but it's helpful to understand it as a single component of this larger system.
+
+00:00:15.775 --> 00:00:19.010
+In this video, we'll go over what a Blockchain is,
+
+00:00:19.010 --> 00:00:24.890
+how it's created, and some ways it has been made to ensure a secure and accurate dataset.
+
+00:00:24.890 --> 00:00:27.910
+A Blockchain is a shared digital ledger that
+
+00:00:27.910 --> 00:00:31.365
+contains the entire history of transactions made on the network.
+
+00:00:31.364 --> 00:00:34.210
+It's an accumulation of linked blocks joined
+
+00:00:34.210 --> 00:00:37.755
+together by hash values that have been created over time.
+
+00:00:37.755 --> 00:00:42.250
+All information on a Blockchain is permanent and can't be changed.
+
+00:00:42.250 --> 00:00:44.935
+This means that the data is immutable.
+
+00:00:44.935 --> 00:00:46.539
+When using a Blockchain,
+
+00:00:46.539 --> 00:00:49.560
+you have a permanent unchanging history of information,
+
+00:00:49.560 --> 00:00:52.469
+which is useful for many different applications.
+
+00:00:52.469 --> 00:00:54.240
+To construct a Blockchain,
+
+00:00:54.240 --> 00:00:55.945
+you need two main things;
+
+00:00:55.945 --> 00:00:57.965
+blocks and hash values.
+
+00:00:57.965 --> 00:01:03.565
+As we've seen, every block contains its own hash plus the hash of the previous block.
+
+00:01:03.564 --> 00:01:06.799
+These hash values chain the blocks together in order from
+
+00:01:06.799 --> 00:01:11.009
+the most recent block made all the way to the first block ever created.
+
+00:01:11.010 --> 00:01:13.160
+The fact that these blocks are connected by
+
+00:01:13.159 --> 00:01:16.484
+hash values gives them some pretty interesting qualities.
+
+00:01:16.484 --> 00:01:19.040
+First, we know that if we change the data on
+
+00:01:19.040 --> 00:01:22.350
+a block that it will create a new hash value for that block.
+
+00:01:22.349 --> 00:01:25.959
+That will invalidate the block and we'll know it's been changed.
+
+00:01:25.959 --> 00:01:29.375
+But what happens when we look at that block as part of a chain?
+
+00:01:29.375 --> 00:01:32.290
+Well, since the hash for the block changes,
+
+00:01:32.290 --> 00:01:36.025
+it also changes the hash for this block that exists on the next block.
+
+00:01:36.025 --> 00:01:40.109
+This changes the data in that block changing the hash value,
+
+00:01:40.109 --> 00:01:42.825
+and now this gets invalidated too.
+
+00:01:42.825 --> 00:01:45.810
+This change of hash values runs all the way down
+
+00:01:45.810 --> 00:01:49.290
+the set of blocks effectively breaking the entire chain.
+
+00:01:49.290 --> 00:01:54.785
+You can identify any block on the chain by where it is located using its block number.
+
+00:01:54.784 --> 00:01:59.094
+The block number is just the number four where on the chain that block falls.
+
+00:01:59.094 --> 00:02:01.689
+The third block will have a block number three,
+
+00:02:01.689 --> 00:02:03.474
+the second number two,
+
+00:02:03.474 --> 00:02:06.229
+and the first block will be called block number one.
+
+00:02:06.230 --> 00:02:09.485
+The first block on the chain also goes by another name.
+
+00:02:09.485 --> 00:02:11.875
+It is known as the genesis block,
+
+00:02:11.875 --> 00:02:15.694
+and when it comes to the block chain and what it actually is, that's really it.
+
+00:02:15.694 --> 00:02:18.370
+The system surrounding the development, updates,
+
+00:02:18.370 --> 00:02:22.925
+and ideas about how to best support the chain is where it can get more complicated.
+
+00:02:22.925 --> 00:02:26.550
+As we continue discussing these topics about the Blockchain,
+
+00:02:26.550 --> 00:02:31.140
+keep in mind that the Blockchain itself is just a single component within all of this,
+
+00:02:31.139 --> 00:02:33.809
+where the transaction history is eventually stored.
+

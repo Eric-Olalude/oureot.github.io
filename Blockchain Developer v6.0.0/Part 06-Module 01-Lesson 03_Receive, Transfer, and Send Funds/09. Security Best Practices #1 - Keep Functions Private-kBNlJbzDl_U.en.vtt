@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.995
+We're now going to review a list of ten security best practices.
+
+00:00:04.995 --> 00:00:07.500
+While we are discussing these best practices in
+
+00:00:07.500 --> 00:00:10.125
+the context of payments, receiving, transferring,
+
+00:00:10.125 --> 00:00:13.095
+sending, keep in mind that these are
+
+00:00:13.095 --> 00:00:16.875
+generally accepted good practices for smart contracts.
+
+00:00:16.875 --> 00:00:21.824
+So it's not necessary that you only use these in the context of payments.
+
+00:00:21.824 --> 00:00:26.265
+You should as a rule use these for all your smart contracts.
+
+00:00:26.265 --> 00:00:28.500
+Let's start with number one.
+
+00:00:28.500 --> 00:00:34.170
+Keep functions private or internal unless they are needed outside your contract.
+
+00:00:34.170 --> 00:00:36.210
+When it comes to smart contracts,
+
+00:00:36.210 --> 00:00:40.679
+the scope of your variables and functions is very important.
+
+00:00:40.679 --> 00:00:45.140
+While all data on the block chain is public,
+
+00:00:45.140 --> 00:00:49.219
+you want to make sure that certain functions especially those that handle
+
+00:00:49.219 --> 00:00:51.920
+payment transactions are either private or
+
+00:00:51.920 --> 00:00:56.270
+internal unless they are required to be called by an external entity.
+
+00:00:56.270 --> 00:01:00.055
+By keeping them private or internal you can ensure that
+
+00:01:00.054 --> 00:01:05.799
+an external party cannot inadvertently call that function and cause harm.
+

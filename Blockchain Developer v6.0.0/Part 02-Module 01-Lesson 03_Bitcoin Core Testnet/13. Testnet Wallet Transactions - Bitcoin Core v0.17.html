@@ -1,0 +1,405 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Testnet Wallet Transactions - Bitcoin Core v0.17:</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Bitcoin Core Testnet</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Lesson Introduction.html">01. Lesson Introduction</a>
+    </li>
+    <li class="">
+      <a href="02. Bitcoin Core Motivation.html">02. Bitcoin Core Motivation</a>
+    </li>
+    <li class="">
+      <a href="03. Bitcoin Core - Overview.html">03. Bitcoin Core - Overview</a>
+    </li>
+    <li class="">
+      <a href="04. Bitcoin Core - Networks.html">04. Bitcoin Core - Networks</a>
+    </li>
+    <li class="">
+      <a href="05. Mainnet vs Testnet.html">05. Mainnet vs Testnet</a>
+    </li>
+    <li class="">
+      <a href="06. Testnet vs Regression Testing.html">06. Testnet vs Regression Testing</a>
+    </li>
+    <li class="">
+      <a href="07. Data Warnings and Bitcoin.config Setup.html">07. Data Warnings and Bitcoin.config Setup</a>
+    </li>
+    <li class="">
+      <a href="08. Bitcoin Core - Getting Started.html">08. Bitcoin Core - Getting Started</a>
+    </li>
+    <li class="">
+      <a href="09. Bitcoin Core - Wallet Overview.html">09. Bitcoin Core - Wallet Overview</a>
+    </li>
+    <li class="">
+      <a href="10. Bitcoin Core - Network Demonstration.html">10. Bitcoin Core - Network Demonstration</a>
+    </li>
+    <li class="">
+      <a href="11. Get Testnet Coins.html">11. Get Testnet Coins</a>
+    </li>
+    <li class="">
+      <a href="12. Testnet Wallet Transactions.html">12. Testnet Wallet Transactions</a>
+    </li>
+    <li class="">
+      <a href="13. Testnet Wallet Transactions - Bitcoin Core v0.17.html">13. Testnet Wallet Transactions - Bitcoin Core v0.17:</a>
+    </li>
+    <li class="">
+      <a href="14. Block Explorer.html">14. Block Explorer</a>
+    </li>
+    <li class="">
+      <a href="15. End of Lesson Motivation.html">15. End of Lesson Motivation</a>
+    </li>
+    <li class="">
+      <a href="16. Lesson Recap.html">16. Lesson Recap</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">13. Testnet Wallet Transactions - Bitcoin Core v0.17:</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="-bitcoin-core-v017-instructions"># Bitcoin Core v0.17 Instructions</h2>
+<p><strong>If you are not using Bitcoin Core Version 0.17, you can skip this section.</strong></p>
+<p>In this section, we will go over:</p>
+<ul>
+<li>Getting Started with the Debug Console</li>
+<li>Basic Debug Console Commands</li>
+<li>Creating Separate Wallets</li>
+<li>Transferring Coins</li>
+</ul>
+<p>We're going through these steps in this version because features have changed in the software since the original recording of the lesson video.  </p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/8.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p><strong>Note 1:</strong> These are instructions to transfer money between wallets, if you are using Bitcoin core 0.17.</p>
+<p>** Note 2: **By default, When you open up the Bitcoin software, it creates a default wallet for you.</p>
+<p>** Note 3:** Since we are working on the same software right now, these instructions will show you how to make separate wallets using your same Bitcoin software running.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="-getting-started-with-the-debug-console"># Getting Started with the Debug Console</h2>
+<p>After installation, you can now access the debug console.</p>
+<h3 id="steps-to-open-the-debug-console">Steps to Open the Debug Console</h3>
+<ul>
+<li>Open your Bitcoin software</li>
+<li>Go to HELP</li>
+<li>Select Debug Window </li>
+<li>Click Console</li>
+</ul>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="-debug-console-commands"># Debug Console Commands</h2>
+<p>You can type help to look at the commands available to you in the console.<br />
+Type <code>help</code> </p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/7.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="-create-separate-wallets"># Create Separate Wallets</h2>
+<p>In this section, we’ll create 2 wallets so that we can interact between them.</p>
+<p>** Command: ** The command used to create a wallet is: ** createWallet  &lt; walletName >**</p>
+<p>Run this command and choose a name for your wallet. Once you do this, view the top of the screen to see that a wallet has been created for you.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/5.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/3.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>Next, try creating a second wallet. You’ll use this to interact with the first wallet you created.</p>
+<p>**NOTE: **  **createWallet ** also creates a ** walletName.dat ** file for you. You can go to this wallet by clicking on it.</p>
+<h2 id="-wallet-debug-console-commands"># Wallet Debug Console Commands</h2>
+<p>Now that we have our wallets, we can use the debug console to get more information about each of them. Try running each of these commands to see information about the wallets you created.</p>
+<ul>
+<li><p><strong>getWalletInfo</strong>: Gives the wallet information of the currently loaded wallet. </p></li>
+<li><p><strong>loadWallet</strong>: Loads the contents of an existing wallet.</p></li>
+</ul>
+<h2 id="-main-screen"># Main Screen</h2>
+<p>After running a few commands in the console, navigate back to the main screen.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/9.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>When you create a wallet, the bitcoin core software only creates an empty wallet. <br />
+No addresses are created for you.</p>
+<p>*You’ll need to create a wallet address yourself.  *</p>
+<ul>
+<li>Click on the <strong>Receive</strong> tab to create an address.</li>
+<li>Now click on ** Request Payment**. You can just leave this all empty for now.</li>
+<li>Do this for each wallet.</li>
+</ul>
+<p>You should now have an account address for each wallet.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/2.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="-transfer-coins"># Transfer Coins</h2>
+<p>*After creating addresses for each of the wallets, we can now transfer coins between them. *</p>
+<p><strong>NOTE:</strong> To transfer coins, you’ll need to have coins available in the wallet you created. You can get coins into your wallet by using any available testnet faucet. </p>
+<ul>
+<li>Use the **Send **tab to transfer money from one wallet to another.</li>
+</ul>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/1.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="-conclusion"># Conclusion</h2>
+<p>At this point you have set up 2 wallets and successfully transferred coins between them using the testnet. </p>
+<p>You can continue transferring coins and investigating these wallets using the bitcoin core software and debug console. </p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="14. Block Explorer.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('13. Testnet Wallet Transactions - Bitcoin Core v0.17:')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

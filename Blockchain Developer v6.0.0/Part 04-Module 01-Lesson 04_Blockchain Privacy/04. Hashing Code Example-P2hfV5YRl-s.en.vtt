@@ -1,0 +1,214 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.020 --> 00:00:02.685
+Let me explain in the last video.
+
+00:00:02.685 --> 00:00:05.370
+Using cryptographic hashing, it is literally
+
+00:00:05.370 --> 00:00:09.074
+impossible to have two pre-images create the same hash.
+
+00:00:09.074 --> 00:00:10.814
+Let us consider a scenario.
+
+00:00:10.814 --> 00:00:13.605
+So let's say Alice creates a legal document
+
+00:00:13.605 --> 00:00:16.830
+detailing how she would like to distribute her personal assets.
+
+00:00:16.829 --> 00:00:20.849
+So she wants to record this information to the blockchain for safety,
+
+00:00:20.850 --> 00:00:23.490
+but does not want to reveal her net worth,
+
+00:00:23.489 --> 00:00:25.934
+or even her account addresses to the public.
+
+00:00:25.934 --> 00:00:30.015
+To do this, she computes the shot to 56 hash over document.
+
+00:00:30.015 --> 00:00:32.835
+I'm going to show you in the code exactly how this is going on.
+
+00:00:32.835 --> 00:00:35.520
+Then, she records the hash to the block chain.
+
+00:00:35.520 --> 00:00:39.150
+Then, she sends the complete document to Bob her beneficiary.
+
+00:00:39.149 --> 00:00:41.129
+When Bob receives this document,
+
+00:00:41.130 --> 00:00:42.550
+he hashes it back again,
+
+00:00:42.549 --> 00:00:45.244
+to check if it is the same as Alice's hash.
+
+00:00:45.244 --> 00:00:47.539
+If both the hashes are equal, he knows,
+
+00:00:47.539 --> 00:00:50.405
+for sure, that he has a legitimate document.
+
+00:00:50.405 --> 00:00:51.740
+In the end of this code,
+
+00:00:51.740 --> 00:00:52.910
+I'm also going to show you,
+
+00:00:52.909 --> 00:00:56.644
+imagine that someone else viewed or received a fake document.
+
+00:00:56.645 --> 00:00:59.945
+In this case, the two hashes will not be equal, right?
+
+00:00:59.945 --> 00:01:03.619
+Hence, the person will easily know that this document is not valid.
+
+00:01:03.619 --> 00:01:05.329
+So, let's look at this example.
+
+00:01:05.329 --> 00:01:08.135
+The first thing that you'll need in this is,
+
+00:01:08.135 --> 00:01:09.350
+you'll have to do npm
+
+00:01:09.349 --> 00:01:15.094
+install js-sha256 using the hashing library that we're going to need.
+
+00:01:15.094 --> 00:01:17.224
+So, again, you get it as sha256,
+
+00:01:17.224 --> 00:01:19.549
+so you'll have to do an npm module.
+
+00:01:19.549 --> 00:01:22.009
+So, this is the document information.
+
+00:01:22.010 --> 00:01:24.859
+Again, this is just some random information that I'm giving.
+
+00:01:24.859 --> 00:01:27.189
+You're going to put this in a variable called document,
+
+00:01:27.189 --> 00:01:28.504
+and then we're going to hash it.
+
+00:01:28.504 --> 00:01:31.699
+Then the hash is stored in the variable hash.
+
+00:01:31.700 --> 00:01:33.950
+Then, I'm just going to hash, saying,
+
+00:01:33.950 --> 00:01:35.689
+this is the hash of the document.
+
+00:01:35.689 --> 00:01:38.659
+Then, imagine a Bob receives this document,
+
+00:01:38.659 --> 00:01:40.909
+and he's going to hash it back again.
+
+00:01:40.909 --> 00:01:42.799
+So when he hashes it back again,
+
+00:01:42.799 --> 00:01:46.069
+and he's going to try to compare it to the hash that Alice had.
+
+00:01:46.069 --> 00:01:48.484
+If it is equal, then he can,
+
+00:01:48.484 --> 00:01:51.314
+he's of course going to mean that the document is legitimate,
+
+00:01:51.314 --> 00:01:53.474
+or it's a fake document.
+
+00:01:53.474 --> 00:01:56.134
+In case, let's say, the information changes.
+
+00:01:56.135 --> 00:01:59.105
+If you see the variable information fake has something else
+
+00:01:59.105 --> 00:02:02.990
+now than the initial document, variable what it had.
+
+00:02:02.989 --> 00:02:04.354
+So when that happens,
+
+00:02:04.355 --> 00:02:07.460
+since they both are going to be having different hashes.
+
+00:02:07.459 --> 00:02:09.555
+So when this is sha,
+
+00:02:09.555 --> 00:02:11.140
+and a hash is created,
+
+00:02:11.139 --> 00:02:13.834
+this is not going to equal to the hash for the Alice.
+
+00:02:13.835 --> 00:02:15.860
+Of course, that's a very simple way of figuring
+
+00:02:15.860 --> 00:02:19.535
+out that these two documents are not the same.
+
+00:02:19.534 --> 00:02:22.414
+Now, again, this is of course the whole concept of hashing,
+
+00:02:22.414 --> 00:02:26.194
+that two things who have the same value will always create a same hash.
+
+00:02:26.194 --> 00:02:28.430
+Something that does not have the same value,
+
+00:02:28.430 --> 00:02:30.784
+or the same data, is going to have a different hash.
+
+00:02:30.784 --> 00:02:36.120
+So let me walk you through combining these files and see exactly what's going on.
+
+00:02:37.780 --> 00:02:40.400
+So let's run our file.
+
+00:02:40.400 --> 00:02:42.629
+If you see the first one, it says,
+
+00:02:42.629 --> 00:02:45.719
+Alice hashes the document and then it outputs the hash here.
+
+00:02:45.719 --> 00:02:48.000
+Then it says document is legitimate.
+
+00:02:48.000 --> 00:02:50.759
+The second time, it says it's a fake document.
+
+00:02:50.759 --> 00:02:55.829
+So, the first console.log is coming from my this information,
+
+00:02:55.830 --> 00:02:59.360
+and it's since, it's the hash is equal to the document initial hash.
+
+00:02:59.360 --> 00:03:02.630
+So it's going to say it's valid because every time you hash it,
+
+00:03:02.629 --> 00:03:05.000
+same information is going to create the same hash.
+
+00:03:05.000 --> 00:03:06.979
+In this case, it's not the same hash.
+
+00:03:06.979 --> 00:03:09.965
+So, again, this is the whole concept of hashing, that,
+
+00:03:09.965 --> 00:03:14.340
+literary impossible to have two pre-images create the same hash.
+

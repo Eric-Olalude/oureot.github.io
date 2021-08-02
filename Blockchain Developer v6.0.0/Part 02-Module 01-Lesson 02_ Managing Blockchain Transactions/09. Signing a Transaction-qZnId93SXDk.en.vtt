@@ -1,0 +1,286 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.669
+We know a wallet can help us make transactions and it can manage many transactions,
+
+00:00:05.669 --> 00:00:11.055
+how do we ensure that we can trust a transaction that is listed in our wallet?
+
+00:00:11.055 --> 00:00:13.960
+This is done using a signature.
+
+00:00:13.960 --> 00:00:17.040
+A digital signature establishes a proof of
+
+00:00:17.040 --> 00:00:20.045
+ownership for each transaction on the blockchain.
+
+00:00:20.045 --> 00:00:25.175
+Earlier, we discussed wallet types and management of private and public keys.
+
+00:00:25.175 --> 00:00:28.910
+We discussed the process used to secure wallet address ownership,
+
+00:00:28.910 --> 00:00:30.355
+the various ways to manage
+
+00:00:30.355 --> 00:00:34.160
+private and public keys and how this relates to wallet security.
+
+00:00:34.160 --> 00:00:38.415
+We also discussed how the wallet process establishes trust.
+
+00:00:38.415 --> 00:00:42.420
+Wallets however are only a part of the equation.
+
+00:00:42.420 --> 00:00:45.685
+We must also ensure that transactions are secure.
+
+00:00:45.685 --> 00:00:49.130
+Why would somebody trusts a transaction on the blockchain?
+
+00:00:49.130 --> 00:00:52.040
+The transaction starts broadcasting to the network
+
+00:00:52.040 --> 00:00:54.970
+when a wallet first signs the transaction.
+
+00:00:54.970 --> 00:00:57.310
+Like a pen and paper check,
+
+00:00:57.310 --> 00:00:59.490
+Bitcoin requires a signature from
+
+00:00:59.490 --> 00:01:02.975
+the sender before the transaction is submitted to the network.
+
+00:01:02.975 --> 00:01:06.269
+In Bitcoin, this is done using a digital signature.
+
+00:01:06.269 --> 00:01:11.310
+So, how does this proof of ownership help establish security on the blockchain?
+
+00:01:11.310 --> 00:01:15.980
+Well, imagine if sending Bitcoin were easy as sending an email,
+
+00:01:15.980 --> 00:01:19.960
+what's stopping a thief from sending your Bitcoin to other people?
+
+00:01:19.960 --> 00:01:22.090
+That's what signatures are for.
+
+00:01:22.090 --> 00:01:24.960
+They ensure that it's actually you who's sending Bitcoin
+
+00:01:24.960 --> 00:01:28.140
+by signing the transaction with your own personal identity.
+
+00:01:28.140 --> 00:01:33.200
+This signature is created using a Bitcoin wallet address.
+
+00:01:33.200 --> 00:01:36.300
+The wallet address is similar to a bank account number.
+
+00:01:36.300 --> 00:01:39.225
+It's a unique address that belongs to you.
+
+00:01:39.225 --> 00:01:42.145
+This wallet address is linked to a private key.
+
+00:01:42.145 --> 00:01:45.570
+So, instead of a signature on a paper check,
+
+00:01:45.570 --> 00:01:49.080
+you'll use your private key to perform a transaction.
+
+00:01:49.080 --> 00:01:51.030
+Once a transaction is signed,
+
+00:01:51.030 --> 00:01:55.675
+it goes from the sender to the receiver as a transaction message.
+
+00:01:55.675 --> 00:01:59.625
+In Bitcoin, the transaction message is broadcasted to the chain
+
+00:01:59.625 --> 00:02:04.210
+as an unspent transaction output known as UTXO.
+
+00:02:04.210 --> 00:02:11.855
+Only these unspent transaction outputs can be used as inputs to an accepted transaction.
+
+00:02:11.855 --> 00:02:15.575
+Each of these unspent transaction output contains conditions
+
+00:02:15.575 --> 00:02:19.250
+regarding the proof of ownership to transact with those funds.
+
+00:02:19.250 --> 00:02:23.345
+These proofs of ownership are derived from your private key.
+
+00:02:23.345 --> 00:02:27.725
+Let's break this down by starting with transaction inputs.
+
+00:02:27.725 --> 00:02:30.800
+Transaction inputs are considered inbound
+
+00:02:30.800 --> 00:02:34.440
+payments that contribute to funding your wallet.
+
+00:02:34.440 --> 00:02:41.005
+Imagine, you have a wallet with a zero balance and want to send Bitcoin to your friend.
+
+00:02:41.005 --> 00:02:45.265
+The first problem you'll encounter is a lack of funds.
+
+00:02:45.265 --> 00:02:52.645
+You'll need to fund your wallet and perform a transfer of value using transaction inputs.
+
+00:02:52.645 --> 00:02:54.395
+To get these funds,
+
+00:02:54.395 --> 00:02:58.430
+you can obtain them from several sources at different times.
+
+00:02:58.430 --> 00:03:00.955
+Each transaction that is transferred to
+
+00:03:00.955 --> 00:03:04.150
+your wallet is considered a new transaction input.
+
+00:03:04.150 --> 00:03:06.715
+Each transaction input has a condition.
+
+00:03:06.715 --> 00:03:10.240
+The transaction input will need to be converted to
+
+00:03:10.240 --> 00:03:15.000
+an output which contains the condition to prove ownership using your private key.
+
+00:03:15.000 --> 00:03:18.780
+With your private key, you can sign your transaction with
+
+00:03:18.780 --> 00:03:24.605
+your digital signature proving you own the address containing the transaction inputs.
+
+00:03:24.605 --> 00:03:29.450
+A wallet must contain funds to be able to produce valid transaction outputs.
+
+00:03:29.450 --> 00:03:33.930
+This allows you to transfer value on the blockchain to your friend.
+
+00:03:33.930 --> 00:03:36.870
+Let's imagine that your wallet obtained
+
+00:03:36.870 --> 00:03:41.780
+three transaction inputs with the following values 0.25,
+
+00:03:41.780 --> 00:03:45.690
+0.45, 0.33 of a Bitcoin,
+
+00:03:45.690 --> 00:03:49.590
+your wallet is now worth 1.03 Bitcoin.
+
+00:03:49.590 --> 00:03:53.374
+All right. If you obtain three transaction inputs,
+
+00:03:53.374 --> 00:03:56.890
+creating a total value of 1.03 Bitcoin,
+
+00:03:56.890 --> 00:03:59.530
+how do we make sure to pay your friend,
+
+00:03:59.530 --> 00:04:05.885
+pay the transaction fee and obtain 0.027 bitcoin change back?
+
+00:04:05.885 --> 00:04:10.950
+Now, that's a great question and is the idea behind transaction outputs.
+
+00:04:10.950 --> 00:04:13.280
+To create a transaction output,
+
+00:04:13.280 --> 00:04:16.825
+you need to have the sum of the transaction inputs
+
+00:04:16.825 --> 00:04:20.815
+which are equal to or greater than the value you are sending,
+
+00:04:20.815 --> 00:04:25.315
+Next, we will include the miners fee into the outbound transaction.
+
+00:04:25.315 --> 00:04:29.390
+Remember, that miners transaction fees motivates miners
+
+00:04:29.390 --> 00:04:33.805
+on the network to include your transaction into the next block on the chain.
+
+00:04:33.805 --> 00:04:39.620
+Basically, any amount greater than one bitcoin will go to the miners transaction fee.
+
+00:04:39.620 --> 00:04:43.640
+Depending on the organization of your transaction inputs,
+
+00:04:43.640 --> 00:04:47.360
+you might be transmitting more value than you prefer.
+
+00:04:47.360 --> 00:04:51.260
+In the case of you sending one Bitcoin to your friend,
+
+00:04:51.260 --> 00:04:53.555
+you would expect to get changed back.
+
+00:04:53.555 --> 00:04:55.830
+Good news, we can do that.
+
+00:04:55.830 --> 00:05:00.050
+Just like the way we created a transaction from you to your friend,
+
+00:05:00.050 --> 00:05:02.895
+we could create a new transaction including
+
+00:05:02.895 --> 00:05:06.055
+outputs for change to be returned back to you.
+
+00:05:06.055 --> 00:05:11.860
+Here, you would create a transaction output,1.003 to your friend.
+
+00:05:11.860 --> 00:05:17.075
+This output includes miners transaction fees of 0.003.
+
+00:05:17.075 --> 00:05:21.000
+The remainder of your input transaction will now be configured as
+
+00:05:21.000 --> 00:05:26.610
+a new output for change which will return 0.027 Bitcoin back to your wallet.
+
+00:05:26.610 --> 00:05:29.715
+Now that we understand how a transaction works,
+
+00:05:29.715 --> 00:05:33.135
+utilizing you UTXO, the next step is to
+
+00:05:33.135 --> 00:05:36.965
+transmit this transaction be included in the blockchain mempool.
+
+00:05:36.965 --> 00:05:40.165
+To recap, you learn the purpose of proving
+
+00:05:40.165 --> 00:05:44.170
+address ownership by signing a transaction with your private key.
+
+00:05:44.170 --> 00:05:50.655
+Finally, you learned how transaction inputs and outputs have conditions called proofs.
+
+00:05:50.655 --> 00:05:54.890
+These proofs are valid unspent transaction outputs known
+
+00:05:54.890 --> 00:05:59.895
+as UTXO to transfer value from one wallet address to another.
+
+00:05:59.895 --> 00:06:02.910
+These are all extremely important concepts that allow
+
+00:06:02.910 --> 00:06:06.600
+users to trust a transaction on the blockchain.
+

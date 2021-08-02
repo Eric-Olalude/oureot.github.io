@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.990
+In a previous lesson,
+
+00:00:01.990 --> 00:00:06.470
+you learned to discover a blocks content using Bitcoin Core.
+
+00:00:06.469 --> 00:00:11.125
+We navigated down the path of what a blockchain block looks like.
+
+00:00:11.125 --> 00:00:15.995
+Each block contains a header describing the core information about the block.
+
+00:00:15.994 --> 00:00:20.585
+Next, we have the body of the block which contains the data.
+
+00:00:20.585 --> 00:00:26.800
+Each block chain platform has a data model which is restricted by the platform protocol.
+
+00:00:26.800 --> 00:00:29.810
+We are now going to navigate down the path of creating
+
+00:00:29.809 --> 00:00:34.009
+our own simple blockchain which will allow us to navigate creatively,
+
+00:00:34.009 --> 00:00:37.019
+past transactional information within the block's body.
+
+00:00:37.020 --> 00:00:40.765
+We will have the ability to control our own data model.
+
+00:00:40.765 --> 00:00:45.420
+The important thing is that the blocks are chained together using hashes.
+
+00:00:45.420 --> 00:00:50.480
+Let's start with the creation of our blockchain block data model.
+

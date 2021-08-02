@@ -1,0 +1,220 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.000
+In this section, we'll briefly go over a tool you might
+
+00:00:03.000 --> 00:00:05.804
+remember from earlier in the program, OpenZeppelin.
+
+00:00:05.804 --> 00:00:08.339
+OpenZeppelin is a battle tested framework of
+
+00:00:08.339 --> 00:00:11.955
+reusable smart contracts for Ethereum and a few other platforms.
+
+00:00:11.955 --> 00:00:14.730
+Their goal is to reduce the risk of vulnerabilities in
+
+00:00:14.730 --> 00:00:19.065
+your applications by using standard tested community reviewed code.
+
+00:00:19.065 --> 00:00:22.990
+This tool will become incredibly useful as you make contracts by helping you
+
+00:00:22.989 --> 00:00:27.344
+utilize code that has been tested and refined over time by security experts.
+
+00:00:27.344 --> 00:00:28.919
+If you haven't already,
+
+00:00:28.920 --> 00:00:30.330
+now's a great time to run through
+
+00:00:30.329 --> 00:00:33.254
+the installation process to start getting familiar with it.
+
+00:00:33.255 --> 00:00:37.080
+You can find directions on the homepage by clicking, "Get Started".
+
+00:00:37.079 --> 00:00:39.149
+If you're interested, you can scroll down
+
+00:00:39.149 --> 00:00:41.489
+the page to view a link to join their Slack channel.
+
+00:00:41.490 --> 00:00:43.310
+This is an easy way to stay involved in
+
+00:00:43.310 --> 00:00:46.280
+the community and stay up-to-date with the latest resources.
+
+00:00:46.280 --> 00:00:48.980
+The documentation has a ton of great resources
+
+00:00:48.979 --> 00:00:51.694
+you can use to get more familiar with their contracts.
+
+00:00:51.695 --> 00:00:54.619
+You can get there by clicking over here on the menu bar.
+
+00:00:54.619 --> 00:00:56.149
+Scrolling down this page,
+
+00:00:56.149 --> 00:01:00.079
+you'll see details about security, resources and collaborations.
+
+00:01:00.079 --> 00:01:02.184
+Let's check out Access Control.
+
+00:01:02.185 --> 00:01:05.000
+Here, you'll see a contract Ownable.sol with
+
+00:01:05.000 --> 00:01:08.165
+a very clear description of exactly how this contract was built.
+
+00:01:08.165 --> 00:01:10.670
+Take some time to read through this for yourself to get
+
+00:01:10.670 --> 00:01:14.030
+a better idea of how the different features of this contract work.
+
+00:01:14.030 --> 00:01:18.724
+This example code only provides an idea of how to use this contract within your code.
+
+00:01:18.724 --> 00:01:22.449
+It's not actually the code provided by the ownable.sol contract.
+
+00:01:22.450 --> 00:01:25.549
+For example, you'll see here that to use this contract,
+
+00:01:25.549 --> 00:01:28.340
+you'll first have to import the contract then use is
+
+00:01:28.340 --> 00:01:31.909
+Ownable to make the function accessible by your contract.
+
+00:01:31.909 --> 00:01:35.359
+To see the actual code provided by ownable.sol,
+
+00:01:35.359 --> 00:01:37.054
+we can look at their GitHub page.
+
+00:01:37.055 --> 00:01:40.380
+To get there, you can use the link named openzeppelin-solidity,
+
+00:01:40.379 --> 00:01:41.894
+I left below the video.
+
+00:01:41.894 --> 00:01:44.299
+Here, you can read through all of the functions made
+
+00:01:44.299 --> 00:01:47.524
+available to you when utilizing this contract for your project.
+
+00:01:47.525 --> 00:01:49.940
+These functions are all extremely secure and
+
+00:01:49.939 --> 00:01:52.314
+have been tested by the OpenZeppelin community.
+
+00:01:52.314 --> 00:01:53.995
+Like we mentioned earlier though,
+
+00:01:53.995 --> 00:01:55.880
+you should always understand the contracts you're
+
+00:01:55.879 --> 00:01:58.489
+working with rather than just blindly trusting them.
+
+00:01:58.489 --> 00:02:01.819
+Take some time to read through this contract to better understand
+
+00:02:01.819 --> 00:02:05.229
+exactly what features it provides and how they go about doing that.
+
+00:02:05.230 --> 00:02:09.759
+One way to help understand the contract is by pasting it into the re-mix editor.
+
+00:02:09.759 --> 00:02:13.405
+This lets you get a little more hands-on with the functionality of the contract.
+
+00:02:13.405 --> 00:02:16.090
+Let's try that now with ownable.sol.
+
+00:02:16.090 --> 00:02:17.680
+Once it's in the editor,
+
+00:02:17.680 --> 00:02:19.960
+deploy it just like any other contract.
+
+00:02:19.960 --> 00:02:23.155
+After deploying it, you should see the functions renounce ownership,
+
+00:02:23.155 --> 00:02:26.694
+transfer ownership, is owner and owner available.
+
+00:02:26.694 --> 00:02:29.319
+Trying out the features it provides is a great way to get
+
+00:02:29.319 --> 00:02:32.049
+a sense of how they can be used for your future projects.
+
+00:02:32.050 --> 00:02:36.275
+Check back to the contract to get a better idea for what each of these functions do.
+
+00:02:36.275 --> 00:02:40.870
+All of the contracts OpenZeppelin offers are available on their GitHub page.
+
+00:02:40.870 --> 00:02:43.465
+To view all of the other contracts that are available,
+
+00:02:43.465 --> 00:02:44.905
+go back to their GitHub page,
+
+00:02:44.905 --> 00:02:47.814
+click on "Contracts" and navigate wherever you'd like.
+
+00:02:47.814 --> 00:02:50.090
+Each of these are named pretty clearly and contain
+
+00:02:50.090 --> 00:02:52.539
+a lot of comments to help you understand what they do.
+
+00:02:52.539 --> 00:02:53.965
+To better understand them,
+
+00:02:53.965 --> 00:02:58.099
+just take time for yourself to read through them and continue developing more contracts.
+
+00:02:58.099 --> 00:03:00.289
+For some examples of how to use them,
+
+00:03:00.289 --> 00:03:02.239
+you can go back to the documentation.
+
+00:03:02.240 --> 00:03:06.800
+Here they provide a few basic examples on crowd sales, tokens and utilities.
+
+00:03:06.800 --> 00:03:08.870
+Working through the examples in these sections
+
+00:03:08.870 --> 00:03:10.759
+will help you get more familiar with working with
+
+00:03:10.759 --> 00:03:15.094
+OpenZeppelin and help you put together more creative solutions in the future.
+
+00:03:15.094 --> 00:03:18.580
+So, that wraps up this quick introduction to OpenZeppelin.
+
+00:03:18.580 --> 00:03:22.190
+This tool will become part of many of your future smart contracts.
+
+00:03:22.189 --> 00:03:24.560
+The examples they provide will be a great start to
+
+00:03:24.560 --> 00:03:28.039
+ensure you're confident using OpenZeppelin in the future.
+

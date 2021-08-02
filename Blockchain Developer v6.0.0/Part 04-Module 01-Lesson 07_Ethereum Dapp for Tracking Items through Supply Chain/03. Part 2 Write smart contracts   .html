@@ -1,0 +1,336 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Part 2: Write smart contracts   </title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Ethereum Dapp for Tracking Items through Supply Chain</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Moving On.html">01. Moving On</a>
+    </li>
+    <li class="">
+      <a href="02. Part 1 Plan the project with write-ups.html">02. Part 1: Plan the project with write-ups</a>
+    </li>
+    <li class="">
+      <a href="03. Part 2 Write smart contracts   .html">03. Part 2: Write smart contracts   </a>
+    </li>
+    <li class="">
+      <a href="04. Part 3 Test smart contract code coverage.html">04. Part 3: Test smart contract code coverage</a>
+    </li>
+    <li class="">
+      <a href="05. Part 4 Deploy smart contracts on public test network.html">05. Part 4: Deploy smart contracts on public test network</a>
+    </li>
+    <li class="">
+      <a href="06. Part 5 Modify client code to interact with smart contracts.html">06. Part 5: Modify client code to interact with smart contracts</a>
+    </li>
+    <li class="">
+      <a href="07. Optional Implement Infura to store product image.html">07. Optional: Implement Infura to store product image</a>
+    </li>
+    <li class="">
+      <a href="Project Description - Ethereum Dapp for Tracking Items through Supply Chain.html">Project Description - Ethereum Dapp for Tracking Items through Supply Chain</a>
+    </li>
+    <li class="">
+      <a href="Project Rubric - Ethereum Dapp for Tracking Items through Supply Chain.html">Project Rubric - Ethereum Dapp for Tracking Items through Supply Chain</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">03. Part 2: Write smart contracts   </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="-part-2-write-smart-contracts"># Part 2: Write smart contracts</h2>
+<p>In order to create your supply chain DApp, you will need to properly manage user permissions and track a product’s authenticity. </p>
+<p>The smart contract(s) you you build should have these requirements:</p>
+<blockquote>
+  <table>
+  <thead>
+  <tr>
+  <th id="**requirement_1**"><strong>Requirement 1</strong></th>
+  <th id="define_and_implement_interfaces">Define and implement interfaces</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><strong>Requirement 2</strong></td>
+  <td>Build out AccessControl Contracts</td>
+  </tr>
+  <tr>
+  <td><strong>Requirement 3</strong></td>
+  <td>Build out Base Contract</td>
+  </tr>
+  <tr>
+  <td><strong>Requirement 4</strong></td>
+  <td>Build out Core Contract</td>
+  </tr>
+  </tbody>
+  </table>
+</blockquote>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/blockchain-line.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="-requirement-1-define-and-implement-required-interfaces"># Requirement 1: Define and implement required interfaces</h2>
+<p>First, download the provided <a href="https://github.com/udacity/nd1309-Project-6b-Example-Template" rel="noopener noreferrer" target="_blank">starter code</a> and review all the files. Add in any interfaces you use. </p>
+<blockquote>
+  <p><a href="https://github.com/udacity/nd1309-Project-6b-Example-Template" rel="noopener noreferrer" target="_blank">Download Starter Code </a></p>
+</blockquote>
+<p>The starter code contains a skeleton for the smart contracts, test file, and migration files you will need to build out. Since there will be quite a bit of specialized logic, the code is split into smaller contracts that bundle related code together. The subcontract inheritance looks like this:</p>
+<pre><code>contract AccessControl
+contract Base is AccessControl
+contract Core is Base</code></pre>
+<ul>
+<li><p>**AccessControl - Collection of Contracts: ** These contracts manages the various addresses and constraints for operations that can be executed only by specific roles. </p></li>
+<li><p>**Base - SupplyChain.sol: ** This is where we define the most fundamental code shared throughout the core functionality. This includes our main data storage, constants and data types, plus internal functions for managing these items.</p></li>
+<li><p>**Core - Ownable.sol: ** is the contract that controls ownership and transfer of ownership.</p></li>
+</ul>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/blockchain-line.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="-requirement-2-build-out-accesscontrol-contracts"># Requirement 2: Build out AccessControl Contracts</h2>
+<p>From the Starter Code, the files in <code>coffeeaccesscontrol</code> controls access control for each actor. </p>
+<p>Build out these contracts so that each actor’s role in your supply chain is distinct with no overlap in their access abilities. The abilities listed for each role are exhaustive. </p>
+<p>Example of 4 actors in a coffee supply chain are:</p>
+<ul>
+<li><em>Farmer</em>: The Farmer can harvest coffee beans, process coffee beans, pack coffee palettes, add coffee palettes, ship coffee palettes, and track authenticity. </li>
+<li><em>Distributor</em>: The Distributor can buy coffee palettes and track authenticity.</li>
+<li><em>Retailer</em>: The Retailer can receive coffee palettes and track authenticity. </li>
+<li><em>Consumer</em>: The consumer can buy coffee palettes and track authenticity. </li>
+</ul>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/blockchain-line.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="-requirement-3-build-out-base-contract"># Requirement 3: Build out Base Contract</h2>
+<p>From the Starter Code, <strong>SupplyChain.sol</strong> contract holds all common structs, events and base variables. </p>
+<p>This smart contract must implement functions that track:</p>
+<ul>
+<li>Product ID</li>
+<li>Product UPC</li>
+<li>Origination Information </li>
+<li>Origin Actor (e.g. Farmer ID, Farmer Name, )</li>
+<li>Misc. organization information (e.g. Farmer Information)</li>
+<li>Longitude and Latitude of Origin Coordinates (e.g. Farm’s Longitude and Latitude)</li>
+<li>Product notes</li>
+<li>Product price</li>
+</ul>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/blockchain-line.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="-requirement-4-build-out-core-contract"># Requirement 4: Build out Core Contract</h2>
+<p>Ownable.sol is the contract that controls ownership and transfer of ownership.</p>
+<p>This Core Contract must implement:</p>
+<ul>
+<li><strong>Ownable</strong> - <TBD define> Define an owner for all the contracts. </li>
+<li><strong>Secondary</strong> - <TBD define> Allows contract to be transferred owners. </li>
+</ul>
+<p>This has been provided in the starter code. </p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="04. Part 3 Test smart contract code coverage.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('03. Part 2: Write smart contracts   ')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

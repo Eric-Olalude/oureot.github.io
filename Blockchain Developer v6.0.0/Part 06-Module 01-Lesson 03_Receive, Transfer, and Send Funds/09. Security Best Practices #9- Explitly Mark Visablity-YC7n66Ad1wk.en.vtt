@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.280
+Explicitly mark visibility of functions and state variables.
+
+00:00:05.280 --> 00:00:07.245
+We discussed earlier how
+
+00:00:07.245 --> 00:00:11.949
+public and private information is always public on the blockchain.
+
+00:00:11.949 --> 00:00:17.489
+However, by marking functions and state variables with a certain visibility,
+
+00:00:17.489 --> 00:00:23.684
+you can ensure that no function or no state variable can be directly manipulated.
+
+00:00:23.684 --> 00:00:27.570
+For example, if you have a variable that is
+
+00:00:27.570 --> 00:00:31.769
+intended to be private but is not marked as such,
+
+00:00:31.769 --> 00:00:35.250
+it would be possible for an external contract to change that value,
+
+00:00:35.250 --> 00:00:39.670
+and that is a highly undesirable action.
+

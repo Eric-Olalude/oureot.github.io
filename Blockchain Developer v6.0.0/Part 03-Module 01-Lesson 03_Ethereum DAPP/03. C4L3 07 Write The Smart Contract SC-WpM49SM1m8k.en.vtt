@@ -1,0 +1,199 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.000
+Okay, so let us look at the very first version of
+
+00:00:03.000 --> 00:00:05.459
+the smart contract which is the version one we're going to write.
+
+00:00:05.459 --> 00:00:07.259
+So, remember like I said we're going to write this in
+
+00:00:07.259 --> 00:00:09.300
+Remix somehow and the Remix website right now,
+
+00:00:09.300 --> 00:00:11.130
+a very simple version that you see.
+
+00:00:11.130 --> 00:00:13.170
+Let me walk you through what's going on in this contract.
+
+00:00:13.169 --> 00:00:14.625
+So, it starts with a Pragma word,
+
+00:00:14.625 --> 00:00:15.839
+so that the word, of course,
+
+00:00:15.839 --> 00:00:18.730
+we have seen a bunch of examples of this in the lesson and validity,
+
+00:00:18.730 --> 00:00:20.850
+and then we have the version that we are using,
+
+00:00:20.850 --> 00:00:23.970
+and then the contract itself is the definition of the contract.
+
+00:00:23.969 --> 00:00:25.769
+It starts with the keyword contract,
+
+00:00:25.769 --> 00:00:26.939
+the name of the contract,
+
+00:00:26.940 --> 00:00:28.530
+and then, of course, curly braces.
+
+00:00:28.530 --> 00:00:31.800
+Within this, you define all your variables, storage variables,
+
+00:00:31.800 --> 00:00:33.250
+the functions and events,
+
+00:00:33.250 --> 00:00:36.945
+and it starts with defining two different public storage variables.
+
+00:00:36.945 --> 00:00:41.045
+One is of type string called star name that stores the name of the star
+
+00:00:41.045 --> 00:00:45.230
+and address of type address called Star owner that stores the address of this star,
+
+00:00:45.229 --> 00:00:48.254
+and then we have an event which we're going to emit event in this function.
+
+00:00:48.255 --> 00:00:50.030
+I will just show you that in just a second.
+
+00:00:50.030 --> 00:00:51.530
+We also have a constructor function.
+
+00:00:51.530 --> 00:00:53.560
+Remember, constructing functions in solidity
+
+00:00:53.560 --> 00:00:55.820
+are caught automatically when we initiate the contract.
+
+00:00:55.820 --> 00:00:58.250
+So, this function will be called automatically when we
+
+00:00:58.250 --> 00:01:00.890
+call or start this contract or initiate this contract.
+
+00:01:00.890 --> 00:01:05.239
+That means the star name will be automatically set to this value,
+
+00:01:05.239 --> 00:01:07.689
+and then we have a function called claimStar.
+
+00:01:07.689 --> 00:01:10.379
+If you see, we're only setting the star name in this function,
+
+00:01:10.379 --> 00:01:11.954
+but we're not setting the owner yet.
+
+00:01:11.954 --> 00:01:14.829
+So, anytime the star or this contrast is initiated,
+
+00:01:14.829 --> 00:01:16.015
+we have the name of the star,
+
+00:01:16.015 --> 00:01:18.049
+but the owner is not going to be set yet.
+
+00:01:18.049 --> 00:01:20.989
+It only gets set when we actually call the claimStar.
+
+00:01:20.989 --> 00:01:24.594
+Now, whatever address from this list calls this function,
+
+00:01:24.594 --> 00:01:28.019
+the msg.sender or the starOwner is going to be that address,
+
+00:01:28.019 --> 00:01:31.519
+and then, of course, we emit an event in case we need to catch the event.
+
+00:01:31.519 --> 00:01:34.359
+So now, let's go deploy this contract.
+
+00:01:34.359 --> 00:01:37.334
+So, if you see first, while I am on the JavaScript virtual machine,
+
+00:01:37.334 --> 00:01:38.699
+I am not in any public network,
+
+00:01:38.700 --> 00:01:42.859
+this is just a local in-browser Ethereum network running with the JavaScript VM.
+
+00:01:42.859 --> 00:01:44.290
+Let's go deploy it.
+
+00:01:44.290 --> 00:01:45.960
+Once you deploy it,
+
+00:01:45.959 --> 00:01:47.984
+if you see starName,
+
+00:01:47.984 --> 00:01:51.709
+automatically set to this value Northstar owner yet,
+
+00:01:51.709 --> 00:01:53.179
+of course, I don't know if you can see the value
+
+00:01:53.180 --> 00:01:54.350
+because it is a little bit on the browser,
+
+00:01:54.349 --> 00:01:56.044
+but it all comes to address zero.
+
+00:01:56.045 --> 00:01:58.799
+You can also go claim a star once you claim a star,
+
+00:01:58.799 --> 00:02:00.980
+that's when the address gets set to this value.
+
+00:02:00.980 --> 00:02:04.490
+So, again a very simple version of the contract and now, of course,
+
+00:02:04.489 --> 00:02:06.934
+we've written our contract, it is very important to test it
+
+00:02:06.935 --> 00:02:09.800
+using many different use cases and test cases.
+
+00:02:09.800 --> 00:02:12.500
+Now, the purpose of testing is to make sure that a contract
+
+00:02:12.500 --> 00:02:15.900
+behaves the way it should before we deploy it in any public network.
+
+00:02:15.900 --> 00:02:17.760
+For this, what we're going do in the next video,
+
+00:02:17.759 --> 00:02:19.159
+we're actually going to put our contract.
+
+00:02:19.159 --> 00:02:22.944
+In fact, we'll do that after explaining how the testing in the Mocha and Chai works,
+
+00:02:22.944 --> 00:02:25.150
+but we're going to put this contract with truffle,
+
+00:02:25.150 --> 00:02:27.680
+and then we will write tests using Mocha and Chai,
+
+00:02:27.680 --> 00:02:29.960
+and then run them in the truffles development environment.
+
+00:02:29.960 --> 00:02:32.810
+Now, Mocha and Chai are used to write tests in
+
+00:02:32.810 --> 00:02:36.384
+JavaScript that can be used to test our solidity smart contract,
+
+00:02:36.384 --> 00:02:38.634
+and before we delve into writing tests,
+
+00:02:38.634 --> 00:02:43.639
+in the next video, let me give you a quick refresh on how Mocha and Chai works.
+

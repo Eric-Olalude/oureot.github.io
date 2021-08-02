@@ -1,0 +1,112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.464
+Now, you have some background on the goals and motivations of the blockchain.
+
+00:00:04.464 --> 00:00:07.679
+Next, let's walk through how this is translated into
+
+00:00:07.679 --> 00:00:11.339
+the actual components that have been built to make the system work.
+
+00:00:11.339 --> 00:00:15.189
+These components are what's represented here in the blockchain framework.
+
+00:00:15.189 --> 00:00:17.850
+We won't cover them in the exact order that listed here,
+
+00:00:17.850 --> 00:00:21.200
+that order has more to do with how the system works together,
+
+00:00:21.199 --> 00:00:24.144
+which we'll cover more once we've defined all the pieces.
+
+00:00:24.144 --> 00:00:26.269
+Instead, we'll start with what we think are
+
+00:00:26.269 --> 00:00:30.445
+the most fundamental pieces then work up to the more complex components.
+
+00:00:30.445 --> 00:00:34.090
+With that said, we'll start this video with the topic of hashing.
+
+00:00:34.090 --> 00:00:37.280
+In this video, we'll discuss hashing and the details of
+
+00:00:37.280 --> 00:00:40.695
+a specific hashing function, SHA256.
+
+00:00:40.695 --> 00:00:43.945
+A hash is a digital fingerprint for information.
+
+00:00:43.945 --> 00:00:48.375
+It's a unique string of letters and numbers that represent a set of data.
+
+00:00:48.375 --> 00:00:49.859
+To get a hash value,
+
+00:00:49.859 --> 00:00:53.865
+you start with a bit of data and pass it through a hashing function.
+
+00:00:53.865 --> 00:00:58.605
+The hashing function maps a group of that data to a unique hash value.
+
+00:00:58.604 --> 00:01:03.239
+It will take in the information you give it and create a completely unique hash value.
+
+00:01:03.240 --> 00:01:08.344
+This hash value now acts as a unique identifier for the original data.
+
+00:01:08.344 --> 00:01:10.939
+This allows you to identify a given set of data
+
+00:01:10.939 --> 00:01:13.780
+much more easily by referencing its hash value.
+
+00:01:13.780 --> 00:01:17.129
+SHA256 is a specific hashing function.
+
+00:01:17.129 --> 00:01:24.069
+SHA stands for Secure Hashing Algorithm and 256 represents the output of the algorithm.
+
+00:01:24.069 --> 00:01:27.319
+In this case, it tells us that the number you'll get back as
+
+00:01:27.319 --> 00:01:30.444
+a hash value is a 256 bit number.
+
+00:01:30.444 --> 00:01:32.625
+There are many different hashing functions,
+
+00:01:32.625 --> 00:01:38.709
+but Bitcoin uses SHA256 to create a unique hash value for each block on the blockchain.
+
+00:01:38.709 --> 00:01:40.669
+The reason for this is to create
+
+00:01:40.670 --> 00:01:44.185
+a unique identifier for every block that exists on the chain.
+
+00:01:44.185 --> 00:01:46.219
+This allows us to do some cool things,
+
+00:01:46.219 --> 00:01:48.590
+like references are blocked by its hash value.
+
+00:01:48.590 --> 00:01:53.040
+It even creates the foundation from which we can join blocks together into a chain.
+
+00:01:53.040 --> 00:01:55.120
+To understand how this builds the chain,
+
+00:01:55.120 --> 00:01:58.295
+we'll need to understand blocks and blockchains a little better.
+
+00:01:58.295 --> 00:02:00.805
+We'll learn more about these topics next.
+
+00:02:00.805 --> 00:02:05.640
+But first, we'll walk through a demonstration showing SHA256 in action.
+

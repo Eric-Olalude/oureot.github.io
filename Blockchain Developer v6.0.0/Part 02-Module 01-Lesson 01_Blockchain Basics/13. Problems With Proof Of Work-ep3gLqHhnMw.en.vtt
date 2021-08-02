@@ -1,0 +1,142 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.520
+A consensus algorithm is fundamental to
+
+00:00:02.520 --> 00:00:06.005
+ensuring a Blockchain remains a trustworthy version of truth.
+
+00:00:06.005 --> 00:00:10.240
+It also prevents any potential adversaries from breaking the system.
+
+00:00:10.240 --> 00:00:14.290
+While this method of achieving consensus has been successful so far,
+
+00:00:14.290 --> 00:00:15.990
+it does have some issues.
+
+00:00:15.990 --> 00:00:19.155
+There are two commonly discussed issues with proof-of-work.
+
+00:00:19.155 --> 00:00:22.770
+High energy consumption and the minor monopoly problem.
+
+00:00:22.770 --> 00:00:27.255
+First, proof of work leads to an extremely high amount of energy consumption.
+
+00:00:27.255 --> 00:00:30.960
+Proof-of-work calculations require a lot of computing power,
+
+00:00:30.960 --> 00:00:35.375
+all this computing comes at a cost both financially and to the environment.
+
+00:00:35.375 --> 00:00:38.640
+To mine Bitcoin, miners setup mining rigs
+
+00:00:38.640 --> 00:00:42.395
+which are high powered computers that process new blocks.
+
+00:00:42.395 --> 00:00:47.345
+Rig can be a dedicated computer design and built specifically for mining,
+
+00:00:47.345 --> 00:00:52.170
+it could also be a computer that was built for something else like a gaming system,
+
+00:00:52.170 --> 00:00:53.700
+but which has enough memory and
+
+00:00:53.700 --> 00:00:57.725
+processing power to perform the calculations needed for mining.
+
+00:00:57.725 --> 00:01:00.325
+People can set up mining rigs in their homes,
+
+00:01:00.325 --> 00:01:04.225
+but there are also mining farms run by larger operations housing hundreds
+
+00:01:04.225 --> 00:01:08.475
+and even sometimes thousands of rigs dedicated to Bitcoin mining.
+
+00:01:08.475 --> 00:01:12.340
+In 2017, one of the world's largest Bitcoin mines,
+
+00:01:12.340 --> 00:01:14.285
+was located in Inner Mongolia,
+
+00:01:14.285 --> 00:01:19.660
+and it has 25 thousand machines working 24 hours a day to mine Bitcoin.
+
+00:01:19.660 --> 00:01:23.770
+All these mining rigs around the world demand a lot of processing power.
+
+00:01:23.770 --> 00:01:26.500
+Some reports claim that Bitcoin mining,
+
+00:01:26.500 --> 00:01:29.950
+is consuming more electricity than 159 countries
+
+00:01:29.950 --> 00:01:34.215
+around the world including Ireland and most countries in Afrika.
+
+00:01:34.215 --> 00:01:36.135
+At the end of 2017,
+
+00:01:36.135 --> 00:01:38.095
+Global Bitcoin mining consumption,
+
+00:01:38.095 --> 00:01:41.900
+used as much energy as two million US homes combined.
+
+00:01:41.900 --> 00:01:46.385
+And it's actually possible to use a Bitcoin mining rig to heat your home.
+
+00:01:46.385 --> 00:01:49.965
+The second problem is the minor monopoly problem.
+
+00:01:49.965 --> 00:01:54.085
+Because Bitcoin mining requires a lot of computing power and energy,
+
+00:01:54.085 --> 00:01:58.895
+those who have the resources to access more equipment have an unfair advantage.
+
+00:01:58.895 --> 00:02:04.045
+The diagram here shows the distribution of the largest mining pools around the world.
+
+00:02:04.045 --> 00:02:06.865
+As you can see, it's a little bit skewed.
+
+00:02:06.865 --> 00:02:10.800
+The mining farms we mentioned earlier actually contribute to this problem,
+
+00:02:10.800 --> 00:02:12.640
+they've helped lead to a monopoly of
+
+00:02:12.640 --> 00:02:15.775
+Bitcoin miners that control a majority of the network.
+
+00:02:15.775 --> 00:02:19.540
+Since these nodes dedicate more resources to the network,
+
+00:02:19.540 --> 00:02:22.450
+they have more say in which blocks are considered valid.
+
+00:02:22.450 --> 00:02:25.770
+This causes the network to lean towards becoming centralized,
+
+00:02:25.770 --> 00:02:29.455
+rather than staying distributed like it was originally intended.
+
+00:02:29.455 --> 00:02:33.055
+So that wraps up the issues with the proof of work algorithm.
+
+00:02:33.055 --> 00:02:35.550
+Given these challenges with proof-of-work,
+
+00:02:35.550 --> 00:02:39.945
+other consensus algorithms have been developed to try and fix some of these issues.
+
+00:02:39.945 --> 00:02:44.290
+Coming up, we'll explore some of these algorithms in more detail.
+

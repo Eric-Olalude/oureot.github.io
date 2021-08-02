@@ -1,0 +1,88 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.200
+Congratulations on getting through this lesson on Blockchain privacy.
+
+00:00:04.200 --> 00:00:07.080
+Throughout this lesson, you learned techniques you can use to
+
+00:00:07.080 --> 00:00:10.259
+protect and enhance the privacy of blockchain applications.
+
+00:00:10.259 --> 00:00:14.189
+You learnt several new concepts like hashing, Merkle trees,
+
+00:00:14.189 --> 00:00:16.620
+ring signatures, zero-knowledge proofs,
+
+00:00:16.620 --> 00:00:19.035
+ZK snacks, and differential privacy.
+
+00:00:19.035 --> 00:00:20.879
+These are advanced techniques.
+
+00:00:20.879 --> 00:00:22.230
+So, if you've understood them,
+
+00:00:22.230 --> 00:00:24.344
+congratulations you're doing great work.
+
+00:00:24.344 --> 00:00:27.869
+If some of the details are still a bit fuzzy, that's okay.
+
+00:00:27.870 --> 00:00:30.660
+This is the type of thing that becomes clear with practice.
+
+00:00:30.660 --> 00:00:33.810
+Start working with the code examples in a research link provided.
+
+00:00:33.810 --> 00:00:36.020
+At this point, you should feel like you have
+
+00:00:36.020 --> 00:00:39.710
+a strong conceptual understanding of Blockchain privacy techniques.
+
+00:00:39.710 --> 00:00:43.895
+Start to think about how to implement them yourself within your blockchain applications.
+
+00:00:43.895 --> 00:00:47.810
+Privacy is an absolutely necessary requirement in many applications.
+
+00:00:47.810 --> 00:00:53.255
+So, there's huge demand for developers who understand these complex and important ideas.
+
+00:00:53.255 --> 00:00:56.795
+I'm excited to have had the opportunity to teach you these new skills,
+
+00:00:56.795 --> 00:01:01.100
+and I hope you find them useful as you continue your journey as a blockchain developer.
+
+00:01:01.100 --> 00:01:03.170
+One final important note,
+
+00:01:03.170 --> 00:01:06.215
+years and years of research has gone into privacy, cryptography,
+
+00:01:06.215 --> 00:01:08.900
+and blockchains, and all of this research has been shared
+
+00:01:08.900 --> 00:01:12.080
+with the community freely and openly for the benefit of everyone.
+
+00:01:12.079 --> 00:01:16.079
+These problems are much bigger than any one person or company could ever solve,
+
+00:01:16.079 --> 00:01:21.185
+and we've grown a completely open and innovative community around all this knowledge.
+
+00:01:21.185 --> 00:01:26.045
+So, as you continue your education and begin to make discoveries of your own,
+
+00:01:26.045 --> 00:01:28.625
+please remember to give back your ideas
+
+00:01:28.625 --> 00:01:31.930
+as freely and generously as they were shared with you.
+最新课程跟课件还有一对一辅导请加wx：udacity6

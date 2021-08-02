@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.835
+Now that we've gone over the solidity documentation,
+
+00:00:02.835 --> 00:00:05.040
+I wanted to go over one more resource that does
+
+00:00:05.040 --> 00:00:08.715
+an amazing job centralizing resources about these topics.
+
+00:00:08.715 --> 00:00:11.700
+ConsenSys is accompany helping technologists and
+
+00:00:11.700 --> 00:00:15.165
+entrepreneurs as they build out ideas for a decentralized future.
+
+00:00:15.165 --> 00:00:17.879
+It's similar to an incubator like Y Combinator,
+
+00:00:17.879 --> 00:00:19.665
+but for Blockchain projects.
+
+00:00:19.665 --> 00:00:21.345
+You can check out their homepage.
+
+00:00:21.345 --> 00:00:23.850
+But what I'd like to send you to is the documentation they
+
+00:00:23.850 --> 00:00:27.060
+keep meant to support the development of secure contracts.
+
+00:00:27.060 --> 00:00:28.470
+Down below the video,
+
+00:00:28.470 --> 00:00:32.700
+you'll see a link to their GitHub account containing Smart Contract best practices.
+
+00:00:32.700 --> 00:00:35.970
+Within that, you'll see topics like the General Philosophy,
+
+00:00:35.970 --> 00:00:38.520
+Recommendations, Known Attacks, and more.
+
+00:00:38.520 --> 00:00:42.695
+All meant to ensure you have a strong foundation in Smart Contract security.
+
+00:00:42.695 --> 00:00:44.810
+Personally, I've read through all of this,
+
+00:00:44.810 --> 00:00:47.225
+and I'd recommend that you eventually do that as well.
+
+00:00:47.225 --> 00:00:49.025
+But some of this is a bit dense,
+
+00:00:49.025 --> 00:00:51.575
+some of it's redundant with other things you'll see,
+
+00:00:51.575 --> 00:00:53.285
+and some of this will cover later.
+
+00:00:53.285 --> 00:00:58.315
+For now, I'd say at least focus on the General Philosophy and the Security Notifications.
+
+00:00:58.315 --> 00:01:00.195
+Under the General Philosophy,
+
+00:01:00.195 --> 00:01:02.510
+they go over some mindsets you can develop to help you
+
+00:01:02.510 --> 00:01:05.270
+approach development in a more security friendly way.
+
+00:01:05.270 --> 00:01:08.465
+They've got great tips on things like preparing for failure,
+
+00:01:08.465 --> 00:01:11.575
+rolling out carefully, keeping things simple, and more.
+
+00:01:11.575 --> 00:01:14.420
+Under Security Notifications, they keep a list of
+
+00:01:14.420 --> 00:01:18.020
+known resources where you can find discussions about known issues.
+
+00:01:18.020 --> 00:01:21.320
+As you'll see, even ConsenSys has trouble keeping up with the
+
+00:01:21.320 --> 00:01:25.105
+absolute latest in all things about security for Smart Contracts.
+
+00:01:25.105 --> 00:01:27.250
+Their recommendation, like ours,
+
+00:01:27.250 --> 00:01:30.860
+is to have a solid foundation of tools and resources to work from,
+
+00:01:30.860 --> 00:01:33.140
+but to stay active in the community to continue
+
+00:01:33.140 --> 00:01:35.860
+researching the most up-to-date knowledge in this field.
+
+00:01:35.860 --> 00:01:39.050
+So, go ahead now and read about the general philosophy and
+
+00:01:39.050 --> 00:01:42.575
+Security Notifications provided in the ConsenSys documentation.
+
+00:01:42.575 --> 00:01:45.335
+Personally, I read the solidity documentation,
+
+00:01:45.335 --> 00:01:49.255
+Ethereum Blog and Reddit and I'm a member of the Ethereum Gitter chat rooms.
+
+00:01:49.255 --> 00:01:52.695
+If you'd like, you can join some of these communities and once you're there,
+
+00:01:52.695 --> 00:01:54.880
+maybe we'll see each other in the conversations.
+

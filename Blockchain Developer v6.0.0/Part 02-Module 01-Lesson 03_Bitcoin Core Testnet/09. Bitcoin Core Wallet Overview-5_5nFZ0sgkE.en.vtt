@@ -1,0 +1,238 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.890 --> 00:00:03.655
+Once you get your Bitcoin Core Wallet,
+
+00:00:03.655 --> 00:00:07.890
+it helps to takes some time to get used to the basic functionality available to you.
+
+00:00:07.890 --> 00:00:09.360
+And in this video,
+
+00:00:09.360 --> 00:00:13.360
+we'll overview the basics of this wallet to help get you familiar with this new tool.
+
+00:00:13.360 --> 00:00:15.310
+When you first load up your wallet,
+
+00:00:15.310 --> 00:00:18.645
+you'll see a note showing how far along your wallet has synced.
+
+00:00:18.645 --> 00:00:21.475
+It shows the number of blocks left along
+
+00:00:21.475 --> 00:00:24.940
+with some other information down by the bottom of the screen.
+
+00:00:24.990 --> 00:00:28.050
+Now this is helpful but I generally
+
+00:00:28.050 --> 00:00:31.700
+hide this right away to get to the more important information.
+
+00:00:33.260 --> 00:00:35.760
+After hiding the first screen,
+
+00:00:35.760 --> 00:00:38.515
+we will be on the overview page of your wallet.
+
+00:00:38.515 --> 00:00:41.440
+This is where you'll see things like the balance that you have
+
+00:00:41.440 --> 00:00:46.440
+available as well as the recent transactions you've made.
+
+00:00:47.000 --> 00:00:50.800
+Along the top here is the navigation bar that you
+
+00:00:50.800 --> 00:00:54.345
+can use to access other parts of your wallet. Let's click "Send".
+
+00:00:54.345 --> 00:00:59.530
+From here, we can see the details about sending transactions using your Bitcoin wallet.
+
+00:00:59.530 --> 00:01:03.810
+If you've previously used another wallet like Electrum for example,
+
+00:01:03.810 --> 00:01:05.955
+some of this might look familiar.
+
+00:01:05.955 --> 00:01:07.680
+To send a transaction,
+
+00:01:07.680 --> 00:01:11.040
+your Bitcoin wallet requests an address to pay to,
+
+00:01:11.040 --> 00:01:18.245
+a label to help organize the transaction and an amount.
+
+00:01:18.245 --> 00:01:21.090
+You can use these buttons here on the right to
+
+00:01:21.090 --> 00:01:23.955
+copy this information if you need to use it elsewhere.
+
+00:01:23.955 --> 00:01:25.560
+Along the bottom here,
+
+00:01:25.560 --> 00:01:27.450
+you'll see a transaction fee that you can setup for
+
+00:01:27.450 --> 00:01:30.375
+yourself as well as the ability to send,
+
+00:01:30.375 --> 00:01:35.070
+clear information, and add new recipients through the transaction.
+
+00:01:37.130 --> 00:01:41.270
+Next up, navigate to the received panel.
+
+00:01:41.850 --> 00:01:46.815
+This again hopefully looks pretty similar to other wallets you've used.
+
+00:01:46.815 --> 00:01:51.635
+Here, you have the option to request Bitcoin using your wallet.
+
+00:01:51.635 --> 00:01:53.690
+You can enter a label,
+
+00:01:53.690 --> 00:01:56.335
+an amount and a message to the recipient.
+
+00:01:56.335 --> 00:01:59.940
+Once making a request, you'll also be able to see details like
+
+00:01:59.940 --> 00:02:03.910
+the date and other details of the requests in this window down below.
+
+00:02:03.910 --> 00:02:07.300
+Now let's navigate to the transaction window.
+
+00:02:07.910 --> 00:02:12.850
+Here, you'll see the details of all transactions that happened using your wallet.
+
+00:02:12.850 --> 00:02:16.855
+While the overview window gave us a set of recent transaction,
+
+00:02:16.855 --> 00:02:20.370
+this screen gives you a list of every transaction.
+
+00:02:20.370 --> 00:02:23.855
+You can organize these transactions by the date,
+
+00:02:23.855 --> 00:02:29.585
+type, label, and amount similar to ordering a spreadsheet.
+
+00:02:29.585 --> 00:02:34.030
+Along the top, you also have the option to search for specific transactions using
+
+00:02:34.030 --> 00:02:36.790
+any field or by setting constraints
+
+00:02:36.790 --> 00:02:40.740
+to get back any transaction that meets a certain criteria.
+
+00:02:47.110 --> 00:02:50.740
+Now that we've seen each window on the main screen,
+
+00:02:50.740 --> 00:02:54.795
+let's navigate to other parts of the wallet using the file menu.
+
+00:02:54.795 --> 00:02:58.465
+So along the top here you'll see "Bitcoin Core",
+
+00:02:58.465 --> 00:03:00.790
+"File", "Settings" and "Help".
+
+00:03:00.790 --> 00:03:05.170
+Under "File", you can sign and verify
+
+00:03:05.170 --> 00:03:09.905
+a message as well as access you're sending and receiving addresses.
+
+00:03:09.905 --> 00:03:13.515
+Using "Help", you can access a "Search" bar,
+
+00:03:13.515 --> 00:03:18.625
+the "Debug" window and "Command-line Options" that are available in the tool.
+
+00:03:18.625 --> 00:03:21.640
+The debug console is a tool that we'll be using to
+
+00:03:21.640 --> 00:03:24.525
+explore blockchain data later throughout the lesson.
+
+00:03:24.525 --> 00:03:27.075
+Now the command line options are really helpful,
+
+00:03:27.075 --> 00:03:29.170
+but they're for a different use in this case.
+
+00:03:29.170 --> 00:03:32.110
+These allow you to access blockchain data from beyond
+
+00:03:32.110 --> 00:03:35.505
+the debug console using these command-line options.
+
+00:03:35.505 --> 00:03:38.740
+We won't be going over this in this lesson but
+
+00:03:38.740 --> 00:03:42.015
+it will be helpful later on when we start building applications.
+
+00:03:42.015 --> 00:03:46.150
+Finally, it helps to know where all of this information is coming from.
+
+00:03:46.150 --> 00:03:48.010
+If you haven't already checked back to
+
+00:03:48.010 --> 00:03:50.270
+the directory where you saved your Bitcoin Core client,
+
+00:03:50.270 --> 00:03:52.240
+try navigating there now.
+
+00:03:52.240 --> 00:03:56.230
+If you've saved it to the default location and forgot where it was,
+
+00:03:56.230 --> 00:03:57.735
+check out the link down below.
+
+00:03:57.735 --> 00:03:59.905
+So on the Mac, it's listed as,
+
+00:03:59.905 --> 00:04:04.895
+saved under library/application support/ Bitcoin.
+
+00:04:04.895 --> 00:04:09.785
+What you'll see is all the information that is available for your copy of the blockchain.
+
+00:04:09.785 --> 00:04:13.410
+In there you'll find the blocks, chained state,
+
+00:04:13.410 --> 00:04:17.615
+log, test network, wallet and a few other features.
+
+00:04:17.615 --> 00:04:22.940
+You might not see the bitcoin.conf file like I have here just yet and that's fine.
+
+00:04:22.940 --> 00:04:26.850
+This is a file that you can use to override some of the standard functionality of
+
+00:04:26.850 --> 00:04:31.530
+the application but we'll get you set up with your own Bitcoin configuration file soon.
+
+00:04:31.530 --> 00:04:33.960
+Now these are all the basic options available to
+
+00:04:33.960 --> 00:04:36.765
+you when getting started with the Bitcoin Core Wallet.
+
+00:04:36.765 --> 00:04:39.870
+Coming up, we'll dig a little deeper into this tool and get
+
+00:04:39.870 --> 00:04:43.750
+our hands dirty with the options available to us as developers.
+

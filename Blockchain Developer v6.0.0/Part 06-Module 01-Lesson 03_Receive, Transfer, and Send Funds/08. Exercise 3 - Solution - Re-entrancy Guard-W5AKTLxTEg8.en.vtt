@@ -1,0 +1,145 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.370
+Let's review the code for the re-entry guard exercise.
+
+00:00:04.370 --> 00:00:06.855
+Before I go to this code, as I mentioned earlier,
+
+00:00:06.855 --> 00:00:11.250
+it's a little tricky and it makes sense to walk through it
+
+00:00:11.250 --> 00:00:13.589
+slowly and carefully and really think about it
+
+00:00:13.589 --> 00:00:16.620
+from a stack perspective as we're going through this code.
+
+00:00:16.620 --> 00:00:18.630
+So to reiterate here,
+
+00:00:18.629 --> 00:00:21.689
+we have a counter variable that's initialized to one,
+
+00:00:21.690 --> 00:00:23.280
+and then comes our modifier.
+
+00:00:23.280 --> 00:00:27.690
+So the first thing we do in the modifier is increment our counter variable,
+
+00:00:27.690 --> 00:00:29.100
+and again following best practice,
+
+00:00:29.100 --> 00:00:33.135
+we use the add method versus just using the plus operator.
+
+00:00:33.134 --> 00:00:39.519
+Next, we instantiate a local variable and set it to the value of the counter.
+
+00:00:39.520 --> 00:00:42.095
+Now at this point, we've got a certain state,
+
+00:00:42.094 --> 00:00:47.225
+we have our global variable rather called counter,
+
+00:00:47.225 --> 00:00:51.170
+and we've got a local variable called guard that is set to that same value.
+
+00:00:51.170 --> 00:00:52.910
+Now our function gets called.
+
+00:00:52.909 --> 00:00:58.219
+Now let's imagine that the function is subject to a re-entrancy attack,
+
+00:00:58.219 --> 00:01:00.560
+it's being called by other contracts etc.,
+
+00:01:00.560 --> 00:01:02.164
+and as a result,
+
+00:01:02.164 --> 00:01:05.775
+it loops right back and calls entrancyGuard again.
+
+00:01:05.775 --> 00:01:07.320
+So at this point in the stack,
+
+00:01:07.319 --> 00:01:12.724
+we've got entrancyGuard and the state that exists prior to the function call,
+
+00:01:12.724 --> 00:01:14.479
+and then the function gets called,
+
+00:01:14.480 --> 00:01:17.045
+and the process repeats.
+
+00:01:17.045 --> 00:01:22.534
+As this happens, keep in mind that the require statement is not yet being called.
+
+00:01:22.534 --> 00:01:28.625
+The require statement is going to be called after the function has completed executing,
+
+00:01:28.625 --> 00:01:31.715
+which may be onetime or many times as the case may be,
+
+00:01:31.715 --> 00:01:33.290
+and when it comes back,
+
+00:01:33.290 --> 00:01:38.540
+it is going to check the value of guard and compare it to counter.
+
+00:01:38.540 --> 00:01:44.930
+Now counter because it is a state variable that's at the contract level,
+
+00:01:44.930 --> 00:01:46.550
+will have been incremented,
+
+00:01:46.549 --> 00:01:51.679
+had the function being maliciously called by an external contract.
+
+00:01:51.680 --> 00:01:56.450
+However, guard will maintain its local state value,
+
+00:01:56.450 --> 00:01:58.010
+and when compared to counter,
+
+00:01:58.010 --> 00:02:02.180
+that will immediately fail because the counter value will be significantly
+
+00:02:02.180 --> 00:02:06.725
+far ahead off guard had the function being called repeatedly.
+
+00:02:06.724 --> 00:02:09.875
+That is the main Re-entrancy Guard right there.
+
+00:02:09.875 --> 00:02:11.090
+That line that says,
+
+00:02:11.090 --> 00:02:13.890
+require guard equals counter,
+
+00:02:13.889 --> 00:02:15.589
+it ensures that no matter
+
+00:02:15.590 --> 00:02:19.729
+how many times that function is called by a malicious outside entity,
+
+00:02:19.729 --> 00:02:24.905
+when it returns, it is not possible to proceed because it expects
+
+00:02:24.905 --> 00:02:27.680
+the counter variable to be the same value
+
+00:02:27.680 --> 00:02:30.800
+as when the modifier was first entered and if it's different,
+
+00:02:30.800 --> 00:02:33.545
+it means that there was a problem, and so therefore,
+
+00:02:33.544 --> 00:02:38.284
+the whole transaction fails and no funds can be stolen.
+
+00:02:38.284 --> 00:02:42.849
+So that's how the re-entrancy guard protection works.
+

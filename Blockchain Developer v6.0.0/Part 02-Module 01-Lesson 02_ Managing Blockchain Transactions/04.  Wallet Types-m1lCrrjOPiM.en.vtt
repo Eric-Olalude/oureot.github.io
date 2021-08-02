@@ -1,0 +1,142 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.750
+Now that we have a better understanding of what's inside a wallet,
+
+00:00:03.750 --> 00:00:06.334
+let's focus on the wallets themselves.
+
+00:00:06.334 --> 00:00:10.955
+Because while these basic components like keys and addresses stay the same,
+
+00:00:10.955 --> 00:00:14.925
+there are actually a few different ways these ideas can be implemented.
+
+00:00:14.925 --> 00:00:18.105
+This results in a few different types of wallets.
+
+00:00:18.105 --> 00:00:20.879
+In this video we'll introduce the major types of
+
+00:00:20.879 --> 00:00:24.634
+wallets and describe their goals, purpose, and functionality.
+
+00:00:24.635 --> 00:00:27.545
+Wallets can be split into two main categories;
+
+00:00:27.545 --> 00:00:31.040
+deterministic wallets and non-deterministic wallets.
+
+00:00:31.039 --> 00:00:34.659
+In non-deterministic wallets, aka random wallets,
+
+00:00:34.659 --> 00:00:37.549
+private keys are generated from random numbers.
+
+00:00:37.549 --> 00:00:40.524
+In deterministic wallets all addresses,
+
+00:00:40.524 --> 00:00:45.189
+private keys, and public keys can be traced back to their original seed words.
+
+00:00:45.189 --> 00:00:48.409
+You can determine the seed of these keys as opposed to
+
+00:00:48.409 --> 00:00:52.174
+a random wallet where you can't trace things back to an underlying seed.
+
+00:00:52.174 --> 00:00:57.530
+Seed words are a list of words that store all the information needed to recover a wallet.
+
+00:00:57.530 --> 00:01:00.530
+These are generated when you first create a wallet.
+
+00:01:00.530 --> 00:01:03.594
+You'll see them as soon as you create a wallet for yourself.
+
+00:01:03.594 --> 00:01:07.489
+This type of wallet was developed because it's much easier for us to
+
+00:01:07.489 --> 00:01:12.125
+remember a set of seed words rather than a list of random numbers and letters.
+
+00:01:12.125 --> 00:01:15.204
+Deterministic wallets are split into two types;
+
+00:01:15.204 --> 00:01:21.004
+the sequential deterministic wallet and the hierarchical deterministic or HD wallet.
+
+00:01:21.004 --> 00:01:25.974
+Of these, the HD wallet is the most advanced form of a deterministic wallet.
+
+00:01:25.974 --> 00:01:29.804
+HD wallets contain keys derived in a tree structure.
+
+00:01:29.805 --> 00:01:34.025
+This means that a parent key can derive a sequence of children keys.
+
+00:01:34.025 --> 00:01:36.680
+Then each of these can derive a sequence of
+
+00:01:36.680 --> 00:01:40.345
+grandchildren keys and so on into an infinite depth.
+
+00:01:40.344 --> 00:01:43.775
+If you look at the structure it resembles a family tree.
+
+00:01:43.775 --> 00:01:47.480
+In other words, a seed is used to generate a master key.
+
+00:01:47.480 --> 00:01:51.840
+We can generate both private and public keys from the master key.
+
+00:01:51.840 --> 00:01:54.525
+This complexity allows us to manage keys
+
+00:01:54.525 --> 00:01:57.375
+much more easily than we can do in other wallets.
+
+00:01:57.375 --> 00:02:02.069
+Here's a chart of the three types of wallets and how each generates private keys.
+
+00:02:02.069 --> 00:02:05.069
+Notice that for all of these wallets the private key
+
+00:02:05.069 --> 00:02:08.364
+is very important because this is how we access our funds.
+
+00:02:08.365 --> 00:02:14.835
+In addition, private key generation always uses the secure hash algorithm sha256.
+
+00:02:14.835 --> 00:02:18.330
+Previously, we used sha256 to hash
+
+00:02:18.330 --> 00:02:21.670
+our public key in the process of producing our wallet address.
+
+00:02:21.669 --> 00:02:27.469
+The sha256 algorithm takes an input such as a public key and produces a hash,
+
+00:02:27.469 --> 00:02:31.205
+a unique string of letters and numbers that is 256 bits long.
+
+00:02:31.205 --> 00:02:34.460
+From the sound of this, you've probably picked up that private keys and
+
+00:02:34.460 --> 00:02:38.379
+hashing are really important concepts for understanding wallet types.
+
+00:02:38.379 --> 00:02:40.909
+Remember, wallets are an integral part of
+
+00:02:40.909 --> 00:02:44.555
+our blockchain identity that helps us manage blockchain transactions.
+
+00:02:44.555 --> 00:02:46.985
+Let's explore two of these topics in more depth.
+
+00:02:46.985 --> 00:02:49.300
+First up, private keys.
+

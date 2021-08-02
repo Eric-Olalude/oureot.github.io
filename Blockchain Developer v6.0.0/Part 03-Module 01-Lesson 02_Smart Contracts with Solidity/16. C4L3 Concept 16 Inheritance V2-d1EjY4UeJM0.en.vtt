@@ -1,0 +1,502 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.410 --> 00:00:06.150
+In this concept, we will learn about inheritance in Solidity.
+
+00:00:06.150 --> 00:00:10.695
+Now, Solidity supports abstract classes.
+
+00:00:10.695 --> 00:00:13.935
+It also supports multiple inheritance.
+
+00:00:13.935 --> 00:00:17.504
+Contracts can inherit from multiple contracts.
+
+00:00:17.504 --> 00:00:20.504
+When a contract inherits from multiple contracts,
+
+00:00:20.504 --> 00:00:24.195
+only a single contract is created on the block chain.
+
+00:00:24.195 --> 00:00:28.065
+This is the last contract in the Solidity file.
+
+00:00:28.065 --> 00:00:33.420
+The code from all the baseContracts is copied to the derived contract.
+
+00:00:33.420 --> 00:00:37.500
+Solidity also has the concept of interfaces.
+
+00:00:37.500 --> 00:00:42.034
+Interfaces are created using the keyword interface.
+
+00:00:42.034 --> 00:00:45.704
+Interfaces cannot have any variable declarations,
+
+00:00:45.704 --> 00:00:47.799
+there can only be function declarations,
+
+00:00:47.799 --> 00:00:49.324
+but no function body.
+
+00:00:49.325 --> 00:00:53.530
+So the function getValue public returns bool,
+
+00:00:53.530 --> 00:00:56.570
+the one that you see on the screen ends with a semicolon,
+
+00:00:56.570 --> 00:00:58.730
+there is absolutely no function body.
+
+00:00:58.729 --> 00:01:02.539
+It is the responsibility of the derived contracts to make sure
+
+00:01:02.539 --> 00:01:06.414
+that all these functions are defined with a function body.
+
+00:01:06.415 --> 00:01:10.640
+This is how in fact token standards are also implemented.
+
+00:01:10.640 --> 00:01:13.445
+Token standards are like an interface.
+
+00:01:13.444 --> 00:01:16.938
+If any contract, that once we adopt a token standard,
+
+00:01:16.938 --> 00:01:21.469
+it needs to now implement these functions that are declared in the interface standard.
+
+00:01:21.469 --> 00:01:24.500
+So we have token into places like ERC 20,
+
+00:01:24.500 --> 00:01:27.980
+ERC 721, and of course, some more.
+
+00:01:27.980 --> 00:01:30.844
+Now, let's look at the code on your screen.
+
+00:01:30.844 --> 00:01:34.929
+In this example, you will find a contract named account,
+
+00:01:34.930 --> 00:01:37.940
+and then we have a derived contract called credit
+
+00:01:37.939 --> 00:01:40.954
+account that inherits from the contract account.
+
+00:01:40.954 --> 00:01:43.414
+The way you inherit from an account,
+
+00:01:43.415 --> 00:01:45.109
+you use the word is,
+
+00:01:45.109 --> 00:01:47.234
+the keyword is contract,
+
+00:01:47.234 --> 00:01:50.819
+so you say contract CreditAccount is Account.
+
+00:01:50.819 --> 00:01:54.079
+In this case, the credit account will get deployed to
+
+00:01:54.079 --> 00:01:57.989
+the network since it is a last contract in the file.
+
+00:01:58.420 --> 00:02:02.745
+The baseContract does not need to be in the same file.
+
+00:02:02.745 --> 00:02:08.435
+You can import contracts from other files or even online links or even from GitHub.
+
+00:02:08.435 --> 00:02:13.159
+We can use import statements for this purpose like you see on the screen.
+
+00:02:13.159 --> 00:02:18.544
+In this example, we are importing the file Account.sol from a local drive.
+
+00:02:18.544 --> 00:02:23.309
+Now, let's look at a sample contract to understand inheritance better.
+
+00:02:33.169 --> 00:02:37.000
+So, let's look at a sample contract that we have on this screen here.
+
+00:02:37.000 --> 00:02:39.585
+So, we have a contract called mainContract,
+
+00:02:39.585 --> 00:02:42.010
+nothing really happening in this contract too much,
+
+00:02:42.009 --> 00:02:46.014
+so we have a variable that we're declaring of uint type it's internal,
+
+00:02:46.014 --> 00:02:48.969
+and value is the name of the variable and then we have
+
+00:02:48.969 --> 00:02:53.389
+a constructor function and then we have just two functions, deposit and withdraw.
+
+00:02:53.389 --> 00:02:56.139
+So that's how you have a simple contract.
+
+00:02:56.139 --> 00:02:58.719
+Now, we are going to import this contracts,
+
+00:02:58.719 --> 00:03:00.789
+so the name of this file is main contract.
+
+00:03:00.789 --> 00:03:05.304
+Now, let's go back to another contract which is inheritance contract.
+
+00:03:05.305 --> 00:03:07.360
+We're importing this contract,
+
+00:03:07.360 --> 00:03:09.730
+now we are in the same drive so the path is simple,
+
+00:03:09.729 --> 00:03:12.879
+but you could import it from online or even from a GitHub page.
+
+00:03:12.879 --> 00:03:15.474
+So, import this contract,
+
+00:03:15.474 --> 00:03:19.564
+and now inside this contact we're actually creating another interface.
+
+00:03:19.564 --> 00:03:23.250
+So, we have an interfaceContract that has a function, sendMoney,
+
+00:03:23.250 --> 00:03:24.629
+but there is no function body.
+
+00:03:24.629 --> 00:03:26.789
+So, if you look functions sendMoney,
+
+00:03:26.789 --> 00:03:28.694
+it has input parameters,
+
+00:03:28.694 --> 00:03:31.064
+external returns bool, that's it.
+
+00:03:31.064 --> 00:03:32.534
+There's no function body,
+
+00:03:32.534 --> 00:03:34.814
+no brackets, just a semicolon.
+
+00:03:34.814 --> 00:03:36.704
+This is how you define interfaces.
+
+00:03:36.705 --> 00:03:39.640
+There can be no variable declarations inside the interface,
+
+00:03:39.639 --> 00:03:41.544
+just basic function values.
+
+00:03:41.544 --> 00:03:43.030
+Now it is, of course,
+
+00:03:43.030 --> 00:03:45.444
+the work or the load that comes upon
+
+00:03:45.444 --> 00:03:51.250
+the inherited contracts that have to make sure that they implement these functions.
+
+00:03:51.250 --> 00:03:53.965
+Now, let's look at another baseContract here.
+
+00:03:53.965 --> 00:03:56.634
+This is a baseContract that has it's constructor,
+
+00:03:56.633 --> 00:03:58.625
+deposit and also withdraw function.
+
+00:03:58.625 --> 00:04:00.500
+So baseContract, we have
+
+00:04:00.500 --> 00:04:04.085
+another constructor function and the deposit function right there.
+
+00:04:04.085 --> 00:04:07.055
+So we have two contracts in this file so far,
+
+00:04:07.055 --> 00:04:09.920
+interfaceContract and the baseContract.
+
+00:04:09.919 --> 00:04:15.049
+Now, we have another contract that is showing multiple inheritance.
+
+00:04:15.050 --> 00:04:19.715
+Remember, I said you can always inherit from multiple files or multiple contracts.
+
+00:04:19.714 --> 00:04:24.229
+So now myContract, I'm actually getting it inheriting three different contracts.
+
+00:04:24.230 --> 00:04:28.230
+So, baseContract, interfaceContract, and also the main contractor.
+
+00:04:28.230 --> 00:04:30.615
+It's inheriting this interfaceContract,
+
+00:04:30.615 --> 00:04:33.285
+it's inheriting this baseContract,
+
+00:04:33.285 --> 00:04:37.330
+and the mainContract that was in a separate file because we've imported that file.
+
+00:04:37.329 --> 00:04:39.569
+Now again, I wanted to mention,
+
+00:04:39.569 --> 00:04:40.810
+if you see these numbers,
+
+00:04:40.810 --> 00:04:43.699
+and the way we have to do this because we're inheriting it.
+
+00:04:43.699 --> 00:04:48.064
+So, these contracts, how to construct a function,
+
+00:04:48.064 --> 00:04:49.954
+we need to send the arguments,
+
+00:04:49.954 --> 00:04:52.149
+if you don't send arguments right here,
+
+00:04:52.149 --> 00:04:53.939
+our compiler will not let us deploy.
+
+00:04:53.939 --> 00:04:55.019
+So, let me show an example.
+
+00:04:55.019 --> 00:05:01.044
+So, if I delete this argument right there and I try to deploy this myContract now,
+
+00:05:01.045 --> 00:05:02.770
+it's going to say it cannot do that.
+
+00:05:02.769 --> 00:05:04.125
+So, if I say,
+
+00:05:04.125 --> 00:05:08.509
+let's give it some input parameters and then if I deploy it,
+
+00:05:08.509 --> 00:05:11.735
+it's going to give an error saying it does not implement all the functions,
+
+00:05:11.735 --> 00:05:13.699
+all that means is that we cannot deploy,
+
+00:05:13.699 --> 00:05:15.964
+we have to get past the arguments of
+
+00:05:15.964 --> 00:05:20.189
+all the contracts that it's inheriting from right there.
+
+00:05:20.300 --> 00:05:23.430
+So again, this shows multiple inheritance,
+
+00:05:23.430 --> 00:05:24.660
+three different contract files,
+
+00:05:24.660 --> 00:05:25.700
+two are in the same file,
+
+00:05:25.699 --> 00:05:27.545
+one is coming from a different file.
+
+00:05:27.545 --> 00:05:29.540
+One is an interfaceContract,
+
+00:05:29.540 --> 00:05:31.400
+if you see my interfaceContract,
+
+00:05:31.399 --> 00:05:33.439
+I have a function sendMoney,
+
+00:05:33.439 --> 00:05:38.120
+now this has to be differently implemented since if it is unimplemented,
+
+00:05:38.120 --> 00:05:40.480
+it's not going to let you deploy this contract.
+
+00:05:40.480 --> 00:05:43.970
+It's going to say you can I deploy this contract because all the functions that
+
+00:05:43.970 --> 00:05:47.060
+it's inheriting from the interfaceContract have to be present.
+
+00:05:47.060 --> 00:05:49.714
+So, we are in fact defining this function,
+
+00:05:49.714 --> 00:05:51.429
+the sendMoney, there was just,
+
+00:05:51.430 --> 00:05:52.800
+if you see this function,
+
+00:05:52.800 --> 00:05:54.975
+it gives you what it should look like,
+
+00:05:54.975 --> 00:05:58.400
+but it's your responsibility to make sure that this function gets
+
+00:05:58.399 --> 00:06:02.239
+implemented and defined in your derived contract.
+
+00:06:02.240 --> 00:06:04.050
+So, you still have this function.
+
+00:06:04.050 --> 00:06:07.189
+Again, a simple way you really don't have to focus on the code for now,
+
+00:06:07.189 --> 00:06:11.810
+what it's doing, just a simple way to show how inheritance works in Solidity.
+
+00:06:11.810 --> 00:06:14.899
+Let's go deploy it and see what it looks like.
+
+00:06:14.899 --> 00:06:16.159
+So when you have this option,
+
+00:06:16.160 --> 00:06:17.885
+it gives you a drop down option,
+
+00:06:17.884 --> 00:06:21.305
+you can deploy mainContract, myContract interfaceContract.
+
+00:06:21.305 --> 00:06:24.449
+Again, it's not going to let you deploy interface, let me show you that.
+
+00:06:24.449 --> 00:06:26.819
+So, since interfaceContracts are just an interface,
+
+00:06:26.819 --> 00:06:28.214
+there are no function bodies,
+
+00:06:28.214 --> 00:06:29.729
+you cannot even deploy them.
+
+00:06:29.730 --> 00:06:31.035
+So, if I say deploy,
+
+00:06:31.035 --> 00:06:32.460
+it's going to not make you deploy it.
+
+00:06:32.459 --> 00:06:34.459
+It's again saying that the contract does not
+
+00:06:34.459 --> 00:06:36.919
+implement all the functions and thus can not be created,
+
+00:06:36.920 --> 00:06:39.050
+so it's not going to let you deploy that contract.
+
+00:06:39.050 --> 00:06:42.980
+Now let's deploy our baseContract.
+
+00:06:42.980 --> 00:06:45.925
+Let's try deploying our baseContract right here.
+
+00:06:45.925 --> 00:06:50.600
+So, if you see this contract is just a simple contract,
+
+00:06:50.600 --> 00:06:52.220
+it's expecting an input value.
+
+00:06:52.220 --> 00:06:57.120
+So, let me start with an initial value of a 100 and deploy this contract.
+
+00:06:57.129 --> 00:07:00.829
+So, now we have two functions and of course,
+
+00:07:00.829 --> 00:07:02.870
+the value because it's declared public,
+
+00:07:02.870 --> 00:07:05.689
+and now if you get the value right now
+
+00:07:05.689 --> 00:07:08.449
+it's going to be 100 because that's what we pass through a constructor function,
+
+00:07:08.449 --> 00:07:11.245
+now let's deposit in another amount of 20.
+
+00:07:11.245 --> 00:07:14.420
+Deposit, now the value is going to change to 120.
+
+00:07:14.420 --> 00:07:16.968
+If I take out 50,
+
+00:07:16.968 --> 00:07:18.920
+and then I withdraw,
+
+00:07:18.920 --> 00:07:20.420
+now let's get the value,
+
+00:07:20.420 --> 00:07:22.640
+it's going to be 70, so it's working fine.
+
+00:07:22.639 --> 00:07:26.539
+So, now I'm going to delete this copy of this contract and deploy
+
+00:07:26.540 --> 00:07:30.170
+the very last one that's inheriting from all these different three contracts.
+
+00:07:30.170 --> 00:07:32.720
+So, let's deploy a myContract now.
+
+00:07:32.720 --> 00:07:34.415
+So let's go back here,
+
+00:07:34.415 --> 00:07:38.105
+go to on myContract and this is expecting.
+
+00:07:38.105 --> 00:07:42.500
+We're already passing our arguments for these contracts right here but of course,
+
+00:07:42.500 --> 00:07:46.384
+it expects this also has it's own constructor function expecting a string,
+
+00:07:46.384 --> 00:07:50.814
+name of the contract, and I'm going to just call it Udacity.
+
+00:07:50.814 --> 00:07:54.105
+Well, let's deploy this contract right there.
+
+00:07:54.105 --> 00:07:57.090
+All the functions, so deposit, sendMoney.
+
+00:07:57.089 --> 00:08:02.429
+So if you see these functions and not a defined on myContract,
+
+00:08:02.430 --> 00:08:03.915
+but since I'm inheriting it,
+
+00:08:03.915 --> 00:08:06.060
+all these functions end up in a list of
+
+00:08:06.060 --> 00:08:08.780
+these functions because that is how inheritance works.
+
+00:08:08.779 --> 00:08:10.279
+So, you can deposit,
+
+00:08:10.279 --> 00:08:12.694
+you can withdraw, you can get the contract name,
+
+00:08:12.694 --> 00:08:16.399
+you can getValue, and if they were set to 100,
+
+00:08:16.399 --> 00:08:19.529
+all these functions work, and perfect.
+
+00:08:19.529 --> 00:08:20.709
+This is how inheritance works,
+
+00:08:20.709 --> 00:08:24.259
+I definitely want you to get these two files from our GitHub page,
+
+00:08:24.259 --> 00:08:29.430
+play around and see how comfortable you get with inheritance in Solidity.
+

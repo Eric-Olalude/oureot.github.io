@@ -1,0 +1,271 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.020 --> 00:00:02.940
+Welcome back. I'm confident that you're
+
+00:00:02.940 --> 00:00:05.430
+enjoying your Blockchain nanodegree program so far.
+
+00:00:05.430 --> 00:00:08.520
+Things will start to get even more interesting from now on,
+
+00:00:08.520 --> 00:00:10.605
+you are going to be building amazing projects
+
+00:00:10.605 --> 00:00:12.810
+that would be helpful in advancing your career.
+
+00:00:12.810 --> 00:00:15.870
+Now, just want to let you know that some of you might not have the environment
+
+00:00:15.870 --> 00:00:19.080
+set up in terms of Node, JavaScript, compilers, etc.
+
+00:00:19.080 --> 00:00:22.200
+For those students, we at Udacity are going to give you
+
+00:00:22.200 --> 00:00:25.320
+complete development environment that is called the workspace,
+
+00:00:25.320 --> 00:00:27.630
+and this is integrated into your classroom.
+
+00:00:27.630 --> 00:00:31.095
+Now of course, you're welcome to use your own environment if you have that setup.
+
+00:00:31.095 --> 00:00:33.180
+If you don't, you don't have to worry,
+
+00:00:33.180 --> 00:00:37.250
+you can obviously use the Udacity's integrated classroom workspace
+
+00:00:37.250 --> 00:00:39.875
+that is going to be pre-installed with Node.
+
+00:00:39.875 --> 00:00:44.180
+Also want to let you know that your workspace is backed by Linux virtual machine.
+
+00:00:44.180 --> 00:00:48.620
+That means you're going to have complete access to a terminal, and Node packages,
+
+00:00:48.620 --> 00:00:49.850
+and you can install packages,
+
+00:00:49.850 --> 00:00:50.930
+you can modify content,
+
+00:00:50.930 --> 00:00:52.145
+you can do git clone,
+
+00:00:52.145 --> 00:00:54.715
+and etc, and all that stuff.
+
+00:00:54.715 --> 00:00:57.470
+I'm going to now walk you through so that you are ready
+
+00:00:57.470 --> 00:00:59.570
+to work on your all upcoming projects.
+
+00:00:59.570 --> 00:01:01.745
+So let's walk through our workspace right now.
+
+00:01:01.745 --> 00:01:03.050
+So walking through here,
+
+00:01:03.050 --> 00:01:04.985
+if you see there's three sections.
+
+00:01:04.985 --> 00:01:06.830
+This is the navigator section,
+
+00:01:06.830 --> 00:01:08.230
+this is your coding section,
+
+00:01:08.230 --> 00:01:09.670
+and this is your terminal section.
+
+00:01:09.670 --> 00:01:13.205
+So let me explain you a little bit in detail about all the three sections.
+
+00:01:13.205 --> 00:01:15.855
+The site section is the file navigator section,
+
+00:01:15.855 --> 00:01:17.300
+so you can open directories,
+
+00:01:17.300 --> 00:01:18.710
+you can go to a specific directory,
+
+00:01:18.710 --> 00:01:20.510
+you can go into directories.
+
+00:01:20.510 --> 00:01:22.790
+So if you see, this is the path you're in right now,
+
+00:01:22.790 --> 00:01:24.815
+so pay attention to that.
+
+00:01:24.815 --> 00:01:26.480
+You can open up files,
+
+00:01:26.480 --> 00:01:29.180
+whatever files you open up show up in this window right here.
+
+00:01:29.180 --> 00:01:31.775
+So all your open files is your section, this here.
+
+00:01:31.775 --> 00:01:33.680
+This is also your coding section.
+
+00:01:33.680 --> 00:01:38.400
+That means any code that you can be writing in any of the files appears right here.
+
+00:01:38.400 --> 00:01:41.205
+Now, look at this plus button right there.
+
+00:01:41.205 --> 00:01:42.490
+In the navigator section,
+
+00:01:42.490 --> 00:01:43.820
+you can upload files,
+
+00:01:43.820 --> 00:01:45.920
+you can upload folders, you can create files,
+
+00:01:45.920 --> 00:01:48.200
+you can also create folders from this section.
+
+00:01:48.200 --> 00:01:51.200
+So let's say you have an assignment or a project you're working on,
+
+00:01:51.200 --> 00:01:54.110
+and you're supposed to send us a file and you did that on your computer.
+
+00:01:54.110 --> 00:01:58.530
+You can upload files for your workspace using this button right there.
+
+00:01:58.530 --> 00:02:00.990
+Walking through this section,
+
+00:02:00.990 --> 00:02:02.220
+this is a terminal section.
+
+00:02:02.220 --> 00:02:04.440
+That means if you need to run code,
+
+00:02:04.440 --> 00:02:07.475
+that this whole environment is preset with Node.
+
+00:02:07.475 --> 00:02:08.845
+That means you can open up,
+
+00:02:08.845 --> 00:02:10.380
+just click on this plus sign,
+
+00:02:10.380 --> 00:02:12.000
+and it opens up a terminal for you.
+
+00:02:12.000 --> 00:02:14.180
+If you wish, if you're running multiple scripts,
+
+00:02:14.180 --> 00:02:16.620
+you can always open up multiple terminals by another plus button.
+
+00:02:16.620 --> 00:02:18.445
+I'm just going to open one for now.
+
+00:02:18.445 --> 00:02:20.290
+So now you can run any Node commands,
+
+00:02:20.290 --> 00:02:23.300
+you can install packages using npm just because like I said,
+
+00:02:23.300 --> 00:02:25.535
+it's already pre-configured with Node.
+
+00:02:25.535 --> 00:02:27.785
+You can clone, git clone,
+
+00:02:27.785 --> 00:02:29.340
+all that stuff can happen right there.
+
+00:02:29.340 --> 00:02:32.060
+So this is your terminal for running all pieces of code,
+
+00:02:32.060 --> 00:02:34.760
+running files and all that scripts.
+
+00:02:34.760 --> 00:02:36.845
+So this is a terminal section again,
+
+00:02:36.845 --> 00:02:37.880
+this is a coding section,
+
+00:02:37.880 --> 00:02:39.155
+this is a navigator section.
+
+00:02:39.155 --> 00:02:42.085
+A couple of buttons we also wanted to walk you through is a menu button.
+
+00:02:42.085 --> 00:02:46.400
+If your workspace is giving you any issues and you would like to refresh your workspace,
+
+00:02:46.400 --> 00:02:48.245
+you can always do that by clicking Refresh.
+
+00:02:48.245 --> 00:02:50.540
+Also just want to let you know if you refresh workspace,
+
+00:02:50.540 --> 00:02:51.935
+all your files will be saved.
+
+00:02:51.935 --> 00:02:53.075
+Nothing is going to be deleted,
+
+00:02:53.075 --> 00:02:55.365
+it's all still going to be there for you.
+
+00:02:55.365 --> 00:02:58.160
+For whatever reason, if you like to reset all the data,
+
+00:02:58.160 --> 00:02:59.960
+you can always click on Reset Data,
+
+00:02:59.960 --> 00:03:04.090
+which means all your code and your files will be lost using that option.
+
+00:03:04.090 --> 00:03:06.450
+So menu shrink, talked about that.
+
+00:03:06.450 --> 00:03:07.560
+Pretty simple to use,
+
+00:03:07.560 --> 00:03:10.280
+is a complete built-in environment for running files,
+
+00:03:10.280 --> 00:03:13.370
+running scripts, and related information.
+
+00:03:13.370 --> 00:03:15.410
+Now, in your next section,
+
+00:03:15.410 --> 00:03:18.020
+I'm going to actually give you your complete workspace
+
+00:03:18.020 --> 00:03:20.840
+that you can walk through and play around,
+
+00:03:20.840 --> 00:03:23.240
+open up files, run scripts,
+
+00:03:23.240 --> 00:03:25.985
+and install packages and see what you can possibly do with it,
+
+00:03:25.985 --> 00:03:30.845
+so that you are all ready to work on your projects using this workspace from now on.
+
+00:03:30.845 --> 00:03:34.650
+So again, welcome to your workspace. Enjoy using it.
+

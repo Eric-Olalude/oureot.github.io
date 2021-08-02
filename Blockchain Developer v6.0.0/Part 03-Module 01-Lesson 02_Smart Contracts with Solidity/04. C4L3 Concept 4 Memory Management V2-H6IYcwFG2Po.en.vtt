@@ -1,0 +1,181 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.384
+In this concept, we will learn about how memory is managed in solidity.
+
+00:00:05.384 --> 00:00:10.890
+We will talk in detail about these topics as we move onto more relevant concepts,
+
+00:00:10.890 --> 00:00:15.420
+but I wanted to give you a little high-level overview on these keywords.
+
+00:00:15.419 --> 00:00:20.024
+Let me introduce you to the keywords memory and storage.
+
+00:00:20.024 --> 00:00:23.309
+Memory is divided into three areas,
+
+00:00:23.309 --> 00:00:26.519
+storage, memory, and calldata.
+
+00:00:26.519 --> 00:00:31.350
+As a developer, you can use the keywords memory, and storage.
+
+00:00:31.350 --> 00:00:33.675
+Let's talk about storage first.
+
+00:00:33.674 --> 00:00:36.209
+Now storage, think of it as
+
+00:00:36.210 --> 00:00:40.844
+a database layer where contract's data is stored and persisted.
+
+00:00:40.844 --> 00:00:45.674
+Read and write operations are costly for storage data.
+
+00:00:45.674 --> 00:00:51.954
+Memory is for temporary storage and is used for call code execution.
+
+00:00:51.954 --> 00:00:57.125
+You can allocate memory for complex types like arrays and structures.
+
+00:00:57.125 --> 00:01:01.835
+The data in memory is lost after execution.
+
+00:01:01.835 --> 00:01:05.299
+Calldata area is like a call stack,
+
+00:01:05.299 --> 00:01:08.509
+it is temporary and non-modifiable.
+
+00:01:08.510 --> 00:01:11.000
+It is used for function calls,
+
+00:01:11.000 --> 00:01:15.064
+maximum size is 256 bit boots.
+
+00:01:15.064 --> 00:01:18.094
+Now, if you have multiple recursive calls,
+
+00:01:18.094 --> 00:01:20.454
+it can lead to call stack error.
+
+00:01:20.454 --> 00:01:24.620
+For now, the main point that I really want you to remember is that,
+
+00:01:24.620 --> 00:01:27.980
+state variables are always stored in storage.
+
+00:01:27.980 --> 00:01:31.280
+Now, these are the variables that are outside any function.
+
+00:01:31.280 --> 00:01:36.980
+Local variables inside functions are just references to data in storage.
+
+00:01:36.980 --> 00:01:40.189
+Data for function arguments by default,
+
+00:01:40.189 --> 00:01:42.125
+is located in memory.
+
+00:01:42.125 --> 00:01:44.094
+You can use the keywords,
+
+00:01:44.094 --> 00:01:48.519
+storage and memory to change this default storage behavior.
+
+00:01:48.519 --> 00:01:52.609
+I don't want you to be overwhelmed with this information right now,
+
+00:01:52.609 --> 00:01:56.709
+it will get more clear as we move on to relevant topics.
+
+00:01:56.709 --> 00:01:59.474
+Now, just to recap again,
+
+00:01:59.474 --> 00:02:03.259
+by default, like I mentioned already in a previous slide,
+
+00:02:03.260 --> 00:02:06.800
+all state variables in the beginning of the contract outside
+
+00:02:06.799 --> 00:02:11.079
+any functions that are not inside any function are stored in storage.
+
+00:02:11.080 --> 00:02:14.000
+So, you don't have to specify the word storage,
+
+00:02:14.000 --> 00:02:16.955
+they will automatically be stored in storage.
+
+00:02:16.955 --> 00:02:18.620
+Hence the count variable,
+
+00:02:18.620 --> 00:02:22.430
+if you look on the code on your screen and also the array points,
+
+00:02:22.430 --> 00:02:25.659
+are all by default going to be in storage.
+
+00:02:25.659 --> 00:02:28.500
+For local arrays inside any function,
+
+00:02:28.500 --> 00:02:32.305
+they should be specifically labeled as storage or memory.
+
+00:02:32.305 --> 00:02:34.270
+Now, if you don't put a label,
+
+00:02:34.270 --> 00:02:35.890
+it is going to put in storage,
+
+00:02:35.889 --> 00:02:38.099
+but the compiler will still compile,
+
+00:02:38.099 --> 00:02:42.085
+give you compiler error and ask you to label it as storage.
+
+00:02:42.085 --> 00:02:43.705
+It will still compile,
+
+00:02:43.705 --> 00:02:47.469
+but it's going to complain that it really likes to see the word storage over there.
+
+00:02:47.469 --> 00:02:51.694
+Now, we can specifically change the default behavior and store it in memory,
+
+00:02:51.694 --> 00:02:55.629
+like we are doing in the memory array example on your screen right now.
+
+00:02:55.629 --> 00:02:59.620
+The pointer array that you see here is inside a function,
+
+00:02:59.620 --> 00:03:04.444
+this is fine just because it is pointing towards an array in storage.
+
+00:03:04.444 --> 00:03:07.870
+Now, this is just a high-level overview of memory types.
+
+00:03:07.870 --> 00:03:09.715
+Again, we have three types of memories;
+
+00:03:09.715 --> 00:03:11.905
+memory, storage, and calldata.
+
+00:03:11.905 --> 00:03:15.235
+You are going to be using these words memory and storage quite often,
+
+00:03:15.235 --> 00:03:17.375
+especially when you use strings,
+
+00:03:17.375 --> 00:03:19.870
+bytes, and every types as we move forward.
+
+00:03:19.870 --> 00:03:22.569
+So, as we get into complex data types,
+
+00:03:22.569 --> 00:03:25.579
+we will discuss these topics in more detail.
+

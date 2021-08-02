@@ -1,0 +1,85 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.609
+Welcome to lesson on Blockchain Privacy.
+
+00:00:02.609 --> 00:00:03.884
+In the previous lessons,
+
+00:00:03.884 --> 00:00:07.619
+we learned that Blockchains provide many useful features for software engineers.
+
+00:00:07.620 --> 00:00:09.839
+Blockchains provide a source of truth for
+
+00:00:09.839 --> 00:00:13.544
+applications by making data transparent, immutable, and permanent.
+
+00:00:13.544 --> 00:00:15.570
+But what about the data that we want to use and
+
+00:00:15.570 --> 00:00:18.855
+applications that we don't want to make public or can in public?
+
+00:00:18.855 --> 00:00:22.510
+Could you imagine for example storing your text messages on the blockchain?
+
+00:00:22.510 --> 00:00:25.890
+Or how about putting your bank records come like completely open database?
+
+00:00:25.890 --> 00:00:30.240
+Probably not. For these kinds of applications we need privacy.
+
+00:00:30.239 --> 00:00:35.960
+Privacy for data means that your data is safe and completely inaccessible to others.
+
+00:00:35.960 --> 00:00:39.530
+It's also important to remember that your users data belongs to them,
+
+00:00:39.530 --> 00:00:43.234
+and different users of your applications may want different levels of privacy.
+
+00:00:43.234 --> 00:00:45.109
+When you design applications,
+
+00:00:45.109 --> 00:00:47.119
+you should empower your users by offering them
+
+00:00:47.119 --> 00:00:49.984
+the choice to keep their data private whenever they want.
+
+00:00:49.984 --> 00:00:53.479
+In this lesson, you're going to learn several techniques you can
+
+00:00:53.479 --> 00:00:57.079
+use to protect and enhance privacy in your Blockchain applications.
+
+00:00:57.079 --> 00:01:00.320
+We'll start with basic hashing techniques and work
+
+00:01:00.320 --> 00:01:03.770
+our way up to more complicated privacy techniques like Merkle trees,
+
+00:01:03.770 --> 00:01:06.585
+ring signatures, zero-knowledge proofs, and more.
+
+00:01:06.584 --> 00:01:07.929
+By the end of this lesson,
+
+00:01:07.930 --> 00:01:09.590
+you'll have a strong foundation your
+
+00:01:09.590 --> 00:01:12.275
+conceptual and apply understanding of these techniques,
+
+00:01:12.275 --> 00:01:15.355
+as well as how to implement them yourself within your own work,
+
+00:01:15.355 --> 00:01:17.930
+so you can let your users use their data in
+
+00:01:17.930 --> 00:01:22.620
+Blockchain applications without compromising privacy. Let's get started.
+

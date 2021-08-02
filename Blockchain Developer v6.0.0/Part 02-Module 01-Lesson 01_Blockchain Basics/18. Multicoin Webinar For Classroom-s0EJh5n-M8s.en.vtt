@@ -1,0 +1,2305 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.520
+Hello, everyone. I am Cezanne Camacho.
+
+00:00:02.520 --> 00:00:05.760
+I teach deep learning and computer vision at Udacity.
+
+00:00:05.760 --> 00:00:07.845
+Today I'm with Kyle Samani,
+
+00:00:07.845 --> 00:00:12.330
+who is the co-founder and managing partner at Multicoin Capital.
+
+00:00:12.330 --> 00:00:15.315
+Maybe you could tell us a bit about what multi-coin does.
+
+00:00:15.315 --> 00:00:16.980
+Hey Cezanne. Thanks so much for having me,
+
+00:00:16.980 --> 00:00:18.675
+super excited to be on.
+
+00:00:18.675 --> 00:00:21.735
+So Multicoin Capital is a crypto fund.
+
+00:00:21.735 --> 00:00:23.775
+We're based in Austin, Texas.
+
+00:00:23.775 --> 00:00:27.360
+We spend all of our energy focused on the crypto space.
+
+00:00:27.360 --> 00:00:31.460
+We invest in protocols and in companies going all the way from
+
+00:00:31.460 --> 00:00:32.600
+two guys or girls with
+
+00:00:32.600 --> 00:00:36.005
+an idea all the way up through Bitcoin and everything in the middle.
+
+00:00:36.005 --> 00:00:37.705
+We go use derivative,
+
+00:00:37.705 --> 00:00:38.840
+we'll go long and short.
+
+00:00:38.840 --> 00:00:44.650
+We will invest in illiquid early stage projects and buy things on the public markets.
+
+00:00:44.650 --> 00:00:47.270
+Our investment mandate is to just invest in
+
+00:00:47.270 --> 00:00:49.760
+the crypto ecosystem and invest in things that are crypto native.
+
+00:00:49.760 --> 00:00:53.435
+So although we follow the security token space,
+
+00:00:53.435 --> 00:00:56.600
+we don't like investing like if someone puts Apple stock on a blockchain,
+
+00:00:56.600 --> 00:00:58.540
+we're not going to invest in that.
+
+00:00:58.540 --> 00:01:03.620
+But we spend all our time in crypto space and we think it's the coolest thing in
+
+00:01:03.620 --> 00:01:05.360
+the world and we want to invest in some of
+
+00:01:05.360 --> 00:01:09.005
+the most awesome protocols and companies building in this technology.
+
+00:01:09.005 --> 00:01:15.220
+So if you're at a party and someone asks you what is blockchain, what do you say to them?
+
+00:01:15.220 --> 00:01:20.345
+I only go to parties where everyone already knows what blockchain is.
+
+00:01:20.345 --> 00:01:23.480
+Only the people who don't the know.
+
+00:01:23.480 --> 00:01:26.370
+I'm just playing.
+
+00:01:26.450 --> 00:01:29.810
+A blockchain is a ledger or
+
+00:01:29.810 --> 00:01:34.760
+a database like any other database with the a couple of interesting differences.
+
+00:01:34.760 --> 00:01:38.480
+One is that the database is hosted by many people.
+
+00:01:38.480 --> 00:01:42.260
+So whereas like a typical database is hosted by one company or one person or is hosted
+
+00:01:42.260 --> 00:01:46.850
+on one computer and controlled by that one person or that one entity,
+
+00:01:46.850 --> 00:01:50.720
+a blockchain is stored on many computers and
+
+00:01:50.720 --> 00:01:54.875
+no one person can just go randomly manipulate stuff in the database.
+
+00:01:54.875 --> 00:01:57.005
+The ledger is append only,
+
+00:01:57.005 --> 00:01:58.715
+so you can only add new entries to it.
+
+00:01:58.715 --> 00:02:02.400
+Once you've added something to it you cannot take anything back.
+
+00:02:02.740 --> 00:02:04.850
+I think in the case of Bitcoin,
+
+00:02:04.850 --> 00:02:06.890
+there are something like 100,000 computers all over
+
+00:02:06.890 --> 00:02:09.365
+the world today that are maintaining copy of this letter.
+
+00:02:09.365 --> 00:02:13.190
+So even if 50,000 of those computers blew up tomorrow,
+
+00:02:13.190 --> 00:02:15.980
+the ledger is still totally intact.
+
+00:02:15.980 --> 00:02:18.815
+So it's a very simple definition of a blockchain.
+
+00:02:18.815 --> 00:02:22.285
+In addition to people asking what is blockchain,
+
+00:02:22.285 --> 00:02:25.400
+another common big question I get is,
+
+00:02:25.400 --> 00:02:26.985
+what is the big deal?
+
+00:02:26.985 --> 00:02:31.415
+Why are so many people and investors interested in blockchain generally?
+
+00:02:31.415 --> 00:02:33.935
+What are the traits that really are drawing people in?
+
+00:02:33.935 --> 00:02:37.770
+Yeah. I think in
+
+00:02:37.770 --> 00:02:41.620
+the last 12 months it's been a little bit of people's eyes have woken up.
+
+00:02:41.620 --> 00:02:45.140
+It's like the price went up and that caused people to go take a second look.
+
+00:02:45.140 --> 00:02:46.870
+They pay attention.
+
+00:02:46.870 --> 00:02:52.405
+The core concepts is really fundamentally unchanged since Bitcoin launched in 2009,
+
+00:02:52.405 --> 00:02:55.025
+but there's some pretty powerful ideas here.
+
+00:02:55.025 --> 00:02:58.250
+The first is that you can have self sovereign money.
+
+00:02:58.250 --> 00:03:01.730
+So if you think about US dollars,
+
+00:03:01.730 --> 00:03:04.225
+so you've got a green piece of paper you put in your wallet.
+
+00:03:04.225 --> 00:03:06.600
+It's more or less like your green piece of
+
+00:03:06.600 --> 00:03:08.560
+paper and absent someone holding a gun to your head.
+
+00:03:08.560 --> 00:03:12.515
+It's your green piece of paper and no one can take it away from you.
+
+00:03:12.515 --> 00:03:16.190
+But as soon as you go from green pieces of paper in your wallet to
+
+00:03:16.190 --> 00:03:20.525
+a digital bank account and you deposit that green piece of paper into an ATM,
+
+00:03:20.525 --> 00:03:25.145
+well, now you really are no longer sovereign in that like Bank of America just says,
+
+00:03:25.145 --> 00:03:26.750
+you can't withdraw money anymore,
+
+00:03:26.750 --> 00:03:28.955
+then you can't withdraw anymore.
+
+00:03:28.955 --> 00:03:32.600
+If the IRS puts a freeze in your accounts, whatever.
+
+00:03:32.600 --> 00:03:38.670
+So once you go from physical cash to digital money in all governments,
+
+00:03:38.670 --> 00:03:40.170
+in all countries around the world today,
+
+00:03:40.170 --> 00:03:42.995
+you as the person who owns the money,
+
+00:03:42.995 --> 00:03:45.140
+or it's really no longer your money.
+
+00:03:45.140 --> 00:03:47.660
+It's now like you have a claim on the money
+
+00:03:47.660 --> 00:03:50.360
+and Bank of America has the money and theoretically,
+
+00:03:50.360 --> 00:03:52.130
+you have a claim on it and they will honor your claim,
+
+00:03:52.130 --> 00:03:54.210
+but they have the money.
+
+00:03:54.210 --> 00:03:55.185
+Right.
+
+00:03:55.185 --> 00:03:57.845
+That's a very subtle difference,
+
+00:03:57.845 --> 00:04:00.530
+but it has pretty profound implications on lots of things.
+
+00:04:00.530 --> 00:04:02.330
+So you can't transfer money after 5:00 PM,
+
+00:04:02.330 --> 00:04:03.949
+you can't transfer money on weekends,
+
+00:04:03.949 --> 00:04:06.960
+bank holidays, exorbitant fees,
+
+00:04:06.960 --> 00:04:08.640
+people can freeze your accounts.
+
+00:04:08.640 --> 00:04:12.230
+There's all kinds of weird second and third order effects
+
+00:04:12.230 --> 00:04:16.400
+of the fact that you actually don't control your money.
+
+00:04:16.400 --> 00:04:20.300
+So one of the really profound breakthroughs of Bitcoin and really all
+
+00:04:20.300 --> 00:04:26.350
+cryptocurrencies is that you as a consumer can be self sovereign and have money,
+
+00:04:26.350 --> 00:04:29.180
+and literally no one in the world can take that away from you,
+
+00:04:29.180 --> 00:04:31.355
+absent putting a gun to your head.
+
+00:04:31.355 --> 00:04:33.320
+You can travel across borders.
+
+00:04:33.320 --> 00:04:40.490
+You can travel anywhere and the system will work and it cannot be taken away from you.
+
+00:04:40.490 --> 00:04:44.980
+That's a fundamentally unique thing.
+
+00:04:46.220 --> 00:04:49.280
+As people are opening their eyes to the power of
+
+00:04:49.280 --> 00:04:51.890
+what that means for empowering consumers,
+
+00:04:51.890 --> 00:04:56.090
+I think that's very, very profound impact on how the world's going to work.
+
+00:04:56.090 --> 00:04:59.960
+Yeah, that makes sense to me. When I think of the US dollar
+
+00:04:59.960 --> 00:05:02.000
+especially it's something that if you're
+
+00:05:02.000 --> 00:05:05.495
+lucky where it feels like a fairly stable market.
+
+00:05:05.495 --> 00:05:08.520
+I don't have a lot of distressed in my bank, that kind of thing,
+
+00:05:08.520 --> 00:05:12.440
+but I could definitely imagine perhaps elsewhere where stability or
+
+00:05:12.440 --> 00:05:16.070
+even censorship of what you can
+
+00:05:16.070 --> 00:05:19.955
+do with your money is an issue that this could be something really interesting.
+
+00:05:19.955 --> 00:05:23.265
+Along those lines, I'm wondering about blockchain.
+
+00:05:23.265 --> 00:05:26.900
+I see it's use in cryptocurrency and I'm also thinking it's much bigger than that.
+
+00:05:26.900 --> 00:05:32.060
+I'm wondering where you think it's going to impact the world.
+
+00:05:32.060 --> 00:05:36.500
+What industry do you see blockchain affecting now and maybe in future?
+
+00:05:36.500 --> 00:05:41.450
+Yes. I think the single biggest use case for crypto and blockchains are
+
+00:05:41.450 --> 00:05:46.520
+for what I would call creating a global digital reserve assets.
+
+00:05:46.520 --> 00:05:48.140
+So you can call it digital gold,
+
+00:05:48.140 --> 00:05:49.505
+you can call it digital money,
+
+00:05:49.505 --> 00:05:53.660
+but something that it's a asset that no government can take away from you.
+
+00:05:53.660 --> 00:05:55.970
+They can't print new money of it and think
+
+00:05:55.970 --> 00:05:58.744
+that that's a multi-trillion dollar opportunity.
+
+00:05:58.744 --> 00:06:01.300
+I think it's a huge opportunity.
+
+00:06:01.300 --> 00:06:03.710
+There's all kinds of other interesting use cases.
+
+00:06:03.710 --> 00:06:06.890
+So one of my favorites is this idea of digital assets.
+
+00:06:06.890 --> 00:06:12.275
+So we invested in a protocol six-seven-eight months ago called Tari.
+
+00:06:12.275 --> 00:06:15.050
+They just came out of stealth mode maybe a month or two ago.
+
+00:06:15.050 --> 00:06:17.825
+Tari is building a brand new blockchain that
+
+00:06:17.825 --> 00:06:21.090
+has two really strong features that are built at the core.
+
+00:06:21.090 --> 00:06:27.110
+One is privacy using this new technology called MimbleWimble, seriously.
+
+00:06:27.110 --> 00:06:28.370
+MimbleWimble.
+
+00:06:28.370 --> 00:06:32.540
+MimbleWimble. The second is they're building a super strong focus on digital assets.
+
+00:06:32.540 --> 00:06:38.760
+So they want people if they're at a venue for a concert it's just tickets.
+
+00:06:38.760 --> 00:06:42.530
+They want to be able to issue those on the Tari protocol and make it super easy.
+
+00:06:42.530 --> 00:06:44.690
+If airline, you've got airline miles.
+
+00:06:44.690 --> 00:06:46.520
+Starbucks you've got loyalty points.
+
+00:06:46.520 --> 00:06:48.410
+Well, there's all of these different businesses
+
+00:06:48.410 --> 00:06:50.400
+that you can call them, they have a currency,
+
+00:06:50.400 --> 00:06:54.545
+they have these either fungible or non fungible assets like tickets to a seat, whatever.
+
+00:06:54.545 --> 00:06:57.110
+All of these things today are managed in
+
+00:06:57.110 --> 00:07:00.800
+these disparate proprietary databases and they're not fungible,
+
+00:07:00.800 --> 00:07:03.415
+they're very hard to work with, they're all clunky.
+
+00:07:03.415 --> 00:07:08.135
+I think there's a really strong empowering concept of a consumer being able to say,
+
+00:07:08.135 --> 00:07:09.680
+no, here's my ticket,
+
+00:07:09.680 --> 00:07:10.880
+I can see my claim.
+
+00:07:10.880 --> 00:07:14.430
+I'm going to see this [inaudible] concert next Tuesday,
+
+00:07:14.430 --> 00:07:18.720
+whatever, and that a Ticketmaster has it no.
+
+00:07:18.720 --> 00:07:20.945
+I have my ticket. I can see that it's my ticket.
+
+00:07:20.945 --> 00:07:22.205
+If I choose this as my ticket,
+
+00:07:22.205 --> 00:07:23.945
+I can choose as my ticket,
+
+00:07:23.945 --> 00:07:26.630
+but it's not sitting on Ticketmaster's database.
+
+00:07:26.630 --> 00:07:29.405
+That would apply for owning stock in a company.
+
+00:07:29.405 --> 00:07:33.095
+This would apply for any debt like anything.
+
+00:07:33.095 --> 00:07:36.050
+So I think this is a really profound concepts.
+
+00:07:36.050 --> 00:07:38.330
+Today, all of these digital assets are all stored in
+
+00:07:38.330 --> 00:07:40.975
+different databases but hosted by different companies all over the place,
+
+00:07:40.975 --> 00:07:43.880
+and there's no way to make sense of it in a unified way.
+
+00:07:43.880 --> 00:07:49.160
+So I'm really excited about the opportunity for digital assets on blockchains.
+
+00:07:49.160 --> 00:07:51.845
+Another thing I'm super excited about,
+
+00:07:51.845 --> 00:07:55.440
+there's a new protocol that launched recently called Auger.
+
+00:07:55.560 --> 00:07:58.405
+Auger are really, really cool concept,
+
+00:07:58.405 --> 00:08:01.120
+it is a global prediction market.
+
+00:08:01.120 --> 00:08:04.150
+So there's a few major categories of predictions.
+
+00:08:04.150 --> 00:08:09.490
+One would be predicting the price of a stock or some asset at some future point in time,
+
+00:08:09.490 --> 00:08:10.765
+basically like an option.
+
+00:08:10.765 --> 00:08:14.620
+You can actually really broaden this to just be any form of derivative contract,
+
+00:08:14.620 --> 00:08:17.560
+but another really common from a prediction markets would be sports betting.
+
+00:08:17.560 --> 00:08:19.330
+A third would be bidding on politics.
+
+00:08:19.330 --> 00:08:20.915
+So your exists right now,.
+
+00:08:20.915 --> 00:08:22.960
+Auger launched on July ninth,
+
+00:08:22.960 --> 00:08:24.955
+so just a few weeks ago.
+
+00:08:24.955 --> 00:08:29.300
+It is a prediction market where anyone can create a market for anything.
+
+00:08:29.300 --> 00:08:32.760
+The entire thing runs on Ethereum blockchain.
+
+00:08:32.960 --> 00:08:36.795
+No person in the world can stop the system.
+
+00:08:36.795 --> 00:08:38.850
+The entire Auger team could disappear
+
+00:08:38.850 --> 00:08:42.920
+tomorrow off the planet earth and the system will keep running.
+
+00:08:42.920 --> 00:08:48.005
+These extreme scenarios just to prove on the real business of something like this.
+
+00:08:48.005 --> 00:08:50.140
+It's pretty remarkable. So anyone,
+
+00:08:50.140 --> 00:08:51.715
+anywhere in the world can create any market.
+
+00:08:51.715 --> 00:08:56.950
+Then anyone, anywhere in the world can come and bet on the outcomes of that market.
+
+00:08:56.950 --> 00:09:01.820
+So like you can submit any like yes-no question or something?
+
+00:09:01.910 --> 00:09:05.080
+You can submit anything as long as if people want to come bet on it,
+
+00:09:05.080 --> 00:09:06.820
+if they want to take odds and put bets on it,
+
+00:09:06.820 --> 00:09:09.010
+then they can take odds and put bets on it.
+
+00:09:09.010 --> 00:09:11.650
+Having to know, off the top your head,
+
+00:09:11.650 --> 00:09:14.135
+what the most popular question is on there right now?
+
+00:09:14.135 --> 00:09:16.100
+So I think at the current moment,
+
+00:09:16.100 --> 00:09:19.535
+the market with the highest large number of
+
+00:09:19.535 --> 00:09:23.340
+outstanding interest is the price of Ethereum at the end of the year,
+
+00:09:23.340 --> 00:09:25.900
+I think it's at $500 at the end of the year,
+
+00:09:25.900 --> 00:09:27.625
+I think that's the largest market.
+
+00:09:27.625 --> 00:09:29.470
+So the system is enough for two or three weeks,
+
+00:09:29.470 --> 00:09:31.880
+I think they've created somewhere in the order of 900 markets.
+
+00:09:31.880 --> 00:09:35.470
+There's been about $2 million that's been bet through the system.
+
+00:09:35.470 --> 00:09:38.590
+What so cool is the thing is entirely decentralized and peer-to-peer.
+
+00:09:38.590 --> 00:09:41.020
+There is no central authority in the system.
+
+00:09:41.020 --> 00:09:42.970
+If you think about a prediction market,
+
+00:09:42.970 --> 00:09:48.850
+one of the hard problems is if you don't want a centralize person controlling the system.
+
+00:09:48.850 --> 00:09:50.695
+Well, after the event is over,
+
+00:09:50.695 --> 00:09:52.670
+someone needs to flip a switch and say,
+
+00:09:52.670 --> 00:09:55.450
+"Trump won" or "Hillary won" or the price of
+
+00:09:55.450 --> 00:09:58.360
+ether was over 500 or less than 500 or whatever.
+
+00:09:58.360 --> 00:10:02.015
+If you want to be able to support any conceivable logic,
+
+00:10:02.015 --> 00:10:05.275
+then how do you do this in a decentralized way?
+
+00:10:05.275 --> 00:10:09.790
+Auger is a very clever solution where there are some fees in the system,
+
+00:10:09.790 --> 00:10:12.545
+the fees are very low, but there are some fees.
+
+00:10:12.545 --> 00:10:17.300
+The idea is that once a prediction market is officially over,
+
+00:10:17.300 --> 00:10:19.360
+people who own rep tokens,
+
+00:10:19.360 --> 00:10:21.770
+rep tokens are the native token of the Auger network,
+
+00:10:21.770 --> 00:10:23.650
+those people will be asked and they will say,
+
+00:10:23.650 --> 00:10:26.830
+"Hey, this market is over.
+
+00:10:26.830 --> 00:10:30.605
+Please vote and say what happened."
+
+00:10:30.605 --> 00:10:32.830
+Voting on the truth?
+
+00:10:32.830 --> 00:10:35.735
+Voting on the truth, just say what happens.
+
+00:10:35.735 --> 00:10:39.740
+Who won the soccer game, who won the election, whatever.
+
+00:10:39.780 --> 00:10:44.045
+In exchange for doing that, those people get a percentage of the fees.
+
+00:10:44.045 --> 00:10:46.945
+You might say, "Well, what's their motivation for telling the truth or lying?"
+
+00:10:46.945 --> 00:10:53.079
+So the idea is the system is that if you vote against the majority,
+
+00:10:53.079 --> 00:10:56.285
+let's say you said Hillary won the election.
+
+00:10:56.285 --> 00:10:58.930
+If you say that, then part of your Auger tokens,
+
+00:10:58.930 --> 00:11:00.425
+instead of receiving part of those fees,
+
+00:11:00.425 --> 00:11:03.805
+your Auger tokens will be automatically burned and taken away from you.
+
+00:11:03.805 --> 00:11:06.220
+So the whole idea is, the whole system is intentionally
+
+00:11:06.220 --> 00:11:07.870
+circular and that you should vote on
+
+00:11:07.870 --> 00:11:09.640
+whatever you think everyone else is going to vote for.
+
+00:11:09.640 --> 00:11:11.315
+The majority's are rules?
+
+00:11:11.315 --> 00:11:15.520
+Right. But everyone is likely going to vote the truth like,
+
+00:11:15.520 --> 00:11:16.865
+how are you going to get,
+
+00:11:16.865 --> 00:11:18.910
+there's something like 100,000 or 200,000
+
+00:11:18.910 --> 00:11:21.100
+people around the world who own Auger tokens today.
+
+00:11:21.100 --> 00:11:23.050
+How are you going to all these people to collude and say,
+
+00:11:23.050 --> 00:11:24.650
+"No, Hillary won the election."
+
+00:11:24.650 --> 00:11:26.965
+That's not going to happen.
+
+00:11:26.965 --> 00:11:29.190
+Just maybe wishful thinking.
+
+00:11:29.190 --> 00:11:31.240
+Wishful thinking perhaps or something.
+
+00:11:31.240 --> 00:11:33.580
+It's based on this idea of like,
+
+00:11:33.580 --> 00:11:38.210
+you're never going to be able to get enough people to coordinate to lie about the truth.
+
+00:11:38.210 --> 00:11:40.900
+So everyone will just honestly report the truth and they are incentivized to do
+
+00:11:40.900 --> 00:11:43.880
+so because then they will receive some of the fees from the system.
+
+00:11:43.880 --> 00:11:45.365
+Got it. That makes sense.
+
+00:11:45.365 --> 00:11:46.865
+You have a question,
+
+00:11:46.865 --> 00:11:50.740
+there's some odds in a typical betting way
+
+00:11:50.740 --> 00:11:54.680
+and then people are incentivized to tell the truth at the end.
+
+00:11:54.680 --> 00:11:57.160
+I wonder though, if there are any scenarios
+
+00:11:57.160 --> 00:12:00.190
+where the answer is ambiguous, what would happen?
+
+00:12:00.190 --> 00:12:06.190
+The only thing that's coming to mind right now is celebrity relationships like,
+
+00:12:06.190 --> 00:12:09.405
+did Brad and Angelina really break up or not?
+
+00:12:09.405 --> 00:12:11.315
+I guess you'd have to really define
+
+00:12:11.315 --> 00:12:17.495
+what if Page 6 of the times or something reports is that?
+
+00:12:17.495 --> 00:12:19.565
+Some truth or something like that,
+
+00:12:19.565 --> 00:12:21.845
+I wonder if they would ever be a divide like that?
+
+00:12:21.845 --> 00:12:25.000
+I suspect that market would probably not garner too much betting at this.
+
+00:12:25.000 --> 00:12:27.080
+It's not yet.
+
+00:12:27.080 --> 00:12:29.690
+Also the problem especially with markets like that
+
+00:12:29.690 --> 00:12:34.960
+is Brad and whoever are incentivized to collude.
+
+00:12:34.960 --> 00:12:38.720
+It's like the boxer throwing a match,
+
+00:12:39.060 --> 00:12:42.430
+it's just very easy to screw with that.
+
+00:12:42.430 --> 00:12:44.365
+So I suspect there wouldn't be much betting interest.
+
+00:12:44.365 --> 00:12:45.700
+There is a mechanism in
+
+00:12:45.700 --> 00:12:48.250
+the Auger system for people
+
+00:12:48.250 --> 00:12:51.120
+who owned the rep tokens who have to ultimately report on the truth.
+
+00:12:51.120 --> 00:12:53.620
+There is a way for them to say this market is invalid.
+
+00:12:53.620 --> 00:12:54.310
+Okay.
+
+00:12:54.310 --> 00:12:57.325
+So one of the core tenets of Auger is,
+
+00:12:57.325 --> 00:12:59.360
+you can't stop anyone from creating market.
+
+00:12:59.360 --> 00:13:06.180
+Like for example, assassination markets have come up already which is obviously it's bad,
+
+00:13:06.180 --> 00:13:08.090
+we don't want this.
+
+00:13:08.090 --> 00:13:09.870
+You can't stop people from doing it.
+
+00:13:09.870 --> 00:13:13.150
+So the way that the system is designed to accommodate
+
+00:13:13.150 --> 00:13:17.270
+this is the rep holders can just say, "This is invalid."
+
+00:13:17.270 --> 00:13:19.660
+In which case, even if people bet on it,
+
+00:13:19.660 --> 00:13:21.995
+the system will not resolve and everyone will
+
+00:13:21.995 --> 00:13:24.355
+just get their money back on whatever they put in.
+
+00:13:24.355 --> 00:13:26.979
+That makes sense, I think that's a really interesting application.
+
+00:13:26.979 --> 00:13:28.640
+I also wanted to ask you,
+
+00:13:28.640 --> 00:13:33.235
+as reading a couple of the posts on multi coins like blog,
+
+00:13:33.235 --> 00:13:36.085
+you had written something about Web 3.0.
+
+00:13:36.085 --> 00:13:39.340
+Web 1.0 being this dial-up AILA Messenger,
+
+00:13:39.340 --> 00:13:42.245
+Web 2.0 being the current state,
+
+00:13:42.245 --> 00:13:45.160
+like our data is just out there.
+
+00:13:45.160 --> 00:13:49.450
+I was wondering if you could talk about Web 3.0 and how a blockchain might
+
+00:13:49.450 --> 00:13:53.350
+be used in like a newish version of the Web?
+
+00:13:53.350 --> 00:13:57.620
+So as you say, Web 1.0 was like Mosaic,
+
+00:13:57.620 --> 00:13:59.500
+Netscape, all that stuff.
+
+00:13:59.500 --> 00:14:00.830
+Netscape.
+
+00:14:00.830 --> 00:14:03.520
+The 90's basically of the internet.
+
+00:14:03.520 --> 00:14:07.510
+It was clunky, it theoretically works, but not really.
+
+00:14:07.510 --> 00:14:10.060
+Web 2 can started around '03,
+
+00:14:10.060 --> 00:14:11.480
+'04 maybe, time frame.
+
+00:14:11.480 --> 00:14:13.895
+We started getting consumer SAS,
+
+00:14:13.895 --> 00:14:16.375
+online services that were pretty good.
+
+00:14:16.375 --> 00:14:18.845
+Today we have super mature, sexy,
+
+00:14:18.845 --> 00:14:22.010
+amazing, beautiful applications that can do all the range of things.
+
+00:14:22.010 --> 00:14:25.690
+The big problem with the Web 2 model that we live in right now is that,
+
+00:14:25.690 --> 00:14:29.300
+the companies provide it to these services control the data.
+
+00:14:29.300 --> 00:14:30.670
+When you use Google,
+
+00:14:30.670 --> 00:14:33.095
+when you use Facebook when you use Twitter, when you use whatever.
+
+00:14:33.095 --> 00:14:36.890
+Snapchat, which by the way, they keep your pictures on their servers for awhile.
+
+00:14:36.890 --> 00:14:38.650
+Like delete them after some number of months,
+
+00:14:38.650 --> 00:14:41.710
+but it's not five minutes.
+
+00:14:41.710 --> 00:14:46.235
+So all of these systems we all use every day now,
+
+00:14:46.235 --> 00:14:50.305
+like these companies have all the control on all the power of all the stuff.
+
+00:14:50.305 --> 00:14:53.780
+It's fundamentally all the data is like the consumer's data.
+
+00:14:53.780 --> 00:14:55.600
+It's my health data, it's my searching,
+
+00:14:55.600 --> 00:14:57.505
+it's my friends, it's my pictures.
+
+00:14:57.505 --> 00:14:59.650
+It's not Facebook pictures, it's my pictures.
+
+00:14:59.650 --> 00:15:01.510
+It's like anything you've ever put out there.
+
+00:15:01.510 --> 00:15:05.965
+Literally correct. That's the current state of Web 2.
+
+00:15:05.965 --> 00:15:09.790
+The Web 3 vision is really about empowering consumers to be self sovereign,
+
+00:15:09.790 --> 00:15:12.535
+so that consumers can control it on own their own data,
+
+00:15:12.535 --> 00:15:14.230
+but still be able to have these dynamic,
+
+00:15:14.230 --> 00:15:17.750
+rich applications of things that consumers have come to expect of the internet.
+
+00:15:17.750 --> 00:15:20.500
+So that's like the grand vision of Web 3.
+
+00:15:20.500 --> 00:15:21.790
+This means self sovereign money,
+
+00:15:21.790 --> 00:15:23.345
+self sovereign data, self sovereign identity,
+
+00:15:23.345 --> 00:15:28.330
+self sovereign all of these things, privacy, online privacy.
+
+00:15:28.330 --> 00:15:31.610
+So it's kind of division. Then on a technical basis,
+
+00:15:31.610 --> 00:15:34.715
+we're just in the process of building out the early parts of
+
+00:15:34.715 --> 00:15:38.305
+the technology stack to make all of this possible.
+
+00:15:38.305 --> 00:15:40.870
+So just like right in the '90s,
+
+00:15:40.870 --> 00:15:46.750
+we needed TCP/IP and then we needed HTTP and a whole host dependent.
+
+00:15:46.750 --> 00:15:48.755
+Then we got HTML and we got JavaScript.
+
+00:15:48.755 --> 00:15:53.790
+These all kind of basic building blocks coming together to make a browser thing work.
+
+00:15:53.790 --> 00:15:57.005
+Then 2000s we had the LAMP stack,
+
+00:15:57.005 --> 00:16:00.805
+which is old now decrepid web stack to build a web server.
+
+00:16:00.805 --> 00:16:04.630
+Today, we've got this full range of AWS servers and Google Cloud Servers.
+
+00:16:04.630 --> 00:16:06.640
+We now have this new serverless movement,
+
+00:16:06.640 --> 00:16:08.380
+it's called Lambda, It's cool.
+
+00:16:08.380 --> 00:16:11.830
+Anyways, the whole stack,
+
+00:16:11.830 --> 00:16:15.435
+that's been maturing for a long time and people have an iterating and building on it.
+
+00:16:15.435 --> 00:16:20.825
+So we're right now in the early phases of this Web 3 stack which is all about
+
+00:16:20.825 --> 00:16:24.110
+putting the people at the end points in
+
+00:16:24.110 --> 00:16:27.790
+control and not having a single thing in the middle that controls everything.
+
+00:16:27.790 --> 00:16:28.975
+Right.
+
+00:16:28.975 --> 00:16:31.735
+We're still in the early phases of building that infrastructure.
+
+00:16:31.735 --> 00:16:33.370
+So when I talk about the web three stack,
+
+00:16:33.370 --> 00:16:34.600
+what I'm really referring to is
+
+00:16:34.600 --> 00:16:37.719
+the entire software stack from the core Internet protocol,
+
+00:16:37.719 --> 00:16:40.405
+all the way up to the end-user experience,
+
+00:16:40.405 --> 00:16:43.960
+enabling all of this to come to fruition.
+
+00:16:43.960 --> 00:16:47.980
+I've also heard blockchain tech like compared to the dot-com bubble.
+
+00:16:47.980 --> 00:16:50.260
+You have your Amazons, your Googles,
+
+00:16:50.260 --> 00:16:51.940
+you also have cats.com,
+
+00:16:51.940 --> 00:16:53.965
+and live journal or whatever.
+
+00:16:53.965 --> 00:16:57.910
+As an investor, how do you look at all these options?
+
+00:16:57.910 --> 00:17:01.630
+Things like [inaudible] or specific kind of coin,
+
+00:17:01.630 --> 00:17:05.290
+so separate the winners from the losers.
+
+00:17:05.290 --> 00:17:07.510
+Are there a few specific traits that you look for?
+
+00:17:07.510 --> 00:17:11.755
+Or is it a bit of an educated guess?
+
+00:17:11.755 --> 00:17:14.920
+It's all definitely educated guesses for sure.
+
+00:17:14.920 --> 00:17:15.550
+Yeah.
+
+00:17:15.550 --> 00:17:16.690
+The framework what we're looking at,
+
+00:17:16.690 --> 00:17:18.805
+we have different frameworks we use.
+
+00:17:18.805 --> 00:17:21.820
+So if we're looking at what we call layer one protocol.
+
+00:17:21.820 --> 00:17:23.350
+So Bitcoin is a layer one protocol,
+
+00:17:23.350 --> 00:17:24.955
+[inaudible] is layer protocol.
+
+00:17:24.955 --> 00:17:27.655
+Really anything that has to solve consensus,
+
+00:17:27.655 --> 00:17:29.740
+we considered a layer one protocol.
+
+00:17:29.740 --> 00:17:33.100
+If we're looking at those, there's a certain number of things we look for.
+
+00:17:33.100 --> 00:17:36.220
+So I talk about this and make my post called the Web 3 stack.
+
+00:17:36.220 --> 00:17:38.380
+There's a whole bunch of teams that have come out
+
+00:17:38.380 --> 00:17:40.630
+with new ideas for consensus algorithms.
+
+00:17:40.630 --> 00:17:44.725
+That consensus is really like the base layer of the entire Web 3 stack.
+
+00:17:44.725 --> 00:17:48.025
+It's really the foundation on top of which are almost everything else was being built.
+
+00:17:48.025 --> 00:17:53.605
+Consensus is the process by which something is determined about transaction or not.
+
+00:17:53.605 --> 00:17:57.910
+So the idea of determining is this transaction valid or not is a separate question.
+
+00:17:57.910 --> 00:17:59.530
+From then, the next question is,
+
+00:17:59.530 --> 00:18:01.030
+given there's all these people in the world who are
+
+00:18:01.030 --> 00:18:02.410
+submitting transactions as you need to come to
+
+00:18:02.410 --> 00:18:05.965
+some ordering of which transactions happen, first, second, third.
+
+00:18:05.965 --> 00:18:09.400
+So consensus is really a more about coming to order,
+
+00:18:09.400 --> 00:18:11.635
+given a set of valid transactions,
+
+00:18:11.635 --> 00:18:13.060
+in what order they come into.
+
+00:18:13.060 --> 00:18:13.750
+Okay.
+
+00:18:13.750 --> 00:18:16.420
+Get network latency nodes around the world, etc.
+
+00:18:16.420 --> 00:18:17.620
+Like chronological ordering.
+
+00:18:17.620 --> 00:18:20.920
+Yes, correct. When we're looking at a layer one protocol,
+
+00:18:20.920 --> 00:18:23.740
+for example, the question we're really asking ourselves is,
+
+00:18:23.740 --> 00:18:25.450
+how is this going to be the theorem?
+
+00:18:25.450 --> 00:18:28.060
+If you're going to claim to make a run at a theory and have us
+
+00:18:28.060 --> 00:18:31.420
+new smart contract platform with like features X and Y, and Z or whatever.
+
+00:18:31.420 --> 00:18:32.710
+Like X and Y, and Z,
+
+00:18:32.710 --> 00:18:34.840
+you need to probably be pretty compelling.
+
+00:18:34.840 --> 00:18:37.270
+A theorem has a large head start, has a lot of mine share it,
+
+00:18:37.270 --> 00:18:40.075
+has a good note, there's a lot of people building up a theorem.
+
+00:18:40.075 --> 00:18:43.705
+The Tallic and the Ethereum Foundation have done a really excellent job
+
+00:18:43.705 --> 00:18:48.550
+of being relatively impartial as they think they can be.
+
+00:18:48.550 --> 00:18:50.875
+Promoting an open ecosystem.
+
+00:18:50.875 --> 00:18:52.330
+They're not stepping on people's toes.
+
+00:18:52.330 --> 00:18:54.670
+They're not building things that other developers want to build on,
+
+00:18:54.670 --> 00:18:56.635
+and they're just focusing on the core protocol.
+
+00:18:56.635 --> 00:19:01.345
+Like their focus has enabled built this really strong community around them.
+
+00:19:01.345 --> 00:19:02.770
+So if you're going to say, hey,
+
+00:19:02.770 --> 00:19:05.770
+we've got these ideas that can perhaps be better than Ethereum,
+
+00:19:05.770 --> 00:19:09.310
+they need to be really much better and they need to be
+
+00:19:09.310 --> 00:19:13.240
+things that Ethereum is going to have too much baggage to be able to pull it off.
+
+00:19:13.240 --> 00:19:16.810
+There are good ideas out there that Ethereum we'll get to in the next 12 months.
+
+00:19:16.810 --> 00:19:19.210
+So if you're telling me, "Well, that's the basis for a new chain,
+
+00:19:19.210 --> 00:19:21.250
+then that just some very interesting."
+
+00:19:21.250 --> 00:19:24.385
+There are some things that Ethereum just cannot easily do.
+
+00:19:24.385 --> 00:19:26.485
+Because it's already out there ,
+
+00:19:26.485 --> 00:19:28.870
+people using it and so they have a lot of baggage right there,
+
+00:19:28.870 --> 00:19:30.415
+just slower to move.
+
+00:19:30.415 --> 00:19:32.980
+So we will look for like
+
+00:19:32.980 --> 00:19:37.090
+really deep insights about things at Ethereum cannot fundamentally accomplish.
+
+00:19:37.090 --> 00:19:39.970
+Then if that's in fact true,
+
+00:19:39.970 --> 00:19:42.895
+then can it deliver something that's 10 or a 100 X better.
+
+00:19:42.895 --> 00:19:45.445
+So that's at the base layer.
+
+00:19:45.445 --> 00:19:47.725
+Then there's a next layer that we look at.
+
+00:19:47.725 --> 00:19:50.530
+We call these in Web 3 stack post,
+
+00:19:50.530 --> 00:19:53.110
+call them optional components of building in Web 3 stacks.
+
+00:19:53.110 --> 00:19:56.350
+So for example, if you need to store just file somewhere.
+
+00:19:56.350 --> 00:19:58.270
+You don't really want to store files in Ethereum blockchain,
+
+00:19:58.270 --> 00:20:01.465
+so you probably want to store them in something like IPFS,
+
+00:20:01.465 --> 00:20:04.135
+which is interplanetary file system.
+
+00:20:04.135 --> 00:20:07.450
+If you want to do video streaming like Ethereum knows you're not
+
+00:20:07.450 --> 00:20:10.420
+going to stream like transcript video and push video.
+
+00:20:10.420 --> 00:20:11.605
+So there's, for example,
+
+00:20:11.605 --> 00:20:15.460
+a group alive here that's building a de-centralized video trans-coding service.
+
+00:20:15.460 --> 00:20:18.520
+There's another group called the graph,
+
+00:20:18.520 --> 00:20:22.060
+which if you need to do high-performance queries on the blockchain,
+
+00:20:22.060 --> 00:20:23.695
+we get Ethereum nodes,
+
+00:20:23.695 --> 00:20:25.150
+gets imperative, for example,
+
+00:20:25.150 --> 00:20:28.900
+really aren't designed to enable production scale,
+
+00:20:28.900 --> 00:20:31.525
+numbers of queries on the core database.
+
+00:20:31.525 --> 00:20:33.880
+So there's a group called the graph that's building
+
+00:20:33.880 --> 00:20:37.540
+out a way to do decentralized queries at scale.
+
+00:20:37.540 --> 00:20:40.600
+So there's all these kind of, I call the middleware components of things.
+
+00:20:40.600 --> 00:20:42.999
+That if you're building some sort of end-user application,
+
+00:20:42.999 --> 00:20:45.670
+you may want some of these pieces.
+
+00:20:45.670 --> 00:20:48.700
+All those pieces of the stack are also currently being built out.
+
+00:20:48.700 --> 00:20:51.310
+So when we evaluate those pieces of the stack,
+
+00:20:51.310 --> 00:20:53.905
+we're really try to understand as, how big is the market?
+
+00:20:53.905 --> 00:20:57.625
+Are people going to use this? What kind of adapt may or may not need this?
+
+00:20:57.625 --> 00:20:59.470
+I go on from there.
+
+00:20:59.470 --> 00:21:04.120
+Then the highest level of stack are basically we call DAPs or end-user applications.
+
+00:21:04.120 --> 00:21:07.480
+These obviously, they have a UI. People clicked buttons on them and they do stuff.
+
+00:21:07.480 --> 00:21:12.475
+That feels a lot more traditional venture investing when we're investing at that layer.
+
+00:21:12.475 --> 00:21:15.670
+So it's like there's a variety of things out there and they're
+
+00:21:15.670 --> 00:21:18.700
+all optimizing for these different use cases,
+
+00:21:18.700 --> 00:21:21.235
+whether it's like speed or scalability.
+
+00:21:21.235 --> 00:21:24.985
+That's actually interesting because I was thinking about
+
+00:21:24.985 --> 00:21:31.280
+cryptocurrency and I was thinking about it as like money.
+
+00:21:31.410 --> 00:21:34.990
+Like the value of the community is not to be underestimated.
+
+00:21:34.990 --> 00:21:37.330
+Where if people are excited about something,
+
+00:21:37.330 --> 00:21:38.515
+devoted to it and using it,
+
+00:21:38.515 --> 00:21:42.340
+that can guarantee you something success.
+
+00:21:42.340 --> 00:21:45.090
+Like, I spend my time working to get
+
+00:21:45.090 --> 00:21:48.120
+money so I can do other things because I know other people value it.
+
+00:21:48.120 --> 00:21:50.490
+But it is interesting to think about how there might
+
+00:21:50.490 --> 00:21:55.020
+be similar apps in that they use blockchain,
+
+00:21:55.020 --> 00:21:59.110
+but have optimized for different capabilities like
+
+00:21:59.110 --> 00:22:04.029
+speed or decentralization that could be useful in multiple places.
+
+00:22:04.029 --> 00:22:08.035
+It's really good to get your extra insight into this I think.
+
+00:22:08.035 --> 00:22:11.410
+I was wondering if you have advice for people who
+
+00:22:11.410 --> 00:22:15.415
+are [inaudible] to enter the space and learn more about blockchain.
+
+00:22:15.415 --> 00:22:19.000
+I think if you're developer or really good place to get started,
+
+00:22:19.000 --> 00:22:21.340
+I think ConsenSys, they have
+
+00:22:21.340 --> 00:22:24.490
+a lot of great materials on learning how to develop for Ethereum.
+
+00:22:24.490 --> 00:22:26.230
+Then, same for the other chain.
+
+00:22:26.230 --> 00:22:29.755
+So things like EOS, things like Tezos,
+
+00:22:29.755 --> 00:22:32.740
+all the the core team is building the primary chains have
+
+00:22:32.740 --> 00:22:36.415
+pretty robust documentation for getting starting building there.
+
+00:22:36.415 --> 00:22:38.560
+If you don't want to just jump straight in the building and you
+
+00:22:38.560 --> 00:22:41.095
+just learn your way around the ecosystem,
+
+00:22:41.095 --> 00:22:43.705
+there is a few really good resources online.
+
+00:22:43.705 --> 00:22:47.410
+I think you can get a turn to, to just start to get a feel of what's going on.
+
+00:22:47.410 --> 00:22:52.375
+So probably, my favorite publication is a weekly publication called Token Economy.
+
+00:22:52.375 --> 00:22:54.190
+They published once a week every Sunday,
+
+00:22:54.190 --> 00:22:57.400
+it's tokeneconomy.co, it's a website.
+
+00:22:57.400 --> 00:22:59.290
+They published the week,
+
+00:22:59.290 --> 00:23:00.730
+they summarized the news for the week.
+
+00:23:00.730 --> 00:23:05.590
+They provide commentary on it and they highlight good insights from developers,
+
+00:23:05.590 --> 00:23:07.780
+from entrepreneurs, from investors,
+
+00:23:07.780 --> 00:23:09.940
+all over the ecosystem.
+
+00:23:09.940 --> 00:23:11.500
+Really, really good weekly summary.
+
+00:23:11.500 --> 00:23:13.330
+I look forward to it every single week.
+
+00:23:13.330 --> 00:23:17.830
+Not my probably favorite like news source on a daily basis is called
+
+00:23:17.830 --> 00:23:22.300
+trustnodes.com or.org called Trustnodes. It's excellent.
+
+00:23:22.300 --> 00:23:25.360
+If you want something that feels more like TechCrunch for crypto, like CoinDesk,
+
+00:23:25.360 --> 00:23:29.450
+does a good job of being TechCrunch or Crypto.
+
+00:23:29.550 --> 00:23:32.650
+Then I curate a couple of Twitter lists.
+
+00:23:32.650 --> 00:23:35.455
+So if you go to my Twitter profile and go to the list section,
+
+00:23:35.455 --> 00:23:37.810
+I curate, I call it a VIP list,
+
+00:23:37.810 --> 00:23:39.085
+that's about 60 people.
+
+00:23:39.085 --> 00:23:42.055
+Then I curated just a more generalist, it's like 600 people.
+
+00:23:42.055 --> 00:23:46.405
+So depending on what level of noise you want in your Twitter browsing experience.
+
+00:23:46.405 --> 00:23:46.915
+Yeah.
+
+00:23:46.915 --> 00:23:50.005
+I will say a lot of the dialogue and action happens on Twitter.
+
+00:23:50.005 --> 00:23:53.530
+I do like Twitter. I think it's probably similar for the AI spaces,
+
+00:23:53.530 --> 00:23:57.730
+like this thought leaders that you can get up-to-date news.
+
+00:23:57.730 --> 00:24:00.970
+But I guess the trouble is if you're not on there all the time,
+
+00:24:00.970 --> 00:24:03.100
+which you probably shouldn't be on Twitter all the time,
+
+00:24:03.100 --> 00:24:04.975
+you're maybe going to miss something.
+
+00:24:04.975 --> 00:24:06.520
+But I like that as a resource.
+
+00:24:06.520 --> 00:24:08.800
+Are you finding these things like through word of mouth
+
+00:24:08.800 --> 00:24:11.290
+or just creating things on your own?
+
+00:24:11.290 --> 00:24:15.730
+I mean, I've been in the crypto space now for a little over two years personally,
+
+00:24:15.730 --> 00:24:18.200
+and then professionally for about a year.
+
+00:24:18.300 --> 00:24:20.500
+This is all just like,
+
+00:24:20.500 --> 00:24:22.330
+I just read stuff and I click links and
+
+00:24:22.330 --> 00:24:25.150
+those links go all places and write recommendations from friends.
+
+00:24:25.150 --> 00:24:26.975
+This is all pretty like,
+
+00:24:26.975 --> 00:24:28.605
+there's no hard science on this.
+
+00:24:28.605 --> 00:24:34.550
+I've looked at lots of stuff and I have developed my curated information feed.
+
+00:24:34.550 --> 00:24:36.685
+I did get started CoinDesk,
+
+00:24:36.685 --> 00:24:38.020
+Trustnodes, and took an economy,
+
+00:24:38.020 --> 00:24:40.765
+and then those lists on Twitter will get you kick-started,
+
+00:24:40.765 --> 00:24:44.035
+and then from there you can create your own Twitter lists and go from there.
+
+00:24:44.035 --> 00:24:47.245
+Yeah, I'd also be really miss if I didn't mention that Udacity is coming out with
+
+00:24:47.245 --> 00:24:51.070
+a Blockchain of urban nanodegree just to follow this knowledge gap.
+
+00:24:51.070 --> 00:24:52.930
+But of course, we encourage people using
+
+00:24:52.930 --> 00:24:56.995
+as many resources as they can get their hands on.
+
+00:24:56.995 --> 00:25:01.660
+I think part of why we're making this and asking about
+
+00:25:01.660 --> 00:25:06.970
+these resources is we value this firsthand experience.
+
+00:25:06.970 --> 00:25:09.220
+If you are wanting to be a developer,
+
+00:25:09.220 --> 00:25:13.660
+can you actually code some JavaScript or whatever to
+
+00:25:13.660 --> 00:25:19.510
+learn more about validation and signing or some details about cryptography?
+
+00:25:19.510 --> 00:25:23.290
+I wonder with respect to the firsthand experience,
+
+00:25:23.290 --> 00:25:29.995
+if you ever recommend that people buy Bitcoin or Ether and invest?
+
+00:25:29.995 --> 00:25:33.260
+If you have the means, would you say, "Go,
+
+00:25:33.260 --> 00:25:38.400
+have fun with this thing," or is it for serious players only? I guess is my question.
+
+00:25:38.400 --> 00:25:39.945
+I think everyone should own some crypto.
+
+00:25:39.945 --> 00:25:41.535
+I'm super biased.
+
+00:25:41.535 --> 00:25:45.570
+I am not so favorite of this kind of everything I'm saying.
+
+00:25:45.570 --> 00:25:47.610
+I drank the Kool-Aid a long time ago.
+
+00:25:47.610 --> 00:25:50.230
+I think this stuff is going to change the world.
+
+00:25:51.180 --> 00:25:53.230
+If that is correct,
+
+00:25:53.230 --> 00:25:55.060
+then you will have a lot more money in
+
+00:25:55.060 --> 00:25:58.345
+the future than you have now if you buy some Bitcoin and some Ether.
+
+00:25:58.345 --> 00:26:00.910
+For passive investors, if you're like,
+
+00:26:00.910 --> 00:26:03.430
+"Look, I'm not going to go deep into all this stuff,
+
+00:26:03.430 --> 00:26:06.880
+but I want some exposure," then go to coinbase.com,
+
+00:26:06.880 --> 00:26:09.340
+buy some Bitcoin, buy some Ether and let it sit.
+
+00:26:09.340 --> 00:26:11.200
+You don't need to trade it. You don't need to check prices.
+
+00:26:11.200 --> 00:26:13.795
+You don't need to read the news. Check in once a year.
+
+00:26:13.795 --> 00:26:17.605
+That's fine. If you want to get more into it, that's great.
+
+00:26:17.605 --> 00:26:18.835
+The rabbit hole never ends.
+
+00:26:18.835 --> 00:26:22.555
+Yeah, I think that is what's exciting about it though.
+
+00:26:22.555 --> 00:26:26.890
+I have heard that when asked about Bitcoin or Ethereum,
+
+00:26:26.890 --> 00:26:28.750
+that you're on team Ethereum.
+
+00:26:28.750 --> 00:26:32.470
+I was wondering if you could talk a little bit more about your reasoning behind that,
+
+00:26:32.470 --> 00:26:34.570
+or am I correct or no?
+
+00:26:34.570 --> 00:26:37.960
+I definitely have a bias for Ethereum over Bitcoin.
+
+00:26:37.960 --> 00:26:40.270
+I will say over the last quarter or so,
+
+00:26:40.270 --> 00:26:42.550
+I've come around more to the Bitcoin view,
+
+00:26:42.550 --> 00:26:45.760
+but still if you tell me to pick one today, I'll pick Ethereum.
+
+00:26:45.760 --> 00:26:48.670
+My basic reasoning is that, a,
+
+00:26:48.670 --> 00:26:52.395
+I got into crypto because I like building cool software.
+
+00:26:52.395 --> 00:26:54.285
+I've been an engineer since I was a kid,
+
+00:26:54.285 --> 00:26:58.245
+started a tech company right out of college. I like building stuff.
+
+00:26:58.245 --> 00:26:59.910
+I like seeing other people build stuff.
+
+00:26:59.910 --> 00:27:02.975
+The Bitcoin community is the antithesis of building things.
+
+00:27:02.975 --> 00:27:05.575
+They really just like to yell at each other on Twitter.
+
+00:27:05.575 --> 00:27:07.240
+They want to stay still.
+
+00:27:07.240 --> 00:27:10.390
+Yes. The whole point of Bitcoin is that it does not change.
+
+00:27:10.390 --> 00:27:15.280
+My inner build cool stuff per person doesn't care for that.
+
+00:27:15.280 --> 00:27:19.540
+I have a natural affinity towards Ethereum for that purpose.
+
+00:27:19.540 --> 00:27:22.510
+The other reason I think more practically is,
+
+00:27:22.510 --> 00:27:25.540
+there's two fundamental competing hypotheses on,
+
+00:27:25.540 --> 00:27:29.455
+how do you get this global digital reserve asset that's worth many trillions of dollars?
+
+00:27:29.455 --> 00:27:32.215
+There's three fundamental hypotheses on this.
+
+00:27:32.215 --> 00:27:34.375
+I've written about them in a blog on my personal website.
+
+00:27:34.375 --> 00:27:36.625
+It's called Paths To Tens Of Trillions,
+
+00:27:36.625 --> 00:27:39.175
+and I lay out these hypotheses.
+
+00:27:39.175 --> 00:27:42.520
+One hypothesis is basically the store of value hypothesis.
+
+00:27:42.520 --> 00:27:45.130
+It just says, "Look, guarantee there's a fixed supply,
+
+00:27:45.130 --> 00:27:46.810
+guarantee that it's self sovereign,
+
+00:27:46.810 --> 00:27:50.170
+guarantee that the system doesn't break," and that's about it.
+
+00:27:50.170 --> 00:27:52.150
+As long as you have those checkboxes checked,
+
+00:27:52.150 --> 00:27:53.620
+people will realize governments are evil
+
+00:27:53.620 --> 00:27:55.300
+because they print money and they will therefore buy this thing
+
+00:27:55.300 --> 00:27:59.080
+that governments cannot inflate and that will make it at the global store value.
+
+00:27:59.080 --> 00:28:02.635
+That's one worldview that's pretty much the Bitcoin view of the world.
+
+00:28:02.635 --> 00:28:04.660
+The next view of the world is, no,
+
+00:28:04.660 --> 00:28:06.550
+if you're going to get people to value this thing as money,
+
+00:28:06.550 --> 00:28:07.825
+they need to use it as money.
+
+00:28:07.825 --> 00:28:09.805
+They need to use it for commerce.
+
+00:28:09.805 --> 00:28:12.940
+This is the idea of the utility hypothesis.
+
+00:28:12.940 --> 00:28:14.950
+Ethereum and really all of these smart contract platforms
+
+00:28:14.950 --> 00:28:16.225
+are going to fall into this camp.
+
+00:28:16.225 --> 00:28:18.550
+They're saying, "Look, you can do these traceless forms of
+
+00:28:18.550 --> 00:28:21.520
+commerce and enable people to buy x and y and z."
+
+00:28:21.520 --> 00:28:24.115
+If you're going to get this thing that be money,
+
+00:28:24.115 --> 00:28:25.825
+people need to use it as money.
+
+00:28:25.825 --> 00:28:27.865
+Those two views of the world,
+
+00:28:27.865 --> 00:28:33.205
+although they have the same general end the state of it's the thing worth a lot of money,
+
+00:28:33.205 --> 00:28:35.755
+the means by which they got there are very different.
+
+00:28:35.755 --> 00:28:39.445
+So I tend to believe the latter more than the former.
+
+00:28:39.445 --> 00:28:43.285
+Yeah. I think I've heard them compared to Bitcoin as the gold.
+
+00:28:43.285 --> 00:28:47.525
+There's a limited amount of it and it's just is what it is.
+
+00:28:47.525 --> 00:28:51.870
+Something like Ethereum being compared to money as a means of exchange,
+
+00:28:51.870 --> 00:28:56.160
+which I actually think it's a little more Silicon Valley. It's a little more exciting.
+
+00:28:56.160 --> 00:28:59.085
+Some things like you can build on top of it with, I think.
+
+00:28:59.085 --> 00:29:02.800
+Also in some ways, it feels a little more familiar.
+
+00:29:02.800 --> 00:29:07.420
+So with something that is relatively new and exciting,
+
+00:29:07.420 --> 00:29:13.030
+there's a lot of misinformation floating around or very sensational headlines.
+
+00:29:13.030 --> 00:29:14.230
+So I wanted to do
+
+00:29:14.230 --> 00:29:16.530
+this myth-busting session where
+
+00:29:16.530 --> 00:29:18.990
+I say something and maybe you can respond to it and tell me,
+
+00:29:18.990 --> 00:29:21.030
+is it myth, is it fact,
+
+00:29:21.030 --> 00:29:22.830
+or is it a mix of both?
+
+00:29:22.830 --> 00:29:28.175
+The first one is that Blockchain is a fad, that it won't last.
+
+00:29:28.175 --> 00:29:30.865
+That's laughable.
+
+00:29:30.865 --> 00:29:36.220
+The reason being it's proven itself at this point. Would you say?
+
+00:29:36.220 --> 00:29:38.780
+I think so.
+
+00:29:39.210 --> 00:29:42.685
+One of my favorite lessons from history is
+
+00:29:42.685 --> 00:29:46.420
+the intolerant minority usually wins, which is counter-intuitive.
+
+00:29:46.420 --> 00:29:52.210
+Normally, you would just think the majority wins just in general, in an abstract sense,
+
+00:29:52.210 --> 00:29:54.055
+whereas what's typically happening is that there is
+
+00:29:54.055 --> 00:29:58.675
+a apathetic majority in most things. They don't care.
+
+00:29:58.675 --> 00:29:59.560
+They're passive.
+
+00:29:59.560 --> 00:30:03.205
+They're passive. They just don't care even if they all concur on whatever the issue is.
+
+00:30:03.205 --> 00:30:06.130
+There's some intolerant minority that yells and screams and will
+
+00:30:06.130 --> 00:30:09.115
+fight and whatever and they are the ones who pushed things forward.
+
+00:30:09.115 --> 00:30:11.380
+This is true for all civil rights.
+
+00:30:11.380 --> 00:30:17.275
+This is true for a 100 of examples in history of how this is played out.
+
+00:30:17.275 --> 00:30:19.285
+So when I look at crypto today,
+
+00:30:19.285 --> 00:30:24.325
+what I realize is you see is there's very intolerant minority where they're saying,
+
+00:30:24.325 --> 00:30:27.580
+"No, governments are evil, stop printing money.
+
+00:30:27.580 --> 00:30:29.260
+We want self sovereignty with control.
+
+00:30:29.260 --> 00:30:30.550
+They want control of our own data.
+
+00:30:30.550 --> 00:30:32.860
+We don't want these corporations to have our data."
+
+00:30:32.860 --> 00:30:34.780
+They are the intolerant minority today,
+
+00:30:34.780 --> 00:30:37.460
+and those are the die-hards in crypto.
+
+00:30:37.620 --> 00:30:39.970
+They are not going away.
+
+00:30:39.970 --> 00:30:43.640
+They are intolerant and they will stay intolerant.
+
+00:30:43.950 --> 00:30:46.750
+Their web-free stack is being built out.
+
+00:30:46.750 --> 00:30:51.580
+It's still hard to mentally reorient your mind around the implications of this,
+
+00:30:51.580 --> 00:30:53.680
+but as this stack gets more mature,
+
+00:30:53.680 --> 00:30:55.090
+as it becomes more usable,
+
+00:30:55.090 --> 00:30:58.060
+I expect that people's eyes will open up and say,
+
+00:30:58.060 --> 00:31:00.175
+"Holy cow, the world can be different."
+
+00:31:00.175 --> 00:31:05.275
+My favorite practical, modern example of this is when I was a kid,
+
+00:31:05.275 --> 00:31:07.675
+the two rules of being a kid were,
+
+00:31:07.675 --> 00:31:10.870
+don't get in the car with strangers and don't talk to strangers.
+
+00:31:10.870 --> 00:31:15.160
+Sorry, don't meet people on the Internet and don't get in a car with strangers.
+
+00:31:15.160 --> 00:31:16.885
+It sounds familiar.
+
+00:31:16.885 --> 00:31:20.050
+Today, I call people on the Internet and get in their car.
+
+00:31:20.050 --> 00:31:22.015
+True. Correctly.
+
+00:31:22.015 --> 00:31:24.880
+So my point is, in my lifetime,
+
+00:31:24.880 --> 00:31:27.880
+[inaudible] the two cardinal rules of being a kid,
+
+00:31:27.880 --> 00:31:29.515
+it's like I did this every day,
+
+00:31:29.515 --> 00:31:33.745
+and I know lots of parents who send their kids in an Uber, all the time.
+
+00:31:33.745 --> 00:31:39.700
+So there's just a lot of fundamental beliefs that can be reoriented.
+
+00:31:39.700 --> 00:31:42.580
+It just takes a little bit of time to click.
+
+00:31:42.580 --> 00:31:45.700
+Yeah. Like a passive majority that's a little skeptical,
+
+00:31:45.700 --> 00:31:47.575
+but mostly it is just passive.
+
+00:31:47.575 --> 00:31:52.585
+Then this passionate minority that will grow as these applications reveal themselves.
+
+00:31:52.585 --> 00:31:56.005
+I think that is pretty true.
+
+00:31:56.005 --> 00:31:58.780
+So the second myth slash,
+
+00:31:58.780 --> 00:32:01.195
+perhaps fact, is that blockchain can't scale.
+
+00:32:01.195 --> 00:32:06.970
+That it's too slow at doing transactions to be reaching a global scale.
+
+00:32:06.970 --> 00:32:08.860
+So this is definitely a major challenge today.
+
+00:32:08.860 --> 00:32:12.700
+It's the single largest technical challenge facing blockchains today.
+
+00:32:12.700 --> 00:32:15.160
+Just about all of the smartest people in crypto
+
+00:32:15.160 --> 00:32:17.350
+today are working feverishly on this problem.
+
+00:32:17.350 --> 00:32:20.785
+I expect we will have viable solutions in the next few years.
+
+00:32:20.785 --> 00:32:23.965
+Is there anything promising that comes to mind?
+
+00:32:23.965 --> 00:32:28.795
+So there's six fundamental ways to scale a blockchain.
+
+00:32:28.795 --> 00:32:32.275
+So one is you can have many smaller chains.
+
+00:32:32.275 --> 00:32:34.180
+Two is you can have really big blocks.
+
+00:32:34.180 --> 00:32:37.180
+Three is you can compress data on the chain.
+
+00:32:37.180 --> 00:32:39.505
+Four is you can have [inaudible] layer 2,
+
+00:32:39.505 --> 00:32:43.525
+like lightning work in Bitcoin or plasma in Ethereum are examples.
+
+00:32:43.525 --> 00:32:48.805
+Five is charting, and six is [inaudible] improvements and consensus.
+
+00:32:48.805 --> 00:32:52.120
+Those are really the only fundamental ways you can do it.
+
+00:32:52.120 --> 00:32:56.270
+There are super smart people working on each of the six.
+
+00:32:56.670 --> 00:32:59.260
+Although on an individual basis,
+
+00:32:59.260 --> 00:33:00.400
+maybe you disagree with one,
+
+00:33:00.400 --> 00:33:02.110
+or even multiple of those, ideologically,
+
+00:33:02.110 --> 00:33:05.080
+which there are some ideological reasons to oppose some of those concepts.
+
+00:33:05.080 --> 00:33:07.300
+As all six people make progress on all six of these things,
+
+00:33:07.300 --> 00:33:09.010
+it's getting better, faster, at the same time,
+
+00:33:09.010 --> 00:33:11.830
+you have this compounding effect that most people,
+
+00:33:11.830 --> 00:33:13.270
+linearly, they're like "No,
+
+00:33:13.270 --> 00:33:14.695
+it's not going to get you there."
+
+00:33:14.695 --> 00:33:16.570
+But if you actually compound them all together you can get
+
+00:33:16.570 --> 00:33:19.825
+some very compelling improvements at the end.
+
+00:33:19.825 --> 00:33:21.505
+Yeah. That does make sense to me.
+
+00:33:21.505 --> 00:33:24.955
+Third, last one, blockchain will revolutionize the world.
+
+00:33:24.955 --> 00:33:27.670
+I think it's sensational but perhaps
+
+00:33:27.670 --> 00:33:31.630
+it's an exaggeration or just something that time will tell.
+
+00:33:31.630 --> 00:33:33.220
+I really hate the word revolutionize.
+
+00:33:33.220 --> 00:33:34.060
+Yes. Perhaps that's it.
+
+00:33:34.060 --> 00:33:38.170
+I don't think that the word revolutionize is actually a word, maybe it is.
+
+00:33:38.170 --> 00:33:41.380
+If I see it in a pitch deck now, I stop reading.
+
+00:33:41.380 --> 00:33:42.400
+That's fair.
+
+00:33:42.400 --> 00:33:46.615
+So I've discounted it as no longer a word in the English language.
+
+00:33:46.615 --> 00:33:49.840
+I think it's going to change the world,
+
+00:33:49.840 --> 00:33:51.340
+both in terms of money and governments,
+
+00:33:51.340 --> 00:33:54.220
+and as well as technology stacks [inaudible] people,
+
+00:33:54.220 --> 00:33:56.395
+and self sovereignty, and data, and privacy.
+
+00:33:56.395 --> 00:33:59.245
+I believe very strongly that those things will happen.
+
+00:33:59.245 --> 00:34:00.565
+We're still super early,
+
+00:34:00.565 --> 00:34:05.290
+but once you've seen the demo,
+
+00:34:05.290 --> 00:34:06.520
+there's not even a sexy demo,
+
+00:34:06.520 --> 00:34:11.020
+but once it clicks for you how the status quo works,
+
+00:34:11.020 --> 00:34:12.700
+and how this works,
+
+00:34:12.700 --> 00:34:15.590
+and you're like this is going to happen.
+
+00:34:15.690 --> 00:34:18.400
+You can't keep this in a bottle forever.
+
+00:34:18.400 --> 00:34:24.355
+Yeah. I also recoil from the idea of something being revolutionary.
+
+00:34:24.355 --> 00:34:25.690
+I can almost imagine,
+
+00:34:25.690 --> 00:34:29.080
+as someone who is almost at this passive majority level,
+
+00:34:29.080 --> 00:34:34.465
+if tomorrow Amazon switched to using blockchain and they didn't tell me,
+
+00:34:34.465 --> 00:34:37.015
+I probably would not even notice and it would have
+
+00:34:37.015 --> 00:34:39.985
+changed how these transactions are working.
+
+00:34:39.985 --> 00:34:42.595
+Well, that's the thing. Blockchain, you'll never see it.
+
+00:34:42.595 --> 00:34:44.755
+By definition it's virtual.
+
+00:34:44.755 --> 00:34:47.560
+You'll have the UI for all of your favorite apps,
+
+00:34:47.560 --> 00:34:50.455
+will still be some pretty UI, whatever on your iPhone.
+
+00:34:50.455 --> 00:34:52.630
+The back end will be different and it'll be subtle,
+
+00:34:52.630 --> 00:34:55.795
+but the reason some fundamental things are the way they are,
+
+00:34:55.795 --> 00:34:59.665
+will change to ultimately be better for consumers.
+
+00:34:59.665 --> 00:35:02.755
+Yes. So I wanted to ask, as an investor,
+
+00:35:02.755 --> 00:35:07.195
+if it's difficult investing in technology that is open source.
+
+00:35:07.195 --> 00:35:13.075
+Like right now I can go on GitHub and look at the core of Bitcoin protocol and,
+
+00:35:13.075 --> 00:35:18.820
+maybe, fork it and create a copy of my own and start my own cryptocurrency, or something.
+
+00:35:18.820 --> 00:35:21.880
+So does that make it difficult to invest in this technology?
+
+00:35:21.880 --> 00:35:26.650
+Are you looking at different aspects of how people use this?
+
+00:35:26.650 --> 00:35:29.950
+It's actually a real big challenge of investing in crypto,
+
+00:35:29.950 --> 00:35:32.320
+is that basically everything is open source.
+
+00:35:32.320 --> 00:35:37.180
+That means competitive barriers to entry is very different.
+
+00:35:37.180 --> 00:35:41.590
+Really the only mode in crypto is network effects.
+
+00:35:41.590 --> 00:35:46.645
+If whatever the protocol is you're building cannot accrue network effects,
+
+00:35:46.645 --> 00:35:51.490
+then it's going to be very hard for it to be meaningfully differentiated in the long run.
+
+00:35:51.490 --> 00:35:55.465
+By network effects, this is a term that's thrown out there quite a bit.
+
+00:35:55.465 --> 00:35:57.640
+It's a little bit misunderstood,
+
+00:35:57.640 --> 00:36:00.295
+but the basic idea of network effects is as
+
+00:36:00.295 --> 00:36:03.130
+an additional user uses the network or the service,
+
+00:36:03.130 --> 00:36:06.325
+the value for existing users increases.
+
+00:36:06.325 --> 00:36:08.860
+So I actually wrote a blog post back in May,
+
+00:36:08.860 --> 00:36:11.800
+I think it's called On the Network Effects of Stores of Value,
+
+00:36:11.800 --> 00:36:15.670
+explaining some of these core concepts about different kinds of network effects,
+
+00:36:15.670 --> 00:36:16.960
+how to think about the strengths of
+
+00:36:16.960 --> 00:36:20.680
+relative network effects and explore some of these concepts.
+
+00:36:20.680 --> 00:36:25.960
+But yeah, when we invest an absolute key thing we look for is, if the thing works,
+
+00:36:25.960 --> 00:36:29.170
+as new users use the thing does it get better for
+
+00:36:29.170 --> 00:36:33.920
+existing users?We'll have an understanding of the nuances of how that will work.
+
+00:36:33.920 --> 00:36:38.940
+That's interesting because I think about these earlier cryptocurrencies,
+
+00:36:38.940 --> 00:36:41.940
+and maybe the reason why they're so popular is because they got
+
+00:36:41.940 --> 00:36:45.870
+a head start on who is using them in the first place.
+
+00:36:45.870 --> 00:36:48.245
+My last question is,
+
+00:36:48.245 --> 00:36:53.800
+if there are people in your life who you're surprised are getting into crypto?
+
+00:36:53.800 --> 00:36:56.110
+In my life, personally,
+
+00:36:56.110 --> 00:36:58.420
+my mom owns some Bitcoin.
+
+00:36:58.420 --> 00:37:03.920
+My mom is far closer to Luddite than technologists.
+
+00:37:04.380 --> 00:37:08.030
+She's got some Bitcoin, she's got some Ether.
+
+00:37:08.430 --> 00:37:11.785
+Who else in my personal life?
+
+00:37:11.785 --> 00:37:13.600
+I have family in Iran,
+
+00:37:13.600 --> 00:37:16.390
+and my family's Iranian.
+
+00:37:16.390 --> 00:37:18.700
+About half of my family is in the US now,
+
+00:37:18.700 --> 00:37:20.680
+and about half is still in Iran.
+
+00:37:20.680 --> 00:37:23.395
+Actually, just in the last few weeks,
+
+00:37:23.395 --> 00:37:26.919
+Trump reinstated sanctions on Iran,
+
+00:37:26.919 --> 00:37:28.540
+the economy's tanked there.
+
+00:37:28.540 --> 00:37:32.080
+People were expecting the sanctions to be removed eventually and they're back,
+
+00:37:32.080 --> 00:37:34.360
+and so people are quite unhappy.
+
+00:37:34.360 --> 00:37:36.595
+There's been a lot of protesters out in the street,
+
+00:37:36.595 --> 00:37:40.090
+and a lot of my family there is trying to figure out how to get money out of the country.
+
+00:37:40.090 --> 00:37:42.370
+So actually, it's very personal.
+
+00:37:42.370 --> 00:37:45.340
+So I've got family that's using crypto-
+
+00:37:45.340 --> 00:37:46.270
+It makes a lot of sense.
+
+00:37:46.270 --> 00:37:47.095
+-to get money out.
+
+00:37:47.095 --> 00:37:49.495
+I think those are all really interesting use cases,
+
+00:37:49.495 --> 00:37:53.305
+and there is a little bit of a barrier of skepticism,
+
+00:37:53.305 --> 00:37:55.930
+but sometimes it just takes one person that you
+
+00:37:55.930 --> 00:37:59.110
+trust to suggest it to you to get you over that hump.
+
+00:37:59.110 --> 00:38:05.275
+So thank you for joining us and spending some time with interesting conversation.
+
+00:38:05.275 --> 00:38:07.510
+We're both on Twitter, so I was wondering if you wanted to shout
+
+00:38:07.510 --> 00:38:10.300
+out your handle, or anything else.
+
+00:38:10.300 --> 00:38:13.340
+Yeah. I'm a super colorful character on Twitter.
+
+00:38:13.740 --> 00:38:16.150
+My Twitter handle is just my name,
+
+00:38:16.150 --> 00:38:20.140
+so @kylesamani, K-Y-L-E S-A-M-A-N-I.
+
+00:38:20.140 --> 00:38:23.335
+Okay. Thank you to everyone who joined us,
+
+00:38:23.335 --> 00:38:25.795
+and we'll see you on the Internet.
+
+00:38:25.795 --> 00:38:27.650
+Bye.
+

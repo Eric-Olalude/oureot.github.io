@@ -1,0 +1,220 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.405
+Blockchain is changing industries across the world including personal identification,
+
+00:00:05.405 --> 00:00:09.935
+medicine, finance, supply chain management, and even government.
+
+00:00:09.935 --> 00:00:12.044
+But what makes this possible?
+
+00:00:12.044 --> 00:00:16.910
+Basically, the Blockchain is a completely new way to share data.
+
+00:00:16.910 --> 00:00:21.469
+It allows us to make transactions in a way that are more secure,
+
+00:00:21.469 --> 00:00:24.864
+more transparent, and cheaper than before.
+
+00:00:24.864 --> 00:00:27.369
+We can do all this without large companies
+
+00:00:27.370 --> 00:00:30.760
+collecting and managing our data like they do today.
+
+00:00:30.760 --> 00:00:35.079
+Let's discuss a few examples from industries we mentioned earlier,
+
+00:00:35.079 --> 00:00:37.320
+starting with personal identity.
+
+00:00:37.320 --> 00:00:40.119
+We all want our identity to be safe.
+
+00:00:40.119 --> 00:00:44.369
+No one should be able to access information about where we go,
+
+00:00:44.369 --> 00:00:48.554
+what we do, or what we're planning without our permission.
+
+00:00:48.554 --> 00:00:53.409
+The problem is we often give this information over to major corporations in
+
+00:00:53.409 --> 00:00:58.890
+return for the services they provide and can lose control of how our information is used.
+
+00:00:58.890 --> 00:01:03.844
+These corporations store the data we produce in large central databases.
+
+00:01:03.844 --> 00:01:07.995
+Having such important data collected into a single location,
+
+00:01:07.995 --> 00:01:10.609
+can be useful but there are some risk.
+
+00:01:10.609 --> 00:01:15.745
+One risk is that it makes it a huge target for hackers to break in and steal our data.
+
+00:01:15.745 --> 00:01:18.439
+For example in 2017,
+
+00:01:18.439 --> 00:01:21.899
+Equifax, a major credit bureau, was hacked.
+
+00:01:21.900 --> 00:01:24.700
+Up to 140 million Americans or
+
+00:01:24.700 --> 00:01:29.945
+about half the United States population lost important data to hackers.
+
+00:01:29.944 --> 00:01:32.934
+These hackers gained access to credit cards,
+
+00:01:32.935 --> 00:01:37.765
+bank accounts, and all other information that Equifax had collected.
+
+00:01:37.765 --> 00:01:40.680
+So what does this have to do with Blockchain?
+
+00:01:40.680 --> 00:01:43.195
+Well, on the Blockchain,
+
+00:01:43.194 --> 00:01:46.289
+data isn't held in a centralized database.
+
+00:01:46.290 --> 00:01:51.310
+It's shared with everyone and verified by people in the network.
+
+00:01:51.310 --> 00:01:54.799
+Information is secured using cryptography so that
+
+00:01:54.799 --> 00:01:58.075
+criminals can't come and steal our data.
+
+00:01:58.075 --> 00:02:01.859
+This makes this type of data breach nearly impossible.
+
+00:02:01.859 --> 00:02:05.855
+Next, imagine what it takes to create a new product.
+
+00:02:05.855 --> 00:02:09.090
+How do companies track the parts being shipped,
+
+00:02:09.090 --> 00:02:13.325
+the work being done, and the ownership of each new product?
+
+00:02:13.324 --> 00:02:18.044
+Let's look at car manufacturing as an example.
+
+00:02:18.044 --> 00:02:19.919
+To build the car,
+
+00:02:19.919 --> 00:02:21.869
+there are many companies involved.
+
+00:02:21.870 --> 00:02:24.140
+The shipping parts like screws,
+
+00:02:24.139 --> 00:02:26.799
+panels, engines, and doors.
+
+00:02:26.800 --> 00:02:29.000
+All of these parts need to be tracked.
+
+00:02:29.000 --> 00:02:31.250
+Even after the car is built,
+
+00:02:31.250 --> 00:02:36.314
+we need to track the car's ownership as it goes from the manufacturer,
+
+00:02:36.314 --> 00:02:39.069
+to the dealer, to the end consumer.
+
+00:02:39.069 --> 00:02:42.699
+This process is known as the supply chain.
+
+00:02:42.699 --> 00:02:47.009
+Right now, managing the supply chain is extremely messy.
+
+00:02:47.009 --> 00:02:51.724
+The details and history of each part are listed across many companies.
+
+00:02:51.724 --> 00:02:54.879
+These companies usually don't share information with each
+
+00:02:54.879 --> 00:02:58.259
+other and struggle to keep their records up to date.
+
+00:02:58.259 --> 00:03:03.569
+This forces companies to spend a lot of resources handling these records.
+
+00:03:03.569 --> 00:03:08.194
+This is the space where the Blockchain can make a huge difference.
+
+00:03:08.194 --> 00:03:14.409
+On the Blockchain, the information about this car can be made publicly available.
+
+00:03:14.409 --> 00:03:18.634
+This allows us to know the exact details and history
+
+00:03:18.634 --> 00:03:23.495
+of every part of the product we buy, rent, or use.
+
+00:03:23.495 --> 00:03:24.960
+You might be thinking,
+
+00:03:24.960 --> 00:03:29.115
+"What if I don't want all this data to be shared with everyone?"
+
+00:03:29.115 --> 00:03:30.955
+That's okay too.
+
+00:03:30.955 --> 00:03:36.410
+For one thing, the information that is public is also generally anonymous.
+
+00:03:36.409 --> 00:03:39.829
+This way you can be sure no one can see what you're doing.
+
+00:03:39.830 --> 00:03:42.575
+There are also other security measures
+
+00:03:42.574 --> 00:03:46.164
+built into the system that we'll discuss throughout the course.
+
+00:03:46.164 --> 00:03:49.644
+Here are a few more quick examples to show you
+
+00:03:49.645 --> 00:03:53.415
+how the Blockchain could revolutionize other industries.
+
+00:03:53.414 --> 00:03:56.620
+In medicine, we can help save lives by having
+
+00:03:56.620 --> 00:03:59.560
+more secure and accurate patient information.
+
+00:03:59.560 --> 00:04:03.759
+We can send money across the world freely and securely,
+
+00:04:03.759 --> 00:04:07.134
+potentially changing the entire financial system.
+
+00:04:07.134 --> 00:04:12.599
+Even government elections can be made more secure and transparent on the Blockchain.
+
+00:04:12.599 --> 00:04:14.259
+With all these possibilities,
+
+00:04:14.259 --> 00:04:17.730
+you have to wonder what is the Blockchain?
+
+00:04:17.730 --> 00:04:21.650
+Where did it come from? How can you begin learning more about it?
+
+00:04:21.649 --> 00:04:25.639
+We'll get into much more details about this next.
+

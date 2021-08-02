@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.270
+So, summary for our lesson.
+
+00:00:03.270 --> 00:00:09.244
+We started off by understanding scenarios in which Smart Contracts need to be upgraded.
+
+00:00:09.244 --> 00:00:11.364
+We discussed in particular,
+
+00:00:11.365 --> 00:00:15.164
+scenarios where there's a bug or there's a change in
+
+00:00:15.164 --> 00:00:19.934
+business rules that require contracts to be upgraded.
+
+00:00:19.934 --> 00:00:24.329
+The architecture and the techniques we've learned in this lesson help
+
+00:00:24.329 --> 00:00:29.309
+us deal with those kind of scenarios in a reasonably efficient manner.
+
+00:00:29.309 --> 00:00:32.024
+We also reviewed the pros and cons of
+
+00:00:32.024 --> 00:00:35.429
+different solutions for handling Smart Contract upgrades.
+
+00:00:35.429 --> 00:00:38.219
+The solution that we've discussed in this lesson
+
+00:00:38.219 --> 00:00:42.199
+involved separating data and application logic,
+
+00:00:42.200 --> 00:00:45.710
+but there's also the ability to have proxy contracts,
+
+00:00:45.710 --> 00:00:48.200
+there's also the ability to migrate data,
+
+00:00:48.200 --> 00:00:53.060
+and you'll have to evaluate and weigh the specific situation you're in,
+
+00:00:53.060 --> 00:00:55.775
+and make a decision based on that.
+
+00:00:55.774 --> 00:00:59.314
+Finally, we actually looked through the code.
+
+00:00:59.314 --> 00:01:06.134
+We worked through exercises to implement separation of Data and Application contracts,
+
+00:01:06.135 --> 00:01:10.519
+and we also learned how we can secure the Data Contract,
+
+00:01:10.519 --> 00:01:15.630
+so only authorized Application Contracts can call into it.
+最新课程跟课件还有一对一辅导请加wx：udacity6

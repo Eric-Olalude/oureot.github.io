@@ -1,0 +1,82 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.839
+Here's the exercise for Re-entrancy Guard.
+
+00:00:03.839 --> 00:00:05.820
+As you can see in the code here,
+
+00:00:05.820 --> 00:00:09.554
+it's not very different from the code in the prior exercises.
+
+00:00:09.554 --> 00:00:11.609
+We are following a similar pattern.
+
+00:00:11.609 --> 00:00:14.820
+We start off by using the SafeMath library.
+
+00:00:14.820 --> 00:00:19.890
+In this case, we initialize a counter variable to one.
+
+00:00:19.890 --> 00:00:22.890
+We then have the code for the modifier,
+
+00:00:22.890 --> 00:00:25.574
+and this modifier is going to be
+
+00:00:25.574 --> 00:00:29.280
+different from just about every other modifier you create.
+
+00:00:29.280 --> 00:00:30.540
+In your typical modifier,
+
+00:00:30.539 --> 00:00:33.780
+you're going to have code which then ends
+
+00:00:33.780 --> 00:00:37.259
+with the underscore placeholder where the function code is.
+
+00:00:37.259 --> 00:00:39.239
+But in this particular case,
+
+00:00:39.240 --> 00:00:43.704
+the important difference is that you have code before the function placeholder,
+
+00:00:43.704 --> 00:00:48.869
+and you also have code after the function placeholder.
+
+00:00:49.009 --> 00:00:51.070
+If you look lower down,
+
+00:00:51.070 --> 00:00:54.109
+you can see that the similar function from the prior exercise,
+
+00:00:54.109 --> 00:00:57.755
+safeWithdraw is relying on this modifier,
+
+00:00:57.755 --> 00:01:01.960
+and it's essentially calling the modifier entrancyGuard.
+
+00:01:01.960 --> 00:01:04.445
+Once again, we don't care about the code
+
+00:01:04.444 --> 00:01:06.875
+that's within safeWithdraw, that could be anything.
+
+00:01:06.875 --> 00:01:10.025
+Our focus is the modifier itself.
+
+00:01:10.025 --> 00:01:12.320
+So for this exercise,
+
+00:01:12.319 --> 00:01:17.449
+please complete entrancyGuard and ensure that it cannot
+
+00:01:17.450 --> 00:01:19.040
+be re-entered regardless of
+
+00:01:19.040 --> 00:01:23.610
+how many times the function that is using the modifier is called.
+

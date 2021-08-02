@@ -1,0 +1,362 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Build CryptoStar Dapp on Ethereum</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Decentralized Star Notary Service Project</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Project Instructions.html">01. Project Instructions</a>
+    </li>
+    <li class="">
+      <a href="02. Project BoilerPlate Code.html">02. Project BoilerPlate Code</a>
+    </li>
+    <li class="">
+      <a href="Project Description - Build CryptoStar Dapp on Ethereum.html">Project Description - Build CryptoStar Dapp on Ethereum</a>
+    </li>
+    <li class="">
+      <a href="Project Rubric - Build CryptoStar Dapp on Ethereum.html">Project Rubric - Build CryptoStar Dapp on Ethereum</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">Build CryptoStar Dapp on Ethereum</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            
+      <div>
+        <h2><p>Add Smart Contract Functions</p></h2>
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr class="thead-dark">
+              <th>Criteria</th>
+              <th>Meet Specification</th>
+            </tr>
+          </thead>
+          
+    <tbody>
+      
+      <tr scope="row">
+        <td>
+          <p>The smart contract tokens should have a name and a symbol.</p>
+        </td>
+        <td>
+          <p>Add a name and a symbol to the starNotary tokens.<br />
+In the Starter Code (StarNotary.sol file) you implement:</p>
+<pre><code>// Implement Task 1 Add a name and symbol properties
+// name: Is a short name to your token
+// symbol: Is a short string like 'USD' -&gt; 'American Dollar'</code></pre>
+        </td>
+      </tr>
+    
+      <tr scope="row">
+        <td>
+          <p>Implement the function: <strong>lookUptokenIdToStarInfo</strong> in StarNotary.sol file</p>
+<pre><code>// Implement Task 1 lookUptokenIdToStarInfo
+function lookUptokenIdToStarInfo (uint _tokenId) public view returns (string memory) {
+
+ }</code></pre>
+        </td>
+        <td>
+          <p>Add a function <code>lookUptokenIdToStarInfo</code>, that looks up the stars using the Token ID, and then returns the name of the star.</p>
+        </td>
+      </tr>
+    
+      <tr scope="row">
+        <td>
+          <p>Implement the function: <strong>exchangeStars</strong> in StarNotary.sol file.</p>
+<pre><code>// Implement Task 1 Exchange Stars function
+function exchangeStars(uint256 _tokenId1, uint256 _tokenId2) public {
+
+ }</code></pre>
+        </td>
+        <td>
+          <p>Add a function called <code>exchangeStars</code>, so 2 users can exchange their star tokens. Do not worry about the price, just write code to exchange stars between users.</p>
+        </td>
+      </tr>
+    
+      <tr scope="row">
+        <td>
+          <p>Implement the function <strong>transferStar</strong> in StarNotary.sol file.</p>
+<pre><code>function transferStar(address _to1, uint256 _tokenId) public {
+
+    }</code></pre>
+        </td>
+        <td>
+          <p>Write a function to Transfer a Star. The function should transfer a star from the address of the caller. The function should accept 2 arguments, the address to transfer the star to, and the token ID of the star.</p>
+        </td>
+      </tr>
+    
+    </tbody>
+  
+        </table>
+
+      </div>
+    
+      <div>
+        <h2><p>Add supporting Unit Tests</p></h2>
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr class="thead-dark">
+              <th>Criteria</th>
+              <th>Meet Specification</th>
+            </tr>
+          </thead>
+          
+    <tbody>
+      
+      <tr scope="row">
+        <td>
+          <p>Add supporting Unit Tests in <strong>TestStarNotary.js</strong> file.</p>
+        </td>
+        <td>
+          <p>Tests for:</p>
+<p>1) The token name and token symbol are added properly.</p>
+<pre><code>it('can add the star name and star symbol properly', async() =&gt; {
+
+});</code></pre>
+<p>2) 2 users can exchange their stars.</p>
+<pre><code>it('lets 2 users exchange stars', async() =&gt; {
+
+});</code></pre>
+<p>3) Stars Tokens can be transferred from one address to another.</p>
+<pre><code>it('lets a user transfer a star', async() =&gt; {
+
+});</code></pre>
+        </td>
+      </tr>
+    
+    </tbody>
+  
+        </table>
+
+      </div>
+    
+      <div>
+        <h2><p>Deploy your Contract to Rinkeby</p></h2>
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr class="thead-dark">
+              <th>Criteria</th>
+              <th>Meet Specification</th>
+            </tr>
+          </thead>
+          
+    <tbody>
+      
+      <tr scope="row">
+        <td>
+          <p>File truffle-config.js is configured to support deploying the contract to Rinkeby Public Network.</p>
+        </td>
+        <td>
+          <p><code>truffle-config.js</code> file should have settings to deploy the contract to the Rinkeby Public Network.</p>
+<p>Infura should be used in the truffle-config.js file for deployment to Rinkeby.</p>
+        </td>
+      </tr>
+    
+    </tbody>
+  
+        </table>
+
+      </div>
+    
+      <div>
+        <h2><p>Modify the front end of the DAPP</p></h2>
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr class="thead-dark">
+              <th>Criteria</th>
+              <th>Meet Specification</th>
+            </tr>
+          </thead>
+          
+    <tbody>
+      
+      <tr scope="row">
+        <td>
+          <p>Implement the front-end function <strong>lookUp</strong> in the index.js file. </p>
+<pre><code>lookUp: async function (){
+
+  }</code></pre>
+        </td>
+        <td>
+          <p>When you click on the button "Look Up a Star" the application shows in the status the Star information.</p>
+        </td>
+      </tr>
+    
+    </tbody>
+  
+        </table>
+
+      </div>
+    
+      <div>
+        <h2><p>Add a Readme.md file</p></h2>
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr class="thead-dark">
+              <th>Criteria</th>
+              <th>Meet Specification</th>
+            </tr>
+          </thead>
+          
+    <tbody>
+      
+      <tr scope="row">
+        <td>
+          <p>Inside your project folder, create a <code>readme.md</code> file. </p>
+        </td>
+        <td>
+          <p>The readme.md file should include the following:</p>
+<p>1) Your ERC-721 Token Name<br />
+2) Your ERC-721 Token Symbol<br />
+3) Version of the Truffle and OpenZeppelin used</p>
+        </td>
+      </tr>
+    
+    </tbody>
+  
+        </table>
+
+      </div>
+    
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('Build CryptoStar Dapp on Ethereum')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

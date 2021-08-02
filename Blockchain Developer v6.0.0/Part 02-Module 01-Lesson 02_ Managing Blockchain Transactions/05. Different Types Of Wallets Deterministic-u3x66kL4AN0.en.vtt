@@ -1,0 +1,250 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.674
+Now, there are two types of deterministic wallets.
+
+00:00:03.674 --> 00:00:06.689
+The first are sequential deterministic wallets,
+
+00:00:06.690 --> 00:00:09.384
+and these were first introduced in Electrum.
+
+00:00:09.384 --> 00:00:11.419
+In sequential deterministic wallets,
+
+00:00:11.419 --> 00:00:14.175
+a random number is used to generate a seed.
+
+00:00:14.175 --> 00:00:17.528
+This seed is then put through a mathematical function,
+
+00:00:17.528 --> 00:00:20.170
+the derives a series of private keys.
+
+00:00:20.170 --> 00:00:22.990
+At a high level, the function takes in
+
+00:00:22.989 --> 00:00:26.359
+the private master key that is generated from the seed.
+
+00:00:26.359 --> 00:00:30.024
+It adds in a counter and an incrementing value.
+
+00:00:30.024 --> 00:00:33.699
+Using those inputs, it generates a new private key.
+
+00:00:33.700 --> 00:00:35.530
+So if you have seed,
+
+00:00:35.530 --> 00:00:37.329
+you have all the power,
+
+00:00:37.329 --> 00:00:41.024
+and you can use this to regenerate all the private keys.
+
+00:00:41.024 --> 00:00:43.119
+In a deterministic wallet,
+
+00:00:43.119 --> 00:00:46.780
+the seed is sufficient to recover all the derived keys.
+
+00:00:46.780 --> 00:00:50.984
+Therefore, a single backup at the time of creation is sufficient.
+
+00:00:50.984 --> 00:00:55.379
+The seed is also sufficient for a wallet export or import and
+
+00:00:55.380 --> 00:00:57.120
+this allows for easy migration of
+
+00:00:57.119 --> 00:01:00.134
+the user's keys between different wallet implementations.
+
+00:01:00.134 --> 00:01:03.844
+Now the second type of deterministic wallet is a fanciest type.
+
+00:01:03.844 --> 00:01:08.010
+It's the hierarchical deterministic wallet HD wallet.
+
+00:01:08.010 --> 00:01:12.085
+HD wallets contain keys derived in a tree structure.
+
+00:01:12.084 --> 00:01:15.989
+A parent key can derive a sequence of children keys and
+
+00:01:15.989 --> 00:01:19.649
+these children keys can drive a sequence of grandchildren keys,
+
+00:01:19.650 --> 00:01:21.850
+and this can go on into an infinite depth.
+
+00:01:21.849 --> 00:01:27.015
+Both public and private keys can generate this parent-child hierarchy.
+
+00:01:27.015 --> 00:01:32.019
+HD wallets came about in the Bitcoin Improvement Proposal 32 also known
+
+00:01:32.019 --> 00:01:36.935
+as BIP32 and that's viewable online in the BIP32 GitHub repo.
+
+00:01:36.935 --> 00:01:41.875
+As an aside, BIP stands for Bitcoin Improvement Proposal.
+
+00:01:41.875 --> 00:01:46.129
+These proposals are used to drive improvements to the Bitcoin protocol.
+
+00:01:46.129 --> 00:01:51.649
+Deterministic Wallets can be shared partially or entirely with different systems.
+
+00:01:51.650 --> 00:01:56.575
+Each of these systems can function with or without the ability to spend coins.
+
+00:01:56.575 --> 00:02:01.980
+What does this mean? With HD wallets it's possible to derive sub
+
+00:02:01.980 --> 00:02:07.505
+public keys from public keys and sub private keys from private keys.
+
+00:02:07.504 --> 00:02:10.479
+This creates what looks like a tree structure.
+
+00:02:10.479 --> 00:02:16.649
+The reason we can separate the generation of sub private keys and some public keys is
+
+00:02:16.650 --> 00:02:19.530
+because of the one-way elliptical curve
+
+00:02:19.530 --> 00:02:23.219
+digital signature algorithm that we mentioned in the last lesson.
+
+00:02:23.219 --> 00:02:26.310
+Remember, we can input a private key into
+
+00:02:26.310 --> 00:02:30.030
+this one-way algorithm and get out a unique public key.
+
+00:02:30.030 --> 00:02:34.995
+But it's near impossible to figure out the private key if given the public key.
+
+00:02:34.995 --> 00:02:37.250
+Through this one-way algorithm,
+
+00:02:37.250 --> 00:02:38.419
+it's possible to have
+
+00:02:38.419 --> 00:02:42.334
+a public master key that generates a series of children public-keys.
+
+00:02:42.335 --> 00:02:45.200
+This can happen without knowing the private key.
+
+00:02:45.199 --> 00:02:49.655
+This flexibility provides the option to share parts of the tree structure.
+
+00:02:49.655 --> 00:02:53.015
+This is possible by breaking off a branch and only sharing
+
+00:02:53.014 --> 00:02:57.375
+either the public or private key and only certain levels of it.
+
+00:02:57.375 --> 00:03:00.169
+In application, this is useful for
+
+00:03:00.169 --> 00:03:04.189
+businesses that want to separate out different departmental spending.
+
+00:03:04.189 --> 00:03:09.870
+Each department can break off a section of the tree and generate new keys as they need.
+
+00:03:09.870 --> 00:03:14.259
+But, all the keys still tie back to one main key.
+
+00:03:14.259 --> 00:03:16.564
+In another simplified scenario,
+
+00:03:16.564 --> 00:03:20.264
+imagine a web server is doing content monetization.
+
+00:03:20.264 --> 00:03:24.469
+Each time a user clicks on an ad on a web page, they get paid.
+
+00:03:24.469 --> 00:03:27.520
+In this case, they need one key per page.
+
+00:03:27.520 --> 00:03:30.635
+In other words, each page is a transaction.
+
+00:03:30.634 --> 00:03:33.090
+A web server can share the public key,
+
+00:03:33.090 --> 00:03:35.534
+that is the head of the public branch and derive
+
+00:03:35.534 --> 00:03:39.574
+billions and billions of public keys just from that initial public key.
+
+00:03:39.574 --> 00:03:42.479
+The fancy part of this is that it's possible to see
+
+00:03:42.479 --> 00:03:46.269
+public information about these transactions if you know the public key.
+
+00:03:46.270 --> 00:03:49.060
+But, the private key which is used to unlock
+
+00:03:49.060 --> 00:03:53.689
+sensitive data need never be revealed or come in touch with the server.
+
+00:03:53.689 --> 00:03:56.805
+This becomes a trustless server.
+
+00:03:56.805 --> 00:04:00.254
+HD wallets allow for quite a bit of flexibility.
+
+00:04:00.254 --> 00:04:03.870
+They allow sharing of only parts of a bigger tree structure.
+
+00:04:03.870 --> 00:04:08.275
+Ensuring separation of the public or private sublevels.
+
+00:04:08.275 --> 00:04:14.020
+However, the downside is that HD wallets require a strong backup of that master key
+
+00:04:14.020 --> 00:04:16.465
+and this is because everything else is derived
+
+00:04:16.464 --> 00:04:20.609
+mathematically from that master key which puts a lot of risk on it.
+
+00:04:20.610 --> 00:04:24.009
+What's important to take away from this discussion is
+
+00:04:24.009 --> 00:04:29.004
+the differentiating factors that make up each type of wallet and what makes you unique.
+
+00:04:29.004 --> 00:04:31.730
+Each while it has its own use case.
+
+00:04:31.730 --> 00:04:36.580
+Wallets continue to evolve depending on situational use cases that arise.
+
+00:04:36.579 --> 00:04:41.109
+So it's important to know the advantages and disadvantages for each type.
+
+00:04:41.110 --> 00:04:44.439
+No one type of wallet fits all situations.
+
+00:04:44.439 --> 00:04:48.394
+To help you submit the characteristics of each of these three wallet types,
+
+00:04:48.394 --> 00:04:50.354
+try your hand at the questions below.
+
+00:04:50.355 --> 00:04:52.480
+You'll have a chance to figure out which of
+
+00:04:52.480 --> 00:04:55.759
+these wallet types is best suited for which scenario.
+

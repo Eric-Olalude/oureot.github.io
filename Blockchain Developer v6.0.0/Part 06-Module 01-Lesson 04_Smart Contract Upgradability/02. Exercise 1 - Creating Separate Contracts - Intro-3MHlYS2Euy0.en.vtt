@@ -1,0 +1,223 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.910
+Now that we've got the basics out of the way,
+
+00:00:02.910 --> 00:00:04.995
+it's time to dive into some code.
+
+00:00:04.995 --> 00:00:09.000
+What I'd like to share with you now is switch to my code editor,
+
+00:00:09.000 --> 00:00:13.724
+and show you the basic project that we'll be using
+
+00:00:13.724 --> 00:00:19.094
+in order to separate out a contract into data and logic.
+
+00:00:19.094 --> 00:00:22.259
+So in the code,
+
+00:00:22.260 --> 00:00:27.645
+you'll see a subfolder called ExerciseC6C.
+
+00:00:27.644 --> 00:00:29.324
+So let's look at this code.
+
+00:00:29.324 --> 00:00:39.195
+So the scenario we have here is that we have a contract that represents employees.
+
+00:00:39.195 --> 00:00:45.409
+So employees have a profile and the contract simply focuses on registering an employee.
+
+00:00:45.409 --> 00:00:49.549
+Then if you think of these employees as salespersons,
+
+00:00:49.549 --> 00:00:52.579
+they have the ability to calculate a bonus.
+
+00:00:52.579 --> 00:00:56.195
+Now, the way that works is when
+
+00:00:56.195 --> 00:01:03.244
+an employee adds a sale or rather add up on behalf of the employee adds the sale,
+
+00:01:03.244 --> 00:01:08.334
+the amount of the sale is included with that transaction,
+
+00:01:08.334 --> 00:01:11.390
+and the smart contract calculates the bonus.
+
+00:01:11.390 --> 00:01:16.105
+So we have here in lines 146-153,
+
+00:01:16.105 --> 00:01:20.600
+a statements that essentially state what percentage of bonus
+
+00:01:20.599 --> 00:01:26.944
+commission the salesperson is eligible for based on the amount of sales they had.
+
+00:01:26.944 --> 00:01:29.359
+That is aggregated and stored.
+
+00:01:29.359 --> 00:01:32.674
+At some point, there would be code that would allow
+
+00:01:32.674 --> 00:01:37.325
+the employee to withdraw the bonus from the smart contract.
+
+00:01:37.325 --> 00:01:45.469
+So obviously, there could be a lot more you could do for a real scenario like this.
+
+00:01:45.469 --> 00:01:47.900
+I've contrived this particular scenario.
+
+00:01:47.900 --> 00:01:51.165
+So it's easy for us to separate the data and logic,
+
+00:01:51.165 --> 00:01:57.575
+while having some semblance of a practical application such as sales.
+
+00:01:57.575 --> 00:02:01.400
+But there's obvious flaws or shortcomings that you will see,
+
+00:02:01.400 --> 00:02:04.055
+but let's focus on the code.
+
+00:02:04.055 --> 00:02:06.410
+So with this code in place,
+
+00:02:06.409 --> 00:02:11.079
+one of the first things I want to do is make sure that my tests run correctly.
+
+00:02:11.080 --> 00:02:13.555
+So let's look at what the test is doing first.
+
+00:02:13.555 --> 00:02:15.990
+So we have one test.
+
+00:02:15.990 --> 00:02:19.365
+What we're doing in that test is we are registering an employee,
+
+00:02:19.365 --> 00:02:21.270
+we are adding a sale for them,
+
+00:02:21.270 --> 00:02:23.500
+and then we are calculating their bonus.
+
+00:02:23.500 --> 00:02:26.659
+So that's our arrange, act, assert, pattern.
+
+00:02:26.659 --> 00:02:34.099
+Let's go ahead and run NPM test and make sure that that succeeds.
+
+00:02:35.430 --> 00:02:37.480
+So if all goes well,
+
+00:02:37.479 --> 00:02:42.639
+we should see that test passing to say that as it stands,
+
+00:02:42.639 --> 00:02:46.734
+the single contract with its code is in working shape.
+
+00:02:46.735 --> 00:02:48.610
+All right. That works.
+
+00:02:48.610 --> 00:02:53.345
+Now, let's consider scenario which I alluded to earlier whereby
+
+00:02:53.344 --> 00:02:59.090
+the business rules for computing sales bonuses have changed.
+
+00:02:59.090 --> 00:03:01.610
+If this contract is already deployed,
+
+00:03:01.610 --> 00:03:04.340
+that's going to be a problem because you can no longer
+
+00:03:04.340 --> 00:03:08.435
+change or device the calculate bonus function.
+
+00:03:08.435 --> 00:03:13.039
+So how are we going to ensure that as business rules change,
+
+00:03:13.039 --> 00:03:15.739
+that the rules for calculating bonus can also
+
+00:03:15.740 --> 00:03:18.695
+be adapted and keep working in the smart contract?
+
+00:03:18.694 --> 00:03:22.519
+So that's the gist of what we're going to do is split up this contract so
+
+00:03:22.520 --> 00:03:27.105
+that the ability to calculate the bonus goes into application logic,
+
+00:03:27.104 --> 00:03:30.994
+whereas the data associated with the sales employees,
+
+00:03:30.995 --> 00:03:35.525
+their bonus, etc., remains in the base data.
+
+00:03:35.525 --> 00:03:39.349
+Let's look at the specifics for our exercise.
+
+00:03:39.349 --> 00:03:42.319
+So we're going to create separate contracts.
+
+00:03:42.319 --> 00:03:46.894
+We're going to first focus on creating an application contract.
+
+00:03:46.895 --> 00:03:52.820
+For that, we'll use a contract stub that has been provided in the project.
+
+00:03:52.819 --> 00:03:57.935
+Next what we'll do is we'll move some of the logic from the data contract,
+
+00:03:57.935 --> 00:03:59.780
+that doesn't belong there anymore,
+
+00:03:59.780 --> 00:04:04.330
+into the new application logic contract.
+
+00:04:04.330 --> 00:04:06.920
+Finally, we will have to create
+
+00:04:06.919 --> 00:04:11.179
+some temporary stubs as we are working through the process to handle
+
+00:04:11.180 --> 00:04:17.975
+the fact that some of the code that the contract requires will no longer exist.
+
+00:04:17.975 --> 00:04:20.645
+This will become evident as we get into the code.
+
+00:04:20.644 --> 00:04:22.639
+I've structured the exercises today,
+
+00:04:22.639 --> 00:04:24.620
+so at every step of the way,
+
+00:04:24.620 --> 00:04:28.925
+you run truffle compile and ensure that your code compiles.
+
+00:04:28.925 --> 00:04:33.530
+The reason this is important is when you are making major changes like this,
+
+00:04:33.529 --> 00:04:35.609
+which is essentially refactoring an app,
+
+00:04:35.610 --> 00:04:39.230
+you want to catch errors early on and not wait until
+
+00:04:39.230 --> 00:04:42.725
+you've done all this refactoring before you compile.
+
+00:04:42.725 --> 00:04:45.890
+So we're going to compile as we go and ensure that we have
+
+00:04:45.889 --> 00:04:50.240
+good working code every step of the way.
+

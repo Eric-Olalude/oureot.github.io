@@ -1,0 +1,352 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:06.309
+Now, let's look at the six mandatory functions of an ERC-20 token contract.
+
+00:00:06.309 --> 00:00:12.489
+So, we have six functions right here, totalSupply, balanceOf, transfer,
+
+00:00:12.490 --> 00:00:15.669
+transferForm, approve and allowance and
+
+00:00:15.669 --> 00:00:18.820
+we also have two events that we will also talk about in this video.
+
+00:00:18.820 --> 00:00:22.225
+So, let's talk about totalSupply, the very first function.
+
+00:00:22.225 --> 00:00:23.515
+Right, there's ERC function,
+
+00:00:23.515 --> 00:00:27.280
+totalSupply, public constant returns uint.
+
+00:00:27.280 --> 00:00:30.780
+totalSupply equals the sum of all balances,
+
+00:00:30.780 --> 00:00:33.810
+that means, the total amount of tokens available.
+
+00:00:33.810 --> 00:00:36.789
+When you initially create a token contract,
+
+00:00:36.789 --> 00:00:39.094
+you start with providing a total supply,
+
+00:00:39.094 --> 00:00:42.310
+which means that this is the maximum supply of tokens
+
+00:00:42.310 --> 00:00:45.755
+that can circulate between various addresses.
+
+00:00:45.755 --> 00:00:50.030
+When tokens are transferred from one account to another account,
+
+00:00:50.030 --> 00:00:53.755
+the token contract will update the balance of the two accounts.
+
+00:00:53.755 --> 00:00:56.370
+Just some extra details about this function.
+
+00:00:56.369 --> 00:01:00.049
+It is possible to change this total supply by two ways.
+
+00:01:00.049 --> 00:01:02.509
+Either by minting new tokens,
+
+00:01:02.509 --> 00:01:05.674
+which means creating new tokens or it can
+
+00:01:05.674 --> 00:01:10.495
+also burn tokens which means that will decrease the supply of tokens.
+
+00:01:10.495 --> 00:01:15.000
+We can also burn tokens by sending them to an address zero.
+
+00:01:15.000 --> 00:01:18.025
+Now, this will not change the total number of tokens,
+
+00:01:18.025 --> 00:01:20.910
+it will just make those tokens unavailable.
+
+00:01:20.909 --> 00:01:24.694
+The next function we're going to talk about is a balanceOf function.
+
+00:01:24.694 --> 00:01:26.375
+It takes an an address,
+
+00:01:26.375 --> 00:01:29.290
+public constant returns a balanced.
+
+00:01:29.290 --> 00:01:34.594
+The balanceOf function provide the number of tokens held by a given address.
+
+00:01:34.594 --> 00:01:37.819
+The function accepts an address as a parameter.
+
+00:01:37.819 --> 00:01:40.539
+Now, since you see that this function is public,
+
+00:01:40.540 --> 00:01:43.705
+the balance of any address is viewable by anyone.
+
+00:01:43.704 --> 00:01:48.509
+Remember, we learned about mapping just about a few lectures back.
+
+00:01:48.510 --> 00:01:53.685
+This is what is used by a token contract to implement the balance of addresses.
+
+00:01:53.685 --> 00:01:56.355
+We will see that implementation soon.
+
+00:01:56.355 --> 00:02:00.814
+It just uses a mapping to store balances of all addresses.
+
+00:02:00.814 --> 00:02:03.844
+The next function we have here is a transfer function.
+
+00:02:03.844 --> 00:02:05.344
+Takes any new to address,
+
+00:02:05.344 --> 00:02:09.169
+number of tokens and then returns success, true or false.
+
+00:02:09.169 --> 00:02:12.739
+So, the transfer function lets the owner of the contract
+
+00:02:12.740 --> 00:02:16.219
+sent a given amount of tokens to another address,
+
+00:02:16.219 --> 00:02:19.844
+just like a conventional cryptocurrency transaction.
+
+00:02:19.844 --> 00:02:23.629
+Note, that there are no checks made on the recipient address.
+
+00:02:23.629 --> 00:02:29.014
+So, it is important on the side of the sender to ensure that the recipient is valid,
+
+00:02:29.014 --> 00:02:31.444
+otherwise, you can lose your tokens.
+
+00:02:31.444 --> 00:02:33.969
+It has two input parameters.
+
+00:02:33.969 --> 00:02:37.909
+The first is the address to transfer the tokens and then the second
+
+00:02:37.909 --> 00:02:41.569
+is the number of tokens or the amount of tokens and then return,
+
+00:02:41.569 --> 00:02:44.074
+it returns a true or false status.
+
+00:02:44.074 --> 00:02:47.409
+The next function we have transferFrom function.
+
+00:02:47.409 --> 00:02:49.000
+Little bit complicated.
+
+00:02:49.000 --> 00:02:51.500
+I'm going to explain you really good so
+
+00:02:51.500 --> 00:02:54.425
+listen to this if you really want to recap and listening again.
+
+00:02:54.425 --> 00:02:59.570
+Definitely do that. So, the transferFrom function allows a smart contract to
+
+00:02:59.569 --> 00:03:05.659
+automate the transfer process and send a given amount of tokens on behalf of the owner.
+
+00:03:05.659 --> 00:03:08.629
+Let me explain it. Now, you might ask what is
+
+00:03:08.629 --> 00:03:12.025
+the difference between transfer and transferFrom functions.
+
+00:03:12.025 --> 00:03:15.500
+Let's consider transferring money to pay a bill.
+
+00:03:15.500 --> 00:03:18.860
+Now, one way is to send money manually,
+
+00:03:18.860 --> 00:03:23.180
+by taking the time to write a check and mailing it yourselves to pay the bill.
+
+00:03:23.180 --> 00:03:25.180
+This is like using transfer.
+
+00:03:25.180 --> 00:03:31.010
+So, you are doing the money transfer process yourself without the help another party.
+
+00:03:31.009 --> 00:03:36.859
+Another way would be that you could set up an automatic bill pay with your bank.
+
+00:03:36.860 --> 00:03:40.100
+This is like using transferFrom function.
+
+00:03:40.099 --> 00:03:45.064
+Your bank sends the money to pay off the bill on your behalf automatically.
+
+00:03:45.064 --> 00:03:49.310
+With this function, a contract can send a certain amount of
+
+00:03:49.310 --> 00:03:54.175
+tokens to another address on your behalf without your intervention.
+
+00:03:54.175 --> 00:03:59.390
+So, you approve another contract to use money on your behalf.
+
+00:03:59.389 --> 00:04:02.359
+Now, if you see, this function transferFrom,
+
+00:04:02.360 --> 00:04:04.580
+it takes three input parameters.
+
+00:04:04.580 --> 00:04:07.115
+The from address, the to address,
+
+00:04:07.115 --> 00:04:11.645
+and the amount of tokens and returns a success of true or false.
+
+00:04:11.645 --> 00:04:16.250
+Now, important thing to understand here is that the approve and the transferFrom,
+
+00:04:16.250 --> 00:04:18.170
+if you look at the approve, we will talk about that in
+
+00:04:18.170 --> 00:04:20.530
+little bit more detail in just a minute.
+
+00:04:20.529 --> 00:04:22.879
+Approve and the transferFrom function are
+
+00:04:22.879 --> 00:04:25.990
+two functions that work using a two-step process.
+
+00:04:25.990 --> 00:04:30.079
+In the first step, a token holder gives another address of
+
+00:04:30.079 --> 00:04:36.365
+a smart contract approval to transfer up to certain amount of tokens known as allowance.
+
+00:04:36.365 --> 00:04:41.735
+Now, the token holder uses approve to approve this information.
+
+00:04:41.735 --> 00:04:47.270
+In the second step, the smart contract who has been approved can take up
+
+00:04:47.269 --> 00:04:52.870
+to the allowed number of tokens from its allowance and use the transferFrom function.
+
+00:04:52.870 --> 00:04:55.100
+Now, all of these functions will get more
+
+00:04:55.100 --> 00:04:57.439
+clearer as you start to implement these functions.
+
+00:04:57.439 --> 00:04:59.870
+Remember, this is just an interface that is
+
+00:04:59.870 --> 00:05:02.970
+asking us to make sure that all these functions are implemented.
+
+00:05:02.970 --> 00:05:05.255
+It is our responsibility to implement them
+
+00:05:05.254 --> 00:05:08.810
+once we have or we need to deploy a contract or a token.
+
+00:05:08.810 --> 00:05:11.899
+Let's talk about the next function, function approve.
+
+00:05:11.899 --> 00:05:13.489
+When calling this function,
+
+00:05:13.490 --> 00:05:16.715
+the owner of the contract authorizes or approves
+
+00:05:16.714 --> 00:05:21.109
+the given address to withdraw tokens from the owners address.
+
+00:05:21.110 --> 00:05:23.805
+The next is the allowance function.
+
+00:05:23.805 --> 00:05:25.785
+It takes into input parameters,
+
+00:05:25.785 --> 00:05:27.550
+token owner and spender.
+
+00:05:27.550 --> 00:05:31.460
+The allowance function provides the number of tokens allowed to
+
+00:05:31.459 --> 00:05:35.555
+be transferred from a given address by another given address.
+
+00:05:35.555 --> 00:05:38.764
+Note, that anyone can query any addresses
+
+00:05:38.764 --> 00:05:42.185
+allowance as all data on the blockchain is public.
+
+00:05:42.185 --> 00:05:47.040
+Allowance is mostly implemented by a mapping inside a mapping.
+
+00:05:47.040 --> 00:05:50.600
+So, we have a mapping where the keys in address and
+
+00:05:50.600 --> 00:05:54.425
+the value is a mapping of addresses to tokens.
+
+00:05:54.425 --> 00:05:57.310
+We will see this in example very soon.
+
+00:05:57.310 --> 00:06:00.905
+Then the last thing I wanted to talk about is the two events.
+
+00:06:00.904 --> 00:06:04.219
+Now, ERC-20 defines two events that must
+
+00:06:04.220 --> 00:06:07.655
+be triggered when the contract takes relevant actions.
+
+00:06:07.654 --> 00:06:11.734
+The first event is a transfer event which should be emitted
+
+00:06:11.735 --> 00:06:15.935
+when the contract transfers tokens from one address to another address.
+
+00:06:15.935 --> 00:06:18.035
+We will see an example soon.
+
+00:06:18.035 --> 00:06:22.790
+The second event is approval event would should be emitted when one address
+
+00:06:22.790 --> 00:06:28.280
+approves another address for spending a specific amount of tokens.
+
+00:06:28.279 --> 00:06:30.844
+Only then you have
+
+00:06:30.845 --> 00:06:35.360
+this contract standards implemented when you have all these functions defined.
+
+00:06:35.360 --> 00:06:38.675
+So, again, now these are just function declarations.
+
+00:06:38.675 --> 00:06:42.500
+It is your responsibility to write and implement them in your contract.
+
+00:06:42.500 --> 00:06:43.910
+Once you've done that,
+
+00:06:43.910 --> 00:06:45.725
+this is when you are going to adhere to
+
+00:06:45.725 --> 00:06:51.120
+ERC-20 standards and your token will be called ERC-20 tokens.
+

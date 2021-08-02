@@ -1,0 +1,136 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.350 --> 00:00:05.955
+The next requirement is for the airlines specifically.
+
+00:00:05.955 --> 00:00:11.445
+In the application, you will want to create the ability for
+
+00:00:11.445 --> 00:00:14.519
+the first airline that will be part of
+
+00:00:14.519 --> 00:00:19.079
+the collaboration to be registered when the contract is initially deployed.
+
+00:00:19.079 --> 00:00:22.679
+You could design it so this is not in place,
+
+00:00:22.679 --> 00:00:27.059
+but it'll make it much harder for you to create code that does that.
+
+00:00:27.059 --> 00:00:28.890
+So to make it simpler,
+
+00:00:28.890 --> 00:00:32.655
+have the first airline automatically deployed as part
+
+00:00:32.655 --> 00:00:38.320
+of the initial deployment of the contract.
+
+00:00:38.509 --> 00:00:42.348
+Only existing airlines may register
+
+00:00:42.348 --> 00:00:46.264
+a new airline until there are at least four airlines registered.
+
+00:00:46.265 --> 00:00:50.734
+So the first airline is registered as part of the deployment.
+
+00:00:50.734 --> 00:00:54.965
+The second third fourth register airlines are
+
+00:00:54.965 --> 00:00:59.615
+registered by any of the airlines that had been registered to that point.
+
+00:00:59.615 --> 00:01:04.010
+Now, once you cross the threshold of the fourth airline,
+
+00:01:04.010 --> 00:01:07.070
+your smart contract needs to get smarter.
+
+00:01:07.069 --> 00:01:14.434
+It needs to use the multi-party consensus technique that we learned about,
+
+00:01:14.435 --> 00:01:19.924
+to have at least 50 percent of the currently registered airlines to
+
+00:01:19.924 --> 00:01:25.340
+approve the registration of the fifth and subsequent airlines.
+
+00:01:25.340 --> 00:01:29.465
+So this is very reflective of the real world
+
+00:01:29.465 --> 00:01:35.840
+where as you create an entity as more members are welcome to it,
+
+00:01:35.840 --> 00:01:40.579
+because it causes dilution of the existing members,
+
+00:01:40.579 --> 00:01:42.980
+they might want to have a say,
+
+00:01:42.980 --> 00:01:47.329
+they might have a different idea of who should be welcomed and who should be not.
+
+00:01:47.329 --> 00:01:53.459
+Now, we can't go through a democratic process in the blockchain.
+
+00:01:53.459 --> 00:01:55.594
+What we can do is enforced some rules.
+
+00:01:55.594 --> 00:01:59.269
+Those rules are that we have multi-party consensus.
+
+00:01:59.269 --> 00:02:04.280
+So you reach a threshold of 50 percent of the existing airlines that are registered,
+
+00:02:04.280 --> 00:02:08.229
+can approve, and add on a new airline.
+
+00:02:08.229 --> 00:02:15.109
+Now, the registration of an airline within your smart contract needs to be two level.
+
+00:02:15.110 --> 00:02:18.065
+The first level is when they get registered and
+
+00:02:18.064 --> 00:02:21.109
+approved after the multi-party consensus has occurred,
+
+00:02:21.110 --> 00:02:25.115
+or potentially not approved if the multi-party consensus fails.
+
+00:02:25.115 --> 00:02:26.840
+But after they're approved,
+
+00:02:26.840 --> 00:02:28.685
+one of the things we want is that
+
+00:02:28.685 --> 00:02:32.780
+all the airlines actually provide some funding within the app.
+
+00:02:32.780 --> 00:02:35.330
+This is essentially the seed funding for
+
+00:02:35.330 --> 00:02:39.719
+the insurance and that's a requirement for every airline,
+
+00:02:39.719 --> 00:02:45.469
+and for the purpose of this project and the simulation if you will,
+
+00:02:45.469 --> 00:02:48.229
+each airline has to submit 10 either.
+
+00:02:48.229 --> 00:02:50.629
+So as the airlines increase,
+
+00:02:50.629 --> 00:02:57.125
+the amount of funding that is in the smart contract will also increase.
+
+00:02:57.125 --> 00:02:59.748
+So that's requirement number 2,
+
+00:02:59.748 --> 00:03:04.439
+how the airlines will be managed in your smart contract.
+

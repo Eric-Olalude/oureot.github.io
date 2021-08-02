@@ -1,0 +1,406 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.349
+In this concept, we will learn about error handling in Solidity.
+
+00:00:04.349 --> 00:00:08.804
+Every programming language needs to implement some kind of error handling.
+
+00:00:08.804 --> 00:00:10.919
+We will learn how to throw exceptions
+
+00:00:10.919 --> 00:00:14.195
+using revert(), require(condition), and assert(condition).
+
+00:00:14.195 --> 00:00:17.449
+There are two types of errors in general,
+
+00:00:17.449 --> 00:00:22.280
+the first type are the run-time errors due to some EVM or operations error,
+
+00:00:22.280 --> 00:00:25.234
+the second type are the application errors.
+
+00:00:25.234 --> 00:00:29.655
+Now, these are throne due to some condition in the code or some wrong data.
+
+00:00:29.655 --> 00:00:32.210
+Now, how do we handle errors.
+
+00:00:32.210 --> 00:00:35.634
+This is totally based upon the developer of the contract,
+
+00:00:35.634 --> 00:00:40.729
+who can decide how to communicate this error back to the caller of the contract?
+
+00:00:40.729 --> 00:00:44.719
+The contract can either return a value to the caller to
+
+00:00:44.719 --> 00:00:49.804
+communicate the error or the contract can emit events to relate the error.
+
+00:00:49.804 --> 00:00:54.875
+It could also be combination of returning a value and also emitting events.
+
+00:00:54.875 --> 00:00:58.664
+Or of course the preferred way is to throw an exception.
+
+00:00:58.664 --> 00:01:03.200
+In this concept, we will learn about throwing exceptions back.
+
+00:01:03.200 --> 00:01:06.820
+Moving on, one thing I wanted to mention is that
+
+00:01:06.819 --> 00:01:10.279
+Solidity does not support Try-Catch mechanism.
+
+00:01:10.280 --> 00:01:16.159
+This means that once an exception is thrown it will just be passed over to the caller.
+
+00:01:16.159 --> 00:01:20.629
+When the contract code throws an exception it leads to rolling back of
+
+00:01:20.629 --> 00:01:25.459
+all the changes that happened in that transaction before the exception was thrown.
+
+00:01:25.459 --> 00:01:27.375
+Know ethers are sent.
+
+00:01:27.375 --> 00:01:30.480
+All the set ethers are also sent back.
+
+00:01:30.480 --> 00:01:34.310
+Gas is used, which means that any gas that was used
+
+00:01:34.310 --> 00:01:39.170
+prior to throwing the exception the caller will still have to pay for that gas.
+
+00:01:39.170 --> 00:01:42.079
+One another important thing I wanted to mention,
+
+00:01:42.079 --> 00:01:44.629
+that even though this transaction was unsuccessful,
+
+00:01:44.629 --> 00:01:48.530
+it will still get recorded on the Blockchain.
+
+00:01:48.530 --> 00:01:55.200
+In Solidity exceptions are thrown using the revert function, let's talk about that.
+
+00:01:55.200 --> 00:01:57.189
+Once an exception is thrown,
+
+00:01:57.189 --> 00:01:59.750
+the contract execution will stop and
+
+00:01:59.750 --> 00:02:02.885
+the exception is propagated all the way back to the caller.
+
+00:02:02.885 --> 00:02:06.460
+Also, all unused gas will be sent back.
+
+00:02:06.459 --> 00:02:11.329
+Now, there used to be a throw statement but that is deprecated in solidity, now,
+
+00:02:11.330 --> 00:02:13.190
+sent a true statement is used,
+
+00:02:13.189 --> 00:02:16.550
+it uses up all the gas that is sent in the transaction call,
+
+00:02:16.550 --> 00:02:19.205
+so avoid using true statements.
+
+00:02:19.205 --> 00:02:22.700
+There are two additional global functions that can be
+
+00:02:22.699 --> 00:02:25.939
+used to to exceptions, require(condition) and Assert(condition).
+
+00:02:25.939 --> 00:02:30.349
+Both these functions take conditional expressions as their arguments,
+
+00:02:30.349 --> 00:02:33.069
+if the condition is not met, that is,
+
+00:02:33.069 --> 00:02:36.150
+it leads to a false, an exception will be thrown.
+
+00:02:36.150 --> 00:02:39.105
+Require throws revert like exceptions,
+
+00:02:39.104 --> 00:02:42.564
+which means all used gas is sent back, whereas,
+
+00:02:42.564 --> 00:02:47.139
+assert throws through like exceptions where all the gases used up.
+
+00:02:47.139 --> 00:02:50.144
+Assert is mostly used for internal testing,
+
+00:02:50.145 --> 00:02:54.735
+require is mostly used for throwing exceptions back to the caller.
+
+00:02:54.735 --> 00:02:59.030
+So, if the Boolean expression returns to be a false,
+
+00:02:59.030 --> 00:03:01.294
+then the entire function is immediately
+
+00:03:01.294 --> 00:03:04.804
+exited and no changes are made to the contract at all.
+
+00:03:04.805 --> 00:03:07.400
+Now, this is a great way to make sure that
+
+00:03:07.400 --> 00:03:10.610
+some condition is met before the function is executed.
+
+00:03:10.610 --> 00:03:13.895
+Like in the first example that you see on the screen,
+
+00:03:13.895 --> 00:03:18.555
+we are checking if the msg.sender is the owner of the contract,
+
+00:03:18.555 --> 00:03:21.215
+only then the function will be executed
+
+00:03:21.215 --> 00:03:24.469
+or an exception will be thrown back to the caller.
+
+00:03:24.469 --> 00:03:28.469
+In the second example we are checking if the msg.value
+
+00:03:28.469 --> 00:03:32.835
+sent along the transaction call is greater than 0.1 ether,
+
+00:03:32.835 --> 00:03:35.835
+only then proceed otherwise, throw an exception.
+
+00:03:35.835 --> 00:03:39.860
+Now, let's look at a simple contract that implements error handling so we
+
+00:03:39.860 --> 00:03:44.640
+can get a little bit better understanding on how error handling works in Solidity.
+
+00:03:56.780 --> 00:04:00.250
+Okay, so we have a sample contract here,
+
+00:04:00.250 --> 00:04:04.479
+and the name of the contract is exceptionContract starts with the keyword contract.
+
+00:04:04.479 --> 00:04:08.169
+Now, if you see we are having a public variable here called
+
+00:04:08.169 --> 00:04:11.769
+lastCaller and we're just setting a value of none to it that is it.
+
+00:04:11.770 --> 00:04:15.870
+Is a public variable string type lastCaller, setting a value to none.
+
+00:04:15.870 --> 00:04:18.340
+Then, we have a function called a revertBehavior.
+
+00:04:18.339 --> 00:04:20.319
+Now, this function takes in a name of as
+
+00:04:20.319 --> 00:04:24.279
+an argument and sets the lastCaller variable to this argument received.
+
+00:04:24.279 --> 00:04:27.159
+So, whatever the argument we're passing in the function we're setting
+
+00:04:27.160 --> 00:04:31.490
+the lastCaller to that variable or the argument that's received in.
+
+00:04:31.490 --> 00:04:35.059
+Now, what we're trying to do in this function is also,
+
+00:04:35.059 --> 00:04:40.175
+since remember we do not have a.length property and strings,
+
+00:04:40.175 --> 00:04:42.035
+so we're converting it in bytes,
+
+00:04:42.035 --> 00:04:43.685
+by using this conversion.
+
+00:04:43.685 --> 00:04:46.550
+If you remember from the concept we're taking a name,
+
+00:04:46.550 --> 00:04:49.610
+putting into brackets, enclosing with the word bytes,
+
+00:04:49.610 --> 00:04:51.245
+and then checking the length of that.
+
+00:04:51.245 --> 00:04:55.855
+If the length comes to be zero we're reverting or throwing an exception.
+
+00:04:55.855 --> 00:04:57.045
+So, all it's doing is that,
+
+00:04:57.045 --> 00:05:01.145
+if someone sends as an empty argument but some kind of argument but an empty,
+
+00:05:01.144 --> 00:05:03.680
+there's nothing in the strings it's going to throw an exception.
+
+00:05:03.680 --> 00:05:06.800
+Okay, and also wanted to mention
+
+00:05:06.800 --> 00:05:09.710
+is that there's another way of doing it using the require statement.
+
+00:05:09.709 --> 00:05:11.719
+I'm just going to show you both here and I can always
+
+00:05:11.720 --> 00:05:14.330
+uncomment it but we're already doing it that's the reason I have commented,
+
+00:05:14.329 --> 00:05:15.889
+so this works perfectly fine too.
+
+00:05:15.889 --> 00:05:19.490
+So, we can replace this whole line of code,
+
+00:05:19.490 --> 00:05:21.394
+this value, this value,
+
+00:05:21.394 --> 00:05:22.734
+and just check this.
+
+00:05:22.735 --> 00:05:25.110
+Okay, so what we can do is we're converting,
+
+00:05:25.110 --> 00:05:28.030
+we're just saying require condition inside the brackets,
+
+00:05:28.029 --> 00:05:30.094
+we're checking if this length is greater than zero,
+
+00:05:30.095 --> 00:05:32.015
+then you can just return true.
+
+00:05:32.014 --> 00:05:35.599
+So, same things so either you can use a revert kind of thing,
+
+00:05:35.600 --> 00:05:38.165
+where you're doing something here
+
+00:05:38.165 --> 00:05:41.425
+or you can just throw an exception right before you've done anything yet.
+
+00:05:41.425 --> 00:05:44.900
+Also wanted to mention is that in this case,
+
+00:05:44.899 --> 00:05:46.409
+we're setting the value of this.
+
+00:05:46.410 --> 00:05:49.130
+So, remember when I talked about and I explained that to you that
+
+00:05:49.129 --> 00:05:52.579
+anytime you throw a revert all the changes will revert back,
+
+00:05:52.579 --> 00:05:55.625
+so that is what is going on in the first revert behavior function,
+
+00:05:55.625 --> 00:05:57.500
+the lastCaller is being changed to
+
+00:05:57.500 --> 00:06:01.449
+the input argument and then an exception is thrown after that.
+
+00:06:01.449 --> 00:06:04.250
+If an exception is thrown the last quarter reverts back
+
+00:06:04.250 --> 00:06:06.829
+to its original value does nullifying defect.
+
+00:06:06.829 --> 00:06:08.914
+So, let's now look at how this works,
+
+00:06:08.915 --> 00:06:11.290
+I'm going to deploy this contract.
+
+00:06:11.290 --> 00:06:13.350
+Once we deployed this contract,
+
+00:06:13.350 --> 00:06:15.495
+now let's pull it down and see what we have,
+
+00:06:15.495 --> 00:06:17.600
+so as of now lastCaller is nothing,
+
+00:06:17.600 --> 00:06:20.480
+so we're just going to call the value and set to none. Got it?
+
+00:06:20.480 --> 00:06:22.055
+Now, we're going to call the function,
+
+00:06:22.055 --> 00:06:26.850
+let's give it a value "Udacity".
+
+00:06:27.079 --> 00:06:29.534
+Then, we call this function.
+
+00:06:29.535 --> 00:06:31.320
+Okay? Now, once we call this function,
+
+00:06:31.319 --> 00:06:33.339
+if you see this is not going to return true,
+
+00:06:33.339 --> 00:06:35.379
+that means that exception will not be thrown in
+
+00:06:35.379 --> 00:06:38.274
+this case because this condition is not met here,
+
+00:06:38.274 --> 00:06:43.164
+so if I call the lastCaller function now it's set to this value if you Udacity.
+
+00:06:43.165 --> 00:06:46.930
+Now, let's call this function again with an empty string.
+
+00:06:46.930 --> 00:06:51.430
+So, remember any time you pass arguments here string type
+
+00:06:51.430 --> 00:06:54.704
+you have to use double quotes because it is expecting JSON.
+
+00:06:54.704 --> 00:06:58.569
+So, revert and now I'm going to call the function again, okay.
+
+00:06:58.569 --> 00:07:02.620
+So, now if you see it sets the value of this right here,
+
+00:07:02.620 --> 00:07:05.259
+so it should be empty strings but now towards an exception.
+
+00:07:05.259 --> 00:07:08.170
+Okay. It's still the same, what it did,
+
+00:07:08.170 --> 00:07:10.610
+it set it to empty strings and after that it
+
+00:07:10.610 --> 00:07:13.205
+checks if its value equal to zero and it's going revert.
+
+00:07:13.204 --> 00:07:17.314
+So, to roll it back to initial value of Udacity even if it was changed right here.
+
+00:07:17.314 --> 00:07:19.189
+So, that is how exceptions work,
+
+00:07:19.189 --> 00:07:22.084
+you can use require, you can use revert.
+
+00:07:22.084 --> 00:07:25.009
+So, again play around with this piece of code and get
+
+00:07:25.009 --> 00:07:28.500
+comfortable with how exceptions are thrown and Solidity.
+

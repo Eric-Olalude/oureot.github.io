@@ -1,0 +1,280 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:06.060
+So far, we've covered how to model behavior using activity sequence and state diagrams.
+
+00:00:06.060 --> 00:00:08.865
+So, using this, let's model the data.
+
+00:00:08.865 --> 00:00:11.610
+Traditionally, a class diagram shows the structure of
+
+00:00:11.610 --> 00:00:14.204
+a system by modeling the systems classes,
+
+00:00:14.204 --> 00:00:15.525
+their attributes and methods,
+
+00:00:15.525 --> 00:00:17.475
+and the relationship among these objects.
+
+00:00:17.475 --> 00:00:18.990
+Before a blockchain use case,
+
+00:00:18.990 --> 00:00:21.630
+this diagram will be used to model the relationships
+
+00:00:21.630 --> 00:00:24.450
+and attributes for a system's smart contracts.
+
+00:00:24.450 --> 00:00:26.160
+Now, because of this,
+
+00:00:26.160 --> 00:00:30.570
+our version of the class diagram by the general name, data modeling diagram.
+
+00:00:30.570 --> 00:00:32.070
+This brings up the question,
+
+00:00:32.070 --> 00:00:33.730
+well, what about the databases?
+
+00:00:33.730 --> 00:00:36.900
+Will this information will be housed in traditional databases and
+
+00:00:36.900 --> 00:00:40.580
+tables or will they be stored in a blockchain data storage solution?
+
+00:00:40.580 --> 00:00:44.210
+Also, how can we efficiently organize this information,
+
+00:00:44.210 --> 00:00:46.220
+especially if there are hundreds and thousands of
+
+00:00:46.220 --> 00:00:49.325
+actors involved who are entering and retrieving data?
+
+00:00:49.325 --> 00:00:50.885
+In our previous diagrams,
+
+00:00:50.885 --> 00:00:52.205
+we looked at the behaviors,
+
+00:00:52.205 --> 00:00:55.700
+focusing on common behaviors, actions, interactions.
+
+00:00:55.700 --> 00:00:58.060
+Now, we'll focus on the structures,
+
+00:00:58.060 --> 00:01:01.085
+values, classifiers, and packages.
+
+00:01:01.085 --> 00:01:03.290
+Let's look at our pet shop example again.
+
+00:01:03.290 --> 00:01:05.495
+How can we structure this smart contracts?
+
+00:01:05.495 --> 00:01:08.525
+There are many ways that you could structure the same information.
+
+00:01:08.525 --> 00:01:10.745
+Our approach is just one approach.
+
+00:01:10.745 --> 00:01:13.460
+The reasons that we chose it are that it helps keep
+
+00:01:13.460 --> 00:01:16.670
+the related code bundled together without having one single giant
+
+00:01:16.670 --> 00:01:19.310
+file with everything in it and it accommodates
+
+00:01:19.310 --> 00:01:22.895
+future growth say in the number of actors or the behaviors.
+
+00:01:22.895 --> 00:01:25.745
+For our use case, we've broken it out this project into
+
+00:01:25.745 --> 00:01:28.880
+three smart contracts versus the core contract.
+
+00:01:28.880 --> 00:01:32.930
+This is the main contract that tracks the pet adoption from breeder to owner.
+
+00:01:32.930 --> 00:01:34.895
+Next is the base contact,
+
+00:01:34.895 --> 00:01:37.975
+this defines the struct functions and more.
+
+00:01:37.975 --> 00:01:40.605
+Lastly, we have our access control contract,
+
+00:01:40.605 --> 00:01:43.010
+which defines the roles of each actor.
+
+00:01:43.010 --> 00:01:45.440
+Here's how these contracts are relate using
+
+00:01:45.440 --> 00:01:48.275
+the traditional UML class diagram annotations.
+
+00:01:48.275 --> 00:01:53.645
+The solid lines represent Association and the open arrow represents inheritance.
+
+00:01:53.645 --> 00:01:55.640
+The core contract inherits from
+
+00:01:55.640 --> 00:01:59.255
+the base contact which inherits from the access control contract.
+
+00:01:59.255 --> 00:02:01.700
+The core contract is the main contract,
+
+00:02:01.700 --> 00:02:04.670
+which is what is compiled and run on the blockchain.
+
+00:02:04.670 --> 00:02:06.875
+This contract ties everything together.
+
+00:02:06.875 --> 00:02:09.680
+It contains the contract address at the app points too,
+
+00:02:09.680 --> 00:02:13.670
+and it inherits all the data and methods from the previous contracts.
+
+00:02:13.670 --> 00:02:16.475
+Let's focus on the access control contract.
+
+00:02:16.475 --> 00:02:19.520
+This contract controls access control for each actor.
+
+00:02:19.520 --> 00:02:21.545
+So, there are two actors involved here.
+
+00:02:21.545 --> 00:02:24.650
+Each has a role that's distinct with no overlap in
+
+00:02:24.650 --> 00:02:28.370
+their accessibility and they're accessed via their addresses.
+
+00:02:28.370 --> 00:02:31.700
+The abilities listed for each role above are exhaustive.
+
+00:02:31.700 --> 00:02:36.725
+So, the breeder and owner contracts will inherit from the access control contract.
+
+00:02:36.725 --> 00:02:40.370
+Access control will contain the general permissions that all actors in
+
+00:02:40.370 --> 00:02:44.540
+the supply chain will have such as access to information about the pet's health and age,
+
+00:02:44.540 --> 00:02:48.140
+but breeder and owner will each have their own specific permissions.
+
+00:02:48.140 --> 00:02:52.295
+For example, the breeder is able to advertise pet for adoption.
+
+00:02:52.295 --> 00:02:54.290
+Next is the base contract.
+
+00:02:54.290 --> 00:02:56.630
+It holds all the common structs and events.
+
+00:02:56.630 --> 00:03:00.950
+For example, the pet struct that contains the attributes for the pet.
+
+00:03:00.950 --> 00:03:03.575
+So, the pet will have a pet tracking ID.
+
+00:03:03.575 --> 00:03:07.400
+There's also events which we determined in our state diagram,
+
+00:03:07.400 --> 00:03:09.515
+which are raised, vaccinated,
+
+00:03:09.515 --> 00:03:12.785
+advertised, metAdopters and adopted.
+
+00:03:12.785 --> 00:03:15.080
+Lastly is a core contract.
+
+00:03:15.080 --> 00:03:17.060
+As mentioned before, this is
+
+00:03:17.060 --> 00:03:21.185
+the main contract which is what is compiled and running on the blockchain.
+
+00:03:21.185 --> 00:03:24.080
+It inherits from all the contracts and we looked at prior to
+
+00:03:24.080 --> 00:03:26.990
+this and its contract ties everything together.
+
+00:03:26.990 --> 00:03:28.945
+So, we've broken it out in two ways.
+
+00:03:28.945 --> 00:03:32.870
+First, we have several separately instantiated sibling contracts
+
+00:03:32.870 --> 00:03:36.385
+that handle user access control and their actions.
+
+00:03:36.385 --> 00:03:40.265
+Secondly, we break the core contract into multiple files
+
+00:03:40.265 --> 00:03:44.330
+using inheritance and this keeps the related code bundled together,
+
+00:03:44.330 --> 00:03:47.555
+but prevents a giant bloated file containing everything.
+
+00:03:47.555 --> 00:03:49.750
+This contract can be used to: One,
+
+00:03:49.750 --> 00:03:52.365
+set a new address in cases upgrading.
+
+00:03:52.365 --> 00:03:57.695
+Two, pause the record in case anything happens such as the contract is compromised.
+
+00:03:57.695 --> 00:04:00.590
+Three, set the ownable contract,
+
+00:04:00.590 --> 00:04:05.645
+which sets the owner address and transfer owner of the contract. Sum it all up.
+
+00:04:05.645 --> 00:04:08.975
+This diagram can be read as having three classifiers.
+
+00:04:08.975 --> 00:04:11.330
+First, the access control contract,
+
+00:04:11.330 --> 00:04:14.090
+then the base contract, and the core contract.
+
+00:04:14.090 --> 00:04:17.030
+So, the core contract inherits from the base contract,
+
+00:04:17.030 --> 00:04:19.490
+which inherits from the access control contract.
+
+00:04:19.490 --> 00:04:22.760
+Each actors permissions are set in the access control contract.
+
+00:04:22.760 --> 00:04:26.030
+So, the base contract stores how the asset,
+
+00:04:26.030 --> 00:04:30.455
+in our case the pet is representing and the core contracts ties them all together.
+
+00:04:30.455 --> 00:04:33.439
+It also tracks the pet adoption from breeder to owner,
+
+00:04:33.439 --> 00:04:38.380
+and handles logistics such as contract upgrades and the contract needs to be paused.
+

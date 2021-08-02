@@ -1,0 +1,250 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.860
+Like we learned in the last video that linkable ring signatures are
+
+00:00:04.860 --> 00:00:09.539
+cryptographic functions that allow someone to sign a message in the name of the group.
+
+00:00:09.539 --> 00:00:10.799
+Now given a signature,
+
+00:00:10.800 --> 00:00:14.984
+it is possible to prove that a message was signed by a member of the group.
+
+00:00:14.984 --> 00:00:17.980
+If it is not, It's always going to sense that,
+
+00:00:17.980 --> 00:00:21.449
+get of course nobody can prove what specific members signed it.
+
+00:00:21.449 --> 00:00:24.530
+So that the information can also be kept private at the same time.
+
+00:00:24.530 --> 00:00:29.609
+Moreover, if the same person signs two different messages same time.
+
+00:00:29.609 --> 00:00:32.420
+So, same person signs the message again and again it is
+
+00:00:32.420 --> 00:00:36.035
+also possible to prove that those messages came from the same person.
+
+00:00:36.034 --> 00:00:38.299
+Of course, there are a lot of benefits of this.
+
+00:00:38.299 --> 00:00:40.534
+It could be that the whistle blowing,
+
+00:00:40.534 --> 00:00:42.349
+e-voting I'll just explain that in just a
+
+00:00:42.350 --> 00:00:44.630
+second but let's look through our code right now.
+
+00:00:44.630 --> 00:00:46.880
+So, the first thing that you'll need is a module called
+
+00:00:46.880 --> 00:00:49.850
+LRS which stands for linkable ring signatures.
+
+00:00:49.850 --> 00:00:51.679
+So, NPM install LRS.
+
+00:00:51.679 --> 00:00:54.320
+Once you have that, we're just going to require that here.
+
+00:00:54.320 --> 00:00:56.939
+[inaudible] we have three people here.
+
+00:00:56.939 --> 00:00:58.574
+Alice, Bob and Eve,
+
+00:00:58.575 --> 00:01:02.600
+and now the LRS has the module has a function called gen which
+
+00:01:02.600 --> 00:01:06.864
+is for generate and what it does it that actually generates public and private key pairs,
+
+00:01:06.864 --> 00:01:10.159
+and so we're creating the public and private key for Alice,
+
+00:01:10.159 --> 00:01:14.030
+Bob and Eve, and storing it in this variables.
+
+00:01:14.030 --> 00:01:17.689
+Then what we're doing is that we're actually mapping through all these
+
+00:01:17.689 --> 00:01:21.584
+three different and just getting the public a key and then storing it in the group.
+
+00:01:21.584 --> 00:01:23.359
+For all three of them, we're just getting
+
+00:01:23.359 --> 00:01:26.420
+the public keys of them mapping through it and then storing it in the group.
+
+00:01:26.420 --> 00:01:29.090
+Now, what's going to happen is Alice
+
+00:01:29.090 --> 00:01:31.895
+is going to sign a message and that's done by calling the sign method.
+
+00:01:31.894 --> 00:01:36.060
+So, it's you passed a group that is out of the part of and then
+
+00:01:36.060 --> 00:01:38.210
+the past the person who is signing it with whatever
+
+00:01:38.209 --> 00:01:40.729
+the message the person wants to sign so that's the syntax.
+
+00:01:40.730 --> 00:01:44.035
+So, Alice signs a message on behalf of one of the three.
+
+00:01:44.034 --> 00:01:46.879
+I'm storing that information inside.
+
+00:01:46.879 --> 00:01:51.170
+Now, anyone is able to verify that one of them sign that message and the way you do
+
+00:01:51.170 --> 00:01:55.805
+that is you just call the verify method and again you pass the group,
+
+00:01:55.805 --> 00:01:58.970
+and then you pass the signature and it's going to make sure that the person
+
+00:01:58.969 --> 00:02:00.799
+whose public key is a part of
+
+00:02:00.799 --> 00:02:03.799
+the group is one of the ones was actually signed for signature.
+
+00:02:03.799 --> 00:02:05.869
+Okay, and then I'm just going to make
+
+00:02:05.870 --> 00:02:08.879
+console.log seeing the sign has been verified as verified.
+
+00:02:08.879 --> 00:02:12.634
+Now if I would bigger random information here it's going to fall.
+
+00:02:12.634 --> 00:02:14.120
+It's going to not pass.
+
+00:02:14.120 --> 00:02:18.335
+Now, again wanted to show you that this is verifying that Alice signed it.
+
+00:02:18.335 --> 00:02:22.340
+Now, what's going to happen is now we have Bob signing it.
+
+00:02:22.340 --> 00:02:24.650
+In fact, let me show you one more thing here.
+
+00:02:24.650 --> 00:02:27.905
+Say, if Alice signs it again.
+
+00:02:27.905 --> 00:02:34.164
+Okay? If Alice signs it again and we'll see that the sign one and sign two match.
+
+00:02:34.164 --> 00:02:36.709
+Because it's signing it the second time inverse
+
+00:02:36.710 --> 00:02:39.515
+doing it valuable signed one and I'm trying to have Alice
+
+00:02:39.514 --> 00:02:42.019
+sign again and then I'm going to
+
+00:02:42.020 --> 00:02:45.365
+compare it with the link method if signed one is equal to sign two.
+
+00:02:45.365 --> 00:02:47.900
+So, signatures are going to be from the same person.
+
+00:02:47.900 --> 00:02:50.120
+So, the compared value will be true and it
+
+00:02:50.120 --> 00:02:52.895
+should console.log both signatures are on the same person.
+
+00:02:52.895 --> 00:02:55.760
+So again, this really helps in cases where you don't want someone
+
+00:02:55.759 --> 00:03:00.469
+to do something twice and that could be for voting, right?
+
+00:03:00.469 --> 00:03:02.884
+I mean, you don't want a person to vote double two times.
+
+00:03:02.884 --> 00:03:07.379
+So, let's run through a code and let me demonstrate that to you now.
+
+00:03:09.650 --> 00:03:13.230
+Fantastic. So, it says the first my concept of lock
+
+00:03:13.229 --> 00:03:15.859
+says the sign has been verified as true and
+
+00:03:15.860 --> 00:03:18.110
+the second one says that both signatures are from
+
+00:03:18.110 --> 00:03:21.545
+the same person because remember Alice's signing it two times.
+
+00:03:21.544 --> 00:03:29.009
+Let me also show you now if I change this to someone else signature, lets say Bob.
+
+00:03:29.840 --> 00:03:32.400
+Let's save the file, in this case,
+
+00:03:32.400 --> 00:03:34.520
+signed one and signed two are not going to match.
+
+00:03:34.520 --> 00:03:36.395
+It will let Bob sign it again.
+
+00:03:36.395 --> 00:03:38.450
+It's going to say both signatures are not from
+
+00:03:38.449 --> 00:03:40.969
+the same person because these values are not equal.
+
+00:03:40.969 --> 00:03:43.379
+So, let's go run it again.
+
+00:03:44.810 --> 00:03:47.390
+Fantastic. So, it says sign has been
+
+00:03:47.389 --> 00:03:50.059
+verified because it was signed by Alice because time,
+
+00:03:50.060 --> 00:03:53.689
+and then the second time it says both signatures are not from the same person.
+
+00:03:53.689 --> 00:03:57.530
+So again, a very simple way linkable signatures,
+
+00:03:57.530 --> 00:04:02.319
+ring signatures are very helpful especially in hashing in cryptographic functions,
+
+00:04:02.319 --> 00:04:04.189
+and like you said has a bunch of
+
+00:04:04.189 --> 00:04:07.025
+several applications that is whistle blowing very important,
+
+00:04:07.025 --> 00:04:11.194
+where someone was to leak a secret in the name of the group without being known.
+
+00:04:11.194 --> 00:04:13.625
+Audit e-voting but he don't want someone to vote
+
+00:04:13.625 --> 00:04:16.040
+twice but you still want the voting to becoming in.
+
+00:04:16.040 --> 00:04:19.770
+So, that's how we implement linkable ring signatures.
+

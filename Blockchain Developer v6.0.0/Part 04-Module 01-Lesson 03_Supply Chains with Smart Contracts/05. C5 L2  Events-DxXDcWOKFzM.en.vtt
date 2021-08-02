@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.000
+In this section, let us define some events.
+
+00:00:03.000 --> 00:00:07.695
+Events can be emitted by functions when a specific action is performed.
+
+00:00:07.695 --> 00:00:10.919
+We have to declare the events before they are emptied.
+
+00:00:10.919 --> 00:00:13.230
+The front-end offer tab can watch for
+
+00:00:13.230 --> 00:00:16.350
+these events and carry on specific actions accordingly.
+
+00:00:16.350 --> 00:00:18.945
+So, we have two events that we're defining here.
+
+00:00:18.945 --> 00:00:20.910
+The first is called the ForSale event,
+
+00:00:20.910 --> 00:00:22.800
+and the second is called the Sold event.
+
+00:00:22.800 --> 00:00:25.170
+Both of them are accepting one parameter each.
+
+00:00:25.170 --> 00:00:28.785
+So, the first one is accepting a parameter or an argument
+
+00:00:28.785 --> 00:00:32.810
+called skuCount and the second one is also accepting this sku.
+
+00:00:32.810 --> 00:00:35.730
+Now, we can emit these events inside of functions.
+
+00:00:35.729 --> 00:00:38.640
+We will look at this later then we'll write out the functions.
+
+00:00:38.640 --> 00:00:43.780
+In the next video, we will write out all the modifiers that a smart contract needs.
+

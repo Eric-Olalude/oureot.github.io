@@ -1,0 +1,145 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.990
+Welcome back. Hopefully, you had some time to read through that blog post,
+
+00:00:03.990 --> 00:00:07.380
+to learn about a few of the frameworks available in Node.js.
+
+00:00:07.379 --> 00:00:09.810
+There's a lot of options, but in this lesson,
+
+00:00:09.810 --> 00:00:14.405
+we'll focus specifically on three of them: Express, Sails, and Hapi.
+
+00:00:14.404 --> 00:00:16.739
+Each of these are powerful frameworks with
+
+00:00:16.739 --> 00:00:19.564
+great documentation that are easily to get set up with.
+
+00:00:19.565 --> 00:00:21.390
+Before jumping into the code,
+
+00:00:21.390 --> 00:00:23.524
+let's take a quick look at why they were built,
+
+00:00:23.524 --> 00:00:26.109
+and what problems they're meant to help solve.
+
+00:00:26.109 --> 00:00:30.149
+First, let's go over to expressjs.com.
+
+00:00:30.149 --> 00:00:32.129
+Here's the homepage for this framework,
+
+00:00:32.130 --> 00:00:36.885
+that you can look to for everything from getting started to developer documentation.
+
+00:00:36.884 --> 00:00:39.015
+They pitched themselves as a fast,
+
+00:00:39.015 --> 00:00:42.755
+unopinionated, minimalist web framework for Node.js.
+
+00:00:42.755 --> 00:00:46.780
+Express was an early framework that helped lead to many other solutions.
+
+00:00:46.780 --> 00:00:50.439
+It was designed primarily as a middleware and routing framework.
+
+00:00:50.439 --> 00:00:52.879
+It's common in Fullstack applications,
+
+00:00:52.880 --> 00:00:54.255
+two of which are the MEAN,
+
+00:00:54.255 --> 00:00:57.445
+and MERN stacks, where the E stands for Express.
+
+00:00:57.445 --> 00:01:00.109
+Learning Express is extremely valuable,
+
+00:01:00.109 --> 00:01:02.929
+and will both help you develop applications as well as
+
+00:01:02.929 --> 00:01:07.114
+understand many of the concepts related to other Node.js frameworks.
+
+00:01:07.114 --> 00:01:10.884
+One of these frameworks that stem from Express is Sails.
+
+00:01:10.885 --> 00:01:15.015
+Sails is a real-time MVC framework for Node.js.
+
+00:01:15.015 --> 00:01:18.695
+You can get to their website by going to sailsjs.com.
+
+00:01:18.694 --> 00:01:20.739
+Here, you'll see they're Get Started section,
+
+00:01:20.739 --> 00:01:24.214
+and can scroll down a little to see more about what they're hoping to solve.
+
+00:01:24.215 --> 00:01:28.505
+They make it easy to build custom enterprise-ready Node.js apps.
+
+00:01:28.504 --> 00:01:30.739
+It was built to help teams build scalable
+
+00:01:30.739 --> 00:01:34.214
+Node.js projects for startup and enterprise customers.
+
+00:01:34.215 --> 00:01:36.310
+We'll be coming back to this site soon,,
+
+00:01:36.310 --> 00:01:40.870
+but first I wanted to go over and give you a quick intro to the Hapi framework as well.
+
+00:01:40.870 --> 00:01:44.605
+We can go to their website at Hapijs.com.
+
+00:01:44.605 --> 00:01:49.704
+Their pitch is that Hapi is a rich framework for building applications and services.
+
+00:01:49.704 --> 00:01:52.670
+Hapi was built by Walmart to solve problems they were
+
+00:01:52.670 --> 00:01:56.015
+having trying to manage their applications using Express.
+
+00:01:56.015 --> 00:01:58.750
+Trying to manage the codebase wasn't scaling well,
+
+00:01:58.750 --> 00:02:02.064
+and Hapi has tried to design a more scalable solution.
+
+00:02:02.064 --> 00:02:05.715
+So, that wraps up a very quick intro to these three frameworks.
+
+00:02:05.715 --> 00:02:08.580
+Before moving on, feel free to look around through these sites,
+
+00:02:08.580 --> 00:02:10.800
+and try installing them, or getting started.
+
+00:02:10.800 --> 00:02:13.400
+This installation and getting started is also
+
+00:02:13.400 --> 00:02:15.765
+what we're going to be going over in the next few sections.
+
+00:02:15.764 --> 00:02:17.924
+So, if you want to try it on your own, that's great.
+
+00:02:17.925 --> 00:02:21.170
+But if not, then you can follow along throughout the rest of the lesson.
+
+00:02:21.169 --> 00:02:23.419
+When you're ready, I'll see you in the next section where
+
+00:02:23.419 --> 00:02:26.459
+we'll start working more closely with Express.
+

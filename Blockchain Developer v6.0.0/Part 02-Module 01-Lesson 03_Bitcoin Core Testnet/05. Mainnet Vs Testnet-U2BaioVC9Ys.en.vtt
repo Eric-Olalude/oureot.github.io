@@ -1,0 +1,217 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.129
+Now that we have a basic overview of the value of each Bitcoin core network,
+
+00:00:05.129 --> 00:00:08.099
+we can dive a little further into the details of each.
+
+00:00:08.099 --> 00:00:11.939
+This helps you so you'll know not only why each network was built,
+
+00:00:11.939 --> 00:00:16.495
+but some of the specific functionality behind why you might choose one over the other.
+
+00:00:16.495 --> 00:00:22.265
+In this video, we'll focus specifically on comparing the mainnet to the testnet.
+
+00:00:22.265 --> 00:00:25.530
+We'll walk you through each item listed here on the left
+
+00:00:25.530 --> 00:00:28.810
+to help you get a better idea of how they compare to one another.
+
+00:00:28.809 --> 00:00:32.060
+To start, remember that the Bitcoin mainnet is
+
+00:00:32.060 --> 00:00:35.380
+the primary network where live transaction take place.
+
+00:00:35.380 --> 00:00:40.679
+This live network isn't the ideal place though to build and test applications.
+
+00:00:40.679 --> 00:00:43.644
+To do this, the testnet was created.
+
+00:00:43.645 --> 00:00:47.359
+The testnet is an alternative Bitcoin blockchain
+
+00:00:47.359 --> 00:00:50.250
+that provides a test environment for applications.
+
+00:00:50.250 --> 00:00:54.975
+This helps reduce risks and limitations associated with Bitcoin core.
+
+00:00:54.975 --> 00:00:57.094
+Now, how do they compare?
+
+00:00:57.094 --> 00:01:02.329
+First, we know that the mainnet is for deploying live applications for production,
+
+00:01:02.329 --> 00:01:05.855
+while the testnet is only used for testing purposes.
+
+00:01:05.855 --> 00:01:09.835
+Next, both of these networks are public environments,
+
+00:01:09.834 --> 00:01:13.234
+that means that when you're using them you'll interact with a network of
+
+00:01:13.234 --> 00:01:17.010
+peers that create and validate information on the blockchain.
+
+00:01:17.010 --> 00:01:20.855
+But there's a difference in who makes up the peers in the network.
+
+00:01:20.855 --> 00:01:24.344
+While anyone can join either or both networks,
+
+00:01:24.344 --> 00:01:27.099
+they're entirely separate from one another.
+
+00:01:27.099 --> 00:01:29.164
+They are different chains with
+
+00:01:29.165 --> 00:01:33.705
+different peers and joining one doesn't mean you're part of the other.
+
+00:01:33.704 --> 00:01:37.319
+This has an effect on the size of each network.
+
+00:01:37.319 --> 00:01:42.519
+The Bitcoin mainnet is much larger with more peers and more blocks.
+
+00:01:42.519 --> 00:01:47.229
+To download the full mainnet would take over 200 gigabytes of space right now,
+
+00:01:47.230 --> 00:01:50.980
+while the testnet is closer to around 15 gigs.
+
+00:01:50.980 --> 00:01:55.170
+These will both continue to grow over time and it's most
+
+00:01:55.170 --> 00:01:58.950
+likely that the testnet will continue to stay smaller than the mainnet.
+
+00:01:58.950 --> 00:02:02.370
+But there's no limit to how large either of these can get.
+
+00:02:02.370 --> 00:02:06.930
+Remember, the size will keep growing because all data is held forever
+
+00:02:06.930 --> 00:02:11.905
+on the chain and more blocks are added as more transactions take place.
+
+00:02:11.905 --> 00:02:16.175
+The time to create a block is similar on both networks.
+
+00:02:16.175 --> 00:02:21.460
+In each case, it takes approximately 10 minutes to create a block and that's
+
+00:02:21.460 --> 00:02:27.665
+because in both cases blocks are both created and validated by nodes within the network.
+
+00:02:27.664 --> 00:02:31.179
+That means that it still takes time for a transaction to go
+
+00:02:31.180 --> 00:02:35.569
+through each step in the life cycle and this takes about 10 minutes.
+
+00:02:35.569 --> 00:02:40.359
+One major difference between each of these networks is the value of the currency.
+
+00:02:40.360 --> 00:02:43.000
+Bitcoin on their mainnet are worth their full
+
+00:02:43.000 --> 00:02:46.844
+value but testnet coins are not worth anything at all.
+
+00:02:46.844 --> 00:02:49.844
+One quick thing to note here is there have been times that
+
+00:02:49.844 --> 00:02:53.280
+users have tried to collect and sell testnet coins.
+
+00:02:53.280 --> 00:02:56.430
+Since there's a limited number of coins in the testnet,
+
+00:02:56.430 --> 00:02:58.965
+just like there are limited number in the mainnet,
+
+00:02:58.965 --> 00:03:01.439
+if people collect these coins it makes it more
+
+00:03:01.439 --> 00:03:04.574
+difficult for others to continue testing on that network.
+
+00:03:04.574 --> 00:03:09.014
+Because of this, developers have wiped out the entire collection of coins
+
+00:03:09.014 --> 00:03:13.754
+to start again from scratch to begin redistributing these testnet coins.
+
+00:03:13.754 --> 00:03:18.965
+This has happened twice so far which has brought us to the third generation of testnet.
+
+00:03:18.965 --> 00:03:23.575
+So if you look around and start to see testnet three, that's what that refers to.
+
+00:03:23.574 --> 00:03:26.369
+Public keys on the testnet have been
+
+00:03:26.370 --> 00:03:29.819
+differentiated from those on the mainnet by starting with the letters
+
+00:03:29.819 --> 00:03:33.090
+m or n. This helps users see whether they
+
+00:03:33.090 --> 00:03:37.009
+are interacting with the testnet key or a mainnet key.
+
+00:03:37.009 --> 00:03:42.060
+Finally, the block difficulty is different between each of these networks.
+
+00:03:42.060 --> 00:03:45.780
+On the main net, the block difficulty self-adjusts as blocks are
+
+00:03:45.780 --> 00:03:50.719
+created to try to maintain a block creation rate of about one block every 10 minutes,
+
+00:03:50.719 --> 00:03:53.359
+on the testnet the same thing is happening.
+
+00:03:53.360 --> 00:03:55.110
+The difference here though is that
+
+00:03:55.110 --> 00:03:58.820
+less computing power is dedicated to maintaining this smaller network.
+
+00:03:58.819 --> 00:04:02.189
+To maintain a block creation rate of around 10 minutes,
+
+00:04:02.189 --> 00:04:06.659
+the block difficulty has been lowered to approximately half of what it is on the mainnet.
+
+00:04:06.659 --> 00:04:11.579
+So, that's how the mainnet and the testnet compare across these A characteristics.
+
+00:04:11.580 --> 00:04:15.160
+The core difference is that the mainnet is for live production,
+
+00:04:15.159 --> 00:04:19.235
+while the testnet is for application, creation and testing.
+
+00:04:19.235 --> 00:04:22.550
+The rest of the differences stem from this core idea,
+
+00:04:22.550 --> 00:04:25.189
+to help facilitate the networks used cases.
+
+00:04:25.189 --> 00:04:27.959
+Later on, we'll be spending a lot of time in
+
+00:04:27.959 --> 00:04:31.719
+the testnet to help build and test applications.
+

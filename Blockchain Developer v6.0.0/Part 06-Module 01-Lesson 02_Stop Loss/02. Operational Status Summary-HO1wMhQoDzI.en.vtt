@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.290
+All right. With that done,
+
+00:00:01.290 --> 00:00:06.990
+let's continue and review what we've learned so far in this course.
+
+00:00:06.990 --> 00:00:09.375
+First of all, we learned a simple technique but
+
+00:00:09.375 --> 00:00:12.314
+a powerful one for pausing smart contracts.
+
+00:00:12.314 --> 00:00:15.929
+We learned how to avoid lockouts.
+
+00:00:15.929 --> 00:00:18.600
+I just want to put a reminder there.
+
+00:00:18.600 --> 00:00:23.250
+It is very helpful that in all your tests you always include
+
+00:00:23.250 --> 00:00:28.634
+a scenario for testing for lockout because once your contract is deployed, it's too late.
+
+00:00:28.635 --> 00:00:34.149
+So you want to make sure you catch those bugs during testing and development.
+

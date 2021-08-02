@@ -1,0 +1,274 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.680
+While it's exciting to have a test network up and running,
+
+00:00:03.680 --> 00:00:07.130
+we can't do much if we can't make any transactions.
+
+00:00:07.129 --> 00:00:10.855
+To make transactions, we'll need test net coins.
+
+00:00:10.855 --> 00:00:12.620
+To get these coins,
+
+00:00:12.619 --> 00:00:18.064
+either someone could send them to you or you can go to what's known as a public faucet.
+
+00:00:18.065 --> 00:00:20.970
+In this video, we'll walk you through the steps to
+
+00:00:20.969 --> 00:00:24.179
+help you get test net coins using a public faucet.
+
+00:00:24.179 --> 00:00:26.550
+By following the steps in this video,
+
+00:00:26.550 --> 00:00:30.660
+you'll have your first coins available in your Bitcoin core wallet.
+
+00:00:30.660 --> 00:00:36.280
+A Bitcoin faucet is a website that gives rewards in the form of Bitcoin.
+
+00:00:36.280 --> 00:00:40.579
+These faucets exists on both the test net and the main net.
+
+00:00:40.579 --> 00:00:44.714
+So yes, you can go to a faucet and get actual Bitcoins right now,
+
+00:00:44.715 --> 00:00:46.665
+but they don't give you very much.
+
+00:00:46.664 --> 00:00:48.030
+It's actually so little,
+
+00:00:48.030 --> 00:00:51.445
+it's not actually worth your effort if you're thinking of doing this for profit.
+
+00:00:51.445 --> 00:00:55.079
+On the test net, none of these coins have any value.
+
+00:00:55.079 --> 00:00:57.839
+So, you can use a faucet to get a decent amount of
+
+00:00:57.840 --> 00:01:00.645
+test coins to facilitate your test transactions.
+
+00:01:00.645 --> 00:01:02.190
+Let's go ahead and do that.
+
+00:01:02.189 --> 00:01:06.000
+To start, load up your wallet in the test network.
+
+00:01:06.000 --> 00:01:09.950
+Remember that you can do this by typing in testnet equals one
+
+00:01:09.950 --> 00:01:14.355
+in your Bitcoin.configuration file and then restarting your application.
+
+00:01:14.355 --> 00:01:15.890
+Once inside your wallet,
+
+00:01:15.890 --> 00:01:20.079
+checkout the overview page to see how much Bitcoin you currently have.
+
+00:01:20.079 --> 00:01:23.129
+Now, unless you've been messing around with your wallet previously,
+
+00:01:23.129 --> 00:01:24.420
+like I have here,
+
+00:01:24.420 --> 00:01:26.665
+you probably see that you have a balance of zero,
+
+00:01:26.665 --> 00:01:28.575
+and there should be no transactions.
+
+00:01:28.575 --> 00:01:30.689
+Now, before we can receive testnet coins,
+
+00:01:30.689 --> 00:01:34.599
+we need to copy a receiving address from your Bitcoin wallet.
+
+00:01:34.599 --> 00:01:37.784
+To do this, go to file,
+
+00:01:37.784 --> 00:01:40.299
+and then receiving addresses.
+
+00:01:40.299 --> 00:01:43.420
+If you don't have any addresses here already,
+
+00:01:43.420 --> 00:01:47.140
+you can always create a new one by clicking the "New" button.
+
+00:01:47.519 --> 00:01:50.109
+Give a label for your address.
+
+00:01:50.109 --> 00:01:53.545
+I'm going to name mine here "Public faucet
+
+00:01:53.545 --> 00:02:01.519
+test" and then hit "OK".
+
+00:02:01.519 --> 00:02:07.280
+Once this is created, right-click on the address and select "Copy address".
+
+00:02:08.680 --> 00:02:13.545
+We'll be pacing this address into the public faucet that we're about to visit.
+
+00:02:13.544 --> 00:02:16.079
+Now faucets come and go and there's not really
+
+00:02:16.080 --> 00:02:19.335
+any one place that everyone should go to get their test coins.
+
+00:02:19.335 --> 00:02:21.439
+If you ever do you need to though,
+
+00:02:21.439 --> 00:02:26.715
+you can always search for the phrase testnet faucet and then just find one that you like.
+
+00:02:26.715 --> 00:02:31.575
+But for now, I like this one here provided by the Bitcoin testnet sandbox.
+
+00:02:31.574 --> 00:02:34.939
+We provided a link to this faucet down below the video.
+
+00:02:34.939 --> 00:02:38.954
+And it also comes up as one of the first options when you do search in Google.
+
+00:02:38.955 --> 00:02:40.445
+Alright. So, another way here,
+
+00:02:40.444 --> 00:02:42.334
+getting coins is really easy.
+
+00:02:42.335 --> 00:02:47.890
+All you need to do is paste your receiving address into the space provided here.
+
+00:02:50.659 --> 00:02:55.490
+If there's a capture that says "I'm not a robot", go ahead and click that.
+
+00:02:55.490 --> 00:02:58.985
+I don't have one here already because I already used this.
+
+00:02:58.985 --> 00:03:00.750
+Then click "Give me some coins."
+
+00:03:00.750 --> 00:03:02.650
+This starts the transaction and
+
+00:03:02.650 --> 00:03:06.569
+testnet coins should be available in your wallet just shortly.
+
+00:03:07.129 --> 00:03:11.294
+There's a couple of things I want you to know about this website before we leave.
+
+00:03:11.294 --> 00:03:13.469
+First, like we mentioned,
+
+00:03:13.469 --> 00:03:16.824
+there's a limited number of test coins that do exist.
+
+00:03:16.824 --> 00:03:18.729
+Even though they have no value,
+
+00:03:18.729 --> 00:03:22.409
+there are a way for the community to have access to coins that they can test with.
+
+00:03:22.409 --> 00:03:25.449
+Now because of that, you'll notice that there's a receiving address
+
+00:03:25.449 --> 00:03:29.134
+down here that you can send these tests coins back to when you're done.
+
+00:03:29.134 --> 00:03:32.620
+In doing so, it helps the community and it's really useful that's your
+
+00:03:32.620 --> 00:03:35.780
+send your coins back that you're no longer using back to this address.
+
+00:03:35.780 --> 00:03:39.280
+This will allow other developers to have the same access that you do right
+
+00:03:39.280 --> 00:03:44.500
+now and help avoid the need to create a whole new testnet for in the future.
+
+00:03:44.500 --> 00:03:49.669
+Secondly, if you saw the capture or the clicking "I'm not a robot"
+
+00:03:49.669 --> 00:03:51.789
+is to avoid spammers from taking
+
+00:03:51.789 --> 00:03:55.370
+all the testnet coins by quickly submitting requests over and over.
+
+00:03:55.370 --> 00:03:57.430
+You can also scroll down on the site to
+
+00:03:57.430 --> 00:04:00.200
+see a list of the previous transactions that have been made.
+
+00:04:00.199 --> 00:04:03.939
+Now, there's nothing too interesting here but it's worth mentioning.
+
+00:04:03.939 --> 00:04:08.550
+Finally, you'll see the current balance of the wallet that is distributing
+
+00:04:08.550 --> 00:04:14.719
+the test coins as well as the amount that you'll receive by having made the request.
+
+00:04:14.719 --> 00:04:18.004
+Alright. So, back in the wallet. Here you might see
+
+00:04:18.004 --> 00:04:21.379
+the pending request or it might have confirmed already.
+
+00:04:21.379 --> 00:04:25.779
+If not, it might take a little bit longer but if there really does seem to be a problem,
+
+00:04:25.779 --> 00:04:27.919
+check that you've submitted the correct receiving
+
+00:04:27.920 --> 00:04:31.145
+address and then try again if you haven't received any coins.
+
+00:04:31.144 --> 00:04:32.534
+Here in the overview page,
+
+00:04:32.535 --> 00:04:36.245
+we can see the recent transaction that's adding the testnet coins to your account.
+
+00:04:36.245 --> 00:04:39.925
+You'll also see that your available balance has increased,
+
+00:04:39.925 --> 00:04:42.220
+which is now reflected in your total balance.
+
+00:04:42.220 --> 00:04:43.860
+All right. So, that wraps it up for how to get
+
+00:04:43.860 --> 00:04:46.455
+access to test coins using a public faucet.
+
+00:04:46.454 --> 00:04:48.870
+There were some extra details in here throughout the video
+
+00:04:48.870 --> 00:04:51.220
+since it was our first time walking through this so,
+
+00:04:51.220 --> 00:04:52.780
+it did take a little bit longer.
+
+00:04:52.779 --> 00:04:56.019
+In the future, remember all you need to do is paste
+
+00:04:56.019 --> 00:04:59.759
+your receiving address into the faucet and you should quickly get some new coins.
+
+00:04:59.759 --> 00:05:04.719
+Coming up, we'll put these coins to use by making our first wallet transaction.
+

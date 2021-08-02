@@ -1,0 +1,253 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.555
+Rather than going back to the secret message tab we've been working on,
+
+00:00:03.555 --> 00:00:06.075
+I wanted to show you something that I think you might enjoy.
+
+00:00:06.075 --> 00:00:08.070
+Truffle has a lot of cool features,
+
+00:00:08.070 --> 00:00:11.474
+and along with that, they also have a lot of supporting tools you can use.
+
+00:00:11.474 --> 00:00:14.399
+One of these tools is known as a Truffle Box.
+
+00:00:14.400 --> 00:00:17.339
+Truffle boxes are helpful boilerplates that can get
+
+00:00:17.339 --> 00:00:20.594
+you up and running with the Truffle environment as quickly as possible.
+
+00:00:20.594 --> 00:00:24.929
+As you saw before, "Truffle in it" is one way to start a blank environment.
+
+00:00:24.929 --> 00:00:29.295
+But Truffle Boxes come along with the full DApp that you can use to experiment with.
+
+00:00:29.295 --> 00:00:33.390
+For example, the first one I ever did was the Pet Shop DApp.
+
+00:00:33.390 --> 00:00:37.859
+You can find that here. It's a quick way to get up and running with the simple Pet Shop.
+
+00:00:37.859 --> 00:00:39.689
+By clicking on the Truffle Box,
+
+00:00:39.689 --> 00:00:41.324
+they'll show you how to get started,
+
+00:00:41.325 --> 00:00:43.075
+and by clicking on the tutorial,
+
+00:00:43.075 --> 00:00:44.810
+you'll see a really well-prepared set of
+
+00:00:44.810 --> 00:00:47.375
+documentation that walks you through the creation,
+
+00:00:47.375 --> 00:00:50.405
+testing, and deployment of your own Pet Shop.
+
+00:00:50.405 --> 00:00:53.554
+What's great about this and other tutorials is that,
+
+00:00:53.554 --> 00:00:55.670
+yes you can mess around with the look, feel,
+
+00:00:55.670 --> 00:00:57.350
+and functionality of the DApp,
+
+00:00:57.350 --> 00:00:59.480
+but with a little creativity you can
+
+00:00:59.479 --> 00:01:02.029
+turn these DApps into something completely different.
+
+00:01:02.030 --> 00:01:06.260
+For example, this Pet Shop allows you to adopt from a list of pets,
+
+00:01:06.260 --> 00:01:08.525
+but if you think about it that's a feature
+
+00:01:08.525 --> 00:01:11.609
+that lets you claim ownership over anything at all.
+
+00:01:11.609 --> 00:01:13.450
+By replacing some images,
+
+00:01:13.450 --> 00:01:14.695
+and a few lines of code,
+
+00:01:14.694 --> 00:01:16.939
+you can have yourself in online card shop,
+
+00:01:16.939 --> 00:01:20.185
+a clothing store, or even a music company.
+
+00:01:20.185 --> 00:01:23.540
+Another box I personally like is the tutorial token,
+
+00:01:23.540 --> 00:01:25.775
+which helps you build your very own tokens.
+
+00:01:25.775 --> 00:01:28.910
+Aside from that, there's boxes that helped get you up and running
+
+00:01:28.909 --> 00:01:31.670
+with full-stack applications using different frameworks.
+
+00:01:31.670 --> 00:01:33.085
+Are you a fan of React?
+
+00:01:33.084 --> 00:01:34.625
+There's a box for that here.
+
+00:01:34.625 --> 00:01:37.489
+There's actually a ton of boxes for React you can try.
+
+00:01:37.489 --> 00:01:39.545
+I've found a few for Vue.js too,
+
+00:01:39.545 --> 00:01:42.019
+but I don't see that many for Angular yet.
+
+00:01:42.019 --> 00:01:44.134
+There's also a box for drizzle,
+
+00:01:44.135 --> 00:01:46.175
+another tool in the Truffle suite.
+
+00:01:46.174 --> 00:01:48.814
+I honestly haven't experimented with this much myself,
+
+00:01:48.814 --> 00:01:50.164
+but if you find it useful,
+
+00:01:50.165 --> 00:01:51.935
+it'd be really cool to hear about it.
+
+00:01:51.935 --> 00:01:55.250
+Here's a practice I think it would be really valuable for you to try.
+
+00:01:55.250 --> 00:01:57.310
+It was definitely helpful for me.
+
+00:01:57.310 --> 00:01:59.144
+Try the Pet Shop DApp,
+
+00:01:59.144 --> 00:02:03.259
+and at that point you'll have a full-stack DApp that you can launch to the test network.
+
+00:02:03.260 --> 00:02:05.600
+Then, take a different simple DApp.
+
+00:02:05.599 --> 00:02:08.939
+In your case, maybe the theorem secret message DApp.
+
+00:02:08.939 --> 00:02:12.379
+From there, strip out all the features specific to a pet shop,
+
+00:02:12.379 --> 00:02:15.664
+and replace it with the functionality of the secret message DApp.
+
+00:02:15.664 --> 00:02:18.469
+What you'll end up with is a DApp that you can deploy from
+
+00:02:18.469 --> 00:02:21.289
+Truffle with the added functionality of the pet shop,
+
+00:02:21.289 --> 00:02:23.719
+and you'll have an understanding of how the pieces
+
+00:02:23.719 --> 00:02:26.479
+fit together to make something entirely your own.
+
+00:02:26.479 --> 00:02:29.030
+Honestly, building this combo DApp is
+
+00:02:29.030 --> 00:02:31.865
+exactly what I was going to make this concept about originally.
+
+00:02:31.865 --> 00:02:34.245
+What I found though, is that by doing it myself,
+
+00:02:34.245 --> 00:02:35.520
+I learned a ton more,
+
+00:02:35.520 --> 00:02:37.405
+got to explore things in new ways,
+
+00:02:37.405 --> 00:02:40.009
+and ended up with something I was really happy with.
+
+00:02:40.009 --> 00:02:42.620
+Well, I'm not walking you through the process here.
+
+00:02:42.620 --> 00:02:44.840
+I'm really hoping that this gives you the opportunity to
+
+00:02:44.840 --> 00:02:47.509
+dive into the details you may have overlooked otherwise,
+
+00:02:47.509 --> 00:02:50.599
+and helps you become an even better developer because of it.
+
+00:02:50.599 --> 00:02:52.155
+Remember, along the way,
+
+00:02:52.155 --> 00:02:53.629
+you can always check out their docs,
+
+00:02:53.629 --> 00:02:55.685
+tutorials, blog, and community,
+
+00:02:55.685 --> 00:02:57.140
+to help you as you get started.
+
+00:02:57.139 --> 00:02:59.000
+Finally, to wrap things up,
+
+00:02:59.000 --> 00:03:00.754
+there's one more thing I wanted to mention.
+
+00:03:00.754 --> 00:03:03.155
+Keep an eye out for the Truffle five beta.
+
+00:03:03.155 --> 00:03:05.750
+I placed a link below to its documentation,
+
+00:03:05.750 --> 00:03:08.449
+and you can get up and running with it right now if you'd like.
+
+00:03:08.449 --> 00:03:11.344
+I started using it myself, and I think it's great.
+
+00:03:11.344 --> 00:03:14.359
+I didn't introduce it earlier because you're not yet going to find
+
+00:03:14.360 --> 00:03:17.315
+a ton of resources available to help you get started.
+
+00:03:17.314 --> 00:03:21.875
+Almost all the tutorials online aren't using this version because it's still pretty new.
+
+00:03:21.875 --> 00:03:23.990
+But if you'd like to get ahead of everyone,
+
+00:03:23.990 --> 00:03:27.730
+you can jump in now, and see which of these features they have that interest you.
+
+00:03:27.729 --> 00:03:30.859
+Hopefully you see this as a great chance to learn more about Truffle.
+
+00:03:30.860 --> 00:03:32.820
+We'll be using this a lot more in the future,
+
+00:03:32.819 --> 00:03:35.129
+and I'm excited to see what you end up building with it.
+

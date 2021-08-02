@@ -1,0 +1,136 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.409
+To work with a Ethereum,
+
+00:00:01.409 --> 00:00:05.459
+you're going to need an API that can make calls to and from the blockchain.
+
+00:00:05.459 --> 00:00:08.129
+That's exactly what Web3 can do for you,
+
+00:00:08.130 --> 00:00:11.520
+and in this section, I'll give you some quick tips for getting started.
+
+00:00:11.519 --> 00:00:14.490
+Later in this concept, I'll run through the installation and
+
+00:00:14.490 --> 00:00:17.774
+setup you'll need to go through to get up and running for yourself.
+
+00:00:17.774 --> 00:00:20.604
+One note about how powerful Web3 is,
+
+00:00:20.605 --> 00:00:22.289
+is that you've actually used it already,
+
+00:00:22.289 --> 00:00:23.804
+maybe without realizing it.
+
+00:00:23.804 --> 00:00:26.699
+MetaMask runs entirely based off this ability
+
+00:00:26.699 --> 00:00:29.714
+to inject a Web3 Provider into your browser.
+
+00:00:29.714 --> 00:00:32.475
+Once MetaMask injects this Web3 Provider,
+
+00:00:32.475 --> 00:00:36.115
+it uses Web3 to connect users to the Ethereum blockchain.
+
+00:00:36.115 --> 00:00:39.885
+So, that's one example use case but there's so many others.
+
+00:00:39.884 --> 00:00:43.670
+I just wanted to mention that the tool MetaMask that you now know as one of
+
+00:00:43.670 --> 00:00:46.039
+the single most important connections between DApps and
+
+00:00:46.039 --> 00:00:49.250
+their users is only possible because of Web3.
+
+00:00:49.250 --> 00:00:53.344
+Hopefully that puts into perspective how useful this tool can be for you.
+
+00:00:53.344 --> 00:00:57.994
+So, let's look a little bit at the resources available to get you started with Web3.
+
+00:00:57.994 --> 00:01:00.104
+First, on their Docs homepage,
+
+00:01:00.104 --> 00:01:03.259
+you can see that web3.js is a collection of libraries,
+
+00:01:03.259 --> 00:01:06.530
+which allow you to interact with a local or remote Ethereum node.
+
+00:01:06.530 --> 00:01:10.504
+This is done using either an HTTP or IPC connection.
+
+00:01:10.504 --> 00:01:12.649
+In our case, we'll use it to interact with
+
+00:01:12.650 --> 00:01:16.505
+remote and local Ethereum nodes using an HTTP connection.
+
+00:01:16.504 --> 00:01:19.489
+From this page, you can learn more about getting started and
+
+00:01:19.489 --> 00:01:22.174
+take a first look at some of the functionality it provides.
+
+00:01:22.174 --> 00:01:23.659
+There's a ton of modules here,
+
+00:01:23.659 --> 00:01:26.179
+and there's no reason to know all of them right away.
+
+00:01:26.180 --> 00:01:29.120
+We'll focus on introducing them as they become relevant to our projects,
+
+00:01:29.120 --> 00:01:32.435
+and you can continue exploring them later as you need more functionality.
+
+00:01:32.435 --> 00:01:37.540
+Another great resource for getting started is the web3-js Ethereum Community Forums.
+
+00:01:37.540 --> 00:01:40.170
+This forums dedicated to discussions related to
+
+00:01:40.170 --> 00:01:42.995
+Web3 and could provide you with some valuable information.
+
+00:01:42.995 --> 00:01:45.590
+Another option for forums is to turn back to
+
+00:01:45.590 --> 00:01:49.270
+the Ethereum Gitter page for the room named web3.js.
+
+00:01:49.269 --> 00:01:52.459
+Finally, there's the Ethereum JavaScript API wiki,
+
+00:01:52.459 --> 00:01:55.294
+which is dedicated to getting you up and running with Web3.
+
+00:01:55.295 --> 00:01:58.189
+I've put all these links down below the video so you can check them out
+
+00:01:58.189 --> 00:02:01.284
+for yourselves as you learn more about Web3 in the lesson.
+
+00:02:01.284 --> 00:02:04.564
+So, there some of the details behind why Web3 is important,
+
+00:02:04.564 --> 00:02:07.204
+how it's used, and where you can go for some more information.
+
+00:02:07.204 --> 00:02:09.530
+Coming up, we'll jump right in and get it installed on
+
+00:02:09.530 --> 00:02:12.669
+your computer to start running your first Web3 commands.
+

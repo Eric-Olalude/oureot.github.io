@@ -1,0 +1,289 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.305
+Before we get started with the details of the Blockchain,
+
+00:00:03.305 --> 00:00:06.050
+it's helpful to understand why it even exists.
+
+00:00:06.049 --> 00:00:08.699
+The Blockchain was originally made to try and solve
+
+00:00:08.699 --> 00:00:12.104
+problems that were seen with the way we make financial transactions.
+
+00:00:12.105 --> 00:00:14.820
+In this video, we'll talk about some of the core ideas
+
+00:00:14.820 --> 00:00:18.250
+behind how financial transactions work without the Blockchain.
+
+00:00:18.250 --> 00:00:20.010
+This will help us better understand
+
+00:00:20.010 --> 00:00:22.365
+the solution that the Blockchain team tries to provide.
+
+00:00:22.364 --> 00:00:25.649
+Later, we can abstract these ideas beyond finance to
+
+00:00:25.649 --> 00:00:29.969
+understand how it can provide the same types of solutions across other industries.
+
+00:00:29.969 --> 00:00:34.420
+So to start, here's some of the questions the Blockchain tries to answer.
+
+00:00:34.420 --> 00:00:36.475
+What makes money valuable?
+
+00:00:36.475 --> 00:00:38.170
+Why do people use it?
+
+00:00:38.170 --> 00:00:40.935
+Is there a way we can improve the current system?
+
+00:00:40.935 --> 00:00:44.690
+To answer this, let's break down how the current system works.
+
+00:00:44.689 --> 00:00:47.729
+Pretend we don't have a way to make transactions at all,
+
+00:00:47.729 --> 00:00:51.864
+our goal is to help set up a system to help people make transactions.
+
+00:00:51.865 --> 00:00:55.850
+To start, we know that everyone has some type of product or service,
+
+00:00:55.850 --> 00:00:58.950
+there are people who need these products and services and there are
+
+00:00:58.950 --> 00:01:02.255
+other people who are willing to give something in return for them.
+
+00:01:02.255 --> 00:01:07.305
+The problem is, there's no way for anyone to make transactions with each other.
+
+00:01:07.305 --> 00:01:09.325
+So how can we solve this?
+
+00:01:09.325 --> 00:01:12.055
+The first thing you can do is start trading.
+
+00:01:12.055 --> 00:01:15.000
+You'll have to decide how much value you place in something,
+
+00:01:15.000 --> 00:01:17.430
+and what you're willing to get in return for it.
+
+00:01:17.430 --> 00:01:20.960
+Once you do that, you're able to start trading your product with others.
+
+00:01:20.959 --> 00:01:22.559
+This is a great start,
+
+00:01:22.560 --> 00:01:26.670
+but it gets tough because no one really agrees on the exact value for anything.
+
+00:01:26.670 --> 00:01:29.445
+Every trade needs to be negotiated.
+
+00:01:29.444 --> 00:01:34.199
+What we could really use is something that we all agree has a certain intrinsic value,
+
+00:01:34.200 --> 00:01:36.855
+something like gold becomes useful there.
+
+00:01:36.855 --> 00:01:40.030
+If we can agree on how much a certain amount of gold is worth,
+
+00:01:40.030 --> 00:01:43.390
+we can assign each of our products are value based on that,
+
+00:01:43.390 --> 00:01:44.920
+and to take it one step further,
+
+00:01:44.920 --> 00:01:47.590
+we can make a currency to trade in place of that gold.
+
+00:01:47.590 --> 00:01:49.150
+So now we have money.
+
+00:01:49.150 --> 00:01:50.780
+If I want a new game to play,
+
+00:01:50.780 --> 00:01:53.200
+I don't need to go to the store with things to trade them,
+
+00:01:53.200 --> 00:01:55.234
+I just give them the money it's worth.
+
+00:01:55.234 --> 00:01:56.689
+Now that we have money,
+
+00:01:56.689 --> 00:01:59.799
+we'll need someone to track and manage the transactions we're making.
+
+00:01:59.799 --> 00:02:01.629
+That's where banks come in.
+
+00:02:01.629 --> 00:02:06.039
+The solutions they provide are exactly what the Blockchain is trying to improve.
+
+00:02:06.040 --> 00:02:09.085
+Keep that in mind as we go through this next section.
+
+00:02:09.085 --> 00:02:13.344
+Banks keep track of our transactions to keep our money safe and secure.
+
+00:02:13.344 --> 00:02:16.129
+They're what's known as a trusted third party.
+
+00:02:16.129 --> 00:02:18.729
+That term comes up a lot in Blockchain.
+
+00:02:18.729 --> 00:02:24.074
+A trusted third party is an entity that facilitates interactions between two parties.
+
+00:02:24.074 --> 00:02:27.280
+They help establish the security we need to store our money,
+
+00:02:27.280 --> 00:02:29.094
+and trust our transactions.
+
+00:02:29.094 --> 00:02:31.150
+This is extremely valuable,
+
+00:02:31.150 --> 00:02:33.719
+and what's really interesting is how they can do it.
+
+00:02:33.719 --> 00:02:36.219
+There are a ton of systems in place that make this happen,
+
+00:02:36.219 --> 00:02:39.520
+but one important tool they use is what's known as a ledger.
+
+00:02:39.520 --> 00:02:42.780
+A ledger is a record of transaction information.
+
+00:02:42.780 --> 00:02:45.335
+It includes information about who sent money,
+
+00:02:45.335 --> 00:02:47.135
+who received it, when it happened,
+
+00:02:47.134 --> 00:02:48.979
+and how much was sent.
+
+00:02:48.979 --> 00:02:53.524
+Having a record of all these transactions helps the bank do some pretty cool stuff.
+
+00:02:53.525 --> 00:02:56.275
+For one, they always know who has money,
+
+00:02:56.275 --> 00:02:59.110
+who owes money, and how much money exists.
+
+00:02:59.110 --> 00:03:02.095
+They can use this information to ensure trust between people
+
+00:03:02.094 --> 00:03:05.305
+who are making transactions that might not even know each other.
+
+00:03:05.305 --> 00:03:09.245
+This helps them solve what's known as the double-spending problem.
+
+00:03:09.245 --> 00:03:14.439
+Double-spending is the term for when someone spends the same money more than once,
+
+00:03:14.439 --> 00:03:16.300
+for a financial system to work,
+
+00:03:16.300 --> 00:03:20.335
+this can't be possible because that person would basically be duplicating money.
+
+00:03:20.335 --> 00:03:24.710
+Banks can prevent double-spending because of the records they keep on their ledger.
+
+00:03:24.710 --> 00:03:27.409
+They know what was sent, and when it happened.
+
+00:03:27.409 --> 00:03:29.419
+If someone tries to spend money twice,
+
+00:03:29.419 --> 00:03:32.289
+the transaction that happened first will go through,
+
+00:03:32.289 --> 00:03:34.120
+and by the time the second one happens,
+
+00:03:34.120 --> 00:03:35.640
+the money will be gone already.
+
+00:03:35.639 --> 00:03:40.329
+The bank knows what time the first transaction happens so they can invalidate later ones.
+
+00:03:40.330 --> 00:03:42.240
+This helps them settle any disputes,
+
+00:03:42.240 --> 00:03:44.719
+confusion or theft that might happen.
+
+00:03:44.719 --> 00:03:46.520
+Since they have all the information,
+
+00:03:46.520 --> 00:03:48.235
+they can decide who is what?
+
+00:03:48.235 --> 00:03:51.460
+So that's one way to go about solving this problem,
+
+00:03:51.460 --> 00:03:53.835
+and it's what we've done for a very long time.
+
+00:03:53.835 --> 00:03:56.200
+But the Blockchain thinks there could be a different,
+
+00:03:56.199 --> 00:03:57.530
+better way to do this.
+
+00:03:57.530 --> 00:03:59.460
+Before we jump into how they do it,
+
+00:03:59.460 --> 00:04:00.969
+try to think about it for yourself.
+
+00:04:00.969 --> 00:04:04.724
+Is there anything you think could be improved if the system were different?
+
+00:04:04.724 --> 00:04:06.569
+What would that system look like?
+
+00:04:06.569 --> 00:04:11.125
+As a start, focused on how banks use a ledger to help solve the double-spending problem.
+
+00:04:11.125 --> 00:04:14.009
+Is there a way we might not need banks to do this for us?
+
+00:04:14.009 --> 00:04:15.969
+If you're not sure, don't worry about it.
+
+00:04:15.969 --> 00:04:17.269
+This is a tough problem.
+
+00:04:17.269 --> 00:04:20.599
+We're just hoping you get a chance to think a little differently about all this.
+
+00:04:20.600 --> 00:04:23.320
+We'll spend the rest of this program talking about
+
+00:04:23.319 --> 00:04:26.365
+the answers the Blockchain has to these types of questions.
+
+00:04:26.365 --> 00:04:27.850
+See what you come up with,
+
+00:04:27.850 --> 00:04:30.910
+and when you're ready, we'll see you in the next video.
+

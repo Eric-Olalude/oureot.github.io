@@ -1,0 +1,463 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.589
+In this concept, we will learn about elementary data types.
+
+00:00:04.589 --> 00:00:06.689
+As mostly all languages have,
+
+00:00:06.690 --> 00:00:11.429
+Solidity has elementary data types and also complex data types.
+
+00:00:11.429 --> 00:00:15.240
+In this concept, we will explore the elementary data types.
+
+00:00:15.240 --> 00:00:16.949
+We will talk about int,
+
+00:00:16.949 --> 00:00:20.339
+uint, bool, and address types.
+
+00:00:20.339 --> 00:00:25.079
+For signed numbers, you will use the int type and for unsigned numbers,
+
+00:00:25.079 --> 00:00:26.909
+you will use the uint type.
+
+00:00:26.910 --> 00:00:32.280
+You can also specify the size of the integers in 8-bit increments.
+
+00:00:32.280 --> 00:00:37.109
+For example, uint8 means eight bits or one byte,
+
+00:00:37.109 --> 00:00:41.394
+which means it can hold a number between 0-255.
+
+00:00:41.395 --> 00:00:44.630
+If it don't specify any size by default,
+
+00:00:44.630 --> 00:00:49.955
+int means int256 and uint means uint256.
+
+00:00:49.954 --> 00:00:52.475
+That means it can hold 256 bits,
+
+00:00:52.475 --> 00:00:55.270
+which also means a 32-byte number.
+
+00:00:55.270 --> 00:01:01.250
+Bool is another elementary data type and can hold true or false values.
+
+00:01:01.250 --> 00:01:03.875
+Any logical operations like
+
+00:01:03.875 --> 00:01:09.055
+the AND operation or the OR operation will all lead to a Boolean value.
+
+00:01:09.055 --> 00:01:12.765
+The next elementary data type is address.
+
+00:01:12.765 --> 00:01:18.085
+It represents an address of an externally owned count or even a contract account.
+
+00:01:18.084 --> 00:01:20.919
+It is a 20-byte hex string.
+
+00:01:20.920 --> 00:01:22.805
+It is a value type.
+
+00:01:22.805 --> 00:01:26.425
+Address type also has methods that you can invoke.
+
+00:01:26.424 --> 00:01:28.480
+Balance is one method.
+
+00:01:28.480 --> 00:01:33.385
+So, you can get the balance of the account or the contract by saying address.balance.
+
+00:01:33.385 --> 00:01:37.090
+Transfer is another method and so is send,
+
+00:01:37.090 --> 00:01:38.770
+and these are used to send Ether to
+
+00:01:38.769 --> 00:01:42.459
+another address from the current smart contracts address.
+
+00:01:42.459 --> 00:01:46.824
+Now, what you see on the screen is an example of an address type.
+
+00:01:46.825 --> 00:01:49.644
+The name of the variable here is owner.
+
+00:01:49.644 --> 00:01:55.810
+In the second line, we have another variable called initial balance that is of type uint.
+
+00:01:55.810 --> 00:01:58.555
+Then, inside the function set balance,
+
+00:01:58.555 --> 00:02:01.285
+we are getting the balance of the owner by using
+
+00:02:01.284 --> 00:02:05.854
+owner.balance and storing it in the variable initial balance.
+
+00:02:05.855 --> 00:02:11.469
+Next, I want to explain you the initialization of these basic data types.
+
+00:02:11.469 --> 00:02:14.050
+If you don't specify a value,
+
+00:02:14.050 --> 00:02:19.115
+what Solidity does it initializes all uint and int types to zero,
+
+00:02:19.115 --> 00:02:21.225
+and bool types to false,
+
+00:02:21.224 --> 00:02:27.329
+which means int num will be initialized to zero, uint32,
+
+00:02:27.330 --> 00:02:30.640
+another value will again be initialized to zero,
+
+00:02:30.639 --> 00:02:33.774
+and bool value will be initialized to false,
+
+00:02:33.775 --> 00:02:38.590
+and address type and all the address types are initialized to a zero address.
+
+00:02:38.590 --> 00:02:42.060
+See if you look at the last line here, address of owner,
+
+00:02:42.060 --> 00:02:47.120
+so if you ever wanted to check if this variable owner has been initialized or not,
+
+00:02:47.120 --> 00:02:50.045
+we can just compare it to zero address.
+
+00:02:50.044 --> 00:02:54.864
+Now, let's walk through some sample codes using data initialization.
+
+00:02:54.865 --> 00:02:58.370
+Okay, so what you see on the screen is a very simple contract and
+
+00:02:58.370 --> 00:03:01.474
+the name of this contract is BasicDataTypesContract,
+
+00:03:01.474 --> 00:03:02.810
+and we are, of course,
+
+00:03:02.810 --> 00:03:05.680
+going to go to the syntax and all that stuff more in detail.
+
+00:03:05.680 --> 00:03:09.670
+But, if you start see our contract start to the line pragma,
+
+00:03:09.669 --> 00:03:11.299
+and then we have contract,
+
+00:03:11.300 --> 00:03:13.325
+and then we have the name of the contract.
+
+00:03:13.324 --> 00:03:14.734
+Now, within the contract,
+
+00:03:14.735 --> 00:03:16.655
+we are initializing a variable a,
+
+00:03:16.655 --> 00:03:20.724
+of type uint8 and storing a value of 255 in it.
+
+00:03:20.724 --> 00:03:23.460
+It's going to work fine just because in int type,
+
+00:03:23.460 --> 00:03:27.025
+which means eight bits can store a value between 0-255,
+
+00:03:27.025 --> 00:03:29.770
+so the compiler will not complain on this line.
+
+00:03:29.770 --> 00:03:33.310
+In the next line, if you see we have an address variable.
+
+00:03:33.310 --> 00:03:35.444
+The name is owner public.
+
+00:03:35.444 --> 00:03:38.745
+That means anyone can view it, and it's called owner,
+
+00:03:38.745 --> 00:03:40.060
+and the next line,
+
+00:03:40.060 --> 00:03:42.920
+we have a bool type variable called flag.
+
+00:03:42.919 --> 00:03:46.299
+Again, public and we're setting it to initially zero.
+
+00:03:46.300 --> 00:03:49.045
+Then, we have a uint type variable,
+
+00:03:49.044 --> 00:03:53.949
+called ownerInitialBalance and this is again non-initialized for now.
+
+00:03:53.949 --> 00:03:56.139
+Like I mentioned, if it's not initialized,
+
+00:03:56.139 --> 00:03:57.504
+it's going to initialize to zero.
+
+00:03:57.504 --> 00:03:58.914
+That's what Solidity does.
+
+00:03:58.914 --> 00:04:00.969
+Now, then we have a function here,
+
+00:04:00.969 --> 00:04:03.199
+and the name of the function is test.
+
+00:04:03.199 --> 00:04:06.500
+It is taking in one argument address type.
+
+00:04:06.500 --> 00:04:08.044
+The name is address.
+
+00:04:08.044 --> 00:04:09.409
+It is a public function.
+
+00:04:09.409 --> 00:04:13.069
+We will look into funk functions and the syntax in our future concepts.
+
+00:04:13.069 --> 00:04:15.829
+For just now, just go with the flow here.
+
+00:04:15.830 --> 00:04:19.634
+Now, this function returns a uint type variable.
+
+00:04:19.634 --> 00:04:21.899
+Now, inside the function, what we're doing,
+
+00:04:21.899 --> 00:04:24.560
+we're actually taking the address that is being
+
+00:04:24.560 --> 00:04:27.634
+passed as the argument and storing a DC owner,
+
+00:04:27.634 --> 00:04:31.699
+and then what we're doing whatever the address is coming as the argument,
+
+00:04:31.699 --> 00:04:34.610
+we're getting the balance of that address and storing it in
+
+00:04:34.610 --> 00:04:38.660
+this variable that we had declared globally, non-initialized right here.
+
+00:04:38.660 --> 00:04:41.975
+Now, this is something I just wanted to show you like we mentioned
+
+00:04:41.975 --> 00:04:45.415
+that all Boolean values are initialized to false,
+
+00:04:45.415 --> 00:04:47.715
+and also Boolean values,
+
+00:04:47.714 --> 00:04:50.134
+you cannot just put like a one in here.
+
+00:04:50.134 --> 00:04:54.699
+In many languages, you can just put a one and this will evaluate to true.
+
+00:04:54.699 --> 00:04:56.985
+Solidity, in fact, expects an expression.
+
+00:04:56.985 --> 00:04:58.910
+So, this is going to give an compiler errors.
+
+00:04:58.910 --> 00:05:01.000
+If I delete this line here,
+
+00:05:01.000 --> 00:05:04.180
+the compiler's going to complain because it's not expecting this.
+
+00:05:04.180 --> 00:05:05.814
+So, just to show you that.
+
+00:05:05.814 --> 00:05:08.899
+Now, this will work fine because you're after getting a Boolean value.
+
+00:05:08.899 --> 00:05:10.864
+So, one greater than zero and, of course,
+
+00:05:10.865 --> 00:05:14.545
+comes at the output is true which means now this code will be fine.
+
+00:05:14.545 --> 00:05:16.330
+Then, again, in the function, now,
+
+00:05:16.329 --> 00:05:17.500
+this is just a sample code,
+
+00:05:17.500 --> 00:05:18.620
+is not doing anything here.
+
+00:05:18.620 --> 00:05:21.590
+I just wanted to show you a couple of different features of how things work.
+
+00:05:21.589 --> 00:05:23.644
+So, just to show you is this here,
+
+00:05:23.644 --> 00:05:25.055
+and now what we're doing,
+
+00:05:25.055 --> 00:05:26.180
+so again going back,
+
+00:05:26.180 --> 00:05:28.530
+we had the address,
+
+00:05:28.529 --> 00:05:29.804
+we store it in the owner,
+
+00:05:29.805 --> 00:05:32.100
+and then we got the balance of and
+
+00:05:32.100 --> 00:05:34.610
+store it at the owner initial balance and now we're returning that,
+
+00:05:34.610 --> 00:05:36.590
+and this is the return type you want, okay?
+
+00:05:36.589 --> 00:05:39.109
+So, if I, in fact, I can show to deploy.
+
+00:05:39.110 --> 00:05:41.560
+We've looked at Java's Remix before.
+
+00:05:41.560 --> 00:05:43.475
+So, let's go deploy this contract.
+
+00:05:43.475 --> 00:05:45.080
+Once you deploy this contract,
+
+00:05:45.079 --> 00:05:46.894
+you can click on this button right here.
+
+00:05:46.894 --> 00:05:51.064
+Now, we've set the value of flag true,
+
+00:05:51.064 --> 00:05:52.719
+it's going to output true.
+
+00:05:52.720 --> 00:05:58.280
+Owner as of now is not set because if you see the owner is being set in this function.
+
+00:05:58.279 --> 00:06:01.369
+So, as of now, we haven't clicked on the function test yet.
+
+00:06:01.370 --> 00:06:02.495
+So, if I get the owner,
+
+00:06:02.495 --> 00:06:03.865
+it's going to say zero.
+
+00:06:03.865 --> 00:06:06.420
+Now, let's go call the function test.
+
+00:06:06.420 --> 00:06:10.819
+What I'm going to do, I'm actually going to pick one of these values.
+
+00:06:10.819 --> 00:06:12.139
+You can click on this button copies.
+
+00:06:12.139 --> 00:06:13.564
+If you said "Copy to Clipboard",
+
+00:06:13.564 --> 00:06:15.709
+it's going to copy this address, okay?
+
+00:06:15.709 --> 00:06:18.349
+Now, I'm going to put in place this address right here,
+
+00:06:18.350 --> 00:06:21.185
+and now I'm going to call the test function.
+
+00:06:21.185 --> 00:06:23.389
+Now, when you call the text function,
+
+00:06:23.389 --> 00:06:26.599
+you can click on this arrow right here and brings up this window,
+
+00:06:26.600 --> 00:06:31.000
+and let's click on this last thing that we just had.
+
+00:06:31.000 --> 00:06:35.389
+Now, let's call the function again and you will
+
+00:06:35.389 --> 00:06:40.479
+see that the owner address has been changed to the one right here.
+
+00:06:40.480 --> 00:06:44.540
+In fact, in the balance like you see this function is returning the balance,
+
+00:06:44.540 --> 00:06:46.770
+so if I click on that and look on the output,
+
+00:06:46.769 --> 00:06:49.609
+so this function is outputting the balance.
+
+00:06:49.610 --> 00:06:52.025
+If you see this balance of this address,
+
+00:06:52.024 --> 00:06:54.804
+the uint of the output right there,
+
+00:06:54.805 --> 00:06:59.959
+the return value is this value 9999 which matches the balance.
+
+00:06:59.959 --> 00:07:02.539
+Now, this is how you look at the balances of the contract addresses here,
+
+00:07:02.540 --> 00:07:05.200
+so the balance of here matches.
+
+00:07:05.199 --> 00:07:07.250
+This value right here in the way, of course,
+
+00:07:07.250 --> 00:07:09.019
+this is an Ether and this is in way,
+
+00:07:09.019 --> 00:07:11.149
+so it's giving you that value right here.
+
+00:07:11.149 --> 00:07:12.229
+So, it matches.
+
+00:07:12.230 --> 00:07:13.895
+So, again, just a simple way,
+
+00:07:13.894 --> 00:07:16.829
+it's a very we're going to definitely get into more complex contracts soon,
+
+00:07:16.829 --> 00:07:20.495
+but this is a very simple one just to show you how things work in Solidity.
+
+00:07:20.495 --> 00:07:23.444
+So, we have some basic data types here,
+
+00:07:23.444 --> 00:07:26.459
+uint type, you have an address type, we have a bool type,
+
+00:07:26.459 --> 00:07:28.250
+and then I wanted to show you how you cannot
+
+00:07:28.250 --> 00:07:31.610
+compare or evaluate something that's not an expression,
+
+00:07:31.610 --> 00:07:33.064
+has to be an expression,
+
+00:07:33.064 --> 00:07:38.250
+and you can also run contracts and functions and deploy contracts to this function.
+

@@ -1,0 +1,67 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.839
+As we've alluded to storing non-currency data on
+
+00:00:03.839 --> 00:00:05.250
+a Blockchain where that wasn't
+
+00:00:05.250 --> 00:00:08.750
+the intended purpose is a matter of debate in the Bitcoin community.
+
+00:00:08.750 --> 00:00:11.074
+Is it ethically correct?
+
+00:00:11.074 --> 00:00:15.449
+On the one hand, the Bitcoin Blockchain is a secure decentralized method
+
+00:00:15.449 --> 00:00:19.714
+for data storage on which applications beyond financial ones can leverage.
+
+00:00:19.714 --> 00:00:22.140
+Allowing data storage would help promote
+
+00:00:22.140 --> 00:00:25.214
+the growth and long-term relevance of the Bitcoin platform.
+
+00:00:25.214 --> 00:00:29.475
+Some in this camp believed that the Blockchain should be a public resource
+
+00:00:29.475 --> 00:00:32.130
+available for whomever to use as long as they
+
+00:00:32.130 --> 00:00:35.304
+paid for sufficient transaction fee for the miners.
+
+00:00:35.304 --> 00:00:38.960
+On the other hand, other community members believe
+
+00:00:38.960 --> 00:00:43.225
+the Bitcoin Blockchain should only be used for Bitcoin transaction data,
+
+00:00:43.225 --> 00:00:46.700
+and any other type of data should be stored separately.
+
+00:00:46.700 --> 00:00:49.790
+Regardless of which side of the debate you may fall,
+
+00:00:49.789 --> 00:00:53.494
+the importance of scalability issues cannot be avoided.
+
+00:00:53.494 --> 00:00:55.269
+Adding data to the network,
+
+00:00:55.270 --> 00:00:58.280
+especially network where data cannot be erased,
+
+00:00:58.280 --> 00:01:02.350
+raises the maintenance costs and adds a burden to everyone involved.
+
+00:01:02.350 --> 00:01:05.710
+Every time a four node downloads the Blockchain,
+
+00:01:05.709 --> 00:01:10.759
+all the data takes up memory that someone somewhere has to pay for.
+

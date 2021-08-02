@@ -1,0 +1,196 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.705
+Before getting into Ethereum,
+
+00:00:01.705 --> 00:00:04.984
+we wanted to give you a quick refresher on the block chain framework.
+
+00:00:04.985 --> 00:00:06.890
+This was covered in earlier lessons,
+
+00:00:06.889 --> 00:00:08.365
+when we spoke about Bitcoin,
+
+00:00:08.365 --> 00:00:12.085
+and we'll also anchor us as we progress through the Ethereum world.
+
+00:00:12.085 --> 00:00:16.650
+As you'll see, there are many similarities between these two block chains,
+
+00:00:16.649 --> 00:00:18.479
+and a lot of your previous knowledge,
+
+00:00:18.480 --> 00:00:21.905
+will be directly applicable as we explore the theorem.
+
+00:00:21.905 --> 00:00:26.054
+Here's a quick recap on the list of components from the block chain framework.
+
+00:00:26.054 --> 00:00:28.769
+In this video, we'll walk through the framework,
+
+00:00:28.769 --> 00:00:31.439
+to make sure you are familiar with each of these steps,
+
+00:00:31.440 --> 00:00:33.450
+and how they relate to one another.
+
+00:00:33.450 --> 00:00:35.750
+First, transactions.
+
+00:00:35.750 --> 00:00:38.134
+These are the basic atomic units of work,
+
+00:00:38.134 --> 00:00:40.129
+submitted by a user to a node,
+
+00:00:40.130 --> 00:00:42.125
+to be included in the next block.
+
+00:00:42.125 --> 00:00:45.755
+Next, the wallet, which contains a wallet address.
+
+00:00:45.755 --> 00:00:49.130
+The wallet address is like an email address that you share with others,
+
+00:00:49.130 --> 00:00:52.315
+should you want them to send you crypto-currencies like Bitcoin,
+
+00:00:52.314 --> 00:00:53.974
+Ethereum, and many more.
+
+00:00:53.975 --> 00:00:58.609
+Users send transactions to one another using Wallet addresses.
+
+00:00:58.609 --> 00:01:01.195
+Before the network validates a transaction,
+
+00:01:01.195 --> 00:01:02.715
+it needs a signature.
+
+00:01:02.715 --> 00:01:05.120
+A signature is the process by which one
+
+00:01:05.120 --> 00:01:08.090
+signs the transactions before submitting to the node,
+
+00:01:08.090 --> 00:01:10.005
+for inclusion into the next block.
+
+00:01:10.004 --> 00:01:13.369
+After signing, the transactions enter the Mempool.
+
+00:01:13.370 --> 00:01:16.250
+This is where all unconfirmed transactions are placed,
+
+00:01:16.250 --> 00:01:19.215
+until mining nodes validate these transactions.
+
+00:01:19.215 --> 00:01:24.055
+All transactions in the Mempool are waiting to be picked up by a node in the network.
+
+00:01:24.055 --> 00:01:26.509
+This network is distributed in nature,
+
+00:01:26.509 --> 00:01:29.420
+where everyone is able to download a copy of the ledger,
+
+00:01:29.420 --> 00:01:30.725
+to their local computer.
+
+00:01:30.724 --> 00:01:32.089
+This makes it so,
+
+00:01:32.090 --> 00:01:35.058
+that there's no centralized ownership of information,
+
+00:01:35.058 --> 00:01:39.914
+and allows the network to determine which transactions are valid, and which are not.
+
+00:01:39.915 --> 00:01:44.490
+The network achieves consensus by determining which transactions are valid.
+
+00:01:44.489 --> 00:01:47.359
+Consensus is the name for a group of
+
+00:01:47.359 --> 00:01:50.689
+algorithms that can be used to create a voting mechanism,
+
+00:01:50.689 --> 00:01:53.310
+or process for a given block chain network.
+
+00:01:53.310 --> 00:01:55.924
+We've gone over some of these algorithms earlier;
+
+00:01:55.924 --> 00:01:59.075
+like proof of Work, proof of Stake, but there are many more.
+
+00:01:59.075 --> 00:02:01.070
+Once the network agrees,
+
+00:02:01.069 --> 00:02:04.799
+transaction is placed in a block and hash is assigned.
+
+00:02:04.799 --> 00:02:08.544
+Hashing is a process of generating a digital fingerprint,
+
+00:02:08.544 --> 00:02:09.739
+also known as hash,
+
+00:02:09.740 --> 00:02:13.185
+by passing data or information to a hashing function.
+
+00:02:13.185 --> 00:02:15.400
+This helped us identify a block,
+
+00:02:15.400 --> 00:02:18.515
+and know whether or not the information has been tampered with.
+
+00:02:18.514 --> 00:02:20.750
+If information has been changed,
+
+00:02:20.750 --> 00:02:22.429
+the hash will also change,
+
+00:02:22.429 --> 00:02:24.175
+which invalidates the block.
+
+00:02:24.175 --> 00:02:30.050
+A block is a container that holds a list of transactions to be added to the block chain.
+
+00:02:30.050 --> 00:02:34.535
+Finally, these blocks are linked together using hash values,
+
+00:02:34.534 --> 00:02:36.745
+into what we call the block chain.
+
+00:02:36.745 --> 00:02:41.259
+This block chain is a shared ledger where the blocks are chained together.
+
+00:02:41.259 --> 00:02:46.149
+It contains the entire history of transactions that have been made on the block chain.
+
+00:02:46.150 --> 00:02:50.500
+This allows us to easily see which transactions are valid and not.
+
+00:02:50.500 --> 00:02:54.995
+So, there's a couple of components we went over before in the block chain framework.
+
+00:02:54.995 --> 00:02:59.569
+Moving forward, we'll see that all of this is very similar in a theorem.
+
+00:02:59.569 --> 00:03:02.659
+That said, there are some important differences.
+
+00:03:02.659 --> 00:03:05.419
+Coming up, we'll go over some new terminologies
+
+00:03:05.419 --> 00:03:08.000
+to better understand what these differences are.
+
+00:03:08.000 --> 00:03:14.159
+This will help us as we transition into building our own Ethereum based applications.
+

@@ -1,0 +1,235 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.250
+Let's look at some more functions and see
+
+00:00:02.250 --> 00:00:04.500
+what the interface definitions are of these functions.
+
+00:00:04.500 --> 00:00:06.884
+So we have the transfer from function right there.
+
+00:00:06.884 --> 00:00:10.349
+Now it takes in the original owners address,
+
+00:00:10.349 --> 00:00:14.774
+the receiver's address and also the token ID that you wanted to transfer from.
+
+00:00:14.775 --> 00:00:16.710
+So again the way it does that,
+
+00:00:16.710 --> 00:00:18.420
+the first thing of course you know you have to make
+
+00:00:18.420 --> 00:00:20.190
+sure that the underscore to address is
+
+00:00:20.190 --> 00:00:24.410
+capable of receiving the NFTs or else the NFTs will be permanently lost.
+
+00:00:24.410 --> 00:00:26.780
+It also throws an error if or unless
+
+00:00:26.780 --> 00:00:29.960
+the msg dot sender is a current owner if not it's going to throw an error.
+
+00:00:29.960 --> 00:00:32.585
+So that's how the function transfer from is implemented.
+
+00:00:32.585 --> 00:00:34.130
+Then if you see we have
+
+00:00:34.130 --> 00:00:36.260
+the next two functions safe transfer from
+
+00:00:36.259 --> 00:00:38.500
+and safe transfer from implemented to two times.
+
+00:00:38.500 --> 00:00:43.070
+The reason it's possible is because solidity implements function overloading,
+
+00:00:43.070 --> 00:00:46.429
+which means we can have two functions with the same names,
+
+00:00:46.429 --> 00:00:48.710
+as long as they have different argument list.
+
+00:00:48.710 --> 00:00:52.250
+Now an ERC 20 contract there is a possibility of losing tokens.
+
+00:00:52.250 --> 00:00:55.085
+If you transfer tokens that do not know how to handle them.
+
+00:00:55.085 --> 00:00:57.799
+So if we're to send our tokens to another token or
+
+00:00:57.799 --> 00:01:01.549
+a contract that does not really know how to transfer or how to accept tokens,
+
+00:01:01.549 --> 00:01:02.824
+our tokens will get lost.
+
+00:01:02.825 --> 00:01:05.579
+Now this can be somehow changed with this transfer from
+
+00:01:05.579 --> 00:01:08.870
+function in this case and so let's look at how it's implemented.
+
+00:01:08.870 --> 00:01:11.165
+So we have two different ways of implementing this,
+
+00:01:11.165 --> 00:01:13.670
+so if we take it has three arguments,
+
+00:01:13.670 --> 00:01:20.454
+from, to and token ID in this case and also from to and token ID in bytes data.
+
+00:01:20.454 --> 00:01:25.370
+The way you do that is from of course is the address that you're sending from,
+
+00:01:25.370 --> 00:01:28.160
+to and the token ID and bytes data
+
+00:01:28.159 --> 00:01:31.159
+is some additional information that if you wanted to send along,
+
+00:01:31.159 --> 00:01:34.774
+then you can just send it along with the bytes data and that is how this implements.
+
+00:01:34.775 --> 00:01:36.155
+The safe transfer from,
+
+00:01:36.155 --> 00:01:38.329
+again the same thing it transfers ownership
+
+00:01:38.329 --> 00:01:40.804
+of an NFT from one address to another address.
+
+00:01:40.805 --> 00:01:42.200
+Now this looks identical to
+
+00:01:42.200 --> 00:01:44.765
+the other function that we just saw on the top with an extra data.
+
+00:01:44.765 --> 00:01:47.780
+In this, you have an extra data parameter but this one does not.
+
+00:01:47.780 --> 00:01:51.844
+So this is how you implement the safe transfer from and then you're just making sure,
+
+00:01:51.844 --> 00:01:53.914
+of course it also is implemented,
+
+00:01:53.915 --> 00:01:57.200
+the way you implement it is kind of left upon the Smart Contract owner
+
+00:01:57.200 --> 00:02:00.545
+but this is how it really wants us to implement the function in two different ways.
+
+00:02:00.545 --> 00:02:02.269
+So that's a safe transfer from function,
+
+00:02:02.269 --> 00:02:04.444
+then we have the approved function right there.
+
+00:02:04.444 --> 00:02:08.750
+Just like we learned in the ERC 20 standard the function approves or grants
+
+00:02:08.750 --> 00:02:13.219
+another entity permission to transfer a token on another owners behalf.
+
+00:02:13.219 --> 00:02:16.490
+For example, let say if Alice owns one udacity token,
+
+00:02:16.490 --> 00:02:19.210
+she can call the function approve for her friend Bob.
+
+00:02:19.210 --> 00:02:20.995
+After a successful call,
+
+00:02:20.995 --> 00:02:23.884
+Bob can take ownership of all perform
+
+00:02:23.884 --> 00:02:26.989
+operations on the token at a later time on Alice's behalf.
+
+00:02:26.990 --> 00:02:28.430
+So that's how approve function works,
+
+00:02:28.430 --> 00:02:31.960
+so you're approving someone else to spend tokens or your token on your behalf.
+
+00:02:31.960 --> 00:02:36.865
+So it takes an address and also the token ID that whoever that you're approving from.
+
+00:02:36.865 --> 00:02:39.770
+Then we have set approval for all function.
+
+00:02:39.770 --> 00:02:42.680
+Now this is a function that is used to approve one address to
+
+00:02:42.680 --> 00:02:45.890
+transfer and handle the tokens that are owned by particular address.
+
+00:02:45.889 --> 00:02:47.929
+So that's you're just setting an approval for
+
+00:02:47.930 --> 00:02:50.659
+this person and whatever that address would be.
+
+00:02:50.659 --> 00:02:53.659
+Then we have get approval for all or get approved,
+
+00:02:53.659 --> 00:02:55.474
+in fact is the function name. Get approved.
+
+00:02:55.474 --> 00:02:57.319
+So again, the approved address it's for
+
+00:02:57.319 --> 00:03:02.159
+a single NFT and it throws an error if it's not a valid NFT.
+
+00:03:02.159 --> 00:03:04.549
+This function is basically used to check that
+
+00:03:04.550 --> 00:03:06.710
+we're not setting approval for address zero.
+
+00:03:06.710 --> 00:03:09.379
+So you're supposed to do some kind of implementation of that over there.
+
+00:03:09.379 --> 00:03:10.669
+So that's get approved function.
+
+00:03:10.669 --> 00:03:13.439
+Then we also have is approved for all,
+
+00:03:13.439 --> 00:03:16.919
+this function tells whether an operator is approved by again an owner.
+
+00:03:16.919 --> 00:03:18.209
+It takes in two parameters,
+
+00:03:18.210 --> 00:03:21.480
+the owner address that you want to query the approval of and
+
+00:03:21.479 --> 00:03:25.504
+the operator address which you want to query the approval of and it returns a bool.
+
+00:03:25.504 --> 00:03:28.310
+Whether the given operators approved by given owner or not.
+
+00:03:28.310 --> 00:03:30.990
+So that's how this function is approved of working.
+
+00:03:30.990 --> 00:03:33.200
+So again you can always go back and read the comments and I'm going
+
+00:03:33.199 --> 00:03:35.429
+to give you this code in the bottom of this video,
+
+00:03:35.430 --> 00:03:39.610
+so you can walk through how these functions are implemented in this interface definition.
+

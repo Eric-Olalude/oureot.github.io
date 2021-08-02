@@ -1,0 +1,439 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.720
+In this concept, we will learn about functions.
+
+00:00:03.720 --> 00:00:08.138
+Solidity supports functions, just like other languages.
+
+00:00:08.449 --> 00:00:13.214
+A basic syntax of function declaration looks like this.
+
+00:00:13.214 --> 00:00:14.669
+If you look on the screen,
+
+00:00:14.669 --> 00:00:16.500
+we have the keyword function,
+
+00:00:16.500 --> 00:00:18.539
+followed by the function name,
+
+00:00:18.539 --> 00:00:20.655
+and then any arguments passed,
+
+00:00:20.655 --> 00:00:22.530
+followed by function type.
+
+00:00:22.530 --> 00:00:25.125
+Now, you can have many function types here.
+
+00:00:25.125 --> 00:00:27.615
+We will talk about this in our next slide.
+
+00:00:27.614 --> 00:00:30.254
+Then, if there is a return value,
+
+00:00:30.254 --> 00:00:31.769
+we will save returns,
+
+00:00:31.769 --> 00:00:34.005
+and then in bracket the return value,
+
+00:00:34.005 --> 00:00:35.100
+or the type of return,
+
+00:00:35.100 --> 00:00:37.020
+that you're trying to make from this function.
+
+00:00:37.020 --> 00:00:39.720
+Then, we have out our curly braces,
+
+00:00:39.719 --> 00:00:41.939
+and the function definition inside it.
+
+00:00:41.939 --> 00:00:46.159
+So, this is what a typical function statement would look like.
+
+00:00:46.159 --> 00:00:49.849
+Now, let's talk about various function types now.
+
+00:00:49.850 --> 00:00:52.429
+So, the very first one that you see on this chart,
+
+00:00:52.429 --> 00:00:54.310
+on the screen is a public.
+
+00:00:54.310 --> 00:00:58.920
+So, public means anyone with an Ethereum account can call this function.
+
+00:00:58.920 --> 00:01:00.585
+It is visible to everyone,
+
+00:01:00.585 --> 00:01:02.369
+it will be a part of the ABI,
+
+00:01:02.369 --> 00:01:04.109
+the application binary interface.
+
+00:01:04.109 --> 00:01:06.099
+So, that means anyone can call this function,
+
+00:01:06.099 --> 00:01:09.409
+it will be visible to everyone who has an Ethereum account.
+
+00:01:09.409 --> 00:01:13.489
+Now, public and private really don't imply security too much,
+
+00:01:13.489 --> 00:01:15.229
+it is more for the programmers,
+
+00:01:15.230 --> 00:01:18.500
+to imply that this function can be called or not.
+
+00:01:18.500 --> 00:01:22.504
+For example, helper functions could be made private.
+
+00:01:22.504 --> 00:01:26.269
+Private functions are not even available in the derived contracts.
+
+00:01:26.269 --> 00:01:27.469
+So, they're not available,
+
+00:01:27.469 --> 00:01:29.780
+there only available inside this contract.
+
+00:01:29.780 --> 00:01:32.450
+So, like I said, if there are helper functions that
+
+00:01:32.450 --> 00:01:34.909
+you want to call one function from another function,
+
+00:01:34.909 --> 00:01:38.030
+and they have absolutely no other purpose, make them private.
+
+00:01:38.030 --> 00:01:40.790
+The next visibility that we wanted,
+
+00:01:40.790 --> 00:01:42.530
+or the function type we wanted to talk about,
+
+00:01:42.530 --> 00:01:44.135
+is view or constant.
+
+00:01:44.135 --> 00:01:48.250
+Now, this specifies that the function cannot modify contracts data.
+
+00:01:48.250 --> 00:01:51.405
+Now, interchangeable names, I mostly see view,
+
+00:01:51.405 --> 00:01:53.790
+but you might see contracts that's a constant.
+
+00:01:53.790 --> 00:01:56.330
+So, I just wanted to let you know but view is good enough.
+
+00:01:56.329 --> 00:01:59.359
+So, it specifies that the function cannot modify contracts data.
+
+00:01:59.359 --> 00:02:04.204
+So, if you have a function that is not changing any state or modifying any data,
+
+00:02:04.204 --> 00:02:05.840
+only looking at some data,
+
+00:02:05.840 --> 00:02:08.900
+then you should provide the word keyword view here.
+
+00:02:08.900 --> 00:02:15.250
+Pure, means that you cannot modify nor you can view contracts data.
+
+00:02:15.250 --> 00:02:20.270
+Payable, this keyword means that whenever some outside source,
+
+00:02:20.270 --> 00:02:24.275
+or some outside entity like you or me attempts to call this function,
+
+00:02:24.275 --> 00:02:29.670
+we might call or try to call it and send money along with this function call.
+
+00:02:29.669 --> 00:02:33.274
+Now, this next slide on your screen that you see,
+
+00:02:33.275 --> 00:02:36.260
+explains you four different visibility types.
+
+00:02:36.259 --> 00:02:38.164
+So, we talked about function types,
+
+00:02:38.164 --> 00:02:41.030
+now this information overlaps but again,
+
+00:02:41.030 --> 00:02:43.530
+definitely wanted to show you the visibility separately.
+
+00:02:43.530 --> 00:02:46.770
+So, we have four visibility types in Solidity;
+
+00:02:46.770 --> 00:02:50.564
+public, private, internal, and external.
+
+00:02:50.564 --> 00:02:54.439
+Again, I wanted to mention that these visibilities apply to functions,
+
+00:02:54.439 --> 00:02:56.044
+and variables too.
+
+00:02:56.044 --> 00:02:58.114
+External function types.
+
+00:02:58.115 --> 00:03:01.338
+External functions are part of the contract interface,
+
+00:03:01.338 --> 00:03:06.829
+which means they can be called from other contracts, and via transactions.
+
+00:03:06.830 --> 00:03:10.505
+External function cannot be called internally,
+
+00:03:10.504 --> 00:03:12.379
+like a normal function call,
+
+00:03:12.379 --> 00:03:15.329
+you can call it using this keyword.
+
+00:03:15.330 --> 00:03:18.525
+Internal functions, what are they?
+
+00:03:18.525 --> 00:03:22.370
+Internal functions and state variables can only be accessed internally,
+
+00:03:22.370 --> 00:03:29.235
+that is from within the contract or contract deriving from it without using this keyword.
+
+00:03:29.235 --> 00:03:33.605
+In Solidity, a function may be called from within the contract,
+
+00:03:33.604 --> 00:03:35.989
+or from outside the contract,
+
+00:03:35.990 --> 00:03:38.784
+or even other outside applications.
+
+00:03:38.784 --> 00:03:43.609
+So, the internal function calls are encoded by compiler as cold jumps.
+
+00:03:43.610 --> 00:03:45.935
+Calls made from outside contracts,
+
+00:03:45.935 --> 00:03:51.265
+or outside applications, use the EVM message call for function invocations.
+
+00:03:51.264 --> 00:03:55.084
+So, we just talked about public and private visibilities in a previous slide.
+
+00:03:55.085 --> 00:03:56.405
+So, you know what those means.
+
+00:03:56.405 --> 00:03:58.520
+Again, a public visibility means that
+
+00:03:58.520 --> 00:04:01.280
+anyone with an Ethereum account can call this function.
+
+00:04:01.280 --> 00:04:02.854
+It is visible to everyone.
+
+00:04:02.854 --> 00:04:05.209
+It will be a part of the ABI.
+
+00:04:05.210 --> 00:04:09.830
+Private functions are only visible from within this contract,
+
+00:04:09.830 --> 00:04:13.250
+not even from the derived contracts.
+
+00:04:13.250 --> 00:04:17.029
+They restrict the visibility to only the compiler,
+
+00:04:17.029 --> 00:04:19.819
+you can set the visibility to internal.
+
+00:04:19.819 --> 00:04:23.009
+They restrict the visibility only through EVM.
+
+00:04:23.009 --> 00:04:26.045
+So, that means other contracts cannot call this function.
+
+00:04:26.045 --> 00:04:28.865
+You can set the visibility to external.
+
+00:04:28.865 --> 00:04:33.050
+We can also set the visibility of storage variables to be internal,
+
+00:04:33.050 --> 00:04:35.930
+if you want it to be available only from this contract,
+
+00:04:35.930 --> 00:04:38.150
+and also from derived contracts.
+
+00:04:38.149 --> 00:04:41.164
+Storage variables cannot be declared external,
+
+00:04:41.165 --> 00:04:43.160
+since they are stored with the contract.
+
+00:04:43.160 --> 00:04:44.980
+So, again, important piece of information,
+
+00:04:44.980 --> 00:04:47.210
+you cannot make storage variables external,
+
+00:04:47.209 --> 00:04:49.204
+because they are stored with the contract,
+
+00:04:49.204 --> 00:04:52.189
+so that means you should be able to call them.
+
+00:04:52.189 --> 00:04:55.355
+Okay. Moving on. So, by default,
+
+00:04:55.355 --> 00:04:59.569
+a function is public unless specified differently.
+
+00:04:59.569 --> 00:05:02.105
+So, if you forget to specify public,
+
+00:05:02.105 --> 00:05:04.160
+of course the compiler will give you a warning,
+
+00:05:04.160 --> 00:05:06.370
+but it's still going to initiate the contract,
+
+00:05:06.370 --> 00:05:07.975
+and the contract will be public,
+
+00:05:07.975 --> 00:05:10.730
+unless you specify differently.
+
+00:05:10.730 --> 00:05:16.759
+So, again, important information is that Solidity automatically creates getter functions,
+
+00:05:16.759 --> 00:05:19.009
+if you create a public storage variables.
+
+00:05:19.009 --> 00:05:22.295
+So, if you have variables that you like to look on the screen,
+
+00:05:22.295 --> 00:05:26.310
+for example, so if you're doing something like string ownerName, line of code.
+
+00:05:26.310 --> 00:05:29.345
+So, if you have a line of code that says string ownerName,
+
+00:05:29.345 --> 00:05:31.760
+we are creating a variable ownerName,
+
+00:05:31.759 --> 00:05:33.154
+but not making it public,
+
+00:05:33.154 --> 00:05:35.659
+so no getter function will be created.
+
+00:05:35.660 --> 00:05:38.720
+But if you say string public ownerName,
+
+00:05:38.720 --> 00:05:40.165
+we are making it public,
+
+00:05:40.165 --> 00:05:43.144
+a getter function will be created automatically.
+
+00:05:43.144 --> 00:05:46.040
+Same name as the name of the variable, in this case,
+
+00:05:46.040 --> 00:05:47.615
+a function will be created,
+
+00:05:47.615 --> 00:05:50.460
+the name of the function would be ownerName.
+
+00:05:50.899 --> 00:05:55.609
+Part of information, functions can have multiple return values.
+
+00:05:55.610 --> 00:06:00.319
+So, when a function returns multiple values to an outside application,
+
+00:06:00.319 --> 00:06:03.009
+the result is returned as an array of values.
+
+00:06:03.009 --> 00:06:05.094
+Impart an information again remember,
+
+00:06:05.095 --> 00:06:08.120
+if there are multiple return values to an outside application,
+
+00:06:08.120 --> 00:06:11.780
+the result is going to be returned as an array of values.
+
+00:06:11.779 --> 00:06:15.729
+Now, Solidity does support function overloading.
+
+00:06:15.730 --> 00:06:17.069
+What that means is that,
+
+00:06:17.069 --> 00:06:18.884
+you can have more than one function,
+
+00:06:18.884 --> 00:06:20.404
+with the same name,
+
+00:06:20.404 --> 00:06:23.349
+as long as input parameters are different.
+
+00:06:23.350 --> 00:06:26.754
+So, Solidity does support function overloading.
+
+00:06:26.754 --> 00:06:29.180
+Let us summarize functions.
+
+00:06:29.180 --> 00:06:34.314
+An automatic getter function is created with the same name as a public variable,
+
+00:06:34.314 --> 00:06:36.865
+for public storage names, variables.
+
+00:06:36.865 --> 00:06:40.540
+A public function can be called from inside the contract,
+
+00:06:40.540 --> 00:06:42.790
+and also from external sources.
+
+00:06:42.790 --> 00:06:46.615
+A private function can only be called from within this contract,
+
+00:06:46.615 --> 00:06:49.795
+not even from the derived contracts.
+
+00:06:49.795 --> 00:06:54.250
+External functions can only be called from the outside application,
+
+00:06:54.250 --> 00:06:55.995
+but from within the contract,
+
+00:06:55.995 --> 00:06:58.009
+we will have to use the word this.
+
+00:06:58.009 --> 00:07:01.519
+So, this operator would be used for those kind of function calls.
+
+00:07:01.519 --> 00:07:05.569
+Internal functions can only be called from within the contract,
+
+00:07:05.569 --> 00:07:07.459
+and also from derived contract,
+
+00:07:07.459 --> 00:07:10.620
+but not from outside applications at all.
+

@@ -1,0 +1,256 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.924
+Okay, let's look at the app code.
+
+00:00:02.924 --> 00:00:07.290
+So here, in order to eliminate confusion and make sure
+
+00:00:07.290 --> 00:00:11.339
+that everyone is working with the same set of requirements.
+
+00:00:11.339 --> 00:00:15.405
+I have preconfigured the status codes that will be used.
+
+00:00:15.404 --> 00:00:19.454
+So they are just numeric codes with constants to identify them.
+
+00:00:19.454 --> 00:00:20.954
+There's an unknown code,
+
+00:00:20.954 --> 00:00:22.259
+there's an on time,
+
+00:00:22.260 --> 00:00:27.105
+and really the only one that is relevant for the purpose
+
+00:00:27.105 --> 00:00:32.579
+of paying out insured passengers is this one,
+
+00:00:32.579 --> 00:00:34.679
+status code late airline.
+
+00:00:34.679 --> 00:00:41.778
+So that means the flight was delayed due to the airline and not due to weather,
+
+00:00:41.779 --> 00:00:44.510
+technical or other reasons.
+
+00:00:44.509 --> 00:00:48.994
+So when your Oracle reports in a code of 20,
+
+00:00:48.994 --> 00:00:53.349
+that's when the whole payment process gets triggered.
+
+00:00:53.350 --> 00:00:57.530
+Now, in order to keep things simple and have you
+
+00:00:57.530 --> 00:01:02.524
+focus on the logic and the data and the DAP.
+
+00:01:02.524 --> 00:01:08.734
+We have put all the code from the prior lesson related to Oracles already in play here.
+
+00:01:08.734 --> 00:01:12.484
+So you don't have to worry about that aspect since you already have the code.
+
+00:01:12.484 --> 00:01:18.269
+It's just convenience to already have this embedded in here.
+
+00:01:18.269 --> 00:01:23.060
+So any data structures you see here are to support the Oracles.
+
+00:01:23.060 --> 00:01:25.424
+Otherwise, you're free to change things around,
+
+00:01:25.424 --> 00:01:28.549
+and even with the Oracle since it's your project you're free
+
+00:01:28.549 --> 00:01:32.224
+to change around as long as you match the requirements.
+
+00:01:32.224 --> 00:01:38.569
+But in this particular file you'll see that there is a region at the very bottom,
+
+00:01:38.569 --> 00:01:41.149
+after you've go through some of
+
+00:01:41.150 --> 00:01:46.730
+the other requirements where all the Oracle code is collapsed,
+
+00:01:46.730 --> 00:01:49.880
+so it's called Oracle management and there's a large amount of
+
+00:01:49.879 --> 00:01:53.164
+code but it's all code that you've encountered in the prior lesson.
+
+00:01:53.165 --> 00:01:55.535
+So it should be familiar to you.
+
+00:01:55.534 --> 00:01:57.349
+So looking at some of
+
+00:01:57.349 --> 00:02:05.750
+the functions stubs that are here have the option to register a flight.
+
+00:02:05.750 --> 00:02:08.539
+Now why is it necessary to register a flight?
+
+00:02:08.539 --> 00:02:15.454
+Well, the reason for that is because when a user makes a choice in the UI,
+
+00:02:15.455 --> 00:02:18.040
+what flight options are available to them.
+
+00:02:18.039 --> 00:02:20.384
+So I've put this function here,
+
+00:02:20.384 --> 00:02:24.799
+but you might opt as we described in the slides earlier to just have
+
+00:02:24.800 --> 00:02:30.635
+the list of flights that the user can choose available directly in the DAP,
+
+00:02:30.634 --> 00:02:32.344
+so it might just be hard-coded.
+
+00:02:32.344 --> 00:02:35.719
+But another option, if you want to
+
+00:02:35.719 --> 00:02:39.800
+challenge yourself is to provide the ability to register
+
+00:02:39.800 --> 00:02:43.535
+a flight and then retrieve a list of flights that are registered
+
+00:02:43.534 --> 00:02:48.079
+when the user is ready to make a selection.
+
+00:02:48.080 --> 00:02:50.920
+Given that the flights all have a timestamp,
+
+00:02:50.919 --> 00:02:54.769
+you can then be intelligent about the UI and only show
+
+00:02:54.770 --> 00:02:59.395
+flights that are scheduled for the future versus flights that are already done.
+
+00:02:59.395 --> 00:03:02.750
+Process flight status, this is going to be
+
+00:03:02.750 --> 00:03:07.939
+a very key and very important part of your code.
+
+00:03:07.939 --> 00:03:12.859
+This is the function that is intended to be triggered when
+
+00:03:12.860 --> 00:03:19.775
+the Oracle comes back with a result and it has to decide where things go from there.
+
+00:03:19.775 --> 00:03:25.879
+If the flight was on time and it returns a status code that is not 20,
+
+00:03:25.879 --> 00:03:32.504
+then it has to determine if anything happens at all,
+
+00:03:32.504 --> 00:03:36.965
+or if some other user actions occur.
+
+00:03:36.965 --> 00:03:40.585
+In most cases, you only want to react to 20,
+
+00:03:40.585 --> 00:03:45.260
+and at that point you want to look for passengers that have purchased insurance for
+
+00:03:45.259 --> 00:03:52.674
+this particular flight and start the process of determining how much they should be paid.
+
+00:03:52.675 --> 00:03:59.945
+Fetch flight status is intended to be a function that is triggered from the UI.
+
+00:03:59.944 --> 00:04:02.419
+As I mentioned in the earlier slide,
+
+00:04:02.419 --> 00:04:06.589
+we are not going to have that be automated by a third party API.
+
+00:04:06.590 --> 00:04:10.460
+It's going to be a button that you click on the client DAP,
+
+00:04:10.460 --> 00:04:14.390
+which we'll call fetch flight status and it will generate
+
+00:04:14.389 --> 00:04:20.389
+the event that will then be picked up by the Oracles and then respond to them.
+
+00:04:20.389 --> 00:04:22.819
+So that code is basically here in place.
+
+00:04:22.819 --> 00:04:26.884
+Feel free to modify that and optimize that as you deem appropriate.
+
+00:04:26.884 --> 00:04:31.029
+So that's the gist of the two solidity files you'll be working with.
+
+00:04:31.029 --> 00:04:35.179
+As I mentioned, it's going to be fairly
+
+00:04:35.180 --> 00:04:40.355
+important that you early on decided in terms of the separation.
+
+00:04:40.355 --> 00:04:44.780
+Where do certain things related to
+
+00:04:44.779 --> 00:04:51.094
+the persistent data store which is flight shorty data go and what goes in app?
+
+00:04:51.095 --> 00:04:52.675
+I've given some hints,
+
+00:04:52.675 --> 00:04:54.615
+but you may want to move those around.
+
+00:04:54.615 --> 00:04:57.439
+The other thing that is not covered here which you will
+
+00:04:57.439 --> 00:05:00.589
+want to incorporate is the dependency.
+
+00:05:00.589 --> 00:05:03.904
+The ability for flight shorty data to be deployed,
+
+00:05:03.904 --> 00:05:07.399
+and then for flight shorty app to be deployed and
+
+00:05:07.399 --> 00:05:13.234
+capture the data contracts address and make a reference to it,
+
+00:05:13.235 --> 00:05:14.689
+so you can call into it.
+
+00:05:14.689 --> 00:05:17.569
+If you recollect from a prior lesson on multiparty,
+
+00:05:17.569 --> 00:05:21.724
+the constructor of the flight shorty app
+
+00:05:21.725 --> 00:05:26.135
+had the address of the flight shorty data contract.
+
+00:05:26.134 --> 00:05:30.680
+So that's something that you would want to manage here in your test config.
+
+00:05:30.680 --> 00:05:34.220
+In test config, this is the setup for all your tests.
+
+00:05:34.220 --> 00:05:40.610
+So when you instantiate the data contract you'll want to set up the constructor of
+
+00:05:40.610 --> 00:05:47.134
+the app to take the address of that and that way both contract,
+
+00:05:47.134 --> 00:05:50.649
+the app contract knows where to find the data.
+

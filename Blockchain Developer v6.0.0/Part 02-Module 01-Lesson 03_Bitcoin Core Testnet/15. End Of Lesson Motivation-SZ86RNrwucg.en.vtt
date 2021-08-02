@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.294
+Howdy, everybody?
+
+00:00:01.294 --> 00:00:02.780
+So, we're back with Brandy.
+
+00:00:02.779 --> 00:00:04.169
+And we just covered a lot about
+
+00:00:04.169 --> 00:00:07.500
+Bitcoin core and learned a bunch about the different types of networks.
+
+00:00:07.500 --> 00:00:09.929
+With that, why is it important that we know
+
+00:00:09.929 --> 00:00:12.814
+that these different networks exists and what should we know about them?
+
+00:00:12.814 --> 00:00:15.224
+Well, if you haven't noticed, it's really about
+
+00:00:15.224 --> 00:00:18.934
+focusing on the development cycle for applications,
+
+00:00:18.934 --> 00:00:20.879
+and there's so many different stages when you develop
+
+00:00:20.879 --> 00:00:23.869
+an application and that's why we have different network types.
+
+00:00:23.870 --> 00:00:25.780
+So, there's times where you want to use
+
+00:00:25.780 --> 00:00:28.020
+regression testing because you need to stay in your silo,
+
+00:00:28.019 --> 00:00:30.300
+within your own little development sandbox.
+
+00:00:30.300 --> 00:00:32.844
+Once your new application starts maturing and you want
+
+00:00:32.844 --> 00:00:36.640
+other folks to be able to interact with your application,
+
+00:00:36.640 --> 00:00:38.070
+that's the power of the testNet,.
+
+00:00:38.070 --> 00:00:42.880
+You don't have to sit there and expense large value to do a transaction with a testNet.
+
+00:00:42.880 --> 00:00:45.219
+It's like a free resource for the development communities.
+
+00:00:45.219 --> 00:00:50.679
+I really love how that bring so much reward to the developer with the testNet.
+
+00:00:50.679 --> 00:00:52.369
+And that's why we utilize blockish pool,
+
+00:00:52.369 --> 00:00:57.905
+so we can actually see that transaction line on the public network with the testNet,
+
+00:00:57.905 --> 00:00:59.925
+and then we have the public mainNet,
+
+00:00:59.924 --> 00:01:03.359
+and that's for production because that's where you're going to
+
+00:01:03.359 --> 00:01:06.980
+actually expense solid value with that transaction.
+
+00:01:06.980 --> 00:01:10.215
+So, you want to be really cautious and also pay attention to security.
+
+00:01:10.215 --> 00:01:11.850
+Yeah. I think it's really exciting that we
+
+00:01:11.849 --> 00:01:13.519
+have all these different environments that we can
+
+00:01:13.519 --> 00:01:16.765
+play with and different reasons for using them, and it's important,
+
+00:01:16.765 --> 00:01:18.310
+especially as a beginning developer,
+
+00:01:18.310 --> 00:01:20.010
+to keep in mind like you mentioned,
+
+00:01:20.010 --> 00:01:21.790
+as we're going through the development process,
+
+00:01:21.790 --> 00:01:24.840
+to know when is the best time to use each of them.
+

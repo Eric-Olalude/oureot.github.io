@@ -1,0 +1,352 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.590
+In this test here,
+
+00:00:01.590 --> 00:00:08.310
+there's some work that's significantly different from that in prior lessons.
+
+00:00:08.310 --> 00:00:13.410
+So the first thing that's different is that in the setup of the contract,
+
+00:00:13.410 --> 00:00:16.245
+we now have it watching for events.
+
+00:00:16.245 --> 00:00:20.565
+So as we mentioned in the architecture explanation,
+
+00:00:20.565 --> 00:00:24.045
+you're going to have two kinds of events emitted,
+
+00:00:24.045 --> 00:00:26.820
+an Oracle Request and Flight Status.
+
+00:00:26.820 --> 00:00:28.020
+So this is where that strap.
+
+00:00:28.020 --> 00:00:30.645
+So we'll come back to these in just a little bit.
+
+00:00:30.645 --> 00:00:35.040
+So the first test we have here is that it can register Oracles.
+
+00:00:35.040 --> 00:00:41.810
+So the arrangement is to set up the registration fee call,
+
+00:00:41.810 --> 00:00:47.000
+and then to check that the registration worked.
+
+00:00:47.000 --> 00:00:54.330
+Now, in order to have a true simulation and to check that smart contract works,
+
+00:00:54.330 --> 00:00:57.155
+we want to really have as many Oracles as possible.
+
+00:00:57.155 --> 00:01:01.175
+So this is why you see that there's a test Oracles count variable here.
+
+00:01:01.175 --> 00:01:02.960
+It's currently set to 20.
+
+00:01:02.960 --> 00:01:06.140
+You can increase that to anything you want.
+
+00:01:06.140 --> 00:01:10.580
+The idea here is that whatever number you choose,
+
+00:01:10.580 --> 00:01:17.270
+you need to make sure that you adjust truffle js to generate that many accounts.
+
+00:01:17.270 --> 00:01:20.230
+In this case, I have changed my parameter to 50.
+
+00:01:20.230 --> 00:01:21.785
+So I can go up to 50.
+
+00:01:21.785 --> 00:01:23.225
+But if you want more,
+
+00:01:23.225 --> 00:01:26.580
+you could generate more.
+
+00:01:26.620 --> 00:01:31.205
+All right. So that is one test.
+
+00:01:31.205 --> 00:01:38.030
+Now the next test we have here
+
+00:01:38.030 --> 00:01:40.355
+is to go deeper into
+
+00:01:40.355 --> 00:01:45.410
+the actual process of requesting flight status and that's a bit more involved.
+
+00:01:45.410 --> 00:01:47.450
+We'll come to that. So for right now,
+
+00:01:47.450 --> 00:01:52.590
+let's go ahead and run our test by going NPM test.
+
+00:01:52.820 --> 00:01:59.240
+Right now, this particular call is simply registering the Oracle.
+
+00:01:59.240 --> 00:02:00.800
+It isn't using our privilege call.
+
+00:02:00.800 --> 00:02:05.420
+So we'll run this test once and then after we know that it's working,
+
+00:02:05.420 --> 00:02:08.490
+we'll go ahead and run that again.
+
+00:02:08.490 --> 00:02:15.080
+But this time, by calling the getOracle so we can see the data.
+
+00:02:15.080 --> 00:02:18.500
+Notice that I don't have an assert here.
+
+00:02:18.500 --> 00:02:20.945
+It's probably something that could be done.
+
+00:02:20.945 --> 00:02:25.550
+The reason it's not there is because as we get further into the code,
+
+00:02:25.550 --> 00:02:28.730
+you'll see that most of the things happen asynchronously.
+
+00:02:28.730 --> 00:02:34.850
+So a lot of the assertions don't work very well without adding some additional libraries.
+
+00:02:34.850 --> 00:02:38.045
+I wanted to keep things very simple and clean for the exercise.
+
+00:02:38.045 --> 00:02:41.930
+So we do have that one test passing.
+
+00:02:41.930 --> 00:02:48.950
+Let's go ahead and modify it so that we can call our function here called
+
+00:02:48.950 --> 00:02:57.545
+getOracle and actually get the data that is being generated.
+
+00:02:57.545 --> 00:03:00.195
+So after that is done, we will say,
+
+00:03:00.195 --> 00:03:08.500
+let result equals config.exercise.getoracle,
+
+00:03:11.570 --> 00:03:14.815
+we are passing, in our loop,
+
+00:03:14.815 --> 00:03:20.000
+accounts indexed by the loop control variable A.
+
+00:03:20.000 --> 00:03:23.010
+So we'll just go ahead and test that,
+
+00:03:25.820 --> 00:03:30.785
+and now result will contain the array.
+
+00:03:30.785 --> 00:03:34.860
+Let's just print that out to the console.
+
+00:03:42.830 --> 00:03:45.450
+Because we know it's exactly three,
+
+00:03:45.450 --> 00:03:53.620
+we can go ahead and hard code the information,
+
+00:03:54.170 --> 00:03:58.590
+and I will copy and paste that to make it a little faster,
+
+00:03:59.750 --> 00:04:02.550
+and then change the indices.
+
+00:04:02.550 --> 00:04:09.130
+Two, one, and we'll say Oracle Registered.
+
+00:04:11.300 --> 00:04:13.990
+We run our test again.
+
+00:04:13.990 --> 00:04:17.510
+Let's increase the size of this window here.
+
+00:04:19.860 --> 00:04:24.190
+So what we are doing there is registering 20 oracles and what we want
+
+00:04:24.190 --> 00:04:28.520
+to do is look at the random numbers.
+
+00:04:28.910 --> 00:04:34.860
+It looks like that's done.
+
+00:04:34.860 --> 00:04:39.195
+toNumber, let's see why is that giving us.
+
+00:04:39.195 --> 00:04:44.785
+Sorry, that's because it is not 256.
+
+00:04:44.785 --> 00:04:46.300
+So we don't need toNumber.
+
+00:04:46.300 --> 00:04:50.840
+I'm so used to putting toNumber and dealing with large numbers.
+
+00:04:50.840 --> 00:04:52.580
+I almost always just put it,
+
+00:04:52.580 --> 00:04:58.790
+and I tried to use a very small data storage uint8 and it automatically
+
+00:04:58.790 --> 00:05:05.660
+detects that it doesn't need overflow protection from JavaScript integers.
+
+00:05:05.660 --> 00:05:07.950
+So that's the reason for that error.
+
+00:05:11.440 --> 00:05:14.670
+I'm still getting a whole bunch of undefines.
+
+00:05:14.670 --> 00:05:20.150
+So let's now do a little bit of troubleshooting.
+
+00:05:20.150 --> 00:05:26.070
+Let's just log result and see what is coming up there.
+
+00:05:35.510 --> 00:05:38.750
+So it looks like that value is not being captured.
+
+00:05:38.750 --> 00:05:44.670
+So let's go ahead and troubleshoot this and make sure there's nothing missing.
+
+00:05:45.640 --> 00:05:56.130
+It looks good. So there must be a bug somewhere here.
+
+00:05:56.350 --> 00:06:06.070
+It registered, paid the fee, that's A.
+
+00:06:07.610 --> 00:06:13.235
+All right. Let me go ahead and compare my code snippet
+
+00:06:13.235 --> 00:06:19.045
+with the code I've done to make sure that there's no problem.
+
+00:06:19.045 --> 00:06:23.920
+That looks good. That also looks good.
+
+00:06:27.950 --> 00:06:30.665
+I have to troubleshoot a bit more.
+
+00:06:30.665 --> 00:06:39.650
+So the integer value is not being returned correctly.
+
+00:06:39.650 --> 00:06:43.910
+[inaudible]
+
+00:06:43.910 --> 00:06:47.015
+Yeah. So I found the problem.
+
+00:06:47.015 --> 00:06:50.765
+I neglected to put a call statement right there,
+
+00:06:50.765 --> 00:06:52.980
+a call method right there.
+
+00:06:52.980 --> 00:06:56.600
+It is a non-estate changing call.
+
+00:06:56.600 --> 00:06:59.060
+So that was a little oversight there.
+
+00:06:59.060 --> 00:07:07.770
+But it's good to troubleshoot so you can see how we can diagnose such problems.
+
+00:07:10.010 --> 00:07:12.975
+They should work. Still not working.
+
+00:07:12.975 --> 00:07:16.675
+All right. So we've got another problem.
+
+00:07:16.675 --> 00:07:20.735
+That's one more there.
+
+00:07:20.735 --> 00:07:28.240
+Yes. So we have to await their response and that should take care of it finally.
+
+00:07:36.530 --> 00:07:44.630
+There we go, and our code has worked after those two minor hiccups.
+
+00:07:44.630 --> 00:07:50.120
+So you can see that the random numbers are working correctly,
+
+00:07:50.120 --> 00:07:53.315
+the de-duplication code is working correctly,
+
+00:07:53.315 --> 00:07:56.150
+and so all of these Oracles are registered.
+
+00:07:56.150 --> 00:07:58.740
+So now, we would have,
+
+00:07:58.740 --> 00:08:02.735
+if we were to continue using this test and not redeploy, etc,
+
+00:08:02.735 --> 00:08:06.260
+each Oracle would have a certain number of
+
+00:08:06.260 --> 00:08:09.815
+indexes it would be watching for and only respond.
+
+00:08:09.815 --> 00:08:14.940
+So this particular one would only respond if the request was for one,
+
+00:08:14.940 --> 00:08:19.130
+six, or eight, and that's a great way to have a little bit of distribution.
+
+00:08:19.130 --> 00:08:20.960
+Intuitively, looking at this,
+
+00:08:20.960 --> 00:08:25.790
+you can probably gauge that in order for this to work,
+
+00:08:25.790 --> 00:08:28.370
+you actually need a large number of Oracles.
+
+00:08:28.370 --> 00:08:31.730
+Otherwise, you might end up with scenarios where there's
+
+00:08:31.730 --> 00:08:36.290
+one or none potentially depending on what has happened.
+
+00:08:36.290 --> 00:08:40.400
+So for such scenarios to work,
+
+00:08:40.400 --> 00:08:43.280
+whether it's in development or in the real world,
+
+00:08:43.280 --> 00:08:48.320
+you do need to have some code in your smart contract that waits until
+
+00:08:48.320 --> 00:08:55.165
+a certain number of Oracles have registered in order to kick off the process.
+
+00:08:55.165 --> 00:08:59.630
+All right. That was really good troubleshooting and it
+
+00:08:59.630 --> 00:09:04.310
+helps sometimes to see other people make some of these typos, etc.
+
+00:09:04.310 --> 00:09:10.290
+So you can see how you can get out of such binds.
+
+00:09:10.390 --> 00:09:16.025
+Let's now go ahead and work on a quiz.
+
+00:09:16.025 --> 00:09:18.470
+Our quiz question is,
+
+00:09:18.470 --> 00:09:23.640
+what is the best way to generate a truly random number in Solidity code?
+

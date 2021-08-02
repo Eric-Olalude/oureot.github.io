@@ -1,0 +1,400 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Memory Pool</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Blockchain Basics</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Lesson Introduction.html">01. Lesson Introduction</a>
+    </li>
+    <li class="">
+      <a href="02. Interview Blockchain Fundamentals.html">02. Interview: Blockchain Fundamentals</a>
+    </li>
+    <li class="">
+      <a href="03. Financial Transactions.html">03. Financial Transactions</a>
+    </li>
+    <li class="">
+      <a href="04. Introduction to Bitcoin.html">04. Introduction to Bitcoin</a>
+    </li>
+    <li class="">
+      <a href="05. Hashing.html">05. Hashing</a>
+    </li>
+    <li class="">
+      <a href="06. Practice Hashing.html">06. Practice Hashing</a>
+    </li>
+    <li class="">
+      <a href="07. Blocks.html">07. Blocks</a>
+    </li>
+    <li class="">
+      <a href="08. Practice Block.html">08. Practice Block</a>
+    </li>
+    <li class="">
+      <a href="09. Blockchain.html">09. Blockchain</a>
+    </li>
+    <li class="">
+      <a href="10. Distributed Peer-to-Peer Network.html">10. Distributed Peer-to-Peer Network</a>
+    </li>
+    <li class="">
+      <a href="11. Memory Pool.html">11. Memory Pool</a>
+    </li>
+    <li class="">
+      <a href="12. Consensus.html">12. Consensus</a>
+    </li>
+    <li class="">
+      <a href="13. Proof of Work.html">13. Proof of Work</a>
+    </li>
+    <li class="">
+      <a href="14. Proof of Stake.html">14. Proof of Stake</a>
+    </li>
+    <li class="">
+      <a href="15. Delegated Byzantine Fault Tolerance.html">15. Delegated Byzantine Fault Tolerance</a>
+    </li>
+    <li class="">
+      <a href="16. Other Consensus Models.html">16. Other Consensus Models</a>
+    </li>
+    <li class="">
+      <a href="17. Recap of Achieving Consensus.html">17. Recap of Achieving Consensus</a>
+    </li>
+    <li class="">
+      <a href="18. Interview Blockchain Fundamentals.html">18. Interview: Blockchain Fundamentals</a>
+    </li>
+    <li class="">
+      <a href="19. Lesson Recap.html">19. Lesson Recap</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">11. Memory Pool</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="memory-pool">Memory Pool</h1>
+<p>Before getting onto the blockchain or becoming part of the network, transactions go into what is known as the memory pool.</p>
+<p>The <strong>memory pool</strong> (also known as the <strong>mempool</strong>) is the waiting place for transactions before they enter the blockchain. The blockchain can only handle so much information at once, and the backlog of information goes here. In this section, we'll go over many more details about what a memory pool is and why it's important.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/block-line-fill-small.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="memory-pool-overview">Memory Pool Overview</h1>
+<p>In this first video, we'll cover what a memory pool is, how it works, and what makes it such an important part of the blockchain. We'll even look at transactions in the blockchain using an online mempool explorer!</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Memory Pool</p></h3>
+  <video controls>
+  <source src="11. Memory Pool-7oab3_WJUTE.mp4" type="video/mp4">
+
+  <track default="true" kind="subtitles" srclang="en" src="11. Memory Pool-7oab3_WJUTE.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/block-line-fill-small.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="resources">Resources</h1>
+<blockquote>
+  <p><a href="https://www.blockchain.com/about/index.html" rel="noopener noreferrer" target="_blank">Blockchain.com</a></p>
+  <ul>
+  <li>See <a href="https://blockchain.info/unconfirmed-transactions" rel="noopener noreferrer" target="_blank">Unconfirmed Transactions</a></li>
+  <li>Explore <a href="https://blockchain.info/charts" rel="noopener noreferrer" target="_blank">Blockchain Data Charts</a></li>
+  </ul>
+</blockquote>
+<blockquote>
+  <p><a href="https://bitcoinvisuals.com/stats" rel="noopener noreferrer" target="_blank">Bitcoin Visuals</a> - Another fun site to check bitcoin stats (e.g. fees, mempool, block speed, and hashrate)</p>
+</blockquote>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/block-line-fill-small.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="problem-mempool-transactions">Problem: Mempool Transactions</h2>
+<p>Now we know how a transaction gets into the <strong>mempool</strong>, but how does it leave? Take some time to consider the question below to help figure this out. Afterwards, we'll go into another video where we explain how this could happen.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Leaving the Mempool</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>Which of these are valid reasons a Transaction would leave the Mempool?</p></legend>
+    </fieldset>
+
+    <div>
+      <input type="checkbox" value="a1530303197894" name="667975" id="a1530303197894">
+      <label for="a1530303197894"><p>The transaction expired by timeout (by default 14 days after entering).</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1530303213576" name="667975" id="a1530303213576">
+      <label for="a1530303213576"><p>The transaction was at the bottom of the mempool (when sorted by fee per size), the mempool had reached its size limit, and a new higher-fee transaction was accepted, evicting the transaction at the bottom.</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1530303221617" name="667975" id="a1530303221617">
+      <label for="a1530303221617"><p>The transaction was included in a block.</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1530303227588" name="667975" id="a1530303227588">
+      <label for="a1530303227588"><p>The transaction or one of its unconfirmed ancestors conflicts with a transaction that was included in a block.</p></label>
+    </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    <ul>
+      <li>The transaction expired by timeout (by default 14 days after entering).</li>
+      <li>The transaction was at the bottom of the mempool (when sorted by fee per size), the mempool had reached its size limit, and a new higher-fee transaction was accepted, evicting the transaction at the bottom.</li>
+      <li>The transaction was included in a block.</li>
+      <li>The transaction or one of its unconfirmed ancestors conflicts with a transaction that was included in a block.</li>
+  </ul>
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/block-line-fill-small.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="why-transactions-leave-the-mempool">Why Transactions Leave the Mempool</h2>
+<p>Hopefully you had some time to consider the problem above. In the next video, we'll go over our answer to help describe why transactions end up leaving the <strong>mempool</strong>.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Memory Pool</p></h3>
+  <video controls>
+  <source src="11. Memory Pool-V8gpNHVtz2o.mp4" type="video/mp4">
+
+  <track default="true" kind="subtitles" srclang="en" src="11. Memory Pool-V8gpNHVtz2o.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/block-line-fill-small.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="wrapping-up">Wrapping Up</h1>
+<p>That wraps up this section on the Memory pool.  At this point we discussed what the memory pool is, why it's important, and how it helps contribute to transactions entering the blockchain. </p>
+<p>Understanding hashing, blocks, blockchains, networks, and now mempools is a huge step! </p>
+<p>The questions you might have at this point are…</p>
+<ul>
+<li>Who's making the decisions around here? </li>
+<li>Who is deciding when a transaction is valid or what data belongs in a block?</li>
+</ul>
+<p>This is done using what's known as <strong>consensus</strong>.  Consensus drives all of the decisions made to establish and grow the blockchain. In the next section, we'll go over what consensus is, and how it helps make decisions related to the blockchain.</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="12. Consensus.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('11. Memory Pool')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

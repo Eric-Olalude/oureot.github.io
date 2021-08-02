@@ -1,0 +1,328 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.945
+When talking about the blockchain,
+
+00:00:01.945 --> 00:00:04.150
+you'll often hear the network come up.
+
+00:00:04.150 --> 00:00:07.290
+The blockchain is supported by a network more specifically
+
+00:00:07.290 --> 00:00:10.585
+known as a distributed peer-to-peer network.
+
+00:00:10.585 --> 00:00:12.420
+In this video, we'll cover what
+
+00:00:12.419 --> 00:00:16.844
+a distributed peer-to-peer network is and compare it to some other types of networks.
+
+00:00:16.844 --> 00:00:19.229
+Now a peer-to-peer network is a network of
+
+00:00:19.230 --> 00:00:22.875
+computers that allows information to be shared across users.
+
+00:00:22.875 --> 00:00:27.329
+It allows users known as nodes to send information directly
+
+00:00:27.329 --> 00:00:31.784
+between one another without the need for a central authority to hold that information.
+
+00:00:31.785 --> 00:00:34.869
+So it's a way to connect users to be able to share information.
+
+00:00:34.869 --> 00:00:38.929
+As an example, think of any chat service like Skype,
+
+00:00:38.929 --> 00:00:40.804
+WeChat or Google Hangouts.
+
+00:00:40.804 --> 00:00:45.615
+These are all peer-to-peer networks that allow you to talk with your friends and family.
+
+00:00:45.615 --> 00:00:47.370
+If you're unfamiliar with these apps,
+
+00:00:47.369 --> 00:00:49.619
+you can also think of phones as an example.
+
+00:00:49.619 --> 00:00:52.744
+Phones give peer-to-peer access to anyone else with a phone,
+
+00:00:52.744 --> 00:00:56.054
+and the blockchain is also a peer-to-peer network.
+
+00:00:56.054 --> 00:01:00.530
+This allows us to interact directly with other peers on the blockchain.
+
+00:01:00.530 --> 00:01:04.710
+But the blockchain isn't only peer-to-peer, it's also distributed.
+
+00:01:04.709 --> 00:01:08.750
+A distributed network is similar to the idea of a peer-to-peer network.
+
+00:01:08.750 --> 00:01:12.620
+It's a network that allows information to be spread across many users.
+
+00:01:12.620 --> 00:01:16.439
+So while being peer-to-peer allows open communication across users,
+
+00:01:16.439 --> 00:01:21.299
+being distributed allows that information itself to be owned by those users.
+
+00:01:21.299 --> 00:01:23.769
+To understand a distributed network,
+
+00:01:23.769 --> 00:01:27.104
+it helps to see how it compares with other types of networks.
+
+00:01:27.105 --> 00:01:29.390
+Here, we'll compare centralized,
+
+00:01:29.390 --> 00:01:32.424
+decentralized and distributed networks.
+
+00:01:32.424 --> 00:01:34.234
+As we talk through these examples,
+
+00:01:34.234 --> 00:01:38.859
+keep in mind that each type of network has its own strengths and use cases.
+
+00:01:38.859 --> 00:01:43.010
+The blockchain is in distributed because that's simply the best type of network.
+
+00:01:43.010 --> 00:01:47.000
+It's distributed specifically because it's trying to avoid being centralized.
+
+00:01:47.000 --> 00:01:50.040
+It's chosen to avoid the problems it sees with centralizing
+
+00:01:50.040 --> 00:01:54.395
+information in favor of the benefits it sees in a distributed system.
+
+00:01:54.394 --> 00:01:55.994
+In a centralised system,
+
+00:01:55.995 --> 00:01:58.740
+everything connects to a central network owner.
+
+00:01:58.739 --> 00:02:00.684
+This owner can be a person,
+
+00:02:00.685 --> 00:02:02.500
+a company or a database.
+
+00:02:02.500 --> 00:02:06.439
+If there's only a single source that holds all the information for the system,
+
+00:02:06.439 --> 00:02:08.034
+it's a centralised system.
+
+00:02:08.034 --> 00:02:09.449
+To help picture this,
+
+00:02:09.449 --> 00:02:12.464
+imagine a library that contains all the books in the world.
+
+00:02:12.465 --> 00:02:14.430
+Anytime you want information,
+
+00:02:14.430 --> 00:02:16.230
+you'd have to go to this library to get it.
+
+00:02:16.229 --> 00:02:19.543
+The information in this case is completely centralized.
+
+00:02:19.544 --> 00:02:24.540
+So this can be very effective and is extremely common way to share information.
+
+00:02:24.539 --> 00:02:27.234
+But what if our library were destroyed?
+
+00:02:27.235 --> 00:02:29.555
+Well in this case, we would lose everything.
+
+00:02:29.555 --> 00:02:31.719
+In a completely centralized system,
+
+00:02:31.719 --> 00:02:34.569
+we wouldn't have any way to recover this information.
+
+00:02:34.569 --> 00:02:37.084
+Another possible issue could be speed.
+
+00:02:37.085 --> 00:02:39.909
+To get a book, you'll need to go all the way to
+
+00:02:39.909 --> 00:02:42.615
+the library no matter how far away you might live.
+
+00:02:42.615 --> 00:02:44.495
+To help address some of these concerns,
+
+00:02:44.495 --> 00:02:46.564
+other types of networks have been created.
+
+00:02:46.564 --> 00:02:49.764
+One of these is called a decentralized network.
+
+00:02:49.764 --> 00:02:51.414
+In a decentralized network,
+
+00:02:51.414 --> 00:02:55.144
+there's no longer a single point where all this information exists.
+
+00:02:55.145 --> 00:02:59.139
+Instead, this information is spread across multiple locations.
+
+00:02:59.139 --> 00:03:02.115
+So instead of holding all our books in a single library,
+
+00:03:02.115 --> 00:03:04.625
+we have many libraries spread throughout the city.
+
+00:03:04.625 --> 00:03:07.719
+Duplicates of each book could exist in each library.
+
+00:03:07.719 --> 00:03:09.609
+Now if our library were destroyed,
+
+00:03:09.610 --> 00:03:12.070
+we'll lose some of these resources and that's definitely
+
+00:03:12.069 --> 00:03:14.894
+really sad but we don't lose all the information.
+
+00:03:14.895 --> 00:03:17.825
+We still have backups of these books in other locations.
+
+00:03:17.824 --> 00:03:21.864
+Here, we could also have libraries spread out and easier to access.
+
+00:03:21.865 --> 00:03:25.620
+Instead of having to go all the way to a center of a large city,
+
+00:03:25.620 --> 00:03:29.080
+you have a library down the street or in your local town.
+
+00:03:29.080 --> 00:03:34.335
+A distributed system is a decentralized system pushed to its furthest limits.
+
+00:03:34.335 --> 00:03:36.025
+In a distributed system,
+
+00:03:36.025 --> 00:03:40.935
+everyone gets a copy of the information with the same access and control as anyone else.
+
+00:03:40.935 --> 00:03:44.275
+There's no centralization of the information at all.
+
+00:03:44.275 --> 00:03:48.724
+This gives everyone equal access to whatever information that they need.
+
+00:03:48.724 --> 00:03:52.139
+If we extend our library example just a little bit further,
+
+00:03:52.139 --> 00:03:55.174
+we can use it to describe a distributed system.
+
+00:03:55.175 --> 00:03:59.030
+To help imagine it, pretend our library holds 50 books.
+
+00:03:59.030 --> 00:04:02.250
+This is small enough that you could fit them all in your personal bookshelf.
+
+00:04:02.250 --> 00:04:04.800
+So let's say a whole group of people each get
+
+00:04:04.800 --> 00:04:07.530
+their own 50 books to put onto the personal bookshelves.
+
+00:04:07.530 --> 00:04:09.990
+This will create a network where everyone has
+
+00:04:09.990 --> 00:04:13.525
+quick and easy access to all the information that already exists.
+
+00:04:13.525 --> 00:04:16.350
+This is the idea behind a distributed network.
+
+00:04:16.350 --> 00:04:18.535
+Since we now each have information,
+
+00:04:18.535 --> 00:04:20.835
+we wouldn't really have much use for the library.
+
+00:04:20.834 --> 00:04:23.639
+But whether it's library books, data,
+
+00:04:23.639 --> 00:04:25.694
+ledgers or anything else,
+
+00:04:25.694 --> 00:04:29.564
+these core concepts about the way we share information still applies.
+
+00:04:29.564 --> 00:04:31.829
+So that's the idea behind centralized,
+
+00:04:31.829 --> 00:04:34.274
+decentralized and distributed networks.
+
+00:04:34.274 --> 00:04:36.384
+Now, let's go back to the blockchain.
+
+00:04:36.384 --> 00:04:38.149
+Why was all this important?
+
+00:04:38.149 --> 00:04:41.639
+It's important because the blockchain is a distributed network.
+
+00:04:41.639 --> 00:04:45.365
+If a distributed network gives everyone ownership of the information,
+
+00:04:45.365 --> 00:04:47.275
+how do we do this with a blockchain?
+
+00:04:47.274 --> 00:04:51.414
+Here, everyone downloads a copy of the blockchain to their local computer.
+
+00:04:51.415 --> 00:04:53.830
+They interact with this copy of the blockchain and
+
+00:04:53.829 --> 00:04:56.495
+have full access to all the information it contains.
+
+00:04:56.495 --> 00:04:58.735
+This is similar to the library example with
+
+00:04:58.735 --> 00:05:01.435
+everyone having access and control over their books.
+
+00:05:01.435 --> 00:05:03.829
+So we don't need to go to the library to find them.
+
+00:05:03.829 --> 00:05:07.060
+With everyone having access to the transaction information,
+
+00:05:07.060 --> 00:05:11.420
+we don't need anyone else like a bank to track that information for us.
+
+00:05:11.420 --> 00:05:14.050
+This distributed system is one way the blockchain is
+
+00:05:14.050 --> 00:05:16.750
+attempting to bypass the need for external third parties.
+
+00:05:16.750 --> 00:05:21.334
+So, that's how the blockchain operates as a distributed peer-to-peer network.
+
+00:05:21.334 --> 00:05:25.139
+It allows everyone to interact freely with one another on the network,
+
+00:05:25.139 --> 00:05:30.439
+and it gives everyone full access to the transaction histories held on the blockchain.
+

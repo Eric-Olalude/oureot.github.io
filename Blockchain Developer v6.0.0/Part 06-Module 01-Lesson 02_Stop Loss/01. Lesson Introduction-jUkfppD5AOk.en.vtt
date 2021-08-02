@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.270
+So now that we've completed the warm up,
+
+00:00:03.270 --> 00:00:08.400
+it's time to start getting into the essence of this course.
+
+00:00:08.400 --> 00:00:14.835
+We'll look at how we can give our smart contract the ability to be paused.
+
+00:00:14.835 --> 00:00:19.755
+The reason why you'd want to do that is to prevent financial loss.
+
+00:00:19.754 --> 00:00:23.939
+For example, if you discover a bug in your smart contract and it's executing
+
+00:00:23.940 --> 00:00:28.215
+and people are using it to extract funds from the smart contract,
+
+00:00:28.214 --> 00:00:30.390
+that's something that you'd want to stop
+
+00:00:30.390 --> 00:00:35.310
+immediately while you figure out what is the correct solution to mitigate the problem.
+
+00:00:35.310 --> 00:00:37.980
+So that's a really good reason to be able to
+
+00:00:37.979 --> 00:00:41.219
+have the ability to pause your smart contract.
+
+00:00:41.219 --> 00:00:42.818
+In a lot of industries,
+
+00:00:42.819 --> 00:00:45.320
+the term that's used is called stop loss.
+
+00:00:45.320 --> 00:00:48.259
+This is especially true in retail industry,
+
+00:00:48.259 --> 00:00:52.233
+where when there is an adverse situation in progress,
+
+00:00:52.234 --> 00:00:56.630
+the first thing you want to do is to be able to prevent further loss.
+
+00:00:56.630 --> 00:01:00.980
+So that's what we're going to focus on with the operational status.
+
+00:01:00.979 --> 00:01:04.519
+Before we go on, let's take our first quiz.
+
+00:01:04.519 --> 00:01:10.859
+What scenarios would require a smart contract to be paused?
+最新课程跟课件还有一对一辅导请加wx：udacity6

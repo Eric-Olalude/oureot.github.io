@@ -1,0 +1,169 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.980
+Now blockchains have become extremely popular, but what are they?
+
+00:00:03.980 --> 00:00:06.700
+And how do they work? And what problems they solve?
+
+00:00:06.700 --> 00:00:10.140
+Well, blockchain is simply a shared database that contains a list of
+
+00:00:10.140 --> 00:00:12.360
+transactions and these transactions
+
+00:00:12.359 --> 00:00:15.334
+are made between the users who become part of this network.
+
+00:00:15.335 --> 00:00:18.255
+Transaction can be something as simple as sending money.
+
+00:00:18.254 --> 00:00:20.189
+This was actually a popular use cases of
+
+00:00:20.190 --> 00:00:23.630
+the blockchain versus established by the cryptocurrency Bitcoin.
+
+00:00:23.629 --> 00:00:26.890
+Now the idea for Bitcoin came from an unknown developer
+
+00:00:26.890 --> 00:00:30.315
+who goes by the name Satoshi Nakamoto back in 2009,
+
+00:00:30.315 --> 00:00:34.120
+and the idea was to create a new type of currency that is open to
+
+00:00:34.119 --> 00:00:38.479
+anyone and can establish the trust needed to facilitate transactions.
+
+00:00:38.479 --> 00:00:42.759
+Bitcoin may have been the first blockchain but there have been many more sense,
+
+00:00:42.759 --> 00:00:46.179
+and use cases are popping up in many industries besides finance.
+
+00:00:46.179 --> 00:00:48.689
+So the way that this data is created,
+
+00:00:48.689 --> 00:00:52.769
+organized, and managed on a blockchain helps to do some pretty cool things.
+
+00:00:52.770 --> 00:00:57.080
+For one, blockchain data is shared by all users on this network.
+
+00:00:57.079 --> 00:01:00.089
+It's not kept in the hands of any central authority.
+
+00:01:00.090 --> 00:01:02.870
+Secondly, it's extremely difficult to change
+
+00:01:02.869 --> 00:01:05.670
+any data once it has been put onto a blockchain.
+
+00:01:05.670 --> 00:01:07.159
+Putting these two things together,
+
+00:01:07.159 --> 00:01:09.709
+you end up with a shared perminant history of
+
+00:01:09.709 --> 00:01:13.979
+transactions that we can trust to be accurate and up-to-date.
+
+00:01:14.170 --> 00:01:20.215
+So, how does this all work? Let's say I'm trying to send you 10 Eudacity as coins.
+
+00:01:20.215 --> 00:01:22.490
+To send these coins, we'll each need
+
+00:01:22.489 --> 00:01:25.759
+a digital wallet which you can picture as a normal wallet for now.
+
+00:01:25.760 --> 00:01:31.594
+I'll send my Eudacity coins from my wallet to yours and this we'll call a transaction.
+
+00:01:31.594 --> 00:01:35.629
+The transaction is a record of information like who sent it,
+
+00:01:35.629 --> 00:01:38.530
+who were sent to and how much was sent.
+
+00:01:38.530 --> 00:01:42.420
+Next, the transaction is sent out to a network of users,
+
+00:01:42.420 --> 00:01:44.465
+and the goal of this network is to take
+
+00:01:44.465 --> 00:01:48.365
+our transactions and group it with other transactions into a block.
+
+00:01:48.364 --> 00:01:50.739
+Once enough transactions are collected,
+
+00:01:50.739 --> 00:01:54.604
+the block is full and ready to be permanently added to the blockchain.
+
+00:01:54.605 --> 00:02:00.255
+To do this, before block is assigned a unique value what's known as a hash.
+
+00:02:00.254 --> 00:02:02.420
+A hash is unique fingerprint of
+
+00:02:02.420 --> 00:02:06.305
+inflammation that allows us to identify the block in the future.
+
+00:02:06.305 --> 00:02:09.390
+This hash is really important because it uniquely
+
+00:02:09.389 --> 00:02:12.619
+identifies exactly which data was in the block.
+
+00:02:12.620 --> 00:02:16.259
+If I were to change something about our transaction, like to say,
+
+00:02:16.259 --> 00:02:18.319
+I send you five Eudacity coins instead,
+
+00:02:18.319 --> 00:02:22.245
+it will change the hash of the block making it invalid.
+
+00:02:22.245 --> 00:02:25.469
+The block is given a hash value as
+
+00:02:25.469 --> 00:02:28.280
+well as the hash of the block that was created before it,
+
+00:02:28.280 --> 00:02:31.729
+and this links the two blocks together and over time,
+
+00:02:31.729 --> 00:02:35.579
+this continues to build out a longer and longer chain of blocks.
+
+00:02:35.580 --> 00:02:38.430
+As time goes on, this blockchain creates
+
+00:02:38.430 --> 00:02:40.814
+an unchangeable historical record of
+
+00:02:40.814 --> 00:02:44.039
+all transactions that have ever happened on the network.
+
+00:02:44.039 --> 00:02:46.469
+This idea has allowed us to create
+
+00:02:46.469 --> 00:02:49.984
+some really exciting new applications in many different industries.
+
+00:02:49.985 --> 00:02:54.410
+Hopefully, this gives you a basic idea of what's going on on the blockchain.
+
+00:02:54.409 --> 00:02:57.884
+We'll be discussing all this and more throughout the program.
+
+00:02:57.884 --> 00:03:01.229
+So check out the next video for more information on the products you'll
+
+00:03:01.229 --> 00:03:05.719
+complete on your way to creating your very own blockchain application.
+

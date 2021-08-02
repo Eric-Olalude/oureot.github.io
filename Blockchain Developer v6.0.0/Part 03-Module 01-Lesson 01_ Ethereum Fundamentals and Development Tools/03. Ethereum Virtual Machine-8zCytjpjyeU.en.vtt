@@ -1,0 +1,163 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.265
+Before wrapping up this overview of new terms,
+
+00:00:03.265 --> 00:00:09.390
+let's recap an important part of ethereum known as the Ethereum Virtual Machine or EVM.
+
+00:00:09.390 --> 00:00:13.644
+The EVM is the machine that powers and runs the ethereum platform.
+
+00:00:13.644 --> 00:00:16.989
+It's often called the operating system of ethereum.
+
+00:00:16.989 --> 00:00:21.704
+It's what's responsible for running the thousands of nodes spread across the world.
+
+00:00:21.704 --> 00:00:24.529
+To do this, all nodes on the ethereum network
+
+00:00:24.530 --> 00:00:27.730
+run the EVM as well as validating transactions.
+
+00:00:27.730 --> 00:00:30.740
+This worldwide distributed set of nodes running
+
+00:00:30.739 --> 00:00:34.204
+the EVM is what we refer to as the world computer.
+
+00:00:34.204 --> 00:00:39.379
+Almost everything we learned about ethereum so far is possible because of the EVM.
+
+00:00:39.380 --> 00:00:42.350
+The state of ethereum blockchain is what allows us to
+
+00:00:42.350 --> 00:00:45.195
+understand things like the account balance of each user,
+
+00:00:45.195 --> 00:00:47.679
+and it's the EVM that helps manage this.
+
+00:00:47.679 --> 00:00:52.545
+The accounts we mentioned like EOAs and CAs are connected to the EVM.
+
+00:00:52.545 --> 00:00:57.664
+Also, every transaction that gets initiated goes through the EVM.
+
+00:00:57.664 --> 00:01:00.679
+Even the gas it cost to run computations is
+
+00:01:00.679 --> 00:01:04.099
+calculated by the work done on the Ethereum Virtual Machine.
+
+00:01:04.099 --> 00:01:05.659
+As the name suggests,
+
+00:01:05.659 --> 00:01:09.844
+an Ethereum Virtual Machine is a virtual machine that executes code.
+
+00:01:09.844 --> 00:01:13.510
+Said differently, it's a runtime environment for smart contracts.
+
+00:01:13.510 --> 00:01:15.550
+In an implementation layer,
+
+00:01:15.549 --> 00:01:18.079
+it uses a stack-based architecture.
+
+00:01:18.079 --> 00:01:22.295
+There are several implementations of this already live on the main network.
+
+00:01:22.295 --> 00:01:25.290
+These are go-ethereum, Parity,
+
+00:01:25.290 --> 00:01:28.445
+cpp-ethereum, Py-EVM, and others.
+
+00:01:28.444 --> 00:01:30.409
+These are what allow us to access
+
+00:01:30.409 --> 00:01:34.700
+the EVM's functionality using different programming languages like Go,
+
+00:01:34.700 --> 00:01:36.780
+C++, Python, and others.
+
+00:01:36.780 --> 00:01:39.894
+In this program, we'll be using go-ethereum.
+
+00:01:39.894 --> 00:01:44.119
+You'll learn a little more about how to get started with go- ethereum a little later.
+
+00:01:44.120 --> 00:01:48.680
+To start, Geth is a go line implementation of the ethereum protocol.
+
+00:01:48.680 --> 00:01:53.075
+It is the most common implementation used to interact with the ethereum network.
+
+00:01:53.075 --> 00:01:55.734
+We think that makes it a great place to start.
+
+00:01:55.734 --> 00:01:58.179
+But let's get back to the EVM.
+
+00:01:58.180 --> 00:02:00.230
+On top of everything else we mentioned,
+
+00:02:00.230 --> 00:02:04.715
+it's also what allows you to run a node to build and deploy smart contracts.
+
+00:02:04.715 --> 00:02:06.765
+Once a smart contract is written,
+
+00:02:06.765 --> 00:02:08.430
+it is compiled into two views.
+
+00:02:08.430 --> 00:02:10.995
+A bytecode view that is machine-readable,
+
+00:02:10.995 --> 00:02:13.564
+and an assembly view, which is human-readable.
+
+00:02:13.564 --> 00:02:16.930
+Then this compiled code executes on the EVM,
+
+00:02:16.930 --> 00:02:19.724
+which executes the logic of your program.
+
+00:02:19.724 --> 00:02:22.120
+As well as operating the main network,
+
+00:02:22.120 --> 00:02:25.900
+there's also an isolated portion of the EVM used for testing.
+
+00:02:25.900 --> 00:02:28.969
+This testing ground is important for smart contracts that need
+
+00:02:28.969 --> 00:02:32.194
+to verify their quality before going on to the main network.
+
+00:02:32.194 --> 00:02:34.639
+You'll be using this part of the EVM to test
+
+00:02:34.639 --> 00:02:37.393
+your code when you start building smart contracts.
+
+00:02:37.394 --> 00:02:39.705
+So, that's what the EVM is,
+
+00:02:39.705 --> 00:02:42.200
+and why it's such an important part of ethereum.
+
+00:02:42.199 --> 00:02:44.209
+It really is the heart of ethereum,
+
+00:02:44.210 --> 00:02:46.879
+and is responsible for a huge part of what allows us to
+
+00:02:46.879 --> 00:02:50.609
+build functional applications on the ethereum network.
+

@@ -1,0 +1,178 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.109
+Over the next few sections,
+
+00:00:02.109 --> 00:00:05.759
+we'll walk through some terms that are new and some that might be familiar already.
+
+00:00:05.759 --> 00:00:10.699
+We'll take some time to walk through how each of them relates to the Ethereum protocol.
+
+00:00:10.699 --> 00:00:15.494
+In this video, we'll start that discussion by exploring the state of a blockchain.
+
+00:00:15.494 --> 00:00:17.419
+This term hasn't come up much yet,
+
+00:00:17.420 --> 00:00:20.120
+so we'll first define what we mean by state.
+
+00:00:20.120 --> 00:00:24.505
+From there, we'll compare how state is handled in Bitcoin versus Ethereum.
+
+00:00:24.504 --> 00:00:30.049
+How a blockchain manages information within its data storage layer determines its state.
+
+00:00:30.050 --> 00:00:31.679
+It's defined by variables,
+
+00:00:31.679 --> 00:00:33.924
+like how the protocol handles transactions,
+
+00:00:33.924 --> 00:00:36.759
+keys, fees and other information.
+
+00:00:36.759 --> 00:00:39.945
+In Bitcoin, unspent transaction outputs or
+
+00:00:39.945 --> 00:00:43.814
+UTXOs are what represent the state of the blockchain.
+
+00:00:43.814 --> 00:00:47.284
+You can use this state to figure out other information.
+
+00:00:47.284 --> 00:00:49.619
+For example, you can use the sum of
+
+00:00:49.619 --> 00:00:53.974
+these UTXOs to find the number of Bitcoins owned by a user.
+
+00:00:53.975 --> 00:00:56.570
+What's interesting in Bitcoin is that it doesn't
+
+00:00:56.570 --> 00:00:59.210
+have a way to represent an account balance.
+
+00:00:59.210 --> 00:01:01.984
+That information isn't held anywhere.
+
+00:01:01.984 --> 00:01:04.879
+It's found by referring to the state of the blockchain.
+
+00:01:04.879 --> 00:01:08.164
+But it isn't an actual number you can find in the records.
+
+00:01:08.165 --> 00:01:11.525
+Instead, the account balance of a user is the sum of
+
+00:01:11.525 --> 00:01:15.195
+each UTXO owned by the users of a private key.
+
+00:01:15.194 --> 00:01:18.434
+That's different from Ethereum in a few important ways.
+
+00:01:18.435 --> 00:01:23.870
+For one, the Ethereum state can manage much more than unspent transaction outputs.
+
+00:01:23.870 --> 00:01:26.585
+Ethereum can hold these account balances.
+
+00:01:26.584 --> 00:01:27.919
+On top of that,
+
+00:01:27.920 --> 00:01:31.085
+it holds a few other fields like the Nonce, Balance,
+
+00:01:31.084 --> 00:01:32.964
+Storage Hash, Code Hash,
+
+00:01:32.965 --> 00:01:35.920
+Account Storage and Ethereum Virtual Code.
+
+00:01:35.920 --> 00:01:39.019
+This state holds a list of all accounts and creates
+
+00:01:39.019 --> 00:01:42.054
+a mapping between an address and an account State.
+
+00:01:42.055 --> 00:01:43.870
+This might be a little vague right now.
+
+00:01:43.870 --> 00:01:49.045
+And that's because it's actually a brand new conceptual idea. Here's what that means.
+
+00:01:49.045 --> 00:01:52.585
+Where in Bitcoin all information stays on the blockchain,
+
+00:01:52.584 --> 00:01:55.034
+Ethereum does this a little different.
+
+00:01:55.034 --> 00:01:57.819
+In Ethereum, the account state is separate.
+
+00:01:57.819 --> 00:01:59.750
+It is removed from the blockchain,
+
+00:01:59.750 --> 00:02:02.890
+but holds information about the state of the blockchain.
+
+00:02:02.890 --> 00:02:07.129
+The blockchain is still the ledger that maintains the history of transactions.
+
+00:02:07.129 --> 00:02:09.689
+This other information including accounts,
+
+00:02:09.689 --> 00:02:13.359
+addresses, and balances exists along with this state.
+
+00:02:13.360 --> 00:02:16.350
+Ethereum maps this information to the blockchain
+
+00:02:16.349 --> 00:02:19.699
+allowing it to track things like the account balance of user.
+
+00:02:19.699 --> 00:02:23.530
+This is possible because of something known as a Patricia tree.
+
+00:02:23.530 --> 00:02:26.060
+Trees are common data structures and you may be
+
+00:02:26.060 --> 00:02:29.009
+familiar with ones like binary trees or heaps.
+
+00:02:29.009 --> 00:02:30.929
+Patricia is an acronym.
+
+00:02:30.930 --> 00:02:33.875
+It stands for practical algorithm to retrieve
+
+00:02:33.875 --> 00:02:37.889
+information coded in alphanumeric. That's a mouthful.
+
+00:02:37.889 --> 00:02:40.549
+And without diving too far into the details,
+
+00:02:40.550 --> 00:02:43.530
+the main benefit of this structure relates to storage.
+
+00:02:43.530 --> 00:02:46.789
+It allows Ethereum to store values in a way that expands
+
+00:02:46.789 --> 00:02:50.340
+the state to include the account values we mentioned earlier.
+
+00:02:50.340 --> 00:02:52.490
+That wraps up a quick overview of
+
+00:02:52.490 --> 00:02:56.195
+blockchain state and how it differs between Bitcoin and Ethereum.
+
+00:02:56.194 --> 00:02:59.224
+Coming up, we'll look at how these states are determined
+
+00:02:59.224 --> 00:03:02.719
+by looking at account types on the Ethereum platform.
+

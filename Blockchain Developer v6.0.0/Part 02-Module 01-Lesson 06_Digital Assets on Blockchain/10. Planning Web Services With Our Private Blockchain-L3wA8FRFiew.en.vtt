@@ -1,0 +1,109 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.370
+Currently, our private blockchain is isolated,
+
+00:00:03.370 --> 00:00:07.030
+but if we want the functionality to submit an audit data on it,
+
+00:00:07.030 --> 00:00:09.519
+we need to create a backend web service that
+
+00:00:09.519 --> 00:00:12.615
+allows us to consume and use the blockchain data.
+
+00:00:12.615 --> 00:00:15.390
+Now, this section is all about planning.
+
+00:00:15.390 --> 00:00:19.429
+Planning how to create a Web service with our private blockchain.
+
+00:00:19.429 --> 00:00:21.285
+For the upcoming project,
+
+00:00:21.285 --> 00:00:25.960
+you'll create a Web service using RESTful APIs and other third party libraries that will
+
+00:00:25.960 --> 00:00:28.615
+interact with your private blockchain to submit and
+
+00:00:28.614 --> 00:00:31.699
+audit blockchain data and validate the blockchain health.
+
+00:00:31.699 --> 00:00:36.045
+Thus, transforming your private blockchain into a valuable Web service.
+
+00:00:36.045 --> 00:00:40.039
+Looking ahead, these are the steps that will take to accomplish this.
+
+00:00:40.039 --> 00:00:45.850
+First, we need to configure an API Web service with GET/POST endpoints.
+
+00:00:45.850 --> 00:00:49.700
+This requires building and deploying a local Web service with
+
+00:00:49.700 --> 00:00:54.740
+Node.js and configuring API endpoints with static mock data for testing.
+
+00:00:54.740 --> 00:00:57.289
+The endpoints will be able to get a block by
+
+00:00:57.289 --> 00:01:00.869
+its ID and then post information about a new block.
+
+00:01:00.869 --> 00:01:05.655
+Next, we'll migrate your private blockchain to the API Web service.
+
+00:01:05.655 --> 00:01:11.085
+In doing so, we'll also configure the API endpoints with your private blockchain.
+
+00:01:11.084 --> 00:01:14.269
+The endpoints will also be able to get a block by
+
+00:01:14.269 --> 00:01:17.564
+its ID and post information about a new block.
+
+00:01:17.564 --> 00:01:22.045
+It's okay if you're unclear about how to complete some or even all these steps just yet.
+
+00:01:22.045 --> 00:01:24.689
+We'll be going over this altogether.
+
+00:01:24.689 --> 00:01:30.310
+Just understand that we'll be moving through the process step by step in this manner,
+
+00:01:30.310 --> 00:01:33.650
+and I've also linked this plan down on the text below for your reference.
+
+00:01:33.650 --> 00:01:36.715
+Now, the past cubal sections was an overview
+
+00:01:36.715 --> 00:01:40.204
+of Web services and how it integrates with blockchains.
+
+00:01:40.204 --> 00:01:43.539
+We covered, what is a Web service as well as
+
+00:01:43.540 --> 00:01:47.040
+considerations when integrating a Web service with blockchains.
+
+00:01:47.040 --> 00:01:51.510
+We also looked at plans for building a Web service with our private blockchain.
+
+00:01:51.510 --> 00:01:54.055
+In the planning section, we lay out a guide
+
+00:01:54.055 --> 00:01:56.845
+of where we are and what needs to be accomplished.
+
+00:01:56.844 --> 00:01:59.289
+With this background, a plan of attack in mind,
+
+00:01:59.290 --> 00:02:03.150
+follow along in the next section as we begin to configure a Web service API,
+
+00:02:03.150 --> 00:02:07.719
+but first building and deploying a local Web service with Node.js.
+

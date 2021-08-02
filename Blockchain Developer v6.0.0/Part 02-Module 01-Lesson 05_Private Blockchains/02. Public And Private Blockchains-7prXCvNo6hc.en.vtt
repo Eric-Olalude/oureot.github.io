@@ -1,0 +1,190 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.480
+Public blockchains can serve as a backbone for
+
+00:00:03.480 --> 00:00:07.685
+nearly any democratized solution whether verifying identity,
+
+00:00:07.684 --> 00:00:13.394
+helping Internet users gain control over their data or enhancing collaborative efforts.
+
+00:00:13.394 --> 00:00:17.475
+Public blockchains are at the front line of the revolution because
+
+00:00:17.475 --> 00:00:21.845
+of their permissionless design that allows anyone to participate.
+
+00:00:21.844 --> 00:00:24.750
+In course one, you learned the value of
+
+00:00:24.750 --> 00:00:29.629
+identity management with your private and public keys and wallet addresses.
+
+00:00:29.629 --> 00:00:33.799
+With course two, you were introduced to the public testnet.
+
+00:00:33.799 --> 00:00:36.949
+This is a great example of a public blockchain.
+
+00:00:36.950 --> 00:00:40.965
+All of us are able to participate without needing permission.
+
+00:00:40.965 --> 00:00:44.465
+It's pretty clear the power of a public blockchain,
+
+00:00:44.465 --> 00:00:48.165
+but what does it mean to be a private blockchain?
+
+00:00:48.164 --> 00:00:50.210
+In this video, we will discuss
+
+00:00:50.210 --> 00:00:53.620
+the essential difference between public and private blockchains.
+
+00:00:53.619 --> 00:00:58.054
+We'll compare them based on four atributtes; their permissions,
+
+00:00:58.054 --> 00:01:04.094
+scalability, vulnerability and compliance. Let's get started.
+
+00:01:04.094 --> 00:01:09.390
+First, let's look at how permissions differ between these blockchain types.
+
+00:01:09.390 --> 00:01:12.545
+Public blockchains are open and permissionless allowing
+
+00:01:12.545 --> 00:01:15.850
+anyone to participate or benefit from the technology.
+
+00:01:15.849 --> 00:01:21.599
+For example, bitcoin is known for its creation of a blockchain with public protocol.
+
+00:01:21.599 --> 00:01:23.949
+This allows for users to build and run
+
+00:01:23.950 --> 00:01:28.810
+their own peer-to-peer transaction network without building their own ecosystem.
+
+00:01:28.810 --> 00:01:30.564
+Anyone can participate.
+
+00:01:30.564 --> 00:01:34.034
+This is the driving force behind public blockchains.
+
+00:01:34.034 --> 00:01:39.039
+The success of bitcoins public protocol led to create a new platform,
+
+00:01:39.040 --> 00:01:43.615
+which foster an open ecosystem with a public protocol.
+
+00:01:43.614 --> 00:01:47.000
+One of these platforms has become very popular,
+
+00:01:47.000 --> 00:01:48.555
+is known as Ethereum.
+
+00:01:48.555 --> 00:01:50.890
+This is known as the second generation of
+
+00:01:50.890 --> 00:01:56.004
+blockchain services and you'll be learning more about this later on in our program.
+
+00:01:56.004 --> 00:01:59.349
+Unlike public blockchains, private blockchains require
+
+00:01:59.349 --> 00:02:03.784
+permission to access and typically operate under centralized control.
+
+00:02:03.784 --> 00:02:09.305
+Let's look a little more into private blockchains starting with scalability.
+
+00:02:09.305 --> 00:02:12.710
+Private block chains benefit from efficiency in terms
+
+00:02:12.710 --> 00:02:16.250
+of scalability and compliance with regulatory requirements.
+
+00:02:16.250 --> 00:02:21.509
+The drawback with a private permission blockchain is the vulnerability of its network,
+
+00:02:21.509 --> 00:02:24.560
+where bad actors could potentially manipulate its dataset
+
+00:02:24.560 --> 00:02:28.055
+due to vulnerabilities of centralized governance.
+
+00:02:28.055 --> 00:02:30.920
+While private blockchains have low transparency,
+
+00:02:30.919 --> 00:02:34.899
+meaning they restrict information from being seen by the general public,
+
+00:02:34.900 --> 00:02:37.640
+they also rely on their limited private networks
+
+00:02:37.639 --> 00:02:40.659
+to maintain the integrity of the blockchain itself.
+
+00:02:40.659 --> 00:02:44.349
+Public blockchains on the other hand are permissionless and can
+
+00:02:44.349 --> 00:02:47.849
+be maintained by anyone with sufficient computing power to do so.
+
+00:02:47.849 --> 00:02:53.784
+The public openness allows for full transparency of the information they contain.
+
+00:02:53.784 --> 00:03:00.109
+The biggest drawback of public blockchain is scalability and regulatory compliance.
+
+00:03:00.110 --> 00:03:02.560
+For instance, with Bitcoin Core,
+
+00:03:02.560 --> 00:03:05.349
+transactions on the public chain are
+
+00:03:05.349 --> 00:03:10.454
+time-restricted with new blocks being added to the chain about every 10 minutes.
+
+00:03:10.455 --> 00:03:14.980
+This restriction improves security and controls supply yet impacts
+
+00:03:14.979 --> 00:03:20.689
+scalability of transactions the platform can process at any given time.
+
+00:03:20.689 --> 00:03:23.120
+As far as regulatory compliance,
+
+00:03:23.120 --> 00:03:26.395
+a public blockchain lacks centralized control.
+
+00:03:26.395 --> 00:03:28.689
+When new laws are created by
+
+00:03:28.689 --> 00:03:33.590
+local governments there is limited ability to adopt those laws.
+
+00:03:33.590 --> 00:03:39.069
+To recap, we just compared the difference between private and public blockchains,
+
+00:03:39.069 --> 00:03:41.644
+a quick overview of permission types,
+
+00:03:41.645 --> 00:03:45.655
+Scalability, Vulnerability and Compliance.
+
+00:03:45.655 --> 00:03:48.250
+For more details, it's best to review
+
+00:03:48.250 --> 00:03:51.794
+developer documentation for the platform you're interested in.
+
+00:03:51.794 --> 00:03:55.239
+Understanding the difference will help you know when it's best to
+
+00:03:55.240 --> 00:04:00.159
+apply a public or private blockchain depending on your use case.
+

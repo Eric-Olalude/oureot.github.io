@@ -1,0 +1,94 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.169
+Let's move on to the next topic which is multi-party consensus.
+
+00:00:04.169 --> 00:00:08.609
+We'll start off by defining what is multi-signature which is an integral part of that.
+
+00:00:08.609 --> 00:00:14.204
+So blockchains such as Bitcoin support multi-signature accounts,
+
+00:00:14.205 --> 00:00:16.754
+they are typically called multisig.
+
+00:00:16.754 --> 00:00:22.125
+What's unique about these accounts is that they have multiple private keys.
+
+00:00:22.125 --> 00:00:27.359
+You'll hear them described as M-of-N accounts.
+
+00:00:27.359 --> 00:00:30.780
+So N is the number of private keys that are
+
+00:00:30.780 --> 00:00:34.890
+possibly available for that particular account,
+
+00:00:34.890 --> 00:00:40.350
+and M is the number of required keys for a particular transaction.
+
+00:00:40.350 --> 00:00:46.575
+A typical standard address will thus have an M of one and an N of one,
+
+00:00:46.575 --> 00:00:49.179
+so it would be 1-of-1.
+
+00:00:49.479 --> 00:00:53.299
+There are several benefits of having multisignature.
+
+00:00:53.299 --> 00:01:00.259
+The first one is, it prevents theft of funds by individual bad actors.
+
+00:01:00.259 --> 00:01:06.379
+Since multisig addresses require multiple private keys,
+
+00:01:06.379 --> 00:01:09.604
+it implies multiple users to perform a transaction,
+
+00:01:09.605 --> 00:01:17.865
+no single individual can perform a transaction that might involve moving funds, etc.
+
+00:01:17.864 --> 00:01:22.310
+The next thing is it protects against the loss of an individual private key.
+
+00:01:22.310 --> 00:01:27.894
+Typically, if you have a single signature account,
+
+00:01:27.894 --> 00:01:32.045
+if you lose the private key there is no way to get access to
+
+00:01:32.045 --> 00:01:36.469
+any of the funds or performing a transactions associated with that account.
+
+00:01:36.469 --> 00:01:38.299
+But with a multiset key,
+
+00:01:38.299 --> 00:01:42.230
+assuming that there are others available who have the private key,
+
+00:01:42.230 --> 00:01:44.465
+it's easy to mitigate that problem.
+
+00:01:44.465 --> 00:01:50.120
+Finally, many businesses in the off blockchain world have
+
+00:01:50.120 --> 00:01:52.520
+business rules that require
+
+00:01:52.519 --> 00:01:54.349
+certain financial transactions with
+
+00:01:54.349 --> 00:01:57.604
+certain limits to have multiple parties that authorize it.
+
+00:01:57.605 --> 00:02:04.780
+So a multisignature account is an ideal way to enforce such business rules.
+
+00:02:04.780 --> 00:02:08.895
+So let's take another quick quiz.
+
+00:02:08.895 --> 00:02:15.400
+So what does M-of-N address mean?
+

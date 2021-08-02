@@ -1,0 +1,43 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.899
+So let's now step into Exercise 3,
+
+00:00:03.899 --> 00:00:08.459
+where we finally tell the data contract reference that we've set up in
+
+00:00:08.460 --> 00:00:15.480
+the application contract about where it can find the diploid instance of the contract.
+
+00:00:15.480 --> 00:00:20.399
+So this process involves creating
+
+00:00:20.399 --> 00:00:28.679
+a constructor parameter in the app contract that takes the address of the data contract,
+
+00:00:28.679 --> 00:00:31.934
+and then what we do is we initialize
+
+00:00:31.934 --> 00:00:36.329
+the reference to the data contract in that same constructor.
+
+00:00:36.329 --> 00:00:43.864
+So the model is a deployment of the data contract which gives you the deployed address,
+
+00:00:43.865 --> 00:00:46.940
+and then you use those references in
+
+00:00:46.939 --> 00:00:54.349
+the application contract which will be deployed second or in the future again,
+
+00:00:54.350 --> 00:00:55.789
+if it's to be replaced.
+
+00:00:55.789 --> 00:00:58.879
+That's how the application contract always
+
+00:00:58.880 --> 00:01:02.910
+knows where to find the data contract in its diploid state.
+

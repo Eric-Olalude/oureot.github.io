@@ -1,0 +1,31 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:06.540
+In this concept, we will talk about various complex data types available in Solidity.
+
+00:00:06.540 --> 00:00:09.855
+So, the various types that we have are; arrays,
+
+00:00:09.855 --> 00:00:15.975
+structs, mapping, strings, bytes and enums.
+
+00:00:15.974 --> 00:00:21.660
+Now, complex data types are managed quite differently in memory than basic datatypes.
+
+00:00:21.660 --> 00:00:27.524
+Complex data types also need memory allocation to persist and recall execution.
+
+00:00:27.524 --> 00:00:29.909
+I'm going to explain you all these concepts in
+
+00:00:29.910 --> 00:00:32.295
+detail as we talk about the different types.
+
+00:00:32.295 --> 00:00:34.320
+Starting from the next concept,
+
+00:00:34.320 --> 00:00:37.869
+I will explain you this complex types one by one.
+

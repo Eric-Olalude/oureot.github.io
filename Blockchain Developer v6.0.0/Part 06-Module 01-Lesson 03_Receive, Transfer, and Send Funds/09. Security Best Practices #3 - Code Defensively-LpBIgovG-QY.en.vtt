@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.665
+Our next best practice is another contract
+
+00:00:04.665 --> 00:00:09.210
+may use "delegatecall" to call your contract function.
+
+00:00:09.210 --> 00:00:13.245
+Be aware of this and code defensively.
+
+00:00:13.244 --> 00:00:15.509
+Let's parse that a little bit,
+
+00:00:15.509 --> 00:00:19.920
+when your contract exists and is deployed to the block chain,
+
+00:00:19.920 --> 00:00:24.120
+it's possible that it's being called by a user account
+
+00:00:24.120 --> 00:00:28.710
+or an externally owned account as we referred to them or a smart contract.
+
+00:00:28.710 --> 00:00:31.565
+We also learned how you can distinguish between the two.
+
+00:00:31.565 --> 00:00:35.149
+If a smart contract is calling your function,
+
+00:00:35.149 --> 00:00:40.909
+there is potential for harm to be done because it's actually code that is being run.
+
+00:00:40.909 --> 00:00:45.229
+When this happens, it's important that you code defensively.
+
+00:00:45.229 --> 00:00:49.289
+Some of the patterns we just learned will help you do just that.
+

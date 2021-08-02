@@ -1,0 +1,133 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.025
+So let's look at the architecture.
+
+00:00:02.025 --> 00:00:05.640
+The basic architecture consists of five components
+
+00:00:05.640 --> 00:00:10.900
+and you've learned about these components in the lessons in this course.
+
+00:00:10.900 --> 00:00:18.045
+The overall delay insurance concept is essentially a business application concept.
+
+00:00:18.045 --> 00:00:21.450
+The collaboration between multiple airlines,
+
+00:00:21.450 --> 00:00:26.895
+that's where the multiparty skills that you picked up are going to come in use.
+
+00:00:26.895 --> 00:00:30.525
+When passengers have to purchase insurance prior to the flight,
+
+00:00:30.525 --> 00:00:37.125
+you already know how to create transactions where they can pay using the payable keyword.
+
+00:00:37.125 --> 00:00:41.810
+If the flight is delayed and the passenger has to be paid,
+
+00:00:41.810 --> 00:00:45.650
+you now know from our earlier lessons that it
+
+00:00:45.650 --> 00:00:49.670
+would be unwise to send money to the passengers.
+
+00:00:49.670 --> 00:00:53.150
+Instead, you would credit their account and have
+
+00:00:53.150 --> 00:00:57.435
+them withdraw the funds and so that's the payout capability.
+
+00:00:57.435 --> 00:01:00.030
+Finally, to get the flight information,
+
+00:01:00.030 --> 00:01:01.930
+you'll be using Oracles.
+
+00:01:01.930 --> 00:01:06.440
+So that's the overall architecture.
+
+00:01:06.440 --> 00:01:14.750
+Now, let's take a look at the components that make up this architecture.
+
+00:01:14.750 --> 00:01:19.120
+So there are basically two main areas.
+
+00:01:19.120 --> 00:01:24.150
+One is on the block chain and the others are off the block chain.
+
+00:01:24.260 --> 00:01:26.355
+On the block chain,
+
+00:01:26.355 --> 00:01:31.715
+you have two smart contracts: You have a data contract and an app contract.
+
+00:01:31.715 --> 00:01:33.380
+In an earlier lesson,
+
+00:01:33.380 --> 00:01:41.315
+we learned how we can take an existing smart contract and split it up with the data being
+
+00:01:41.315 --> 00:01:46.520
+one persistent smart contract and the application being another one
+
+00:01:46.520 --> 00:01:49.100
+deployed in such a manner that it's upgradeable and
+
+00:01:49.100 --> 00:01:52.850
+changeable in case there are problems or new features that are needed.
+
+00:01:52.850 --> 00:01:56.405
+So that's what you are going to have to implement here which is
+
+00:01:56.405 --> 00:01:58.970
+the interaction between the two contracts
+
+00:01:58.970 --> 00:02:01.580
+where you have the data contract where the data is persisted,
+
+00:02:01.580 --> 00:02:07.585
+and the app contract which has all the business logic around it.
+
+00:02:07.585 --> 00:02:11.050
+There's going to be a server application,
+
+00:02:11.050 --> 00:02:15.545
+that server application represents the external Oracles
+
+00:02:15.545 --> 00:02:21.280
+that will feed the flight status information into your application.
+
+00:02:21.280 --> 00:02:26.900
+This server application, the outline of it is going to be provided.
+
+00:02:26.900 --> 00:02:31.270
+So it's easy for you to simply focus on the Oracle aspect of it,
+
+00:02:31.270 --> 00:02:37.490
+the core information that the Oracles will be reacting to and providing.
+
+00:02:37.490 --> 00:02:43.930
+The critical aspect of this whole thing is the Dapp which is the client application.
+
+00:02:43.930 --> 00:02:46.420
+You previously have used JavaScript,
+
+00:02:46.420 --> 00:02:49.200
+HTML and CSS to create a Dapp.
+
+00:02:49.200 --> 00:02:52.610
+What we're going to do is build upon those skills and
+
+00:02:52.610 --> 00:02:57.050
+create a more robust Dapp which uses
+
+00:02:57.050 --> 00:03:01.010
+modern developing techniques for interaction and also
+
+00:03:01.010 --> 00:03:06.600
+for getting the production version of the application done.
+最新课程跟课件还有一对一辅导请加wx：udacity6

@@ -1,0 +1,415 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.795
+Now that we have our Visual Studio open,
+
+00:00:03.795 --> 00:00:08.250
+we can now proceed to walk through the code and give
+
+00:00:08.250 --> 00:00:12.735
+you a little idea of the process you'll be going through when building this.
+
+00:00:12.735 --> 00:00:17.715
+Overall, this project is separated into two main parts.
+
+00:00:17.715 --> 00:00:24.735
+One will be the building of the ERC 721 tokens for your real estate homes.
+
+00:00:24.735 --> 00:00:28.305
+The second part will be compiling and
+
+00:00:28.305 --> 00:00:32.790
+integrating zokrates into the tokens that you just built.
+
+00:00:32.790 --> 00:00:34.920
+In between each of these steps,
+
+00:00:34.920 --> 00:00:38.660
+there are sections for you to test the work that you've done using
+
+00:00:38.660 --> 00:00:42.995
+truffle just to make sure you're on the ball and nothing has gone wrong.
+
+00:00:42.995 --> 00:00:46.340
+So if you take a look into the contract section,
+
+00:00:46.340 --> 00:00:50.020
+you'll see a few different files.
+
+00:00:50.020 --> 00:00:52.940
+One is 'Migrations file' that
+
+00:00:52.940 --> 00:00:56.120
+you've become accustomed to and are probably used to seeing.
+
+00:00:56.120 --> 00:01:02.060
+The other is the 'ERC721Mintable class.'
+
+00:01:02.060 --> 00:01:03.650
+Once you open this,
+
+00:01:03.650 --> 00:01:10.220
+you'll notice that you see a lot of ERC standards in this,
+
+00:01:10.220 --> 00:01:13.915
+and you should be familiar with the ERC 721 standard.
+
+00:01:13.915 --> 00:01:17.720
+The ERC 165 standard is used as well as
+
+00:01:17.720 --> 00:01:23.450
+a few different implementations extensions to make it easier for us when we get to
+
+00:01:23.450 --> 00:01:27.740
+the final stage which is putting these tokens on
+
+00:01:27.740 --> 00:01:33.395
+the marketplace on a decentralized marketplace that we can go ahead and list,
+
+00:01:33.395 --> 00:01:36.770
+transfer, buy and sell those tokens.
+
+00:01:36.770 --> 00:01:41.070
+There's a lot of boilerplate code to start you off,
+
+00:01:41.070 --> 00:01:45.410
+but you'll also notice a lot of to-dos for you to complete tasks.
+
+00:01:45.410 --> 00:01:49.040
+Not every contract will be created for you.
+
+00:01:49.040 --> 00:01:54.755
+You will have to follow the steps to generate the contract as you see fit.
+
+00:01:54.755 --> 00:01:58.440
+The exact code that needs to happen is up to you,
+
+00:01:58.440 --> 00:02:04.360
+but the general idea of what each function needs to do is thoroughly explained for you.
+
+00:02:04.360 --> 00:02:06.490
+Another thing you'll notice,
+
+00:02:06.490 --> 00:02:14.825
+is that there are a lot of imports coming specifically from open Zeppelin node module.
+
+00:02:14.825 --> 00:02:18.290
+Opens Zeppelin is a great node module to use because
+
+00:02:18.290 --> 00:02:22.250
+it offers a lot of libraries and useful tools.
+
+00:02:22.250 --> 00:02:23.900
+We're using a few of these,
+
+00:02:23.900 --> 00:02:25.235
+four to be exact.
+
+00:02:25.235 --> 00:02:29.350
+One is Address,one is Counters,
+
+00:02:29.350 --> 00:02:33.005
+one is Safemath, which you are probably used to.
+
+00:02:33.005 --> 00:02:37.955
+and one is the IERC721Receiver.
+
+00:02:37.955 --> 00:02:41.450
+You won't have to actually fill out any of
+
+00:02:41.450 --> 00:02:45.240
+the boilerplate template code for the receiver,
+
+00:02:45.240 --> 00:02:46.770
+you'll just be using it.
+
+00:02:46.770 --> 00:02:50.030
+As for Safemath, you're probably already used to it.
+
+00:02:50.030 --> 00:02:53.225
+It's used to do safe addition and
+
+00:02:53.225 --> 00:03:00.020
+subtraction so that you don't go over and create a bug in your solidity code.
+
+00:03:00.020 --> 00:03:03.920
+The Counters is similar to Safemath but it's used to
+
+00:03:03.920 --> 00:03:08.185
+protect overflow when incrementing and decrementing.
+
+00:03:08.185 --> 00:03:13.520
+Address is used to make sure that the address in
+
+00:03:13.520 --> 00:03:19.175
+question is either a contract or it is actually an individual.
+
+00:03:19.175 --> 00:03:22.790
+The last import that you'll notice is
+
+00:03:22.790 --> 00:03:26.825
+from the Oracle as and we'll get to that in a second.
+
+00:03:26.825 --> 00:03:28.970
+Because we're using node modules,
+
+00:03:28.970 --> 00:03:33.845
+when you first get into the projects you will have to do npm install
+
+00:03:33.845 --> 00:03:36.410
+just to make sure that these node modules are populated
+
+00:03:36.410 --> 00:03:39.530
+before you continue using the rest of the code.
+
+00:03:39.530 --> 00:03:43.280
+As you go down you'll see there's an Ownable class,
+
+00:03:43.280 --> 00:03:47.150
+an ERC 165 class.
+
+00:03:47.150 --> 00:03:52.760
+There is a standard ERC 721 class which is going
+
+00:03:52.760 --> 00:03:57.830
+to implement one of the contracts that you would have created on your own,
+
+00:03:57.830 --> 00:04:08.295
+the possible contract as well as the imported ERC 165 standard.
+
+00:04:08.295 --> 00:04:13.540
+Within this ERC 721 standard contract,
+
+00:04:13.540 --> 00:04:18.185
+you'll have to fill in a lot of the functions.
+
+00:04:18.185 --> 00:04:23.285
+You are already used to knowing how the ERC 721 standard contract works.
+
+00:04:23.285 --> 00:04:27.710
+There are a few caveats to the way that it's normally done.
+
+00:04:27.710 --> 00:04:34.745
+Most of that is from the introduction of the libraries that were mentioned earlier.
+
+00:04:34.745 --> 00:04:37.070
+As you can see right here,
+
+00:04:37.070 --> 00:04:42.080
+we have a mapping using the counters library instead of using what
+
+00:04:42.080 --> 00:04:47.630
+might normally be uint variable right here.
+
+00:04:47.630 --> 00:04:52.670
+Anytime something is used that you aren't accustomed to,
+
+00:04:52.670 --> 00:04:58.255
+you should definitely take a look at the hints written above this section.
+
+00:04:58.255 --> 00:05:01.010
+They'll also supply useful links where you can
+
+00:05:01.010 --> 00:05:04.805
+actually go and see the counters librarian in question.
+
+00:05:04.805 --> 00:05:08.015
+As you scroll down, it'll be more of the same,
+
+00:05:08.015 --> 00:05:13.985
+filling in the boilerplate code that is required for the token that we'll be using.
+
+00:05:13.985 --> 00:05:21.950
+You'll notice that the ERC 721 innumerable contract is given to you in completion.
+
+00:05:21.950 --> 00:05:27.815
+This enumerable contract is just used to make life easier
+
+00:05:27.815 --> 00:05:35.255
+for marketplaces to gather the group listing of all your tokens in one shot.
+
+00:05:35.255 --> 00:05:36.920
+As you scroll down,
+
+00:05:36.920 --> 00:05:42.170
+you will see the ERC 721 metadata contract
+
+00:05:42.170 --> 00:05:46.895
+that this is also a boilerplate code that you'll be filling out.
+
+00:05:46.895 --> 00:05:51.665
+Some of the interfaces and the functionality is given to you.
+
+00:05:51.665 --> 00:05:54.320
+Otherwise, you'll have to fill out yourself.
+
+00:05:54.320 --> 00:05:58.175
+Always take a look at the temps, tips and hints.
+
+00:05:58.175 --> 00:06:04.030
+One of the tips references the Oracle as library.
+
+00:06:04.030 --> 00:06:08.055
+We used that to concatenate strings.
+
+00:06:08.055 --> 00:06:10.280
+It's a very very useful library.
+
+00:06:10.280 --> 00:06:12.020
+Of course, you'll see the link here.
+
+00:06:12.020 --> 00:06:15.710
+So you can always get the source code for that information,
+
+00:06:15.710 --> 00:06:21.620
+but it's also directly imported into our contract right here.
+
+00:06:21.620 --> 00:06:23.195
+We'll take a look at that in a second.
+
+00:06:23.195 --> 00:06:29.570
+The final to-do is to create a custom ERC 721 token that inherits from
+
+00:06:29.570 --> 00:06:33.800
+the last token boilerplate token code that was filled
+
+00:06:33.800 --> 00:06:38.375
+out by you which is the ERC 721 metadata contract.
+
+00:06:38.375 --> 00:06:42.770
+You'll just be creating a basic mean function with this.
+
+00:06:42.770 --> 00:06:46.855
+As we go into the Oraclize,
+
+00:06:46.855 --> 00:06:50.720
+this is a very useful library with a ton of
+
+00:06:50.720 --> 00:06:55.280
+different functionality inside of it more than we can even cover.
+
+00:06:55.280 --> 00:07:01.550
+But the link was written in the tip in the previous file that we just looked at.
+
+00:07:01.550 --> 00:07:05.060
+So if you have any questions on it or
+
+00:07:05.060 --> 00:07:06.950
+the powers what it can do you can always just
+
+00:07:06.950 --> 00:07:09.500
+review the source code and check out the link.
+
+00:07:09.500 --> 00:07:12.980
+The final contract that you'll be seeing.
+
+00:07:12.980 --> 00:07:16.915
+This is the solutions where verifier.
+
+00:07:16.915 --> 00:07:23.030
+This contract, you'll notice is a lot more sparse than the previous one.
+
+00:07:23.030 --> 00:07:26.150
+There isn't any boilerplate code but there are
+
+00:07:26.150 --> 00:07:29.530
+to do steps for each step that you'll have to create.
+
+00:07:29.530 --> 00:07:35.470
+Defining the contract that's going to call the zokrates
+
+00:07:35.470 --> 00:07:42.260
+generated solidity contract also known as the Verifier is the first step.
+
+00:07:42.260 --> 00:07:50.270
+This file in general basically combines the Zokrates code that you will
+
+00:07:50.270 --> 00:07:53.300
+compile yourself through the steps
+
+00:07:53.300 --> 00:07:57.775
+listed in [inaudible] and the classroom that you were just in.
+
+00:07:57.775 --> 00:08:03.260
+It will combine it with the ERC 721 token functionality
+
+00:08:03.260 --> 00:08:05.915
+that you would have filled out the boilerplate code for.
+
+00:08:05.915 --> 00:08:09.035
+This Verifier will be used to verify
+
+00:08:09.035 --> 00:08:13.140
+the proof that you also create through the Zokrates step.
+
+00:08:13.140 --> 00:08:18.140
+That will just limit the ability for a user to
+
+00:08:18.140 --> 00:08:23.060
+mint a token unless they have actually verified that they own that token.
+
+00:08:23.060 --> 00:08:25.400
+In this case our tokens are our homes.
+
+00:08:25.400 --> 00:08:29.330
+So before somebody can actually list a home in our marketplace,
+
+00:08:29.330 --> 00:08:33.830
+they'll have to first ensure that they actually own the property and
+
+00:08:33.830 --> 00:08:39.010
+they'll be doing that do the verification using Zokrates.
+
+00:08:39.010 --> 00:08:44.705
+The next to do step will be to create the solutions where verifier that of course
+
+00:08:44.705 --> 00:08:50.990
+inherits from the ERC 721 mintable token that you created.
+
+00:08:50.990 --> 00:08:55.685
+Next, you'll be creating structs and mappings.
+
+00:08:55.685 --> 00:09:04.715
+That'll help verify that only one verification was used at a time.
+
+00:09:04.715 --> 00:09:11.150
+So basically making sure that each verification is unique within itself and can't be
+
+00:09:11.150 --> 00:09:14.120
+reused over and over again to make sure somebody takes
+
+00:09:14.120 --> 00:09:17.780
+advantage of minting multiple tokens.
+
+00:09:17.780 --> 00:09:22.595
+The final step will be creating the new mInt function.
+
+00:09:22.595 --> 00:09:26.060
+That of course will only allow somebody to mint once
+
+00:09:26.060 --> 00:09:29.765
+they've pass through the verification process.
+
+00:09:29.765 --> 00:09:36.170
+Now, earlier I had said that in-between these two major steps,
+
+00:09:36.170 --> 00:09:41.475
+one filling out the boilerplate code for your ERC 721 mintable,
+
+00:09:41.475 --> 00:09:48.455
+and two combining that code and logic with the Zocrates that you would have compiled.
+
+00:09:48.455 --> 00:09:50.590
+In between both of these steps,
+
+00:09:50.590 --> 00:09:53.150
+they're going to be tests and that's going to be very
+
+00:09:53.150 --> 00:09:56.060
+important to make sure that you're on the right path.
+
+00:09:56.060 --> 00:10:00.030
+So we'll go on to cover the testing in the next section.
+最新课程跟课件还有一对一辅导请加wx：udacity6

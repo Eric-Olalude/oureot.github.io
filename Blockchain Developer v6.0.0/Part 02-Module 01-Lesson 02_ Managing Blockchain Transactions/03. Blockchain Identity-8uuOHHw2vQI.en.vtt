@@ -1,0 +1,208 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.725
+In this video, we'll learn some more about transactions.
+
+00:00:04.725 --> 00:00:06.530
+We'll discuss two things.
+
+00:00:06.530 --> 00:00:13.590
+First, we want it so that only someone who owns the money has access to spend it.
+
+00:00:13.590 --> 00:00:18.120
+Next, we'll want it so that our transactions cannot be traced.
+
+00:00:18.120 --> 00:00:21.780
+And finally, it should also be possible to share
+
+00:00:21.780 --> 00:00:26.620
+this identity with others so that they can make transactions with you.
+
+00:00:26.620 --> 00:00:31.915
+This is all solved in Bitcoin using what's known as a Bitcoin Wallet.
+
+00:00:31.915 --> 00:00:34.860
+A Bitcoin Wallet establishes our identity on
+
+00:00:34.860 --> 00:00:39.435
+the Blockchain and ensures we're able to do all the things we mentioned above,
+
+00:00:39.435 --> 00:00:41.935
+it does this using private keys,
+
+00:00:41.935 --> 00:00:44.725
+public keys and wallet addresses.
+
+00:00:44.725 --> 00:00:48.520
+All three of these things are items contained within our wallet.
+
+00:00:48.520 --> 00:00:51.320
+Let's go over some details of each of these.
+
+00:00:51.320 --> 00:00:56.985
+A Wallet Address or address is a unique identifier for your wallet.
+
+00:00:56.985 --> 00:01:00.390
+This address is a way to identify the owner of
+
+00:01:00.390 --> 00:01:04.725
+a wallet that we can share with others to send and receive Bitcoin.
+
+00:01:04.725 --> 00:01:08.160
+But wait, we've seen the details of each transactions
+
+00:01:08.160 --> 00:01:11.765
+added to the blockchain including things like wallet addresses,
+
+00:01:11.765 --> 00:01:15.815
+since we know that the purpose of the blockchain is to be secure,
+
+00:01:15.815 --> 00:01:20.920
+it seems strange that we have our private information available for everyone to see.
+
+00:01:20.920 --> 00:01:23.480
+We need to make sure transactions made with
+
+00:01:23.480 --> 00:01:27.125
+his address are secure and can't be traced back to us,
+
+00:01:27.125 --> 00:01:29.830
+the good news is, it can't.
+
+00:01:29.830 --> 00:01:33.560
+But to understand why, we need to take a step back a bit,
+
+00:01:33.560 --> 00:01:37.930
+the reason an address cannot be traced is because of how it's created.
+
+00:01:37.930 --> 00:01:40.910
+It goes through a bit of a journey starting with
+
+00:01:40.910 --> 00:01:45.470
+private keys and ending with a wallet address that you can share with anyone.
+
+00:01:45.470 --> 00:01:47.845
+Let's start with private keys,
+
+00:01:47.845 --> 00:01:50.950
+a private key also known as a secret key,
+
+00:01:50.950 --> 00:01:55.230
+is a secret number that allows you to spend your bitcoin from your wallet.
+
+00:01:55.230 --> 00:01:59.365
+These are randomly generated numbers that your wallet creates.
+
+00:01:59.365 --> 00:02:02.070
+Wallets can contain one or more of
+
+00:02:02.070 --> 00:02:05.445
+these private keys and these should not be shared with anyone.
+
+00:02:05.445 --> 00:02:09.765
+Please be very careful with your private keys once you get started with your wallet.
+
+00:02:09.765 --> 00:02:15.260
+The next step is to turn this completely secret private key into a public key.
+
+00:02:15.260 --> 00:02:19.830
+A public key is derived from a private key and gives you
+
+00:02:19.830 --> 00:02:24.445
+a publicly shareable key that cannot be used to spend bitcoin,
+
+00:02:24.445 --> 00:02:27.670
+you can share these public keys with anyone and
+
+00:02:27.670 --> 00:02:30.890
+don't need to worry about people accessing your bitcoin.
+
+00:02:30.890 --> 00:02:34.535
+What they can use this for is to send you bitcoin.
+
+00:02:34.535 --> 00:02:39.175
+Public keys aren't randomly generated numbers like private keys are,
+
+00:02:39.175 --> 00:02:43.255
+they are created using private keys in a secure algorithm.
+
+00:02:43.255 --> 00:02:47.740
+Public and private Keys have an interesting relationship to one another,
+
+00:02:47.740 --> 00:02:52.910
+we can share our public key without worrying about the security of our private key.
+
+00:02:52.910 --> 00:02:57.280
+Also, the private key has to be linked to the public key,
+
+00:02:57.280 --> 00:03:00.645
+so that the private key can track the public key.
+
+00:03:00.645 --> 00:03:05.475
+This is really interesting problem to solve with a pretty cool solution.
+
+00:03:05.475 --> 00:03:10.875
+To do this, we use an algorithm that can create a public key using our private key.
+
+00:03:10.875 --> 00:03:13.945
+But after creating the public key,
+
+00:03:13.945 --> 00:03:18.875
+it shouldn't be possible to figure out what the original private key was.
+
+00:03:18.875 --> 00:03:22.820
+That way we can share our public key with others to receive
+
+00:03:22.820 --> 00:03:27.485
+money without worrying that they'll later be able to spend money from our wallet.
+
+00:03:27.485 --> 00:03:30.410
+Bitcoin does this with an algorithm known as
+
+00:03:30.410 --> 00:03:35.885
+a one-way Elliptic Curve Digital Signature Algorithm, ECDSA.
+
+00:03:35.885 --> 00:03:40.800
+This algorithm takes in a private key and creates a public key.
+
+00:03:40.800 --> 00:03:43.950
+A one-way algorithm is a term used for
+
+00:03:43.950 --> 00:03:46.970
+any algorithm that's simple to execute in one direction,
+
+00:03:46.970 --> 00:03:50.770
+but that's very difficult to reverse back to the original information.
+
+00:03:50.770 --> 00:03:55.110
+In this case, the algorithm can easily create a public key,
+
+00:03:55.110 --> 00:03:57.210
+but given that public key it's extremely
+
+00:03:57.210 --> 00:04:00.430
+difficult to figure out what the private key was.
+
+00:04:00.430 --> 00:04:04.455
+This allows us to hand out public keys safely while
+
+00:04:04.455 --> 00:04:09.285
+our wallets track transactions using our private public key combinations.
+
+00:04:09.285 --> 00:04:12.150
+Since this algorithm is so difficult to reverse,
+
+00:04:12.150 --> 00:04:15.780
+anyone with our public key won't be able to figure out our private key.
+
+00:04:15.780 --> 00:04:18.000
+So, this solves one big problem,
+
+00:04:18.000 --> 00:04:21.880
+we have a key that's safe to share but there's another problem,
+
+00:04:21.880 --> 00:04:24.680
+this public key can still be traced.
+

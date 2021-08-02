@@ -1,0 +1,34 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.234
+Let's summarize what we learned in this lesson.
+
+00:00:02.234 --> 00:00:07.410
+We started off by reviewing your knowledge of ether and payment fundamentals,
+
+00:00:07.410 --> 00:00:11.400
+but we added the veneer of security to it.
+
+00:00:11.400 --> 00:00:14.865
+We then looked at the safe math library,
+
+00:00:14.865 --> 00:00:17.324
+understood when it needs to be used,
+
+00:00:17.324 --> 00:00:21.585
+and why it is necessary to use such a library.
+
+00:00:21.585 --> 00:00:26.039
+We then looked at three different design patterns that
+
+00:00:26.039 --> 00:00:30.375
+can be used to protect payment related transactions and functions,
+
+00:00:30.375 --> 00:00:34.530
+and finally, we reviewed 10 best practices for protecting
+
+00:00:34.530 --> 00:00:39.579
+your smart contracts from a wide variety of attacks and problems.
+最新课程跟课件还有一对一辅导请加wx：udacity6

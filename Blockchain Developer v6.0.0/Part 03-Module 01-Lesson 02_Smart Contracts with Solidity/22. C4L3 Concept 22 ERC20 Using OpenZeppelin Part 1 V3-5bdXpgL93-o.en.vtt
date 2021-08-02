@@ -1,0 +1,382 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.759
+I'm going to now show you how to create your own tokens by using OpenZeppelin's library.
+
+00:00:05.759 --> 00:00:07.830
+It makes a process very easy.
+
+00:00:07.830 --> 00:00:09.164
+What is OpenZeppelin?
+
+00:00:09.164 --> 00:00:12.285
+It is a library for writing smart contracts on Ethereum.
+
+00:00:12.285 --> 00:00:16.214
+With OpenZeppelin, you can quickly build your own token contracts.
+
+00:00:16.214 --> 00:00:20.530
+They have already implement all the functions like we did in our previous video.
+
+00:00:20.530 --> 00:00:24.150
+You just have to define some basic parameters like total supply,
+
+00:00:24.149 --> 00:00:28.064
+name you token, symbol of your token and the number of decimals.
+
+00:00:28.065 --> 00:00:30.540
+So, they've implemented all the functions for you.
+
+00:00:30.539 --> 00:00:33.015
+They also implement really good error handling,
+
+00:00:33.015 --> 00:00:35.325
+so there is no need to reinvent the wheel.
+
+00:00:35.325 --> 00:00:38.175
+All you have to do is import one of the token files.
+
+00:00:38.174 --> 00:00:41.024
+So, let me show you this is OpenZeppelin's GitHub page.
+
+00:00:41.024 --> 00:00:43.710
+You're just going to go type OpenZeppelin in Google.
+
+00:00:43.710 --> 00:00:48.015
+So, I guess the pretty much the first link opened up as this much is a GitHub page.
+
+00:00:48.015 --> 00:00:51.990
+So, they have bunch of tokens files here.
+
+00:00:51.990 --> 00:00:54.630
+So, let's go to the contracts one, okay?
+
+00:00:54.630 --> 00:00:56.220
+So, I'm going to zoom in a little.
+
+00:00:56.219 --> 00:00:58.734
+So, you're going to go to the contracts and then go to token.
+
+00:00:58.734 --> 00:01:01.490
+Then you'll see you have many different standards here.
+
+00:01:01.490 --> 00:01:03.469
+See that they have 721 typed also,
+
+00:01:03.469 --> 00:01:05.299
+so I'm going to go to the ERC20.
+
+00:01:05.299 --> 00:01:08.590
+Then again, they have multiple different contract.
+
+00:01:08.590 --> 00:01:09.900
+I'm stun. Implement it.
+
+00:01:09.900 --> 00:01:11.310
+So, we're just going to go pick one.
+
+00:01:11.310 --> 00:01:15.100
+Now, if you see this is what we did in our previous video also,
+
+00:01:15.099 --> 00:01:16.569
+the implemented towards supply.
+
+00:01:16.569 --> 00:01:17.994
+We implemented balance of.
+
+00:01:17.995 --> 00:01:19.270
+They've already done this for us,
+
+00:01:19.269 --> 00:01:21.060
+so there is a transfer function.
+
+00:01:21.060 --> 00:01:24.659
+Right here there's transferring and implemented all the stuff.
+
+00:01:24.659 --> 00:01:26.405
+They have the approved function.
+
+00:01:26.405 --> 00:01:28.879
+They also have implemented the transfer form function.
+
+00:01:28.879 --> 00:01:30.064
+So, they done everything for you.
+
+00:01:30.064 --> 00:01:32.120
+All you need is to give the name of the token,
+
+00:01:32.120 --> 00:01:36.215
+the total supply and some option parameters and you're all set.
+
+00:01:36.215 --> 00:01:41.180
+So, now let's go back and use a Truffle to,
+
+00:01:41.180 --> 00:01:44.195
+in fact use a terminal to make sure that we have Truffle installed.
+
+00:01:44.194 --> 00:01:45.469
+Once you have Truffle installed,
+
+00:01:45.469 --> 00:01:49.594
+we're going to write a simple contract that just imports one of these files.
+
+00:01:49.594 --> 00:01:51.364
+We should be all set to go.
+
+00:01:51.364 --> 00:01:53.905
+Okay. So, let's go to our terminal now.
+
+00:01:53.905 --> 00:01:56.555
+Okay. So, we have a terminal window open here.
+
+00:01:56.555 --> 00:02:03.910
+The first thing we're going to do is install Truffle and npm install Truffle.
+
+00:02:03.909 --> 00:02:06.590
+I have that installed already on my computer,
+
+00:02:06.590 --> 00:02:08.134
+I'm not going to hit Enter.
+
+00:02:08.134 --> 00:02:10.655
+So again, the first thing you do is install Truffle.
+
+00:02:10.655 --> 00:02:13.840
+All the commands are listed on the bottom of the screen for you.
+
+00:02:13.840 --> 00:02:15.939
+So, once you've installed you Truffle,
+
+00:02:15.939 --> 00:02:18.169
+then next thing you want to do is make a directory
+
+00:02:18.169 --> 00:02:20.540
+for all your folders and all your files
+
+00:02:20.539 --> 00:02:25.189
+and all your contracts and test folders and migration folders, and all those files.
+
+00:02:25.189 --> 00:02:26.359
+So, you're going to make a file.
+
+00:02:26.360 --> 00:02:28.985
+I'm going to call folder and I'm going to call it solidity.
+
+00:02:28.985 --> 00:02:30.320
+Once you have the folder,
+
+00:02:30.319 --> 00:02:33.310
+you're going to cd inside the folder again.
+
+00:02:33.310 --> 00:02:36.659
+Okay. Once you have your inside the folder,
+
+00:02:36.659 --> 00:02:38.530
+now you're going to do Truffle in it,
+
+00:02:38.530 --> 00:02:41.419
+where you will install your initial folders.
+
+00:02:41.419 --> 00:02:43.339
+That Truffle in it installs for you,
+
+00:02:43.340 --> 00:02:45.530
+it installs a bunch of folders,
+
+00:02:45.530 --> 00:02:46.610
+a node modules folder.
+
+00:02:46.610 --> 00:02:48.920
+It's going to install your initial contract,
+
+00:02:48.919 --> 00:02:51.949
+migrations file and a migrations contract.
+
+00:02:51.949 --> 00:02:56.509
+So, this is where we are going to start working and create more contracts inside it.
+
+00:02:56.509 --> 00:02:59.149
+So, the next thing you want to do like I said is Truffle in it.
+
+00:02:59.150 --> 00:03:00.800
+Once you have everything set up,
+
+00:03:00.800 --> 00:03:03.870
+now we need to install two package, two packages.
+
+00:03:03.870 --> 00:03:10.094
+The first one is the Truffle HDWalletProvider and the second is OpenZeppelin-solidity.
+
+00:03:10.094 --> 00:03:13.310
+The Truffle HDWalletProvider is
+
+00:03:13.310 --> 00:03:16.050
+something that is required because it installs a provider.
+
+00:03:16.050 --> 00:03:19.465
+This is what will connect to your web three to the world of Ethereum.
+
+00:03:19.465 --> 00:03:20.849
+So for doing that you,
+
+00:03:20.849 --> 00:03:32.759
+will do npm install truffle-hdwallet-provider.
+
+00:03:32.759 --> 00:03:38.219
+Okay. So, you'll do npm install truffle-hdwallet-provider.
+
+00:03:38.219 --> 00:03:40.449
+Again I have that already installed,
+
+00:03:40.449 --> 00:03:43.159
+so that's one package you need to install and the second whether
+
+00:03:43.159 --> 00:03:45.935
+td installed is npm install the openzeppelin.
+
+00:03:45.935 --> 00:03:49.310
+Now, this is the whole library
+
+00:03:49.310 --> 00:03:52.699
+that comes along with all the input for the contracts that you can import,
+
+00:03:52.699 --> 00:03:54.185
+all the different token contracts.
+
+00:03:54.185 --> 00:03:58.235
+You, we will just import one of them for our existing contract.
+
+00:03:58.235 --> 00:04:05.340
+So openzeppelin-solidity.
+
+00:04:05.449 --> 00:04:08.864
+Again, all the command are listed on the bottom of the screen.
+
+00:04:08.865 --> 00:04:10.350
+So this is what you'll do, install.
+
+00:04:10.349 --> 00:04:12.579
+Now we have everything all set up.,
+
+00:04:12.580 --> 00:04:16.569
+So if I show you we have a folder package,
+
+00:04:16.569 --> 00:04:18.939
+so we have a builds, a build folder, the contracts folder.
+
+00:04:18.939 --> 00:04:21.730
+We are going to make our own contract inside this folder.
+
+00:04:21.730 --> 00:04:25.495
+We're going to also create a migration file inside this folder.
+
+00:04:25.495 --> 00:04:27.250
+We have these two files.
+
+00:04:27.250 --> 00:04:28.480
+These are the configuration file,
+
+00:04:28.480 --> 00:04:31.540
+the truffle-config.js is used for Windows.
+
+00:04:31.540 --> 00:04:33.160
+The truffle.js is going to use,
+
+00:04:33.160 --> 00:04:35.020
+is going to be used for a Mac.
+
+00:04:35.019 --> 00:04:39.029
+So, we're all set with our installation of the modules.
+
+00:04:39.029 --> 00:04:41.859
+So, this is, I have a folder already ready here.
+
+00:04:41.860 --> 00:04:44.030
+So, it creates a basic template for you.
+
+00:04:44.029 --> 00:04:46.529
+So, the first step that you're going to do is,
+
+00:04:46.529 --> 00:04:48.559
+you're going to go to contracts folder.
+
+00:04:48.560 --> 00:04:50.009
+You're going to go to contract folder.
+
+00:04:50.009 --> 00:04:51.944
+It gives you the migrations by default.
+
+00:04:51.944 --> 00:04:55.670
+You're going to create another file here and you can name it.
+
+00:04:55.670 --> 00:04:57.710
+I think I'm going to call it sample token,
+
+00:04:57.709 --> 00:04:59.959
+because that's the name of my token that I'm calling,
+
+00:04:59.959 --> 00:05:01.924
+some sample token not SOL.
+
+00:05:01.925 --> 00:05:04.220
+Within that I'm going to write this piece of code.
+
+00:05:04.220 --> 00:05:06.140
+Again, this piece of code is again pasted on
+
+00:05:06.139 --> 00:05:08.305
+the bottom of the screen of this video for you.
+
+00:05:08.305 --> 00:05:11.910
+So, what we're doing is that we're importing that file.
+
+00:05:11.910 --> 00:05:15.470
+The ERC 20 that we just downloaded and it's a Node modules.
+
+00:05:15.470 --> 00:05:17.330
+I've walked you to that file very soon.
+
+00:05:17.329 --> 00:05:20.779
+So, I'm seeing contract sample token is that contract.
+
+00:05:20.779 --> 00:05:23.989
+So, it's inheriting from that I'm giving a name of my contract,
+
+00:05:23.990 --> 00:05:26.045
+I'm giving it a symbol, I'm giving it decimals.
+
+00:05:26.045 --> 00:05:28.819
+I'm also setting initial supply already 2,000,
+
+00:05:28.819 --> 00:05:30.769
+since its decim-18 decimals.
+
+00:05:30.769 --> 00:05:32.649
+I'm doing that calculation right here.
+
+00:05:32.649 --> 00:05:34.254
+You can leave the calculation.
+
+00:05:34.254 --> 00:05:37.384
+I just wanted to show you if you want to divide your tokens, so you can do that.
+
+00:05:37.384 --> 00:05:40.519
+Then, you have a constructor function where you are setting.
+
+00:05:40.519 --> 00:05:46.495
+Now these are coming from your ERC 20 contract, because you're inheriting it.
+
+00:05:46.495 --> 00:05:48.829
+Okay. So, you're setting these two variables
+
+00:05:48.829 --> 00:05:51.439
+because that's the contract that's implementing all these functions.
+
+00:05:51.439 --> 00:05:54.110
+I'm just setting them initially to whatever I want to set to.
+
+00:05:54.110 --> 00:05:55.530
+So, that's all I need to do.
+

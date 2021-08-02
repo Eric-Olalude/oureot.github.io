@@ -1,0 +1,244 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.235
+Let me walk you through all the tools that you will be using to finish this lesson.
+
+00:00:04.235 --> 00:00:07.110
+We've already covered all of these tools in the previous lessons,
+
+00:00:07.110 --> 00:00:09.165
+so you should have everything already setup.
+
+00:00:09.164 --> 00:00:11.609
+Let's quickly go over all of them again to
+
+00:00:11.609 --> 00:00:14.234
+make sure that you have everything installed that would be needed.
+
+00:00:14.234 --> 00:00:16.619
+The first thing we're going to be using is remix.
+
+00:00:16.620 --> 00:00:18.179
+That's the online editor to write
+
+00:00:18.179 --> 00:00:21.550
+a smart contracts and that's the website remix.etheriurm.org.
+
+00:00:21.550 --> 00:00:24.285
+We have of course use this many times in our previous lessons.
+
+00:00:24.285 --> 00:00:26.655
+The next thing we're going to using is truffle.
+
+00:00:26.655 --> 00:00:27.975
+That's the truffle website.
+
+00:00:27.975 --> 00:00:30.945
+If you see Truffle is a completed app development framework.
+
+00:00:30.945 --> 00:00:32.850
+So, we're going to write a contract in remix,
+
+00:00:32.850 --> 00:00:34.815
+and then we will bring it to truffle.
+
+00:00:34.814 --> 00:00:37.379
+Truffle really helps us in writing unit tests,
+
+00:00:37.380 --> 00:00:38.984
+and also compiling contracts,
+
+00:00:38.984 --> 00:00:41.615
+and you can also run a local Ethereum test network
+
+00:00:41.615 --> 00:00:44.454
+or you can also connect to any of the public networks.
+
+00:00:44.454 --> 00:00:46.699
+It is available as an npm package.
+
+00:00:46.700 --> 00:00:50.155
+Let's go to your terminal window to make sure that we have truffle installed.
+
+00:00:50.155 --> 00:00:52.609
+So, in your terminal window again you should have
+
+00:00:52.609 --> 00:00:54.560
+it installed because we've done truffle before this,
+
+00:00:54.560 --> 00:00:58.100
+but if you want to make sure that you haven't installed just type truffle-v,
+
+00:00:58.100 --> 00:01:00.620
+and that should tell you if you have truffle installed.
+
+00:01:00.619 --> 00:01:03.890
+So, we have truffle installed, if you don't have it installed all you have to do is
+
+00:01:03.890 --> 00:01:08.504
+npm install-g for global truffle.
+
+00:01:08.504 --> 00:01:10.670
+I'm not going to hit Enter because I already have that installed,
+
+00:01:10.670 --> 00:01:12.890
+but that's the command that going to be using if you
+
+00:01:12.890 --> 00:01:15.670
+really want to install truffle if you don't have that installed.
+
+00:01:15.670 --> 00:01:19.609
+Also wanted to let you know that truffle comes as a command line interface.
+
+00:01:19.609 --> 00:01:23.120
+Now, the next tool we're going to be using is called truffle boxes.
+
+00:01:23.120 --> 00:01:27.605
+Now, truffle boxes if you look at their website is truffleframework/boxes,
+
+00:01:27.605 --> 00:01:30.200
+and truffle boxes are pre-built projects for
+
+00:01:30.200 --> 00:01:33.905
+truffle framework that developers can download and use as a starting point.
+
+00:01:33.905 --> 00:01:36.400
+They come with a lot of boilerplate code to write,
+
+00:01:36.400 --> 00:01:38.285
+test, and deploy smart contracts.
+
+00:01:38.284 --> 00:01:41.299
+These are truffle boxes and of course there are a lot of truffle boxes,
+
+00:01:41.299 --> 00:01:42.739
+but there are sample react.
+
+00:01:42.739 --> 00:01:44.959
+They have everything already built up for the front page,
+
+00:01:44.959 --> 00:01:48.819
+and then they also have truffle boxes to create complete tokens and much more.
+
+00:01:48.819 --> 00:01:50.609
+They also have silver configured,
+
+00:01:50.609 --> 00:01:53.329
+you can always go through all these different truffle boxes.
+
+00:01:53.329 --> 00:01:56.209
+So again we're going to use the truffle box which is called web pack.
+
+00:01:56.209 --> 00:01:59.224
+This is what we are going to be using as a starting point to create our depth.
+
+00:01:59.224 --> 00:02:01.009
+Now, how do we get started with truffle box?
+
+00:02:01.010 --> 00:02:02.930
+We're going to go back to our terminal.
+
+00:02:02.930 --> 00:02:04.760
+Let's go delete this command.
+
+00:02:04.760 --> 00:02:06.079
+The first thing that we're going to do is make
+
+00:02:06.079 --> 00:02:08.254
+a directory for our project. So I'm going to do it.
+
+00:02:08.254 --> 00:02:10.699
+So, remember we're making two different versions of a contract,
+
+00:02:10.699 --> 00:02:13.280
+I'm going to call the first one starNotary version one.
+
+00:02:13.280 --> 00:02:14.890
+So let's make a directory.
+
+00:02:14.889 --> 00:02:17.609
+So I'm going to make a directly starNotaryv1,
+
+00:02:17.610 --> 00:02:19.065
+and that's what I'm calling that.
+
+00:02:19.064 --> 00:02:22.275
+Got it. Then now let's go inside that directory.
+
+00:02:22.275 --> 00:02:24.545
+Of course there's everything's empty now.
+
+00:02:24.544 --> 00:02:27.019
+The first thing that you want to do is you want to do unbox.
+
+00:02:27.020 --> 00:02:29.755
+So you are going to say truffle unbox,
+
+00:02:29.754 --> 00:02:32.769
+and then we're going to use a web pack is the name of the truffle box we're using.
+
+00:02:32.770 --> 00:02:33.960
+Once you do run that,
+
+00:02:33.960 --> 00:02:36.030
+it's going to install a bunch of things and we're going to let it run.
+
+00:02:36.030 --> 00:02:39.289
+So, again now just to let you know truffle box Web Pack comes with a lot of
+
+00:02:39.289 --> 00:02:40.879
+boilerplate code for the front-end for
+
+00:02:40.879 --> 00:02:44.299
+your data and the front end is written in HTML and JavaScript.
+
+00:02:44.300 --> 00:02:46.850
+It really makes everything simple because they've already
+
+00:02:46.849 --> 00:02:49.159
+set up the directories and the structures and all that stuff.
+
+00:02:49.159 --> 00:02:51.335
+So, let's go run this command now.
+
+00:02:51.335 --> 00:02:54.560
+It takes about maybe less than a minute for everything to unpack,
+
+00:02:54.560 --> 00:02:56.375
+and this is what truffle box is.
+
+00:02:56.375 --> 00:02:59.270
+So, like I said it comes with the server so you can host a front-end on
+
+00:02:59.270 --> 00:03:02.210
+your computer and so
+
+00:03:02.210 --> 00:03:05.040
+it installs all the [inaudible] While it's getting ready for
+
+00:03:05.039 --> 00:03:08.150
+that also want to let you know you can also compile,
+
+00:03:08.150 --> 00:03:09.800
+it comes with its own development console,
+
+00:03:09.800 --> 00:03:11.495
+so you can sort of truffle develop,
+
+00:03:11.495 --> 00:03:13.189
+once you do that It actually runs
+
+00:03:13.189 --> 00:03:16.805
+a local Ethereum network on your computer that you can always use.
+
+00:03:16.805 --> 00:03:19.159
+It takes about a little second, we're going to let this finish.
+
+00:03:19.159 --> 00:03:21.229
+and then I'm going to come back in the next video,
+
+00:03:21.229 --> 00:03:24.329
+and then show you what other tools that we're going to be using.
+

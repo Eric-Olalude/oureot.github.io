@@ -1,0 +1,40 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.325
+Now, we'll move on to reviewing the requirements in detail.
+
+00:00:05.325 --> 00:00:09.030
+The first requirement is separation of concerns.
+
+00:00:09.030 --> 00:00:11.580
+So as I reviewed in the architecture slide,
+
+00:00:11.580 --> 00:00:13.640
+we will have four components.
+
+00:00:13.640 --> 00:00:17.295
+We'll have the FlightSuretyData contract,
+
+00:00:17.295 --> 00:00:20.700
+that's the name of the actual contract for data persistence.
+
+00:00:20.700 --> 00:00:26.535
+We'll have the FlightSuretyApp contract for app logic and oracles code.
+
+00:00:26.535 --> 00:00:30.230
+We'll have the Dapp client for triggering the contract
+
+00:00:30.230 --> 00:00:34.490
+calls so that trigger might occur based on user input.
+
+00:00:34.490 --> 00:00:37.850
+For example, a passenger decides to buy insurance
+
+00:00:37.850 --> 00:00:41.690
+for a flight and that would trigger all the different contract calls.
+
+00:00:41.690 --> 00:00:48.600
+Then we have a server app for simulating the behavior and responses of the oracles.
+

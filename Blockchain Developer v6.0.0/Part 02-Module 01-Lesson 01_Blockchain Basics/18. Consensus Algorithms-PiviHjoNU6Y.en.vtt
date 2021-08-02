@@ -1,0 +1,64 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.759
+All right, so we just went over some of the fundamental concepts of
+
+00:00:02.759 --> 00:00:04.439
+blockchain and then learned a little more about
+
+00:00:04.440 --> 00:00:06.450
+different consensus algorithms that exist.
+
+00:00:06.450 --> 00:00:10.080
+In the next lesson, we're going to be talking more about managing transactions and also,
+
+00:00:10.080 --> 00:00:12.359
+I hope if you could just tell us a little more about how what we just
+
+00:00:12.359 --> 00:00:14.924
+learned relates to what we're going to be doing in the next lesson.
+
+00:00:14.925 --> 00:00:17.679
+Yes, that's great. So honestly,
+
+00:00:17.679 --> 00:00:19.530
+it all starts with consensus.
+
+00:00:19.530 --> 00:00:21.620
+We need to make sure that on a peer-to-peer network
+
+00:00:21.620 --> 00:00:24.010
+that transactions are approved, right?
+
+00:00:24.010 --> 00:00:26.865
+To be embedded into a block on the blockchain.
+
+00:00:26.864 --> 00:00:28.849
+So, first we went over consensus and
+
+00:00:28.850 --> 00:00:31.609
+the different types of consensus algorithms that we can
+
+00:00:31.609 --> 00:00:37.939
+utilize on a blockchain platform and with proof of work for Bitcoin Core,
+
+00:00:37.939 --> 00:00:39.559
+we now want to look at what
+
+00:00:39.560 --> 00:00:44.000
+the transaction lifecycle looks like as we're going to embed a transaction into a block.
+
+00:00:44.000 --> 00:00:46.094
+Great, cool. Yes, so next,
+
+00:00:46.094 --> 00:00:48.784
+we're just going to do a quick recap of the lesson and then we're going to transition
+
+00:00:48.784 --> 00:00:50.750
+into the next lesson where we're going to start
+
+00:00:50.750 --> 00:00:53.969
+talking about managing these transactions for ourselves.
+

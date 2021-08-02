@@ -1,0 +1,735 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Connect to the Ethereum Network</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3> Ethereum Fundamentals and Development Tools</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Lesson Introduction.html">01. Lesson Introduction</a>
+    </li>
+    <li class="">
+      <a href="02. Ethereum Basics.html">02. Ethereum Basics</a>
+    </li>
+    <li class="">
+      <a href="03. What makes Ethereum Special.html">03. What makes Ethereum Special?</a>
+    </li>
+    <li class="">
+      <a href="04. Ethereum Tools and Community.html">04. Ethereum Tools and Community</a>
+    </li>
+    <li class="">
+      <a href="05. Introduction to DApps.html">05. Introduction to DApps</a>
+    </li>
+    <li class="">
+      <a href="06. Scan the Ethereum Network.html">06. Scan the Ethereum Network</a>
+    </li>
+    <li class="">
+      <a href="07. Deploy to the Test Network.html">07. Deploy to the Test Network</a>
+    </li>
+    <li class="">
+      <a href="08. Prepare to Connect to the Network.html">08. Prepare to Connect to the Network</a>
+    </li>
+    <li class="">
+      <a href="09. Connect to the Ethereum Network.html">09. Connect to the Ethereum Network</a>
+    </li>
+    <li class="">
+      <a href="10. Investigate Ethereum Accounts.html">10. Investigate Ethereum Accounts</a>
+    </li>
+    <li class="">
+      <a href="11. Create a Local Blockchain.html">11. Create a Local Blockchain</a>
+    </li>
+    <li class="">
+      <a href="12. Connect to Your Local Ethereum Blockchains.html">12. Connect to Your Local Ethereum Blockchains</a>
+    </li>
+    <li class="">
+      <a href="13. Create Ethereum Transactions .html">13. Create Ethereum Transactions </a>
+    </li>
+    <li class="">
+      <a href="14. Ethereum Gas and Fees.html">14. Ethereum Gas and Fees</a>
+    </li>
+    <li class="">
+      <a href="15. Explore Ethereum Metrics.html">15. Explore Ethereum Metrics</a>
+    </li>
+    <li class="">
+      <a href="16. First Dapp Revisited.html">16. First Dapp Revisited</a>
+    </li>
+    <li class="">
+      <a href="17. Ethereum Secret Messenger.html">17. Ethereum Secret Messenger</a>
+    </li>
+    <li class="">
+      <a href="18. Improved Deployment Process.html">18. Improved Deployment Process</a>
+    </li>
+    <li class="">
+      <a href="19. DApps Next Steps.html">19. DApps Next Steps</a>
+    </li>
+    <li class="">
+      <a href="20. Optional Full Ethereum Nodes.html">20. Optional: Full Ethereum Nodes</a>
+    </li>
+    <li class="">
+      <a href="21. Lesson Recap.html">21. Lesson Recap</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">09. Connect to the Ethereum Network</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="connect-to-the-ethereum-network">Connect to the Ethereum Network</h1>
+<hr />
+<p>Here you'll make your connection to the Ethereum main network. Using this connection, you'll be able to run basic commands to search the network from your command line.</p>
+<p>This will be done using a tool known as Infura. By connecting web3 to Infura, you will be able to access the Ethereum main and test networks using the Infura API.</p>
+<h2 id="objectives">Objectives</h2>
+<hr />
+<p><em>Our goal is to help you do the following things.</em></p>
+<ol>
+<li>Define the importance of Infura and describe how it helps you develop DApps.</li>
+<li>Create an Infura account</li>
+<li>Establish a connection between web3 and an Ethereum network.</li>
+<li>Use your web3-infura connection to run basic commands that search the Ethereum network.</li>
+</ol>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/block-line-fill-small.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="1-introduction-to-infura">1. Introduction to Infura</h2>
+<hr />
+<p>In the following video I'll go over why Infura was created and the value it brings to your future blockchain applications.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>9.1-Introduction-To-Infura</p></h3>
+  <video controls>
+  <source src="09. 9.1-Introduction-To-Infura-F5IyZG1uwoo.mp4" type="video/mp4">
+
+  <track default="true" kind="subtitles" srclang="en" src="09. 9.1-Introduction-To-Infura-F5IyZG1uwoo.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Reflect</p></h3>
+  <div>
+  <p><strong>QUESTION: </strong></p>
+  <p>In 3 sentences or less, describe the main benefits of using Infura.</p>
+
+  <details>
+    <summary><strong>ANSWER:</strong></summary>
+    <p><p>Infura allows you to connect to the Ethereum blockchain without running a full node. It's a lightweight alternative to downloading the entire blockchain to your local device. It makes the connection that allows you to use the functionality provided by web3.</p></p>
+  </details>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/block-line-fill-small.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="2-up-and-running-with-infura">2. Up and Running with Infura</h2>
+<hr />
+<p>Now that you understand why infura such a useful tool, you can create an account to access the Ethereum network. To create an infura account, go to <a href="https://infura.io/dashboard" rel="noopener noreferrer" target="_blank">infura.io</a>. </p>
+<p>From there you can navigate to your dashboard and find the endpoints required to establish a connection to the blockchain. Below is a look at the Infura dashboard. If you can see this, you're all set!</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/screen-shot-2018-11-12-at-10.59.38-am.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>Which endpoints are available for you to connect to from the Infura dashboard?</p></legend>
+    </fieldset>
+
+    <div>
+      <input type="checkbox" value="a1541567913378" name="780514" id="a1541567913378">
+      <label for="a1541567913378"><p>Mainnet</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1541567936535" name="780514" id="a1541567936535">
+      <label for="a1541567936535"><p>Ropsten</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1541567939066" name="780514" id="a1541567939066">
+      <label for="a1541567939066"><p>Kovan</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1541567940840" name="780514" id="a1541567940840">
+      <label for="a1541567940840"><p>Rinkeby</p></label>
+    </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    <ul>
+      <li>Mainnet</li>
+      <li>Ropsten</li>
+      <li>Kovan</li>
+      <li>Rinkeby</li>
+  </ul>
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/block-line-fill-small.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="3-connect-web3-with-infura">3. Connect web3 with Infura</h2>
+<hr />
+<p>Having set up both web3 and Infura, you're now ready to make your connection to the blockchain. In the next video, well quickly go over how to set up this connection.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>9.3-Connect-Web3-To-Infura</p></h3>
+  <video controls>
+  <source src="09. 9.3-Connect-Web3-To-Infura-WMqyUYt6C0w.mp4" type="video/mp4">
+
+  <track default="true" kind="subtitles" srclang="en" src="09. 9.3-Connect-Web3-To-Infura-WMqyUYt6C0w.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h3 id="connect-to-infura-text-overview">Connect to Infura text overview</h3>
+<p><em>Written below are the details outlined in the previous video.</em></p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <div>
+    <h4>Task Description:</h4>
+    <p>You can use this checklist to keep track of your progress on the steps written below.</p>
+  </div>
+
+  <form>
+    <fieldset>
+      <legend>Task List:</legend>
+
+      <div>
+        <input type="checkbox" id="af044618-a763-4dfa-bb0d-aded73171235--0">
+        <label for="af044618-a763-4dfa-bb0d-aded73171235--0"><p><strong>Step 1:</strong> Choose a network from the list of endpoints in the Infura dashboard.</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="af044618-a763-4dfa-bb0d-aded73171235--1">
+        <label for="af044618-a763-4dfa-bb0d-aded73171235--1"><p><strong>Step 2:</strong> In your node terminal, set a variable url to a string containing this endpoint url.</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="af044618-a763-4dfa-bb0d-aded73171235--2">
+        <label for="af044618-a763-4dfa-bb0d-aded73171235--2"><p><strong>Step 3:</strong> Set a variable web3 = to a new instance of Web3 connected to the url.</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="af044618-a763-4dfa-bb0d-aded73171235--3">
+        <label for="af044618-a763-4dfa-bb0d-aded73171235--3"><p><strong>Step 4:</strong> Call this new web3 variable</p></label>
+      </div>
+    </fieldset>
+  </form>
+
+  <div>
+    <h4>Task Feedback:</h4>
+
+
+    <p>Great job! You're now connected to the Ethereum blockchain from your terminal.</p>
+  </div>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h4 id="step-1-choose-a-network-from-the-list-of-endpoints-in-the-infura-dashboard"><strong>Step 1:</strong> Choose a network from the list of endpoints in the Infura dashboard.</h4>
+<hr />
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/screen-shot-2018-11-04-at-6.52.10-pm.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h4 id="step-2-set-a-variable-url-to-a-string-containing-this-endpoint-url"><strong>Step 2:</strong> Set a variable url to a string containing this endpoint url.</h4>
+<hr />
+<pre><code>var url = 'YOUR ENDPOINT URL HERE'</code></pre>
+<h4 id="step-3-set-a-variable-web3--to-a-new-instance-of-web3-connected-to-the-url"><strong>Step 3:</strong> Set a variable web3 = to a new instance of Web3 connected to the url.</h4>
+<hr />
+<pre><code>var web3 = new Web3(url)</code></pre>
+<h4 id="step-4-call-this-new-web3-variable"><strong>Step 4:</strong> Call this new web3 variable</h4>
+<hr />
+<pre><code>web3</code></pre>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>You are now connected to the Ethereum network.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/block-line-fill-small.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="4-read-an-ethereum-account">4. Read an Ethereum Account</h2>
+<hr />
+<p>Now that you have a connection, you're able to run any of the web3 commands shown throughout the documentation. In the next video, I'll help get you started by showing you how to read account information using web3.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>9.4-Read-An-Ethereum-Account</p></h3>
+  <video controls>
+  <source src="09. 9.4-Read-An-Ethereum-Account-BKnBxASuSHI.mp4" type="video/mp4">
+
+  <track default="true" kind="subtitles" srclang="en" src="09. 9.4-Read-An-Ethereum-Account-BKnBxASuSHI.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <div>
+    <h4>Task Description:</h4>
+    <p>You can use this checklist to keep track of your progress on the steps listed above.</p>
+  </div>
+
+  <form>
+    <fieldset>
+      <legend>Task List:</legend>
+
+      <div>
+        <input type="checkbox" id="5ba37542-9d3c-44a0-9898-a3e88bec3552--0">
+        <label for="5ba37542-9d3c-44a0-9898-a3e88bec3552--0"><p><strong>Step 1:</strong> Choose a transaction from Etherscan and select the account that submitted that transaction.</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="5ba37542-9d3c-44a0-9898-a3e88bec3552--1">
+        <label for="5ba37542-9d3c-44a0-9898-a3e88bec3552--1"><p><strong>Step 2:</strong> Set a variable equal to a string of the address you chose.</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="5ba37542-9d3c-44a0-9898-a3e88bec3552--2">
+        <label for="5ba37542-9d3c-44a0-9898-a3e88bec3552--2"><p><strong>Step 3:</strong> Use web3 to read the balance of this account and set it to the variable balance.</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="5ba37542-9d3c-44a0-9898-a3e88bec3552--3">
+        <label for="5ba37542-9d3c-44a0-9898-a3e88bec3552--3"><p><strong>Step 4:</strong> Read the variable balance to the terminal</p></label>
+      </div>
+    </fieldset>
+  </form>
+
+  <div>
+    <h4>Task Feedback:</h4>
+
+
+    <p>Great job! You're now reading data directly from the Ethereum blockchain.</p>
+  </div>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h4 id="step-1--navigate-to-etherscanioetherscanio">**Step 1: ** Navigate to <a href="etherscan.io" rel="noopener noreferrer" target="_blank">etherscan.io</a></h4>
+<hr />
+<p>Choose a transaction. Next, choose the sender or receiver of that transaction. We can use this address as an example to search using web3.</p>
+<p>Example address: <strong>'0x8E21D1CE02fD6Cec455Da473b9D969424bAa9678'</strong></p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/screen-shot-2018-11-04-at-6.59.08-pm.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h4 id="step-2-set-a-variable-equal-to-a-string-of-the-address-you-chose"><strong>Step 2:</strong> Set a variable equal to a string of the address you chose.</h4>
+<hr />
+<pre><code>var address = '0x8E21D1CE02fD6Cec455Da473b9D969424bAa9678'</code></pre>
+<h4 id="step-3-use-web3-to-read-the-balance-of-this-account-and-set-it-to-the-variable-balance"><strong>Step 3:</strong> Use web3 to read the balance of this account and set it to the variable <strong>balance.</strong></h4>
+<hr />
+<pre><code>web3.eth.getBalance(address, (err, bal) =&gt; { balance = bal })</code></pre>
+<p>Visit the documentation for more information on <a href="https://web3js.readthedocs.io/en/1.0/web3-eth.html#getbalance" rel="noopener noreferrer" target="_blank">web3.eth.getBalance</a>.</p>
+<h4 id="step-4-read-the-variable-balance-to-the-terminal"><strong>Step 4:</strong> Read the variable balance to the terminal</h4>
+<hr />
+<pre><code>balance</code></pre>
+<p>If done successfully, you should have a balance for this account read to your terminal as shown below.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/screen-shot-2018-11-04-at-7.07.01-pm.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>Now that you've established your connection, feel free to read through the <a href="https://web3js.readthedocs.io/en/1.0/index.html" rel="noopener noreferrer" target="_blank">web3</a> to experiment with more terminal commands. We'll continue walking through more of these commands as we learn more about the Ethereum blockchain in future concepts.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="exercise">Exercise</h2>
+<hr />
+<p>Earlier in the lesson, you received your first ether on the Ethereum testnet. That account and transaction exist on the network, and you can now search that from your terminal. Try finding that transaction now by going through the following steps.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <div>
+    <h4>Task Description:</h4>
+    <p>Find your Ether Transaction</p>
+  </div>
+
+  <form>
+    <fieldset>
+      <legend>Task List:</legend>
+
+      <div>
+        <input type="checkbox" id="ddb5c9bf-983f-440e-b2bf-3c17a71dda3c--0">
+        <label for="ddb5c9bf-983f-440e-b2bf-3c17a71dda3c--0"><p><strong>Step 1:</strong> Open Metamask and find the transaction that sent you test ether</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="ddb5c9bf-983f-440e-b2bf-3c17a71dda3c--1">
+        <label for="ddb5c9bf-983f-440e-b2bf-3c17a71dda3c--1"><p><strong>Step 2:</strong> Search that transaction on the appropriate test network using etherscan</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="ddb5c9bf-983f-440e-b2bf-3c17a71dda3c--2">
+        <label for="ddb5c9bf-983f-440e-b2bf-3c17a71dda3c--2"><p><strong>Step 3:</strong> Search the balance of the address shown on for this transaction using web3</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="ddb5c9bf-983f-440e-b2bf-3c17a71dda3c--3">
+        <label for="ddb5c9bf-983f-440e-b2bf-3c17a71dda3c--3"><p><strong>Step 4:</strong> Compare the transaction amount with the balance shown to see if they are the same</p></label>
+      </div>
+    </fieldset>
+  </form>
+
+  <div>
+    <h4>Task Feedback:</h4>
+
+
+    <p>Awesome work! You're really getting good at working with data on the Ethereum blockchain.</p>
+  </div>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/block-line-fill-small.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="review">Review</h2>
+<hr />
+<p>Here you learned about infura, made an infura account, connected it to web3, and searched the command Ethereum main network from your command line.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Skill Tracker</p></h3>
+  <div>
+  <div>
+    <h4>Task Description:</h4>
+    <p>Select each of the objectives that you feel you have gained the skills to complete.</p>
+  </div>
+
+  <form>
+    <fieldset>
+      <legend>Task List:</legend>
+
+      <div>
+        <input type="checkbox" id="db0b1c42-f9ea-48f8-bc6d-6f06e915a9b0--0">
+        <label for="db0b1c42-f9ea-48f8-bc6d-6f06e915a9b0--0"><ol>
+<li>Define the importance of Infura and describe how it helps you develop DApps.</li>
+</ol></label>
+      </div>
+      <div>
+        <input type="checkbox" id="db0b1c42-f9ea-48f8-bc6d-6f06e915a9b0--1">
+        <label for="db0b1c42-f9ea-48f8-bc6d-6f06e915a9b0--1"><ol start="2">
+<li>Create an Infura account</li>
+</ol></label>
+      </div>
+      <div>
+        <input type="checkbox" id="db0b1c42-f9ea-48f8-bc6d-6f06e915a9b0--2">
+        <label for="db0b1c42-f9ea-48f8-bc6d-6f06e915a9b0--2"><ol start="3">
+<li>Establish a connection between web3 and an Ethereum network.</li>
+</ol></label>
+      </div>
+      <div>
+        <input type="checkbox" id="db0b1c42-f9ea-48f8-bc6d-6f06e915a9b0--3">
+        <label for="db0b1c42-f9ea-48f8-bc6d-6f06e915a9b0--3"><ol start="4">
+<li>Use your web3-infura connection to run basic commands that search the Ethereum network.</li>
+</ol></label>
+      </div>
+    </fieldset>
+  </form>
+
+  <div>
+    <h4>Task Feedback:</h4>
+
+
+    <p>Congratulations on gaining new skills!</p>
+  </div>
+</div>
+
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="10. Investigate Ethereum Accounts.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('09. Connect to the Ethereum Network')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

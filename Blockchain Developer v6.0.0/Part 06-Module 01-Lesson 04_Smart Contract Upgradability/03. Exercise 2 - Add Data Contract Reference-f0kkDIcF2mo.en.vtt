@@ -1,0 +1,19 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.625
+We're now going to do an exercise to add
+
+00:00:02.625 --> 00:00:06.435
+the data contract reference so that
+
+00:00:06.434 --> 00:00:11.250
+the application contract that we've created knows how to find that.
+
+00:00:11.250 --> 00:00:14.339
+So there are about five steps to this,
+
+00:00:14.339 --> 00:00:17.500
+and then the final compilation step.
+

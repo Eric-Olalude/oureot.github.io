@@ -1,0 +1,483 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ethereum Gas and Fees</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3> Ethereum Fundamentals and Development Tools</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Lesson Introduction.html">01. Lesson Introduction</a>
+    </li>
+    <li class="">
+      <a href="02. Ethereum Basics.html">02. Ethereum Basics</a>
+    </li>
+    <li class="">
+      <a href="03. What makes Ethereum Special.html">03. What makes Ethereum Special?</a>
+    </li>
+    <li class="">
+      <a href="04. Ethereum Tools and Community.html">04. Ethereum Tools and Community</a>
+    </li>
+    <li class="">
+      <a href="05. Introduction to DApps.html">05. Introduction to DApps</a>
+    </li>
+    <li class="">
+      <a href="06. Scan the Ethereum Network.html">06. Scan the Ethereum Network</a>
+    </li>
+    <li class="">
+      <a href="07. Deploy to the Test Network.html">07. Deploy to the Test Network</a>
+    </li>
+    <li class="">
+      <a href="08. Prepare to Connect to the Network.html">08. Prepare to Connect to the Network</a>
+    </li>
+    <li class="">
+      <a href="09. Connect to the Ethereum Network.html">09. Connect to the Ethereum Network</a>
+    </li>
+    <li class="">
+      <a href="10. Investigate Ethereum Accounts.html">10. Investigate Ethereum Accounts</a>
+    </li>
+    <li class="">
+      <a href="11. Create a Local Blockchain.html">11. Create a Local Blockchain</a>
+    </li>
+    <li class="">
+      <a href="12. Connect to Your Local Ethereum Blockchains.html">12. Connect to Your Local Ethereum Blockchains</a>
+    </li>
+    <li class="">
+      <a href="13. Create Ethereum Transactions .html">13. Create Ethereum Transactions </a>
+    </li>
+    <li class="">
+      <a href="14. Ethereum Gas and Fees.html">14. Ethereum Gas and Fees</a>
+    </li>
+    <li class="">
+      <a href="15. Explore Ethereum Metrics.html">15. Explore Ethereum Metrics</a>
+    </li>
+    <li class="">
+      <a href="16. First Dapp Revisited.html">16. First Dapp Revisited</a>
+    </li>
+    <li class="">
+      <a href="17. Ethereum Secret Messenger.html">17. Ethereum Secret Messenger</a>
+    </li>
+    <li class="">
+      <a href="18. Improved Deployment Process.html">18. Improved Deployment Process</a>
+    </li>
+    <li class="">
+      <a href="19. DApps Next Steps.html">19. DApps Next Steps</a>
+    </li>
+    <li class="">
+      <a href="20. Optional Full Ethereum Nodes.html">20. Optional: Full Ethereum Nodes</a>
+    </li>
+    <li class="">
+      <a href="21. Lesson Recap.html">21. Lesson Recap</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">14. Ethereum Gas and Fees</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="ethereum-gas-and-fees">Ethereum Gas and Fees</h1>
+<hr />
+<p>Every transaction in Ethereum costs a certain amount of gas. Here you'll learn about what this means and how it affects the transactions you make on the network.</p>
+<h2 id="objectives">Objectives</h2>
+<hr />
+<p><em>Our goal is to help you do the following things.</em></p>
+<ol>
+<li>Discuss the basics of how gas and fees work on the Ethereum network.</li>
+<li>Show the effects of gas cost and fees using an example transaction.</li>
+</ol>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/block-line-fill-small.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="1-introduction-to-gas-and-fees">1. Introduction to Gas and Fees</h2>
+<hr />
+<p>In this video I'll discuss what gas is, why it's important, and how it helps verify transactions on the Ethereum Blockchain.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Ethereum Gas and Fees</p></h3>
+  <video controls>
+  <source src="14. Ethereum Gas and Fees-WoYQQi0I4Dk.mp4" type="video/mp4">
+
+  <track default="true" kind="subtitles" srclang="en" src="14. Ethereum Gas and Fees-WoYQQi0I4Dk.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Reflect</p></h3>
+  <div>
+  <p><strong>QUESTION: </strong></p>
+  <p>In 3 sentences or less, describe the purpose of gas on the Ethereum network.</p>
+
+  <details>
+    <summary><strong>ANSWER:</strong></summary>
+    <p><p>Thanks for your response! Gas is needed to incentivize miners to pick up and validate transactions. It's a small fee paid for the cost of each bit of code executed to complete a smart contract. While the gas is specific to execution costs, it can be converted to its equivalent value in ether and given to the miner as reward for their effort.</p></p>
+  </details>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/block-line-fill-small.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="2-view-the-gas-cost">2. View the Gas Cost</h2>
+<hr />
+<p>Now that you understand the importance of gas and fees in Ethereum, we'll revisit a transaction we created previously. After reconstructing this transaction, we'll note something we overlooked before related to the gas and fees for the transaction.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>14.2-Gas-And-Fees</p></h3>
+  <video controls>
+  <source src="14. 14.2-Gas-And-Fees-pknwdO_hc0c.mp4" type="video/mp4">
+
+  <track default="true" kind="subtitles" srclang="en" src="14. 14.2-Gas-And-Fees-pknwdO_hc0c.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h3 id="create-a-transaction">Create a transaction</h3>
+<hr />
+<p>Written below is a more concise version of the transaction created previously. Replace the missing fields with those from your own ganache instance to run this transaction locally.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <div>
+    <h4>Task Description:</h4>
+    <p>Complete the steps below to create a transaction and view the effects of the gas cost.</p>
+  </div>
+
+  <form>
+    <fieldset>
+      <legend>Task List:</legend>
+
+      <div>
+        <input type="checkbox" id="f2548eac-ad5c-42ca-ad81-5ca64aa7cc96--0">
+        <label for="f2548eac-ad5c-42ca-ad81-5ca64aa7cc96--0"><p><strong>Step 1:</strong> Execute the provided code in your project file.</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="f2548eac-ad5c-42ca-ad81-5ca64aa7cc96--1">
+        <label for="f2548eac-ad5c-42ca-ad81-5ca64aa7cc96--1"><p><strong>Step 2:</strong> View the balance of each account to view the difference in the sending accounts value.</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="f2548eac-ad5c-42ca-ad81-5ca64aa7cc96--2">
+        <label for="f2548eac-ad5c-42ca-ad81-5ca64aa7cc96--2"><p><strong>Step 3:</strong> Add the gas limit to the sending address total to prove that the difference is the gas cost.</p></label>
+      </div>
+    </fieldset>
+  </form>
+
+  <div>
+    <h4>Task Feedback:</h4>
+
+
+    <p>Awesome job!</p>
+  </div>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>Before running this command, make sure you have the correct dependencies installed to your project.</p>
+<pre><code>npm install web3 --save
+npm install ethereumjs-tx</code></pre>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h4 id="step-1-execute-the-provided-code-in-your-project-file"><strong>Step 1:</strong> Execute the provided code in your project file.</h4>
+<hr />
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <pre><code>// Configuration
+var Web3 = require("web3")
+var EthereumTransaction = require("ethereumjs-tx")
+var web3 = new Web3('HTTP://127.0.0.1:8545')
+
+// Set Addresses
+var sendingAddress = 'ADDRESS FROM GANACHE'
+var receivingAddress = 'ANOTHER ADDRESS FROM GANACHE'
+
+// Create transaction
+var rawTransaction = {
+    nonce: 0,
+    to: receivingAddress,
+    gasPrice: 20000000,
+    gasLimit: 30000,
+    value: 1,
+    data: ""
+}
+
+// Sign Transaction
+var privateKeySender = 'PRIVATE KEY OF SENDER'
+var privateKeySenderHex = new Buffer(privateKeySender, 'hex')
+var transaction = new EthereumTransaction(rawTransaction)
+transaction.sign(privateKeySenderHex)
+var serializedTransaction = transaction.serialize();
+web3.eth.sendSignedTransaction(serializedTransaction);</code></pre>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h4 id="step-2-view-the-the-difference-in-account-balances"><strong>Step 2:</strong> View the the difference in account balances</h4>
+<hr />
+<p>Having made the transaction, you can now view the gas cost. Once the transaction goes through you can view the balance of each account. To do this remove (or comment out) lines 10-26 and add the following lines. </p>
+<pre><code>web3.eth.getBalance(sender).then(console.log)
+web3.eth.getBalance(receiver).then(console.log)</code></pre>
+<p>Run the file again to view the account balance of each user. Notice that the value has changed by 1 for each account, but that the sendingAddress has had more ether taken away.</p>
+<p><strong>Sending Address:</strong> <code>99999999579999999999</code></p>
+<p><strong>Receiving Address:</strong> <code>100000000000000000001</code></p>
+<h4 id="step-3-add-the-gas"><strong>Step 3:</strong> Add the gas</h4>
+<hr />
+<p>By looking back at the gas limit, we can see how this happen. The gas limit was the cost of executing the transaction on the network. In this case it was <code>gasLimit: 30000</code>. If we add this value to the existing balance of the <code>sendingAddress</code> you'll see that the correct amount of ether remains in the account.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/block-line-fill-small.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="concept-review">Concept Review</h1>
+<hr />
+<p>Here you learned about the use of gas and fees in Ethereum. </p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Skill Tracker</p></h3>
+  <div>
+  <div>
+    <h4>Task Description:</h4>
+    <p>Track the objectives you've feel you've gained the skills to complete.</p>
+  </div>
+
+  <form>
+    <fieldset>
+      <legend>Task List:</legend>
+
+      <div>
+        <input type="checkbox" id="eca86f49-d67f-4256-977d-1232c3f0e792--0">
+        <label for="eca86f49-d67f-4256-977d-1232c3f0e792--0"><ol>
+<li>Discuss the basics of how gas and fees work on the Ethereum network.</li>
+</ol></label>
+      </div>
+      <div>
+        <input type="checkbox" id="eca86f49-d67f-4256-977d-1232c3f0e792--1">
+        <label for="eca86f49-d67f-4256-977d-1232c3f0e792--1"><ol start="2">
+<li>Show the effects of gas cost and fees using an example transaction.</li>
+</ol></label>
+      </div>
+    </fieldset>
+  </form>
+
+  <div>
+    <h4>Task Feedback:</h4>
+
+
+    <p>Congratulations on gaining new skills!</p>
+  </div>
+</div>
+
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="15. Explore Ethereum Metrics.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('14. Ethereum Gas and Fees')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>
